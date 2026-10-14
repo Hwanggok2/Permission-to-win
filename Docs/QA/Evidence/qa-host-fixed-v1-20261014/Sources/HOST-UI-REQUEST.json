@@ -1,0 +1,31 @@
+{
+  "status": "UNITY_49_PASSED__QA009_NORMALIZATION_FIXED__TARGETED_RETEST_THEN_WEBGL_BUILD",
+  "dateSeoul": "2026-10-14",
+  "owner": "Client only; root owns browser and integration; no commits/push",
+  "contract": {
+    "canvas": "Full viewport, including background. CSS does not subtract any inset.",
+    "hostReservationCssPx": 64,
+    "reservationOrigin": "Below maximum of Unity OS safe inset and supplied CSS OS safe inset. Product design allowance, not official Toss button height.",
+    "coordinates": "setInsets({left,top,right,bottom}, actualControlsBottom=-1): nonnegative CSS pixels from viewport edges; optional controls bottom from viewport top; final top=max(merged OS top+64, controlsBottom+8).",
+    "viewport": "Full viewport. Do not pass already-reserved host height as OS top or shrink viewport in host wrapper.",
+    "platform": "WebGL default 64px; Android native Screen.safeArea only",
+    "adapter": "window.stageGameHostLayout.setInsets; future SafeAreaInsets.get/subscribe forwarding; no SDK connected",
+    "minimum": "Portrait 320x568 with OS top<=59 and bottom<=34, left=right=0, additional host64; 720x960 composition. More restrictive space remains outside verified 44px envelope."
+  },
+  "layout": {
+    "reference": "720x960",
+    "ordinaryButtonUnits": 110,
+    "boardColumnUnits": 102.85714285714286,
+    "minimumButtonCssPx": 47.09375,
+    "minimumBoardColumnCssPx": 44.035714285714285,
+    "license": "26-unit muted label; transparent saved 535x110 button; full text ScrollRect retained"
+  },
+  "preview": {
+    "default": "Hidden mock controls; WebGL reservation remains on",
+    "query": "?hostPreview=1&hostTop=59&hostBottom=34",
+    "api": "window.stageGameHostLayout.setInsets({top:59,bottom:34,left:0,right:0})",
+    "evidence": "Mock/editor only until root browser test; actual Toss SDK/device unverified"
+  },
+  "art": "Original deterministic rounded rectangle nine-slice and soft discs; new Art/SoftUI paths; prior artwork retained",
+  "verification": "49/49 Unity tests passed including 390->320->390 host profiles, ko/en 30 stages, all active UI top/bottom bounds, 44px hits and legal scroll. QA-009: JS float32 overflow rejected to zero; C# NaN/Infinity inset fallback zero keeps64. Host sources frozen for independent QA; targeted HostLayout/HostProfiles rerun in progress. Normal layouts unchanged."
+}

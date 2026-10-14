@@ -50,6 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: StageGame.Runtime::StageGame.SafeAreaFitter
   content: {fileID: 291670216174584881}
+  referenceSize: {x: 720, y: 960}
 --- !u!1 &876249605619587643
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,7 +91,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 720, y: 1280}
+  m_SizeDelta: {x: 720, y: 960}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2534697255561313790
 GameObject:
@@ -247,7 +248,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 720, y: 1280}
+  m_ReferenceResolution: {x: 720, y: 960}
   m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -650,7 +651,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4698615248593231642, guid: cce1b3356d5b02b418bfbe09cb5188d8, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1280
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 4698615248593231642, guid: cce1b3356d5b02b418bfbe09cb5188d8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2035,7 +2036,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3901078605900484178, guid: 6a174d91182eef244af057d238edef9f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1280
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 3901078605900484178, guid: 6a174d91182eef244af057d238edef9f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2242,7 +2243,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6808817720194425527, guid: c8c05035299c4c546a65d82c26fe4e9c, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1280
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 6808817720194425527, guid: c8c05035299c4c546a65d82c26fe4e9c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2508,7 +2509,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5517385440886708030, guid: ff9c521550ad5ed4bad29e4d3611225f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1280
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 5517385440886708030, guid: ff9c521550ad5ed4bad29e4d3611225f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2679,7 +2680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7345213538638739849, guid: abd72710ac9e8ee4ab0bab5bb39f4f4b, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1280
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 7345213538638739849, guid: abd72710ac9e8ee4ab0bab5bb39f4f4b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2923,7 +2924,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 626754722247266215, guid: c49eafda3db34a740bc060cdbaaa9a36, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1280
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 626754722247266215, guid: c49eafda3db34a740bc060cdbaaa9a36, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3264,7 +3265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7814894381494692765, guid: cd1e37793ef6a92428788a26ee1a2ffe, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1280
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 7814894381494692765, guid: cd1e37793ef6a92428788a26ee1a2ffe, type: 3}
       propertyPath: m_LocalPosition.x

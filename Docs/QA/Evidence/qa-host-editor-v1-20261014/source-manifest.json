@@ -1,0 +1,310 @@
+[
+  {
+    "source": "Client/Logs/host-ui-tests.xml",
+    "sha256": "EA03EDEA6480F5DF488D1CAB326E7433EC5D8FC9EB0F8035AA55D1083C33FA21"
+  },
+  {
+    "source": "Client/Logs/host-ui-boundary-tests.xml",
+    "sha256": "9969B0B598C13D6CD6C66366C029BFB50F227F34AE5F47F92FE969FA67488F2B"
+  },
+  {
+    "source": "Client/HOST-UI-REQUEST.json",
+    "sha256": "132277D2BA0965A68DAFDB07AF9A949F657D6E96C4EA237FD653B812EBB66B0E"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/UI/HostLayout.cs",
+    "sha256": "3F35560AE219719C7A4ECAA265D6E7F48B517123DC210E02D5649DDB8B30E165"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/UI/SafeAreaFitter.cs",
+    "sha256": "0B55A9E30DF61CCCEE80B26CC2DC6EBF2DAE2292F69AA6806CE40466A8B68E51"
+  },
+  {
+    "source": "Client/Assets/WebGLTemplates/StageGamePortrait/index.html",
+    "sha256": "FAFBA1FE74F7A15F2CBDFD04C5B482DD0C83EE90A5FAE53CAEEF9C080259BF95"
+  },
+  {
+    "source": "Client/Assets/WebGLTemplates/StageGamePortrait/host-layout.js",
+    "sha256": "187B6162FE987A784D66FB6F929EC64C4885D8BA2A5B5A7E176AF16DFC9DAC25"
+  },
+  {
+    "source": "Client/Assets/StageGame/Plugins/WebGL/HostInsets.jslib",
+    "sha256": "99C4A9D5194FD49B8B273E38AE032E034195F774A27D9A77EAC08B525F322C40"
+  },
+  {
+    "source": "Client/Assets/StageGame/Editor/SoftUiBuilder.cs",
+    "sha256": "AE6918896298B58C159E268A79A9F9257C94C99A8EF5346FCDF074C3068D26DF"
+  },
+  {
+    "source": "Client/Assets/StageGame/Tests/EditMode/HostLayoutTests.cs",
+    "sha256": "A280BB203B646915E2477E885A876D87AE89C2A2A0838373E8A6F718440BD796"
+  },
+  {
+    "source": "Client/Assets/StageGame/Tests/EditMode/PlayFlowTests.cs",
+    "sha256": "6B709574AD0165A9D761A5F87CECD725B006F84771DFBAAA015DEDFD3E442D74"
+  },
+  {
+    "source": "Client/Assets/StageGame/Tests/EditMode/LocalizationTests.cs",
+    "sha256": "1CD0940A03180969DB96DF3C9B8E6CA798ABFE78FFFC43D7AEC0399842398230"
+  },
+  {
+    "source": "Tests/check-host-evidence.ps1",
+    "sha256": "7D6DD3858F0C749B457955DF4A39E11E13C89CDA5ACF843165F6C5D757E0C334"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\AppRoot.prefab",
+    "sha256": "C09D7E83F48B1FCC65491E3F2B9A92D7C315A811D84C0BAC7BD537C11EDF88A2"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\AppRoot.prefab.meta",
+    "sha256": "2F7BB9B39907E71759485C8403B5E76B2AE074D3D32FA86A8538D4CF33008EBD"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\Board.meta",
+    "sha256": "E1C1E600EB6DD78009BCF4DB8448D7C2CBF3CFBA72333E9F94F9EFC50E1E6203"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\UI.meta",
+    "sha256": "4E344914FDDD1CDF132463F6BEB5235888FBAF7CFFBC61D915D08ECCBEB8085E"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\Board\\Board.prefab",
+    "sha256": "6A097704967E6C5CB713D140ADF677767F9EAD93A69A1F84B808A3C8EF268921"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\Board\\Board.prefab.meta",
+    "sha256": "48D8184525DC44A4D36EDB42576F9FE318603C2F18E212275DBD83FFD3A6EE89"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\Board\\Cell.prefab",
+    "sha256": "F8DA99CA738CB9D2F5734476D4723CFCF6D156B0F54DF06305CFA948AE504E28"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\Board\\Cell.prefab.meta",
+    "sha256": "69C3F2A0A4B075F7F738805B3A3BCA0C7AEC76F628FD7362E49B2379FB10E138"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\UI\\Common.meta",
+    "sha256": "957057D9CCA66A5C121E4907704C236A3D5CBB8003900AD0F4C4DF43E4E030F3"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\UI\\Screens.meta",
+    "sha256": "43DFDAEAC81DC4779775757A02CACA9D2B7B9BF6A8597857B12A655FC5A6C127"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\UI\\Common\\CloseButton.prefab",
+    "sha256": "9B61743FC5B16A5B9ACB451B06A3FEFC0195A4B9D1CE21B52A741B30AB13AEEC"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\UI\\Common\\CloseButton.prefab.meta",
+    "sha256": "AA1DD431FC53101102D4CBBD4BBCB6D2F0976CDD24D6D2DE337761A32F1C26D3"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\UI\\Common\\ModalFrame.prefab",
+    "sha256": "BBFF4AC2C07FC27F3F1956D1DC805A42E5DF69C9CCC56AA5311BC98A29D67BF2"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\UI\\Common\\ModalFrame.prefab.meta",
+    "sha256": "F5BABDE1D874ADC2E12922B174FCA4DCFC4F6C765254F76A6B7456037F28781F"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\UI\\Common\\PrimaryButton.prefab",
+    "sha256": "F5D74DB2F74BD9333B0526F6727C5AA491820910E96907371B15CC1D0414A4C6"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\UI\\Common\\PrimaryButton.prefab.meta",
+    "sha256": "7BD778D886A0C741989268672297D6D39C7F65749D646997CBAB0C8F191BCF09"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\UI\\Common\\StageCard.prefab",
+    "sha256": "F719C59A122C7E35C706CF09DD7B2DD0ADBB9EC0BE2D580A6BA8A371D4CD1276"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\UI\\Common\\StageCard.prefab.meta",
+    "sha256": "7F89FB81A508495421072527862CBBCBE120FF651F4CD5EB2DFB2182197AE099"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\UI\\Screens\\ConfirmModal.prefab",
+    "sha256": "466FFDAA4B2A3942B836373D46669BBA858157ADAD0569DC997757136E37BAFD"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\UI\\Screens\\ConfirmModal.prefab.meta",
+    "sha256": "2725C37A04A3DD20898F8C4227D596B857B5ED0660C3FC27845FCA558F1A3DAD"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\UI\\Screens\\GameScreen.prefab",
+    "sha256": "B8AE406C921FEEB83AAC42643F69EECF8FABA2E460EDC7873023783EA8266516"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\UI\\Screens\\GameScreen.prefab.meta",
+    "sha256": "BA530FC415109521DE7EFE7A8478C3CE2BDCADB455878511429590ED849C121A"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\UI\\Screens\\HelpModal.prefab",
+    "sha256": "0B9AE5DAF1EB51996F755293695E18FE9A7648EA8098A9B7B3B54A5D37B4361D"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\UI\\Screens\\HelpModal.prefab.meta",
+    "sha256": "5A89E4CD29D188357BC75590BF3F3703826EA7C537C67BDC91D78912FB65D58E"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\UI\\Screens\\LobbyScreen.prefab",
+    "sha256": "BC1ED0333CE71127E4577E8BA67D4C5DC04B92804B0D782A1E8FD36DD45A5C7E"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\UI\\Screens\\LobbyScreen.prefab.meta",
+    "sha256": "70EFA1A26103DD486AA5FC5F09155569EA5D90AEE47566D0802970E462FB6B6A"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\UI\\Screens\\NoticesModal.prefab",
+    "sha256": "D5AC90D5F5E0E34A5D01E2E21A8BEB254195F92BC37C86AE0A032FEE7168760F"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\UI\\Screens\\NoticesModal.prefab.meta",
+    "sha256": "43D93B57529CC7B9B097FB712D0DB4D2FF16EBD6CCFA1AB6D4AD0F5F35C9CC68"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\UI\\Screens\\ResultModal.prefab",
+    "sha256": "BE2D35312FAC1A29EA07DF16FEFEF08C335EEF123960EAA2738B3709A28405E6"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\UI\\Screens\\ResultModal.prefab.meta",
+    "sha256": "EEC679FA618781B489D5FABB52AE2CB7DF7B76AE634B8489394EEACD40B89443"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\UI\\Screens\\SettingsModal.prefab",
+    "sha256": "8D825C3CEE59DE9878CEA03E290E77ADAC7F2F31C15BD5DF065B9DF05E40220A"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Prefabs\\UI\\Screens\\SettingsModal.prefab.meta",
+    "sha256": "07B4EEC2B01BA514EDDA3CE81C8079B855B79820DFA5BC004C4782F423597812"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Art\\SoftUI\\RoundRect96.png",
+    "sha256": "D6015AB3B77C2DA03898A7F7DB366751EEDB356B289D46F3796B152EA4DC4BD5"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Art\\SoftUI\\RoundRect96.png.meta",
+    "sha256": "2A583C38CA873E8244722FCA230D502F842064BEEF5D2FC2E475204CACFCA535"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Art\\SoftUI\\SoftDisc128.png",
+    "sha256": "2F5F2CDC96F4AD8F3BFD05692693BB9AB904E400BFBEE001F5FCFAD65804FAD3"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Art\\SoftUI\\SoftDisc128.png.meta",
+    "sha256": "0E24B278B04F776C642CC99045F7180F775D915C4419F02F28826766F2821CEC"
+  },
+  {
+    "source": "Client\\Evidence\\host-en-320-confirm.png",
+    "sha256": "DC757B2E66E11739E529B52F3FF35B27D3A7342F047160E327E7C7C30E5A7D05"
+  },
+  {
+    "source": "Client\\Evidence\\host-en-320-help.png",
+    "sha256": "ADEE14A792114ED8A96D73CB0D7836557584035B349E6DB1633DE028E337293D"
+  },
+  {
+    "source": "Client\\Evidence\\host-en-320-lobby.png",
+    "sha256": "4D943CA68A292891D0C08CFBEDCFBA0F3ECE80A3ED94318EB60CA7AEBC109C0D"
+  },
+  {
+    "source": "Client\\Evidence\\host-en-320-match.png",
+    "sha256": "39C8A21FC7E3E8460277C9B65EBEF071939080141CC571BB0EAD228D6A43EBA0"
+  },
+  {
+    "source": "Client\\Evidence\\host-en-320-notices-bottom.png",
+    "sha256": "EE35C49043DBEA9C6C77FD26B7BC60066034C2C082212A20184D6AFF5FA09F5B"
+  },
+  {
+    "source": "Client\\Evidence\\host-en-320-result.png",
+    "sha256": "A0194D201C9ABA890DBDB7BC3D33D6BC63ED265DE5A219526B23C7797710E068"
+  },
+  {
+    "source": "Client\\Evidence\\host-en-320-settings.png",
+    "sha256": "05D79AED6A57063C4598B75691607DCCC4284B1533E5ED6F87973A82E33112DE"
+  },
+  {
+    "source": "Client\\Evidence\\host-en-390-confirm.png",
+    "sha256": "BBBC0DEFA0577F1661235FF26028DBA035E8F2DB45FCEB48FFC67BA41424BAD8"
+  },
+  {
+    "source": "Client\\Evidence\\host-en-390-help.png",
+    "sha256": "EB4EBD8AD018C4A764867B7F815107EF503B5D25A25188362B553CDC7E0FBF63"
+  },
+  {
+    "source": "Client\\Evidence\\host-en-390-lobby.png",
+    "sha256": "34126A14F829102639A0BDF93C19F2D33C5E17C3AD8B6D6EAFEA5BCC2F9A4549"
+  },
+  {
+    "source": "Client\\Evidence\\host-en-390-match.png",
+    "sha256": "268A67EA236AFB929CE690D6E6ED597DD3EAA2AF0E3D1C249DE5ECFC47140740"
+  },
+  {
+    "source": "Client\\Evidence\\host-en-390-notices-bottom.png",
+    "sha256": "7198DE6DB306D00B2562C88AA95A6BFFACDCB05953A9DF40D1311E2112B65C6F"
+  },
+  {
+    "source": "Client\\Evidence\\host-en-390-result.png",
+    "sha256": "32F74E55A29C071F0E3B29ADC345B6A195C3EABE97A0AF29DE727298CCA21601"
+  },
+  {
+    "source": "Client\\Evidence\\host-en-390-settings.png",
+    "sha256": "A0BB173B40191F1A686E4C8C4AF69B11FA78A10FD6D0FF20646AF1ABF6FDA5DF"
+  },
+  {
+    "source": "Client\\Evidence\\host-ko-320-confirm.png",
+    "sha256": "DC659AC0C4C4378DF679D92D456D17E5303B124D267111378BADC2CD08A68A22"
+  },
+  {
+    "source": "Client\\Evidence\\host-ko-320-help.png",
+    "sha256": "1D3518E33A4D030CA703EA92F4CCD4C3DBF710F9404FDFB0AA41413C7E188F74"
+  },
+  {
+    "source": "Client\\Evidence\\host-ko-320-lobby.png",
+    "sha256": "94ED98F85096C7B1A44B5175960BEAAC1220357F61D49427158FB6EE344AF663"
+  },
+  {
+    "source": "Client\\Evidence\\host-ko-320-match.png",
+    "sha256": "3A4854DE1268F68B0D84851814FEE34DE4E108D5114842C5225176677A31B561"
+  },
+  {
+    "source": "Client\\Evidence\\host-ko-320-notices-bottom.png",
+    "sha256": "5E2389EEFDEDC3DC653E887B3DC003D119A61E5ABEAE4E33F7F0C2E24E3362C6"
+  },
+  {
+    "source": "Client\\Evidence\\host-ko-320-result.png",
+    "sha256": "90D71CB62B525E0F2C96C84AC75835462CA92252CE31D51D8D766BA9106C0450"
+  },
+  {
+    "source": "Client\\Evidence\\host-ko-320-settings.png",
+    "sha256": "7AA28D0255D362BD438636F86115D20DBA3DF647E8753C481409405DA91142CB"
+  },
+  {
+    "source": "Client\\Evidence\\host-ko-390-confirm.png",
+    "sha256": "76900D93987B6243014A44B791F119D68B3F92A5D26CB0161CBC977464E57F15"
+  },
+  {
+    "source": "Client\\Evidence\\host-ko-390-help.png",
+    "sha256": "BDF15C3BE0516CC508772CEC4B1CDE03C61624ACE00EC4054A114D8A8F2E8887"
+  },
+  {
+    "source": "Client\\Evidence\\host-ko-390-lobby.png",
+    "sha256": "AABD7B9E44AF7945B18E3FDBA2750A1D618EE7E58C189C23B773B6CC4105E804"
+  },
+  {
+    "source": "Client\\Evidence\\host-ko-390-match.png",
+    "sha256": "6E0A21CB3F1030BA4F1CF2BF46D8C9D08ECC046D70696911A1AED64F26AC4BDE"
+  },
+  {
+    "source": "Client\\Evidence\\host-ko-390-notices-bottom.png",
+    "sha256": "EE92F0683DE2612865561121CC560A3770A7B3587AD2AC0631B9BD3F0B5B3936"
+  },
+  {
+    "source": "Client\\Evidence\\host-ko-390-result.png",
+    "sha256": "00A1EC3C6992DA5914612554E576B1A8E77FA7FA73EFC2F2B6E0286BE9F506F6"
+  },
+  {
+    "source": "Client\\Evidence\\host-ko-390-settings.png",
+    "sha256": "E537B05385BF17F2DF4F19F0538EFD910CA6C75F8B427045A0EC223DADA41F57"
+  }
+]

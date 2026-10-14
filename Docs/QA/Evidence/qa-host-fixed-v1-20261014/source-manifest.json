@@ -1,0 +1,50 @@
+[
+  {
+    "source": "Client/Assets/StageGame/Scripts/UI/HostLayout.cs",
+    "sha256": "3F35560AE219719C7A4ECAA265D6E7F48B517123DC210E02D5649DDB8B30E165"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/UI/SafeAreaFitter.cs",
+    "sha256": "0B55A9E30DF61CCCEE80B26CC2DC6EBF2DAE2292F69AA6806CE40466A8B68E51"
+  },
+  {
+    "source": "Client/Assets/WebGLTemplates/StageGamePortrait/host-layout.js",
+    "sha256": "187B6162FE987A784D66FB6F929EC64C4885D8BA2A5B5A7E176AF16DFC9DAC25"
+  },
+  {
+    "source": "Client/Assets/StageGame/Plugins/WebGL/HostInsets.jslib",
+    "sha256": "99C4A9D5194FD49B8B273E38AE032E034195F774A27D9A77EAC08B525F322C40"
+  },
+  {
+    "source": "Client/HOST-UI-REQUEST.json",
+    "sha256": "E14FB093C96CAE51D73025851933B1CDB2010A7555D456574445D72BD59BE76A"
+  },
+  {
+    "source": "Docs/Management/CONTRACT.md",
+    "sha256": "AAA0451F270A71DCC6015C8472A46CC120B0A879CC3ED2968E4E0DB251F5B603"
+  },
+  {
+    "source": "Docs/Design/HOST-UI.md",
+    "sha256": "B30BCFC617C72B7A7905B90659592C88B01C194892DBCF8B7F53FE64D7F832BA"
+  },
+  {
+    "source": "Tests/HostLayoutHarness/HostLayoutHarness.csproj",
+    "sha256": "29DDDB98207D6CA50AEBBB97B55F038A7285DA944181EB39722AFDD7FE10E46D"
+  },
+  {
+    "source": "Tests/HostLayoutHarness/Program.cs",
+    "sha256": "968E9403BC3149987ACE479F8D9E4D507F942CD47CFC5387A553A3DE6813A4A8"
+  },
+  {
+    "source": "Tests/HostLayoutHarness/GeometryStubs.cs",
+    "sha256": "9A5ADFCFCDFF8868F0123DD8E20C8615145A6DA1D25279F14426168572680C0C"
+  },
+  {
+    "source": "Tests/test-host-bridge.cjs",
+    "sha256": "9AE97D5DF4755994DEA31A604E50C7981310C4F9CCF7864190554512CD461DBB"
+  },
+  {
+    "source": "Tests/run-host-independent.ps1",
+    "sha256": "DA399AC37E8F923056D54AA04A181F98FF75687957F71B4989963881978B06FC"
+  }
+]

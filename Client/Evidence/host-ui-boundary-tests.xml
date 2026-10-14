@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="8" result="Passed" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-14 11:57:24Z" end-time="2026-10-14 11:57:25Z" duration="0.9816506">
+  <test-suite type="TestSuite" id="1000" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="50" result="Passed" start-time="2026-10-14 11:57:24Z" end-time="2026-10-14 11:57:25Z" duration="0.981651" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1060" name="StageGame.Tests.dll" fullname="C:/Github/StageGame/Client/Library/ScriptAssemblies/StageGame.Tests.dll" runstate="Runnable" testcasecount="50" result="Passed" start-time="2026-10-14 11:57:24Z" end-time="2026-10-14 11:57:25Z" duration="0.942268" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="43392" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1061" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="50" result="Passed" start-time="2026-10-14 11:57:24Z" end-time="2026-10-14 11:57:25Z" duration="0.941694" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1062" name="Tests" fullname="StageGame.Tests" runstate="Runnable" testcasecount="50" result="Passed" start-time="2026-10-14 11:57:24Z" end-time="2026-10-14 11:57:25Z" duration="0.941195" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1030" name="HostLayoutTests" fullname="StageGame.Tests.HostLayoutTests" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-14 11:57:23Z" end-time="2026-10-14 11:57:23Z" duration="0.053370" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1035" name="BrowserFallbackAndExplicitControlsUseCssCoordinates" fullname="StageGame.Tests.HostLayoutTests.BrowserFallbackAndExplicitControlsUseCssCoordinates" methodname="BrowserFallbackAndExplicitControlsUseCssCoordinates" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" seed="1432805907" result="Passed" start-time="2026-10-14 11:57:23Z" end-time="2026-10-14 11:57:23Z" duration="0.010508" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1037" name="InvalidInsetsFallBackToZeroWithoutRemovingHostAllowance" fullname="StageGame.Tests.HostLayoutTests.InvalidInsetsFallBackToZeroWithoutRemovingHostAllowance" methodname="InvalidInsetsFallBackToZeroWithoutRemovingHostAllowance" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" seed="1106823685" result="Passed" start-time="2026-10-14 11:57:23Z" end-time="2026-10-14 11:57:23Z" duration="0.000307" asserts="0">
+              <properties />
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1034" name="OsInsetsAreMergedOnceAndHostBandIsBelowThem" fullname="StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-14 11:57:23Z" end-time="2026-10-14 11:57:23Z" duration="0.001620" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1031" name="OsInsetsAreMergedOnceAndHostBandIsBelowThem(1)" fullname="StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem(1)" methodname="OsInsetsAreMergedOnceAndHostBandIsBelowThem" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" seed="703923130" result="Passed" start-time="2026-10-14 11:57:23Z" end-time="2026-10-14 11:57:23Z" duration="0.000256" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1032" name="OsInsetsAreMergedOnceAndHostBandIsBelowThem(2)" fullname="StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem(2)" methodname="OsInsetsAreMergedOnceAndHostBandIsBelowThem" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" seed="1632988981" result="Passed" start-time="2026-10-14 11:57:23Z" end-time="2026-10-14 11:57:23Z" duration="0.000037" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1033" name="OsInsetsAreMergedOnceAndHostBandIsBelowThem(3)" fullname="StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem(3)" methodname="OsInsetsAreMergedOnceAndHostBandIsBelowThem" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" seed="436638795" result="Passed" start-time="2026-10-14 11:57:23Z" end-time="2026-10-14 11:57:23Z" duration="0.000027" asserts="0">
+                <properties />
+              </test-case>
+            </test-suite>
+            <test-case id="1038" name="SavedGraphicsAndSecondaryLicenseMenuKeepPrefabReferences" fullname="StageGame.Tests.HostLayoutTests.SavedGraphicsAndSecondaryLicenseMenuKeepPrefabReferences" methodname="SavedGraphicsAndSecondaryLicenseMenuKeepPrefabReferences" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" seed="1194003031" result="Passed" start-time="2026-10-14 11:57:23Z" end-time="2026-10-14 11:57:23Z" duration="0.030476" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1036" name="SideInsetsMergePerEdgeAndOversizedInsetsStayInsideScreen" fullname="StageGame.Tests.HostLayoutTests.SideInsetsMergePerEdgeAndOversizedInsetsStayInsideScreen" methodname="SideInsetsMergePerEdgeAndOversizedInsetsStayInsideScreen" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" seed="1243508957" result="Passed" start-time="2026-10-14 11:57:23Z" end-time="2026-10-14 11:57:23Z" duration="0.002187" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1050" name="PlayFlowTests" fullname="StageGame.Tests.PlayFlowTests" classname="StageGame.Tests.PlayFlowTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-10-14 11:57:24Z" end-time="2026-10-14 11:57:25Z" duration="0.934074" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1052" name="HostProfilesKeepAllScreensBelowControlsAndPreserveLicenseScroll" fullname="StageGame.Tests.PlayFlowTests.HostProfilesKeepAllScreensBelowControlsAndPreserveLicenseScroll" methodname="HostProfilesKeepAllScreensBelowControlsAndPreserveLicenseScroll" classname="StageGame.Tests.PlayFlowTests" runstate="Runnable" seed="782412145" result="Passed" start-time="2026-10-14 11:57:23Z" end-time="2026-10-14 11:57:25Z" duration="2.078384" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Capture] host-ko-390-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-settings: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-notices-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-help: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-result: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-320-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-320-settings: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-320-notices-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-320-help: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-320-match: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-320-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-320-result: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-settings: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-notices-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-help: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-result: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-settings: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-notices-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-help: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-result: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-320-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-320-settings: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-320-notices-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-320-help: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-320-match: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-320-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-320-result: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-settings: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-notices-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-help: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-result: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+Saving results to: C:\Github\StageGame\Client\Logs\host-ui-boundary-tests.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

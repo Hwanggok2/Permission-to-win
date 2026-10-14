@@ -1,0 +1,31 @@
+{
+  "createdDateSeoul": "2026-10-14",
+  "creator": "StageGame Client; geometric rasterization in SoftUiBuilder.cs",
+  "origin": "Original code-generated white antialiased rounded rectangle and subtly shaded circular disc. No external image/reference copied; no image-generation service used.",
+  "generation": "Unity Texture2D RGBA32; pixel centers; signed-distance rounded square96/radius24; disc128/radius62; deterministic geometry",
+  "import": "Single sprite; FullRect mesh; clamp; bilinear; no mipmaps; rectangle border26 on all sides",
+  "usage": "Nine-slice references on common panels/buttons/stage card/board and markers; disc references on saved cells and lobby dots. Existing nested prefab structure retained.",
+  "preservation": {
+    "path": "Assets/StageGame/Art/Disc.png",
+    "sha256": "C4E0B1DB15621A5204822BFF94B80FCA8DDAA8BF53947BF576CAE4439A2D6018",
+    "statement": "Original Disc.png and metadata retained, no user artwork deleted. Generator returns existing recognized assets without replacing pixels."
+  },
+  "thirdPartyNoticeChange": "None: new geometric assets are original project artwork. Existing font/Unity notices retained in full.",
+  "files": [
+    {
+      "path": "Assets/StageGame/Art/SoftUI/RoundRect96.png",
+      "bytes": 1115,
+      "sha256": "D6015AB3B77C2DA03898A7F7DB366751EEDB356B289D46F3796B152EA4DC4BD5"
+    },
+    {
+      "path": "Assets/StageGame/Art/SoftUI/SoftDisc128.png",
+      "bytes": 2597,
+      "sha256": "2F5F2CDC96F4AD8F3BFD05692693BB9AB904E400BFBEE001F5FCFAD65804FAD3"
+    },
+    {
+      "path": "Assets/StageGame/Editor/SoftUiBuilder.cs",
+      "bytes": 11904,
+      "sha256": "3AD73294D2583AB6CA32DF5217EDBA067CCF41C746A895913CD560776BE0F2A9"
+    }
+  ]
+}

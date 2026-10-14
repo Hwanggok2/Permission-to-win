@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101b2b">
+  <title>{{{ PRODUCT_NAME }}}</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #080f1b; }
+    :root { --os-top: env(safe-area-inset-top, 0px); --os-right: env(safe-area-inset-right, 0px); --os-bottom: env(safe-area-inset-bottom, 0px); --os-left: env(safe-area-inset-left, 0px); --content-top: 64px; }
+    #player { position: relative; width: 100%; height: 100%; background: #101b2b; }
+    #unity-canvas { width: 100%; height: 100%; display: block; outline: none; touch-action: none; }
+    #loading, #error { position: absolute; inset: 0; display: grid; place-content: center; padding: 28px; color: #f1f5f9; font: 16px/1.6 system-ui, sans-serif; text-align: center; background: #101b2b; }
+    #loading strong { color: #6cedc7; font-size: 27px; margin-bottom: 14px; }
+    progress { width: min(65vw, 280px); margin-top: 20px; accent-color: #6cedc7; }
+    [hidden] { display: none !important; }
+    #host-preview { position: fixed; inset: 0 0 auto; height: var(--content-top); z-index: 10; pointer-events: none; border-bottom: 1px dashed #ffcc88; background: #111827aa; font: 10px system-ui,sans-serif; color: #ffcc88; }
+    #host-preview small { position: absolute; bottom: 4px; left: 8px; }
+    #host-preview .controls { position: absolute; top: calc(var(--host-os-top) + 10px); right: calc(var(--host-os-right) + 10px); display: flex; gap: 10px; font-size: 24px; }
+    #host-preview .controls span { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 18px; background: #25364c; color: white; }
+  </style>
+</head>
+<body>
+  <main id="player">
+    <canvas id="unity-canvas" width="720" height="1280" tabindex="0" aria-label="StageGame"></canvas>
+    <div id="loading"><strong>StageGame</strong><span>Loading… / 불러오는 중…</span><progress value="0" max="1"></progress></div>
+    <div id="error" role="alert" hidden></div>
+  </main>
+  <aside id="host-preview" hidden aria-hidden="true"><small>HOST PREVIEW · simulated controls</small><div class="controls"><span>···</span><span>×</span></div></aside>
+  <script src="host-layout.js"></script>
+  <script src="ui-text.js"></script>
+  <script>
+    const canvas = document.getElementById('unity-canvas');
+    const loading = document.getElementById('loading');
+    const failure = document.getElementById('error');
+    let uiText;
+    window.stageGameLocalize = language => {
+      uiText = window.stageGameUiText?.languages.find(item => item.code === language);
+      if (!uiText) return;
+      document.documentElement.lang = language;
+      document.title = uiText.title;
+      canvas.setAttribute('aria-label', uiText.canvasLabel);
+      loading.querySelector('strong').textContent = uiText.title;
+      loading.querySelector('span').textContent = uiText.loading;
+      if (!failure.hidden) failure.textContent = uiText.error;
+    };
+    let language = 'ko';
+    try { if (localStorage.getItem('stagegame.language') === 'en') language = 'en'; } catch (error) {}
+    window.stageGameLocalize(language);
+    const fail = message => { console.error(message); loading.hidden = true; failure.hidden = false; failure.textContent = uiText?.error || '다시 실행해 주세요. / Please reload.'; };
+    const loader = document.createElement('script');
+    loader.src = 'Build/{{{ LOADER_FILENAME }}}';
+    loader.onerror = () => fail('Game loader failed.');
+    loader.onload = () => createUnityInstance(canvas, {
+      dataUrl: 'Build/{{{ DATA_FILENAME }}}',
+      frameworkUrl: 'Build/{{{ FRAMEWORK_FILENAME }}}',
+      codeUrl: 'Build/{{{ CODE_FILENAME }}}',
+      streamingAssetsUrl: 'StreamingAssets',
+      companyName: {{{ JSON.stringify(COMPANY_NAME) }}},
+      productName: {{{ JSON.stringify(PRODUCT_NAME) }}},
+      productVersion: {{{ JSON.stringify(PRODUCT_VERSION) }}},
+      devicePixelRatio: Math.min(window.devicePixelRatio || 1, 2),
+      autoSyncPersistentDataPath: true,
+      showBanner: (message, type) => { if (type === 'error') fail(message); else console.warn(message); }
+    }, value => { loading.querySelector('progress').value = value; }).then(instance => {
+      window.stageGameInstance = instance;
+      loading.hidden = true;
+      canvas.focus();
+    }).catch(fail);
+    document.body.appendChild(loader);
+  </script>
+</body>
+</html>

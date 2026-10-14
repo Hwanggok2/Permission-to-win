@@ -76,7 +76,7 @@ namespace StageGame.Tests
             }
             foreach (var button in root.GetComponentsInChildren<Button>(true))
             {
-                if (button.name.StartsWith("Column_")) continue; // 7 columns remain 47.7 CSS px each at 390 wide.
+                if (button.name.StartsWith("Column_")) continue; // Final CSS hitboxes are covered by HostProfilesKeepAllScreensBelowControlsAndPreserveLicenseScroll.
                 var rect = (RectTransform)button.transform;
                 Assert.GreaterOrEqual(rect.sizeDelta.y, 100, button.name + " height at 720 reference");
                 Assert.GreaterOrEqual(rect.sizeDelta.x, 100, button.name + " width at 720 reference");

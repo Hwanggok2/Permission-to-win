@@ -6,7 +6,7 @@
 
 공통 실행: `Tests/run-independent.ps1 -RunId <새 ID>`. .NET 10.0.8에서 스냅샷 실제 소스를 컴파일한다. 규칙/AI/광고 상태는 실제 순수 C# 실행이며, ProgressStore와 GameApp은 `JsonUtility`, `PlayerPrefs`, UI/코루틴에 명시적인 대체 구현을 사용했다. 실제 Unity/디스크/SDK 동작까지 확인한 것은 아니다.
 
-**최신 체크포인트:** 독립 코어 29묶음, 클라이언트 Unity 42/42 및 총괄의 한영/리사이즈 재시험을 확인했다. QA-001~005·QA-007~008 및 BAL-001은 명시한 범위에서 재검증 통과했다. QA-006은 재현 좌표 오류로 기각했다. **확인된 열린 제품 결함 0건**. [최종 다국어 증거](Evidence/qa-l10n-integration-final-20261014/results.json)를 연결했다. 기존 core v4 21묶음·데이터 28+3 검사·30/30 승리 예시는 아래 이력과 증거에 보존한다. 실제 기기/공식 테스트 광고/성능/사람 플레이/IAP·서버/출시 gate는 남는다.
+**최신 체크포인트:** 확인된 열린 결함 **0건**. QA-009는 독립 호스트14묶음 통과로 종결했다. Client 전체 Unity49/49·수정 관련8/8·본문 확대 후 화면1/1 및 [본문30 최종 빌드/총괄 브라우저 연결](Evidence/qa-host-integration-final-20261014/results.json)을 확인했다. 실행 수는 중복 범위다. QA-001~005·QA-007~008 및 BAL-001 종결, QA-006 기각과 [기존 다국어 증거](Evidence/qa-l10n-integration-final-20261014/results.json)를 유지한다. 실제 기기/공식 광고/성능/사람 플레이/IAP·서버/출시 gate는 남는다.
 
 ## QA-001 — 저장 실패 시 종료 판에서 결과 화면으로 이동하지 못함
 
@@ -129,3 +129,15 @@
 - 재현/회귀 증거: 클라이언트 `layout-before.xml`의 동일 회귀는 수정 전 실패(기대 0.375, 실제 1.0), 최종 XML에서는 통과했고 전체 **42/42**다. QA가 Unity를 실행한 결과가 아니다.
 - 총괄 최종 브라우저: 390 설정 프레임/닫기 **346/54px → 재로드 없이 320에서 284/44px → 영어 선택 → 390 복귀에서 크기/영어 유지 → X로 로비**. 콘솔 error/warn `[]`, 한국어 복귀·viewport 초기화. QA는 [최종 캡처와 보고](Evidence/qa-l10n-integration-final-20261014/Docs/Management/Evidence/localization-browser-20261014/README.md)를 읽어 확인했다.
 - 종료 범위: 결함이 발생한 크기 변경과 언어/닫기 입력 회귀를 직접 확인한 총괄 증거로 종결한다. 기존 언어/대국 7소스·JSON은 변경이 없어 앞선 한영 전환·재로드 후 2/30 해금·9수 승리 증거를 함께 사용하며 모든 대국을 다시 실행했다고 기록하지 않는다. 회전·실기기 안전영역/터치·장시간 저장 내구성은 일반 미검증 범위로 남긴다.
+
+## QA-009 — 호스트 inset의 비유한/float32 범위 입력 방어 미흡
+
+- 심각도/상태: **낮음(P3), 수정 및 독립 재검사 완료 / 종결**. 정상적인 실제 Toss 입력에서 발생했다는 증거는 없다.
+- 독립 재현 A: `HostLayout.ContentArea`에 NaN inset을 직접 전달하면 Rect가 NaN을 포함한다. 숫자 Unity API 대체 환경의 실제 HostLayout 소스 실행이다. 현재 JS의 NaN 정리는 통과하므로 실제 SDK 경로에서 이 NaN이 유입됐다고 단정하지 않는다.
+- 독립 재현 B: `stageGameHostLayout.setInsets({left:1e300,top:1e300,right:1e300,bottom:1e300},1e300)` 후 `StageGameReadHostInsets`로 전달하면 HEAPF32에 Infinity가 기록된다. JS `Number.isFinite`만으로는 float32 표현 범위를 보장하지 못한다. 실제 JS/jslib·Node VM 대체 환경에서 확인했다.
+- 기대: 외부 입력·숫자 변환 경계에서 비유한값과 표현 범위를 벗어난 값의 처리 정책을 정하고 유한한 좌표만 렌더링 계층에 전달한다. 과도한 inset의 빈 영역은 최소 지원 크기/콘텐츠 표시 정책과 구분한다.
+- 제한: B의 Infinity inset은 이번 C# 테스트에서 유한한 빈 영역으로 clamp됐다. B가 A의 NaN 출력으로 곧바로 이어진다는 증거는 아니다. 브라우저 UI 소실/충돌은 아직 재현하지 않았다.
+- 증거: [C# 실패](Evidence/qa-host-pre-v1-20261014/geometry-results.json), [브리지 실패](Evidence/qa-host-pre-v1-20261014/bridge-results.json), [고정 소스](Evidence/qa-host-pre-v1-20261014/source-manifest.json).
+- 수정: Client가 JS의 float32 표현 불가능한 inset을 0, controlsBottom을 -1로 정규화하고 C#의 NaN/Infinity inset도 0으로 처리한다. 64px 제품 예약은 유지한다.
+- 수정 확인: [독립 C# 8/8](Evidence/qa-host-fixed-v1-20261014/geometry-results.json), [JS/브리지 6/6](Evidence/qa-host-fixed-v1-20261014/bridge-results.json). 기존 실패 입력에 대해 유한값 여부뿐 아니라 기대 Rect `(0,0,320,504)`, 브리지 `[0,0,0,0,390,844,-1]`, CSS 상단 `64px`까지 확인했다. 정상 inset/좌표/resize 회귀도 통과했고 실행 중 소스 변경은 없었다.
+- 종료 범위: 두 수치 경계 결함의 소스 독립 재현·수정 확인으로 종결한다. Client의 관련 Unity8/8 증거를 [별도 보존](Evidence/qa-host-editor-v1-20261014/results.json)했으며 호스트4소스가 독립 검사 스냅샷과 같다. 이후 본문30 [최종 빌드/브라우저 연결](Evidence/qa-host-integration-final-20261014/results.json)에서도 동일 소스를 확인했다. 실제 Toss·기기 검증은 별도다.

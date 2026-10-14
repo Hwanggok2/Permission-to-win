@@ -1,0 +1,19 @@
+{
+  "dateSeoul": "2026-10-14",
+  "reviewer": "QA; image inspection only",
+  "source": "Client Unity Editor RenderTexture captures, preserved under Client/Evidence; hashes in source-manifest.json",
+  "reviewed320": {
+    "languages": ["ko", "en"],
+    "screens": ["lobby", "settings", "match", "help", "confirm", "result", "notices-bottom"],
+    "count": 14
+  },
+  "reviewed390": ["host-ko-390-lobby.png", "host-ko-390-match.png", "host-en-390-settings.png", "host-en-390-notices-bottom.png"],
+  "observations": [
+    "No observed clipping or overlap of primary text and buttons in these 18 images.",
+    "UI remains below the reserved upper region; mock Toss control pixels are absent from Editor captures.",
+    "Rounded panels, buttons and board cells are visually consistent.",
+    "License entry is visually smaller and subdued; screenshot alone cannot prove its rectangular hit target.",
+    "License bottom captures show the final legal paragraphs and close button. A partially clipped first line is consistent with scrolling inside the viewport."
+  ],
+  "limits": "No browser/device use or pixel hitbox measurement by QA. Pointer routing, drag scrolling, loading/error screens, extreme landscape and empty content area are not demonstrated by these images. Client XML and test source separately cover Editor geometry and directly invoked events."
+}

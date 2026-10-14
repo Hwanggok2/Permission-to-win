@@ -1,0 +1,31 @@
+{
+  "method": "QA read/hash comparison of preserved root evidence; no QA browser execution",
+  "rootArtifactMatches": [
+    {
+      "path": "Client/Builds/WebGL/Build/WebGL.wasm",
+      "matches": true
+    },
+    {
+      "path": "Client/Builds/WebGL/Build/WebGL.data",
+      "matches": true
+    },
+    {
+      "path": "Client/Builds/WebGL/index.html",
+      "matches": true
+    },
+    {
+      "path": "Client/Builds/WebGL/host-layout.js",
+      "matches": true
+    },
+    {
+      "path": "Client/Builds/Android/StageGame-development.apk",
+      "matches": true
+    }
+  ],
+  "consoleEntryCount": 0,
+  "apkNoticeReportMatchesFinalApk": true,
+  "hostSourceMatchCount": 4,
+  "unchangedCoreDataCount": 13,
+  "scope": "Final legal body 30 build; browser license and resize retest; initial functional captures used preceding body24 build",
+  "actualTossDevice": false
+}

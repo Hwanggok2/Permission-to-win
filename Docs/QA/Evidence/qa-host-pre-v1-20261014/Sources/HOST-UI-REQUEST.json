@@ -1,0 +1,15 @@
+{
+  "status": "STRUCTURE_REVIEWED__HOST_DIMENSION_CONTRACT_PENDING__ART_PREPARATION",
+  "dateSeoul": "2026-10-14",
+  "owner": "Client only; root controls browser and integration; no commits/push",
+  "currentLayout": "WebGL CSS fits a 9:16 canvas into viewport minus CSS env OS insets. Unity CanvasScaler + SafeAreaFitter applies Screen.safeArea and fits saved 720x1280 content. SafeAreaFitter now uses willRenderCanvases and tracks rect changes.",
+  "contractQuestionsForRoot": [
+    "Confirm official host navigation reservation in CSS px and whether its top coordinate includes OS/status-bar inset.",
+    "Prefer a single WebGL wrapper reservation for all screens, with Unity aware that CSS has already handled OS insets; avoid subtracting the host gap again inside Unity.",
+    "Confirm fallback/default when Toss SDK is absent. Android native should use Screen.safeArea only unless explicitly given a host inset.",
+    "At 320x568, reserving host height reduces canvas width; license touch area needs explicit verification rather than assuming 100 reference units still equal 44 CSS px."
+  ],
+  "artPlan": "Generate new deterministic antialiased round-rectangle nine-slice and soft-disc sprites under Client/Assets/StageGame/Art/SoftUI/. Preserve old assets. Apply saved sprite references to common panel/button/board/cell prefabs and existing instances without recreating UI.",
+  "licenseMenuPlan": "Retain existing localized legal_title and scrollable full text. Use a visually small secondary text menu inside a sufficiently large transparent saved button hit target.",
+  "verificationPlan": "Saved nested prefab bindings; Korean/English 30-stage text fits; host/OS inset ownership and unit conversion; all screen/modal top bounds; 390->320->390 reflow; license hit/scroll; Unity tests and both development builds. Browser and actual Toss host verification are root-owned; SDK/device integration remains unverified."
+}

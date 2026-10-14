@@ -1,0 +1,32 @@
+{
+  "passed": 5,
+  "failed": 1,
+  "results": [
+    {
+      "name": "bridge.css_fallback_uses_css_units",
+      "status": "PASS"
+    },
+    {
+      "name": "bridge.supplied_insets_replace_fallback_and_actual_controls_union",
+      "status": "PASS"
+    },
+    {
+      "name": "bridge.negative_nan_and_infinite_javascript_numbers_sanitize",
+      "status": "PASS"
+    },
+    {
+      "name": "bridge.preview_is_explicit_and_resize_refreshes_fallback",
+      "status": "PASS"
+    },
+    {
+      "name": "bridge.jslib_pointer_order_and_no_dpr_multiplication",
+      "status": "PASS"
+    },
+    {
+      "name": "bridge.finite_javascript_values_cannot_overflow_float32",
+      "status": "FAIL",
+      "error": "finite JavaScript inputs overflow HEAPF32"
+    }
+  ],
+  "limits": "Actual JS/jslib executed in Node VM with explicit DOM/event/memory doubles. No browser, Toss SDK, pixel layout or pointer interaction."
+}

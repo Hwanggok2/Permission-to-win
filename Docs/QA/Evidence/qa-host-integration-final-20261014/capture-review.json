@@ -1,0 +1,21 @@
+{
+  "dateSeoul": "2026-10-14",
+  "method": "QA image inspection; browser interaction performed by root, Editor rendering performed by Client",
+  "reviewedFinalBrowser": [
+    "final-ko-notices-top-320.jpg",
+    "final-ko-notices-bottom-320.jpg",
+    "final-ko-settings-320.jpg",
+    "final-ko-settings-390.jpg"
+  ],
+  "reviewedFinalEditor": [
+    "host-en-320-notices-bottom.png",
+    "host-en-390-notices-bottom.png"
+  ],
+  "observations": [
+    "Final body30 license text is visibly larger; full final paragraph remains visible at scroll bottom.",
+    "Close buttons, modal titles and major settings controls show no observed clipping or overlap.",
+    "Browser mock controls and boundary at123 are above the game/modal graphics in these captures.",
+    "Small license menu label remains visually secondary. Hit target and actual pointer behavior come from separate Unity/root evidence."
+  ],
+  "limits": "These six images supplement the earlier body24 eighteen-image review. Do not describe all earlier interactions as rerun on final body30. Screenshot inspection does not prove pointer routing, real Toss controls, device behavior, landscape usability, loading/error overlays, or all possible insets."
+}

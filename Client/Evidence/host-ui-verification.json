@@ -1,0 +1,371 @@
+{
+  "verifiedAtUtc": "2026-10-14T12:04:37.526469Z",
+  "contract": "Docs/Management/CONTRACT.md v4",
+  "reference": "720x960",
+  "reservationCss": 64,
+  "normalization": "Nonfinite CSS insets and values beyondFloat32 range become0; controlsBottom invalid becomes-1. Host allowance remains64.",
+  "minimumViewport": "320x568 OS top59/bottom34, zero side insets",
+  "minimumNormalHitCss": 47.09375,
+  "minimumColumnHitCss": 44.035714285714285,
+  "tests": {
+    "total": 49,
+    "passed": 49,
+    "failed": 0,
+    "file": "Evidence/unity-tests.xml",
+    "log": "Logs/host-ui-tests.log",
+    "scope": "Full regression after compact UI and host layout",
+    "targetedAfterBoundaryChange": {
+      "total": 8,
+      "passed": 8,
+      "failed": 0,
+      "file": "Evidence/host-ui-boundary-tests.xml",
+      "log": "Logs/host-ui-boundary-tests.log",
+      "scope": "Final HostLayout/host rendering and license scroll after QA009 normalization"
+    },
+    "uniquePassingTests": 50,
+    "note": "Full49 + boundary8 + finalUI1;50 distinct passing test cases. Four directional-array cases share one NUnit fullname. Not a single50-test execution.",
+    "finalUiAfterLegalFontChange": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "file": "Evidence/host-ui-final-render.xml",
+      "log": "Logs/host-ui-final-render.log",
+      "scope": "Final saved legal body30; ko/en,390->320->390,7screens,all44px button bounds,legal bottom scroll and28 final captures"
+    }
+  },
+  "captures": [
+    {
+      "path": "Evidence/host-en-320-confirm.png",
+      "bytes": 19302,
+      "sha256": "85F49929123F49A16D532C1924B498301D685394785B131619226C19132A7FDA"
+    },
+    {
+      "path": "Evidence/host-en-320-help.png",
+      "bytes": 17713,
+      "sha256": "E3DA1AEC2F509CC594D21AEA4A45FED0505D888A01B1DEF66CC9E9B56DEED452"
+    },
+    {
+      "path": "Evidence/host-en-320-lobby.png",
+      "bytes": 28606,
+      "sha256": "4943B394AEC0C74EC7AB9F2F02FE52F3EF4E815C01F080AD052E20A238CD34C2"
+    },
+    {
+      "path": "Evidence/host-en-320-match.png",
+      "bytes": 33852,
+      "sha256": "93AE5FA0D3058C408E47C73F73F1F5E9ADC2C456371C1461EF32473DC6A3CFC1"
+    },
+    {
+      "path": "Evidence/host-en-320-notices-bottom.png",
+      "bytes": 44990,
+      "sha256": "7E6EC7B645181E994C4CFEFD6F3003960D9FFC4519BA26B69270B120B1354468"
+    },
+    {
+      "path": "Evidence/host-en-320-result.png",
+      "bytes": 20440,
+      "sha256": "D4435A05A913B80E375A3D90F357398D13FFCB99E2F3919CE321208B5556B722"
+    },
+    {
+      "path": "Evidence/host-en-320-settings.png",
+      "bytes": 18538,
+      "sha256": "05D79AED6A57063C4598B75691607DCCC4284B1533E5ED6F87973A82E33112DE"
+    },
+    {
+      "path": "Evidence/host-en-390-confirm.png",
+      "bytes": 28533,
+      "sha256": "425FC90E9887E09ECAA3FE4A81C4D3DF2D5ED1A54144559352C421D12A2D7BF6"
+    },
+    {
+      "path": "Evidence/host-en-390-help.png",
+      "bytes": 26945,
+      "sha256": "1954BDC2F3E7BD2D715C4C59DC0F610DD1DEB7E67CE9BB4F68E67B18B89D7DE8"
+    },
+    {
+      "path": "Evidence/host-en-390-lobby.png",
+      "bytes": 42941,
+      "sha256": "3F917E8D6F1E1011619746204DB3B0425A0475C1007BDADC8A0CFD6637E08973"
+    },
+    {
+      "path": "Evidence/host-en-390-match.png",
+      "bytes": 49668,
+      "sha256": "1F2400D3310BFE0EE408D810796F1725F8ABDF913C6E2B50791A5AA07EE39DCF"
+    },
+    {
+      "path": "Evidence/host-en-390-notices-bottom.png",
+      "bytes": 67427,
+      "sha256": "A21789A56348DAF14B2741DA04B6CAF49A2AC8FF45C7688273CFEB6C915591BD"
+    },
+    {
+      "path": "Evidence/host-en-390-result.png",
+      "bytes": 29786,
+      "sha256": "F9894F69A71FBA5C9F70DBD8E6325D4334FBE9CBAF1B0A748A242FCF18919623"
+    },
+    {
+      "path": "Evidence/host-en-390-settings.png",
+      "bytes": 27006,
+      "sha256": "C68C374D4DFFB637BC62D10C8DA65D4FD09927F2354CCAEDA9AD37F39A35A6FB"
+    },
+    {
+      "path": "Evidence/host-ko-320-confirm.png",
+      "bytes": 18701,
+      "sha256": "3FA260187B232407A94D28C74570F873A0D827B8FC4D88EDAADF11C12153CFC0"
+    },
+    {
+      "path": "Evidence/host-ko-320-help.png",
+      "bytes": 17629,
+      "sha256": "1A8D162B20701533A827F92B3694B1B40C4EAECDEFD1946F313483D519B2BE3A"
+    },
+    {
+      "path": "Evidence/host-ko-320-lobby.png",
+      "bytes": 25394,
+      "sha256": "94ED98F85096C7B1A44B5175960BEAAC1220357F61D49427158FB6EE344AF663"
+    },
+    {
+      "path": "Evidence/host-ko-320-match.png",
+      "bytes": 32619,
+      "sha256": "F25E8161D3930CD02E1928452773FE208EE4FA5CF4E04F4F9253911EFF5201DE"
+    },
+    {
+      "path": "Evidence/host-ko-320-notices-bottom.png",
+      "bytes": 44183,
+      "sha256": "BD0211A1CB482BBC69EFF3B1937E1ED740C4B0B7ACB2264591B2B624CA80382C"
+    },
+    {
+      "path": "Evidence/host-ko-320-result.png",
+      "bytes": 19305,
+      "sha256": "AF49BCE077290A0161EDF4F78C574CDE4E283697FDD56EAE84D3C53C4E372924"
+    },
+    {
+      "path": "Evidence/host-ko-320-settings.png",
+      "bytes": 16892,
+      "sha256": "7AA28D0255D362BD438636F86115D20DBA3DF647E8753C481409405DA91142CB"
+    },
+    {
+      "path": "Evidence/host-ko-390-confirm.png",
+      "bytes": 27372,
+      "sha256": "99FEC2C7104819001A791630D3A7D4A2C14990410E27614B33C407D3079CC97A"
+    },
+    {
+      "path": "Evidence/host-ko-390-help.png",
+      "bytes": 26548,
+      "sha256": "830F53270C9A575CD45E2C2FEA3A3D524152CA58C2BFE821EE358EE962F5A693"
+    },
+    {
+      "path": "Evidence/host-ko-390-lobby.png",
+      "bytes": 36850,
+      "sha256": "63C4C996E8A6E532CDF5209388C33D2FA0D9B397B2AD0118CA048F657E6DF0EF"
+    },
+    {
+      "path": "Evidence/host-ko-390-match.png",
+      "bytes": 46940,
+      "sha256": "A929A3BA8FF338ADE82C1C52D81C5C40127C4F1C818E0411540DECE76AC6FD68"
+    },
+    {
+      "path": "Evidence/host-ko-390-notices-bottom.png",
+      "bytes": 66452,
+      "sha256": "B16527301CB6F9302D4527E5425DEE63E17E0FD2665956618CAED18C58B7D952"
+    },
+    {
+      "path": "Evidence/host-ko-390-result.png",
+      "bytes": 27337,
+      "sha256": "36DA1FFA6889BD0D15059115C273EAFF54758915C20E6264EDC2CFF822275D80"
+    },
+    {
+      "path": "Evidence/host-ko-390-settings.png",
+      "bytes": 25410,
+      "sha256": "39B6695CFB439FBCDE7EA0CBAF3EC326F8F87656BB77EE4E735A98871F10A6BC"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "Assets/StageGame/Prefabs/AppRoot.prefab",
+      "bytes": 137533,
+      "sha256": "C09D7E83F48B1FCC65491E3F2B9A92D7C315A811D84C0BAC7BD537C11EDF88A2"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/Board/Board.prefab",
+      "bytes": 216897,
+      "sha256": "6A097704967E6C5CB713D140ADF677767F9EAD93A69A1F84B808A3C8EF268921"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/Board/Cell.prefab",
+      "bytes": 4652,
+      "sha256": "F8DA99CA738CB9D2F5734476D4723CFCF6D156B0F54DF06305CFA948AE504E28"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/CloseButton.prefab",
+      "bytes": 6180,
+      "sha256": "9B61743FC5B16A5B9ACB451B06A3FEFC0195A4B9D1CE21B52A741B30AB13AEEC"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/ModalFrame.prefab",
+      "bytes": 13927,
+      "sha256": "BBFF4AC2C07FC27F3F1956D1DC805A42E5DF69C9CCC56AA5311BC98A29D67BF2"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/PrimaryButton.prefab",
+      "bytes": 6171,
+      "sha256": "F5D74DB2F74BD9333B0526F6727C5AA491820910E96907371B15CC1D0414A4C6"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/StageCard.prefab",
+      "bytes": 9520,
+      "sha256": "F719C59A122C7E35C706CF09DD7B2DD0ADBB9EC0BE2D580A6BA8A371D4CD1276"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/ConfirmModal.prefab",
+      "bytes": 21664,
+      "sha256": "466FFDAA4B2A3942B836373D46669BBA858157ADAD0569DC997757136E37BAFD"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/GameScreen.prefab",
+      "bytes": 66642,
+      "sha256": "B8AE406C921FEEB83AAC42643F69EECF8FABA2E460EDC7873023783EA8266516"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/HelpModal.prefab",
+      "bytes": 9169,
+      "sha256": "0B9AE5DAF1EB51996F755293695E18FE9A7648EA8098A9B7B3B54A5D37B4361D"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/LobbyScreen.prefab",
+      "bytes": 66240,
+      "sha256": "BC1ED0333CE71127E4577E8BA67D4C5DC04B92804B0D782A1E8FD36DD45A5C7E"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/NoticesModal.prefab",
+      "bytes": 16092,
+      "sha256": "D819F1BCFF3187A3711A41A2B768D29E7CA60F335A8FE3D1D8A6D6A4A09FEC8E"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/ResultModal.prefab",
+      "bytes": 36212,
+      "sha256": "BE2D35312FAC1A29EA07DF16FEFEF08C335EEF123960EAA2738B3709A28405E6"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/SettingsModal.prefab",
+      "bytes": 37944,
+      "sha256": "8D825C3CEE59DE9878CEA03E290E77ADAC7F2F31C15BD5DF065B9DF05E40220A"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/HostLayout.cs",
+      "bytes": 1762,
+      "sha256": "3F35560AE219719C7A4ECAA265D6E7F48B517123DC210E02D5649DDB8B30E165"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/SafeAreaFitter.cs",
+      "bytes": 3002,
+      "sha256": "0B55A9E30DF61CCCEE80B26CC2DC6EBF2DAE2292F69AA6806CE40466A8B68E51"
+    },
+    {
+      "path": "Assets/StageGame/Editor/SoftUiBuilder.cs",
+      "bytes": 11904,
+      "sha256": "3AD73294D2583AB6CA32DF5217EDBA067CCF41C746A895913CD560776BE0F2A9"
+    },
+    {
+      "path": "Assets/WebGLTemplates/StageGamePortrait/index.html",
+      "bytes": 4538,
+      "sha256": "FAFBA1FE74F7A15F2CBDFD04C5B482DD0C83EE90A5FAE53CAEEF9C080259BF95"
+    },
+    {
+      "path": "Assets/WebGLTemplates/StageGamePortrait/host-layout.js",
+      "bytes": 2002,
+      "sha256": "187B6162FE987A784D66FB6F929EC64C4885D8BA2A5B5A7E176AF16DFC9DAC25"
+    },
+    {
+      "path": "Assets/StageGame/Plugins/WebGL/HostInsets.jslib",
+      "bytes": 626,
+      "sha256": "99C4A9D5194FD49B8B273E38AE032E034195F774A27D9A77EAC08B525F322C40"
+    }
+  ],
+  "art": "Evidence/soft-ui-assets.json",
+  "browser": "PASS, root coordinator: preceding body24 functional checks plus final body30 license/scroll/close/390 return. Both scopes are recorded below. No Client browser execution.",
+  "realTossSdk": false,
+  "physicalDevice": false,
+  "legalBody": {
+    "fontSize": 30,
+    "minimumCssPx": 12.84375,
+    "menuFontSize": 26,
+    "finalCapture": "Evidence/host-en-320-notices-bottom.png",
+    "historicalCapture": "Evidence/notices.png is the earlier24-unit body capture; use final host images for current layout"
+  },
+  "rootBrowserReport": {
+    "result": "PASS",
+    "source": "Root coordinator report and saved browser evidence; Client read the report, inspected the final capture, and matched all5 artifact hashes. Client did not rerun the browser.",
+    "sourceThreadId": "01a138d9-7ede-70d0-ba36-e84a05e6b105",
+    "reportedDateSeoul": "2026-10-14",
+    "report": "Docs/Management/Evidence/host-ui-browser-20261014/README.md",
+    "finalArtifactManifest": "Docs/Management/Evidence/host-ui-browser-20261014/final-artifacts.json",
+    "finalArtifactsMatch": true,
+    "environment": "Local WebGL browser with simulated host inset; not Toss SDK or a physical phone",
+    "conditions": {
+      "viewports": [
+        "390x844",
+        "320x568"
+      ],
+      "osTopCss": 59,
+      "osBottomCss": 34,
+      "osLeftCss": 0,
+      "osRightCss": 0,
+      "reservedTopCss": 123,
+      "canvas": "Full viewport"
+    },
+    "initialFunctionalScope": {
+      "build": "Preceding legal body24 build",
+      "passed": [
+        "390->320->390 settings resize and English persistence",
+        "Padded license hit outside label at(52,440)",
+        "Board column input and AI response; leftmost edge at(10,363) on320",
+        "Pause/leave and help open/close"
+      ],
+      "stageVictoryRetested": false
+    },
+    "finalFontScope": {
+      "build": "Final legal body30 build, reloaded",
+      "passed": [
+        "320 license entry and enlarged text",
+        "Drag55 times to final uGUI notice paragraph",
+        "Close to settings and return to390",
+        "Reload retained Korean and2/30 progress",
+        "Default execution hides host mock overlay"
+      ],
+      "bodyCssApprox": 12.8
+    },
+    "consoleErrorsWarnings": [],
+    "consoleProof": "Docs/Management/Evidence/host-ui-browser-20261014/final-console.json",
+    "screenshots": [
+      "Docs/Management/Evidence/host-ui-browser-20261014/final-ko-settings-390.jpg",
+      "Docs/Management/Evidence/host-ui-browser-20261014/final-ko-settings-320.jpg",
+      "Docs/Management/Evidence/host-ui-browser-20261014/final-ko-notices-top-320.jpg",
+      "Docs/Management/Evidence/host-ui-browser-20261014/final-ko-notices-bottom-320.jpg"
+    ],
+    "artifacts": [
+      {
+        "path": "Client/Builds/WebGL/Build/WebGL.wasm",
+        "sha256": "FD86D320DB92967BBE3DDF6FFB9CA06C26120223E3034753413070792C53D581",
+        "bytes": 24387189
+      },
+      {
+        "path": "Client/Builds/WebGL/Build/WebGL.data",
+        "sha256": "72BBB0E061B59AD7EE3F72EF8C34A76F60B7B4CAEDA67184A2EFEB8B51D53407",
+        "bytes": 18747152
+      },
+      {
+        "path": "Client/Builds/WebGL/index.html",
+        "sha256": "53BDBF4813EA2CFE5A19E5C21B3B711CD6AD08AD1200254146D1AB3BA3C6C3CA",
+        "bytes": 4416
+      },
+      {
+        "path": "Client/Builds/WebGL/host-layout.js",
+        "sha256": "187B6162FE987A784D66FB6F929EC64C4885D8BA2A5B5A7E176AF16DFC9DAC25",
+        "bytes": 2002
+      },
+      {
+        "path": "Client/Builds/Android/StageGame-development.apk",
+        "sha256": "05E70261507378EEC397416566567802B49FB1173BC58A4F22A72488B3EE4B8D",
+        "bytes": 35559979
+      }
+    ],
+    "actualTossSdk": false,
+    "physicalDevice": false
+  }
+}

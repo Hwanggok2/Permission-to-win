@@ -1,0 +1,32 @@
+{
+  "verifiedAtUtc": "2026-10-14T12:08:40.2250853Z",
+  "scope": "Final legal body 30 build; browser license and resize retest; initial functional captures used preceding body24 build",
+  "actualTossDevice": false,
+  "artifacts": [
+    {
+      "path": "Client/Builds/WebGL/Build/WebGL.wasm",
+      "sha256": "FD86D320DB92967BBE3DDF6FFB9CA06C26120223E3034753413070792C53D581",
+      "bytes": 24387189
+    },
+    {
+      "path": "Client/Builds/WebGL/Build/WebGL.data",
+      "sha256": "72BBB0E061B59AD7EE3F72EF8C34A76F60B7B4CAEDA67184A2EFEB8B51D53407",
+      "bytes": 18747152
+    },
+    {
+      "path": "Client/Builds/WebGL/index.html",
+      "sha256": "53BDBF4813EA2CFE5A19E5C21B3B711CD6AD08AD1200254146D1AB3BA3C6C3CA",
+      "bytes": 4416
+    },
+    {
+      "path": "Client/Builds/WebGL/host-layout.js",
+      "sha256": "187B6162FE987A784D66FB6F929EC64C4885D8BA2A5B5A7E176AF16DFC9DAC25",
+      "bytes": 2002
+    },
+    {
+      "path": "Client/Builds/Android/StageGame-development.apk",
+      "sha256": "05E70261507378EEC397416566567802B49FB1173BC58A4F22A72488B3EE4B8D",
+      "bytes": 35559979
+    }
+  ]
+}

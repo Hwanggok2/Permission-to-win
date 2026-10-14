@@ -60,7 +60,7 @@ namespace StageGame.Tests
                     canvas.scaleFactor = scale;
                     Canvas.ForceUpdateCanvases(); yield return null;
                     Canvas.ForceUpdateCanvases();
-                    float expected = Mathf.Min(1f, safeRect.rect.width / 720f, safeRect.rect.height / 1280f);
+                    float expected = Mathf.Min(1f, safeRect.rect.width / fitter.referenceSize.x, safeRect.rect.height / fitter.referenceSize.y);
                     Assert.AreEqual(originalScreen, new Vector2Int(Screen.width, Screen.height));
                     Assert.AreEqual(expected, fitter.content.localScale.x, 0.001f, "Available rectangle changed with unchanged Screen size.");
                     Assert.AreEqual(expected, fitter.content.localScale.y, 0.001f);
@@ -68,6 +68,45 @@ namespace StageGame.Tests
                 }
             }
             finally { canvas.scaleFactor = oldScale; scaler.enabled = true; Canvas.ForceUpdateCanvases(); }
+        }
+
+        [UnityTest]
+        public IEnumerator HostProfilesKeepAllScreensBelowControlsAndPreserveLicenseScroll()
+        {
+            foreach (string language in new[] { "ko", "en" })
+            {
+                app.SetLanguage(language);
+                // The final 390 profile also checks returning from a smaller canvas without a Screen event.
+                foreach (var viewport in new[] { new Vector2Int(390, 844), new Vector2Int(320, 568), new Vector2Int(390, 844) })
+                {
+                    string prefix = $"host-{language}-{viewport.x}";
+                    app.ShowLobby();
+                    Capture(prefix + "-lobby", app, viewport.x, viewport.y, true);
+                    app.lobbySettings.onClick.Invoke(); yield return null;
+                    Capture(prefix + "-settings", app, viewport.x, viewport.y, true);
+                    app.noticesOpen.onClick.Invoke(); yield return null;
+                    var scroll = app.notices.GetComponentInChildren<ScrollRect>();
+                    Canvas.ForceUpdateCanvases();
+                    Assert.Greater(scroll.content.rect.height, scroll.viewport.rect.height);
+                    scroll.verticalNormalizedPosition = 0; Canvas.ForceUpdateCanvases();
+                    Assert.AreEqual(0, scroll.verticalNormalizedPosition, .001f);
+                    Assert.AreEqual(Resources.Load<TextAsset>("LegalNotices").text, app.noticesBody.text);
+                    Capture(prefix + "-notices-bottom", app, viewport.x, viewport.y, true);
+                    app.noticesClose.onClick.Invoke(); app.settingsClose.onClick.Invoke();
+                    app.lobbyHelp.onClick.Invoke(); yield return null;
+                    Capture(prefix + "-help", app, viewport.x, viewport.y, true);
+                    app.helpClose.onClick.Invoke(); app.play.onClick.Invoke(); yield return null;
+                    app.hint.onClick.Invoke(); yield return null;
+                    Capture(prefix + "-match", app, viewport.x, viewport.y, true);
+                    app.pause.onClick.Invoke(); yield return null;
+                    Capture(prefix + "-confirm", app, viewport.x, viewport.y, true);
+                    app.confirmResume.onClick.Invoke();
+                    var board = new ConnectFourBoard();
+                    foreach (int column in new[] { 0, 6, 1, 6, 2, 5 }) board.TryDrop(column);
+                    SetField("board", board); Invoke("RefreshBoard"); app.columns[3].onClick.Invoke(); yield return null;
+                    Capture(prefix + "-result", app, viewport.x, viewport.y, true);
+                }
+            }
         }
 
         [UnityTest]
@@ -281,16 +320,18 @@ namespace StageGame.Tests
         T GetField<T>(string field) => (T)typeof(GameApp).GetField(field, BindingFlags.Instance | BindingFlags.NonPublic).GetValue(app);
         void Invoke(string method, params object[] arguments) => typeof(GameApp).GetMethod(method, BindingFlags.Instance | BindingFlags.NonPublic).Invoke(app, arguments);
 
-        static void Capture(string name, GameApp game)
+        static void Capture(string name, GameApp game, int width = 720, int height = 1280, bool host = false)
         {
             if (SystemInfo.graphicsDeviceType == UnityEngine.Rendering.GraphicsDeviceType.Null) return;
             Directory.CreateDirectory("Evidence");
             var camera = Camera.main;
             var canvas = game.GetComponent<Canvas>();
             var scaler = game.GetComponent<CanvasScaler>();
+            var fitter = game.GetComponentInChildren<SafeAreaFitter>();
             float oldScale = canvas.scaleFactor;
             scaler.enabled = false; canvas.scaleFactor = 1;
-            var target = new RenderTexture(720, 1280, 24);
+            fitter.SetEditorHostPreview(host, new Vector2(width, height), new Vector4(0, 59, 0, 34));
+            var target = new RenderTexture(width, height, 24);
             camera.targetTexture = target;
             canvas.renderMode = RenderMode.ScreenSpaceCamera; canvas.worldCamera = camera; canvas.planeDistance = 1;
             canvas.pixelPerfect = true;
@@ -301,14 +342,54 @@ namespace StageGame.Tests
                 text.SetAllDirty();
             }
             Canvas.ForceUpdateCanvases();
+            if (host)
+            {
+                if (game.notices.activeSelf)
+                {
+                    // Font metrics can reflow when switching the camera render target; scroll after that layout.
+                    var scroll = game.notices.GetComponentInChildren<ScrollRect>();
+                    scroll.verticalNormalizedPosition = 0; Canvas.ForceUpdateCanvases();
+                    Assert.AreEqual(0, scroll.verticalNormalizedPosition, .001f);
+                }
+                var safe = new Rect(0, 34, width, height - 34 - 123);
+                foreach (var button in game.GetComponentsInChildren<Button>())
+                {
+                    var corners = new Vector3[4]; ((RectTransform)button.transform).GetWorldCorners(corners);
+                    var lo = RectTransformUtility.WorldToScreenPoint(camera, corners[0]);
+                    var hi = RectTransformUtility.WorldToScreenPoint(camera, corners[2]);
+                    Assert.GreaterOrEqual(hi.x - lo.x, 43.99f, name + " hit width: " + button.name);
+                    Assert.GreaterOrEqual(hi.y - lo.y, 43.99f, name + " hit height: " + button.name);
+                    Assert.GreaterOrEqual(lo.x, safe.xMin - .1f, name + " left: " + button.name);
+                    Assert.GreaterOrEqual(lo.y, safe.yMin - .1f, name + " bottom: " + button.name);
+                    Assert.LessOrEqual(hi.x, safe.xMax + .1f, name + " right: " + button.name);
+                    Assert.LessOrEqual(hi.y, safe.yMax + .1f, name + " top: " + button.name);
+                }
+                foreach (var text in game.GetComponentsInChildren<Text>())
+                {
+                    if (text == game.noticesBody) continue; // Intentionally extends inside the clipped legal ScrollRect.
+                    Assert.LessOrEqual(text.preferredHeight, text.rectTransform.rect.height + 2, name + " text: " + text.name + ": " + text.text);
+                    var corners = new Vector3[4]; text.rectTransform.GetWorldCorners(corners);
+                    Assert.LessOrEqual(RectTransformUtility.WorldToScreenPoint(camera, corners[2]).y, safe.yMax + .1f, name + " text top: " + text.name);
+                }
+                foreach (var graphic in fitter.content.GetComponentsInChildren<Graphic>())
+                {
+                    if (graphic == game.noticesBody) continue;
+                    var corners = new Vector3[4]; graphic.rectTransform.GetWorldCorners(corners);
+                    var lo = RectTransformUtility.WorldToScreenPoint(camera, corners[0]);
+                    var hi = RectTransformUtility.WorldToScreenPoint(camera, corners[2]);
+                    Assert.GreaterOrEqual(lo.y, safe.yMin - .1f, name + " graphic bottom: " + graphic.name);
+                    Assert.LessOrEqual(hi.y, safe.yMax + .1f, name + " graphic top: " + graphic.name);
+                }
+            }
             Debug.Log($"[Capture] {name}: screen={Screen.width}x{Screen.height}, canvas={canvas.pixelRect}, scale={canvas.scaleFactor}, ppu={game.stageTitle.pixelsPerUnit}, fontSize={game.stageTitle.fontSize}");
             camera.Render();
             var previous = RenderTexture.active; RenderTexture.active = target;
-            var image = new Texture2D(720, 1280, TextureFormat.RGB24, false);
-            image.ReadPixels(new Rect(0, 0, 720, 1280), 0, 0); image.Apply();
+            var image = new Texture2D(width, height, TextureFormat.RGB24, false);
+            image.ReadPixels(new Rect(0, 0, width, height), 0, 0); image.Apply();
             File.WriteAllBytes("Evidence/" + name + ".png", image.EncodeToPNG());
             RenderTexture.active = previous; camera.targetTexture = null;
             canvas.renderMode = RenderMode.ScreenSpaceOverlay; canvas.worldCamera = null;
+            fitter.SetEditorHostPreview(false, Vector2.zero, Vector4.zero);
             canvas.scaleFactor = oldScale; scaler.enabled = true;
             UnityEngine.Object.Destroy(image); UnityEngine.Object.Destroy(target);
         }

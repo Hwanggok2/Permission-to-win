@@ -1,0 +1,258 @@
+{
+  "verifiedAtUtc": "2026-10-14T12:04:37.526469Z",
+  "unity": "6000.3.15f1",
+  "project": "C:\\Github\\StageGame\\Client",
+  "tests": {
+    "total": 49,
+    "passed": 49,
+    "failed": 0,
+    "file": "Evidence/unity-tests.xml",
+    "log": "Logs/host-ui-tests.log",
+    "scope": "Full regression after compact UI and host layout",
+    "targetedAfterBoundaryChange": {
+      "total": 8,
+      "passed": 8,
+      "failed": 0,
+      "file": "Evidence/host-ui-boundary-tests.xml",
+      "log": "Logs/host-ui-boundary-tests.log",
+      "scope": "Final HostLayout/host rendering and license scroll after QA009 normalization"
+    },
+    "uniquePassingTests": 50,
+    "note": "Full49 + boundary8 + finalUI1;50 distinct passing test cases. Four directional-array cases share one NUnit fullname. Not a single50-test execution.",
+    "finalUiAfterLegalFontChange": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "file": "Evidence/host-ui-final-render.xml",
+      "log": "Logs/host-ui-final-render.log",
+      "scope": "Final saved legal body30; ko/en,390->320->390,7screens,all44px button bounds,legal bottom scroll and28 final captures"
+    }
+  },
+  "android": {
+    "build": "Succeeded",
+    "errors": 0,
+    "warnings": 0,
+    "package": "com.stagegame.prototype",
+    "version": "0.1.0",
+    "minSdk": 25,
+    "targetSdk": 36,
+    "architecture": "arm64-v8a",
+    "deviceTested": false,
+    "releaseSigned": false,
+    "latestBuildLog": "Logs/android-host-ui-final.log"
+  },
+  "webgl": {
+    "build": "Succeeded",
+    "errors": 0,
+    "warnings": 0,
+    "template": "StageGamePortrait",
+    "browserSmoke": "Root reports currenthost fullcanvas/top123 and390->320 settings/language/paddedlicensehit success on body24 build. Finalbody30 build ready; root final text/scroll retest pending.",
+    "browserProof": "../Docs/Management/Evidence/host-ui-browser-20261014/",
+    "appsInTossSdk": false,
+    "aitPackage": false,
+    "responsiveProof": "Evidence/unity-tests.xml; Evidence/host-ui-boundary-tests.xml; Evidence/host-*.png",
+    "latestBuildLog": "Logs/webgl-host-ui-final.log",
+    "responsiveSmoke": "Unity camera render coordinate assertions:390->320->390 withOS top59/bottom34 plushost64. Native/browser/device evidence separate."
+  },
+  "ads": "NoFillAds only. Mock completion is UNITY_EDITOR-only.",
+  "artifacts": [
+    {
+      "path": "Builds/Android/StageGame-development.apk",
+      "bytes": 35559979,
+      "sha256": "05E70261507378EEC397416566567802B49FB1173BC58A4F22A72488B3EE4B8D"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.wasm",
+      "bytes": 24387189,
+      "sha256": "FD86D320DB92967BBE3DDF6FFB9CA06C26120223E3034753413070792C53D581"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.data",
+      "bytes": 18747152,
+      "sha256": "72BBB0E061B59AD7EE3F72EF8C34A76F60B7B4CAEDA67184A2EFEB8B51D53407"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.framework.js",
+      "bytes": 761643,
+      "sha256": "F909F29D115947BE5BAB214FE3CD434A6197E6BDC2E24CE9C2933C64B58FAE08"
+    },
+    {
+      "path": "Builds/WebGL/index.html",
+      "bytes": 4416,
+      "sha256": "53BDBF4813EA2CFE5A19E5C21B3B711CD6AD08AD1200254146D1AB3BA3C6C3CA"
+    },
+    {
+      "path": "Builds/WebGL/ui-text.js",
+      "bytes": 448,
+      "sha256": "2D958DA273B7A6ACC2DFBD37EE24B034F0A82078A7BCA7755858A41C33A70FC8"
+    },
+    {
+      "path": "Builds/WebGL/host-layout.js",
+      "bytes": 2002,
+      "sha256": "187B6162FE987A784D66FB6F929EC64C4885D8BA2A5B5A7E176AF16DFC9DAC25"
+    }
+  ],
+  "gameData": [
+    {
+      "name": "stages.json",
+      "sha256": "2D04B124A42F0F3798AD942E9AACAB97EE34A25F05B380144CD70F75C3904992",
+      "matchesSource": true
+    },
+    {
+      "name": "ads.json",
+      "sha256": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A",
+      "matchesSource": true
+    },
+    {
+      "name": "strings.json",
+      "sha256": "ED5FD27463724F4789B2F5E96922316240F73BF73EBC9D663410F0758E0883C2",
+      "matchesSource": true
+    }
+  ],
+  "runtimeSources": [
+    {
+      "path": "Assets/StageGame/Scripts/Core/AiSearch.cs",
+      "sha256": "FEA609E5CC011D590C9BEDA3D401B3CCC420DF7E0C9FAD7EFA18F99A9D72F63B"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/ConnectFourBoard.cs",
+      "sha256": "5A57257861061D89B71E9758B6E352A96E08D22C2B686C85C5CD503B0F25FB36"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/GameData.cs",
+      "sha256": "72018B7041F6E255E5210B2BAD652117744D0BC7BAED9BFAC1CF70340AABB567"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/ProgressStore.cs",
+      "sha256": "074DE135B08DDBD15E7C605F54460D45981D2547D639054092FD4179A9300357"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/StringTable.cs",
+      "sha256": "8D133248463B3466690BCC76BD9BBB31F7BA1703CDF84E3FF6788F2AB4374A1B"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Platform/Advertising.cs",
+      "sha256": "9D768FDDC0BCFB6801D7DEF5DC811FE9A699719CE6E56B909E62F2FFC814C23F"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/GameApp.cs",
+      "sha256": "879D222A3991915833C36009EF8F1FB8363764DB7157E835F146B9F4EB10771B"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/HostLayout.cs",
+      "sha256": "3F35560AE219719C7A4ECAA265D6E7F48B517123DC210E02D5649DDB8B30E165"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/SafeAreaFitter.cs",
+      "sha256": "0B55A9E30DF61CCCEE80B26CC2DC6EBF2DAE2292F69AA6806CE40466A8B68E51"
+    }
+  ],
+  "noticesPointerProof": "Evidence/notices-close-check.txt; Evidence/webgl-notices-close.jpg",
+  "rootIndependentRetest": {
+    "source": "Root chat report received by Client; not independently rerun by Client",
+    "sourceThreadId": "01a138d9-7ede-70d0-ba36-e84a05e6b105",
+    "reportedDateSeoul": "2026-10-14",
+    "environment": "Actual localhost browser with 390x844 viewport override; not a physical mobile device",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "canvas": {
+      "width": 390,
+      "height": 693.333,
+      "y": 75.333,
+      "x": 0
+    },
+    "noClipping": [
+      "lobby",
+      "all seven board columns",
+      "result"
+    ],
+    "stage": 1,
+    "movesZeroBased": [
+      "P3",
+      "AI3",
+      "P3",
+      "AI3",
+      "P1",
+      "AI1",
+      "P2",
+      "AI1",
+      "P4"
+    ],
+    "outcome": "Player won after nine plies; success result shown; lobby unlocked 2/30",
+    "reload": "STAGE 02 and 2/30 unlock restored",
+    "consoleErrorsWarnings": [],
+    "viewportOverrideReset": true,
+    "qa007": "Client fix and root direct retest passed; QA record closure belongs to QA/root",
+    "buildScope": "Previous pre-localization build only"
+  },
+  "documentationFinalizedDateSeoul": "2026-10-14",
+  "localization": {
+    "contract": "GameData/LOCALIZATION-CONTRACT.md; Docs/Management/CONTRACT.md v4",
+    "schemaVersion": 1,
+    "entries": 123,
+    "languages": [
+      "ko",
+      "en"
+    ],
+    "defaultLanguage": "ko",
+    "languageSavedIn": "stagegame.progress.v1 language field",
+    "unityTests": "Full49/49 plus final targeted8/8; 50 unique passing names. Host profile captures in Evidence/host-*.",
+    "independentCoreQA": "29 groups passed, 0 failed; Docs/QA/Evidence/qa-l10n-core-v1-20261014/run.log (Unity API stubs)",
+    "captures": [
+      "Evidence/ko-lobby.png",
+      "Evidence/ko-settings.png",
+      "Evidence/ko-match.png",
+      "Evidence/en-lobby.png",
+      "Evidence/en-settings.png",
+      "Evidence/en-match.png",
+      "Evidence/en-restored.png"
+    ],
+    "uiAudit": "Evidence/ui-ux-audit.json",
+    "runtimeUiConstruction": false,
+    "iapImplemented": false,
+    "serverDeployed": false
+  },
+  "layoutReflowProof": "Evidence/layout-reflow-check.json; Evidence/layout-before.xml; Evidence/unity-tests.xml",
+  "rootLocalizedBrowserFunctionalReport": {
+    "sourceThreadId": "01a138d9-7ede-70d0-ba36-e84a05e6b105",
+    "reportedDateSeoul": "2026-10-14",
+    "scope": "Localized WebGL before SafeAreaFitter layout followup",
+    "result": "Korean/English switch, English loading text, reload restoration, no-fill handling, nine-ply victory all passed",
+    "buildWasmSha256": "B3272C137C165AF308DEB97C4384C883773FBC5FF6C6732BC0D5962F108B59CE",
+    "physicalDevice": false
+  },
+  "rootFinalLayoutRetest": {
+    "sourceThreadId": "01a138d9-7ede-70d0-ba36-e84a05e6b105",
+    "reportedDateSeoul": "2026-10-14",
+    "qa": "QA-008 final independent browser pass",
+    "wasmSha256": "816CE335BC51C67C6D34AB8D97FC16178253C5FBB60886D23308A700A1D760B4",
+    "at390": {
+      "settingsFrameWidthApprox": 346,
+      "closeWidthApprox": 54
+    },
+    "at320": {
+      "settingsFrameWidthApprox": 284,
+      "closeWidthApprox": 44
+    },
+    "sequence": "390 settings -> 320 without reload -> English -> 390 with language/size preserved -> X closes to lobby",
+    "consoleErrorsWarnings": [],
+    "languageRestored": "ko",
+    "viewportReset": true,
+    "physicalDevice": false,
+    "proofs": [
+      "Docs/Management/Evidence/localization-browser-20261014/final-ko-settings-390.jpg",
+      "Docs/Management/Evidence/localization-browser-20261014/final-en-settings-320.jpg",
+      "Docs/Management/Evidence/localization-browser-20261014/final-en-settings-390-resized.jpg",
+      "Docs/Management/Evidence/localization-browser-20261014/final-console.json"
+    ],
+    "scope": "Historical pre-host UI build; does not validate current host reservation/graphics"
+  },
+  "hostUi": {
+    "evidence": "Evidence/host-ui-verification.json",
+    "status": "Final body30 builds succeeded; root final text/scroll retest pending",
+    "realTossSdk": false,
+    "physicalDevice": false
+  }
+}

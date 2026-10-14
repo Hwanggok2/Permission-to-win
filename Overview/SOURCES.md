@@ -14,9 +14,13 @@
 | 원스토어 단독 등록 시 AdMob 심사 제약 | [지원 스토어 안내](https://support.google.com/admob/answer/9989980) |
 | 실행 검증·남은 출시 항목 | [QA 현황](../Docs/QA/STATUS.md), [빌드 기록](../Client/IMPLEMENTATION.md) |
 | 자산·SDK 라이선스 | [사용 자산 대장](../Licence/ASSET-REGISTER.csv) |
+| 토스 상단 조작 영역·CSS 좌표·별도 여백 | [공식 Safe Area](https://developers-apps-in-toss.toss.im/documentation/common/screen/safe-area), [조회 API](https://developers-apps-in-toss.toss.im/documentation/sdk/domains-api/safearea/getsafeareainsets), [조사 및 자체 64px 설계값의 한계](../Docs/Design/HOST-UI.md) |
+| 게임 내비게이션·전체 화면 요구 | [공식 내비게이션](https://developers-apps-in-toss.toss.im/documentation/common/navigationbar), [게임 출시 가이드](https://developers-apps-in-toss.toss.im/checklist/app-game.html) |
 
-`assets/gameplay.png`, `settings-ko.png`, `match-en.png`는 각각 `Client/Evidence/match.png`, `ko-settings.png`, `en-match.png`를 그대로 복사한 실제 Unity PlayMode 렌더다. 실기기 사진이 아니다. `assets/architecture.svg`는 이번 서버 계획을 직접 그린 설명도이며 배포 완료 증거가 아니다.
+현재 요약의 `assets/settings-host.jpg`와 `gameplay-host.jpg`는 [총괄 브라우저 증거](../Docs/Management/Evidence/host-ui-browser-20261014/README.md)의 `final-ko-settings-390.jpg`와 `ko-match-390.jpg`를 그대로 복사했다. 상단은 테스트용 모의 표시이며 실제 토스 화면이 아니다. 대국 캡처 이후 최종 변경은 라이선스 본문의 글자 크기 확대다.
+
+이전 화면 비교용 `assets/gameplay.png`, `settings-ko.png`, `match-en.png`, `settings-browser.jpg`도 보존한다. `assets/architecture.svg`는 서버 계획을 직접 그린 설명도이며 배포 완료 증거가 아니다.
 
 `assets/overview-desktop.jpg`와 `overview-preview.jpg`는 이 요약 HTML의 브라우저 캡처다. 1280/390/320px 폭에서 확인했고, 문서 가로 넘침·이미지 로딩 실패·관찰된 콘솔 오류는 없었다. 구성도는 좁은 화면에서 가로 스크롤한다. 내부 파일 링크와 원본 플레이 이미지 해시도 확인했다.
 
-`assets/settings-browser.jpg`는 최종 WebGL 개발 빌드의 한국어 설정 화면을 390×844 브라우저에서 캡처한 것이다. 언어 전환·복원과 390↔320 크기 변경 보완의 직접 검증은 [총괄 브라우저 기록](../Docs/Management/Evidence/localization-browser-20261014/README.md)을 따른다.
+앞선 다국어 개발 단계의 언어 전환·복원과 크기 변경 증거는 [이전 브라우저 기록](../Docs/Management/Evidence/localization-browser-20261014/README.md)에 보존한다. 최신 상단/그래픽 검증과 빌드 해시는 위 호스트 UI 기록을 따른다.

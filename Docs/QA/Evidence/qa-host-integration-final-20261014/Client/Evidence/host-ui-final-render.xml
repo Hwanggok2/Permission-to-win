@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-14 12:02:08Z" end-time="2026-10-14 12:02:09Z" duration="1.0311911">
+  <test-suite type="TestSuite" id="1000" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="50" result="Passed" start-time="2026-10-14 12:02:08Z" end-time="2026-10-14 12:02:09Z" duration="1.031191" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1060" name="StageGame.Tests.dll" fullname="C:/Github/StageGame/Client/Library/ScriptAssemblies/StageGame.Tests.dll" runstate="Runnable" testcasecount="50" result="Passed" start-time="2026-10-14 12:02:08Z" end-time="2026-10-14 12:02:09Z" duration="0.989554" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="12152" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1061" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="50" result="Passed" start-time="2026-10-14 12:02:08Z" end-time="2026-10-14 12:02:09Z" duration="0.988524" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1062" name="Tests" fullname="StageGame.Tests" runstate="Runnable" testcasecount="50" result="Passed" start-time="2026-10-14 12:02:08Z" end-time="2026-10-14 12:02:09Z" duration="0.987713" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1050" name="PlayFlowTests" fullname="StageGame.Tests.PlayFlowTests" classname="StageGame.Tests.PlayFlowTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-10-14 12:02:08Z" end-time="2026-10-14 12:02:09Z" duration="0.986452" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1052" name="HostProfilesKeepAllScreensBelowControlsAndPreserveLicenseScroll" fullname="StageGame.Tests.PlayFlowTests.HostProfilesKeepAllScreensBelowControlsAndPreserveLicenseScroll" methodname="HostProfilesKeepAllScreensBelowControlsAndPreserveLicenseScroll" classname="StageGame.Tests.PlayFlowTests" runstate="Runnable" seed="263255053" result="Passed" start-time="2026-10-14 12:02:07Z" end-time="2026-10-14 12:02:09Z" duration="2.090820" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Capture] host-ko-390-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-settings: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-notices-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-help: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-result: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-320-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-320-settings: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-320-notices-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-320-help: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-320-match: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-320-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-320-result: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-settings: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-notices-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-help: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-ko-390-result: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-settings: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-notices-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-help: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-result: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-320-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-320-settings: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-320-notices-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-320-help: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-320-match: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-320-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-320-result: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-settings: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-notices-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-help: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+[Capture] host-en-390-result: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=32
+Saving results to: C:\Github\StageGame\Client\Logs\host-ui-final-render.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

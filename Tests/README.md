@@ -10,6 +10,9 @@
 - `run-independent.ps1 -RunId <새 ID> -Scope l10n.`: 123개 한영 조회, 기존 58개/요청 70개 분리, 누락/중복/포맷 오류, schema 1 언어 이행·복원, 경고 문구 키, UI 소스 키, 같은 판 언어 변경의 8묶음. PlayerPrefs/JsonUtility/UI/코루틴은 대체 구현이므로 실제 Unity·프리팹·브라우저 검증을 대신하지 않는다.
 - `check-localization-evidence.ps1 -RunId <새 ID>`: 클라이언트 verification/XML·캡처·소스를 보존하고 빌드/소스 해시, 코어 변경 여부, AppRoot 번역 참조를 읽기 전용 검사한다. 진행 중 수정으로 XML/verification/빌드가 다른 버전일 수 있으므로 JSON의 `matchesDeclared`와 각 `matches`를 확인한다. Unity·브라우저는 실행하지 않는다.
 - 최종 브라우저 자료가 준비되면 위 명령에 `-IncludeFinalBrowser`를 추가해 최종 캡처·콘솔·빌드 기록과 SafeArea 수정 전 실패 XML도 함께 보존한다. 결함 종료는 해시 대조와 실제 재시험 보고를 확인한 뒤 QA 문서에 기록한다.
+- `run-host-independent.ps1 -RunId <새 ID>`: HostLayout 실제 C#과 host-layout.js/HostInsets.jslib 실제 JS를 스냅샷으로 고정해 검사한다. C# 숫자 API/JS DOM·event·HEAPF32는 명시적 대체 구현이다. 현재14묶음은 64 예약·OS/CSS max·변환비·controlsBottom·비정상 수치·resize·브리지 순서 및 최소 지원 세로 프로파일을 검사하며 Unity·브라우저·픽셀 hitbox·실제 Toss 검증을 대신하지 않는다.
+- `check-host-evidence.ps1 -RunId <새 ID>`: Client의 전체49/수정 후 관련8 Unity XML·호스트 캡처28개·프리팹/자산/소스를 보존하고 독립 검사와의 호스트 해시 일치 및 기존 코어/JSON 불변을 확인한다. 빌드/브라우저 증거 연결은 별도이며 QA는 Unity·브라우저를 실행하지 않는다.
+- 위 명령에 `-IncludeBuilds`를 추가하면 최종 본문30 화면1/1 XML·Client 선언/실제 산출물7개·프리팹/이미지/캡처 해시·본문24→30 단독 변경·APK 내부 고지8개와 원본 일치·총괄 브라우저 파일을 연결한다. 빌드 산출물은 QA/Git 폴더로 복사하지 않고 크기/해시만 기록한다. 총괄 브라우저의 초기 기능과 최종 폰트 검사 범위는 보존된 보고에서 구분한다.
 - `audit-data.py <새 ID>`: bundled Python으로 실행. 실제 Excel/exporter/test를 스냅샷으로 읽고, 기존 테스트의 모든 쓰기를 `Tests/.work/`로 전환한다. 생성/임포트 정합성과 중간 출력 실패를 검사한다. Excel은 저장하지 않는다.
 - `check-stage-solvability.py <stages.json> <output.json>`: Python 독립 보드로 제한 깊이 강제 패배 전략과 증명 트리를 검증. 미증명은 클리어 가능 판정이 아니다.
 - 컴파일한 harness의 `--prove-fixed <data directory> <output.json>` 모드: 실제 고정 시드 AI를 상대로 플레이어 수를 전수 분기한다. 탐색 제한 국면은 unknown으로 유지한다.

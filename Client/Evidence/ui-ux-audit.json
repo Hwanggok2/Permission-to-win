@@ -27,13 +27,20 @@
     }
   ],
   "touchReference": {
-    "normalButtonMinimum": 100,
-    "at320": 44.38,
-    "boardColumnAt390": 47.67,
-    "smallBoardLimitation": "Seven full-column targets fit on screen; 320px board columns remain under 44px.",
-    "at390": 54.17,
-    "boardColumnAt320": 39.05,
-    "referenceWidth": 720
+    "referenceWidth": 720,
+    "referenceHeight": 960,
+    "normalButtonMinimum": 110,
+    "boardColumnUnits": 102.85714285714286,
+    "minimumViewport": "320x568",
+    "osInsetsCss": "top59,bottom34,left0,right0",
+    "additionalHostTopCss": 64,
+    "at320": 47.09375,
+    "boardColumnAt320": 44.035714285714285,
+    "at390": 59.583333333333336,
+    "boardColumnAt390": 55.714285714285715,
+    "licenseLabelCssAtMinimum": 11.13125,
+    "limitation": "44px verified inside this portrait envelope. Less than308px available width or410.667px available height can reduce board targets below44. More restrictive insets/landscape are not validated.",
+    "evidence": "Evidence/unity-tests.xml and host-ui-boundary-tests.xml; actual camera render-space button rectangles for390->320->390 and ko/en. Browser/device evidence is separate."
   },
   "structure": {
     "strings": "Dictionary keyed by stable Excel keys; ko/en selection and explicit UI refresh on change",

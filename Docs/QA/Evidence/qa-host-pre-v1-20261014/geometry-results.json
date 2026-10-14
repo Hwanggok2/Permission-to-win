@@ -1,0 +1,43 @@
+{
+  "passed": 6,
+  "failed": 1,
+  "assertions": 31,
+  "results": [
+    {
+      "name": "host.no_notch_64_once_320_390",
+      "status": "PASS",
+      "error": null
+    },
+    {
+      "name": "host.same_os_and_css_notch_not_added_twice",
+      "status": "PASS",
+      "error": null
+    },
+    {
+      "name": "host.max_each_edge_and_asymmetric_pixel_ratio",
+      "status": "PASS",
+      "error": null
+    },
+    {
+      "name": "host.controls_bottom_union_not_another_addition",
+      "status": "PASS",
+      "error": null
+    },
+    {
+      "name": "host.finite_extremes_zero_area_and_negative_inputs",
+      "status": "PASS",
+      "error": null
+    },
+    {
+      "name": "host.css_to_float32_overflow_stays_finite",
+      "status": "FAIL",
+      "error": "NaN reaches content anchors"
+    },
+    {
+      "name": "host.portrait_resize_is_stateless",
+      "status": "PASS",
+      "error": null
+    }
+  ],
+  "limits": "Actual HostLayout source; numeric Unity API doubles only. Zero-area result does not prove UI is hidden. Rotation usability, hitbox/rendering and device behavior are not executed."
+}
