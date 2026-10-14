@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "strings": [
+    {
+      "key": "ad_test_mode",
+      "ko": "광고 테스트 모드"
+    },
+    {
+      "key": "chapter_01",
+      "ko": "중앙과 연결"
+    },
+    {
+      "key": "chapter_02",
+      "ko": "위협과 두 갈래"
+    },
+    {
+      "key": "chapter_03",
+      "ko": "복합 전술"
+    },
+    {
+      "key": "error_data",
+      "ko": "게임 데이터를 읽을 수 없어요. 로비로 돌아갑니다."
+    },
+    {
+      "key": "error_save",
+      "ko": "진행 상황을 저장하지 못했어요."
+    },
+    {
+      "key": "game_title",
+      "ko": "StageGame"
+    },
+    {
+      "key": "help_full_column",
+      "ko": "가득 찬 열에는 놓을 수 없어요."
+    },
+    {
+      "key": "help_rules",
+      "ko": "열을 누르면 돌이 아래로 떨어져요. 가로·세로·대각선으로 네 개를 먼저 이으면 승리해요."
+    },
+    {
+      "key": "hint_request",
+      "ko": "광고 보고 추천 열 확인"
+    },
+    {
+      "key": "hint_unavailable",
+      "ko": "지금은 광고를 준비하지 못했어요. 계속 플레이할 수 있어요."
+    },
+    {
+      "key": "hint_used",
+      "ko": "이번 판의 광고 힌트를 사용했어요."
+    },
+    {
+      "key": "result_all_clear",
+      "ko": "모든 스테이지를 완료했어요"
+    },
+    {
+      "key": "result_draw",
+      "ko": "무승부"
+    },
+    {
+      "key": "result_loss",
+      "ko": "다시 도전해 보세요"
+    },
+    {
+      "key": "result_win",
+      "ko": "승리!"
+    },
+    {
+      "key": "settings_sound",
+      "ko": "소리"
+    },
+    {
+      "key": "settings_vibration",
+      "ko": "진동"
+    },
+    {
+      "key": "stage_001",
+      "ko": "중앙부터 살피기"
+    },
+    {
+      "key": "stage_002",
+      "ko": "두 돌 잇기"
+    },
+    {
+      "key": "stage_003",
+      "ko": "첫 위협 막기"
+    },
+    {
+      "key": "stage_004",
+      "ko": "가로 연결 찾기"
+    },
+    {
+      "key": "stage_005",
+      "ko": "중앙 다시 잡기"
+    },
+    {
+      "key": "stage_006",
+      "ko": "상대 연결 끊기"
+    },
+    {
+      "key": "stage_007",
+      "ko": "한 칸 너머 잇기"
+    },
+    {
+      "key": "stage_008",
+      "ko": "AI 선공 읽기"
+    },
+    {
+      "key": "stage_009",
+      "ko": "두 갈래 준비"
+    },
+    {
+      "key": "stage_010",
+      "ko": "첫 챕터 복습"
+    },
+    {
+      "key": "stage_011",
+      "ko": "대각 연결 찾기"
+    },
+    {
+      "key": "stage_012",
+      "ko": "막고 다시 연결"
+    },
+    {
+      "key": "stage_013",
+      "ko": "중앙 주변의 선택"
+    },
+    {
+      "key": "stage_014",
+      "ko": "두 위협 만들기"
+    },
+    {
+      "key": "stage_015",
+      "ko": "후공의 빈틈"
+    },
+    {
+      "key": "stage_016",
+      "ko": "대각 위협 막기"
+    },
+    {
+      "key": "stage_017",
+      "ko": "연결 방향 바꾸기"
+    },
+    {
+      "key": "stage_018",
+      "ko": "다른 모양의 포크"
+    },
+    {
+      "key": "stage_019",
+      "ko": "가운데를 다시 살피기"
+    },
+    {
+      "key": "stage_020",
+      "ko": "연결과 방어 복습"
+    },
+    {
+      "key": "stage_021",
+      "ko": "좁은 틈의 연결"
+    },
+    {
+      "key": "stage_022",
+      "ko": "후공의 방어"
+    },
+    {
+      "key": "stage_023",
+      "ko": "대각선의 다른 끝"
+    },
+    {
+      "key": "stage_024",
+      "ko": "중앙과 바깥 비교"
+    },
+    {
+      "key": "stage_025",
+      "ko": "복잡한 두 갈래"
+    },
+    {
+      "key": "stage_026",
+      "ko": "상대 대각 끊기"
+    },
+    {
+      "key": "stage_027",
+      "ko": "후공 연결 복습"
+    },
+    {
+      "key": "stage_028",
+      "ko": "포크 다시 찾기"
+    },
+    {
+      "key": "stage_029",
+      "ko": "마지막 방어 연습"
+    },
+    {
+      "key": "stage_030",
+      "ko": "최종 복합 도전"
+    },
+    {
+      "key": "ui_ai_turn",
+      "ko": "AI가 생각하고 있어요"
+    },
+    {
+      "key": "ui_close",
+      "ko": "닫기"
+    },
+    {
+      "key": "ui_continue",
+      "ko": "이어하기"
+    },
+    {
+      "key": "ui_help",
+      "ko": "도움말"
+    },
+    {
+      "key": "ui_lobby",
+      "ko": "로비로"
+    },
+    {
+      "key": "ui_next",
+      "ko": "다음 스테이지"
+    },
+    {
+      "key": "ui_player_turn",
+      "ko": "내 차례"
+    },
+    {
+      "key": "ui_retry",
+      "ko": "다시 도전"
+    },
+    {
+      "key": "ui_settings",
+      "ko": "설정"
+    },
+    {
+      "key": "ui_start",
+      "ko": "시작하기"
+    }
+  ]
+}

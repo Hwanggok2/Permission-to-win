@@ -12,6 +12,7 @@ namespace StageGame
         public int lastInterstitialMatch;
         public long lastInterstitialUtc;
         public bool soundEnabled = true;
+        public string language = "ko";
         public List<string> processedMatchIds = new List<string>();
     }
 
@@ -37,8 +38,10 @@ namespace StageGame
                 try { if (PlayerPrefs.HasKey(Key)) PlayerPrefs.SetString(Key + ".recovery", PlayerPrefs.GetString(Key)); }
                 catch (Exception) { /* A storage failure must not prevent offline play. */ }
                 Data = new ProgressData();
-                LoadWarning = "저장을 복구하지 못해 처음부터 시작합니다. " + error.Message;
+                LoadWarning = "error_load";
+                Debug.LogWarning("[Save recovery] " + error.Message);
             }
+            Data.language = StringTable.NormalizeLanguage(Data.language);
             if (Data.processedMatchIds == null) Data.processedMatchIds = new List<string>();
             processedMatches = new HashSet<string>(Data.processedMatchIds);
         }
@@ -63,7 +66,7 @@ namespace StageGame
             }
             catch (Exception)
             {
-                SaveWarning = "진행도를 저장하지 못했습니다. 현재 플레이는 계속할 수 있지만 재실행 시 사라질 수 있어요.";
+                SaveWarning = "client_error_save";
                 return false;
             }
         }

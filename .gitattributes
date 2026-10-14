@@ -24,6 +24,7 @@
 # Preserve byte hashes of evidence and third-party legal originals.
 Client/Evidence/** -text whitespace=cr-at-eol,-blank-at-eol
 Docs/QA/Evidence/** -text whitespace=cr-at-eol,-blank-at-eol
+Docs/Management/Evidence/** -text whitespace=cr-at-eol,-blank-at-eol
 GameData/Validation/** -text whitespace=cr-at-eol,-blank-at-eol
 Client/Assets/StreamingAssets/Notices/** -text whitespace=-blank-at-eol
 Client/Assets/StageGame/Resources/LegalNotices.txt -text whitespace=-blank-at-eol

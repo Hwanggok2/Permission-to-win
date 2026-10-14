@@ -1,0 +1,150 @@
+[
+  {
+    "source": "Client/Evidence/verification.json",
+    "sha256": "874F03F0545DEC011A9E27984FDBA57A2A1B10C358C27344749F238D1484432D"
+  },
+  {
+    "source": "Client/Evidence/unity-tests.xml",
+    "sha256": "65FFEF0E676A6A7019030E89E1F3DAAC7FF2C3B5371C37A48D6789AA7C0416C3"
+  },
+  {
+    "source": "Client/Assets/StageGame/Prefabs/AppRoot.prefab",
+    "sha256": "CC8745398446C7E5EB547EAFFBDFDC6E93C14CBF099F528723A2DB7E607D0665"
+  },
+  {
+    "source": "Client/Assets/StageGame/Resources/GameData/strings.json",
+    "sha256": "ED5FD27463724F4789B2F5E96922316240F73BF73EBC9D663410F0758E0883C2"
+  },
+  {
+    "source": "Client/Evidence/android-build-summary.txt",
+    "sha256": "954E94F813DF54BABFB29F2ADA829D83D8594ED8E1CD92EFC4E63D102B63868E"
+  },
+  {
+    "source": "Client/Evidence/webgl-build-summary.txt",
+    "sha256": "556BFE65393F5EA1303D02D07D140A9AB32E8F9823C3A8F82406557E8D3117BC"
+  },
+  {
+    "source": "Client/Evidence/ui-ux-audit.json",
+    "sha256": "34F3F4D75FCB0342AED1B8D6C0C5E09DABDD6795FD273E2B3595F8B2727C0202"
+  },
+  {
+    "source": "Client/Assets/StageGame/Editor/LocalizationBuilder.cs",
+    "sha256": "E71BEAD2C3F7210EA1C366C0F3C9B77D68A1EF6EA64E10EF6581ACB3EA9ECCA4"
+  },
+  {
+    "source": "Client/Assets/StageGame/Editor/ProjectBuilder.cs",
+    "sha256": "53B813B3C01272F2DCFE76013220973680D5711E4AD5F89B730B57C3B253279E"
+  },
+  {
+    "source": "Client/Assets/StageGame/Tests/EditMode/PlayFlowTests.cs",
+    "sha256": "D11A5B1365523F1022D2B31CEF1EF00942BF77D8D754C54D0AEEA83D03D8907F"
+  },
+  {
+    "source": "Client/Assets/StageGame/Tests/EditMode/LocalizationTests.cs",
+    "sha256": "FD32B381671D7A05FFD2D05A5B87930E00219F04EB3B3C6C29359B98460F41F6"
+  },
+  {
+    "source": "Tests/check-localization-evidence.ps1",
+    "sha256": "84B32040216609132630CCBCFB844B738F6ABFB279DD4847199E7798ED612EAF"
+  },
+  {
+    "source": "Client/Evidence/ko-lobby.png",
+    "sha256": "E443787D88F473C93890888EEAEE9DD6A7F8CF8B468660679A986AEDEF4748A1"
+  },
+  {
+    "source": "Client/Evidence/ko-settings.png",
+    "sha256": "4675073C0B406ECCFF5B1994A6BF2E4E948C791222D345BC3D2EE75ECE18C6F1"
+  },
+  {
+    "source": "Client/Evidence/ko-match.png",
+    "sha256": "64DDADB5CE59039F838C9BC96E7122829E099712842CA980101A06538E5B39C5"
+  },
+  {
+    "source": "Client/Evidence/en-lobby.png",
+    "sha256": "4C0B8E821257E51AF67A6B6578DE4DF849067372C84C015DBF18C663EBB91E22"
+  },
+  {
+    "source": "Client/Evidence/en-settings.png",
+    "sha256": "2621394D6FF768893C65CBBD23DA1CBCDBB33B2B6C40109CCB282988A4F9B78E"
+  },
+  {
+    "source": "Client/Evidence/en-match.png",
+    "sha256": "1ED9D31E20D7138FE08F92F8C4757F4AB5794F2813A2A69DC2C09F274F9E6D95"
+  },
+  {
+    "source": "Client/Evidence/en-help.png",
+    "sha256": "01C7DF1B35AFEC5FDD4FCF24F605FACD2085F82555A9190E579F22E4F19B4E1F"
+  },
+  {
+    "source": "Client/Evidence/en-confirm.png",
+    "sha256": "062D33E4FE91301F0DD3EAD03020595E9CC3F3B533BFDF8207BFFA09D4BF0EAE"
+  },
+  {
+    "source": "Client/Evidence/en-result.png",
+    "sha256": "2513A7991D77F89EFC50BBB53004C9A785AB203C59A748A99A939EC3E16EA75F"
+  },
+  {
+    "source": "Client/Evidence/en-restored.png",
+    "sha256": "E47720F19D78D917D815549AD9D65E0F1DC3C81DF43AAD143E48DF8589AB4B99"
+  },
+  {
+    "source": "Docs/Management/Evidence/localization-browser-20261014/en-settings-320.jpg",
+    "sha256": "E115731514E3AEFCCDC778301B8CFC071BE4D7528873352CA3E5953F27489B53"
+  },
+  {
+    "source": "Docs/Management/Evidence/localization-browser-20261014/ko-settings-320-reloaded.jpg",
+    "sha256": "144FA91E58C0E053B4AF7E2F3094837764D94800299F9C08B22A0BEFE78FC10D"
+  },
+  {
+    "source": "Docs/Management/Evidence/localization-browser-20261014/ko-settings-390.jpg",
+    "sha256": "A0F87AEF1186E1ACE5E4F1168EAD680651AE0C59E9E705C5F36C366E5A4EE377"
+  },
+  {
+    "source": "Docs/Management/Evidence/localization-browser-20261014/en-settings-390.jpg",
+    "sha256": "86DE017DDCC29989CBE18BBB5EC9B682C45CC85EA1917663AECB40935EE866C7"
+  },
+  {
+    "source": "Docs/Management/Evidence/localization-browser-20261014/en-match-390.jpg",
+    "sha256": "B15872D777310FC0CB0620E7536854CC59457B19350CA39CF89CCE9DBF0AF906"
+  },
+  {
+    "source": "Docs/Management/Evidence/localization-browser-20261014/en-result-390.jpg",
+    "sha256": "85A541054299B59672E6EA9C7490A559286C19FD614FC0971B323E7ED9588785"
+  },
+  {
+    "source": "Docs/Management/Evidence/localization-browser-20261014/en-restored-390.jpg",
+    "sha256": "D4A5855069CBE614038BE58406B9EC166FA95734A95DD6395F54106765E25900"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/Core/AiSearch.cs",
+    "sha256": "FEA609E5CC011D590C9BEDA3D401B3CCC420DF7E0C9FAD7EFA18F99A9D72F63B"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/Core/ConnectFourBoard.cs",
+    "sha256": "5A57257861061D89B71E9758B6E352A96E08D22C2B686C85C5CD503B0F25FB36"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/Core/GameData.cs",
+    "sha256": "72018B7041F6E255E5210B2BAD652117744D0BC7BAED9BFAC1CF70340AABB567"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/Core/ProgressStore.cs",
+    "sha256": "074DE135B08DDBD15E7C605F54460D45981D2547D639054092FD4179A9300357"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/Core/StringTable.cs",
+    "sha256": "8D133248463B3466690BCC76BD9BBB31F7BA1703CDF84E3FF6788F2AB4374A1B"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/Platform/Advertising.cs",
+    "sha256": "9D768FDDC0BCFB6801D7DEF5DC811FE9A699719CE6E56B909E62F2FFC814C23F"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/UI/GameApp.cs",
+    "sha256": "879D222A3991915833C36009EF8F1FB8363764DB7157E835F146B9F4EB10771B"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/UI/SafeAreaFitter.cs",
+    "sha256": "BA20C7C48F2C47505BA9436FBD07570FE2F2838AC275DCD76F76832BE7C53222"
+  }
+]

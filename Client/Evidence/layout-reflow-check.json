@@ -1,0 +1,56 @@
+{
+  "sourceReport": "Root independent browser: resize 390x844 -> 320x568 left settings frame about 232px / close about 36px; reload restored about 284px / 44px.",
+  "sourceThreadId": "01a138d9-7ede-70d0-ba36-e84a05e6b105",
+  "beforeScreenshot": "Docs/Management/Evidence/localization-browser-20261014/en-settings-320.jpg",
+  "reloadScreenshot": "Docs/Management/Evidence/localization-browser-20261014/ko-settings-320-reloaded.jpg",
+  "cause": "SafeAreaFitter.Update cached Screen size before CanvasScaler.preWillRenderCanvases changed canvas scale and rect; the late rectangle change never retriggered fitting.",
+  "fix": "Fit in Canvas.willRenderCanvases and track available rectangle size separately from Screen and safe-area anchors.",
+  "beforeTest": "Evidence/layout-before.xml: failed, expected 0.375 but actual 1.0 with Screen fixed.",
+  "afterTests": "Evidence/unity-tests.xml: 42 passed, 0 failed; Logs/layout-final-tests.log",
+  "reflowSequence": [
+    {
+      "availableHeight": 1920,
+      "contentScale": 1,
+      "canvasScale": 0.25,
+      "availableWidth": 2560
+    },
+    {
+      "availableHeight": 480,
+      "contentScale": 0.375,
+      "canvasScale": 1,
+      "availableWidth": 640
+    },
+    {
+      "availableHeight": 1920,
+      "contentScale": 1,
+      "canvasScale": 0.25,
+      "availableWidth": 2560
+    }
+  ],
+  "browserRetest": "PASS reported by root chat 01a138d9-7ede-70d0-ba36-e84a05e6b105 on 2026-10-14: final WebGL 390 -> 320 -> 390 without reload preserves correct size, English choice and close input. Errors/warnings empty; Korean restored and viewport override reset. Not a physical-device test.",
+  "rootFinalRetest": {
+    "sourceThreadId": "01a138d9-7ede-70d0-ba36-e84a05e6b105",
+    "reportedDateSeoul": "2026-10-14",
+    "qa": "QA-008 final independent browser pass",
+    "wasmSha256": "816CE335BC51C67C6D34AB8D97FC16178253C5FBB60886D23308A700A1D760B4",
+    "at390": {
+      "settingsFrameWidthApprox": 346,
+      "closeWidthApprox": 54
+    },
+    "at320": {
+      "settingsFrameWidthApprox": 284,
+      "closeWidthApprox": 44
+    },
+    "sequence": "390 settings -> 320 without reload -> English -> 390 with language/size preserved -> X closes to lobby",
+    "consoleErrorsWarnings": [],
+    "languageRestored": "ko",
+    "viewportReset": true,
+    "physicalDevice": false,
+    "proofs": [
+      "Docs/Management/Evidence/localization-browser-20261014/final-ko-settings-390.jpg",
+      "Docs/Management/Evidence/localization-browser-20261014/final-en-settings-320.jpg",
+      "Docs/Management/Evidence/localization-browser-20261014/final-en-settings-390-resized.jpg",
+      "Docs/Management/Evidence/localization-browser-20261014/final-console.json"
+    ]
+  }
+}

@@ -9,12 +9,13 @@ using StageGame;
 using UnityEngine;
 using UnityEngine.UI;
 
-static class Program
+static partial class Program
 {
     static readonly List<object> Results = new List<object>();
     static int assertions, failed, passed;
     static int ruleSequences, aiPositions;
     static string Filter = "";
+    static string ActualStringsJson;
     static readonly int[] Draw = { 0,2,2,2,2,2,2,0,0,0,0,0,1,3,3,3,3,3,3,1,1,1,1,1,4,6,6,6,6,6,6,4,4,4,4,4,5,5,5,5,5,5 };
     static void Check(bool condition, string message)
     {
@@ -124,7 +125,8 @@ static class Program
     static string[] DataJson(int count = 30)
     {
         var stages = Enumerable.Range(1,count).Select(i => new StageDefinition { id=i, chapter=(i-1)/10+1, titleKey="stage_"+i, aiDepth=1, aiNodeBudget=100, aiRandomPermille=0, starter=1, openingMoves="" }).ToArray();
-        var strings = stages.Select(s => new StringEntry { key=s.titleKey, ko="스테이지 " + s.id }).ToArray();
+        var strings = stages.Select(s => new StringEntry { key=s.titleKey, ko="스테이지 " + s.id, en="Stage " + s.id })
+            .Concat(JsonUtility.FromJson<StringFile>(ActualStringsJson).strings).ToArray();
         return new[] { JsonUtility.ToJson(new StageFile { schemaVersion=1, stages=stages }), JsonUtility.ToJson(Settings()), JsonUtility.ToJson(new StringFile { schemaVersion=1, strings=strings }) };
     }
     static GameData LoadData(string[] json) => new GameData(json[0],json[1],json[2]);
@@ -140,7 +142,7 @@ static class Program
     static object Call(object instance, string name, params object[] args) => instance.GetType().GetMethod(name, BindingFlags.Instance | BindingFlags.NonPublic).Invoke(instance,args);
     sealed class DelayedAds : IAdService
     {
-        public string Status => "QA injected delayed adapter";
+        public string Status => "ad_test_mode";
         public readonly List<Action<AdResult>> Rewards = new List<Action<AdResult>>();
         public readonly List<Action<AdResult>> Interstitials = new List<Action<AdResult>>();
         public void ShowRewarded(Action<AdResult> callback) { Rewards.Add(callback); }
@@ -148,9 +150,9 @@ static class Program
         // Keep delegates deliberately, so tests can inject callbacks from a misbehaving cancelled SDK.
         public void CancelPending() { }
     }
-    static GameApp MakeApp()
+    static GameApp MakeApp(bool reset = true)
     {
-        PlayerPrefs.Reset(); Time.realtimeSinceStartup = 0;
+        if (reset) PlayerPrefs.Reset(); Time.realtimeSinceStartup = 0;
         var json = DataJson();
         for (int i=0;i<3;i++) Resources.Assets["GameData/" + new[] { "stages","ads","strings" }[i]] = new TextAsset { text=json[i] };
         var app = new GameApp();
@@ -161,6 +163,8 @@ static class Program
         }
         app.stones = Enumerable.Range(0,42).Select(_ => new Image()).ToArray();
         app.stoneLabels = Enumerable.Range(0,42).Select(_ => new Text()).ToArray();
+        app.columnLabels = Enumerable.Range(0,7).Select(_ => new Text()).ToArray();
+        app.localizedLabels = Array.Empty<LocalizedLabel>();
         app.columnMarkers = Enumerable.Range(0,7).Select(_ => new Image()).ToArray();
         app.columns = Enumerable.Range(0,7).Select(_ => new Button()).ToArray();
         Call(app,"Start"); app.StartStage(0);
@@ -171,6 +175,8 @@ static class Program
     {
         if(args.Length>=3 && args[0]=="--prove-fixed") { ProveFixed(args[1],args[2],args.Length>3?args[3]:"10,12,20,22,24,26"); return 0; }
         Filter=args.Length>3?args[3]:"";
+        if (Filter == "all") Filter = "";
+        ActualStringsJson=File.ReadAllText(Path.Combine(args[1],"strings.json"));
         Run("rules.fixed_vectors_both_starters", "actual pure C#", () =>
         {
             int[][] wins = { new[]{0,6,1,6,2,5,3}, new[]{0,1,0,1,0,2,0}, new[]{0,1,1,2,3,2,2,3,4,3,3}, new[]{6,5,5,4,3,4,4,3,2,3,3} };
@@ -347,7 +353,7 @@ static class Program
             finally { PlayerPrefs.ThrowOnSave=false; }
             Check(app.result.activeSelf || app.lobby.activeSelf,"finished match has neither result nor lobby; resultRecorded="+Get(app,"resultRecorded"));
             var warning=((ProgressStore)Get(app,"progress")).SaveWarning;
-            Check(!string.IsNullOrEmpty(warning) && app.resultAdStatus.text==warning,"save failure warning is not visible");
+            Check(!string.IsNullOrEmpty(warning) && app.resultAdStatus.text==((StringTable)Get(app,"strings")).Text(warning),"save failure warning is not visible");
         });
         if(args.Length>1)
             Run("data.actual_client_json", "actual GameData validation; JSON double", () =>
@@ -356,12 +362,13 @@ static class Program
                 Check(data.Stages.Length==30,"actual imported stage count="+data.Stages.Length+", expected 30");
                 foreach(var stage in data.Stages) Check(!GameData.CreateBoard(stage).IsFinished,"terminal imported stage "+stage.id);
             });
+        RunLocalization(args);
         var report=new { runId=Path.GetFileName(Path.GetDirectoryName(args[0])), framework=System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription,
             passed, failed, assertions, scope=Filter.Length==0?"all":Filter, randomRuleSequences=ruleSequences, randomAiPositions=aiPositions,
             limitations="Unity APIs replaced by explicitly scoped doubles; no Editor, device, native JSON, real persistence, real ads, or performance validation.", results=Results };
         File.WriteAllText(args[0],JsonSerializer.Serialize(report,new JsonSerializerOptions{WriteIndented=true}));
         Console.WriteLine($"SUMMARY pass={passed} fail={failed} assertions={assertions}");
-        if(args.Length>2 && Filter.Length==0) ExploreStages(args[2],Path.Combine(Path.GetDirectoryName(args[0]),"stage-paths.json"));
+        if(args.Length>2 && Filter.Length==0 && !args.Contains("--skip-stage-exploration")) ExploreStages(args[2],Path.Combine(Path.GetDirectoryName(args[0]),"stage-paths.json"));
         return failed==0?0:1;
     }
 

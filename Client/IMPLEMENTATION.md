@@ -1,20 +1,21 @@
 # StageGame 클라이언트 구현 기록
 
-최종 체크포인트: **2026-10-14, 모바일 폭 WebGL 수정 및 총괄의 승리·해금·새로고침 복원 재시험 통과, 문서 마감·소스 동결**. Unity **6000.3.15f1**. 프로젝트 루트는 `C:\Github\StageGame\Client`.
+최종 체크포인트: **2026-10-14, 한영 UI·언어 저장/복원·터치 영역·크기 변경 배율 보정 완료, Unity 42/42, 양 플랫폼 개발 빌드 및 총괄 QA-008 브라우저 재시험 통과, 소스 동결**. Unity **6000.3.15f1**. 프로젝트 루트는 `C:\Github\StageGame\Client`.
 
 ## 완료 결과
 
-7×6 중력식 4목의 오프라인 AI 스테이지 초기 버전을 구현했다. **최종 30개 스테이지, 저장된 씬·프리팹, Unity 테스트 30/30, Android 개발 APK, 일반 WebGL 개발 빌드**를 확보했다. WebGL은 실제 로컬 브라우저에서 로비→대국 시작→착수→AI 응수까지 확인했다.
+7×6 중력식 4목의 오프라인 AI 스테이지 초기 버전이다. **30개 스테이지, 한국어/영어 설정과 즉시 전환·저장·복원, 저장된 씬·프리팹, Unity 테스트 42/42, Android 개발 APK, 일반 WebGL 개발 빌드**를 확보했다. IAP와 서버는 계획 상태다.
 
 | 항목 | 확인 결과 | 증거 |
 |---|---|---|
-| Unity 컴파일·회귀 | 30개 통과, 0개 실패 | `Evidence/unity-tests.xml`, `Logs/tests-complete.log` |
-| Android 개발 APK | 성공, BuildReport 오류/경고 각각 0 | `Builds/Android/StageGame-development.apk`, `Evidence/android-build-summary.txt`, `Logs/android-verified.log` |
-| 일반 WebGL 개발 빌드 | 성공, BuildReport 오류/경고 각각 0 | `Builds/WebGL/index.html`, `Evidence/webgl-build-summary.txt`, `Logs/webgl-responsive.log` |
-| 실제 브라우저 실행 | Codex IAB, localhost, 세로 UI·플레이어 착수·AI 응수 확인; 조회한 오류/경고 로그 없음 | `Evidence/webgl-browser-match.jpg` |
-| 반응형 화면 | 390×844, 320×568, 1280×720에서 캔버스 경계가 뷰포트 내부; 390×844 설정 열기/닫기 클릭 성공 | `Evidence/responsive-check.json`, `responsive-390x844.jpg`, `responsive-settings-390x844.jpg`, `responsive-320x568.jpg`, `responsive-1280x720.jpg` |
-| 총괄 독립 브라우저 재시험 | 390×844에서 1스테이지 9수 승리→2/30 해금→새로고침 후 STAGE 02 및 해금 복원 통과 보고; 오류/경고 없음 | `Evidence/verification.json`의 `rootIndependentRetest` (총괄 보고 출처 명시) |
-| 저장 UI 시각 확인 | PlayMode의 실제 카메라 렌더, 720×1280 | `Evidence/lobby.png`, `match.png`, `result.png`, `settings.png`, `help.png`, `notices.png` |
+| Unity 컴파일·회귀 | 42개 통과, 0개 실패. 두 언어의 30개 제목·버튼 겹침·텍스트 높이·언어 복원 포함 | `Evidence/unity-tests.xml`, `Logs/layout-final-tests.log` |
+| Android 개발 APK | 성공, BuildReport 오류/경고 각각 0, APK 38,905,900 bytes | `Builds/Android/StageGame-development.apk`, `Evidence/android-build-summary.txt`, `Logs/android-layout-final.log` |
+| 일반 WebGL 개발 빌드 | 성공, BuildReport 오류/경고 각각 0 | `Builds/WebGL/index.html`, `Evidence/webgl-build-summary.txt`, `Logs/webgl-layout-final.log` |
+| 최신 한영 PlayMode 화면 | 실제 저장 씬 실행·카메라 렌더 720×1280, 영어 전환과 재실행 후 해금/언어 복원 | `Evidence/ko-lobby.png`, `ko-settings.png`, `ko-match.png`, `en-lobby.png`, `en-settings.png`, `en-match.png`, `en-restored.png` |
+| 추가 화면·UI 감사 | 영어 도움말·일시정지·결과, 버튼 영역 및 색 대비 계산 | `Evidence/en-help.png`, `en-confirm.png`, `en-result.png`, `ui-ux-audit.json` |
+| 독립 코어 QA | 29묶음 통과/0실패. Unity API 대체 harness이며 실제 기기 검증 아님 | `Docs/QA/Evidence/qa-l10n-core-v1-20261014/run.log` |
+| 최종 독립 브라우저 QA-008 | 새로고침 없이 390→320→390, 설정 크기·닫기 입력·언어 유지 통과. error/warn 없음 | `Evidence/layout-reflow-check.json`; 총괄 `Docs/Management/Evidence/localization-browser-20261014/final-*` |
+| 이전 빌드 브라우저 기준선 | 모바일 폭 잘림 수정 및 9수 승리→2/30 해금→새로고침 복원 통과. 한영 변경 전 결과 | `Evidence/responsive-check.json`, `webgl-browser-match.jpg`, `verification.json`의 `rootIndependentRetest` |
 | 최종 데이터 동기화 | 3개 JSON이 GameData/Generated와 SHA-256 일치 | `Evidence/verification.json` |
 | 배포 고지 포함 | APK ZIP의 Notices 항목 및 WebGL StreamingAssets 확인 | `Evidence/apk-notices.json`, `Assets/StreamingAssets/Notices/` |
 
@@ -27,12 +28,39 @@
 - WebGL은 `file://` 대신 HTTP 서버로 실행한다. 예: `python -m http.server 8765 --bind 127.0.0.1 --directory C:\Github\StageGame\Client\Builds\WebGL` 후 `http://127.0.0.1:8765/` 접속.
 - `StageGamePortrait` 템플릿이 화면의 가로·세로 가용 공간에 모두 맞는 9:16 캔버스, 안전영역 여백, 로딩/오류 안내를 제공한다. 모바일 브라우저 실기기 성능은 측정하지 않았다.
 
+## 한국어·영어와 UI 개선
+
+- `LOCALIZATION-REQUEST.json`으로 필요한 70개 UI 문자열을 먼저 공유했고, 총괄의 중계와 `GameData/LOCALIZATION-CONTRACT.md`로 계약을 확정했다. 기존 key/ko 58개를 보존하고 새 UI 키 65개를 추가한 **123개 ko/en**, 기존 `schemaVersion:1`을 사용한다. stages/ads는 변경하지 않았다. Excel 생성물을 Sync 도구로 복사했으며 JSON을 수동 편집하지 않았다.
+- 설정의 저장된 한국어/English 버튼으로 화면 문구를 즉시 갱신한다. 선택 표식은 ✓이며 언어명은 양쪽 언어에서 모국어로 유지한다. `ProgressData.language`를 저장 v1에 추가했고, 구형 저장·누락·알 수 없는 값은 해금/소리 설정을 보존하며 ko로 복귀한다. 영어 선택 후 씬 재실행에서 영어와 2/30 해금을 함께 복원하는 PlayMode 회귀를 통과했다.
+- 정적 문구는 AppRoot의 직렬화된 `LocalizedLabel[]`, 동적 제목·턴·수·결과·힌트·오류는 동일 `StringTable` 키를 사용한다. 저장된 모든 Text는 키 바인딩 또는 명시적 동적 필드에 포함되는지 검사한다. 숫자 형식은 코드에서 준비하고 문자열은 `{0}`, `{1}`만 사용한다. 법적 원문·개발 로그·문자열 데이터 자체를 읽지 못했을 때 최소 복구 안내만 예외다.
+- WebGL 로딩/오류/캔버스 설명도 빌드 시 Excel 출력에서 `ui-text.js`로 생성한다. 언어 브리지는 실제 선택을 다음 로딩 화면에도 전달하며 게임 내 설정의 기준은 PlayerPrefs다.
+- 설정의 SDK/수익/Made with Unity/폰트 설명을 제거하고 라이선스 전문 메뉴를 유지했다. NoFillAds에서는 로비·결과 배너와 결과의 광고 상태 문구를 숨긴다. 실패·취소·저장 안내는 짧게 표시한다. 민트/산호 및 돌의 나/You·AI 문자 표식을 유지했다.
+- 기존 프리팹을 `LoadPrefabContents`로 제한 수정했다. 언어 버튼도 공통 PrimaryButton의 저장된 중첩 인스턴스이며 공통 CloseButton을 유지한다. 런타임에서 UI 오브젝트를 만들지 않는다. 일반 버튼/닫기 최소 크기는 기준 100×100: 390px 화면에서 약 54.17px, 320px 화면에서 약 44.38px다. 보드 7개 열 입력은 각각 390px에서 47.67px, 320px에서는 39.05px로 **작은 화면의 남은 제약**이다.
+- 긴 영어 제목 검사에서 `Review connections and defense`의 잘림을 발견했다. 로비 제목 폭 580/글자 32, 대국 제목 글자 28로 조정한 뒤 두 언어의 30개 제목을 모두 검사했다. 설정·로비·결과·일시정지 버튼 겹침과 영어 본문 높이 검사를 통과했다.
+- 불투명 색상 기준 대비는 본문/패널 13.20:1, 보조문구/패널 6.18:1, 짙은 글자/민트 12.01:1, 흰 글자/보조버튼 10.09:1이다. 비활성/장식 요소는 제외한 계산이며 전체 접근성 인증이나 사람 사용성 시험이 아니다.
+
+## 구조·자료구조 감사
+
+- 42칸 `int[]`와 7열 높이 배열은 작은 고정 보드에 적합하며 착수 위치를 바로 구한다. 별도 그래프나 범용 보드 계층을 추가하지 않았다.
+- 123개 문자열은 키 기반 Dictionary를 한 번 구성하고 언어 변경 시 기존 Text를 갱신한다. 화면 수가 적어 기존 GameApp의 직렬화 참조와 명시적 갱신으로 충분하며 전역 이벤트 버스나 MVVM 프레임워크를 추가하지 않았다.
+- `IAdService`는 플랫폼 경계를 나누고 RewardGate의 요청 토큰은 늦은/중복 콜백을 거부한다. Status와 저장 경고는 UI 문자열 키로 변환했다. 실 SDK가 연결됐다는 뜻은 아니다.
+- 결과 중복 거부에는 저장 List와 조회 HashSet을 사용한다. 완료 판 ID가 계속 쌓이므로 장기 저장 크기/압축 정책은 후속 검토 대상이다.
+- AI는 기존 iterative deepening/alpha-beta 및 노드·시간 제한을 유지한다. 분기마다 Board.Clone, Score 객체, iterator가 할당되므로 GC 부담 가능성이 있다. 실기기 할당량·프레임 p95를 측정하기 전 최적화 완료로 주장하지 않으며 이번에 풀링·undo 보드 등으로 재작성하지 않았다.
+
+## 화면 크기 변경 후 배율 보정
+
+- 총괄의 독립 브라우저 검사에서 390→320×568 전환 직후 설정 프레임이 약 232px, 닫기가 약 36px로 축소되고, 새로고침하면 약 284px/44px로 복구되는 결함을 확인했다. Canvas DOM은 이미 319.5×568이었으므로 HTML 폭 제한과 별개의 Unity 내부 배율 문제였다.
+- 설치된 uGUI의 CanvasScaler는 `preWillRenderCanvases`에서 배율을 갱신한다. 기존 SafeAreaFitter.Update가 그 이전의 rect를 읽고 Screen 크기만 캐시해 이후 실제 rect 변경을 놓쳤다. 저장 씬에서 Screen은 고정한 채 Canvas 배율을 바꾸는 회귀로 수정 전 **기대 0.375 / 실제 1.0** 실패를 재현했다 (`Evidence/layout-before.xml`).
+- SafeAreaFitter를 `Canvas.willRenderCanvases`에서 실행하고 Screen/safe-area와 별도로 실제 가용 rect 크기도 추적한다. OnDisable에서 이벤트를 해제하며, 가용 크기가 같으면 배율을 다시 쓰지 않는다. 프리팹·게임·언어·광고 로직은 변경하지 않았다.
+- 수정 후 같은 검사에서 내용 배율이 **1→0.375→1**로 정상 복귀했고 전체 Unity 회귀 **42/42**를 통과했다 (`Logs/layout-final-tests.log`, `Evidence/unity-tests.xml`, `Evidence/layout-reflow-check.json`). Android와 WebGL도 최종 재빌드에서 오류/경고 각각 0으로 성공했다.
+- 총괄 채팅 `01a138d9-7ede-70d0-ba36-e84a05e6b105`의 2026-10-14 최종 보고: `webgl-layout-final`을 로드한 뒤 390px 설정 프레임 약 346px/닫기 54px→새로고침 없이 320px에서 프레임 284px/닫기 44px→English 선택→390px 복귀에서 동일한 크기와 영어 유지→X로 로비 복귀를 확인했다. error/warn은 빈 배열이며 한국어로 복귀하고 뷰포트 설정을 복원했다. **QA-008 최종 독립 재시험 통과**로 기록한다. 직접 증거는 `Docs/Management/Evidence/localization-browser-20261014/final-ko-settings-390.jpg`, `final-en-settings-320.jpg`, `final-en-settings-390-resized.jpg`, `final-console.json`이다. 이 항목은 총괄의 실제 브라우저 보고이며 클라이언트의 별도 실행이나 실제 모바일 기기 검증으로 표기하지 않는다.
+
 ## 게임과 코드
 
 - `ConnectFourBoard`: 7열×6행, 행 0은 바닥. 플레이어 1/AI -1. 가로·세로·양 대각선 4개 이상 승리, 만판 무승부, 만열/범위 밖/종료 후 착수 거부.
 - `AiSearch`: 즉승과 피할 수 있는 즉패 방어를 우선하고 iterative deepening negamax/alpha-beta를 사용한다. 실수율도 즉승·즉패 방어를 무시하지 않는다. 원본 보드는 수정하지 않는다.
 - AI는 깊이/노드 예산 외에 프레임 약 4ms, 전체 활성 사고시간 650ms의 시험 상한을 둔다. 전체 시간은 프레임 사이 대기를 포함하고 일시정지 시간을 제외한다. 매 16노드 단위로 검사하며 중단 시 마지막 완료 깊이의 합법 수를 사용한다. 250ms의 별도 연출 대기가 있다. 하드 실시간 보장이나 실기기 p95 수치가 아니다.
-- 최종 Editor 배치 smoke에서 최고 예산의 빈 판 AI 응답은 연출 대기를 포함해 약 300ms였다. 이는 단일 개발 PC 검사이며 모바일 성능으로 일반화하지 않는다.
+- 이번 Editor 배치 smoke에서 최고 예산의 빈 판 AI 응답은 연출 대기를 포함해 약 280ms였다. 이는 단일 개발 PC 검사이며 모바일 성능으로 일반화하지 않는다.
 - `GameData`: JsonUtility wrapper 계약 v1을 읽고 정확히 30개, 연속 ID/챕터/문자열 참조/AI 범위/시작측/합법 시작 수열을 검사한다. 실패하면 로비에 명시적 오류를 표시하고 시작 버튼을 막는다.
 - `GameApp`: 로비/스테이지 탐색→대국→결과→재도전/다음 스테이지, 일시정지·로비 복귀, 승리 줄과 패배 방향, 효과음·설정·도움말·고지를 연결한다.
 - `ProgressStore`: 게임 데이터와 별도 저장 버전 1, 최고 해금/완료 판수/설정/광고 간격/처리한 판 ID를 PlayerPrefs로 저장한다. 비연속 A→B→A 및 재실행 후 같은 결과 중복 처리를 막는다. 저장 실패는 경고를 표시하고 현재 플레이/결과 화면 이동을 계속 허용한다.
@@ -69,15 +97,15 @@
 
 ## 다음 MVP 범위: 광고 제거 IAP (미구현)
 
-2026-10-14 총괄이 전달한 사용자 결정으로 광고 제거 IAP를 다음 구현 범위에 추가했다. **이번 반영은 문서만 수정하며 현재 Client 코드·프리팹·빌드·검증 결과는 유지한다. 결제 기능은 구현·연동·검증되지 않았다.**
+2026-10-14 총괄이 전달한 사용자 결정으로 광고 제거 IAP를 다음 구현 범위에 추가했다. **이번 한영/UI 작업에 결제 구현은 포함하지 않았다. 결제 기능은 구현·연동·검증되지 않았다.**
 
 - 상품 기획안: **3,900원 1회 결제**, 전면·배너 광고 제거 및 리워드 힌트 광고 면제. 구매자의 힌트도 **판당 1회**로 제한한다.
 - 판매 노출 조건: 원스토어 광고 미연결 버전에서는 구매 버튼을 숨긴다. 아직 제공하지 않는 광고의 제거 상품을 판매하지 않는다.
 - 구현 예정: 플랫폼별 결제 어댑터, 서버 검증을 거친 구매 권리 적용, 구매 복구, 저장된 Unity 프리팹 기반 구매/복구 UI. 로컬 값만으로 구매 권리를 확정하지 않는다.
 - QA 예정: 구매·복구 성공/실패, 환불 후 권리 갱신, 광고 제거 적용, 판당 힌트 제한, 광고 미연결 버전의 판매 버튼 비노출을 검증한다. 아직 수행하지 않았다.
-- 총괄이 개요와 계약 v2를 작성 중이며, 서버는 Cloud Run + Firestore를 검토 중이다. 해당 선택과 계약이 확정되면 클라이언트 연동에 반영한다. 현재 런타임 데이터 계약 v1이나 오프라인 대국 구현이 변경된 것은 아니다.
+- 최신 총괄 계약은 v3이며 서버 계획은 **Cloudflare Workers Free + D1 Free + Secrets/mTLS**다. 무료 한도 내 운영 방향이고 실제 토스 mTLS·소유권·SDK 검증 및 배포는 미실행이다. 상세 조건은 `Server/README.md`를 따른다. JSON schema v1 및 오프라인 대국 구조는 유지한다.
 
-## 검증과 수정 이력
+## 한영 개선 이전의 검증·수정 이력
 
 - 390×844 뷰포트에서 기존 높이 우선 CSS의 캔버스가 474.75×844로 커져 오른쪽 버튼이 잘리는 문제를 수정했다. 안전영역을 뺀 가로·세로 공간의 최솟값으로 크기를 제한하고 grid 최소 크기를 0으로 설정했다. 실제 브라우저 DOM 측정은 390×844→390×693.33, 320×568→319.5×568, 1280×720→405×720이며 모두 9:16 및 화면 내부 경계를 유지한다. 390×844에서 설정 버튼과 닫기 버튼도 포인터로 검증했다. 조회한 브라우저 오류·경고는 없었다. 이는 데스크톱 IAB의 뷰포트 검사이며 실기기 검사와 구분한다.
 - 총괄의 최종 독립 브라우저 재시험은 390×844에서 캔버스 390×693.333, x=0/y=75.333, 로비·7열 보드·결과 화면 잘림 없음을 확인했다. 0 기준 열 수순 `P3 AI3 P3 AI3 P1 AI1 P2 AI1 P4`로 1스테이지 9수 승리 후 '연결 성공' 결과→로비 2/30 해금→새로고침 후 STAGE 02 '두 돌 잇기' 및 2/30 복원을 확인했다. 조회한 console error/warn은 빈 배열이며 뷰포트 설정도 복원했다. 이 항목은 총괄 채팅 `01a138d9-7ede-70d0-ba36-e84a05e6b105`의 2026-10-14 전달 결과를 기록한 것으로, 클라이언트의 별도 재실행이나 실제 모바일 기기 검사가 아니다. QA007은 클라이언트 수정 및 총괄 직접 재시험을 통과했으며 QA 문서 종결은 해당 담당 영역에서 반영한다.
@@ -100,11 +128,12 @@
 |---|---|
 | `stages.json` | `2D04B124A42F0F3798AD942E9AACAB97EE34A25F05B380144CD70F75C3904992` |
 | `ads.json` | `D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A` |
-| `strings.json` | `F307E1900A7E0CDF72A1B50D33CBFB0EECE4A6F46E69910978286A6CEF2D7752` |
-| Android APK (34,676,997 bytes) | `8A809C7B1942E16D3B846721118A49D4E557CD24EA424E66D07C4D7C908C5688` |
-| WebGL WASM | `341A44CDABBCBF20FAEF276B248C6C2861CCDDCDC42AACC2F3D79F64BE05C18F` |
-| WebGL data | `449794A6FADDA05C4D336993125D1CB67BAC2B59EEA918BB9EF9601E79B800EB` |
-| WebGL index.html (반응형 수정) | `2102BD16456F5BBD5788FFAB1107CB611F875B9DC211472218C7044CBAB23102` |
+| `strings.json` (한영 123개) | `ED5FD27463724F4789B2F5E96922316240F73BF73EBC9D663410F0758E0883C2` |
+| Android APK (38,905,900 bytes) | `7E49F8CD0156D4D975413C2FE8D9D08EAD07C7387411110C7C6699AB33646978` |
+| WebGL WASM | `816CE335BC51C67C6D34AB8D97FC16178253C5FBB60886D23308A700A1D760B4` |
+| WebGL data | `A036C8F993D418C2E0C39DF32FDF16BD0BC165A762E3CE81F28C6115A56D0EF4` |
+| WebGL index.html | `CDE4EFB15400E00192D314F28272A8D79ADEDBCE279CDE6050168469796B23ED` |
+| WebGL ui-text.js | `2D958DA273B7A6ACC2DFBD37EE24B034F0A82078A7BCA7755858A41C33A70FC8` |
 
 전체 산출물·런타임 소스 해시는 `Evidence/verification.json`에 기록했다. 빌드 파일/Library/Logs는 Git 제외 대상이며, 작은 검증 요약/XML/이미지는 Evidence에 별도로 남겼다. 커밋/푸시는 수행하지 않았다.
 
@@ -116,6 +145,8 @@ $project = 'C:\Github\StageGame\Client'
 & "$project\Tools\SyncGameData.ps1"
 # 최초 누락 자산만 생성; 기존 사용자 프리팹 재생성 금지
 & $unity -batchmode -nographics -projectPath $project -executeMethod StageGame.Editor.ProjectBuilder.Create -quit -logFile "$project\Logs\create.log"
+# 기존 프리팹의 한영 키 바인딩/입력 영역 변경을 재적용할 때만 실행
+& $unity -batchmode -nographics -projectPath $project -executeMethod StageGame.Editor.LocalizationBuilder.Apply -quit -logFile "$project\Logs\localization-prefabs.log"
 # 테스트에는 -quit를 추가하지 않는다
 & $unity -batchmode -projectPath $project -runTests -testPlatform EditMode -testResults "$project\Logs\editmode-results.xml" -logFile "$project\Logs\tests.log"
 & $unity -batchmode -nographics -projectPath $project -buildTarget Android -executeMethod StageGame.Editor.ProjectBuilder.BuildAndroid -quit -logFile "$project\Logs\android-build.log"

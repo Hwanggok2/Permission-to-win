@@ -1,34 +1,38 @@
-[
-  {
-    "FullName": "assets/Notices/NotoSansKR-OFL.txt",
-    "Length": 4388
-  },
-  {
-    "FullName": "assets/Notices/NUnit-ThirdPartyNotices.txt",
-    "Length": 1249
-  },
-  {
-    "FullName": "assets/Notices/NotoSansCJKkr-OFL.txt",
-    "Length": 4808
-  },
-  {
-    "FullName": "assets/Notices/Unity-NUnit-LICENSE.txt",
-    "Length": 433
-  },
-  {
-    "FullName": "assets/Notices/Unity-TestFramework-LICENSE.txt",
-    "Length": 475
-  },
-  {
-    "FullName": "assets/Notices/Unity-uGUI-LICENSE.txt",
-    "Length": 457
-  },
-  {
-    "FullName": "assets/Notices/SOURCES.txt",
-    "Length": 1451
-  },
-  {
-    "FullName": "assets/Notices/Unity-Companion-License-Full.txt",
-    "Length": 6002
-  }
-]
+{
+  "apkSha256": "7E49F8CD0156D4D975413C2FE8D9D08EAD07C7387411110C7C6699AB33646978",
+  "verifiedAtUtc": "2026-10-14T11:29:00.7852782Z",
+  "entries": [
+    {
+      "entry": "assets/Notices/NotoSansKR-OFL.txt",
+      "bytes": 4388
+    },
+    {
+      "entry": "assets/Notices/NUnit-ThirdPartyNotices.txt",
+      "bytes": 1249
+    },
+    {
+      "entry": "assets/Notices/NotoSansCJKkr-OFL.txt",
+      "bytes": 4808
+    },
+    {
+      "entry": "assets/Notices/Unity-NUnit-LICENSE.txt",
+      "bytes": 433
+    },
+    {
+      "entry": "assets/Notices/Unity-TestFramework-LICENSE.txt",
+      "bytes": 475
+    },
+    {
+      "entry": "assets/Notices/Unity-uGUI-LICENSE.txt",
+      "bytes": 457
+    },
+    {
+      "entry": "assets/Notices/SOURCES.txt",
+      "bytes": 1451
+    },
+    {
+      "entry": "assets/Notices/Unity-Companion-License-Full.txt",
+      "bytes": 6002
+    }
+  ]
+}

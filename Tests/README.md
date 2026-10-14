@@ -6,6 +6,10 @@
 
 - `run-independent.ps1 -RunId <새 ID>`: 실제 C# 소스를 증거 경로에 복사/해시 고정 후 오프라인 .NET 10 빌드·실행. 보드/AI/광고는 실제 로직, Unity API는 `IndependentHarness/UnityStubs.cs`에 명시된 대체 구현. 실행 증거·출처 검사를 `Docs/QA/Evidence/`에 남긴다.
 - `run-independent.ps1 -RunId <새 ID> -Scope app.`: 변경된 GameApp 공통 흐름 7묶음만 실행. 기존 보드/AI 1,000개 검사 및 30스테이지 탐색은 반복하지 않는다. 대체 UI의 직접 이벤트 검사는 실제 포인터 레이캐스트 오류를 검출하지 못한다.
+- `run-independent.ps1 -RunId <새 ID> -SkipStageExploration`: 기존 21묶음과 신규 다국어 8묶음을 실행하고 30스테이지 승리 경로 재탐색은 생략한다. 보드·AI·Generated 스테이지가 이전 경로 증거와 같을 때만 생략 결과를 기존 경로 증거와 연결한다.
+- `run-independent.ps1 -RunId <새 ID> -Scope l10n.`: 123개 한영 조회, 기존 58개/요청 70개 분리, 누락/중복/포맷 오류, schema 1 언어 이행·복원, 경고 문구 키, UI 소스 키, 같은 판 언어 변경의 8묶음. PlayerPrefs/JsonUtility/UI/코루틴은 대체 구현이므로 실제 Unity·프리팹·브라우저 검증을 대신하지 않는다.
+- `check-localization-evidence.ps1 -RunId <새 ID>`: 클라이언트 verification/XML·캡처·소스를 보존하고 빌드/소스 해시, 코어 변경 여부, AppRoot 번역 참조를 읽기 전용 검사한다. 진행 중 수정으로 XML/verification/빌드가 다른 버전일 수 있으므로 JSON의 `matchesDeclared`와 각 `matches`를 확인한다. Unity·브라우저는 실행하지 않는다.
+- 최종 브라우저 자료가 준비되면 위 명령에 `-IncludeFinalBrowser`를 추가해 최종 캡처·콘솔·빌드 기록과 SafeArea 수정 전 실패 XML도 함께 보존한다. 결함 종료는 해시 대조와 실제 재시험 보고를 확인한 뒤 QA 문서에 기록한다.
 - `audit-data.py <새 ID>`: bundled Python으로 실행. 실제 Excel/exporter/test를 스냅샷으로 읽고, 기존 테스트의 모든 쓰기를 `Tests/.work/`로 전환한다. 생성/임포트 정합성과 중간 출력 실패를 검사한다. Excel은 저장하지 않는다.
 - `check-stage-solvability.py <stages.json> <output.json>`: Python 독립 보드로 제한 깊이 강제 패배 전략과 증명 트리를 검증. 미증명은 클리어 가능 판정이 아니다.
 - 컴파일한 harness의 `--prove-fixed <data directory> <output.json>` 모드: 실제 고정 시드 AI를 상대로 플레이어 수를 전수 분기한다. 탐색 제한 국면은 unknown으로 유지한다.

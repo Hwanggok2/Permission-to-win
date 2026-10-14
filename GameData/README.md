@@ -1,6 +1,6 @@
 # StageGame MVP 데이터
 
-2026-10-14 기준 Excel 원본과 JSON v1 생성물을 작성하고 검증했다. 7×6 중력식 4목, 3챕터×10스테이지, 광고 설정 1행, 한국어 문자열 58개다. 전용 게임 서버는 사용하지 않는다.
+2026-10-14 기준 Excel 원본과 JSON v1 생성물을 작성하고 검증했다. 7×6 중력식 4목, 3챕터×10스테이지, 광고 설정 1행, 한국어·영어 문자열 123개다. 대국/AI/진행은 로컬이며 구매 서버 계획은 Server/README.md를 따른다.
 
 ## 파일과 편집 흐름
 
@@ -10,12 +10,12 @@
 | [FORMAT.md](C:/Github/StageGame/GameData/FORMAT.md) | SimpleGame 관례 조사, 차이점, 실제 v1 필드 매핑과 검증 규칙 |
 | [export_data.py](C:/Github/StageGame/GameData/export_data.py) | Excel 읽기, 전체 검사, 재현 가능한 JSON 생성, `--check` |
 | [requirements.txt](C:/Github/StageGame/GameData/requirements.txt) | 기존 설치를 사용한 읽기 라이브러리 `openpyxl==3.1.5` |
-| [test_export_data.py](C:/Github/StageGame/GameData/test_export_data.py) | Python 자동 검증 28개 |
+| [test_export_data.py](C:/Github/StageGame/GameData/test_export_data.py) | Python 자동 검증 36개 |
 | [audit_openings.py](C:/Github/StageGame/GameData/audit_openings.py) | 휴리스틱 없이 제한 깊이 승패를 분석하는 독립 bitboard 검사 |
 | [Validation](C:/Github/StageGame/GameData/Validation/README.md) | QA 지적 6개 국면 수정 전후 수순·보존 검사·화면·재현 스크립트 |
 | [Generated/stages.json](C:/Github/StageGame/GameData/Generated/stages.json) | 30개 국면과 AI 시험값 |
 | [Generated/ads.json](C:/Github/StageGame/GameData/Generated/ads.json) | 최초 3판 제외, 이후 2판 AND 90초, 힌트 1회/판 |
-| [Generated/strings.json](C:/Github/StageGame/GameData/Generated/strings.json) | 제목 30개와 한국어 UI/안내 문구 28개 |
+| [Generated/strings.json](C:/Github/StageGame/GameData/Generated/strings.json) | 제목 30개와 UI/안내 문구 93개, 각각 ko/en |
 
 소량의 데이터이며 제목 참조와 광고 설정을 한 번에 검증해야 하므로 원본 파일은 하나로 묶었다. 4행 메타 구조는 SimpleGame을 참고했지만 콘텐츠·코드는 새로 작성했다. Excel에는 enum이나 텍스트로 변환한 숫자를 넣지 않았으며, `OpeningMoves`는 열 수순을 표현하는 텍스트다.
 
@@ -57,11 +57,11 @@ $stagePython = 'C:\Users\JW\.cache\codex-runtimes\codex-primary-runtime\dependen
 
 | 검사 | 결과 |
 | --- | --- |
-| Artifact Tool로 신규 Excel 작성 및 재계산 | 완료. 3개 시트, 30스테이지, 한국어 58개, 수식 오류 검색 0건 |
+| Artifact Tool로 Excel 작성·언어 확장 및 재계산 | 완료. 3개 시트, 30스테이지, ko/en 123개, 수식 오류 검색 0건 |
 | Excel 화면 렌더 | 3개 시트 모두 직접 확인. Stages 좌/우·후반, 광고 전 필드, Strings 메타·제목·긴 도움말/UI 문구 확인. 한글/메타/긴 수순 잘림 없음 |
 | 저장된 Excel 재열기 | openpyxl로 원본을 읽어 타입·메타·키·참조·합법 수순 검사 통과 |
 | 실제 exporter | 성공. 3개 wrapper 객체, UTF-8, schemaVersion 1 |
-| 자동 테스트 | 28개 통과. 아래 주요 경계와 불변성 포함 |
+| 자동 테스트 | 36개 통과. 아래 주요 경계와 불변성 포함 |
 | 반복 생성 및 행 순서 변경 | 동일 JSON 바이트. 문자열 키/스테이지 ID 정렬 확인 |
 | 잘못된 데이터 입력 | 생성 실패 및 기존 정상 JSON 보존 확인 |
 | `--check` | 현재 원본과 생성물 일치. 누락/변경 JSON 거부도 테스트 |
@@ -74,10 +74,10 @@ $stagePython = 'C:\Users\JW\.cache\codex-runtimes\codex-primary-runtime\dependen
 
 | 파일 | SHA-256 |
 | --- | --- |
-| `GameData_MVP.xlsx` | `e236710c67014a3c4f6aced8121977a1185b447b2c7b1f9620c9edde2c2e5bc4` |
+| `GameData_MVP.xlsx` | `914f5cd0f13e27af14193576db1ba477787b4ab461b230cbc0aa73c691c12b78` |
 | `stages.json` | `2d04b124a42f0f3798ad942e9aacab97ee34a25f05b380144cd70f75c3904992` |
 | `ads.json` | `d19f181faf52db28287bbed1b42291770dc3bf83d35e5cca8af4a6dcce9e194a` |
-| `strings.json` | `f307e1900a7e0cdf72a1b50d33cbfb0eece4a6f46e69910978286a6cef2d7752` |
+| `strings.json` | `ed5fd27463724f4789b2f5e96922316240f73bf73ebc9d663410f0758e0883c2` |
 
 이 해시는 해당 검증 시점의 기록이다. 원본 변경 후에는 exporter, 테스트, `--check`를 다시 실행하고 갱신한다.
 
@@ -118,6 +118,16 @@ QA core-v2는 10/12/20/22/24/26에서 실제 C# AI 상대 승리 예시를 12시
 1. 클라이언트가 세 JSON을 함께 복사하고 JsonUtility 로딩·오류 경로·모든 스테이지 진입을 확인한다.
 2. 실제 AI에서 즉승/즉패 방어 우선, 예산 상한, 30국면의 승패와 학습 의도를 검토한다. 깊이 5~6의 저사양 기기 응답 시간은 특히 실측한다.
 3. 최고 해금 저장, 데이터 업데이트 호환, Android/WebGL의 종료/재개와 저장 복원을 검증한다.
-4. 사용자 제공 원스토어/토스 계정 준비 상태와 실제 SDK 연결·광고 승인·보상 검증을 구분한다. 서버 없이 시작하는 범위는 [Server/README.md](C:/Github/StageGame/Server/README.md)를 따른다.
+4. 사용자 제공 원스토어/토스 계정 준비 상태와 실제 SDK 연결·광고 승인·보상 검증을 구분한다. 구매 검증 무료 서버 계획은 [Server/README.md](C:/Github/StageGame/Server/README.md)를 따른다.
 
 이번 결과에 Unity 실행/컴파일, Android/WebGL 빌드, 실제 광고, 스토어 제출, 기기 또는 사람 플레이테스트 통과를 포함하지 않는다.
+
+## 한국어·영어 전환 데이터
+
+Strings의 기존 A:D 뒤에 Content_Eng(E)를 추가했다. 기존 한국어 58개를 보존·번역하고 Client 요청 신규 65개를 추가하여 총 123개다. `strings.json`은 schemaVersion 1의 `key/ko/en`이며 stages/ads JSON은 바이트가 동일하다. 총괄과 클라이언트의 [합의 계약](C:/Github/StageGame/GameData/LOCALIZATION-CONTRACT.md)을 따른다.
+
+누락 번역·중복 키·양 언어 포맷 인자 불일치·불완전 중괄호·지원하지 않는 포맷을 거부한다. 허용 범위는 `{0}`, `{1}` 등과 `{{`/`}}`다. 순서 변경·반복을 허용하며 인덱스는 0부터 연속이다. 검증 실패 시 이전 JSON 묶음을 보존한다.
+
+변경 전/후 Strings 렌더(메타, 긴 도움말, 설정, 동적 인자, 추가 UI)를 직접 확인했다. 최종 XLSX를 다시 읽어 원래 전 셀의 값·스타일, 행/열 크기, 고정창·검증 규칙 보존과 Client 요청 70개의 문구·인자 수 일치를 확인했다. [결과](C:/Github/StageGame/GameData/Validation/localization-results.json), 재현: `& $stagePython C:\Github\StageGame\GameData\Validation\verify_localization.py`. 변경 전 원본을 `--before`로 주면 기존 표 보존 비교도 실행한다.
+
+언어 전환 UI·언어 저장·화면 잘림·WebGL 로딩 문구는 Client 담당이 이 원본의 생성물을 연결하여 검증한다. 이 문서는 데이터 준비 완료만 기록한다.

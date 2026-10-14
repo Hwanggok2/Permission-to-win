@@ -1,0 +1,45 @@
+{
+  "scope": "Calculated contrast of authored opaque text/background colors; excludes disabled controls and decorative marks; not a full accessibility certification",
+  "pairs": [
+    {
+      "fg": "F1F5F9",
+      "name": "Primary text / panel",
+      "bg": "1B2A40",
+      "ratio": 13.2
+    },
+    {
+      "fg": "9BABBF",
+      "name": "Secondary text / panel",
+      "bg": "1B2A40",
+      "ratio": 6.18
+    },
+    {
+      "fg": "101B2B",
+      "name": "Ink / mint button",
+      "bg": "6CEDC7",
+      "ratio": 12.01
+    },
+    {
+      "fg": "F1F5F9",
+      "name": "White / secondary button",
+      "bg": "293D57",
+      "ratio": 10.09
+    }
+  ],
+  "touchReference": {
+    "normalButtonMinimum": 100,
+    "at320": 44.38,
+    "boardColumnAt390": 47.67,
+    "smallBoardLimitation": "Seven full-column targets fit on screen; 320px board columns remain under 44px.",
+    "at390": 54.17,
+    "boardColumnAt320": 39.05,
+    "referenceWidth": 720
+  },
+  "structure": {
+    "strings": "Dictionary keyed by stable Excel keys; ko/en selection and explicit UI refresh on change",
+    "advertising": "Existing IAdService Adapter with RewardGate tokens; production no-fill",
+    "progress": "Persisted match IDs plus HashSet for idempotency; storage grows per completed match, long-term compaction remains future work",
+    "ai": "Existing iterative deepening/alpha-beta and cooperative 16-node stepping retained. Clone + Score + iterator allocations exist per branch; physical-device GC/p95 not measured. No pooling or architecture rewrite.",
+    "board": "int[42] cells + int[7] heights; constant-time landing lookup"
+  }
+}

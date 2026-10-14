@@ -1,4 +1,4 @@
-param([string]$RunId = ('independent-' + (Get-Date -Format 'yyyyMMdd-HHmmss')), [string]$Scope = '')
+param([string]$RunId = ('independent-' + (Get-Date -Format 'yyyyMMdd-HHmmss')), [string]$Scope = '', [switch]$SkipStageExploration)
 $ErrorActionPreference = 'Stop'
 if ($RunId -notmatch '^[A-Za-z0-9_-]+$') { throw 'RunId must be a safe folder name.' }
 $qaRoot = Split-Path $PSScriptRoot -Parent
@@ -12,6 +12,7 @@ $qaSources = @(
     'Client/Assets/StageGame/Scripts/Core/ConnectFourBoard.cs',
     'Client/Assets/StageGame/Scripts/Core/AiSearch.cs',
     'Client/Assets/StageGame/Scripts/Core/GameData.cs',
+    'Client/Assets/StageGame/Scripts/Core/StringTable.cs',
     'Client/Assets/StageGame/Scripts/Core/ProgressStore.cs',
     'Client/Assets/StageGame/Scripts/Platform/Advertising.cs',
     'Client/Assets/StageGame/Scripts/UI/GameApp.cs'
@@ -34,6 +35,23 @@ foreach ($qaName in @('stages', 'ads', 'strings')) {
         $qaManifest += [pscustomobject]@{source=$qaOriginal; sha256=(Get-FileHash -LiteralPath $qaCopy -Algorithm SHA256).Hash}
     }
 }
+$qaAuditInputs = Join-Path $qaEvidence 'AuditInputs'
+New-Item -ItemType Directory -Path $qaAuditInputs | Out-Null
+foreach ($qaInput in @(
+    @{source='Client/LOCALIZATION-REQUEST.json'; name='localization-request.json'},
+    @{source='Client/Assets/StageGame/Editor/ProjectBuilder.cs'; name='ProjectBuilder.cs'},
+    @{source='GameData/LOCALIZATION-CONTRACT.md'; name='localization-contract.md'},
+    @{source='Docs/QA/Evidence/qa-ui-v1-20261014/ClientData/strings.json'; name='previous-strings.json'}
+)) {
+    $qaCopy = Join-Path $qaAuditInputs $qaInput.name
+    Copy-Item -LiteralPath (Join-Path $qaRoot $qaInput.source) -Destination $qaCopy
+    $qaManifest += [pscustomobject]@{source=$qaInput.source; sha256=(Get-FileHash -LiteralPath $qaCopy -Algorithm SHA256).Hash}
+}
+foreach ($qaTool in @('Tests/run-independent.ps1','Tests/IndependentHarness/Program.cs','Tests/IndependentHarness/LocalizationChecks.cs','Tests/IndependentHarness/UnityStubs.cs','Tests/IndependentHarness/IndependentHarness.csproj')) {
+    $qaCopy = Join-Path $qaAuditInputs (Split-Path $qaTool -Leaf)
+    Copy-Item -LiteralPath (Join-Path $qaRoot $qaTool) -Destination $qaCopy
+    $qaManifest += [pscustomobject]@{source=$qaTool; sha256=(Get-FileHash -LiteralPath $qaCopy -Algorithm SHA256).Hash}
+}
 $qaManifest | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath (Join-Path $qaEvidence 'source-manifest.json') -Encoding utf8
 $env:DOTNET_CLI_HOME = Join-Path $PSScriptRoot '.work/dotnet-home'
 $env:DOTNET_SKIP_FIRST_TIME_EXPERIENCE = '1'
@@ -48,7 +66,8 @@ if ($LASTEXITCODE -ne 0) { throw 'Offline restore failed.' }
 if ($LASTEXITCODE -ne 0) { throw 'Independent compilation failed; no tests ran.' }
 $qaArguments = @((Join-Path $qaEvidence 'results.json'), $qaData)
 if (Test-Path -LiteralPath (Join-Path $qaGenerated 'stages.json')) { $qaArguments += $qaGenerated }
-if ($Scope) { $qaArguments += $Scope }
+$qaArguments += $(if ($Scope) { $Scope } else { 'all' })
+if ($SkipStageExploration) { $qaArguments += '--skip-stage-exploration' }
 & dotnet (Join-Path $PSScriptRoot 'IndependentHarness/bin/Release/net10.0/IndependentHarness.dll') @qaArguments 2>&1 | Tee-Object -FilePath (Join-Path $qaEvidence 'run.log')
 $qaExit = $LASTEXITCODE
 $qaManifest | ForEach-Object {

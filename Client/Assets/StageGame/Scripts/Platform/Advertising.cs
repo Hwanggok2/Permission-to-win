@@ -15,7 +15,7 @@ namespace StageGame
     // Production builds have no ad SDK or account IDs. No-fill never produces a reward.
     public sealed class NoFillAds : IAdService
     {
-        public string Status => "광고 미연결 · 오프라인 플레이 가능";
+        public string Status => "ad_unavailable";
         public void ShowRewarded(Action<AdResult> callback) => callback(AdResult.Unavailable);
         public void ShowInterstitial(Action<AdResult> callback) => callback(AdResult.Unavailable);
         public void CancelPending() { }
@@ -61,7 +61,7 @@ namespace StageGame
     {
         public AdResult Result = AdResult.Unavailable;
         public bool DuplicateCallback;
-        public string Status => "EDITOR 전용 모의 광고 · 수익 없음";
+        public string Status => "client_ad_test_mode";
         public void ShowRewarded(Action<AdResult> callback) { callback(Result); if (DuplicateCallback) callback(Result); }
         public void ShowInterstitial(Action<AdResult> callback) { callback(Result); if (DuplicateCallback) callback(Result); }
         public void CancelPending() { }

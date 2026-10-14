@@ -1,12 +1,13 @@
 {
-  "verifiedAtUtc": "2026-10-14T06:12:41.4217023Z",
+  "verifiedAtUtc": "2026-10-14T11:29:48.1573832Z",
   "unity": "6000.3.15f1",
   "project": "C:\\Github\\StageGame\\Client",
   "tests": {
-    "total": 30,
-    "passed": 30,
+    "total": 42,
+    "passed": 42,
     "failed": 0,
-    "file": "Evidence/unity-tests.xml"
+    "file": "Evidence/unity-tests.xml",
+    "log": "Logs/layout-final-tests.log"
   },
   "android": {
     "build": "Succeeded",
@@ -18,42 +19,48 @@
     "targetSdk": 36,
     "architecture": "arm64-v8a",
     "deviceTested": false,
-    "releaseSigned": false
+    "releaseSigned": false,
+    "latestBuildLog": "Logs/android-layout-final.log"
   },
   "webgl": {
     "build": "Succeeded",
     "errors": 0,
     "warnings": 0,
     "template": "StageGamePortrait",
-    "browserSmoke": "Codex IAB localhost: lobby, start, player move, AI reply and Notices X pointer close verified; console errors/warnings empty.",
-    "browserProof": "Evidence/webgl-browser-match.jpg",
+    "browserSmoke": "Root final independent QA-008 PASS: 390 -> 320 -> 390 resize, English selection persists, correct frame/close size, X closes, errors/warnings empty. See rootFinalLayoutRetest.",
+    "browserProof": "../Docs/Management/Evidence/localization-browser-20261014/final-en-settings-320.jpg",
     "appsInTossSdk": false,
     "aitPackage": false,
-    "responsiveProof": "Evidence/responsive-check.json",
-    "latestBuildLog": "Logs/webgl-responsive.log",
-    "responsiveSmoke": "Codex IAB: 390x844 -> canvas 390x693.33, 320x568 -> 319.5x568, 1280x720 -> 405x720. All canvas bounds within viewport. Settings opened and closed at 390x844. Console errors/warnings empty. Desktop viewport emulation only."
+    "responsiveProof": "Evidence/layout-reflow-check.json",
+    "latestBuildLog": "Logs/webgl-layout-final.log",
+    "responsiveSmoke": "Final root browser: 390px frame ~346 / close ~54; 320px frame ~284 / close ~44 without reload. Not a physical-device test."
   },
   "ads": "NoFillAds only. Mock completion is UNITY_EDITOR-only.",
   "artifacts": [
     {
       "path": "Builds/Android/StageGame-development.apk",
-      "bytes": 34676997,
-      "sha256": "8A809C7B1942E16D3B846721118A49D4E557CD24EA424E66D07C4D7C908C5688"
+      "bytes": 38905900,
+      "sha256": "7E49F8CD0156D4D975413C2FE8D9D08EAD07C7387411110C7C6699AB33646978"
     },
     {
       "path": "Builds/WebGL/Build/WebGL.wasm",
-      "bytes": 23975543,
-      "sha256": "341A44CDABBCBF20FAEF276B248C6C2861CCDDCDC42AACC2F3D79F64BE05C18F"
+      "bytes": 24384482,
+      "sha256": "816CE335BC51C67C6D34AB8D97FC16178253C5FBB60886D23308A700A1D760B4"
     },
     {
       "path": "Builds/WebGL/Build/WebGL.data",
-      "bytes": 18683016,
-      "sha256": "449794A6FADDA05C4D336993125D1CB67BAC2B59EEA918BB9EF9601E79B800EB"
+      "bytes": 18737498,
+      "sha256": "A036C8F993D418C2E0C39DF32FDF16BD0BC165A762E3CE81F28C6115A56D0EF4"
     },
     {
       "path": "Builds/WebGL/index.html",
-      "bytes": 3432,
-      "sha256": "2102BD16456F5BBD5788FFAB1107CB611F875B9DC211472218C7044CBAB23102"
+      "bytes": 4132,
+      "sha256": "CDE4EFB15400E00192D314F28272A8D79ADEDBCE279CDE6050168469796B23ED"
+    },
+    {
+      "path": "Builds/WebGL/ui-text.js",
+      "bytes": 448,
+      "sha256": "2D958DA273B7A6ACC2DFBD37EE24B034F0A82078A7BCA7755858A41C33A70FC8"
     }
   ],
   "gameData": [
@@ -69,7 +76,7 @@
     },
     {
       "name": "strings.json",
-      "sha256": "F307E1900A7E0CDF72A1B50D33CBFB0EECE4A6F46E69910978286A6CEF2D7752",
+      "sha256": "ED5FD27463724F4789B2F5E96922316240F73BF73EBC9D663410F0758E0883C2",
       "matchesSource": true
     }
   ],
@@ -84,23 +91,27 @@
     },
     {
       "path": "Assets/StageGame/Scripts/Core/GameData.cs",
-      "sha256": "68514EBA29CB67339F40B2A13BF189920449413C0032FE1AD2E86943D31406B3"
+      "sha256": "72018B7041F6E255E5210B2BAD652117744D0BC7BAED9BFAC1CF70340AABB567"
     },
     {
       "path": "Assets/StageGame/Scripts/Core/ProgressStore.cs",
-      "sha256": "89764FEADD1EC247765BB521F87555D8FB148D2DA2CCB095D4C46966E81F71DB"
+      "sha256": "074DE135B08DDBD15E7C605F54460D45981D2547D639054092FD4179A9300357"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/StringTable.cs",
+      "sha256": "8D133248463B3466690BCC76BD9BBB31F7BA1703CDF84E3FF6788F2AB4374A1B"
     },
     {
       "path": "Assets/StageGame/Scripts/Platform/Advertising.cs",
-      "sha256": "3043E960FA8C5C3506442C60024351B70C7C548D2834D4D6A579683A4CAE3D6C"
+      "sha256": "9D768FDDC0BCFB6801D7DEF5DC811FE9A699719CE6E56B909E62F2FFC814C23F"
     },
     {
       "path": "Assets/StageGame/Scripts/UI/GameApp.cs",
-      "sha256": "3BADE827B9277D4E4A3C26CBECC43448F3940CE3B01B4B2A644C5264E7DB65E2"
+      "sha256": "879D222A3991915833C36009EF8F1FB8363764DB7157E835F146B9F4EB10771B"
     },
     {
       "path": "Assets/StageGame/Scripts/UI/SafeAreaFitter.cs",
-      "sha256": "78B780ECE851E60A293DAA401E858EF21649896F31F655A208BBB3375D6BA57D"
+      "sha256": "BA20C7C48F2C47505BA9436FBD07570FE2F2838AC275DCD76F76832BE7C53222"
     }
   ],
   "noticesPointerProof": "Evidence/notices-close-check.txt; Evidence/webgl-notices-close.jpg",
@@ -140,7 +151,68 @@
     "reload": "STAGE 02 and 2/30 unlock restored",
     "consoleErrorsWarnings": [],
     "viewportOverrideReset": true,
-    "qa007": "Client fix and root direct retest passed; QA record closure belongs to QA/root"
+    "qa007": "Client fix and root direct retest passed; QA record closure belongs to QA/root",
+    "buildScope": "Previous pre-localization build only"
   },
-  "documentationFinalizedDateSeoul": "2026-10-14"
+  "documentationFinalizedDateSeoul": "2026-10-14",
+  "localization": {
+    "contract": "GameData/LOCALIZATION-CONTRACT.md; Docs/Management/CONTRACT.md v3",
+    "schemaVersion": 1,
+    "entries": 123,
+    "languages": [
+      "ko",
+      "en"
+    ],
+    "defaultLanguage": "ko",
+    "languageSavedIn": "stagegame.progress.v1 language field",
+    "unityTests": "42 passed, 0 failed, including saved-scene canvas layout reflow regression",
+    "independentCoreQA": "29 groups passed, 0 failed; Docs/QA/Evidence/qa-l10n-core-v1-20261014/run.log (Unity API stubs)",
+    "captures": [
+      "Evidence/ko-lobby.png",
+      "Evidence/ko-settings.png",
+      "Evidence/ko-match.png",
+      "Evidence/en-lobby.png",
+      "Evidence/en-settings.png",
+      "Evidence/en-match.png",
+      "Evidence/en-restored.png"
+    ],
+    "uiAudit": "Evidence/ui-ux-audit.json",
+    "runtimeUiConstruction": false,
+    "iapImplemented": false,
+    "serverDeployed": false
+  },
+  "layoutReflowProof": "Evidence/layout-reflow-check.json; Evidence/layout-before.xml; Evidence/unity-tests.xml",
+  "rootLocalizedBrowserFunctionalReport": {
+    "sourceThreadId": "01a138d9-7ede-70d0-ba36-e84a05e6b105",
+    "reportedDateSeoul": "2026-10-14",
+    "scope": "Localized WebGL before SafeAreaFitter layout followup",
+    "result": "Korean/English switch, English loading text, reload restoration, no-fill handling, nine-ply victory all passed",
+    "buildWasmSha256": "B3272C137C165AF308DEB97C4384C883773FBC5FF6C6732BC0D5962F108B59CE",
+    "physicalDevice": false
+  },
+  "rootFinalLayoutRetest": {
+    "sourceThreadId": "01a138d9-7ede-70d0-ba36-e84a05e6b105",
+    "reportedDateSeoul": "2026-10-14",
+    "qa": "QA-008 final independent browser pass",
+    "wasmSha256": "816CE335BC51C67C6D34AB8D97FC16178253C5FBB60886D23308A700A1D760B4",
+    "at390": {
+      "settingsFrameWidthApprox": 346,
+      "closeWidthApprox": 54
+    },
+    "at320": {
+      "settingsFrameWidthApprox": 284,
+      "closeWidthApprox": 44
+    },
+    "sequence": "390 settings -> 320 without reload -> English -> 390 with language/size preserved -> X closes to lobby",
+    "consoleErrorsWarnings": [],
+    "languageRestored": "ko",
+    "viewportReset": true,
+    "physicalDevice": false,
+    "proofs": [
+      "Docs/Management/Evidence/localization-browser-20261014/final-ko-settings-390.jpg",
+      "Docs/Management/Evidence/localization-browser-20261014/final-en-settings-320.jpg",
+      "Docs/Management/Evidence/localization-browser-20261014/final-en-settings-390-resized.jpg",
+      "Docs/Management/Evidence/localization-browser-20261014/final-console.json"
+    ]
+  }
 }

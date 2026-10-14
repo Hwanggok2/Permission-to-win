@@ -8,6 +8,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
+    <Compile Include="LocalizationChecks.cs" />
     <Compile Include="UnityStubs.cs" />
     <Compile Include="$(SourceSnapshotPath)/*.cs" />
   </ItemGroup>

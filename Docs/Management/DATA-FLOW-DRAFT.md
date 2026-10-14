@@ -6,7 +6,7 @@
 
 `Client/Assets/StageGame/Scripts/Core/ProgressStore.cs`의 `stagegame.progress.v1`에 저장한다.
 
-- 저장 형식 버전, 최고 해금 스테이지, 완료 판 수, 효과음 설정.
+- 저장 형식 버전, 최고 해금 스테이지, 완료 판 수, 효과음 설정, 선택 언어(`ko`/`en`). 기존 저장에 언어가 없거나 지원하지 않는 값이면 한국어로 복구한다.
 - 전면 광고 간격 관리용 마지막 판/UTC 시각. 현재 NoFill이므로 실제 광고 송출 기록이라는 뜻은 아니다.
 - 결과 중복 반영 방지용 판별 ID 목록. 계정이나 사용자 ID가 아닌 로컬 대국 구분값이다.
 - 저장 형식 오류 때 복구용 기존 문자열을 `.recovery` 키에 보관할 수 있다.
@@ -18,12 +18,13 @@
 - `Client/Packages/manifest.json`: uGUI 2.0.0, Test Framework 1.6.0, Unity 기본 audio/imageconversion/jsonserialize/ui/unitywebrequest 모듈. 실제 광고 SDK·앱인토스 SDK·별도 분석 SDK 없음.
 - 자체 게임 스크립트에서 `UnityWebRequest`, `HttpClient`, `WebRequest`, `Analytics`, `Application.OpenURL`, URL 문자열 호출을 검색해 외부 통신 코드를 발견하지 않았다. 이것은 전체 엔진/의존성의 네트워크 미사용이나 개인정보 미수집을 입증하는 동적 검사가 아니다.
 - WebGL 로더는 호스팅 위치에서 게임 파일을 내려받는다. 공개 호스팅의 접속 로그/운영 주체는 아직 정해지지 않았다. 현재 확인한 호스트는 이 PC의 `127.0.0.1`이다.
-- Android 개발 APK SHA-256: `8A809C7B1942E16D3B846721118A49D4E557CD24EA424E66D07C4D7C908C5688`. Android SDK 36.0.0의 `aapt dump permissions` 결과는 `android.permission.INTERNET`, 앱 자체 `com.stagegame.prototype.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION` 선언/사용이다. 이 검사는 해당 개발 APK에 한정된다.
+- WebGL의 초기 로딩 문구에도 선택 언어를 적용하도록 같은 브라우저의 `stagegame.language` 로컬 저장값을 사용한다. 게임 진행 저장과 별개의 표시용 값이며 서버로 전송하지 않는다.
+- Android 개발 APK SHA-256: `7E49F8CD0156D4D975413C2FE8D9D08EAD07C7387411110C7C6699AB33646978`. Android SDK 36.0.0의 `aapt dump permissions` 결과는 `android.permission.INTERNET`, 앱 자체 `com.stagegame.prototype.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION` 선언/사용이다. 이 검사는 해당 개발 APK에 한정된다.
 - 실기기 트래픽·SDK 실제 요청·동의 전 동작은 검사하지 않았다. 개발 빌드의 권한을 최종 릴리스 권한으로 확정하지 않는다.
 
 ## 광고 제거 구매 추가 후 처리 예정
 
-아래는 **계획이며 현재 개발판에 구현되지 않았다.** Cloud Run·Firestore에서 플랫폼/상품/거래 식별자, 인증된 구매자 연결값, 권한·검증·지급 상태를 처리할 예정이다. Secret Manager에는 서버용 인증정보를 보관하고 클라이언트·Git·로그에 노출하지 않는다. 플랫폼 구매자 인증은 필요하지만 자체 회원가입이나 게임 진행 동기화는 추가하지 않는다.
+아래는 **계획이며 현재 개발판에 구현되지 않았다.** Workers Free·D1 Free에서 플랫폼/상품/거래 식별자, 인증된 구매자 연결값, 권한·검증·지급 상태를 처리할 예정이다. Workers Secrets와 mTLS binding에는 서버용 인증정보를 보관하고 클라이언트·Git·로그에 노출하지 않는다. 플랫폼 구매자 인증은 필요하지만 자체 회원가입이나 게임 진행 동기화는 추가하지 않는다.
 
 구매 권한의 로컬 캐시와 같은 플랫폼 계정 복구를 검증한다. 환불은 플랫폼 확인 뒤 반영하고 네트워크 실패만으로 기존 검증 권한을 회수하지 않는다. 보유 기간·삭제/환불 지원 절차·위탁/국외이전 해당 여부는 실제 리전·SDK·계약을 확정한 후 공개 문서에 반영한다. 상세 설계는 [Server](../../Server/README.md)를 따른다.
 

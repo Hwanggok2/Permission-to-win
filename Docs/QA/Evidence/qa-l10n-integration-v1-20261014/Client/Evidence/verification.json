@@ -1,0 +1,184 @@
+{
+  "verifiedAtUtc": "2026-10-14T11:19:40.4840310Z",
+  "unity": "6000.3.15f1",
+  "project": "C:\\Github\\StageGame\\Client",
+  "tests": {
+    "total": 41,
+    "passed": 41,
+    "failed": 0,
+    "file": "Evidence/unity-tests.xml",
+    "log": "Logs/localization-tests-final.log"
+  },
+  "android": {
+    "build": "Succeeded",
+    "errors": 0,
+    "warnings": 0,
+    "package": "com.stagegame.prototype",
+    "version": "0.1.0",
+    "minSdk": 25,
+    "targetSdk": 36,
+    "architecture": "arm64-v8a",
+    "deviceTested": false,
+    "releaseSigned": false,
+    "latestBuildLog": "Logs/android-localized.log"
+  },
+  "webgl": {
+    "build": "Succeeded",
+    "errors": 0,
+    "warnings": 0,
+    "template": "StageGamePortrait",
+    "browserSmoke": "Localized build root independent browser retest pending. Unity actual PlayMode language switch, scene reload and gameplay passed. Earlier browser reports apply to the prior build only.",
+    "browserProof": "Evidence/en-lobby.png (Unity PlayMode capture, not browser)",
+    "appsInTossSdk": false,
+    "aitPackage": false,
+    "responsiveProof": "Evidence/responsive-check.json",
+    "latestBuildLog": "Logs/webgl-localized.log",
+    "responsiveSmoke": "Codex IAB: 390x844 -> canvas 390x693.33, 320x568 -> 319.5x568, 1280x720 -> 405x720. All canvas bounds within viewport. Settings opened and closed at 390x844. Console errors/warnings empty. Desktop viewport emulation only."
+  },
+  "ads": "NoFillAds only. Mock completion is UNITY_EDITOR-only.",
+  "artifacts": [
+    {
+      "path": "Builds/Android/StageGame-development.apk",
+      "bytes": 38905857,
+      "sha256": "8B1481013DA5561BC84D543359C9AE1FAA5F6D4D0D13AEE1CFFA2460382D216B"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.wasm",
+      "bytes": 24383138,
+      "sha256": "B3272C137C165AF308DEB97C4384C883773FBC5FF6C6732BC0D5962F108B59CE"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.data",
+      "bytes": 18737282,
+      "sha256": "5AE4A52EA685949D5ED963FC043325A5A1D2FCF72E590B0A11700456364F4206"
+    },
+    {
+      "path": "Builds/WebGL/index.html",
+      "bytes": 4132,
+      "sha256": "CDE4EFB15400E00192D314F28272A8D79ADEDBCE279CDE6050168469796B23ED"
+    },
+    {
+      "path": "Builds/WebGL/ui-text.js",
+      "bytes": 448,
+      "sha256": "2D958DA273B7A6ACC2DFBD37EE24B034F0A82078A7BCA7755858A41C33A70FC8"
+    }
+  ],
+  "gameData": [
+    {
+      "name": "stages.json",
+      "sha256": "2D04B124A42F0F3798AD942E9AACAB97EE34A25F05B380144CD70F75C3904992",
+      "matchesSource": true
+    },
+    {
+      "name": "ads.json",
+      "sha256": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A",
+      "matchesSource": true
+    },
+    {
+      "name": "strings.json",
+      "sha256": "ED5FD27463724F4789B2F5E96922316240F73BF73EBC9D663410F0758E0883C2",
+      "matchesSource": true
+    }
+  ],
+  "runtimeSources": [
+    {
+      "path": "Assets/StageGame/Scripts/Core/AiSearch.cs",
+      "sha256": "FEA609E5CC011D590C9BEDA3D401B3CCC420DF7E0C9FAD7EFA18F99A9D72F63B"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/ConnectFourBoard.cs",
+      "sha256": "5A57257861061D89B71E9758B6E352A96E08D22C2B686C85C5CD503B0F25FB36"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/GameData.cs",
+      "sha256": "72018B7041F6E255E5210B2BAD652117744D0BC7BAED9BFAC1CF70340AABB567"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/ProgressStore.cs",
+      "sha256": "074DE135B08DDBD15E7C605F54460D45981D2547D639054092FD4179A9300357"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/StringTable.cs",
+      "sha256": "8D133248463B3466690BCC76BD9BBB31F7BA1703CDF84E3FF6788F2AB4374A1B"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Platform/Advertising.cs",
+      "sha256": "9D768FDDC0BCFB6801D7DEF5DC811FE9A699719CE6E56B909E62F2FFC814C23F"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/GameApp.cs",
+      "sha256": "879D222A3991915833C36009EF8F1FB8363764DB7157E835F146B9F4EB10771B"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/SafeAreaFitter.cs",
+      "sha256": "78B780ECE851E60A293DAA401E858EF21649896F31F655A208BBB3375D6BA57D"
+    }
+  ],
+  "noticesPointerProof": "Evidence/notices-close-check.txt; Evidence/webgl-notices-close.jpg",
+  "rootIndependentRetest": {
+    "source": "Root chat report received by Client; not independently rerun by Client",
+    "sourceThreadId": "01a138d9-7ede-70d0-ba36-e84a05e6b105",
+    "reportedDateSeoul": "2026-10-14",
+    "environment": "Actual localhost browser with 390x844 viewport override; not a physical mobile device",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "canvas": {
+      "width": 390,
+      "height": 693.333,
+      "y": 75.333,
+      "x": 0
+    },
+    "noClipping": [
+      "lobby",
+      "all seven board columns",
+      "result"
+    ],
+    "stage": 1,
+    "movesZeroBased": [
+      "P3",
+      "AI3",
+      "P3",
+      "AI3",
+      "P1",
+      "AI1",
+      "P2",
+      "AI1",
+      "P4"
+    ],
+    "outcome": "Player won after nine plies; success result shown; lobby unlocked 2/30",
+    "reload": "STAGE 02 and 2/30 unlock restored",
+    "consoleErrorsWarnings": [],
+    "viewportOverrideReset": true,
+    "qa007": "Client fix and root direct retest passed; QA record closure belongs to QA/root",
+    "buildScope": "Previous pre-localization build only"
+  },
+  "documentationFinalizedDateSeoul": "2026-10-14",
+  "localization": {
+    "contract": "GameData/LOCALIZATION-CONTRACT.md; Docs/Management/CONTRACT.md v3",
+    "schemaVersion": 1,
+    "entries": 123,
+    "languages": [
+      "ko",
+      "en"
+    ],
+    "defaultLanguage": "ko",
+    "languageSavedIn": "stagegame.progress.v1 language field",
+    "unityTests": "41 passed, 0 failed",
+    "independentCoreQA": "29 groups passed, 0 failed; Docs/QA/Evidence/qa-l10n-core-v1-20261014/run.log (Unity API stubs)",
+    "captures": [
+      "Evidence/ko-lobby.png",
+      "Evidence/ko-settings.png",
+      "Evidence/ko-match.png",
+      "Evidence/en-lobby.png",
+      "Evidence/en-settings.png",
+      "Evidence/en-match.png",
+      "Evidence/en-restored.png"
+    ],
+    "uiAudit": "Evidence/ui-ux-audit.json",
+    "runtimeUiConstruction": false,
+    "iapImplemented": false,
+    "serverDeployed": false
+  }
+}

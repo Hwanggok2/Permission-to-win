@@ -291,6 +291,10 @@ namespace StageGame.Editor
                     throw new InvalidOperationException("Missing serialized reference: " + property.propertyPath);
             if (app.stones.Length != 42 || app.columns.Length != 7) throw new InvalidOperationException("Board view dimensions invalid.");
             if (app.stones.Any(stone => stone.sprite == null)) throw new InvalidOperationException("Board disc sprite reference is missing.");
+            if (app.localizedLabels == null || app.localizedLabels.Length == 0 || app.columnLabels.Length != 7)
+                throw new InvalidOperationException("Missing saved localization bindings.");
+            foreach (var label in app.localizedLabels)
+                if (label.target == null || !data.Strings.Contains(label.key)) throw new InvalidOperationException("Invalid saved UI string binding: " + label.key);
             foreach (var close in root.GetComponentsInChildren<Button>(true).Where(b => b.name == "CloseButton"))
             {
                 var source = PrefabUtility.GetCorrespondingObjectFromOriginalSource(close.gameObject);
@@ -323,7 +327,7 @@ namespace StageGame.Editor
         static void Build(BuildTarget target, string location)
         {
             EnsurePlayerShaders();
-            if (target == BuildTarget.WebGL) PlayerSettings.WebGL.template = "PROJECT:StageGamePortrait";
+            if (target == BuildTarget.WebGL) { PlayerSettings.WebGL.template = "PROJECT:StageGamePortrait"; LocalizationBuilder.ExportWebStrings(); }
             AssetDatabase.SaveAssets();
             Directory.CreateDirectory(Path.GetDirectoryName(location));
             var report = BuildPipeline.BuildPlayer(new BuildPlayerOptions { scenes = new[] { ScenePath }, locationPathName = location, target = target, options = BuildOptions.Development });

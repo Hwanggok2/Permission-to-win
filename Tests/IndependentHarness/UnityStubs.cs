@@ -53,7 +53,7 @@ namespace UnityEngine
     public static class Time { public static float realtimeSinceStartup; }
     public sealed class AudioClip { }
     public sealed class AudioSource { public void PlayOneShot(AudioClip clip, float volume) { } }
-    public static class Debug { public static void LogError(object message) { } public static void Log(object message) { } }
+    public static class Debug { public static void LogError(object message) { } public static void Log(object message) { } public static void LogWarning(object message) { } }
     public sealed class TextAsset { public string text; }
     public static class Resources
     {

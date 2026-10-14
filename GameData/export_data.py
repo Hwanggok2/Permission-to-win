@@ -39,6 +39,7 @@ SCHEMAS = {
     "Strings": [
         ("ExportType", "string", "All"), ("SearchKey", "string", "Client"),
         ("Content_Kor", "string", "Client"), ("/Description", "none", "None"),
+        ("Content_Eng", "string", "Client"),
     ],
 }
 
@@ -130,6 +131,21 @@ def required_text(row, name, location):
     return value.strip()
 
 
+def format_indices(text: str, location: str):
+    """Validate the supported C# format subset: {0}, {1}, and escaped braces."""
+    indices, offset = set(), 0
+    while offset < len(text):
+        token = re.match(r"\{\{|\}\}|\{(0|[1-9][0-9]*)\}|[^{}]+", text[offset:])
+        if token is None:
+            fail(location, f"invalid format placeholder/braces at character {offset + 1}")
+        if token.group(1) is not None:
+            indices.add(int(token.group(1)))
+        offset += token.end()
+    if sorted(indices) != list(range(len(indices))):
+        fail(location, "format indices must be consecutive from 0")
+    return indices
+
+
 def has_four(board, col, row, player):
     for dx, dy in ((1, 0), (0, 1), (1, 1), (1, -1)):
         count = 1
@@ -199,7 +215,13 @@ def validate(tables):
         if key in keys:
             fail(location, f"duplicate SearchKey {key!r}")
         keys.add(key)
-        strings.append({"key": key, "ko": required_text(row, "Content_Kor", location)})
+        ko = required_text(row, "Content_Kor", location)
+        en = required_text(row, "Content_Eng", location)
+        ko_indices = format_indices(ko, location + " Content_Kor")
+        en_indices = format_indices(en, location + " Content_Eng")
+        if ko_indices != en_indices:
+            fail(location, f"format indices differ between ko {sorted(ko_indices)} and en {sorted(en_indices)}")
+        strings.append({"key": key, "ko": ko, "en": en})
     if not strings:
         fail("Strings", "at least one active string is required")
 

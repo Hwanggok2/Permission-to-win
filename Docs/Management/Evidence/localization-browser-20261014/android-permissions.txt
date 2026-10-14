@@ -1,0 +1,4 @@
+package: com.stagegame.prototype
+uses-permission: name='android.permission.INTERNET'
+permission: com.stagegame.prototype.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission: name='com.stagegame.prototype.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'

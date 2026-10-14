@@ -1,0 +1,75 @@
+{
+  "recordedAt": "2026-10-14T20:29:30.0549741+09:00",
+  "scope": "Final localized build after QA-008 correction",
+  "unityTests": {
+    "total": 42,
+    "passed": 42,
+    "failed": 0,
+    "file": "Evidence/unity-tests.xml",
+    "log": "Logs/layout-final-tests.log"
+  },
+  "artifacts": [
+    {
+      "path": "Builds/Android/StageGame-development.apk",
+      "sha256": "7E49F8CD0156D4D975413C2FE8D9D08EAD07C7387411110C7C6699AB33646978",
+      "matches": true
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.wasm",
+      "sha256": "816CE335BC51C67C6D34AB8D97FC16178253C5FBB60886D23308A700A1D760B4",
+      "matches": true
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.data",
+      "sha256": "A036C8F993D418C2E0C39DF32FDF16BD0BC165A762E3CE81F28C6115A56D0EF4",
+      "matches": true
+    },
+    {
+      "path": "Builds/WebGL/index.html",
+      "sha256": "CDE4EFB15400E00192D314F28272A8D79ADEDBCE279CDE6050168469796B23ED",
+      "matches": true
+    },
+    {
+      "path": "Builds/WebGL/ui-text.js",
+      "sha256": "2D958DA273B7A6ACC2DFBD37EE24B034F0A82078A7BCA7755858A41C33A70FC8",
+      "matches": true
+    }
+  ],
+  "runtimeSources": [
+    {
+      "path": "Assets/StageGame/Scripts/Core/AiSearch.cs",
+      "sha256": "FEA609E5CC011D590C9BEDA3D401B3CCC420DF7E0C9FAD7EFA18F99A9D72F63B"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/ConnectFourBoard.cs",
+      "sha256": "5A57257861061D89B71E9758B6E352A96E08D22C2B686C85C5CD503B0F25FB36"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/GameData.cs",
+      "sha256": "72018B7041F6E255E5210B2BAD652117744D0BC7BAED9BFAC1CF70340AABB567"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/ProgressStore.cs",
+      "sha256": "074DE135B08DDBD15E7C605F54460D45981D2547D639054092FD4179A9300357"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/StringTable.cs",
+      "sha256": "8D133248463B3466690BCC76BD9BBB31F7BA1703CDF84E3FF6788F2AB4374A1B"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Platform/Advertising.cs",
+      "sha256": "9D768FDDC0BCFB6801D7DEF5DC811FE9A699719CE6E56B909E62F2FFC814C23F"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/GameApp.cs",
+      "sha256": "879D222A3991915833C36009EF8F1FB8363764DB7157E835F146B9F4EB10771B"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/SafeAreaFitter.cs",
+      "sha256": "BA20C7C48F2C47505BA9436FBD07570FE2F2838AC275DCD76F76832BE7C53222"
+    }
+  ],
+  "browserEvidence": "README.md and final-*.jpg/final-console.json",
+  "viewportOverrideReset": true,
+  "realDeviceTested": false
+}

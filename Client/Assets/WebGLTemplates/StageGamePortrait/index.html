@@ -32,18 +32,33 @@
 </head>
 <body>
   <main id="player">
-    <canvas id="unity-canvas" width="720" height="1280" tabindex="0" aria-label="StageGame 네 개의 수 게임"></canvas>
-    <div id="loading"><strong>네 개의 수</strong><span>대국을 준비하고 있어요</span><progress value="0" max="1"></progress></div>
+    <canvas id="unity-canvas" width="720" height="1280" tabindex="0" aria-label="StageGame"></canvas>
+    <div id="loading"><strong>StageGame</strong><span>Loading… / 불러오는 중…</span><progress value="0" max="1"></progress></div>
     <div id="error" role="alert" hidden></div>
   </main>
+  <script src="ui-text.js"></script>
   <script>
     const canvas = document.getElementById('unity-canvas');
     const loading = document.getElementById('loading');
     const failure = document.getElementById('error');
-    const fail = message => { loading.hidden = true; failure.hidden = false; failure.textContent = '게임을 불러오지 못했습니다. 새로고침해 주세요.\n' + message; };
+    let uiText;
+    window.stageGameLocalize = language => {
+      uiText = window.stageGameUiText?.languages.find(item => item.code === language);
+      if (!uiText) return;
+      document.documentElement.lang = language;
+      document.title = uiText.title;
+      canvas.setAttribute('aria-label', uiText.canvasLabel);
+      loading.querySelector('strong').textContent = uiText.title;
+      loading.querySelector('span').textContent = uiText.loading;
+      if (!failure.hidden) failure.textContent = uiText.error;
+    };
+    let language = 'ko';
+    try { if (localStorage.getItem('stagegame.language') === 'en') language = 'en'; } catch (error) {}
+    window.stageGameLocalize(language);
+    const fail = message => { console.error(message); loading.hidden = true; failure.hidden = false; failure.textContent = uiText?.error || '다시 실행해 주세요. / Please reload.'; };
     const loader = document.createElement('script');
     loader.src = 'Build/{{{ LOADER_FILENAME }}}';
-    loader.onerror = () => fail('게임 로더 파일 오류');
+    loader.onerror = () => fail('Game loader failed.');
     loader.onload = () => createUnityInstance(canvas, {
       dataUrl: 'Build/{{{ DATA_FILENAME }}}',
       frameworkUrl: 'Build/{{{ FRAMEWORK_FILENAME }}}',

@@ -70,7 +70,9 @@ class ExportTests(unittest.TestCase):
         payloads = data.validate(self.tables)
         stages = payloads["stages.json"]["stages"]
         self.assertEqual(30, len(stages))
-        self.assertEqual(58, len(payloads["strings.json"]["strings"]))
+        self.assertEqual(123, len(payloads["strings.json"]["strings"]))
+        for entry in payloads["strings.json"]["strings"]:
+            self.assertEqual({"key", "ko", "en"}, set(entry))
         expected = {"id", "chapter", "titleKey", "aiDepth", "aiNodeBudget", "aiRandomPermille", "starter", "openingMoves"}
         for stage in stages:
             self.assertEqual(expected, set(stage))
@@ -176,6 +178,61 @@ class ExportTests(unittest.TestCase):
         self.assert_invalid("Strings", 1, "SearchKey", "stage_001", "duplicate SearchKey")
         self.tables = copy.deepcopy(self.original)
         self.assert_invalid("Strings", 0, "Content_Kor", " ", "required")
+
+    def test_missing_english_is_rejected(self):
+        for value in (None, "", " \n "):
+            with self.subTest(value=value):
+                self.assert_invalid("Strings", 0, "Content_Eng", value, "Content_Eng is required")
+
+    def test_format_indices_allow_reordering_and_repetition(self):
+        row = self.tables["Strings"][0]
+        row.update(Content_Kor="{0} 다음 {1}, 다시 {0}", Content_Eng="{1} after {0}")
+        data.validate(self.tables)
+
+    def test_literal_braces_are_not_arguments(self):
+        self.assertEqual(set(), data.format_indices("{{0}} {{name}}", "test"))
+        self.assertEqual({0}, data.format_indices("{{{0}}}", "test"))
+
+    def test_translation_argument_mismatch_is_rejected(self):
+        row = self.tables["Strings"][0]
+        for ko, en in (("{0}", "Text"), ("Text", "{0}"), ("{0} {1}", "{0}")):
+            with self.subTest(ko=ko, en=en):
+                row.update(Content_Kor=ko, Content_Eng=en)
+                with self.assertRaisesRegex(data.ValidationError, "format indices differ"):
+                    data.validate(self.tables)
+
+    def test_malformed_or_unsupported_format_is_rejected_in_either_language(self):
+        for field in ("Content_Kor", "Content_Eng"):
+            for value in ("{", "}", "{0", "0}", "{{0}", "{name}", "{}", "{-1}",
+                          "{00}", "{0:N2}", "{0,3}", "{0!r}", "{ 0}", "{０}"):
+                with self.subTest(field=field, value=value):
+                    self.tables = copy.deepcopy(self.original)
+                    self.assert_invalid("Strings", 0, field, value, "invalid format")
+
+    def test_argument_indices_must_start_at_zero_and_have_no_gaps(self):
+        for value in ("{1}", "{0} {2}", "{999999999999999999}"):
+            with self.subTest(value=value), self.assertRaisesRegex(data.ValidationError, "consecutive from 0"):
+                data.format_indices(value, "test")
+
+    def test_missing_english_column_metadata_is_rejected(self):
+        workbook = load_workbook(data.SOURCE)
+        try:
+            sheet = workbook["Strings"]
+            sheet["E1"] = "Content_English"
+            with self.assertRaisesRegex(data.ValidationError, "Strings!E1"):
+                data.read_table(sheet, data.SCHEMAS["Strings"])
+        finally:
+            workbook.close()
+
+    def test_bad_translation_preserves_generated_bundle(self):
+        with tempfile.TemporaryDirectory(prefix=".test-", dir=data.GENERATED) as directory:
+            with patch.object(data, "GENERATED", Path(directory)), redirect_stdout(io.StringIO()), redirect_stderr(io.StringIO()):
+                self.assertEqual(0, data.main([]))
+                before = {p.name: p.read_bytes() for p in Path(directory).glob("*.json")}
+                self.tables["Strings"][0]["Content_Eng"] = "Unclosed {0"
+                with patch.object(data, "read_source", return_value=self.tables):
+                    self.assertEqual(1, data.main([]))
+                self.assertEqual(before, {p.name: p.read_bytes() for p in Path(directory).glob("*.json")})
 
     def test_unproven_note_required(self):
         self.assert_invalid("Stages", 0, "VerificationNote", "승리 보장", "separately proven")

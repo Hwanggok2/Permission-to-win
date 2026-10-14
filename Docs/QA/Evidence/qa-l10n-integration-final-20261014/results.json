@@ -1,0 +1,532 @@
+{
+  "dateSeoul": "2026-10-14",
+  "method": "Read-only evidence review; QA did not run Unity/browser/builds",
+  "unity": {
+    "total": 42,
+    "passed": 42,
+    "failed": 0,
+    "endUtc": "2026-10-14 11:25:49Z",
+    "cases": [
+      {
+        "name": "AdPolicyRequiresGraceMatchesAndBothCooldowns",
+        "result": "Passed",
+        "duration": "0.007026"
+      },
+      {
+        "name": "AiBlocksImmediateLossEvenAtMaximumMistakes",
+        "result": "Passed",
+        "duration": "0.004594"
+      },
+      {
+        "name": "AiRespectsNodeAndStepBudgetsAndLeavesBoardUntouched",
+        "result": "Passed",
+        "duration": "0.002728"
+      },
+      {
+        "name": "AiTakesWinBeforeRandomMistake",
+        "result": "Passed",
+        "duration": "0.000146"
+      },
+      {
+        "name": "BundledDataReplaysEveryStageAndAiReturnsLegalMove",
+        "result": "Passed",
+        "duration": "0.025087"
+      },
+      {
+        "name": "CloneDoesNotMutateOriginal",
+        "result": "Passed",
+        "duration": "0.000289"
+      },
+      {
+        "name": "FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])",
+        "result": "Passed",
+        "duration": "0.000337"
+      },
+      {
+        "name": "FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])",
+        "result": "Passed",
+        "duration": "0.000337"
+      },
+      {
+        "name": "FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])",
+        "result": "Passed",
+        "duration": "0.000337"
+      },
+      {
+        "name": "FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])",
+        "result": "Passed",
+        "duration": "0.000337"
+      },
+      {
+        "name": "GravityAlternatesAndRejectsFullColumn",
+        "result": "Passed",
+        "duration": "0.000161"
+      },
+      {
+        "name": "InvalidOrTerminalOpeningsFailLoudly(\"0,0,0,0,0,0,0\")",
+        "result": "Passed",
+        "duration": "0.000710"
+      },
+      {
+        "name": "InvalidOrTerminalOpeningsFailLoudly(\"0,6,1,6,2,5,3\")",
+        "result": "Passed",
+        "duration": "0.000050"
+      },
+      {
+        "name": "InvalidOrTerminalOpeningsFailLoudly(\"7\")",
+        "result": "Passed",
+        "duration": "0.000035"
+      },
+      {
+        "name": "InvalidOrTerminalOpeningsFailLoudly(\"a\")",
+        "result": "Passed",
+        "duration": "0.000031"
+      },
+      {
+        "name": "InvalidOrTerminalOpeningsFailLoudly(\"0,\")",
+        "result": "Passed",
+        "duration": "0.000030"
+      },
+      {
+        "name": "MalformedDataCannotSilentlyLoad",
+        "result": "Passed",
+        "duration": "0.000770"
+      },
+      {
+        "name": "NoFillNeverRewardsAndEditorDuplicateOnlyGrantsOnce",
+        "result": "Passed",
+        "duration": "0.000329"
+      },
+      {
+        "name": "ProgressRejectsNonAdjacentAndReloadedDuplicateResults",
+        "result": "Passed",
+        "duration": "0.002075"
+      },
+      {
+        "name": "RewardCompletesOnlyOnceAndRejectsStaleCallbacks",
+        "result": "Passed",
+        "duration": "0.000168"
+      },
+      {
+        "name": "SavedPrefabReferencesAndNestedButtonsValidate",
+        "result": "Passed",
+        "duration": "0.027371"
+      },
+      {
+        "name": "TruncatedStageCatalogIsRejected",
+        "result": "Passed",
+        "duration": "0.000632"
+      },
+      {
+        "name": "UnsuccessfulRewardCanRetryWithoutGrant(Unavailable)",
+        "result": "Passed",
+        "duration": "0.000234"
+      },
+      {
+        "name": "UnsuccessfulRewardCanRetryWithoutGrant(Failed)",
+        "result": "Passed",
+        "duration": "0.000044"
+      },
+      {
+        "name": "UnsuccessfulRewardCanRetryWithoutGrant(Cancelled)",
+        "result": "Passed",
+        "duration": "0.000032"
+      },
+      {
+        "name": "EverySavedUiTextHasAKeyOrExplicitDynamicOwnerAndButtonsHaveTouchArea",
+        "result": "Passed",
+        "duration": "0.002689"
+      },
+      {
+        "name": "LanguageLookupFormattingAndUnknownLocaleFollowContract",
+        "result": "Passed",
+        "duration": "0.001046"
+      },
+      {
+        "name": "LegacyAndInvalidSavedLocalesPreserveProgressAndDefaultToKorean",
+        "result": "Passed",
+        "duration": "0.000427"
+      },
+      {
+        "name": "MissingTranslationsAndInvalidArgumentsAreRejected(\"\",\"Text\")",
+        "result": "Passed",
+        "duration": "0.000340"
+      },
+      {
+        "name": "MissingTranslationsAndInvalidArgumentsAreRejected(\"문구\",\"\")",
+        "result": "Passed",
+        "duration": "0.000065"
+      },
+      {
+        "name": "MissingTranslationsAndInvalidArgumentsAreRejected(\"{0}\",\"{1}\")",
+        "result": "Passed",
+        "duration": "0.000054"
+      },
+      {
+        "name": "MissingTranslationsAndInvalidArgumentsAreRejected(\"{0:00}\",\"{0:00}\")",
+        "result": "Passed",
+        "duration": "0.000148"
+      },
+      {
+        "name": "MissingTranslationsAndInvalidArgumentsAreRejected(\"{broken}\",\"{broken}\")",
+        "result": "Passed",
+        "duration": "0.000058"
+      },
+      {
+        "name": "MissingTranslationsAndInvalidArgumentsAreRejected(\"{1}\",\"{1}\")",
+        "result": "Passed",
+        "duration": "0.000046"
+      },
+      {
+        "name": "DuplicateRewardCompletionStartsOnlyOneHint",
+        "result": "Passed",
+        "duration": "2.075305"
+      },
+      {
+        "name": "EveryStageTitleFitsInBothLanguages",
+        "result": "Passed",
+        "duration": "1.316670"
+      },
+      {
+        "name": "HighestAiBudgetYieldsFramesAndReturnsWithinActiveDeadline",
+        "result": "Passed",
+        "duration": "1.337497"
+      },
+      {
+        "name": "LanguageButtonsUpdateAllScreensAndSurviveSceneReload",
+        "result": "Passed",
+        "duration": "1.555704"
+      },
+      {
+        "name": "RewardIsCancelledByModalBackgroundAndMatchTransition",
+        "result": "Passed",
+        "duration": "1.141511"
+      },
+      {
+        "name": "RewardPendingLocksBoardAndTimeoutCancelsLateSuccess",
+        "result": "Passed",
+        "duration": "7.304794"
+      },
+      {
+        "name": "SafeAreaRefitsAfterCanvasLayoutChangesWithoutScreenResize",
+        "result": "Passed",
+        "duration": "1.089016"
+      },
+      {
+        "name": "SavedSceneSupportsLobbyMatchResultAndProgress",
+        "result": "Passed",
+        "duration": "1.646643"
+      }
+    ],
+    "matchesDeclared": true
+  },
+  "artifacts": [
+    {
+      "path": "Builds/Android/StageGame-development.apk",
+      "declaredSha256": "7E49F8CD0156D4D975413C2FE8D9D08EAD07C7387411110C7C6699AB33646978",
+      "actualSha256": "7E49F8CD0156D4D975413C2FE8D9D08EAD07C7387411110C7C6699AB33646978",
+      "bytes": 38905900,
+      "matches": true
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.wasm",
+      "declaredSha256": "816CE335BC51C67C6D34AB8D97FC16178253C5FBB60886D23308A700A1D760B4",
+      "actualSha256": "816CE335BC51C67C6D34AB8D97FC16178253C5FBB60886D23308A700A1D760B4",
+      "bytes": 24384482,
+      "matches": true
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.data",
+      "declaredSha256": "A036C8F993D418C2E0C39DF32FDF16BD0BC165A762E3CE81F28C6115A56D0EF4",
+      "actualSha256": "A036C8F993D418C2E0C39DF32FDF16BD0BC165A762E3CE81F28C6115A56D0EF4",
+      "bytes": 18737498,
+      "matches": true
+    },
+    {
+      "path": "Builds/WebGL/index.html",
+      "declaredSha256": "CDE4EFB15400E00192D314F28272A8D79ADEDBCE279CDE6050168469796B23ED",
+      "actualSha256": "CDE4EFB15400E00192D314F28272A8D79ADEDBCE279CDE6050168469796B23ED",
+      "bytes": 4132,
+      "matches": true
+    },
+    {
+      "path": "Builds/WebGL/ui-text.js",
+      "declaredSha256": "2D958DA273B7A6ACC2DFBD37EE24B034F0A82078A7BCA7755858A41C33A70FC8",
+      "actualSha256": "2D958DA273B7A6ACC2DFBD37EE24B034F0A82078A7BCA7755858A41C33A70FC8",
+      "bytes": 448,
+      "matches": true
+    }
+  ],
+  "runtimeSources": [
+    {
+      "path": "Assets/StageGame/Scripts/Core/AiSearch.cs",
+      "declaredSha256": "FEA609E5CC011D590C9BEDA3D401B3CCC420DF7E0C9FAD7EFA18F99A9D72F63B",
+      "actualSha256": "FEA609E5CC011D590C9BEDA3D401B3CCC420DF7E0C9FAD7EFA18F99A9D72F63B",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/ConnectFourBoard.cs",
+      "declaredSha256": "5A57257861061D89B71E9758B6E352A96E08D22C2B686C85C5CD503B0F25FB36",
+      "actualSha256": "5A57257861061D89B71E9758B6E352A96E08D22C2B686C85C5CD503B0F25FB36",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/GameData.cs",
+      "declaredSha256": "72018B7041F6E255E5210B2BAD652117744D0BC7BAED9BFAC1CF70340AABB567",
+      "actualSha256": "72018B7041F6E255E5210B2BAD652117744D0BC7BAED9BFAC1CF70340AABB567",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/ProgressStore.cs",
+      "declaredSha256": "074DE135B08DDBD15E7C605F54460D45981D2547D639054092FD4179A9300357",
+      "actualSha256": "074DE135B08DDBD15E7C605F54460D45981D2547D639054092FD4179A9300357",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/StringTable.cs",
+      "declaredSha256": "8D133248463B3466690BCC76BD9BBB31F7BA1703CDF84E3FF6788F2AB4374A1B",
+      "actualSha256": "8D133248463B3466690BCC76BD9BBB31F7BA1703CDF84E3FF6788F2AB4374A1B",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Platform/Advertising.cs",
+      "declaredSha256": "9D768FDDC0BCFB6801D7DEF5DC811FE9A699719CE6E56B909E62F2FFC814C23F",
+      "actualSha256": "9D768FDDC0BCFB6801D7DEF5DC811FE9A699719CE6E56B909E62F2FFC814C23F",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/GameApp.cs",
+      "declaredSha256": "879D222A3991915833C36009EF8F1FB8363764DB7157E835F146B9F4EB10771B",
+      "actualSha256": "879D222A3991915833C36009EF8F1FB8363764DB7157E835F146B9F4EB10771B",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/SafeAreaFitter.cs",
+      "declaredSha256": "BA20C7C48F2C47505BA9436FBD07570FE2F2838AC275DCD76F76832BE7C53222",
+      "actualSha256": "BA20C7C48F2C47505BA9436FBD07570FE2F2838AC275DCD76F76832BE7C53222",
+      "matches": true
+    }
+  ],
+  "independentCoreChangedSources": [],
+  "prefab": {
+    "localizedBindingCount": 30,
+    "columnLabelCount": 7,
+    "bindings": [
+      {
+        "target": "822010658307266652",
+        "key": "game_brand",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "5062848743900968715",
+        "key": "client_game_title",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "2076751634470749003",
+        "key": "game_subtitle",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "1247726047890733260",
+        "key": "ui_previous_page",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "5762819164769886919",
+        "key": "ui_next_page",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "4675287223886333812",
+        "key": "client_ui_help",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "1452758417573497122",
+        "key": "ui_settings",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "8014527947133482775",
+        "key": "ad_unavailable",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "1048041889036691109",
+        "key": "match_eyebrow",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "2715452229184425696",
+        "key": "ui_pause",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "1084916618408835961",
+        "key": "match_legend",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "5216761253956070057",
+        "key": "ui_next",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "5624641209382826095",
+        "key": "ui_retry",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "5968308881232282813",
+        "key": "ui_lobby",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "1240951330373320118",
+        "key": "ad_unavailable",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "3563187893903110385",
+        "key": "ui_settings",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "4803871042695789055",
+        "key": "settings_language",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "8829672086219043432",
+        "key": "legal_title",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "3605544491427403659",
+        "key": "client_ui_help",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "7816930813027368463",
+        "key": "client_help_rules",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "6171805898822597183",
+        "key": "confirm_title",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "852462874936972219",
+        "key": "confirm_body",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "3470111212101595742",
+        "key": "client_ui_continue",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "5917268291132094096",
+        "key": "confirm_leave",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "8662908320303051617",
+        "key": "legal_title",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "8897212492442457192",
+        "key": "game_brand",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "2945971790709474290",
+        "key": "game_brand",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "3141747421407339656",
+        "key": "game_brand",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "5491688933301766460",
+        "key": "game_brand",
+        "targetDeclared": true,
+        "keyExists": true
+      },
+      {
+        "target": "7036900835488301154",
+        "key": "game_brand",
+        "targetDeclared": true,
+        "keyExists": true
+      }
+    ],
+    "newFields": [
+      {
+        "field": "korean",
+        "fileId": "318833593087267061",
+        "declared": true
+      },
+      {
+        "field": "english",
+        "fileId": "7634072188967871113",
+        "declared": true
+      },
+      {
+        "field": "koreanLabel",
+        "fileId": "2039240940371436588",
+        "declared": true
+      },
+      {
+        "field": "englishLabel",
+        "fileId": "8201551451625231952",
+        "declared": true
+      },
+      {
+        "field": "playLabel",
+        "fileId": "3787435063026923546",
+        "declared": true
+      },
+      {
+        "field": "hintLabel",
+        "fileId": "6560321419975835632",
+        "declared": true
+      }
+    ],
+    "staticReferencesValid": true
+  },
+  "resizeDefect": "Final root browser report/captures copied; closure and remaining limits are recorded in Docs/QA/DEFECTS.md",
+  "limitations": "XML is Client execution evidence. Static YAML checks do not prove Unity GUID resolution, click targeting, layout timing, device safety, or accessibility. Pixel inspection is documented separately."
+}

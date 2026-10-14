@@ -1,0 +1,447 @@
+{
+  "status": "CORE_READY__SCHEMA1_INTEGRATED__UNITY_COMPILED__UI_TESTS_PENDING",
+  "dateSeoul": "2026-10-14",
+  "scope": "Client only. UI text audit found Korean literals in GameApp/ProjectBuilder, no language control. Do not hand-edit Generated JSON. Request data owner import these rows into Excel and export.",
+  "coordination": "Direct cross-chat messaging lacks human authorization; use this shared file and Client/IMPLEMENTATION.md. Please confirm contract in GameData/FORMAT.md or a response file under GameData.",
+  "proposedSchema": {
+    "schemaVersion": 1,
+    "strings": [
+      {
+        "key": "stage_number",
+        "ko": "챕터 {0} · 스테이지 {1}",
+        "en": "CHAPTER {0} · STAGE {1}"
+      }
+    ]
+  },
+  "rules": [
+    "Accept GameData/LOCALIZATION-CONTRACT.md: strings schemaVersion stays 1, en added; stages/ads remain unchanged. formatArgCount in this request is authoring metadata only; JSON need not emit it.",
+    "ko/en required. Preserve existing key/ko rows. Conflicting revised UI copy uses client_ prefixed new keys; all 30 stage titles need en.",
+    "Accept simple contiguous {0}/{1} and escaped {{/}} per data contract. Same indices in both languages; no alignment/specifiers.",
+    "Locale codes ko/en. First-run default ko; missing/unknown saved locale falls back ko. User language names remain native in either locale.",
+    "Legal original body, Unity development overlay and diagnostic logs are not translated. All game UI labels use keys.",
+    "WebGL loading/error strings should also be generated from this table at build time."
+  ],
+  "strings": [
+    {
+      "key": "client_game_title",
+      "ko": "네 개의 수",
+      "en": "Four in a Row",
+      "formatArgCount": 0
+    },
+    {
+      "key": "game_brand",
+      "ko": "STAGEGAME",
+      "en": "STAGEGAME",
+      "formatArgCount": 0
+    },
+    {
+      "key": "game_subtitle",
+      "ko": "한 수씩, 연결되는 전략",
+      "en": "Connect four. Think ahead.",
+      "formatArgCount": 0
+    },
+    {
+      "key": "stage_number",
+      "ko": "챕터 {0} · 스테이지 {1}",
+      "en": "CHAPTER {0} · STAGE {1}",
+      "formatArgCount": 2
+    },
+    {
+      "key": "stage_instruction",
+      "ko": "가로·세로·대각선으로\n내 돌 4개를 먼저 이으세요.",
+      "en": "Connect four of your stones\nin any direction.",
+      "formatArgCount": 0
+    },
+    {
+      "key": "stage_locked_detail",
+      "ko": "이전 스테이지에서 승리하면 열립니다.",
+      "en": "Win the previous stage to unlock.",
+      "formatArgCount": 0
+    },
+    {
+      "key": "stage_progress",
+      "ko": "{0} / {1} 스테이지 해금",
+      "en": "{0} / {1} stages unlocked",
+      "formatArgCount": 2
+    },
+    {
+      "key": "client_ui_start",
+      "ko": "대국 시작",
+      "en": "Play",
+      "formatArgCount": 0
+    },
+    {
+      "key": "stage_locked",
+      "ko": "잠긴 스테이지",
+      "en": "Locked",
+      "formatArgCount": 0
+    },
+    {
+      "key": "ui_previous_page",
+      "ko": "이전",
+      "en": "Back",
+      "formatArgCount": 0
+    },
+    {
+      "key": "ui_next_page",
+      "ko": "다음",
+      "en": "Next",
+      "formatArgCount": 0
+    },
+    {
+      "key": "ui_settings",
+      "ko": "설정",
+      "en": "Settings",
+      "formatArgCount": 0
+    },
+    {
+      "key": "client_ui_help",
+      "ko": "플레이 방법",
+      "en": "How to play",
+      "formatArgCount": 0
+    },
+    {
+      "key": "lobby_notice",
+      "ko": "진행도는 이 기기에 저장됩니다",
+      "en": "Progress is saved on this device",
+      "formatArgCount": 0
+    },
+    {
+      "key": "match_eyebrow",
+      "ko": "4목 대국",
+      "en": "FOUR IN A ROW",
+      "formatArgCount": 0
+    },
+    {
+      "key": "match_title",
+      "ko": "{0} · {1}",
+      "en": "{0} · {1}",
+      "formatArgCount": 2
+    },
+    {
+      "key": "ui_pause",
+      "ko": "쉼",
+      "en": "Pause",
+      "formatArgCount": 0
+    },
+    {
+      "key": "match_legend",
+      "ko": "나 · 민트   /   AI · 산호",
+      "en": "You · Mint   /   AI · Coral",
+      "formatArgCount": 0
+    },
+    {
+      "key": "match_instruction",
+      "ko": "돌을 놓을 열을 선택하세요.",
+      "en": "Choose a column to drop a stone.",
+      "formatArgCount": 0
+    },
+    {
+      "key": "player_stone",
+      "ko": "나",
+      "en": "You",
+      "formatArgCount": 0
+    },
+    {
+      "key": "ai_stone",
+      "ko": "AI",
+      "en": "AI",
+      "formatArgCount": 0
+    },
+    {
+      "key": "column_number",
+      "ko": "{0}",
+      "en": "{0}",
+      "formatArgCount": 1
+    },
+    {
+      "key": "move_count",
+      "ko": "{0} / 42 수",
+      "en": "{0} / 42 moves",
+      "formatArgCount": 1
+    },
+    {
+      "key": "turn_finished",
+      "ko": "대국 종료",
+      "en": "Game over",
+      "formatArgCount": 0
+    },
+    {
+      "key": "turn_thinking",
+      "ko": "다음 수를 살펴보는 중…",
+      "en": "Thinking…",
+      "formatArgCount": 0
+    },
+    {
+      "key": "client_ui_player_turn",
+      "ko": "내 차례 · 열을 선택하세요",
+      "en": "Your turn · Choose a column",
+      "formatArgCount": 0
+    },
+    {
+      "key": "client_ui_ai_turn",
+      "ko": "AI 차례",
+      "en": "AI's turn",
+      "formatArgCount": 0
+    },
+    {
+      "key": "client_hint_request",
+      "ko": "광고 보고 힌트 · 1회",
+      "en": "Watch ad for hint · Once",
+      "formatArgCount": 0
+    },
+    {
+      "key": "client_hint_unavailable",
+      "ko": "광고가 준비되지 않았어요. 계속 플레이하세요.",
+      "en": "No ad available. Keep playing.",
+      "formatArgCount": 0
+    },
+    {
+      "key": "hint_incomplete",
+      "ko": "광고가 완료되지 않아 힌트를 받지 못했어요.",
+      "en": "Ad not completed. No hint used.",
+      "formatArgCount": 0
+    },
+    {
+      "key": "hint_timeout",
+      "ko": "광고 응답이 없어 취소했어요. 계속 플레이하세요.",
+      "en": "Ad timed out. Keep playing.",
+      "formatArgCount": 0
+    },
+    {
+      "key": "hint_cancelled",
+      "ko": "광고 요청을 취소했어요. 계속 플레이하세요.",
+      "en": "Ad cancelled. Keep playing.",
+      "formatArgCount": 0
+    },
+    {
+      "key": "hint_recommendation",
+      "ko": "추천: {0}번 열",
+      "en": "Try column {0}",
+      "formatArgCount": 1
+    },
+    {
+      "key": "client_hint_used",
+      "ko": "이번 판 힌트 사용 완료",
+      "en": "Hint used this game",
+      "formatArgCount": 0
+    },
+    {
+      "key": "client_result_win",
+      "ko": "연결 성공!",
+      "en": "Four connected!",
+      "formatArgCount": 0
+    },
+    {
+      "key": "result_draw",
+      "ko": "무승부",
+      "en": "A draw",
+      "formatArgCount": 0
+    },
+    {
+      "key": "client_result_loss",
+      "ko": "다시 도전해 볼까요?",
+      "en": "Try again?",
+      "formatArgCount": 0
+    },
+    {
+      "key": "result_win_detail",
+      "ko": "네 개의 돌을 이었어요.\n다음 스테이지에 도전하세요.",
+      "en": "You connected four stones.\nTry the next stage.",
+      "formatArgCount": 0
+    },
+    {
+      "key": "result_draw_detail",
+      "ko": "42칸이 모두 찼어요.\n다시 도전해 보세요.",
+      "en": "All 42 spaces are full.\nGive it another try.",
+      "formatArgCount": 0
+    },
+    {
+      "key": "result_loss_detail",
+      "ko": "상대가 먼저 네 개를 이었어요.\n다음에는 세 돌 연결을 막아 보세요.",
+      "en": "The AI connected four first.\nWatch for lines of three.",
+      "formatArgCount": 0
+    },
+    {
+      "key": "result_loss_horizontal",
+      "ko": "AI가 가로로 네 개를 이었어요.\n금색 줄을 살펴보세요.",
+      "en": "The AI connected four across.\nLook at the gold line.",
+      "formatArgCount": 0
+    },
+    {
+      "key": "result_loss_vertical",
+      "ko": "AI가 세로로 네 개를 이었어요.\n금색 줄을 살펴보세요.",
+      "en": "The AI connected four vertically.\nLook at the gold line.",
+      "formatArgCount": 0
+    },
+    {
+      "key": "result_loss_diagonal",
+      "ko": "AI가 대각선으로 네 개를 이었어요.\n금색 줄을 살펴보세요.",
+      "en": "The AI connected four diagonally.\nLook at the gold line.",
+      "formatArgCount": 0
+    },
+    {
+      "key": "client_result_all_clear",
+      "ko": "모든 스테이지 완료!\n원하는 스테이지를 다시 즐겨 보세요.",
+      "en": "All stages complete!\nReplay any stage you like.",
+      "formatArgCount": 0
+    },
+    {
+      "key": "ui_next",
+      "ko": "다음 스테이지",
+      "en": "Next stage",
+      "formatArgCount": 0
+    },
+    {
+      "key": "ui_retry",
+      "ko": "다시 도전",
+      "en": "Retry",
+      "formatArgCount": 0
+    },
+    {
+      "key": "ui_lobby",
+      "ko": "로비로",
+      "en": "Lobby",
+      "formatArgCount": 0
+    },
+    {
+      "key": "client_ui_continue",
+      "ko": "이어서 대국",
+      "en": "Resume",
+      "formatArgCount": 0
+    },
+    {
+      "key": "confirm_title",
+      "ko": "잠시 쉬어가기",
+      "en": "Paused",
+      "formatArgCount": 0
+    },
+    {
+      "key": "confirm_body",
+      "ko": "현재 대국은 저장되지 않아요.\n해금한 스테이지는 유지됩니다.",
+      "en": "This game won't be saved.\nUnlocked stages stay available.",
+      "formatArgCount": 0
+    },
+    {
+      "key": "confirm_leave",
+      "ko": "로비로 나가기",
+      "en": "Leave game",
+      "formatArgCount": 0
+    },
+    {
+      "key": "settings_detail",
+      "ko": "진행도는 이 기기에 저장됩니다.",
+      "en": "Progress is saved on this device.",
+      "formatArgCount": 0
+    },
+    {
+      "key": "settings_sound_on",
+      "ko": "효과음 켜짐",
+      "en": "Sound on",
+      "formatArgCount": 0
+    },
+    {
+      "key": "settings_sound_off",
+      "ko": "효과음 꺼짐",
+      "en": "Sound off",
+      "formatArgCount": 0
+    },
+    {
+      "key": "settings_language",
+      "ko": "언어 / Language",
+      "en": "언어 / Language",
+      "formatArgCount": 0
+    },
+    {
+      "key": "language_ko",
+      "ko": "한국어",
+      "en": "한국어",
+      "formatArgCount": 0
+    },
+    {
+      "key": "language_en",
+      "ko": "English",
+      "en": "English",
+      "formatArgCount": 0
+    },
+    {
+      "key": "language_selected",
+      "ko": "{0} ✓",
+      "en": "{0} ✓",
+      "formatArgCount": 1
+    },
+    {
+      "key": "legal_title",
+      "ko": "오픈소스 라이선스",
+      "en": "Open source licenses",
+      "formatArgCount": 0
+    },
+    {
+      "key": "legal_missing",
+      "ko": "라이선스 파일을 불러올 수 없어요.",
+      "en": "Licenses could not be loaded.",
+      "formatArgCount": 0
+    },
+    {
+      "key": "client_help_rules",
+      "ko": "1. 열을 누르면 돌이 아래로 떨어져요.\n\n2. 가로·세로·대각선으로 네 개를 이으세요.\n\n3. 상대의 세 돌 연결을 먼저 막으세요.\n\n금색 줄은 승리한 연결이에요.",
+      "en": "1. Tap a column to drop a stone.\n\n2. Connect four across, down or diagonally.\n\n3. Block the AI's lines of three.\n\nThe winning line turns gold.",
+      "formatArgCount": 0
+    },
+    {
+      "key": "ad_unavailable",
+      "ko": "광고를 준비하지 못했어요.",
+      "en": "No ad available.",
+      "formatArgCount": 0
+    },
+    {
+      "key": "client_ad_test_mode",
+      "ko": "모의 광고 · 테스트 전용",
+      "en": "Mock ad · Test only",
+      "formatArgCount": 0
+    },
+    {
+      "key": "error_data_title",
+      "ko": "데이터 확인 필요",
+      "en": "Data unavailable",
+      "formatArgCount": 0
+    },
+    {
+      "key": "client_error_data",
+      "ko": "게임을 불러올 수 없어요.\n다시 실행해 주세요.",
+      "en": "The game could not load.\nPlease restart.",
+      "formatArgCount": 0
+    },
+    {
+      "key": "client_error_save",
+      "ko": "저장하지 못했어요. 재실행하면 진행도가 사라질 수 있어요.",
+      "en": "Could not save. Progress may be lost after restart.",
+      "formatArgCount": 0
+    },
+    {
+      "key": "error_load",
+      "ko": "저장을 복원하지 못해 처음부터 시작해요.",
+      "en": "Save could not be restored. Starting over.",
+      "formatArgCount": 0
+    },
+    {
+      "key": "web_loading",
+      "ko": "게임을 불러오는 중…",
+      "en": "Loading game…",
+      "formatArgCount": 0
+    },
+    {
+      "key": "web_error",
+      "ko": "게임을 불러올 수 없어요. 새로고침해 주세요.",
+      "en": "Could not load the game. Please reload.",
+      "formatArgCount": 0
+    },
+    {
+      "key": "web_canvas_label",
+      "ko": "네 개의 수 게임",
+      "en": "Four in a Row game",
+      "formatArgCount": 0
+    }
+  ],
+  "coreNotes": "StringTable.cs added. GameData consumes same schemaVersion 1 with required ko/en. ProgressData.language ko/en is additive to save v1; invalid/missing value normalizes ko. LoadWarning/SaveWarning and IAdService.Status now expose localization keys. No gameplay or AI rule changes. Unity localization migration compiled successfully. Root may request independent core QA; Client owns Unity execution."
+}

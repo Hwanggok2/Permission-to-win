@@ -1,5 +1,7 @@
 # 6개 국면 교체 검증
 
+후속 언어 확장 증거는 [localization-results.json](C:/Github/StageGame/GameData/Validation/localization-results.json)과 [verify_localization.py](C:/Github/StageGame/GameData/Validation/verify_localization.py)에 있다. 한국어·영어 123개와 Client 요청 70개를 대조했다. 기존 스테이지/광고 및 Strings A1:D62의 값·서식을 보존했으며 Python 테스트는 현재 36개 통과다. 아래 국면 분석은 당시 28개 테스트 기록을 유지한다.
+
 2026-10-14. 최종 동기화 상태는 [CHECKPOINT.md](C:/Github/StageGame/GameData/Validation/CHECKPOINT.md)를 따른다. 현재 `Generated/stages.json`에는 10/12/20/22/24/26의 새 수순이 반영되어 있다.
 
 ## 근거 파일

@@ -1,5 +1,11 @@
 # 데이터 재동기화 준비 완료
 
+## 최신: 한국어·영어 지원
+
+2026-10-14. 총괄 승인 및 Client 공유 요청을 반영해 Strings에 Content_Eng를 추가했다. ko/en 123개, schemaVersion 1, 기존 key/ko 유지. 신규 UI 키 65개이며 Client 요청 70개 전체의 문구·인자 수를 검증했다. `stages.json`과 `ads.json`은 이전 바이트 그대로다. exporter/`--check` 및 Python 36개 테스트가 통과했다. [계약·문자열 해시](C:/Github/StageGame/GameData/LOCALIZATION-CONTRACT.md), [보존 증거](C:/Github/StageGame/GameData/Validation/localization-results.json).
+
+## 이전: 국면 6개 교체
+
 2026-10-14. **Excel 수정 및 Generated 재export 완료. 클라이언트 동기화 가능.**
 
 - 변경은 10/12/20/22/24/26의 `openingMoves`만이다. 다른 24개 국면·AI 값·제목·광고·문자열은 동일하다.

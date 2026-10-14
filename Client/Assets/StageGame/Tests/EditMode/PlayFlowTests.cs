@@ -9,6 +9,7 @@ using UnityEngine;
 using UnityEngine.TestTools;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace StageGame.Tests
 {
@@ -38,6 +39,122 @@ namespace StageGame.Tests
             yield return new ExitPlayMode();
             if (hadSave) PlayerPrefs.SetString(SaveKey, originalSave); else PlayerPrefs.DeleteKey(SaveKey);
             PlayerPrefs.Save();
+        }
+
+        [UnityTest]
+        public IEnumerator SafeAreaRefitsAfterCanvasLayoutChangesWithoutScreenResize()
+        {
+            var canvas = app.GetComponent<Canvas>();
+            var scaler = app.GetComponent<CanvasScaler>();
+            var fitter = app.GetComponentInChildren<SafeAreaFitter>();
+            var safeRect = (RectTransform)fitter.transform;
+            var originalScreen = new Vector2Int(Screen.width, Screen.height);
+            float oldScale = canvas.scaleFactor;
+            scaler.enabled = false;
+            try
+            {
+                // CanvasScaler/layout may change the available rectangle after the Screen-size event.
+                // Keep Screen fixed and reproduce that independent rectangle change on the saved scene.
+                foreach (float scale in new[] { 0.25f, 1f, 0.25f })
+                {
+                    canvas.scaleFactor = scale;
+                    Canvas.ForceUpdateCanvases(); yield return null;
+                    Canvas.ForceUpdateCanvases();
+                    float expected = Mathf.Min(1f, safeRect.rect.width / 720f, safeRect.rect.height / 1280f);
+                    Assert.AreEqual(originalScreen, new Vector2Int(Screen.width, Screen.height));
+                    Assert.AreEqual(expected, fitter.content.localScale.x, 0.001f, "Available rectangle changed with unchanged Screen size.");
+                    Assert.AreEqual(expected, fitter.content.localScale.y, 0.001f);
+                    Debug.Log($"[Layout Reflow] canvasScale={scale}, available={safeRect.rect.size}, contentScale={fitter.content.localScale.x}");
+                }
+            }
+            finally { canvas.scaleFactor = oldScale; scaler.enabled = true; Canvas.ForceUpdateCanvases(); }
+        }
+
+        [UnityTest]
+        public IEnumerator EveryStageTitleFitsInBothLanguages()
+        {
+            GetField<ProgressStore>("progress").Data.unlockedStage = 30;
+            foreach (string language in new[] { "ko", "en" })
+            {
+                app.SetLanguage(language);
+                for (int index = 0; index < 30; index++)
+                {
+                    app.ShowLobby(); SetField("selected", index); Invoke("RefreshLobby");
+                    AssertTextFits(app.lobby);
+                    app.StartStage(index); yield return null;
+                    AssertTextFits(app.match);
+                }
+            }
+        }
+
+        [UnityTest]
+        public IEnumerator LanguageButtonsUpdateAllScreensAndSurviveSceneReload()
+        {
+            var table = StringTable.Load();
+            Assert.IsFalse(app.lobbyBanner.activeSelf);
+            Capture("ko-lobby", app);
+            app.lobbySettings.onClick.Invoke(); yield return null;
+            Capture("ko-settings", app);
+            app.english.onClick.Invoke(); yield return null;
+            table.SetLanguage("en");
+            Assert.AreEqual("en", new ProgressStore(30).Data.language);
+            Assert.AreEqual(table.Text("ui_settings"), app.settings.transform.Find("Frame/Title").GetComponent<Text>().text);
+            Assert.AreEqual(table.Text("stage_001"), app.stageTitle.text);
+            foreach (var label in app.localizedLabels) Assert.AreEqual(table.Text(label.key), label.target.text, label.key);
+            Capture("en-settings", app);
+            AssertTextFits(app.settings);
+            AssertNoButtonOverlap(app.settings);
+            app.noticesOpen.onClick.Invoke(); yield return null;
+            Assert.AreEqual(Resources.Load<TextAsset>("LegalNotices").text, app.noticesBody.text);
+            app.noticesClose.onClick.Invoke(); app.settingsClose.onClick.Invoke();
+            Capture("en-lobby", app); AssertNoButtonOverlap(app.lobby);
+            app.lobbyHelp.onClick.Invoke(); yield return null;
+            Capture("en-help", app); AssertTextFits(app.help);
+            app.helpClose.onClick.Invoke(); app.play.onClick.Invoke(); yield return null;
+            Capture("en-match", app); AssertTextFits(app.match);
+            app.hint.onClick.Invoke(); yield return null;
+            Assert.AreEqual(table.Text("client_hint_unavailable"), app.matchNotice.text);
+            app.pause.onClick.Invoke(); yield return null;
+            Capture("en-confirm", app); AssertNoButtonOverlap(app.confirm); AssertTextFits(app.confirm);
+            app.confirmResume.onClick.Invoke();
+            var board = new ConnectFourBoard();
+            foreach (int column in new[] { 0, 6, 1, 6, 2, 5 }) board.TryDrop(column);
+            SetField("board", board); Invoke("RefreshBoard");
+            app.columns[3].onClick.Invoke(); yield return null;
+            Assert.AreEqual(table.Text("client_result_win"), app.resultTitle.text);
+            Assert.IsFalse(app.resultBanner.activeSelf);
+            Capture("en-result", app); AssertNoButtonOverlap(app.result); AssertTextFits(app.result);
+            app.ShowLobby(); app.lobbySettings.onClick.Invoke(); app.korean.onClick.Invoke(); yield return null;
+            Assert.AreEqual("ko", new ProgressStore(30).Data.language);
+            app.settingsClose.onClick.Invoke(); app.play.onClick.Invoke(); yield return null;
+            Capture("ko-match", app);
+            app.ShowLobby(); app.lobbySettings.onClick.Invoke(); app.english.onClick.Invoke();
+            yield return SceneManager.LoadSceneAsync("Main"); yield return null;
+            app = UnityEngine.Object.FindFirstObjectByType<GameApp>();
+            Assert.AreEqual("en", GetField<StringTable>("strings").Language);
+            Assert.AreEqual(table.Text("stage_002"), app.stageTitle.text);
+            Assert.AreEqual("2 / 30 stages unlocked", app.progressLabel.text);
+            Capture("en-restored", app);
+        }
+
+        static void AssertNoButtonOverlap(GameObject screen)
+        {
+            Canvas.ForceUpdateCanvases();
+            var buttons = screen.GetComponentsInChildren<Button>();
+            for (int i = 0; i < buttons.Length; i++)
+                for (int j = i + 1; j < buttons.Length; j++)
+                    Assert.IsFalse(WorldRect(buttons[i]).Overlaps(WorldRect(buttons[j])), buttons[i].name + " overlaps " + buttons[j].name);
+        }
+        static Rect WorldRect(Button button)
+        {
+            var corners = new Vector3[4]; ((RectTransform)button.transform).GetWorldCorners(corners);
+            return Rect.MinMaxRect(corners[0].x, corners[0].y, corners[2].x, corners[2].y);
+        }
+        static void AssertTextFits(GameObject screen)
+        {
+            Canvas.ForceUpdateCanvases();
+            foreach (var text in screen.GetComponentsInChildren<Text>())
+                Assert.LessOrEqual(text.preferredHeight, text.rectTransform.rect.height + 2, text.name + ": " + text.text);
         }
 
         [UnityTest]

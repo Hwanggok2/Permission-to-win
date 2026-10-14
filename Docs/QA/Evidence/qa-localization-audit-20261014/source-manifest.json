@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Seoul",
+  "method": "Read-only source review and existing image inspection; no product tests executed",
+  "files": [
+    {
+      "path": "Client/Assets/StageGame/Scripts/UI/GameApp.cs",
+      "sha256": "3BADE827B9277D4E4A3C26CBECC43448F3940CE3B01B4B2A644C5264E7DB65E2"
+    },
+    {
+      "path": "Client/Assets/StageGame/Scripts/Core/GameData.cs",
+      "sha256": "68514EBA29CB67339F40B2A13BF189920449413C0032FE1AD2E86943D31406B3"
+    },
+    {
+      "path": "Client/Assets/StageGame/Scripts/Core/ProgressStore.cs",
+      "sha256": "89764FEADD1EC247765BB521F87555D8FB148D2DA2CCB095D4C46966E81F71DB"
+    },
+    {
+      "path": "Client/Assets/StageGame/Scripts/Core/AiSearch.cs",
+      "sha256": "FEA609E5CC011D590C9BEDA3D401B3CCC420DF7E0C9FAD7EFA18F99A9D72F63B"
+    },
+    {
+      "path": "Client/Assets/StageGame/Scripts/Core/ConnectFourBoard.cs",
+      "sha256": "5A57257861061D89B71E9758B6E352A96E08D22C2B686C85C5CD503B0F25FB36"
+    },
+    {
+      "path": "Client/Assets/StageGame/Scripts/Platform/Advertising.cs",
+      "sha256": "3043E960FA8C5C3506442C60024351B70C7C548D2834D4D6A579683A4CAE3D6C"
+    },
+    {
+      "path": "Client/Assets/StageGame/Editor/ProjectBuilder.cs",
+      "sha256": "57C53D6E132A69E51C858C54088C34765CAF6B4A8AAA4F050BE52CD76B55EEA4"
+    },
+    {
+      "path": "GameData/Generated/strings.json",
+      "sha256": "F307E1900A7E0CDF72A1B50D33CBFB0EECE4A6F46E69910978286A6CEF2D7752"
+    },
+    {
+      "path": "Client/Evidence/settings.png",
+      "sha256": "735A42AC2243A87F56D22D0B0831830C7340AD904449237F6E127E212FC0C878"
+    },
+    {
+      "path": "Client/Evidence/match.png",
+      "sha256": "67F4709855E72A0B7B8C3C6723ECAECC8F86B048C9EF88A976DA18F4DF82DC4C"
+    },
+    {
+      "path": "Client/Evidence/lobby.png",
+      "sha256": "64E185691AED01A9F76983C67022A0994EEAE31021ACD0B1557B81B50B304B43"
+    }
+  ]
+}

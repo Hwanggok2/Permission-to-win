@@ -129,7 +129,7 @@ Excel을 수치와 문자열의 원본으로 삼고, 개발 시 검증·변환�
 | 잘못된 Unity 카탈로그 참조 또는 반영 실패 | 기존 데이터 보존 확인 |
 | 모든 제작 시트 렌더와 최종 XLSX 재열기 | 한글·메타행·숫자 가독성, 잘림·의도치 않은 변형 없음 |
 
-위 목록은 일반 형식의 검증 기준이다. MVP에는 한국어만 사용하며 Unity 에셋 importer는 없다. 실제 실행한 28개 Python 테스트와 렌더 검증은 README에 구분하여 기록했다. 참조 테스트의 존재는 [파서 테스트](C:/Github/SimpleGame/Assets/Game/Tests/EditMode/GameDataExcelImporterTests.cs:2698)와 [참조 실패 보존 테스트](C:/Github/SimpleGame/Assets/Game/Tests/EditMode/GameDataImportTransactionTests.cs:14)에서 확인했으나 SimpleGame 테스트는 실행하지 않았다.
+위 목록은 일반 형식의 검증 기준이다. MVP는 한국어·영어를 지원하며 Unity 에셋 importer는 없다. 실제 실행한 36개 Python 테스트와 렌더 검증은 README에 구분하여 기록했다. 참조 테스트의 존재는 [파서 테스트](C:/Github/SimpleGame/Assets/Game/Tests/EditMode/GameDataExcelImporterTests.cs:2698)와 [참조 실패 보존 테스트](C:/Github/SimpleGame/Assets/Game/Tests/EditMode/GameDataImportTransactionTests.cs:14)에서 확인했으나 SimpleGame 테스트는 실행하지 않았다.
 
 ## 8. 문서와 코드의 차이 및 남은 결정
 
@@ -139,11 +139,11 @@ Excel을 수치와 문자열의 원본으로 삼고, 개발 시 검증·변환�
 
 1. AI 깊이·노드 예산·실수 비율의 기기별 실제 성능과 난이도, 플레이 시간 및 학습 효과.
 2. 클라이언트 복사/로딩 및 `Docs/Management/CONTRACT.md`와의 통합 확인.
-3. 각 국면의 최적 플레이 결과, 실제 퍼즐 해답, 영어 추가 여부, 콘텐츠 업데이트 시 기존 저장 처리.
+3. 각 국면의 최적 플레이 결과, 실제 퍼즐 해답, 언어별 UI 표시, 콘텐츠 업데이트 시 기존 저장 처리.
 
 ## 9. 현재 MVP 원본과 JSON v1 매핑
 
-원본은 `GameData_MVP.xlsx` 하나다. 작고 함께 검증해야 하는 30스테이지·광고 설정·문자열을 세 시트로 묶어 파일 간 버전 불일치를 줄였다. 한국어 전용이며 수식과 Excel Table 객체를 사용하지 않는다. 메타행은 위의 4행, 활성값은 대문자 `USE/NONE`, 모든 셀은 고정값이다.
+원본은 `GameData_MVP.xlsx` 하나다. 함께 검증해야 하는 30스테이지·광고 설정·문자열을 세 시트로 묶어 파일 간 버전 불일치를 줄였다. 한국어·영어를 지원하며 수식과 Excel Table 객체를 사용하지 않는다. 메타행은 위의 4행, 활성값은 대문자 `USE/NONE`, 모든 셀은 고정값이다.
 
 | Stages 열 | JSON 필드 | 필수/제약 |
 | --- | --- | --- |
@@ -163,6 +163,10 @@ Excel을 수치와 문자열의 원본으로 삼고, 개발 시 검증·변환�
 
 `AdConfig`는 USE 한 행이며 계약 v1 시험값을 엄격히 검사한다. 필드는 `InterstitialGraceMatches=3`, `InterstitialEveryMatches=2`, `InterstitialCooldownSeconds=90`, `BannerLobby=TRUE`, `BannerResult=TRUE`, `RewardedHintsPerMatch=1`이다. JSON은 첫 글자만 소문자로 바꾼 동명 필드를 사용한다. 시험값을 바꾸려면 총괄 계약과 validator를 함께 갱신한다.
 
-`Strings`는 `ExportType`, `SearchKey`, `Content_Kor`, `/Description` 순서다. `SearchKey→key`, `Content_Kor→ko`만 생성한다. 키는 전역 고유 ASCII 식별자이며 한국어 내용은 필수다. 현재 포맷 인자와 영어 열을 사용하지 않으므로 해당 검증/별칭은 구현하지 않았다.
+`Strings`는 `ExportType`, `SearchKey`, `Content_Kor`, `/Description`, `Content_Eng` 순서다. 마지막 영어 열을 추가하여 기존 열 위치를 보존했다. `SearchKey→key`, `Content_Kor→ko`, `Content_Eng→en`을 생성하며 두 언어 모두 필수다. 영어 메타는 `string/Client`, 설명행은 `영어 표시 문구`다. 키는 전역 고유 ASCII 식별자다.
+
+포맷은 C# `string.Format`의 제한된 부분집합 `{0}`, `{1}` 등만 허용한다. 두 언어의 인자 인덱스 집합이 같고 0부터 연속이어야 한다. 인자 순서 변경·반복은 허용하고 `{{`/`}}`는 리터럴 중괄호다. 이름 인자, 정렬/형식 지정자, 불완전 중괄호를 거부한다. 숫자 자릿수 등은 호출자가 미리 형식화한다. 예: `챕터 {0} · 스테이지 {1}` / `CHAPTER {0} · STAGE {1}`.
+
+2026-10-14 총괄 승인과 Client 요청 합의로 wrapper/schemaVersion 1을 유지하고 en을 추가했다. 기존 58개 한국어를 보존·번역하고 신규 UI 키 65개를 더해 123개다. 언어 코드는 `ko/en`, 최초·잘못된 저장값의 기본은 ko다. 언어 선택/저장·UI 갱신은 클라이언트가 구현한다. [소비자 합의 및 생성 상태](C:/Github/StageGame/GameData/LOCALIZATION-CONTRACT.md).
 
 생성물은 `Generated/stages.json`, `ads.json`, `strings.json`이며 각 최상위는 `schemaVersion:1`을 갖는 객체다. stages/strings는 객체 배열이다. 스키마 밖의 열·시트·타입·범위는 오류로 보고한다. `float`, `long`, enum, 목록 메타는 현재 세 시트에서 사용하지 않는다. 범용 형식에서 허용될 수 있는 타입과 이번 MVP exporter의 지원 범위를 구분한다.

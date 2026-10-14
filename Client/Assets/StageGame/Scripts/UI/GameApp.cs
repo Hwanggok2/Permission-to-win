@@ -2,9 +2,14 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+#if UNITY_WEBGL && !UNITY_EDITOR
+using System.Runtime.InteropServices;
+#endif
 
 namespace StageGame
 {
+    [Serializable] public sealed class LocalizedLabel { public Text target; public string key; }
+
     public sealed class GameApp : MonoBehaviour
     {
         [Header("Saved prefab references")]
@@ -19,6 +24,7 @@ namespace StageGame
         public Text soundLabel;
         public Image[] stones;
         public Text[] stoneLabels;
+        public Text[] columnLabels;
         public Image[] columnMarkers;
         public Button[] columns;
         public GameObject lobbyBanner, resultBanner;
@@ -27,12 +33,16 @@ namespace StageGame
         public GameObject notices;
         public Button noticesOpen, noticesClose;
         public Text noticesBody;
+        public Button korean, english;
+        public Text koreanLabel, englishLabel, playLabel, hintLabel;
+        public LocalizedLabel[] localizedLabels;
 
         static readonly Color Empty = new Color32(15, 27, 43, 255);
         static readonly Color Player = new Color32(108, 237, 199, 255);
         static readonly Color Opponent = new Color32(255, 137, 121, 255);
         static readonly Color Highlight = new Color32(255, 217, 134, 255);
         GameData data;
+        StringTable strings;
         ProgressStore progress;
         ConnectFourBoard board;
         IAdService ads = new NoFillAds();
@@ -41,6 +51,14 @@ namespace StageGame
         string matchId;
         bool busy, applicationPaused, resultRecorded, leaving;
         Coroutine aiRoutine;
+        string matchNoticeKey = "match_instruction";
+        object[] matchNoticeArgs = Array.Empty<object>();
+#if UNITY_WEBGL && !UNITY_EDITOR
+        [DllImport("__Internal")] static extern void StageGameSetLanguage(string language);
+#endif
+
+        string T(string key) => strings.Text(key);
+        string F(string key, params object[] args) => strings.Format(key, args);
 
         void Start()
         {
@@ -52,10 +70,10 @@ namespace StageGame
             settingsClose.onClick.AddListener(() => settings.SetActive(false));
             helpClose.onClick.AddListener(() => help.SetActive(false));
             soundToggle.onClick.AddListener(ToggleSound);
+            korean.onClick.AddListener(() => SetLanguage("ko"));
+            english.onClick.AddListener(() => SetLanguage("en"));
             noticesOpen.onClick.AddListener(() => notices.SetActive(true));
             noticesClose.onClick.AddListener(() => notices.SetActive(false));
-            var legalText = Resources.Load<TextAsset>("LegalNotices");
-            noticesBody.text = legalText != null ? legalText.text : "라이선스 파일을 찾을 수 없습니다.";
             pause.onClick.AddListener(() => { CancelPendingReward(); confirm.SetActive(true); RefreshBoard(); });
             confirmClose.onClick.AddListener(Resume);
             confirmResume.onClick.AddListener(Resume);
@@ -68,21 +86,26 @@ namespace StageGame
             for (int i = 0; i < columns.Length; i++) { int col = i; columns[i].onClick.AddListener(() => Drop(col)); }
             try
             {
-                data = GameData.Load();
+                strings = StringTable.Load();
+                data = GameData.Load(strings);
                 progress = new ProgressStore(data.Stages.Length);
+                strings.SetLanguage(progress.Data.language);
                 selected = progress.Data.unlockedStage - 1;
+                RefreshLanguage();
                 ShowLobby();
-                if (!string.IsNullOrEmpty(progress.LoadWarning)) lobbyNotice.text = progress.LoadWarning;
             }
             catch (Exception error)
             {
                 Debug.LogError("[StageGame Data] " + error);
                 lobby.SetActive(true); match.SetActive(false);
                 CloseModals();
-                stageTitle.text = "데이터 확인 필요";
-                stageDetail.text = "스테이지를 시작할 수 없습니다.";
-                lobbyNotice.text = error.Message;
+                // Bootstrap fallback only: the Excel table itself may be unreadable.
+                stageTitle.text = strings != null && strings.Contains("error_data_title") ? T("error_data_title") : "데이터 오류 / Data unavailable";
+                stageDetail.text = strings != null && strings.Contains("client_error_data") ? T("client_error_data") : "다시 실행해 주세요. / Please restart.";
+                lobbyNotice.text = "";
                 play.interactable = previous.interactable = following.interactable = false;
+                lobbySettings.interactable = lobbyHelp.interactable = false;
+                lobbyBanner.SetActive(false);
             }
         }
 
@@ -108,17 +131,16 @@ namespace StageGame
         {
             var stage = data.Stages[selected];
             bool unlocked = stage.id <= progress.Data.unlockedStage;
-            stageNumber.text = $"CHAPTER {stage.chapter:00}   /   STAGE {stage.id:00}";
+            stageNumber.text = F("stage_number", stage.chapter.ToString("00"), stage.id.ToString("00"));
             stageTitle.text = data.Text(stage.titleKey);
-            stageDetail.text = unlocked ? "나의 돌 4개를 먼저 연결하세요.\n열을 누르면 돌이 아래로 떨어집니다." : "이전 스테이지에서 승리하면 열립니다.";
-            progressLabel.text = $"{progress.Data.unlockedStage} / {data.Stages.Length} 스테이지 해금";
-            play.GetComponentInChildren<Text>().text = unlocked ? "대국 시작" : "잠긴 스테이지";
+            stageDetail.text = T(unlocked ? "stage_instruction" : "stage_locked_detail");
+            progressLabel.text = F("stage_progress", progress.Data.unlockedStage, data.Stages.Length);
+            playLabel.text = T(unlocked ? "client_ui_start" : "stage_locked");
             play.interactable = unlocked;
             previous.interactable = selected > 0;
             following.interactable = selected < data.Stages.Length - 1;
-            lobbyBanner.SetActive(data.Ads.bannerLobby);
-            lobbyNotice.text = "무료 재도전 · 진행도는 이 기기에 저장됩니다";
-            if (!string.IsNullOrEmpty(progress.SaveWarning)) lobbyNotice.text = progress.SaveWarning;
+            lobbyBanner.SetActive(data.Ads.bannerLobby && !(ads is NoFillAds));
+            lobbyNotice.text = T(progress.SaveWarning ?? progress.LoadWarning ?? "lobby_notice");
         }
 
         public void ShowLobby()
@@ -145,14 +167,14 @@ namespace StageGame
             CancelPendingReward();
             ads.CancelPending();
             try { board = GameData.CreateBoard(data.Stages[index]); }
-            catch (Exception error) { ShowLobby(); lobbyNotice.text = error.Message; return; }
+            catch (Exception error) { Debug.LogError(error); ShowLobby(); lobbyNotice.text = T("client_error_data"); return; }
             activeStage = selected = index;
             matchId = Guid.NewGuid().ToString("N");
             rewardGate = new RewardGate();
             resultRecorded = false; busy = false; hintColumn = -1;
             lobby.SetActive(false); match.SetActive(true); CloseModals();
-            matchTitle.text = $"{index + 1:00}  /  {data.Text(data.Stages[index].titleKey)}";
-            matchNotice.text = "민트색은 나, 산호색은 AI입니다.";
+            matchTitle.text = F("match_title", (index + 1).ToString("00"), data.Text(data.Stages[index].titleKey));
+            SetMatchNotice("match_instruction");
             RefreshBoard();
             if (board.CurrentPlayer == -1) aiRoutine = StartCoroutine(Think(false));
         }
@@ -161,6 +183,7 @@ namespace StageGame
         {
             if (board == null || busy || rewardGate.Pending || applicationPaused || confirm.activeSelf || board.CurrentPlayer != 1 || !board.TryDrop(column)) return;
             hintColumn = -1;
+            SetMatchNotice("match_instruction");
             PlayMove();
             RefreshBoard();
             if (board.IsFinished) Finish();
@@ -197,7 +220,7 @@ namespace StageGame
                 if (isHint)
                 {
                     hintColumn = search.ChosenColumn;
-                    matchNotice.text = $"추천: {hintColumn + 1}번 열. 상대의 다음 위협도 살펴보세요.";
+                    SetMatchNotice("hint_recommendation", hintColumn + 1);
                 }
                 else if (board.TryDrop(search.ChosenColumn)) PlayMove();
             }
@@ -215,7 +238,7 @@ namespace StageGame
                 bool winning = false;
                 foreach (int cell in board.WinningCells) if (cell == i) winning = true;
                 stones[i].color = winning ? Highlight : player == 1 ? Player : player == -1 ? Opponent : Empty;
-                stoneLabels[i].text = player == 1 ? "나" : player == -1 ? "AI" : "";
+                stoneLabels[i].text = player == 1 ? T("player_stone") : player == -1 ? T("ai_stone") : "";
             }
             bool canInput = !busy && !rewardGate.Pending && !applicationPaused && !confirm.activeSelf && !board.IsFinished && board.CurrentPlayer == 1;
             for (int col = 0; col < columns.Length; col++)
@@ -224,8 +247,9 @@ namespace StageGame
                 columnMarkers[col].color = col == hintColumn ? Highlight : new Color(1, 1, 1, 0.08f);
             }
             hint.interactable = canInput && !rewardGate.Granted && !rewardGate.Pending;
-            turnLabel.text = board.IsFinished ? "대국 종료" : busy ? "다음 수를 살펴보는 중…" : board.CurrentPlayer == 1 ? "나의 차례 · 열을 선택하세요" : "AI의 차례";
-            moveLabel.text = $"{board.MoveCount:00} / 42 수";
+            hintLabel.text = T(rewardGate.Granted ? "client_hint_used" : "client_hint_request");
+            turnLabel.text = T(board.IsFinished ? "turn_finished" : busy ? "turn_thinking" : board.CurrentPlayer == 1 ? "client_ui_player_turn" : "client_ui_ai_turn");
+            moveLabel.text = F("move_count", board.MoveCount.ToString("00"));
         }
 
         void Finish()
@@ -233,25 +257,28 @@ namespace StageGame
             if (resultRecorded) return;
             resultRecorded = true;
             progress.RecordResult(matchId, activeStage + 1, board.Winner == 1, data.Stages.Length);
-            resultTitle.text = board.Winner == 1 ? "연결 성공!" : board.IsDraw ? "팽팽한 무승부" : "한 수 더 생각해 볼까요?";
-            resultDetail.text = board.Winner == 1 ? "네 개의 돌이 이어졌습니다.\n다음 스테이지에 도전하세요." :
-                board.IsDraw ? "42칸이 모두 찼습니다.\n다시 도전해 다른 흐름을 만들어 보세요." : LossExplanation();
+            RefreshResultText();
             nextStage.gameObject.SetActive(board.Winner == 1 && activeStage + 1 < data.Stages.Length);
-            if (board.Winner == 1 && activeStage + 1 == data.Stages.Length) resultDetail.text = "모든 스테이지를 완료했습니다!\n로비에서 원하는 대국을 다시 즐길 수 있어요.";
-            resultBanner.SetActive(data.Ads.bannerResult);
-            resultAdStatus.text = ads.Status;
-            if (!string.IsNullOrEmpty(progress.SaveWarning)) resultAdStatus.text = progress.SaveWarning;
+            resultBanner.SetActive(data.Ads.bannerResult && !(ads is NoFillAds));
             result.SetActive(true);
             SetResultActions(false);
             StartCoroutine(ResultAdBoundary(matchId));
         }
 
-        string LossExplanation()
+        void RefreshResultText()
         {
-            if (board.WinningCells.Count < 2) return "상대가 먼저 네 개를 연결했습니다.\n다음에는 상대의 세 돌을 막아 보세요.";
+            if (board == null || !board.IsFinished) return;
+            resultTitle.text = T(board.Winner == 1 ? "client_result_win" : board.IsDraw ? "result_draw" : "client_result_loss");
+            resultDetail.text = T(board.Winner == 1 ? activeStage + 1 == data.Stages.Length ? "client_result_all_clear" : "result_win_detail" :
+                board.IsDraw ? "result_draw_detail" : LossExplanationKey());
+            resultAdStatus.text = !string.IsNullOrEmpty(progress.SaveWarning) ? T(progress.SaveWarning) : ads is NoFillAds ? "" : T(ads.Status);
+        }
+
+        string LossExplanationKey()
+        {
+            if (board.WinningCells.Count < 2) return "result_loss_detail";
             int a = board.WinningCells[0], b = board.WinningCells[1];
-            string direction = a / 7 == b / 7 ? "가로" : a % 7 == b % 7 ? "세로" : "대각선";
-            return $"AI가 {direction}로 네 개를 연결했습니다.\n금색으로 표시된 줄을 살펴보세요.";
+            return a / 7 == b / 7 ? "result_loss_horizontal" : a % 7 == b % 7 ? "result_loss_vertical" : "result_loss_diagonal";
         }
 
         IEnumerator ResultAdBoundary(string id)
@@ -306,7 +333,7 @@ namespace StageGame
                 if (awarded) aiRoutine = StartCoroutine(Think(true));
                 else if (!gate.Granted)
                 {
-                    matchNotice.text = value == AdResult.Unavailable ? "현재 광고가 준비되지 않았습니다. 대국은 계속할 수 있어요." : "광고가 완료되지 않아 힌트가 지급되지 않았습니다.";
+                    SetMatchNotice(value == AdResult.Unavailable ? "client_hint_unavailable" : "hint_incomplete");
                     RefreshBoard();
                 }
             });
@@ -320,7 +347,7 @@ namespace StageGame
             if (matchId == id && gate.Pending)
             {
                 CancelPendingReward();
-                matchNotice.text = "광고 응답 시간이 지나 취소했습니다. 대국을 계속할 수 있어요.";
+                SetMatchNotice("hint_timeout");
                 RefreshBoard();
             }
         }
@@ -330,15 +357,53 @@ namespace StageGame
             if (rewardGate == null || !rewardGate.Pending) return;
             rewardGate.Cancel();
             ads.CancelPending();
-            if (matchNotice != null) matchNotice.text = "광고 요청을 취소했습니다. 대국을 계속할 수 있어요.";
+            if (matchNotice != null && strings != null) SetMatchNotice("hint_cancelled");
         }
 
         void Resume() { confirm.SetActive(false); RefreshBoard(); }
         void OpenSettings()
         {
             settings.SetActive(true);
-            soundLabel.text = progress == null || progress.Data.soundEnabled ? "효과음  켜짐" : "효과음  꺼짐";
-            settingsDetail.text = "진행도는 이 기기에 저장됩니다.\n광고 SDK 미연결 · 수익 연동 없음\n\nMade with Unity\n폰트: Noto Sans CJK KR / Adobe\n라이선스 전문은 아래에서 읽을 수 있어요.";
+            RefreshSettings();
+        }
+        void RefreshSettings()
+        {
+            soundLabel.text = T(progress.Data.soundEnabled ? "settings_sound_on" : "settings_sound_off");
+            settingsDetail.text = T(progress.SaveWarning ?? "settings_detail");
+            koreanLabel.text = strings.Language == "ko" ? F("language_selected", T("language_ko")) : T("language_ko");
+            englishLabel.text = strings.Language == "en" ? F("language_selected", T("language_en")) : T("language_en");
+        }
+        public void SetLanguage(string language)
+        {
+            if (strings == null || progress == null) return;
+            progress.Data.language = StringTable.NormalizeLanguage(language);
+            strings.SetLanguage(progress.Data.language);
+            progress.Save();
+            RefreshLanguage();
+        }
+        void RefreshLanguage()
+        {
+            foreach (var label in localizedLabels) label.target.text = T(label.key);
+            for (int col = 0; col < columnLabels.Length; col++) columnLabels[col].text = F("column_number", col + 1);
+#if UNITY_WEBGL && !UNITY_EDITOR
+            StageGameSetLanguage(strings.Language);
+#endif
+            var legalText = Resources.Load<TextAsset>("LegalNotices");
+            noticesBody.text = legalText != null ? legalText.text : T("legal_missing");
+            RefreshLobby();
+            RefreshSettings();
+            if (board != null)
+            {
+                matchTitle.text = F("match_title", (activeStage + 1).ToString("00"), data.Text(data.Stages[activeStage].titleKey));
+                RefreshBoard();
+                matchNotice.text = F(matchNoticeKey, matchNoticeArgs);
+                RefreshResultText();
+            }
+        }
+        void SetMatchNotice(string key, params object[] args)
+        {
+            matchNoticeKey = key; matchNoticeArgs = args;
+            matchNotice.text = F(key, args);
         }
         void ToggleSound()
         {

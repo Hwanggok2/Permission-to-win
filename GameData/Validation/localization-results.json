@@ -1,0 +1,25 @@
+{
+  "sourceSha256": "914f5cd0f13e27af14193576db1ba477787b4ab461b230cbc0aa73c691c12b78",
+  "clientRequestSha256": "da70aab4c2010d1651f742e43ec2c131e18a2960b048f9988e6b2b28d3c16fd0",
+  "strings": 123,
+  "clientRequestedKeys": 70,
+  "locales": [
+    "ko",
+    "en"
+  ],
+  "clientCopyAndFormatArgs": "passed",
+  "stableRuntimeHashes": {
+    "stages.json": "2d04b124a42f0f3798ad942e9aacab97ee34a25f05b380144cd70f75c3904992",
+    "ads.json": "d19f181faf52db28287bbed1b42291770dc3bf83d35e5cca8af4a6dcce9e194a"
+  },
+  "stringsSha256": "ed5fd27463724f4789b2f5e96922316240f73bf73ebc9d663410f0758e0883c2",
+  "preservation": {
+    "beforeSha256": "e236710c67014a3c4f6aced8121977a1185b447b2c7b1f9620c9edde2c2e5bc4",
+    "unchangedSheets": [
+      "Stages",
+      "AdConfig"
+    ],
+    "preservedStringsRange": "A1:D62",
+    "valuesStylesDimensionsPanesValidation": "passed"
+  }
+}
