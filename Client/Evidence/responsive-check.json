@@ -1,0 +1,171 @@
+{
+  "verifiedAtUtc": "2026-10-14T06:12:23.492Z",
+  "environment": "Codex in-app browser viewport override, not a physical mobile device",
+  "url": "http://127.0.0.1:8765/?client-verify=responsive",
+  "viewports": [
+    {
+      "rects": [
+        {
+          "id": "",
+          "rect": {
+            "bottom": 844,
+            "height": 844,
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "width": 390,
+            "x": 0,
+            "y": 0
+          },
+          "tag": "BODY"
+        },
+        {
+          "id": "player",
+          "rect": {
+            "bottom": 768.6667098999023,
+            "height": 693.3333740234375,
+            "left": 0,
+            "right": 390,
+            "top": 75.33333587646484,
+            "width": 390,
+            "x": 0,
+            "y": 75.33333587646484
+          },
+          "tag": "MAIN"
+        },
+        {
+          "id": "unity-canvas",
+          "rect": {
+            "bottom": 768.6667098999023,
+            "height": 693.3333740234375,
+            "left": 0,
+            "right": 390,
+            "top": 75.33333587646484,
+            "width": 390,
+            "x": 0,
+            "y": 75.33333587646484
+          },
+          "tag": "CANVAS"
+        }
+      ],
+      "scroll": {
+        "height": 844,
+        "width": 390
+      },
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "rects": [
+        {
+          "id": "",
+          "rect": {
+            "bottom": 568,
+            "height": 568,
+            "left": 0,
+            "right": 320,
+            "top": 0,
+            "width": 320,
+            "x": 0,
+            "y": 0
+          },
+          "tag": "BODY"
+        },
+        {
+          "id": "player",
+          "rect": {
+            "bottom": 568,
+            "height": 568,
+            "left": 0.25,
+            "right": 319.75,
+            "top": 0,
+            "width": 319.5,
+            "x": 0.25,
+            "y": 0
+          },
+          "tag": "MAIN"
+        },
+        {
+          "id": "unity-canvas",
+          "rect": {
+            "bottom": 568,
+            "height": 568,
+            "left": 0.25,
+            "right": 319.75,
+            "top": 0,
+            "width": 319.5,
+            "x": 0.25,
+            "y": 0
+          },
+          "tag": "CANVAS"
+        }
+      ],
+      "scroll": {
+        "height": 568,
+        "width": 320
+      },
+      "viewport": {
+        "height": 568,
+        "width": 320
+      }
+    },
+    {
+      "rects": [
+        {
+          "id": "",
+          "rect": {
+            "bottom": 720,
+            "height": 720,
+            "left": 0,
+            "right": 1280,
+            "top": 0,
+            "width": 1280,
+            "x": 0,
+            "y": 0
+          },
+          "tag": "BODY"
+        },
+        {
+          "id": "player",
+          "rect": {
+            "bottom": 720,
+            "height": 720,
+            "left": 437.5,
+            "right": 842.5,
+            "top": 0,
+            "width": 405,
+            "x": 437.5,
+            "y": 0
+          },
+          "tag": "MAIN"
+        },
+        {
+          "id": "unity-canvas",
+          "rect": {
+            "bottom": 720,
+            "height": 720,
+            "left": 437.5,
+            "right": 842.5,
+            "top": 0,
+            "width": 405,
+            "x": 437.5,
+            "y": 0
+          },
+          "tag": "CANVAS"
+        }
+      ],
+      "scroll": {
+        "height": 720,
+        "width": 1280
+      },
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      }
+    }
+  ],
+  "settingsPointerCheck": "390x844: click (281,605) opened Settings; click (328,227) closed Settings",
+  "console": []
+}

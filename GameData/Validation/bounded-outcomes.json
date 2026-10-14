@@ -1,0 +1,50 @@
+{
+  "method": "Independent seven-bit-column bitboard minimax. No heuristic values. Horizon=0 means unknown/draw. Immediate wins and compulsory blocks prune only proven tactical branches.",
+  "limits": "Bounded model proof, not actual AI timing behavior, device performance, human playability, complete 30-stage certification, or finished balance.",
+  "sourceSha256": "e236710c67014a3c4f6aced8121977a1185b447b2c7b1f9620c9edde2c2e5bc4",
+  "stagesSha256": "2d04b124a42f0f3798ad942e9aacab97ee34a25f05b380144cd70f75c3904992",
+  "findings": [
+    {
+      "id": 10,
+      "oldDepth": 8,
+      "oldBoundedOutcome": -1,
+      "newDepth": 8,
+      "newBoundedOutcome": 1
+    },
+    {
+      "id": 12,
+      "oldDepth": 6,
+      "oldBoundedOutcome": -1,
+      "newDepth": 8,
+      "newBoundedOutcome": 1
+    },
+    {
+      "id": 20,
+      "oldDepth": 6,
+      "oldBoundedOutcome": -1,
+      "newDepth": 8,
+      "newBoundedOutcome": 1
+    },
+    {
+      "id": 22,
+      "oldDepth": 6,
+      "oldBoundedOutcome": -1,
+      "newDepth": 8,
+      "newBoundedOutcome": 1
+    },
+    {
+      "id": 24,
+      "oldDepth": 18,
+      "oldBoundedOutcome": -1,
+      "newDepth": 8,
+      "newBoundedOutcome": 1
+    },
+    {
+      "id": 26,
+      "oldDepth": 22,
+      "oldBoundedOutcome": -1,
+      "newDepth": 8,
+      "newBoundedOutcome": 1
+    }
+  ]
+}

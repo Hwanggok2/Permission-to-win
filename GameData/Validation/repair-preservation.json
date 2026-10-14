@@ -1,0 +1,26 @@
+{
+  "changedExcelCells": [
+    "Stages!I14",
+    "Stages!I16",
+    "Stages!I24",
+    "Stages!I26",
+    "Stages!I28",
+    "Stages!I30"
+  ],
+  "styleDifferences": [],
+  "unchangedStages": 24,
+  "changedJsonStages": [
+    10,
+    12,
+    20,
+    22,
+    24,
+    26
+  ],
+  "changedJsonFields": [
+    "openingMoves"
+  ],
+  "adsAndStringsUnchanged": true,
+  "xlsxSha256": "e236710c67014a3c4f6aced8121977a1185b447b2c7b1f9620c9edde2c2e5bc4",
+  "stagesSha256": "2d04b124a42f0f3798ad942e9aacab97ee34a25f05b380144cd70f75c3904992"
+}

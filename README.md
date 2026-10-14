@@ -8,6 +8,16 @@
 - 원칙: 프리팹 UI, Excel 원본 게임데이터, 오프라인 AI, 플랫폼별 광고 어댑터.
 - 현재 상태/일정: [총괄 보드](Docs/Management/STATUS.md).
 
+## 실행과 검증
+
+개발 APK와 로컬 브라우저 실행은 [플레이테스트 안내](Docs/Management/PLAYTEST.md)를 따른다.
+
+Unity Hub에서 `Client`를 Unity 6000.3.15f1로 열고 `Assets/StageGame/Scenes/Main.unity`를 실행한다. 화면·보드·공통 버튼은 저장된 프리팹이며, 자세한 빌드 명령과 검증 범위는 [클라이언트 기록](Client/IMPLEMENTATION.md)에 있다.
+
+게임데이터 원본은 `GameData/GameData_MVP.xlsx`다. 수정 후 [내보내기 안내](GameData/README.md)에 따라 JSON을 검증·생성하고 Client에 반영한다. [QA 현황](Docs/QA/STATUS.md)은 자동 검사와 실제 기기 검증을 구분한다.
+
+현재는 개발용 프로토타입이다. 실제 광고 SDK·토스 `.ait`·릴리스 서명·스토어 심사는 완료되지 않았다. 재미/수익성은 [사람 플레이 검증 계획](Docs/Management/VALIDATION.md)에 따라 확인한다.
+
 | 경로 | 역할 |
 | --- | --- |
 | Client | Unity 프로젝트, 프리팹/씬, 게임 로직, 플랫폼 연동 |

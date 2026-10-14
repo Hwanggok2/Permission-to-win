@@ -1,0 +1,146 @@
+{
+  "verifiedAtUtc": "2026-10-14T06:12:41.4217023Z",
+  "unity": "6000.3.15f1",
+  "project": "C:\\Github\\StageGame\\Client",
+  "tests": {
+    "total": 30,
+    "passed": 30,
+    "failed": 0,
+    "file": "Evidence/unity-tests.xml"
+  },
+  "android": {
+    "build": "Succeeded",
+    "errors": 0,
+    "warnings": 0,
+    "package": "com.stagegame.prototype",
+    "version": "0.1.0",
+    "minSdk": 25,
+    "targetSdk": 36,
+    "architecture": "arm64-v8a",
+    "deviceTested": false,
+    "releaseSigned": false
+  },
+  "webgl": {
+    "build": "Succeeded",
+    "errors": 0,
+    "warnings": 0,
+    "template": "StageGamePortrait",
+    "browserSmoke": "Codex IAB localhost: lobby, start, player move, AI reply and Notices X pointer close verified; console errors/warnings empty.",
+    "browserProof": "Evidence/webgl-browser-match.jpg",
+    "appsInTossSdk": false,
+    "aitPackage": false,
+    "responsiveProof": "Evidence/responsive-check.json",
+    "latestBuildLog": "Logs/webgl-responsive.log",
+    "responsiveSmoke": "Codex IAB: 390x844 -> canvas 390x693.33, 320x568 -> 319.5x568, 1280x720 -> 405x720. All canvas bounds within viewport. Settings opened and closed at 390x844. Console errors/warnings empty. Desktop viewport emulation only."
+  },
+  "ads": "NoFillAds only. Mock completion is UNITY_EDITOR-only.",
+  "artifacts": [
+    {
+      "path": "Builds/Android/StageGame-development.apk",
+      "bytes": 34676997,
+      "sha256": "8A809C7B1942E16D3B846721118A49D4E557CD24EA424E66D07C4D7C908C5688"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.wasm",
+      "bytes": 23975543,
+      "sha256": "341A44CDABBCBF20FAEF276B248C6C2861CCDDCDC42AACC2F3D79F64BE05C18F"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.data",
+      "bytes": 18683016,
+      "sha256": "449794A6FADDA05C4D336993125D1CB67BAC2B59EEA918BB9EF9601E79B800EB"
+    },
+    {
+      "path": "Builds/WebGL/index.html",
+      "bytes": 3432,
+      "sha256": "2102BD16456F5BBD5788FFAB1107CB611F875B9DC211472218C7044CBAB23102"
+    }
+  ],
+  "gameData": [
+    {
+      "name": "stages.json",
+      "sha256": "2D04B124A42F0F3798AD942E9AACAB97EE34A25F05B380144CD70F75C3904992",
+      "matchesSource": true
+    },
+    {
+      "name": "ads.json",
+      "sha256": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A",
+      "matchesSource": true
+    },
+    {
+      "name": "strings.json",
+      "sha256": "F307E1900A7E0CDF72A1B50D33CBFB0EECE4A6F46E69910978286A6CEF2D7752",
+      "matchesSource": true
+    }
+  ],
+  "runtimeSources": [
+    {
+      "path": "Assets/StageGame/Scripts/Core/AiSearch.cs",
+      "sha256": "FEA609E5CC011D590C9BEDA3D401B3CCC420DF7E0C9FAD7EFA18F99A9D72F63B"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/ConnectFourBoard.cs",
+      "sha256": "5A57257861061D89B71E9758B6E352A96E08D22C2B686C85C5CD503B0F25FB36"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/GameData.cs",
+      "sha256": "68514EBA29CB67339F40B2A13BF189920449413C0032FE1AD2E86943D31406B3"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/ProgressStore.cs",
+      "sha256": "89764FEADD1EC247765BB521F87555D8FB148D2DA2CCB095D4C46966E81F71DB"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Platform/Advertising.cs",
+      "sha256": "3043E960FA8C5C3506442C60024351B70C7C548D2834D4D6A579683A4CAE3D6C"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/GameApp.cs",
+      "sha256": "3BADE827B9277D4E4A3C26CBECC43448F3940CE3B01B4B2A644C5264E7DB65E2"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/SafeAreaFitter.cs",
+      "sha256": "78B780ECE851E60A293DAA401E858EF21649896F31F655A208BBB3375D6BA57D"
+    }
+  ],
+  "noticesPointerProof": "Evidence/notices-close-check.txt; Evidence/webgl-notices-close.jpg",
+  "rootIndependentRetest": {
+    "source": "Root chat report received by Client; not independently rerun by Client",
+    "sourceThreadId": "01a138d9-7ede-70d0-ba36-e84a05e6b105",
+    "reportedDateSeoul": "2026-10-14",
+    "environment": "Actual localhost browser with 390x844 viewport override; not a physical mobile device",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "canvas": {
+      "width": 390,
+      "height": 693.333,
+      "y": 75.333,
+      "x": 0
+    },
+    "noClipping": [
+      "lobby",
+      "all seven board columns",
+      "result"
+    ],
+    "stage": 1,
+    "movesZeroBased": [
+      "P3",
+      "AI3",
+      "P3",
+      "AI3",
+      "P1",
+      "AI1",
+      "P2",
+      "AI1",
+      "P4"
+    ],
+    "outcome": "Player won after nine plies; success result shown; lobby unlocked 2/30",
+    "reload": "STAGE 02 and 2/30 unlock restored",
+    "consoleErrorsWarnings": [],
+    "viewportOverrideReset": true,
+    "qa007": "Client fix and root direct retest passed; QA record closure belongs to QA/root"
+  },
+  "documentationFinalizedDateSeoul": "2026-10-14"
+}

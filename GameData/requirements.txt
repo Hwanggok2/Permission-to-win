@@ -1,0 +1,2 @@
+# Read-only XLSX parsing for export_data.py. Author workbooks with Artifact Tool.
+openpyxl==3.1.5

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+<title>StageGame original geometric icon draft</title>
+<rect width="1024" height="1024" fill="#0F1B2B"/>
+<rect x="136" y="136" width="752" height="752" rx="120" fill="#1D3048"/>
+<circle cx="272" cy="272" r="57" fill="#30455F"/>
+<circle cx="432" cy="272" r="57" fill="#30455F"/>
+<circle cx="592" cy="272" r="57" fill="#30455F"/>
+<circle cx="752" cy="272" r="57" fill="#64E6C0"/>
+<circle cx="272" cy="432" r="57" fill="#30455F"/>
+<circle cx="432" cy="432" r="57" fill="#30455F"/>
+<circle cx="592" cy="432" r="57" fill="#64E6C0"/>
+<circle cx="752" cy="432" r="57" fill="#30455F"/>
+<circle cx="272" cy="592" r="57" fill="#30455F"/>
+<circle cx="432" cy="592" r="57" fill="#64E6C0"/>
+<circle cx="592" cy="592" r="57" fill="#30455F"/>
+<circle cx="752" cy="592" r="57" fill="#FF9586"/>
+<circle cx="272" cy="752" r="57" fill="#64E6C0"/>
+<circle cx="432" cy="752" r="57" fill="#30455F"/>
+<circle cx="592" cy="752" r="57" fill="#30455F"/>
+<circle cx="752" cy="752" r="57" fill="#FF9586"/>
+</svg>

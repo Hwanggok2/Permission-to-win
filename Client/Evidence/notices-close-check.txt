@@ -1,0 +1,18 @@
+2026-10-14 KST — actual browser pointer verification
+
+Build: WebGL WASM SHA256 341A44CDABBCBF20FAEF276B248C6C2861CCDDCDC42AACC2F3D79F64BE05C18F
+Codex IAB viewport screenshot: 1280 x 720, portrait canvas x approximately 437..843.
+Path: Lobby -> Settings -> Open-source licenses.
+
+Observed Notices X center: x=783, y=85 (button approximately y=67..103).
+One pointer click at (783,85) closed Notices and restored Settings.
+Evidence: webgl-notices-close.jpg.
+
+The separately reported (783,118) coordinate lies below the visible button in this build.
+This does not establish correctness for a different viewport or stale build; positions must be read from its current screenshot.
+An EventSystem.RaycastAll regression was added to the saved-scene UI test to verify the X receives pointer clicks instead of the ScrollRect body.
+
+Management recheck received 2026-10-14:
+The management session independently confirmed the same build closes immediately at (783,85) and corrected its original (783,118) report as a coordinate-reading error, not a product defect.
+Final Unity regression including the raycast check: 30 passed, 0 failed.
+No production code change or rebuild was needed for this corrected report. Final build, runtime-source and all three GameData hashes were rechecked against verification.json and matched.

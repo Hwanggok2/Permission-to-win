@@ -1,0 +1,19 @@
+{
+  "testsRun": 3,
+  "failures": 0,
+  "errors": 0,
+  "scenarios": [
+    "publication replacements 1/2/3 fail: all old files restored",
+    "first publication fails: original absence restored",
+    "rollback fails: marker/backups retained, --check and retry blocked"
+  ],
+  "dataUnchanged": true,
+  "dataHashes": {
+    "GameData_MVP.xlsx": "e236710c67014a3c4f6aced8121977a1185b447b2c7b1f9620c9edde2c2e5bc4",
+    "Generated\\stages.json": "2d04b124a42f0f3798ad942e9aacab97ee34a25f05b380144cd70f75c3904992",
+    "Generated\\ads.json": "d19f181faf52db28287bbed1b42291770dc3bf83d35e5cca8af4a6dcce9e194a",
+    "Generated\\strings.json": "f307e1900a7e0cdf72a1b50d33cbfb0eece4a6f46e69910978286a6cef2d7752"
+  },
+  "exporterSha256": "d863497468c54d06a46386de0f18266f4803b7895e94d4bc49f32837ffa244ea",
+  "limits": "Handled exceptions tested; no guarantee of bundle atomicity for process kill, power loss, or concurrent readers."
+}

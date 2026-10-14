@@ -1,0 +1,88 @@
+{
+  "checked_at": "2026-10-14 Asia/Seoul",
+  "repository": "https://github.com/toss/apps-in-toss-unity-sdk",
+  "latest_api": "https://api.github.com/repos/toss/apps-in-toss-unity-sdk/releases/latest",
+  "release_url": "https://github.com/toss/apps-in-toss-unity-sdk/releases/tag/release/v3.8.0",
+  "tag": "release/v3.8.0",
+  "published_at_utc": "2026-10-14T05:21:42Z",
+  "prerelease": false,
+  "draft": false,
+  "tag_object_sha": "874ea056147c1e6b265a7aaf3e9c6db2db4ed168",
+  "commit_sha": "18814fe5b5a2af5cd2a11a7a5bae53403fafa15e",
+  "tree_entries": 515,
+  "tree_truncated": false,
+  "license_notice_filename_matches": [],
+  "package_metadata": {
+    "package.json": {
+      "url": "https://raw.githubusercontent.com/toss/apps-in-toss-unity-sdk/18814fe5b5a2af5cd2a11a7a5bae53403fafa15e/package.json",
+      "sha256": "D753D2D029D2B45D35BAD79DBB9F06CD8CC945896A124F7312B38280C8EA5E11"
+    },
+    "sdk-policy.json": {
+      "url": "https://raw.githubusercontent.com/toss/apps-in-toss-unity-sdk/18814fe5b5a2af5cd2a11a7a5bae53403fafa15e/sdk-policy.json",
+      "sha256": "6F4647AE56C97BD89449FAAA5A9ECCBE4E2A4E4FEAB20437533B9E2DB04E7D25"
+    },
+    "WebGLTemplates/AITTemplate/BuildConfig~/package.json": {
+      "url": "https://raw.githubusercontent.com/toss/apps-in-toss-unity-sdk/18814fe5b5a2af5cd2a11a7a5bae53403fafa15e/WebGLTemplates/AITTemplate/BuildConfig~/package.json",
+      "sha256": "531F89182F45101830A2577B5BF4CDF18283F8CAEDFC5C0086BEDBE385D52002"
+    },
+    "WebGLTemplates/AITTemplate/BuildConfig~/granite.config.ts": {
+      "url": "https://raw.githubusercontent.com/toss/apps-in-toss-unity-sdk/18814fe5b5a2af5cd2a11a7a5bae53403fafa15e/WebGLTemplates/AITTemplate/BuildConfig~/granite.config.ts",
+      "sha256": "FB04A8190609D59D273D6AAA54E94D2FEFA6435A2EE6BCEFA07BBEF76AD4FC4B"
+    }
+  },
+  "note": "Read-only official upstream facts, file hashes and source URLs; raw upstream file bodies are not retained. SDK not installed into StageGame. No SDK reuse license inferred.",
+  "verified_metadata": {
+    "upm_name": "im.toss.apps-in-toss-unity-sdk",
+    "upm_version": "3.8.0",
+    "unity": "2021.3",
+    "unity_release": "45f1",
+    "upm_dependencies": {
+      "com.unity.nuget.newtonsoft-json": "3.0.2"
+    },
+    "upm_license_field_present": false,
+    "package_manager": "pnpm@11.6.0",
+    "web_dependencies": {
+      "@apps-in-toss/bridge-core": "2.10.9",
+      "@apps-in-toss/web-analytics": "2.10.9",
+      "@apps-in-toss/web-framework": "3.8.0"
+    },
+    "web_dev_dependencies": {
+      "@apps-in-toss/devtools": "3.8.0",
+      "typescript": "7.0.2",
+      "vite": "8.3.4"
+    },
+    "web_license_field_present": false,
+    "sdk_policy": {
+      "schemaVersion": 1,
+      "minVersion": "2.4.0",
+      "deniedVersions": [
+        "3.0.0"
+      ]
+    },
+    "granite_placeholders": [
+      "appName",
+      "brand.displayName",
+      "brand.primaryColor",
+      "brand.icon",
+      "brand.bridgeColorMode",
+      "webViewProps",
+      "navigationBar",
+      "web.host",
+      "web.port",
+      "permissions",
+      "outdir"
+    ]
+  },
+  "verified_toolchain_constants": [
+    {
+      "source": "https://raw.githubusercontent.com/toss/apps-in-toss-unity-sdk/18814fe5b5a2af5cd2a11a7a5bae53403fafa15e/Editor/AITNodeJSDownloader.cs",
+      "constant": "NODE_VERSION",
+      "value": "24.13.0"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/toss/apps-in-toss-unity-sdk/18814fe5b5a2af5cd2a11a7a5bae53403fafa15e/Editor/AITPackageManagerHelper.cs",
+      "constant": "PNPM_VERSION",
+      "value": "11.6.0"
+    }
+  ]
+}

@@ -134,8 +134,13 @@ node_modules/
 __pycache__/
 .venv/
 .tools/
+.work/
+bin/
 tmp/
 *.log
+*.inspect.ndjson
+GameData/.inspection/
+!Tests/IndependentHarness/IndependentHarness.csproj
 ~$*
 .DS_Store
 Thumbs.db
