@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 245" role="img" aria-labelledby="title desc">
+  <title id="title">StageGame 게임과 구매 서버 구조</title>
+  <desc id="desc">게임과 AI는 기기에서 실행한다. 구매와 복구는 Cloud Run이 플랫폼에서 검증하고 Firestore에 권리를 저장한다. 인증서는 Secret Manager에 둔다. 아직 구현과 배포 전이다.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#60798a"/></marker></defs>
+  <g fill="none" stroke="#60798a" stroke-width="2" marker-end="url(#arrow)"><path d="M258 102H347"/><path d="M679 75H788"/><path d="M458 121V151"/><path d="M690 151V136H625V123"/></g>
+  <g font-family="Malgun Gothic,Apple SD Gothic Neo,sans-serif" text-anchor="middle">
+    <rect x="12" y="31" width="246" height="169" rx="18" fill="#102335"/>
+    <text x="135" y="71" fill="#6ee6c5" font-size="14">UNITY CLIENT</text><text x="135" y="108" fill="white" font-size="23" font-weight="700">게임과 AI는 기기에서</text><text x="135" y="140" fill="#c3d1dc" font-size="15">Excel 데이터 · 로컬 진행도</text><text x="135" y="174" fill="#c3d1dc" font-size="15">대국에는 서버 연결 불필요</text>
+    <text x="302" y="88" fill="#536876" font-size="12">구매·복구</text>
+    <rect x="350" y="30" width="328" height="91" rx="16" fill="#dff6ec" stroke="#acd9c7"/>
+    <text x="514" y="68" fill="#16392f" font-size="23" font-weight="700">Cloud Run</text><text x="514" y="96" fill="#315a4d" font-size="15">구매 검증 · 복구 · 환불 반영</text>
+    <text x="735" y="61" fill="#536876" font-size="12">플랫폼 검증</text>
+    <rect x="792" y="30" width="276" height="91" rx="16" fill="#f7eae4" stroke="#e9cabb"/>
+    <text x="930" y="68" fill="#693c2f" font-size="22" font-weight="700">원스토어 · 토스</text><text x="930" y="96" fill="#775547" font-size="15">결제와 주문 상태의 원천</text>
+    <rect x="350" y="154" width="218" height="74" rx="14" fill="#edf2f5"/>
+    <text x="459" y="185" fill="#244052" font-size="20" font-weight="700">Firestore</text><text x="459" y="210" fill="#536876" font-size="14">주문 · 광고 제거 권리</text>
+    <rect x="590" y="154" width="218" height="74" rx="14" fill="#edf2f5"/>
+    <text x="699" y="185" fill="#244052" font-size="19" font-weight="700">Secret Manager</text><text x="699" y="210" fill="#536876" font-size="14">플랫폼 키 · 인증서 보관</text>
+    <text x="932" y="184" fill="#536876" font-size="14">서버 범위는 구매 관리까지</text><text x="932" y="209" fill="#536876" font-size="14">설계 선택 · 아직 배포 전</text>
+  </g>
+</svg>

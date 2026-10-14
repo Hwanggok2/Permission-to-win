@@ -2,6 +2,8 @@
 
 짧은 AI 대전 스테이지와 광고 수익화를 목표로 하는 Unity 게임 프로젝트.
 
+**전체 계획은 [Overview/index.html](Overview/index.html)에서 확인한다.** 게임 주제, 광고·광고 제거 구매, 서버, 일정, 역할과 출시 상태를 총괄이 관리한다. 텍스트 요약은 [Overview/README.md](Overview/README.md).
+
 - 개발 기간: 2026-10-14 ~ 2026-10-20 (KST), 제출 목표: 2026-10-21.
 - 플랫폼 순서: 원스토어 Android → 등급 증빙 확보 → 앱인토스 WebGL.
 - 종목: 7×6 중력식 4목, 오프라인 AI 전술 스테이지 30개. 규칙/데이터는 [확정 계약](Docs/Management/CONTRACT.md).
@@ -16,7 +18,7 @@ Unity Hub에서 `Client`를 Unity 6000.3.15f1로 열고 `Assets/StageGame/Scenes
 
 게임데이터 원본은 `GameData/GameData_MVP.xlsx`다. 수정 후 [내보내기 안내](GameData/README.md)에 따라 JSON을 검증·생성하고 Client에 반영한다. [QA 현황](Docs/QA/STATUS.md)은 자동 검사와 실제 기기 검증을 구분한다.
 
-현재는 개발용 프로토타입이다. 실제 광고 SDK·토스 `.ait`·릴리스 서명·스토어 심사는 완료되지 않았다. 재미/수익성은 [사람 플레이 검증 계획](Docs/Management/VALIDATION.md)에 따라 확인한다.
+현재는 개발용 프로토타입이다. 광고 제거 IAP·구매 검증 서버가 MVP 계획에 추가됐으며 아직 구현되지 않았다. 실제 광고 SDK·토스 `.ait`·릴리스 서명·스토어 심사도 남아 있다. 재미/수익성은 [사람 플레이 검증 계획](Docs/Management/VALIDATION.md)에 따라 확인한다.
 
 | 경로 | 역할 |
 | --- | --- |
