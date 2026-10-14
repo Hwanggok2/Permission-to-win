@@ -167,6 +167,6 @@ Excel을 수치와 문자열의 원본으로 삼고, 개발 시 검증·변환�
 
 포맷은 C# `string.Format`의 제한된 부분집합 `{0}`, `{1}` 등만 허용한다. 두 언어의 인자 인덱스 집합이 같고 0부터 연속이어야 한다. 인자 순서 변경·반복은 허용하고 `{{`/`}}`는 리터럴 중괄호다. 이름 인자, 정렬/형식 지정자, 불완전 중괄호를 거부한다. 숫자 자릿수 등은 호출자가 미리 형식화한다. 예: `챕터 {0} · 스테이지 {1}` / `CHAPTER {0} · STAGE {1}`.
 
-2026-10-14 총괄 승인과 Client 요청 합의로 wrapper/schemaVersion 1을 유지하고 en을 추가했다. 기존 58개 한국어를 보존·번역하고 신규 UI 키 65개를 더해 123개다. 언어 코드는 `ko/en`, 최초·잘못된 저장값의 기본은 ko다. 언어 선택/저장·UI 갱신은 클라이언트가 구현한다. [소비자 합의 및 생성 상태](C:/Github/StageGame/GameData/LOCALIZATION-CONTRACT.md).
+2026-10-14 총괄 승인과 Client 요청 합의로 wrapper/schemaVersion 1을 유지하고 en을 추가했다. 기존 58개 한국어를 보존·번역하고 신규 UI 키 65개, 후속 단계 선택/그림 도움말 14개를 더해 현재 137개다. `stage_tier_1/2/3`은 1–10/11–20/21–30의 챕터 표시명이며 검증된 사람 난이도 등급을 뜻하지 않는다. 언어 코드는 `ko/en`, 최초·잘못된 저장값의 기본은 ko다. 언어 선택/저장·UI 갱신은 클라이언트가 구현한다. [소비자 합의 및 생성 상태](C:/Github/StageGame/GameData/LOCALIZATION-CONTRACT.md).
 
 생성물은 `Generated/stages.json`, `ads.json`, `strings.json`이며 각 최상위는 `schemaVersion:1`을 갖는 객체다. stages/strings는 객체 배열이다. 스키마 밖의 열·시트·타입·범위는 오류로 보고한다. `float`, `long`, enum, 목록 메타는 현재 세 시트에서 사용하지 않는다. 범용 형식에서 허용될 수 있는 타입과 이번 MVP exporter의 지원 범위를 구분한다.

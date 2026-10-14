@@ -24,7 +24,7 @@ static partial class Program
     }
     static void Run(string name, string layer, Action test)
     {
-        if(Filter.Length>0 && !name.StartsWith(Filter,StringComparison.Ordinal)) return;
+        if(Filter.Length>0 && !Filter.Split(',').Any(prefix => name.StartsWith(prefix,StringComparison.Ordinal))) return;
         int before = assertions;
         var clock = Stopwatch.StartNew();
         string error = null;
@@ -148,9 +148,10 @@ static partial class Program
         public void ShowRewarded(Action<AdResult> callback) { Rewards.Add(callback); }
         public void ShowInterstitial(Action<AdResult> callback) { Interstitials.Add(callback); }
         // Keep delegates deliberately, so tests can inject callbacks from a misbehaving cancelled SDK.
-        public void CancelPending() { }
+        public int CancelCalls;
+        public void CancelPending() { CancelCalls++; }
     }
-    static GameApp MakeApp(bool reset = true)
+    static GameApp MakeApp(bool reset = true, bool startMatch = true)
     {
         if (reset) PlayerPrefs.Reset(); Time.realtimeSinceStartup = 0;
         var json = DataJson();
@@ -158,8 +159,9 @@ static partial class Program
         var app = new GameApp();
         foreach (var field in typeof(GameApp).GetFields(BindingFlags.Public | BindingFlags.Instance))
         {
-            if (field.FieldType == typeof(GameObject) || field.FieldType == typeof(Text) || field.FieldType == typeof(Button))
+            if (field.FieldType == typeof(GameObject) || field.FieldType == typeof(Text) || field.FieldType == typeof(Button) || field.FieldType == typeof(RectTransform))
                 field.SetValue(app, Activator.CreateInstance(field.FieldType));
+            if (field.FieldType == typeof(Button)) ((Button)field.GetValue(app)).gameObject.SetActive(true);
         }
         app.stones = Enumerable.Range(0,42).Select(_ => new Image()).ToArray();
         app.stoneLabels = Enumerable.Range(0,42).Select(_ => new Text()).ToArray();
@@ -167,7 +169,16 @@ static partial class Program
         app.localizedLabels = Array.Empty<LocalizedLabel>();
         app.columnMarkers = Enumerable.Range(0,7).Select(_ => new Image()).ToArray();
         app.columns = Enumerable.Range(0,7).Select(_ => new Button()).ToArray();
-        Call(app,"Start"); app.StartStage(0);
+        app.stageNodes = Enumerable.Range(0,10).Select(_ => new Button()).ToArray();
+        app.stageNodeNumbers = Enumerable.Range(0,10).Select(_ => new Text()).ToArray();
+        app.stageNodeStates = Enumerable.Range(0,10).Select(_ => new Text()).ToArray();
+        foreach (var node in app.stageNodes) node.gameObject.SetActive(true);
+        // Sentinels prove assignment between supplied slots; they are not prefab geometry.
+        app.resultPrimarySlot.anchoredPosition = new Vector2(0,100);
+        app.resultSecondarySlot.anchoredPosition = new Vector2(0,-50);
+        ((RectTransform)app.nextStage.transform).anchoredPosition = app.resultPrimarySlot.anchoredPosition;
+        ((RectTransform)app.retry.transform).anchoredPosition = app.resultSecondarySlot.anchoredPosition;
+        Call(app,"Start"); if (startMatch) app.StartStage(0);
         return app;
     }
 
@@ -177,6 +188,8 @@ static partial class Program
         Filter=args.Length>3?args[3]:"";
         if (Filter == "all") Filter = "";
         ActualStringsJson=File.ReadAllText(Path.Combine(args[1],"strings.json"));
+        using(var copyChanges=JsonDocument.Parse(File.ReadAllText(Path.Combine(Path.GetDirectoryName(args[0]),"AuditInputs","approved-copy-changes.json"))))
+            ApprovedCopyRows=copyChanges.RootElement.GetProperty("changes").EnumerateArray().ToDictionary(row=>row.GetProperty("key").GetString(),row=>row.Clone());
         Run("rules.fixed_vectors_both_starters", "actual pure C#", () =>
         {
             int[][] wins = { new[]{0,6,1,6,2,5,3}, new[]{0,1,0,1,0,2,0}, new[]{0,1,1,2,3,2,2,3,4,3,3}, new[]{6,5,5,4,3,4,4,3,2,3,3} };
@@ -363,6 +376,7 @@ static partial class Program
                 foreach(var stage in data.Stages) Check(!GameData.CreateBoard(stage).IsFinished,"terminal imported stage "+stage.id);
             });
         RunLocalization(args);
+        RunStageUx(args);
         var report=new { runId=Path.GetFileName(Path.GetDirectoryName(args[0])), framework=System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription,
             passed, failed, assertions, scope=Filter.Length==0?"all":Filter, randomRuleSequences=ruleSequences, randomAiPositions=aiPositions,
             limitations="Unity APIs replaced by explicitly scoped doubles; no Editor, device, native JSON, real persistence, real ads, or performance validation.", results=Results };

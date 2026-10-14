@@ -1,0 +1,390 @@
+{
+  "verifiedAtUtc": "2026-10-14T12:35:53.0032921Z",
+  "contract": "Docs/Management/CONTRACT.md v5",
+  "status": "Unity57/57 and both development builds PASS; root browser pending",
+  "tests": {
+    "total": 57,
+    "passed": 57,
+    "failed": 0,
+    "file": "Evidence/stage-map-tests.xml",
+    "log": "Logs/stage-map-tests.log",
+    "scope": "One full final EditMode run including native legacy/final clear/replay migration;chapter map locked selection;result win/loss/draw priority;all30 stage titles ko/en;host profile touch/layout and saved refs"
+  },
+  "idempotence": "Evidence/stage-map-idempotence.json",
+  "strings": {
+    "count": 137,
+    "added": 14,
+    "sha256": "87A4ADD450E8A57B3CEF5600B8A447C8A55C78CD1F75F75E0BD94AC9CA56F13D"
+  },
+  "progress": {
+    "schema": "Existing saveVersion1 plus highestClearedStage",
+    "legacy": "Missing field0; infer max0,unlockedStage-1. An old unlock30 stays clear29 until new final win.",
+    "final": "30th-stage win persists30;replay preserves30;duplicate IDs do not increase match/ad counters",
+    "tests": "StageMapTests native Unity JSON/PlayerPrefs, plus real GameApp final UI flow"
+  },
+  "layout": {
+    "composition": "720x960",
+    "minimum": "320x568,OS top59 bottom34,zero sides,host64",
+    "nodes": "Ten nested StageNode120x120 per chapter;5x2",
+    "nodeHitCssMin": 51.375,
+    "stateLabelReference": 28,
+    "stateLabelCssMin": 11.9875,
+    "states": "Completed check and word; current/locked word; selected bracketed number. Locked nodes inspectable; CTA and StartStage guard block play.",
+    "help": "Saved3x4 gravity illustration with support under landing stone;three abstract4-stone direction patterns, no floating board or5-stone example",
+    "result": "Next primary on non-final win;retry primary on loss/draw/final clear;Lobby secondary"
+  },
+  "art": {
+    "source": "Original saved Unity geometry in StageMapBuilder; reused existing SoftUI sprites, no external screenshot assets copied",
+    "newPrefab": "Assets/StageGame/Prefabs/UI/Common/StageNode.prefab",
+    "preservation": "Previous title decorations/prose disabled, existing assets retained; rerun hashes identical"
+  },
+  "artifacts": [
+    {
+      "path": "Builds/Android/StageGame-development.apk",
+      "bytes": 39792595,
+      "sha256": "256BD4A57F1724E92CC135073CCE31A22EFA4C3A56B1E1C5F552E979822698B2"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.wasm",
+      "bytes": 24390734,
+      "sha256": "D093BE45525525A092B3569D65CAE23B0A7A63C701A50859C41FFAE3ECC344C0"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.data",
+      "bytes": 18754010,
+      "sha256": "97139E530A503A059B86045CFDE50228B2F92313EDA3B68AFE5B8A131323AE71"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.framework.js",
+      "bytes": 761643,
+      "sha256": "F909F29D115947BE5BAB214FE3CD434A6197E6BDC2E24CE9C2933C64B58FAE08"
+    },
+    {
+      "path": "Builds/WebGL/index.html",
+      "bytes": 4416,
+      "sha256": "53BDBF4813EA2CFE5A19E5C21B3B711CD6AD08AD1200254146D1AB3BA3C6C3CA"
+    },
+    {
+      "path": "Builds/WebGL/ui-text.js",
+      "bytes": 448,
+      "sha256": "2D958DA273B7A6ACC2DFBD37EE24B034F0A82078A7BCA7755858A41C33A70FC8"
+    },
+    {
+      "path": "Builds/WebGL/host-layout.js",
+      "bytes": 2002,
+      "sha256": "187B6162FE987A784D66FB6F929EC64C4885D8BA2A5B5A7E176AF16DFC9DAC25"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "Assets/StageGame/Prefabs/AppRoot.prefab",
+      "bytes": 156457,
+      "sha256": "D270D74685F3064FD82A0EB7D5C42982AB638CEBA4415307D46EC3A8DA5A1065"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/Board/Board.prefab",
+      "bytes": 216897,
+      "sha256": "6A097704967E6C5CB713D140ADF677767F9EAD93A69A1F84B808A3C8EF268921"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/Board/Cell.prefab",
+      "bytes": 4652,
+      "sha256": "F8DA99CA738CB9D2F5734476D4723CFCF6D156B0F54DF06305CFA948AE504E28"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/CloseButton.prefab",
+      "bytes": 6180,
+      "sha256": "9B61743FC5B16A5B9ACB451B06A3FEFC0195A4B9D1CE21B52A741B30AB13AEEC"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/ModalFrame.prefab",
+      "bytes": 13927,
+      "sha256": "BBFF4AC2C07FC27F3F1956D1DC805A42E5DF69C9CCC56AA5311BC98A29D67BF2"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/PrimaryButton.prefab",
+      "bytes": 6171,
+      "sha256": "F5D74DB2F74BD9333B0526F6727C5AA491820910E96907371B15CC1D0414A4C6"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/StageCard.prefab",
+      "bytes": 9520,
+      "sha256": "F719C59A122C7E35C706CF09DD7B2DD0ADBB9EC0BE2D580A6BA8A371D4CD1276"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/StageNode.prefab",
+      "bytes": 8569,
+      "sha256": "1E94736C1B85ED256F8EDD5CEF148FA9DE3DD1A60AB697C8899B9353D46970BA"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/ConfirmModal.prefab",
+      "bytes": 21664,
+      "sha256": "466FFDAA4B2A3942B836373D46669BBA858157ADAD0569DC997757136E37BAFD"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/GameScreen.prefab",
+      "bytes": 66642,
+      "sha256": "B8AE406C921FEEB83AAC42643F69EECF8FABA2E460EDC7873023783EA8266516"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/HelpModal.prefab",
+      "bytes": 95060,
+      "sha256": "40701989DE343B7520FE7A139912F3A9CA108021E2B4CAAE8FB7D0D79B09C530"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/LobbyScreen.prefab",
+      "bytes": 118632,
+      "sha256": "25A8EECF467D0B010DD0C9FA8E06032A9C02888E87450FAB037B722BB45E7E10"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/NoticesModal.prefab",
+      "bytes": 16092,
+      "sha256": "D819F1BCFF3187A3711A41A2B768D29E7CA60F335A8FE3D1D8A6D6A4A09FEC8E"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/ResultModal.prefab",
+      "bytes": 38649,
+      "sha256": "63E04FCA751B18F6E84A52A477E79A0BD9F119B2DCE6A2DCB319DC42B4804D64"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/SettingsModal.prefab",
+      "bytes": 37944,
+      "sha256": "8D825C3CEE59DE9878CEA03E290E77ADAC7F2F31C15BD5DF065B9DF05E40220A"
+    },
+    {
+      "path": "Assets/StageGame/Editor/StageMapBuilder.cs",
+      "bytes": 12622,
+      "sha256": "123F74CB505D7CB292D39DEBEA0F1F060DA9B74A82AA65C745D63447893BDB07"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/ProgressStore.cs",
+      "bytes": 3572,
+      "sha256": "FCDB8DC6DE3B8DD0AEF425930F61B5EA3AB3E729C56384A8D72B841E548E17D1"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/GameApp.cs",
+      "bytes": 23101,
+      "sha256": "E79F57289BE0749E346767B2E53D464606D5BD86F79FCA3BC1E47CFE3430483F"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/HostLayout.cs",
+      "bytes": 1762,
+      "sha256": "3F35560AE219719C7A4ECAA265D6E7F48B517123DC210E02D5649DDB8B30E165"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/SafeAreaFitter.cs",
+      "bytes": 3002,
+      "sha256": "0B55A9E30DF61CCCEE80B26CC2DC6EBF2DAE2292F69AA6806CE40466A8B68E51"
+    },
+    {
+      "path": "Assets/StageGame/Resources/GameData/strings.json",
+      "bytes": 17152,
+      "sha256": "87A4ADD450E8A57B3CEF5600B8A447C8A55C78CD1F75F75E0BD94AC9CA56F13D"
+    }
+  ],
+  "captures": [
+    {
+      "path": "Evidence/host-en-320-confirm.png",
+      "bytes": 19316,
+      "sha256": "96AF21ACDB5729046837209224190DA57AD3601C92F2662341C06A2CE5E8E686"
+    },
+    {
+      "path": "Evidence/host-en-320-help.png",
+      "bytes": 26011,
+      "sha256": "B5A04B6B3A3FF2FD1CEEE24D6139574138DF961961D7DAE3F8CD182DF8A394B5"
+    },
+    {
+      "path": "Evidence/host-en-320-lobby.png",
+      "bytes": 34120,
+      "sha256": "66E2EB6483EBED533D70394593B1F014B57B42F0C7B3C7EC03F09E9E65C3D046"
+    },
+    {
+      "path": "Evidence/host-en-320-match.png",
+      "bytes": 33920,
+      "sha256": "0C8170A49EC5B8904C6FC86ACA371C825D877421606BBA98096CBA458D5A2BA1"
+    },
+    {
+      "path": "Evidence/host-en-320-notices-bottom.png",
+      "bytes": 45097,
+      "sha256": "800FC41334865D7120967DD9C9B105562803A65FC0D779AABC590FCD1755F2A6"
+    },
+    {
+      "path": "Evidence/host-en-320-result.png",
+      "bytes": 20539,
+      "sha256": "9A2DE58E3FBADC69C89234CA77882A9A95D27655660FEB863A09BAE8F34D0D6D"
+    },
+    {
+      "path": "Evidence/host-en-320-settings.png",
+      "bytes": 20202,
+      "sha256": "7BE3FCC30D6166976D57ADDB5B0A3806BD9F8714FEB69C9379AB688E56C67923"
+    },
+    {
+      "path": "Evidence/host-en-390-confirm.png",
+      "bytes": 28508,
+      "sha256": "D8B95E7368FDA3AED703AEF8B1CAF95787E5217A27CD026E91DC368F51B731BD"
+    },
+    {
+      "path": "Evidence/host-en-390-help.png",
+      "bytes": 37906,
+      "sha256": "579490254BF5E0E45B4FFD3AFFA5215921989A14F461136EAAC73A71B2A2CC5C"
+    },
+    {
+      "path": "Evidence/host-en-390-lobby.png",
+      "bytes": 50412,
+      "sha256": "F5933713260041954F658994739F7B3D45E8E45FCA01D180910AF8C2C46F7858"
+    },
+    {
+      "path": "Evidence/host-en-390-match.png",
+      "bytes": 49711,
+      "sha256": "7558203FC409FEC68EFC4A36A9C077A803B29B56B708E275736EEC5BEB09A44D"
+    },
+    {
+      "path": "Evidence/host-en-390-notices-bottom.png",
+      "bytes": 67640,
+      "sha256": "0DA0D86016074114A98C401C59FC4C19D4555DC402B9DE94D04A87CBF2669B05"
+    },
+    {
+      "path": "Evidence/host-en-390-result.png",
+      "bytes": 29802,
+      "sha256": "C6252D050A2068A7C56E7E2358C1F460B938C7D5833A3221A7218CB385B5512B"
+    },
+    {
+      "path": "Evidence/host-en-390-settings.png",
+      "bytes": 29504,
+      "sha256": "37064C2E834971B2C99AFA413433CBCDC6AD4A99E790A2050D82C3D4201FB5A5"
+    },
+    {
+      "path": "Evidence/host-ko-320-confirm.png",
+      "bytes": 18698,
+      "sha256": "9988ECDD8BB1647E478373D8CC0AC797822028779A45B18B93E32773C52608F6"
+    },
+    {
+      "path": "Evidence/host-ko-320-help.png",
+      "bytes": 22906,
+      "sha256": "0D8D2C2240F9B43CDC0AAA2606800A0F0F1E5FB19F4AA0C4B64A5CCCA63F5030"
+    },
+    {
+      "path": "Evidence/host-ko-320-lobby.png",
+      "bytes": 27672,
+      "sha256": "1374C422C4C608497323EA8F46E0FF8A6E42EFEF87FDF2F5BF9D91B4EA64C9B7"
+    },
+    {
+      "path": "Evidence/host-ko-320-match.png",
+      "bytes": 32556,
+      "sha256": "7BFE85E4E0E4168199A9B2E1B487E7894AC37E82346618B5EE7495B2FDEE9FC4"
+    },
+    {
+      "path": "Evidence/host-ko-320-notices-bottom.png",
+      "bytes": 44372,
+      "sha256": "D01875E08EBF61DFA9F9C9792F4CE73FF92155B39B1CAFF1B7A7560289558339"
+    },
+    {
+      "path": "Evidence/host-ko-320-result.png",
+      "bytes": 19287,
+      "sha256": "47FD7FD4F292FA5B875B1C2A09145B25A0DFC31C18AD1BD0EEC6B4A18239F8DE"
+    },
+    {
+      "path": "Evidence/host-ko-320-settings.png",
+      "bytes": 18063,
+      "sha256": "F16F6E6CCD7624B8526550455C288BBBE1781FED12D659D0DE58662EEBAECD2F"
+    },
+    {
+      "path": "Evidence/host-ko-390-confirm.png",
+      "bytes": 27340,
+      "sha256": "2DC889E5F065E91D1457B0319BEA15093DD938336C396F5602A8CD90B87C0875"
+    },
+    {
+      "path": "Evidence/host-ko-390-help.png",
+      "bytes": 32665,
+      "sha256": "D73D17763046C38DE5A81F5A82B13BBB9DFD5EE14BFFA51EC6006FCAAD5B4839"
+    },
+    {
+      "path": "Evidence/host-ko-390-lobby.png",
+      "bytes": 40684,
+      "sha256": "11EEDCA12C245AD801156A2EAA7DF2495FA3F8C319B2B9254A7FBCFFED4D1C30"
+    },
+    {
+      "path": "Evidence/host-ko-390-match.png",
+      "bytes": 46867,
+      "sha256": "372312600D052B0600D46A929278E23DBC00C97DA63444D09B373D5455795936"
+    },
+    {
+      "path": "Evidence/host-ko-390-notices-bottom.png",
+      "bytes": 66658,
+      "sha256": "87A8457A5887225E0020AA3CC14DC784E5F72D6186715775810EF971CA20DD12"
+    },
+    {
+      "path": "Evidence/host-ko-390-result.png",
+      "bytes": 27255,
+      "sha256": "DE214B6724AFCC1B62F7896FAE5D3B480120A15ED3D47F11768CA754A04EF80D"
+    },
+    {
+      "path": "Evidence/host-ko-390-settings.png",
+      "bytes": 26608,
+      "sha256": "C72BD0760BD42596073CF9D51B3B862746BA740A9AA446037FD6842EBF49C1F0"
+    },
+    {
+      "path": "Evidence/map-en-320-all-cleared.png",
+      "bytes": 35782,
+      "sha256": "2C6E61F44ECEE5BFC489EC2F4AD170530F28B20D94AF4FEEAC48EE529419550A"
+    },
+    {
+      "path": "Evidence/map-en-320-locked.png",
+      "bytes": 34504,
+      "sha256": "AA441CEBB007E56196EA42414A2E78885C0939F85BF6528905726C7FFC7BEC53"
+    },
+    {
+      "path": "Evidence/map-en-320-result-0.png",
+      "bytes": 20761,
+      "sha256": "12BAE9CC6DDE006234F4FF6F65A60B6AEFDC2334347844E29D503336E59EFABF"
+    },
+    {
+      "path": "Evidence/map-en-320-result-1.png",
+      "bytes": 19146,
+      "sha256": "A660948E01BCF034B3D18A94755D99092ACE78898286D1EEDBCB299869C1C21E"
+    },
+    {
+      "path": "Evidence/map-en-320-result-2.png",
+      "bytes": 18829,
+      "sha256": "44E55E21DD300520441B5E62B73CCB67F3ACC977D1D78668FF697855404654F5"
+    },
+    {
+      "path": "Evidence/map-en-390-current.png",
+      "bytes": 49548,
+      "sha256": "EF3B7F458862693232C78609E5DF4420F9B6E14F9765E35624D639996F8544E6"
+    },
+    {
+      "path": "Evidence/map-ko-320-all-cleared.png",
+      "bytes": 30017,
+      "sha256": "7D13F174C00989E7CB1A9CF94102C216DC18C0C1F6D4A431202FE1BA5BA53250"
+    },
+    {
+      "path": "Evidence/map-ko-320-locked.png",
+      "bytes": 30147,
+      "sha256": "0539310A6391C2C0DEB0544B1D60E0BBF9FB0136F0F5138CA271C38AF907FFA0"
+    },
+    {
+      "path": "Evidence/map-ko-320-result-0.png",
+      "bytes": 19011,
+      "sha256": "DDAB968D0B80DC48103954AFC6EEE269F7D7F95A73BCB384726EAA95B6B0E6F2"
+    },
+    {
+      "path": "Evidence/map-ko-320-result-1.png",
+      "bytes": 18302,
+      "sha256": "D854250B926DCDBAEA6445F38DAA90B0270E7299441714697762837FBE9CA998"
+    },
+    {
+      "path": "Evidence/map-ko-320-result-2.png",
+      "bytes": 16480,
+      "sha256": "6010BCB6BF15F0A9F5F495E585FFFEFFD80892D1B4F8091596CD4295C1F74934"
+    },
+    {
+      "path": "Evidence/map-ko-390-current.png",
+      "bytes": 40285,
+      "sha256": "5D7569C2DB75E88FBD58115ED1D45A09BCAF20C473A5DCA68CBE643383A42D22"
+    }
+  ],
+  "browser": "Root owns actual browser; pending",
+  "realTossSdk": false,
+  "physicalDevice": false
+}

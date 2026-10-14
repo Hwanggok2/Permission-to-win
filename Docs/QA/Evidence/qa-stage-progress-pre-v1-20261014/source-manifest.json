@@ -1,0 +1,38 @@
+[
+  {
+    "source": "Client/Assets/StageGame/Scripts/Core/ProgressStore.cs",
+    "sha256": "FCDB8DC6DE3B8DD0AEF425930F61B5EA3AB3E729C56384A8D72B841E548E17D1"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/Core/StringTable.cs",
+    "sha256": "8D133248463B3466690BCC76BD9BBB31F7BA1703CDF84E3FF6788F2AB4374A1B"
+  },
+  {
+    "source": "Tests/IndependentHarness/UnityStubs.cs",
+    "sha256": "C27818E51437F91067D254200DB0343E1A47DF6AE9179B5B7AE5471A34D4CF55"
+  },
+  {
+    "source": "Tests/Fixtures/stage-ux-legacy-saves.json",
+    "sha256": "3EEB8516CD4709ED6F07C82F005DF0041AF861716262C06B46F30E4D8ECF7F1D"
+  },
+  {
+    "source": "Client/STAGE-MAP-REQUEST.json",
+    "sha256": "791C4570AE140B0582E48BE2B3E6C46363850B1FF7D2739B291DD252C4518C96"
+  },
+  {
+    "source": "Docs/Management/CONTRACT.md",
+    "sha256": "12FB9B627613CDA6A8FD9AE1E243DBF5103FA0B4254BC092DCC2E0598CF66D24"
+  },
+  {
+    "source": "Tests/ProgressHarness/ProgressHarness.csproj",
+    "sha256": "CF0AC6444EBF643FFD9068A1ED7D1C18226DD7C373AF062EDBB0712F7FD4C921"
+  },
+  {
+    "source": "Tests/ProgressHarness/Program.cs",
+    "sha256": "C9FAE136C088C9150276DCC820794543A2B9C3CD585D42FF9E105404068D1203"
+  },
+  {
+    "source": "Tests/run-progress-independent.ps1",
+    "sha256": "AB93206409C66548B893CBD5EF9064AF1C8A9FC8C17FC5C38009540A3BE5E297"
+  }
+]

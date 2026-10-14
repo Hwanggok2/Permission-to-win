@@ -167,6 +167,26 @@
       "en": "StageGame"
     },
     {
+      "key": "help_connect_caption",
+      "ko": "가로 · 세로 · 대각선",
+      "en": "Across · Up · Diagonal"
+    },
+    {
+      "key": "help_connect_title",
+      "ko": "네 개를 연결하면 승리",
+      "en": "Connect four to win"
+    },
+    {
+      "key": "help_drop_caption",
+      "ko": "돌은 가장 아래 빈칸에 놓여요",
+      "en": "Your stone falls into the lowest empty space"
+    },
+    {
+      "key": "help_drop_title",
+      "ko": "열을 고르면 아래로",
+      "en": "Choose a column"
+    },
+    {
       "key": "help_full_column",
       "ko": "가득 찬 열에는 놓을 수 없어요.",
       "en": "You cannot place a stone in a full column."
@@ -298,18 +318,18 @@
     },
     {
       "key": "result_loss_diagonal",
-      "ko": "AI가 대각선으로 네 개를 이었어요.\n금색 줄을 살펴보세요.",
-      "en": "The AI connected four diagonally.\nLook at the gold line."
+      "ko": "AI가 대각선으로 네 개를 이었어요.",
+      "en": "The AI connected four diagonally."
     },
     {
       "key": "result_loss_horizontal",
-      "ko": "AI가 가로로 네 개를 이었어요.\n금색 줄을 살펴보세요.",
-      "en": "The AI connected four across.\nLook at the gold line."
+      "ko": "AI가 가로로 네 개를 이었어요.",
+      "en": "The AI connected four across."
     },
     {
       "key": "result_loss_vertical",
-      "ko": "AI가 세로로 네 개를 이었어요.\n금색 줄을 살펴보세요.",
-      "en": "The AI connected four vertically.\nLook at the gold line."
+      "ko": "AI가 세로로 네 개를 이었어요.",
+      "en": "The AI connected four vertically."
     },
     {
       "key": "result_win",
@@ -502,9 +522,19 @@
       "en": "The final tactical challenge"
     },
     {
+      "key": "stage_cleared_progress",
+      "ko": "{0}/{1} 완료",
+      "en": "{0}/{1} cleared"
+    },
+    {
       "key": "stage_instruction",
       "ko": "가로·세로·대각선으로\n내 돌 4개를 먼저 이으세요.",
       "en": "Connect four of your stones\nin any direction."
+    },
+    {
+      "key": "stage_lock_requirement",
+      "ko": "{0} 스테이지를 먼저 완료하세요",
+      "en": "Clear stage {0} first"
     },
     {
       "key": "stage_locked",
@@ -517,6 +547,11 @@
       "en": "Win the previous stage to unlock."
     },
     {
+      "key": "stage_map_chapter",
+      "ko": "{0} / {1} 챕터",
+      "en": "Chapter {0} / {1}"
+    },
+    {
       "key": "stage_number",
       "ko": "챕터 {0} · 스테이지 {1}",
       "en": "CHAPTER {0} · STAGE {1}"
@@ -525,6 +560,41 @@
       "key": "stage_progress",
       "ko": "{0} / {1} 스테이지 해금",
       "en": "{0} / {1} stages unlocked"
+    },
+    {
+      "key": "stage_replay",
+      "ko": "다시 도전",
+      "en": "Play again"
+    },
+    {
+      "key": "stage_state_cleared",
+      "ko": "완료",
+      "en": "Clear"
+    },
+    {
+      "key": "stage_state_current",
+      "ko": "도전",
+      "en": "Play"
+    },
+    {
+      "key": "stage_state_locked",
+      "ko": "잠금",
+      "en": "Locked"
+    },
+    {
+      "key": "stage_tier_1",
+      "ko": "입문",
+      "en": "Basics"
+    },
+    {
+      "key": "stage_tier_2",
+      "ko": "전술",
+      "en": "Tactics"
+    },
+    {
+      "key": "stage_tier_3",
+      "ko": "도전",
+      "en": "Challenge"
     },
     {
       "key": "turn_finished",

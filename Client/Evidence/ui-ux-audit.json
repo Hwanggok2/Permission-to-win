@@ -40,7 +40,13 @@
     "boardColumnAt390": 55.714285714285715,
     "licenseLabelCssAtMinimum": 11.13125,
     "limitation": "44px verified inside this portrait envelope. Less than308px available width or410.667px available height can reduce board targets below44. More restrictive insets/landscape are not validated.",
-    "evidence": "Evidence/unity-tests.xml and host-ui-boundary-tests.xml; actual camera render-space button rectangles for390->320->390 and ko/en. Browser/device evidence is separate."
+    "evidence": "Evidence/stage-map-tests.xml,57/57 full run;actual camera render-space buttons at390->320->390 inko/en. Browser/device separate.",
+    "stageNodes": {
+      "referenceSize": 120,
+      "minCss": 51.375,
+      "statusFontReference": 28,
+      "statusMinCss": 11.9875
+    }
   },
   "structure": {
     "strings": "Dictionary keyed by stable Excel keys; ko/en selection and explicit UI refresh on change",

@@ -1,0 +1,18 @@
+[
+  {
+    "source": "Docs/QA/Evidence/qa-stage-ui-pre-v1-20261014/ClientData/strings.json",
+    "sha256": "87A4ADD450E8A57B3CEF5600B8A447C8A55C78CD1F75F75E0BD94AC9CA56F13D"
+  },
+  {
+    "source": "Docs/Management/Evidence/reference-ux-browser-20261014/en-loss-retry-390.jpg",
+    "sha256": "DD4F0AA844CCBE447FACFC3575D4A94F77C2EA5A5EDEB35B001291CEE6AAC896"
+  },
+  {
+    "source": "Docs/Management/Evidence/reference-ux-browser-20261014/final-artifacts.json",
+    "sha256": "1890334E83EFD4E2CF646220C659921B31F32A0C2100311AFE1D9FE3BFDE8DFE"
+  },
+  {
+    "source": "Client/Evidence/stage-map-verification.json",
+    "sha256": "3923A6FD247A97AD292AC7007ED0152946920523BC991E3E863B4A025D6A4FB1"
+  }
+]

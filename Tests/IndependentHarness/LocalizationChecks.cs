@@ -29,9 +29,9 @@ static partial class Program
         var rows = catalog.RootElement.GetProperty("strings").EnumerateArray()
             .ToDictionary(r => r.GetProperty("key").GetString());
 
-        Run("l10n.catalog_123_and_bilingual_lookup", "actual StringTable; JSON double", () =>
+        Run("l10n.catalog_137_and_bilingual_lookup", "actual StringTable; JSON double", () =>
         {
-            Check(rows.Count == 123, "expected 123 distinct translations");
+            Check(rows.Count == 137, "expected 137 distinct translations after 14 stage UX additions");
             var table = new StringTable(ActualStringsJson);
             foreach (string locale in new[] { "ko", "en", "ko" })
             {
@@ -68,13 +68,13 @@ static partial class Program
                 string key = row.GetProperty("key").GetString();
                 Check(rows.ContainsKey(key), "missing requested UI key: " + key);
                 foreach (string locale in new[] { "ko", "en" })
-                    Check(rows[key].GetProperty(locale).GetString() == row.GetProperty(locale).GetString(), "requested copy mismatch: " + key);
+                    Check(rows[key].GetProperty(locale).GetString() == ExpectedApprovedCopy(key, locale, row.GetProperty(locale).GetString()), "requested copy/approved correction mismatch: " + key);
                 object[] formatArgs = Enumerable.Range(0, row.GetProperty("formatArgCount").GetInt32()).Select(i => (object)(i + 41)).ToArray();
                 var table = new StringTable(ActualStringsJson);
                 foreach (string locale in new[] { "ko", "en" })
                 {
                     table.SetLanguage(locale);
-                    string expected = string.Format(CultureInfo.InvariantCulture, row.GetProperty(locale).GetString(), formatArgs);
+                    string expected = string.Format(CultureInfo.InvariantCulture, ExpectedApprovedCopy(key, locale, row.GetProperty(locale).GetString()), formatArgs);
                     Check(table.Format(key, formatArgs) == expected, "UI format request: " + key);
                 }
             }
@@ -155,7 +155,7 @@ static partial class Program
         Run("l10n.literal_ui_key_references_exist", "static source/data check; not prefab execution", () =>
         {
             string app = File.ReadAllText(Path.Combine(evidence, "Sources", "GameApp.cs"));
-            var keys = Regex.Matches(app, "\\b(?:T|F|SetMatchNotice)\\(\"([^\"]+)\"").Cast<Match>().Select(m => m.Groups[1].Value).Distinct().ToArray();
+            var keys = Regex.Matches(app, "\\b(?:T|F|SetMatchNotice)\\(\"([^\"]+)\"\\s*[,)]").Cast<Match>().Select(m => m.Groups[1].Value).Distinct().ToArray();
             Check(keys.Length > 10, "UI key coverage unexpectedly empty");
             foreach (string key in keys) Check(rows.ContainsKey(key), "missing literal UI key " + key);
         });

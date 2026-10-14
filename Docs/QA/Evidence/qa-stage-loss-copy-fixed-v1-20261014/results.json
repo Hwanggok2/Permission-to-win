@@ -1,0 +1,16 @@
+{
+  "method": "Independent exact JSON comparison, no game/Unity/Excel/exporter execution",
+  "result": "PASS",
+  "rowCount": 137,
+  "approvedChangedKeys": [
+    "result_loss_diagonal",
+    "result_loss_horizontal",
+    "result_loss_vertical"
+  ],
+  "unchangedRows": 134,
+  "generatedSha256": "57E392CF68464898829946F17030E4AE3008AAB86370452BACF6DBE56D68A291",
+  "clientSha256": "57E392CF68464898829946F17030E4AE3008AAB86370452BACF6DBE56D68A291",
+  "failures": [],
+  "changedDuringRead": [],
+  "limits": "Exact copy/data change verification only. Root must confirm final loss UI and final artifact linkage before QA-010 closure."
+}

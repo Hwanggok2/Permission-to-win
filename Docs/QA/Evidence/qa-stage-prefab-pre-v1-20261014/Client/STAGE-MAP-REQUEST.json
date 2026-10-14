@@ -1,0 +1,33 @@
+{
+  "status": "BOTH_BUILDS_READY__FULL_UNITY57_PASS__ROOT_BROWSER_PENDING",
+  "dateSeoul": "2026-10-14",
+  "owner": "Client only. Root owns browser/Git integration.",
+  "scope": [
+    "Chapter pages of10 saved StageNode prefabs,5x2; locked inspection and blocked start",
+    "Stored geometric gravity/four-in-row help diagrams",
+    "Result emphasis: next after win; retry after loss/draw/final clear"
+  ],
+  "layout": {
+    "reference": "720x960",
+    "nodeSize": "120x120 reference,51.375 CSS px at320x568 top59 bottom34 plus64",
+    "chapterNavigation": "Existing Previous/Following,3 chapter pages",
+    "selection": "Selected number in brackets and background; cleared check+text, current/locked text. State labels28 reference (~12 CSS px minimum).",
+    "hierarchy": "Title,chapter controls,10 nodes,selected stage card,clear count,primary CTA,help/settings,banner reserve",
+    "preserve": "Existing sprite/font/host contract and saved prefab structure; older decorations disabled, not deleted"
+  },
+  "progress": {
+    "field": "highestClearedStage additive int in existing saveVersion1",
+    "legacy": "Infer at most unlockedStage-1; unlocked30 becomes cleared29 until a new win at30",
+    "retained": "processedMatchIds,completedMatches,ad counters,sound,language,existing recovery handling"
+  },
+  "strings": "14 supplied keys available in137-entry generated table; Client copies synced. No additional keys requested.",
+  "verification": "Full57/57 passed; both final builds succeeded with0 errors/0 warnings. Native migration/final-clear/replay and map/result tests,40 host/map captures,5 prefab reapply hash checks,8 packaged notices recorded. Source frozen for root browser review. No Client browser use or Git actions.",
+  "webgl": {
+    "wasmSha256": "D093BE45525525A092B3569D65CAE23B0A7A63C701A50859C41FFAE3ECC344C0",
+    "dataSha256": "97139E530A503A059B86045CFDE50228B2F92313EDA3B68AFE5B8A131323AE71",
+    "indexSha256": "53BDBF4813EA2CFE5A19E5C21B3B711CD6AD08AD1200254146D1AB3BA3C6C3CA",
+    "previewQuery": "?hostPreview=1&hostTop=59&hostBottom=34"
+  },
+  "androidApkSha256": "256BD4A57F1724E92CC135073CCE31A22EFA4C3A56B1E1C5F552E979822698B2",
+  "evidence": "Evidence/stage-map-verification.json; Evidence/stage-map-tests.xml; Evidence/stage-map-idempotence.json"
+}

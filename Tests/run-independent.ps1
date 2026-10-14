@@ -41,13 +41,17 @@ foreach ($qaInput in @(
     @{source='Client/LOCALIZATION-REQUEST.json'; name='localization-request.json'},
     @{source='Client/Assets/StageGame/Editor/ProjectBuilder.cs'; name='ProjectBuilder.cs'},
     @{source='GameData/LOCALIZATION-CONTRACT.md'; name='localization-contract.md'},
-    @{source='Docs/QA/Evidence/qa-ui-v1-20261014/ClientData/strings.json'; name='previous-strings.json'}
+    @{source='Docs/QA/Evidence/qa-ui-v1-20261014/ClientData/strings.json'; name='previous-strings.json'},
+    @{source='Docs/QA/Evidence/qa-l10n-core-v1-20261014/ClientData/strings.json'; name='previous-123-strings.json'},
+    @{source='Client/STAGE-MAP-REQUEST.json'; name='stage-map-request.json'},
+    @{source='Tests/Fixtures/stage-ux-approved-copy-changes.json'; name='approved-copy-changes.json'},
+    @{source='Client/Assets/StageGame/Editor/StageMapBuilder.cs'; name='StageMapBuilder.cs'}
 )) {
     $qaCopy = Join-Path $qaAuditInputs $qaInput.name
     Copy-Item -LiteralPath (Join-Path $qaRoot $qaInput.source) -Destination $qaCopy
     $qaManifest += [pscustomobject]@{source=$qaInput.source; sha256=(Get-FileHash -LiteralPath $qaCopy -Algorithm SHA256).Hash}
 }
-foreach ($qaTool in @('Tests/run-independent.ps1','Tests/IndependentHarness/Program.cs','Tests/IndependentHarness/LocalizationChecks.cs','Tests/IndependentHarness/UnityStubs.cs','Tests/IndependentHarness/IndependentHarness.csproj')) {
+foreach ($qaTool in @('Tests/run-independent.ps1','Tests/IndependentHarness/Program.cs','Tests/IndependentHarness/LocalizationChecks.cs','Tests/IndependentHarness/StageUxChecks.cs','Tests/IndependentHarness/UnityStubs.cs','Tests/IndependentHarness/IndependentHarness.csproj')) {
     $qaCopy = Join-Path $qaAuditInputs (Split-Path $qaTool -Leaf)
     Copy-Item -LiteralPath (Join-Path $qaRoot $qaTool) -Destination $qaCopy
     $qaManifest += [pscustomobject]@{source=$qaTool; sha256=(Get-FileHash -LiteralPath $qaCopy -Algorithm SHA256).Hash}

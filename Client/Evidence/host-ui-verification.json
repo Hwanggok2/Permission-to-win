@@ -367,5 +367,6 @@
     ],
     "actualTossSdk": false,
     "physicalDevice": false
-  }
+  },
+  "supersededBy": "Evidence/stage-map-verification.json. This is the historical host-only source/build manifest. Shared capture paths have since been regenerated for the chapter map; current hashes are in the new manifest."
 }

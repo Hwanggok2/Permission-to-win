@@ -1,0 +1,56 @@
+{
+  "passed": 8,
+  "failed": 0,
+  "assertions": 740,
+  "results": [
+    {
+      "name": "progress_ux.legacy_raw_fixtures_and_idempotent_roundtrip",
+      "status": "PASS",
+      "assertions": 404,
+      "error": null
+    },
+    {
+      "name": "progress_ux.all_thirty_wins_and_completion_monotonicity",
+      "status": "PASS",
+      "assertions": 246,
+      "error": null
+    },
+    {
+      "name": "progress_ux.unlock30_loss_draw_do_not_claim_all_clear",
+      "status": "PASS",
+      "assertions": 23,
+      "error": null
+    },
+    {
+      "name": "progress_ux.new_retry_is_one_match_not_another_cleared_stage",
+      "status": "PASS",
+      "assertions": 15,
+      "error": null
+    },
+    {
+      "name": "progress_ux.explicit_final_completion_and_preferences_survive",
+      "status": "PASS",
+      "assertions": 10,
+      "error": null
+    },
+    {
+      "name": "progress_ux.invalid_results_do_not_poison_future_match_id",
+      "status": "PASS",
+      "assertions": 12,
+      "error": null
+    },
+    {
+      "name": "progress_ux.corrupt_completion_and_existing_recovery_preserve_raw",
+      "status": "PASS",
+      "assertions": 20,
+      "error": null
+    },
+    {
+      "name": "progress_ux.save_exception_preserves_memory_and_retry_warning",
+      "status": "PASS",
+      "assertions": 10,
+      "error": null
+    }
+  ],
+  "limits": "Actual ProgressStore and StringTable source snapshots. System.Text.Json and memory PlayerPrefs are explicit doubles, not native Unity JSON/durable storage. Save double writes memory before its injected Save exception. Loss/draw both use RecordResult won=false; no GameApp outcome/CTA, UI, native events, browser, ads SDK or device execution."
+}

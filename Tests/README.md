@@ -4,10 +4,18 @@
 
 실행 도구:
 
+- 신규 단계 UX 입력 `Fixtures/stage-ux-legacy-saves.json`: 최초설치1개·구형 raw저장8개 및 독립 의미 기대값. `highestActuallyCompletedStage`는 기대 의미이며 실제 `highestClearedStage`에 연결한다. 실행결과는 [단계 UX 기록](../Docs/QA/STAGE-UX-RESULTS.md)을 따른다.
+- `run-progress-independent.ps1 -RunId <새 ID>`: 작업중UI와분리하여 ProgressStore/StringTable 실제소스 및 하네스/fixture를스냅샷으로 컴파일·검사한다. 구형이행·실제마지막완료·단조진척·중복/재도전·기존정보·잘못된입력/복구/저장예외8묶음이다. JSON/PlayerPrefs는기존명시적대체구현이며 native Unity·디스크내구성·GameApp/광고/CTA 검사를대신하지 않는다. 빌드중간파일은Tests/.work에둔다.
+
 - `run-independent.ps1 -RunId <새 ID>`: 실제 C# 소스를 증거 경로에 복사/해시 고정 후 오프라인 .NET 10 빌드·실행. 보드/AI/광고는 실제 로직, Unity API는 `IndependentHarness/UnityStubs.cs`에 명시된 대체 구현. 실행 증거·출처 검사를 `Docs/QA/Evidence/`에 남긴다.
 - `run-independent.ps1 -RunId <새 ID> -Scope app.`: 변경된 GameApp 공통 흐름 7묶음만 실행. 기존 보드/AI 1,000개 검사 및 30스테이지 탐색은 반복하지 않는다. 대체 UI의 직접 이벤트 검사는 실제 포인터 레이캐스트 오류를 검출하지 못한다.
-- `run-independent.ps1 -RunId <새 ID> -SkipStageExploration`: 기존 21묶음과 신규 다국어 8묶음을 실행하고 30스테이지 승리 경로 재탐색은 생략한다. 보드·AI·Generated 스테이지가 이전 경로 증거와 같을 때만 생략 결과를 기존 경로 증거와 연결한다.
-- `run-independent.ps1 -RunId <새 ID> -Scope l10n.`: 123개 한영 조회, 기존 58개/요청 70개 분리, 누락/중복/포맷 오류, schema 1 언어 이행·복원, 경고 문구 키, UI 소스 키, 같은 판 언어 변경의 8묶음. PlayerPrefs/JsonUtility/UI/코루틴은 대체 구현이므로 실제 Unity·프리팹·브라우저 검증을 대신하지 않는다.
+- `run-independent.ps1 -RunId <새 ID> -SkipStageExploration`: 등록된전체검사(기존21·다국어8·단계UX8)를실행하고30스테이지승리경로재탐색은생략한다. 넓은회귀가필요한변경에만사용하며보드·AI·Generated스테이지가같으면아래범위필터로불필요한반복을피한다.
+- `run-independent.ps1 -RunId <새 ID> -Scope l10n.`: 현재137개 한영 조회, 기존58개/요청70개 분리, 누락/중복/포맷 오류, schema1 언어 이행·복원, 경고문구/UI소스키, 같은판언어변경8묶음. 직접리터럴키만정적검사하고동적tier키는단계UX검사로확인한다. PlayerPrefs/JsonUtility/UI/코루틴은대체구현이다.
+- `run-independent.ps1 -RunId <새 ID> -Scope 'app.,l10n.,stageux.,ads.,data.actual_client_json'`: 단계UX영향회귀26묶음. 쉼표로여러prefix를지정한다. 새14키/기존123보존·최초/구형로비·한영30노드/잠금/매핑·승패무승부/최종30CTA·광고경계·저장경고를기존광고/다국어회귀와함께검사한다. UIRectTransform은slot지정만검사하며픽셀/프리팹/포인터를대신하지않는다.
+- `check-stage-prefab.ps1 -RunId <새 ID>`: AppRoot노드3배열각10참조·챕터/결과7참조·도움말4번역참조·저장StageNode중첩10개의YAML선언을읽고스냅샷을남긴다. native Unity참조해결/5×2형상/44px는별도다.
+- `Fixtures/stage-ux-approved-copy-changes.json`은QA-010에대해총괄이승인한패배3키의ko/en 첫문장유지·둘째문장삭제기대값이다. 기존문구보존검사에서이3키만명시적으로예외처리하며그외변경은거부한다.
+- `check-stage-copy.ps1 -RunId <새 ID>`: 수정전137행과현재Generated/Client를비교해정확히3키가승인대로변경되고134행이그대로인지확인한다. UI/runtime검사와별개다.
+- `check-stage-evidence.ps1 -RunId <새 ID> -IncludeFinalBrowser`: Client 최초 Unity57과 별도 문구 영향11·소스/프리팹/40캡처·재적용5프리팹·최종 APK/WebGL7산출물/고지8개·독립검사 소스 일치·승인 문구3키·총괄 최종 브라우저 해시를 보존/연결한다. 초기32캡처와 영향검사에서 갱신한 결과/완료8캡처를 구별한다. QA가 Unity/브라우저를 실행하지 않는다.
 - `check-localization-evidence.ps1 -RunId <새 ID>`: 클라이언트 verification/XML·캡처·소스를 보존하고 빌드/소스 해시, 코어 변경 여부, AppRoot 번역 참조를 읽기 전용 검사한다. 진행 중 수정으로 XML/verification/빌드가 다른 버전일 수 있으므로 JSON의 `matchesDeclared`와 각 `matches`를 확인한다. Unity·브라우저는 실행하지 않는다.
 - 최종 브라우저 자료가 준비되면 위 명령에 `-IncludeFinalBrowser`를 추가해 최종 캡처·콘솔·빌드 기록과 SafeArea 수정 전 실패 XML도 함께 보존한다. 결함 종료는 해시 대조와 실제 재시험 보고를 확인한 뒤 QA 문서에 기록한다.
 - `run-host-independent.ps1 -RunId <새 ID>`: HostLayout 실제 C#과 host-layout.js/HostInsets.jslib 실제 JS를 스냅샷으로 고정해 검사한다. C# 숫자 API/JS DOM·event·HEAPF32는 명시적 대체 구현이다. 현재14묶음은 64 예약·OS/CSS max·변환비·controlsBottom·비정상 수치·resize·브리지 순서 및 최소 지원 세로 프로파일을 검사하며 Unity·브라우저·픽셀 hitbox·실제 Toss 검증을 대신하지 않는다.

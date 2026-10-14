@@ -1,0 +1,46 @@
+{
+  "dateSeoul": "2026-10-14",
+  "method": "QA opened five saved final images using view_image; no QA Unity/browser/device execution",
+  "reviewedFinalImages": [
+    {
+      "path": "Client/Evidence/map-ko-320-result-1.png",
+      "origin": "Client final copy-impact11 run; legal vertical-loss terminal fixture",
+      "observation": "One Korean sentence states vertical four; no hidden gold-line instruction. Retry is emphasized and Lobby secondary. No major caption or button clipping observed."
+    },
+    {
+      "path": "Client/Evidence/map-en-320-result-1.png",
+      "origin": "Client final copy-impact11 run; legal vertical-loss terminal fixture",
+      "observation": "The AI connected four vertically. is the only loss sentence. Retry is emphasized and Lobby secondary. No major caption or button clipping observed."
+    },
+    {
+      "path": "Docs/Management/Evidence/reference-ux-browser-20261014/final-ko-loss-390.jpg",
+      "origin": "Root final WebGL real-pointer stage2 ten-ply vertical loss",
+      "observation": "Korean one-sentence loss caption and emphasized retry are visible; the obsolete instruction is absent. Modal lies below the simulated host controls."
+    },
+    {
+      "path": "Docs/Management/Evidence/reference-ux-browser-20261014/final-ko-map-390.jpg",
+      "origin": "Root final WebGL Korean lobby capture",
+      "observation": "Five-by-two nodes show completed1, selected current2 and locked3 through10 with words/symbols as well as color. Progress reads1/30. Main actions are visible."
+    },
+    {
+      "path": "Docs/Management/Evidence/reference-ux-browser-20261014/final-ko-help-390.jpg",
+      "origin": "Root final WebGL Korean help capture",
+      "observation": "Downward arrow leads to a mint stone supported immediately by a coral stone. Horizontal, vertical and diagonal four-stone patterns are abstract examples without empty grid holes. Captions and close button are visible."
+    }
+  ],
+  "captureInventory": {
+    "clientDeclaredTotal": 40,
+    "retainedFromInitial57Run": 32,
+    "refreshedByFinal11Run": 8,
+    "refreshedScope": "ko/en results win/loss/draw plus all-cleared map; all-cleared uses an injected legal terminal fixture",
+    "notAllFinalImagesManuallyReviewed": true
+  },
+  "qa010": "Closed with exact three-key bilingual data comparison, unchanged code/prefabs, two final native vertical-loss renders, root final Korean vertical-loss retest and seven artifact hash links",
+  "hashes": "source-manifest.json contains the snapshot SHA-256 for each reviewed image; results.json connects declared image/artifact hashes and separate test executions",
+  "limits": [
+    "Visual reading does not measure physical touch targets or establish native pointer hitboxes.",
+    "Final browser retest covers Korean vertical loss only; all three directions and both languages are covered by exact data comparison, not all by browser play.",
+    "Initial functional browser checks occurred before the approved three-key copy-only edit.",
+    "No actual Toss SDK, physical mobile device, human30-stage campaign, paid purchase or live advertising was tested."
+  ]
+}

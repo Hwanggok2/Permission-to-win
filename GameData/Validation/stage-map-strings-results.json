@@ -1,0 +1,202 @@
+{
+  "sourceSha256": "b58027ecdbabf5c01992fd51c764cf58391550f2b783467e9b1ad753be4006cb",
+  "clientRequestSha256": "211be733df62298c87ede4d8ee7b4b9742980aaa3410c375bed2d588c94c225f",
+  "strings": 137,
+  "clientRequestedKeys": 70,
+  "locales": [
+    "ko",
+    "en"
+  ],
+  "clientCopyAndFormatArgs": "passed_with_approved_revisions",
+  "stableRuntimeHashes": {
+    "stages.json": "2d04b124a42f0f3798ad942e9aacab97ee34a25f05b380144cd70f75c3904992",
+    "ads.json": "d19f181faf52db28287bbed1b42291770dc3bf83d35e5cca8af4a6dcce9e194a"
+  },
+  "stringsSha256": "57e392cf68464898829946f17030e4ae3008aab86370452bacf6dbe56d68a291",
+  "preservation": {
+    "beforeSha256": "914f5cd0f13e27af14193576db1ba477787b4ab461b230cbc0aa73c691c12b78",
+    "unchangedSheets": [
+      "Stages",
+      "AdConfig"
+    ],
+    "comparedStringsRange": "A1:E127",
+    "approvedChangedCells": [
+      "Strings!C101",
+      "Strings!E101",
+      "Strings!C102",
+      "Strings!E102",
+      "Strings!C103",
+      "Strings!E103"
+    ],
+    "otherValuesStylesDimensionsPanesValidation": "passed"
+  },
+  "date": "2026-10-14",
+  "schemaVersion": 1,
+  "previousStrings": 123,
+  "addedStrings": 14,
+  "requestedAdditionsExactMatch": true,
+  "formatArgumentCounts": {
+    "stage_map_chapter": 2,
+    "stage_tier_1": 0,
+    "stage_tier_2": 0,
+    "stage_tier_3": 0,
+    "stage_state_cleared": 0,
+    "stage_state_current": 0,
+    "stage_state_locked": 0,
+    "stage_cleared_progress": 2,
+    "stage_replay": 0,
+    "stage_lock_requirement": 1,
+    "help_drop_title": 0,
+    "help_drop_caption": 0,
+    "help_connect_title": 0,
+    "help_connect_caption": 0
+  },
+  "additions": [
+    {
+      "key": "stage_map_chapter",
+      "ko": "{0} / {1} 챕터",
+      "en": "Chapter {0} / {1}"
+    },
+    {
+      "key": "stage_tier_1",
+      "ko": "입문",
+      "en": "Basics"
+    },
+    {
+      "key": "stage_tier_2",
+      "ko": "전술",
+      "en": "Tactics"
+    },
+    {
+      "key": "stage_tier_3",
+      "ko": "도전",
+      "en": "Challenge"
+    },
+    {
+      "key": "stage_state_cleared",
+      "ko": "완료",
+      "en": "Clear"
+    },
+    {
+      "key": "stage_state_current",
+      "ko": "도전",
+      "en": "Play"
+    },
+    {
+      "key": "stage_state_locked",
+      "ko": "잠금",
+      "en": "Locked"
+    },
+    {
+      "key": "stage_cleared_progress",
+      "ko": "{0}/{1} 완료",
+      "en": "{0}/{1} cleared"
+    },
+    {
+      "key": "stage_replay",
+      "ko": "다시 도전",
+      "en": "Play again"
+    },
+    {
+      "key": "stage_lock_requirement",
+      "ko": "{0} 스테이지를 먼저 완료하세요",
+      "en": "Clear stage {0} first"
+    },
+    {
+      "key": "help_drop_title",
+      "ko": "열을 고르면 아래로",
+      "en": "Choose a column"
+    },
+    {
+      "key": "help_drop_caption",
+      "ko": "돌은 가장 아래 빈칸에 놓여요",
+      "en": "Your stone falls into the lowest empty space"
+    },
+    {
+      "key": "help_connect_title",
+      "ko": "네 개를 연결하면 승리",
+      "en": "Connect four to win"
+    },
+    {
+      "key": "help_connect_caption",
+      "ko": "가로 · 세로 · 대각선",
+      "en": "Across · Up · Diagonal"
+    }
+  ],
+  "repeatExportIdenticalBytes": true,
+  "exportCheck": "passed",
+  "pythonTests": {
+    "passed": 36,
+    "failed": 0
+  },
+  "visualReview": {
+    "ranges": [
+      "Strings!B128:E141",
+      "Strings!B101:E103"
+    ],
+    "result": "passed"
+  },
+  "tierMeaning": "Chapter display names for stages 1-10, 11-20, 21-30; human difficulty unverified",
+  "clientRuntimeUiVerification": "not performed by data role",
+  "approvedRevisionsSha256": "d70e801b1e4edc979642a83f60182cdabd0a9a7328914d872607f3f4c3a1daf2",
+  "approvedRevisedKeys": [
+    "result_loss_diagonal",
+    "result_loss_horizontal",
+    "result_loss_vertical"
+  ],
+  "preservedPreviousStrings": 120,
+  "approvedRevisedStrings": 3,
+  "approvedRevisions": [
+    {
+      "key": "result_loss_horizontal",
+      "before": {
+        "ko": "AI가 가로로 네 개를 이었어요.\n금색 줄을 살펴보세요.",
+        "en": "The AI connected four across.\nLook at the gold line."
+      },
+      "after": {
+        "ko": "AI가 가로로 네 개를 이었어요.",
+        "en": "The AI connected four across."
+      }
+    },
+    {
+      "key": "result_loss_vertical",
+      "before": {
+        "ko": "AI가 세로로 네 개를 이었어요.\n금색 줄을 살펴보세요.",
+        "en": "The AI connected four vertically.\nLook at the gold line."
+      },
+      "after": {
+        "ko": "AI가 세로로 네 개를 이었어요.",
+        "en": "The AI connected four vertically."
+      }
+    },
+    {
+      "key": "result_loss_diagonal",
+      "before": {
+        "ko": "AI가 대각선으로 네 개를 이었어요.\n금색 줄을 살펴보세요.",
+        "en": "The AI connected four diagonally.\nLook at the gold line."
+      },
+      "after": {
+        "ko": "AI가 대각선으로 네 개를 이었어요.",
+        "en": "The AI connected four diagonally."
+      }
+    }
+  ],
+  "latestEditPreservation": {
+    "beforeSha256": "4d4a3a5eaa6238aaf89d72ba5621bd69c1c4f9a47647648ea375d1ea1ef9716f",
+    "unchangedSheets": [
+      "Stages",
+      "AdConfig"
+    ],
+    "comparedStringsRange": "A1:E141",
+    "approvedChangedCells": [
+      "Strings!C101",
+      "Strings!E101",
+      "Strings!C102",
+      "Strings!E102",
+      "Strings!C103",
+      "Strings!E103"
+    ],
+    "otherValuesStylesDimensionsPanesValidation": "passed"
+  },
+  "latestEditUnchangedStrings": 134
+}

@@ -1,5 +1,7 @@
 # 6개 국면 교체 검증
 
+최신 증거는 [stage-map-strings-results.json](C:/Github/StageGame/GameData/Validation/stage-map-strings-results.json)이다. 기존 120개 보존 + 방향별 패배 안내 3개 승인 수정 + 단계 선택/그림 도움말 신규 14개 = ko/en 총 137개다. [승인 전후 문구](C:/Github/StageGame/GameData/Validation/approved-string-revisions.json)의 3키는 가려진 금색 줄을 보라는 둘째 줄만 삭제했다. 전체 스테이지·광고·Excel 서식은 보존했다. 승인 변경을 반영한 요청 문구·포맷 인자 수, 반복 export 동일성, `--check`, Python 36개 테스트를 확인했다. 아래 언어 확장 및 국면 기록은 이전 시점의 증거를 유지한다.
+
 후속 언어 확장 증거는 [localization-results.json](C:/Github/StageGame/GameData/Validation/localization-results.json)과 [verify_localization.py](C:/Github/StageGame/GameData/Validation/verify_localization.py)에 있다. 한국어·영어 123개와 Client 요청 70개를 대조했다. 기존 스테이지/광고 및 Strings A1:D62의 값·서식을 보존했으며 Python 테스트는 현재 36개 통과다. 아래 국면 분석은 당시 28개 테스트 기록을 유지한다.
 
 2026-10-14. 최종 동기화 상태는 [CHECKPOINT.md](C:/Github/StageGame/GameData/Validation/CHECKPOINT.md)를 따른다. 현재 `Generated/stages.json`에는 10/12/20/22/24/26의 새 수순이 반영되어 있다.

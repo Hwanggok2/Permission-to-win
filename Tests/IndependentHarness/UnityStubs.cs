@@ -16,7 +16,15 @@ namespace UnityEngine
     public class Component
     {
         public GameObject gameObject = new GameObject();
+        public Transform transform = new RectTransform();
         public T GetComponentInChildren<T>() where T : new() => new T();
+    }
+    public class Transform { }
+    public class RectTransform : Transform { public Vector2 anchoredPosition; }
+    public struct Vector2
+    {
+        public float x, y;
+        public Vector2(float x, float y) { this.x=x; this.y=y; }
     }
     public sealed class Coroutine
     {
@@ -42,10 +50,15 @@ namespace UnityEngine
     }
     public struct Color
     {
-        public Color(float r, float g, float b, float a) { }
-        public static implicit operator Color(Color32 c) => new Color();
+        public float r, g, b, a;
+        public Color(float r, float g, float b, float a) { this.r=r; this.g=g; this.b=b; this.a=a; }
+        public static implicit operator Color(Color32 c) => new Color(c.r/255f,c.g/255f,c.b/255f,c.a/255f);
     }
-    public struct Color32 { public Color32(byte r, byte g, byte b, byte a) { } }
+    public struct Color32
+    {
+        public byte r, g, b, a;
+        public Color32(byte r, byte g, byte b, byte a) { this.r=r; this.g=g; this.b=b; this.a=a; }
+    }
     public static class Mathf { public static int Clamp(int n, int low, int high) => Math.Clamp(n, low, high); }
     public enum KeyCode { Escape }
     public static class Input { public static bool GetKeyDown(KeyCode code) => false; }
@@ -79,11 +92,13 @@ namespace UnityEngine
 }
 namespace UnityEngine.UI
 {
-    public sealed class Text : UnityEngine.Component { public string text; }
-    public sealed class Image : UnityEngine.Component { public UnityEngine.Color color; }
+    public class Graphic : UnityEngine.Component { public UnityEngine.Color color; }
+    public sealed class Text : Graphic { public string text; }
+    public sealed class Image : Graphic { }
     public sealed class Button : UnityEngine.Component
     {
         public bool interactable = true;
+        public Graphic targetGraphic = new Image();
         public readonly ButtonEvent onClick = new ButtonEvent();
     }
     public sealed class ButtonEvent

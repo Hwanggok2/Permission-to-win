@@ -8,6 +8,7 @@ namespace StageGame
     {
         public int saveVersion = 1;
         public int unlockedStage = 1;
+        public int highestClearedStage;
         public int completedMatches;
         public int lastInterstitialMatch;
         public long lastInterstitialUtc;
@@ -28,9 +29,11 @@ namespace StageGame
             try
             {
                 Data = PlayerPrefs.HasKey(Key) ? JsonUtility.FromJson<ProgressData>(PlayerPrefs.GetString(Key)) : new ProgressData();
-                if (Data == null || Data.saveVersion != 1 || Data.unlockedStage < 1 || Data.completedMatches < 0 || Data.lastInterstitialMatch < 0 || Data.lastInterstitialMatch > Data.completedMatches || Data.lastInterstitialUtc < 0)
+                if (Data == null || Data.saveVersion != 1 || Data.unlockedStage < 1 || Data.highestClearedStage < 0 || Data.highestClearedStage > stageCount || Data.completedMatches < 0 || Data.lastInterstitialMatch < 0 || Data.lastInterstitialMatch > Data.completedMatches || Data.lastInterstitialUtc < 0)
                     throw new FormatException("지원하지 않거나 손상된 저장 형식");
                 Data.unlockedStage = Math.Min(stageCount, Data.unlockedStage);
+                // Missing additive field in v1 saves is zero. Unlock30 proves only clears1..29.
+                Data.highestClearedStage = Math.Max(Data.highestClearedStage, Data.unlockedStage - 1);
             }
             catch (Exception error)
             {
@@ -51,7 +54,11 @@ namespace StageGame
             if (string.IsNullOrEmpty(matchId) || stageId < 1 || stageId > stageCount || !processedMatches.Add(matchId)) return false;
             Data.processedMatchIds.Add(matchId);
             Data.completedMatches++;
-            if (won) Data.unlockedStage = Math.Max(Data.unlockedStage, Math.Min(stageCount, stageId + 1));
+            if (won)
+            {
+                Data.highestClearedStage = Math.Max(Data.highestClearedStage, stageId);
+                Data.unlockedStage = Math.Max(Data.unlockedStage, Math.Min(stageCount, stageId + 1));
+            }
             Save();
             return true;
         }

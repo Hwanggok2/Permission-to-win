@@ -1,0 +1,34 @@
+{
+  "status": "COMPLETE__FINAL_ROOT_BROWSER_PASS__SOURCE_FROZEN",
+  "dateSeoul": "2026-10-14",
+  "owner": "Client only. Root owns browser/Git integration.",
+  "scope": [
+    "Chapter pages of10 saved StageNode prefabs,5x2; locked inspection and blocked start",
+    "Stored geometric gravity/four-in-row help diagrams",
+    "Result emphasis: next after win; retry after loss/draw/final clear"
+  ],
+  "layout": {
+    "reference": "720x960",
+    "nodeSize": "120x120 reference,51.375 CSS px at320x568 top59 bottom34 plus64",
+    "chapterNavigation": "Existing Previous/Following,3 chapter pages",
+    "selection": "Selected number in brackets and background; cleared check+text, current/locked text. State labels28 reference (~12 CSS px minimum).",
+    "hierarchy": "Title,chapter controls,10 nodes,selected stage card,clear count,primary CTA,help/settings,banner reserve",
+    "preserve": "Existing sprite/font/host contract and saved prefab structure; older decorations disabled, not deleted"
+  },
+  "progress": {
+    "field": "highestClearedStage additive int in existing saveVersion1",
+    "legacy": "Infer at most unlockedStage-1; unlocked30 becomes cleared29 until a new win at30",
+    "retained": "processedMatchIds,completedMatches,ad counters,sound,language,existing recovery handling"
+  },
+  "strings": "137 keys; exactly3 approved loss-direction second sentences removed inko/en;134 other entries unchanged. Source/copy SHA25657E392CF68464898829946F17030E4AE3008AAB86370452BACF6DBE56D68A291.",
+  "verification": "Complete. Initial full57/57 and final copy-impact11/11 are separate passing runs. Final two development builds:0 errors/0 warnings. Root initial map functional flow and final Korean stage2 ten-ply vertical-loss caption retest PASS;console[]. Current7 artifact hashes and final57E392 strings match. Code/prefabs frozen;no further code/build/test execution for this documentation closeout. Actual Toss SDK/device remains unverified.",
+  "webgl": {
+    "wasmSha256": "D093BE45525525A092B3569D65CAE23B0A7A63C701A50859C41FFAE3ECC344C0",
+    "dataSha256": "FA73330ECB9D638D63BBA6B2B4403E5F23A8A5BAF6F93CF48173E3469C9B17EE",
+    "indexSha256": "53BDBF4813EA2CFE5A19E5C21B3B711CD6AD08AD1200254146D1AB3BA3C6C3CA",
+    "previewQuery": "?hostPreview=1&hostTop=59&hostBottom=34"
+  },
+  "androidApkSha256": "865DAD68BA5A648829F83428C53F7BC343C4AB60595F54BE9080D402B932EC95",
+  "evidence": "Evidence/stage-map-verification.json; Evidence/stage-map-tests.xml; Evidence/stage-map-idempotence.json",
+  "rootBrowserReport": "Docs/Management/Evidence/reference-ux-browser-20261014/README.md"
+}

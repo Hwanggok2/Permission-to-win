@@ -36,6 +36,11 @@ namespace StageGame
         public Button korean, english;
         public Text koreanLabel, englishLabel, playLabel, hintLabel;
         public LocalizedLabel[] localizedLabels;
+        public Button[] stageNodes;
+        public Text[] stageNodeNumbers, stageNodeStates;
+        public Text chapterLabel, chapterTier;
+        public Text retryLabel, nextStageLabel, resultLobbyLabel;
+        public RectTransform resultPrimarySlot, resultSecondarySlot;
 
         static readonly Color Empty = new Color32(15, 27, 43, 255);
         static readonly Color Player = new Color32(108, 237, 199, 255);
@@ -84,6 +89,11 @@ namespace StageGame
             resultLobby.onClick.AddListener(ShowLobby);
             resultClose.onClick.AddListener(ShowLobby);
             for (int i = 0; i < columns.Length; i++) { int col = i; columns[i].onClick.AddListener(() => Drop(col)); }
+            for (int i = 0; i < stageNodes.Length; i++)
+            {
+                int slot = i;
+                stageNodes[i].onClick.AddListener(() => { if (data != null) { selected = selected / 10 * 10 + slot; RefreshLobby(); } });
+            }
             try
             {
                 strings = StringTable.Load();
@@ -105,6 +115,7 @@ namespace StageGame
                 lobbyNotice.text = "";
                 play.interactable = previous.interactable = following.interactable = false;
                 lobbySettings.interactable = lobbyHelp.interactable = false;
+                foreach (var node in stageNodes) node.interactable = false;
                 lobbyBanner.SetActive(false);
             }
         }
@@ -123,7 +134,7 @@ namespace StageGame
         void Select(int change)
         {
             if (data == null) return;
-            selected = Mathf.Clamp(selected + change, 0, data.Stages.Length - 1);
+            selected = Mathf.Clamp(selected / 10 + change, 0, 2) * 10;
             RefreshLobby();
         }
 
@@ -131,16 +142,34 @@ namespace StageGame
         {
             var stage = data.Stages[selected];
             bool unlocked = stage.id <= progress.Data.unlockedStage;
+            bool cleared = stage.id <= progress.Data.highestClearedStage;
+            int chapter = selected / 10;
             stageNumber.text = F("stage_number", stage.chapter.ToString("00"), stage.id.ToString("00"));
             stageTitle.text = data.Text(stage.titleKey);
-            stageDetail.text = T(unlocked ? "stage_instruction" : "stage_locked_detail");
-            progressLabel.text = F("stage_progress", progress.Data.unlockedStage, data.Stages.Length);
-            playLabel.text = T(unlocked ? "client_ui_start" : "stage_locked");
+            stageDetail.text = unlocked ? T(cleared ? "stage_state_cleared" : "stage_state_current") : F("stage_lock_requirement", stage.id - 1);
+            progressLabel.text = F("stage_cleared_progress", progress.Data.highestClearedStage, data.Stages.Length);
+            playLabel.text = T(unlocked ? cleared ? "stage_replay" : "client_ui_start" : "stage_locked");
             play.interactable = unlocked;
-            previous.interactable = selected > 0;
-            following.interactable = selected < data.Stages.Length - 1;
+            previous.interactable = chapter > 0;
+            following.interactable = chapter < 2;
+            chapterLabel.text = F("stage_map_chapter", chapter + 1, 3);
+            chapterTier.text = T("stage_tier_" + (chapter + 1));
+            for (int i = 0; i < stageNodes.Length; i++)
+            {
+                int index = chapter * 10 + i;
+                bool isCleared = index + 1 <= progress.Data.highestClearedStage;
+                bool isLocked = index + 1 > progress.Data.unlockedStage;
+                bool isSelected = index == selected;
+                string number = (index + 1).ToString("00");
+                stageNodeNumbers[i].text = isSelected ? "[" + number + "]" : number;
+                stageNodeStates[i].text = (isCleared ? "✓ " : "") + T(isCleared ? "stage_state_cleared" : isLocked ? "stage_state_locked" : "stage_state_current");
+                stageNodes[i].targetGraphic.color = isSelected ? Player : new Color32(27, 42, 64, 255);
+                stageNodeNumbers[i].color = stageNodeStates[i].color = isSelected ? Empty : isLocked ? new Color32(155, 171, 191, 255) : new Color32(241, 245, 249, 255);
+            }
             lobbyBanner.SetActive(data.Ads.bannerLobby && !(ads is NoFillAds));
-            lobbyNotice.text = T(progress.SaveWarning ?? progress.LoadWarning ?? "lobby_notice");
+            string warning = progress.SaveWarning ?? progress.LoadWarning;
+            lobbyNotice.text = warning == null ? "" : T(warning);
+            progressLabel.gameObject.SetActive(warning == null);
         }
 
         public void ShowLobby()
@@ -272,6 +301,17 @@ namespace StageGame
             resultDetail.text = T(board.Winner == 1 ? activeStage + 1 == data.Stages.Length ? "client_result_all_clear" : "result_win_detail" :
                 board.IsDraw ? "result_draw_detail" : LossExplanationKey());
             resultAdStatus.text = !string.IsNullOrEmpty(progress.SaveWarning) ? T(progress.SaveWarning) : ads is NoFillAds ? "" : T(ads.Status);
+            bool hasNext = board.Winner == 1 && activeStage + 1 < data.Stages.Length;
+            SetPrimary(nextStage, nextStageLabel, hasNext);
+            SetPrimary(retry, retryLabel, !hasNext);
+            SetPrimary(resultLobby, resultLobbyLabel, false);
+            ((RectTransform)retry.transform).anchoredPosition = (hasNext ? resultSecondarySlot : resultPrimarySlot).anchoredPosition;
+        }
+
+        static void SetPrimary(Button button, Text label, bool primary)
+        {
+            button.targetGraphic.color = primary ? Player : new Color32(41, 61, 87, 255);
+            label.color = primary ? Empty : new Color32(241, 245, 249, 255);
         }
 
         string LossExplanationKey()

@@ -110,6 +110,80 @@ namespace StageGame.Tests
         }
 
         [UnityTest]
+        public IEnumerator ChapterMapSelectsLockedStagesAndKeepsStatesAcrossLanguages()
+        {
+            var progress = GetField<ProgressStore>("progress");
+            progress.Data.unlockedStage = 13; progress.Data.highestClearedStage = 12;
+            foreach (string language in new[] { "ko", "en" })
+            {
+                app.SetLanguage(language); app.ShowLobby(); SetField("selected", 0); Invoke("RefreshLobby");
+                Assert.IsTrue(app.stageNodeStates[0].text.StartsWith("✓"));
+                Assert.AreEqual("[01]", app.stageNodeNumbers[0].text);
+                Assert.AreEqual(GetField<StringTable>("strings").Text("stage_replay"), app.playLabel.text);
+                app.following.onClick.Invoke(); yield return null;
+                Assert.AreEqual("[11]", app.stageNodeNumbers[0].text);
+                Assert.AreEqual(GetField<StringTable>("strings").Text("stage_state_current"), app.stageNodeStates[2].text);
+                app.stageNodes[3].onClick.Invoke(); yield return null;
+                Assert.AreEqual("[14]", app.stageNodeNumbers[3].text); Assert.IsFalse(app.play.interactable);
+                Assert.AreEqual(GetField<StringTable>("strings").Format("stage_lock_requirement", 13), app.stageDetail.text);
+                app.play.onClick.Invoke(); Assert.IsTrue(app.lobby.activeSelf); Assert.IsFalse(app.match.activeSelf);
+                AssertNoButtonOverlap(app.lobby);
+                Capture("map-" + language + "-320-locked", app, 320, 568, true);
+                app.stageNodes[2].onClick.Invoke(); Assert.IsTrue(app.play.interactable);
+                Capture("map-" + language + "-390-current", app, 390, 844, true);
+                app.following.onClick.Invoke(); app.stageNodes[9].onClick.Invoke(); yield return null;
+                Assert.AreEqual("[30]", app.stageNodeNumbers[9].text); Assert.IsFalse(app.following.interactable);
+                Assert.IsFalse(app.play.interactable);
+                app.previous.onClick.Invoke(); app.previous.onClick.Invoke(); Assert.IsFalse(app.previous.interactable);
+            }
+        }
+
+        [UnityTest]
+        public IEnumerator ResultPriorityAndFinalStageClearDriveReplayMap()
+        {
+            var mint = new Color32(108, 237, 199, 255);
+            // Legal terminal fixtures, including the full-board draw from the independent core harness.
+            var fixtures = new[] {
+                new[] { 0, 6, 1, 6, 2, 5, 3 },
+                new[] { 0, 6, 1, 6, 2, 6, 4, 6 },
+                new[] { 0,2,2,2,2,2,2,0,0,0,0,0,1,3,3,3,3,3,3,1,1,1,1,1,4,6,6,6,6,6,6,4,4,4,4,4,5,5,5,5,5,5 }
+            };
+            foreach (string language in new[] { "ko", "en" })
+            {
+                app.SetLanguage(language);
+                for (int outcome = 0; outcome < fixtures.Length; outcome++)
+                {
+                    app.StartStage(0);
+                    var board = new ConnectFourBoard();
+                    foreach (int column in fixtures[outcome]) Assert.IsTrue(board.TryDrop(column));
+                    Assert.IsTrue(board.IsFinished);
+                    if (outcome == 2) Assert.IsTrue(board.IsDraw);
+                    SetField("board", board); Invoke("RefreshBoard"); Invoke("Finish"); yield return null;
+                    Assert.AreEqual(outcome == 0, app.nextStage.gameObject.activeSelf);
+                    Assert.AreEqual(mint, (Color32)(outcome == 0 ? app.nextStage : app.retry).targetGraphic.color);
+                    Assert.AreNotEqual(mint, (Color32)app.resultLobby.targetGraphic.color);
+                    AssertNoButtonOverlap(app.result);
+                    Capture("map-" + language + "-320-result-" + outcome, app, 320, 568, true);
+                }
+                var progress = GetField<ProgressStore>("progress");
+                progress.Data.unlockedStage = 30; progress.Data.highestClearedStage = 29;
+                app.StartStage(29);
+                var final = new ConnectFourBoard(); foreach (int column in fixtures[0]) final.TryDrop(column);
+                SetField("board", final); Invoke("RefreshBoard"); Invoke("Finish"); yield return null;
+                Assert.IsFalse(app.nextStage.gameObject.activeSelf);
+                Assert.AreEqual(mint, (Color32)app.retry.targetGraphic.color);
+                Assert.AreEqual(30, new ProgressStore(30).Data.highestClearedStage);
+                app.resultLobby.onClick.Invoke(); yield return null;
+                Assert.AreEqual("[30]", app.stageNodeNumbers[9].text); Assert.IsTrue(app.stageNodeStates[9].text.StartsWith("✓"));
+                Assert.AreEqual(GetField<StringTable>("strings").Text("stage_replay"), app.playLabel.text);
+                Capture("map-" + language + "-320-all-cleared", app, 320, 568, true);
+                app.play.onClick.Invoke(); yield return null;
+                Assert.IsTrue(app.match.activeSelf); Assert.IsTrue(app.matchTitle.text.StartsWith("30"));
+                app.ShowLobby();
+            }
+        }
+
+        [UnityTest]
         public IEnumerator EveryStageTitleFitsInBothLanguages()
         {
             GetField<ProgressStore>("progress").Data.unlockedStage = 30;
@@ -172,7 +246,7 @@ namespace StageGame.Tests
             app = UnityEngine.Object.FindFirstObjectByType<GameApp>();
             Assert.AreEqual("en", GetField<StringTable>("strings").Language);
             Assert.AreEqual(table.Text("stage_002"), app.stageTitle.text);
-            Assert.AreEqual("2 / 30 stages unlocked", app.progressLabel.text);
+            Assert.AreEqual("1/30 cleared", app.progressLabel.text);
             Capture("en-restored", app);
         }
 
@@ -224,7 +298,7 @@ namespace StageGame.Tests
             app.nextStage.onClick.Invoke(); yield return null;
             Assert.IsTrue(app.matchTitle.text.StartsWith("02"));
             app.ShowLobby();
-            Assert.IsTrue(app.progressLabel.text.StartsWith("2 /"));
+            Assert.AreEqual("1/30 완료", app.progressLabel.text);
             Assert.AreEqual(2, new ProgressStore(30).Data.unlockedStage);
             app.lobbyHelp.onClick.Invoke(); yield return null;
             Capture("help", app);

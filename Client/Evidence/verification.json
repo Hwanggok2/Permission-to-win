@@ -1,31 +1,21 @@
 {
-  "verifiedAtUtc": "2026-10-14T12:04:37.526469Z",
+  "verifiedAtUtc": "2026-10-14T12:47:20.130758Z",
   "unity": "6000.3.15f1",
   "project": "C:\\Github\\StageGame\\Client",
   "tests": {
-    "total": 49,
-    "passed": 49,
+    "total": 57,
+    "passed": 57,
     "failed": 0,
-    "file": "Evidence/unity-tests.xml",
-    "log": "Logs/host-ui-tests.log",
-    "scope": "Full regression after compact UI and host layout",
-    "targetedAfterBoundaryChange": {
-      "total": 8,
-      "passed": 8,
+    "file": "Evidence/stage-map-tests.xml",
+    "log": "Logs/stage-map-tests.log",
+    "scope": "Initial full57/57 before approved3-key copy edit; runtime code/prefabs unchanged",
+    "finalCopyImpact": {
+      "total": 11,
+      "passed": 11,
       "failed": 0,
-      "file": "Evidence/host-ui-boundary-tests.xml",
-      "log": "Logs/host-ui-boundary-tests.log",
-      "scope": "Final HostLayout/host rendering and license scroll after QA009 normalization"
-    },
-    "uniquePassingTests": 50,
-    "note": "Full49 + boundary8 + finalUI1;50 distinct passing test cases. Four directional-array cases share one NUnit fullname. Not a single50-test execution.",
-    "finalUiAfterLegalFontChange": {
-      "total": 1,
-      "passed": 1,
-      "failed": 0,
-      "file": "Evidence/host-ui-final-render.xml",
-      "log": "Logs/host-ui-final-render.log",
-      "scope": "Final saved legal body30; ko/en,390->320->390,7screens,all44px button bounds,legal bottom scroll and28 final captures"
+      "file": "Evidence/loss-copy-tests.xml",
+      "log": "Logs/loss-copy-tests.log",
+      "scope": "Separate final copy-impact run; do not sum with initial full57"
     }
   },
   "android": {
@@ -39,37 +29,37 @@
     "architecture": "arm64-v8a",
     "deviceTested": false,
     "releaseSigned": false,
-    "latestBuildLog": "Logs/android-host-ui-final.log"
+    "latestBuildLog": "Logs/android-stage-map-final.log"
   },
   "webgl": {
     "build": "Succeeded",
     "errors": 0,
     "warnings": 0,
     "template": "StageGamePortrait",
-    "browserSmoke": "PASS, root coordinator report: initial body24 functional tests and final body30 license/scroll/close/resize retest have separate scopes. See rootHostUiBrowserRetest.",
-    "browserProof": "../Docs/Management/Evidence/host-ui-browser-20261014/README.md",
+    "browserSmoke": "PASS from root coordinator: initial chapter-map functional flow and final Korean vertical-loss copy retest. See rootStageMapBrowserReport for separate scopes.",
+    "browserProof": "../Docs/Management/Evidence/reference-ux-browser-20261014/README.md",
     "appsInTossSdk": false,
     "aitPackage": false,
-    "responsiveProof": "Evidence/unity-tests.xml; Evidence/host-ui-boundary-tests.xml; Evidence/host-*.png",
-    "latestBuildLog": "Logs/webgl-host-ui-final.log",
-    "responsiveSmoke": "Root browser390->320->390 resize passed. Unity render-coordinate assertions provide44px hitbox evidence. Simulated top59/bottom34 and extra64; actual Toss/device unverified."
+    "responsiveProof": "Evidence/stage-map-tests.xml; Evidence/host-*.png; Evidence/map-*.png",
+    "latestBuildLog": "Logs/webgl-stage-map-final.log",
+    "responsiveSmoke": "Root initial390->320->390 andko/en map/help passed;final copy-only390 retest passed. Unity render assertions provide44px hitbox evidence. Actual Toss/device not tested."
   },
   "ads": "NoFillAds only. Mock completion is UNITY_EDITOR-only.",
   "artifacts": [
     {
       "path": "Builds/Android/StageGame-development.apk",
-      "bytes": 35559979,
-      "sha256": "05E70261507378EEC397416566567802B49FB1173BC58A4F22A72488B3EE4B8D"
+      "bytes": 39792595,
+      "sha256": "865DAD68BA5A648829F83428C53F7BC343C4AB60595F54BE9080D402B932EC95"
     },
     {
       "path": "Builds/WebGL/Build/WebGL.wasm",
-      "bytes": 24387189,
-      "sha256": "FD86D320DB92967BBE3DDF6FFB9CA06C26120223E3034753413070792C53D581"
+      "bytes": 24390734,
+      "sha256": "D093BE45525525A092B3569D65CAE23B0A7A63C701A50859C41FFAE3ECC344C0"
     },
     {
       "path": "Builds/WebGL/Build/WebGL.data",
-      "bytes": 18747152,
-      "sha256": "72BBB0E061B59AD7EE3F72EF8C34A76F60B7B4CAEDA67184A2EFEB8B51D53407"
+      "bytes": 18753989,
+      "sha256": "FA73330ECB9D638D63BBA6B2B4403E5F23A8A5BAF6F93CF48173E3469C9B17EE"
     },
     {
       "path": "Builds/WebGL/Build/WebGL.framework.js",
@@ -105,45 +95,54 @@
     },
     {
       "name": "strings.json",
-      "sha256": "ED5FD27463724F4789B2F5E96922316240F73BF73EBC9D663410F0758E0883C2",
+      "sha256": "57E392CF68464898829946F17030E4AE3008AAB86370452BACF6DBE56D68A291",
       "matchesSource": true
     }
   ],
   "runtimeSources": [
     {
       "path": "Assets/StageGame/Scripts/Core/AiSearch.cs",
+      "bytes": 6132,
       "sha256": "FEA609E5CC011D590C9BEDA3D401B3CCC420DF7E0C9FAD7EFA18F99A9D72F63B"
     },
     {
       "path": "Assets/StageGame/Scripts/Core/ConnectFourBoard.cs",
+      "bytes": 3439,
       "sha256": "5A57257861061D89B71E9758B6E352A96E08D22C2B686C85C5CD503B0F25FB36"
     },
     {
       "path": "Assets/StageGame/Scripts/Core/GameData.cs",
+      "bytes": 3633,
       "sha256": "72018B7041F6E255E5210B2BAD652117744D0BC7BAED9BFAC1CF70340AABB567"
     },
     {
       "path": "Assets/StageGame/Scripts/Core/ProgressStore.cs",
-      "sha256": "074DE135B08DDBD15E7C605F54460D45981D2547D639054092FD4179A9300357"
+      "bytes": 3572,
+      "sha256": "FCDB8DC6DE3B8DD0AEF425930F61B5EA3AB3E729C56384A8D72B841E548E17D1"
     },
     {
       "path": "Assets/StageGame/Scripts/Core/StringTable.cs",
+      "bytes": 3274,
       "sha256": "8D133248463B3466690BCC76BD9BBB31F7BA1703CDF84E3FF6788F2AB4374A1B"
     },
     {
       "path": "Assets/StageGame/Scripts/Platform/Advertising.cs",
+      "bytes": 2588,
       "sha256": "9D768FDDC0BCFB6801D7DEF5DC811FE9A699719CE6E56B909E62F2FFC814C23F"
     },
     {
       "path": "Assets/StageGame/Scripts/UI/GameApp.cs",
-      "sha256": "879D222A3991915833C36009EF8F1FB8363764DB7157E835F146B9F4EB10771B"
+      "bytes": 23101,
+      "sha256": "E79F57289BE0749E346767B2E53D464606D5BD86F79FCA3BC1E47CFE3430483F"
     },
     {
       "path": "Assets/StageGame/Scripts/UI/HostLayout.cs",
+      "bytes": 1762,
       "sha256": "3F35560AE219719C7A4ECAA265D6E7F48B517123DC210E02D5649DDB8B30E165"
     },
     {
       "path": "Assets/StageGame/Scripts/UI/SafeAreaFitter.cs",
+      "bytes": 3002,
       "sha256": "0B55A9E30DF61CCCEE80B26CC2DC6EBF2DAE2292F69AA6806CE40466A8B68E51"
     }
   ],
@@ -189,16 +188,16 @@
   },
   "documentationFinalizedDateSeoul": "2026-10-14",
   "localization": {
-    "contract": "GameData/LOCALIZATION-CONTRACT.md; Docs/Management/CONTRACT.md v4",
+    "contract": "GameData/LOCALIZATION-CONTRACT.md; Docs/Management/CONTRACT.md v5",
     "schemaVersion": 1,
-    "entries": 123,
+    "entries": 137,
     "languages": [
       "ko",
       "en"
     ],
     "defaultLanguage": "ko",
     "languageSavedIn": "stagegame.progress.v1 language field",
-    "unityTests": "Full49/49 plus final targeted8/8; 50 unique passing names. Host profile captures in Evidence/host-*.",
+    "unityTests": "Initial full57/57 plus separate final copy-impact11/11; not a single68-test run.137 entries with approved3-key loss-copy change.",
     "independentCoreQA": "29 groups passed, 0 failed; Docs/QA/Evidence/qa-l10n-core-v1-20261014/run.log (Unity API stubs)",
     "captures": [
       "Evidence/ko-lobby.png",
@@ -251,7 +250,7 @@
   },
   "hostUi": {
     "evidence": "Evidence/host-ui-verification.json",
-    "status": "Complete and source frozen: Unity checks and both final builds passed; root final body30 browser retest passed",
+    "status": "Host bridge/reservation unchanged. Current map Unity checks and root browser checks passed within documented simulated portrait envelope.",
     "realTossSdk": false,
     "physicalDevice": false
   },
@@ -333,6 +332,142 @@
       }
     ],
     "actualTossSdk": false,
-    "physicalDevice": false
+    "physicalDevice": false,
+    "currentBuildScope": "Historical host/body30 build before the chapter-map change. This is not a browser result for the current new map."
+  },
+  "stageMap": {
+    "evidence": "Evidence/stage-map-verification.json",
+    "status": "Complete and source frozen: initial full57/57,final copy11/11,both development builds and root final browser retest passed",
+    "progressField": "highestClearedStage",
+    "sourceFrozen": true
+  },
+  "rootStageMapBrowserReport": {
+    "status": "PASS: initial functional checks and final copy-only browser retest are separately recorded",
+    "source": "Root coordinator chat report and README; no Client browser execution",
+    "sourceThreadId": "01a138d9-7ede-70d0-ba36-e84a05e6b105",
+    "reportedDateSeoul": "2026-10-14",
+    "report": "Docs/Management/Evidence/reference-ux-browser-20261014/README.md",
+    "scope": "Pre-copy chapter-map build",
+    "conditions": "390x844 and320x568;OS top59/bottom34,left/right0;simulated64 allowance",
+    "passed": [
+      "Chapter1->2->3->1,locked inspection and start blocked",
+      "Korean/English and390<->320 resize",
+      "Reload restoredEnglish,unlock2,clear1",
+      "Already-clearedstage1 replay won in9 plies,nextstage2",
+      "Stage2 lost in10 plies;primaryretry restores4-move opening",
+      "Illustrated help;pause;license entry/scroll/close"
+    ],
+    "limitations": "No new-clear increment,stage30 completion,draw or raw-save migration claimed as browser play. License final paragraph not repeated inthis browser run.",
+    "consoleErrorsWarnings": [],
+    "consoleProof": "Docs/Management/Evidence/reference-ux-browser-20261014/console-before-copy-fix.json",
+    "beforeCopyArtifacts": [
+      {
+        "path": "Builds/Android/StageGame-development.apk",
+        "bytes": 39792595,
+        "sha256": "256BD4A57F1724E92CC135073CCE31A22EFA4C3A56B1E1C5F552E979822698B2"
+      },
+      {
+        "path": "Builds/WebGL/Build/WebGL.wasm",
+        "bytes": 24390734,
+        "sha256": "D093BE45525525A092B3569D65CAE23B0A7A63C701A50859C41FFAE3ECC344C0"
+      },
+      {
+        "path": "Builds/WebGL/Build/WebGL.data",
+        "bytes": 18754010,
+        "sha256": "97139E530A503A059B86045CFDE50228B2F92313EDA3B68AFE5B8A131323AE71"
+      },
+      {
+        "path": "Builds/WebGL/Build/WebGL.framework.js",
+        "bytes": 761643,
+        "sha256": "F909F29D115947BE5BAB214FE3CD434A6197E6BDC2E24CE9C2933C64B58FAE08"
+      },
+      {
+        "path": "Builds/WebGL/index.html",
+        "bytes": 4416,
+        "sha256": "53BDBF4813EA2CFE5A19E5C21B3B711CD6AD08AD1200254146D1AB3BA3C6C3CA"
+      },
+      {
+        "path": "Builds/WebGL/ui-text.js",
+        "bytes": 448,
+        "sha256": "2D958DA273B7A6ACC2DFBD37EE24B034F0A82078A7BCA7755858A41C33A70FC8"
+      },
+      {
+        "path": "Builds/WebGL/host-layout.js",
+        "bytes": 2002,
+        "sha256": "187B6162FE987A784D66FB6F929EC64C4885D8BA2A5B5A7E176AF16DFC9DAC25"
+      }
+    ],
+    "preCopyLossCapture": "Docs/Management/Evidence/reference-ux-browser-20261014/en-loss-retry-390.jpg",
+    "actualTossSdk": false,
+    "physicalDevice": false,
+    "finalCopyRetest": {
+      "result": "PASS",
+      "source": "Root coordinator report and saved final capture/README; Client inspected the evidence and rechecked current artifact/data hashes, without running a browser",
+      "sourceThreadId": "01a138d9-7ede-70d0-ba36-e84a05e6b105",
+      "reportedDateSeoul": "2026-10-14",
+      "report": "Docs/Management/Evidence/reference-ux-browser-20261014/README.md",
+      "scope": "Final copy-only build after3 approved bilingual sentence removals",
+      "viewport": "390x844,simulatedOS top59/bottom34 plus64 host allowance",
+      "language": "ko",
+      "stage": 2,
+      "plies": 10,
+      "lossDirection": "vertical",
+      "caption": "AI가 세로로 네 개를 이었어요.",
+      "passed": [
+        "Reload final WebGL and capture Korean lobby/illustrated help",
+        "Reproduce stage2 ten-ply vertical loss with one-sentence caption",
+        "Primary retry button displayed",
+        "Return to lobby"
+      ],
+      "consoleErrorsWarnings": [],
+      "consoleProof": "Docs/Management/Evidence/reference-ux-browser-20261014/final-console.json",
+      "captures": [
+        "Docs/Management/Evidence/reference-ux-browser-20261014/final-ko-map-390.jpg",
+        "Docs/Management/Evidence/reference-ux-browser-20261014/final-ko-help-390.jpg",
+        "Docs/Management/Evidence/reference-ux-browser-20261014/final-ko-loss-390.jpg"
+      ],
+      "stringsSha256": "57E392CF68464898829946F17030E4AE3008AAB86370452BACF6DBE56D68A291",
+      "currentClientArtifactsRechecked": true,
+      "artifacts": [
+        {
+          "path": "Builds/Android/StageGame-development.apk",
+          "bytes": 39792595,
+          "sha256": "865DAD68BA5A648829F83428C53F7BC343C4AB60595F54BE9080D402B932EC95"
+        },
+        {
+          "path": "Builds/WebGL/Build/WebGL.wasm",
+          "bytes": 24390734,
+          "sha256": "D093BE45525525A092B3569D65CAE23B0A7A63C701A50859C41FFAE3ECC344C0"
+        },
+        {
+          "path": "Builds/WebGL/Build/WebGL.data",
+          "bytes": 18753989,
+          "sha256": "FA73330ECB9D638D63BBA6B2B4403E5F23A8A5BAF6F93CF48173E3469C9B17EE"
+        },
+        {
+          "path": "Builds/WebGL/Build/WebGL.framework.js",
+          "bytes": 761643,
+          "sha256": "F909F29D115947BE5BAB214FE3CD434A6197E6BDC2E24CE9C2933C64B58FAE08"
+        },
+        {
+          "path": "Builds/WebGL/index.html",
+          "bytes": 4416,
+          "sha256": "53BDBF4813EA2CFE5A19E5C21B3B711CD6AD08AD1200254146D1AB3BA3C6C3CA"
+        },
+        {
+          "path": "Builds/WebGL/ui-text.js",
+          "bytes": 448,
+          "sha256": "2D958DA273B7A6ACC2DFBD37EE24B034F0A82078A7BCA7755858A41C33A70FC8"
+        },
+        {
+          "path": "Builds/WebGL/host-layout.js",
+          "bytes": 2002,
+          "sha256": "187B6162FE987A784D66FB6F929EC64C4885D8BA2A5B5A7E176AF16DFC9DAC25"
+        }
+      ],
+      "limitations": "Final browser retest covers Korean vertical loss only; horizontal/diagonal andEnglish copy validated separately indata/Unity checks. Initial full functional report remains a preceding build scope.",
+      "actualTossSdk": false,
+      "physicalDevice": false
+    }
   }
 }

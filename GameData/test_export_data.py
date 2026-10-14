@@ -70,7 +70,7 @@ class ExportTests(unittest.TestCase):
         payloads = data.validate(self.tables)
         stages = payloads["stages.json"]["stages"]
         self.assertEqual(30, len(stages))
-        self.assertEqual(123, len(payloads["strings.json"]["strings"]))
+        self.assertEqual(137, len(payloads["strings.json"]["strings"]))
         for entry in payloads["strings.json"]["strings"]:
             self.assertEqual({"key", "ko", "en"}, set(entry))
         expected = {"id", "chapter", "titleKey", "aiDepth", "aiNodeBudget", "aiRandomPermille", "starter", "openingMoves"}

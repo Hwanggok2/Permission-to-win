@@ -6,7 +6,7 @@
 
 공통 실행: `Tests/run-independent.ps1 -RunId <새 ID>`. .NET 10.0.8에서 스냅샷 실제 소스를 컴파일한다. 규칙/AI/광고 상태는 실제 순수 C# 실행이며, ProgressStore와 GameApp은 `JsonUtility`, `PlayerPrefs`, UI/코루틴에 명시적인 대체 구현을 사용했다. 실제 Unity/디스크/SDK 동작까지 확인한 것은 아니다.
 
-**최신 체크포인트:** 확인된 열린 결함 **0건**. QA-009는 독립 호스트14묶음 통과로 종결했다. Client 전체 Unity49/49·수정 관련8/8·본문 확대 후 화면1/1 및 [본문30 최종 빌드/총괄 브라우저 연결](Evidence/qa-host-integration-final-20261014/results.json)을 확인했다. 실행 수는 중복 범위다. QA-001~005·QA-007~008 및 BAL-001 종결, QA-006 기각과 [기존 다국어 증거](Evidence/qa-l10n-integration-final-20261014/results.json)를 유지한다. 실제 기기/공식 광고/성능/사람 플레이/IAP·서버/출시 gate는 남는다.
+**최신 체크포인트:** 확인된 열린 결함 **0건**. QA-010은 정확한 문구 비교·제공 Unity 영향11/11·최종 패배 화면과 빌드 대조로 종결했다. 신규 단계 UX의 독립 저장8/8·UI/광고/다국어26/26 및 제공 Unity 전체57/57은 각각의 실행 범위에서 유지하며 합산하지 않는다. 실제 기기/공식 광고/성능/사람 플레이/IAP·서버/출시 gate는 남는다.
 
 ## QA-001 — 저장 실패 시 종료 판에서 결과 화면으로 이동하지 못함
 
@@ -141,3 +141,14 @@
 - 수정: Client가 JS의 float32 표현 불가능한 inset을 0, controlsBottom을 -1로 정규화하고 C#의 NaN/Infinity inset도 0으로 처리한다. 64px 제품 예약은 유지한다.
 - 수정 확인: [독립 C# 8/8](Evidence/qa-host-fixed-v1-20261014/geometry-results.json), [JS/브리지 6/6](Evidence/qa-host-fixed-v1-20261014/bridge-results.json). 기존 실패 입력에 대해 유한값 여부뿐 아니라 기대 Rect `(0,0,320,504)`, 브리지 `[0,0,0,0,390,844,-1]`, CSS 상단 `64px`까지 확인했다. 정상 inset/좌표/resize 회귀도 통과했고 실행 중 소스 변경은 없었다.
 - 종료 범위: 두 수치 경계 결함의 소스 독립 재현·수정 확인으로 종결한다. Client의 관련 Unity8/8 증거를 [별도 보존](Evidence/qa-host-editor-v1-20261014/results.json)했으며 호스트4소스가 독립 검사 스냅샷과 같다. 이후 본문30 [최종 빌드/브라우저 연결](Evidence/qa-host-integration-final-20261014/results.json)에서도 동일 소스를 확인했다. 실제 Toss·기기 검증은 별도다.
+
+## QA-010 — 불투명 패배 결과창이 가린 금색 줄을 보라는 안내
+
+- 심각도/상태: **낮음(P3), 수정·재검증 완료 / 종결**. 총괄 실제 브라우저에서 발견한, 화면에서 수행할 수 없는 행동을 안내하는 문제다.
+- 재현: 현재 단계지도 WebGL에서 패배 → 불투명 결과 모달이 보드를 가림 → `result_loss_horizontal/vertical/diagonal`의 둘째 문장이 ‘금색 줄을 살펴보세요 / Look at the gold line.’로 표시된다. 실제 입력은 총괄, QA는 [수정 전 패배 캡처](Evidence/qa-stage-loss-copy-before-20261014/en-loss-retry-390.jpg)와 당시 [문구/빌드 해시](Evidence/qa-stage-loss-copy-before-20261014/source-manifest.json)를 보존·검토했다.
+- 기대: 모달 안에서 읽을 수 있는 패배 방향 설명을 제공한다. 보이지 않는 판의 표시를 보라는 요청은 제거한다.
+- 승인된 수정 범위: 위3키의ko/en에서 첫 문장은 그대로 유지하고 둘째 문장만 삭제. 코드·프리팹·나머지134키는 유지한다. [정확한 변경 전/후 기대값](../../Tests/Fixtures/stage-ux-approved-copy-changes.json)에 총괄 지시를 기록했다.
+- 문구 수정 확인: [정확한 JSON 비교](Evidence/qa-stage-loss-copy-fixed-v1-20261014/results.json) **PASS**. 137행 중 승인3키의 ko/en 첫 문장만 남고 나머지134행은 동일하다. Generated/Client SHA-256 `57E392CF68464898829946F17030E4AE3008AAB86370452BACF6DBE56D68A291` 일치, 읽기 중 변경 없음.
+- 최종 연결: [통합 증거](Evidence/qa-stage-integration-final-20261014/results.json)에서 기존 독립검사 런타임7소스, Client 선언 코드/프리팹20개, 재적용5프리팹의 현재 해시 일치를 확인했다. 최종 APK/WebGL7산출물과 Client 두 보고서·총괄 기록이 모두 일치한다. 코드/프리팹 변경이 없어 앞선8·26묶음을 반복하지 않았다.
+- 재시험: Client의 문구 수정 후 영향 **11/11**은 최초 전체57개와 별도다. QA는 갱신된320폭 한영 세로 패배 이미지2개와 총괄의390폭 한국어 최종 패배/로비/도움말3개를 읽어 한 문장 안내·재도전 강조·주요 잘림 없음 확인. 총괄은 최종 WebGL을 새로 불러와2단계10수 세로 패배와 로비 복귀를 실제 입력으로 확인했고 콘솔 오류/경고0이다. [캡처 검토](Evidence/qa-stage-integration-final-20261014/capture-review.json).
+- 종료 범위: 방향3개×한영은 정확한 데이터 비교, 최종 한영 세로 패배는 Unity 렌더, 최종 한국어 세로 패배는 브라우저 포인터 증거다. 모든 방향·언어를 최종 브라우저에서 재현했다고 주장하지 않는다. QA는 Unity나 브라우저를 직접 실행하지 않았다.

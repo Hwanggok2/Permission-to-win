@@ -1,0 +1,36 @@
+{
+  "result": "PASS",
+  "method": "Apply twice to existing saved prefabs; compare SHA256",
+  "files": [
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/StageNode.prefab",
+      "before": "1E94736C1B85ED256F8EDD5CEF148FA9DE3DD1A60AB697C8899B9353D46970BA",
+      "after": "1E94736C1B85ED256F8EDD5CEF148FA9DE3DD1A60AB697C8899B9353D46970BA",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/LobbyScreen.prefab",
+      "before": "25A8EECF467D0B010DD0C9FA8E06032A9C02888E87450FAB037B722BB45E7E10",
+      "after": "25A8EECF467D0B010DD0C9FA8E06032A9C02888E87450FAB037B722BB45E7E10",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/HelpModal.prefab",
+      "before": "40701989DE343B7520FE7A139912F3A9CA108021E2B4CAAE8FB7D0D79B09C530",
+      "after": "40701989DE343B7520FE7A139912F3A9CA108021E2B4CAAE8FB7D0D79B09C530",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/ResultModal.prefab",
+      "before": "63E04FCA751B18F6E84A52A477E79A0BD9F119B2DCE6A2DCB319DC42B4804D64",
+      "after": "63E04FCA751B18F6E84A52A477E79A0BD9F119B2DCE6A2DCB319DC42B4804D64",
+      "unchanged": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/AppRoot.prefab",
+      "before": "D270D74685F3064FD82A0EB7D5C42982AB638CEBA4415307D46EC3A8DA5A1065",
+      "after": "D270D74685F3064FD82A0EB7D5C42982AB638CEBA4415307D46EC3A8DA5A1065",
+      "unchanged": true
+    }
+  ]
+}

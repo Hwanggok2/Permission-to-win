@@ -1,20 +1,21 @@
 # StageGame 클라이언트 구현 기록
 
-최종 체크포인트: **2026-10-14, 호스트 상단 예약·자체 도형 UI·작은 라이선스 메뉴 및 본문30 적용. Unity 전체49/49 + 경계8/8 + 최종 화면1/1 통과(고유50개). 최종 양 플랫폼 개발 빌드 성공(오류/경고0), 총괄 브라우저 본문30 최종 재시험 통과, 소스 동결**. Unity **6000.3.15f1**. 프로젝트 루트는 `C:\Github\StageGame\Client`.
+최종 체크포인트: **2026-10-14, 챕터 지도·그림 도움말·결과 행동 강조·완료 기록 개선. 초기 전체 Unity57/57 및 최종 문구 영향11/11 통과(서로 별도 실행). 총괄 지도 기능시험 통과, 패배 문구3개 수정 후 양 플랫폼 재빌드 성공(오류/경고0), 총괄 최종 문구 브라우저 재시험 통과. 코드·프리팹 동결 및 완료**. Unity **6000.3.15f1**. 프로젝트 루트는 `C:\Github\StageGame\Client`.
 
 ## 완료 결과
 
-7×6 중력식 4목의 오프라인 AI 스테이지 초기 버전이다. **30개 스테이지, 한국어/영어 설정과 즉시 전환·저장·복원, 저장된 씬·프리팹, Unity 전체49/49·경계8/8·최종 화면1/1 검사, Android 개발 APK, 일반 WebGL 개발 빌드**를 확보했다. IAP와 서버는 계획 상태다.
+7×6 중력식 4목의 오프라인 AI 스테이지 초기 버전이다. **30개 스테이지, 한국어/영어 설정과 즉시 전환·저장·복원, 저장된 씬·프리팹, Unity 전체57/57 검사, Android 개발 APK, 일반 WebGL 개발 빌드**를 확보했다. IAP와 서버는 계획 상태다.
 
 | 항목 | 확인 결과 | 증거 |
 |---|---|---|
-| Unity 컴파일·회귀 | 전체49/49 + 최종 경계8/8 + 본문 확대 후 화면1/1. 고유50개 통과, 단일50개 실행 아님 | `Evidence/unity-tests.xml`, `host-ui-boundary-tests.xml`, `host-ui-final-render.xml` |
-| Android 개발 APK | 성공, BuildReport 오류/경고 각각 0, APK 35,559,979 bytes | `Builds/Android/StageGame-development.apk`, `Evidence/android-build-summary.txt`, `Logs/android-host-ui-final.log` |
-| 일반 WebGL 개발 빌드 | 성공, BuildReport 오류/경고 각각 0 | `Builds/WebGL/index.html`, `Evidence/webgl-build-summary.txt`, `Logs/webgl-host-ui-final.log` |
+| Unity 컴파일·회귀 | 초기 전체57/57 + 승인된 문구 변경 후 관련11/11. 두 실행을 하나의68개 검사로 합산하지 않음 | `Evidence/stage-map-tests.xml`, `Evidence/loss-copy-tests.xml` |
+| Android 개발 APK | 성공, BuildReport 오류/경고 각각 0, APK 39,792,595 bytes | `Builds/Android/StageGame-development.apk`, `Evidence/android-build-summary.txt`, `Logs/android-stage-map-final.log` |
+| 일반 WebGL 개발 빌드 | 성공, BuildReport 오류/경고 각각 0 | `Builds/WebGL/index.html`, `Evidence/webgl-build-summary.txt`, `Logs/webgl-stage-map-final.log` |
 | 최신 한영 PlayMode 화면 | 실제 저장 씬 실행·카메라 렌더 720×1280, 영어 전환과 재실행 후 해금/언어 복원 | `Evidence/ko-lobby.png`, `ko-settings.png`, `ko-match.png`, `en-lobby.png`, `en-settings.png`, `en-match.png`, `en-restored.png` |
 | 추가 화면·UI 감사 | 영어 도움말·일시정지·결과, 버튼 영역 및 색 대비 계산 | `Evidence/en-help.png`, `en-confirm.png`, `en-result.png`, `ui-ux-audit.json` |
 | 독립 코어 QA | 29묶음 통과/0실패. Unity API 대체 harness이며 실제 기기 검증 아님 | `Docs/QA/Evidence/qa-l10n-core-v1-20261014/run.log` |
-| 최종 호스트 브라우저 | 총괄 실행 PASS. 본문24 기능 검사와 최종 본문30 스크롤/닫기/resize 재시험을 분리 기록 | `Evidence/host-ui-verification.json`; 총괄 `Docs/Management/Evidence/host-ui-browser-20261014/README.md` |
+| 최종 지도·문구 브라우저 | 총괄 실행 PASS. 최초 한영/챕터/잠금/실제 승패 흐름과 최종 한국어 세로 패배 문구 재시험을 구분 | `Evidence/stage-map-verification.json`; 총괄 `Docs/Management/Evidence/reference-ux-browser-20261014/README.md` |
+| 이전 호스트 전용 브라우저 | 총괄 실행 PASS. 본문24 기능 검사와 최종 본문30 스크롤/닫기/resize 재시험을 분리 기록 | `Evidence/host-ui-verification.json`; 총괄 `Docs/Management/Evidence/host-ui-browser-20261014/README.md` |
 | 이전 독립 브라우저 QA-008 | 새로고침 없이 390→320→390, 설정 크기·닫기 입력·언어 유지 통과. error/warn 없음 | `Evidence/layout-reflow-check.json`; 총괄 `Docs/Management/Evidence/localization-browser-20261014/final-*` |
 | 이전 빌드 브라우저 기준선 | 모바일 폭 잘림 수정 및 9수 승리→2/30 해금→새로고침 복원 통과. 한영 변경 전 결과 | `Evidence/responsive-check.json`, `webgl-browser-match.jpg`, `verification.json`의 `rootIndependentRetest` |
 | 최종 데이터 동기화 | 3개 JSON이 GameData/Generated와 SHA-256 일치 | `Evidence/verification.json` |
@@ -40,7 +41,22 @@
 - 긴 영어 제목 검사에서 `Review connections and defense`의 잘림을 발견했다. 로비 제목 폭 580/글자 32, 대국 제목 글자 28로 조정한 뒤 두 언어의 30개 제목을 모두 검사했다. 설정·로비·결과·일시정지 버튼 겹침과 영어 본문 높이 검사를 통과했다.
 - 불투명 색상 기준 대비는 본문/패널 13.20:1, 보조문구/패널 6.18:1, 짙은 글자/민트 12.01:1, 흰 글자/보조버튼 10.09:1이다. 비활성/장식 요소는 제외한 계산이며 전체 접근성 인증이나 사람 사용성 시험이 아니다.
 
-## 호스트 영역·자체 그래픽·라이선스 메뉴
+## 챕터 지도·그림 도움말·완료 기록 (계약 v5)
+
+- 로비는3개 챕터를 기존 이전/다음 버튼으로 넘기며 한 페이지에5열×2행의10개 노드만 표시한다. 공통 `StageNode.prefab`의 저장된 중첩 인스턴스이며 런타임 생성이나 스크롤은 없다. 입문/전술/도전은 기획 분류이며 난이도의 실측 보장이 아니다.
+- 각 노드는120×120 논리 단위로 최소 지원 조건320×568·상단59/하단34·추가64에서51.375 CSS px다. 상태 라벨은28단위(약12px)이며 완료 체크+문구, 현재/잠금 문구, 선택 숫자의 괄호를 함께 쓴다. 잠긴 노드를 선택해 이름·해금 조건을 볼 수 있지만 시작 버튼과 `StartStage`가 진행을 막는다. 선택한 완료 단계는 큰 ‘다시 도전’ CTA를 제공하고 전체 완료 수를 따로 표시한다.
+- `ProgressData.highestClearedStage`를 기존 `saveVersion:1`에 추가했다. 구형 저장은 `unlockedStage-1`까지만 완료를 추론하며,30단계 해금만으로 마지막 완료를 주장하지 않는다. 실제30단계 승리 후30을 저장하고 재도전/패배/중복 결과로 이를 낮추거나 중복 집계하지 않는다. 기존 처리한 판 ID·대국/광고 카운터·언어·소리 설정과 복구 경로를 유지한다. native Unity JSON/PlayerPrefs 검사와 실제 GameApp 결과→로비→재도전 흐름을 통과했다.
+- 도움말은 저장된3×4 중력 예시(밑의 산호 돌 위로 민트 돌이 놓임)와 가로·세로·대각선 방향별 정확히4개 돌의 추상 패턴을 사용한다. 방향 패턴에는 빈 격자를 넣지 않아 떠 있는 돌이나5목 판으로 오해하지 않게 했다. 모든 캡션은 Excel 키를 사용하고 두 언어의 높이/경계를 검사했다.
+- 결과는 일반 승리 때 다음 단계, 패배·무승부·최종 단계 승리 때 재도전을 민트로 강조한다. 로비는 항상 보조 색이다. 재도전 위치는 저장된 `PrimarySlot`/`SecondarySlot` 참조로 바뀌며 UI 트리를 다시 만들지 않는다. 테스트의 승/패/무승부 종료 국면 주입은 실제 사람 플레이 증거와 구분한다.
+- `StageMapBuilder.Apply`는 기존 프리팹을 제한 수정하고 누락된 지도/도형만 생성한다. 예전 장식과 도움말 본문은 비활성화해 보존했다. 새 그래픽은 기존 원본 SoftUI 스프라이트와 직접 작성한 Unity 도형이며 참고 이미지의 질감·캐릭터·테두리 자산을 복사하지 않았다. 두 번 적용한5개 프리팹의 SHA-256이 동일하다(`Evidence/stage-map-idempotence.json`). 재적용 순서는 필요할 때 기존 LocalizationBuilder→SoftUiBuilder→StageMapBuilder다.
+- 새14개 키를 데이터 담당의 Excel 생성물에서 동기화해137개 ko/en 키를 사용한다. stages/ads는 변경하지 않았으며 JSON3개의 원본/복사본 해시가 일치한다. 원본 Excel이나 외부 담당 폴더는 수정하지 않았다.
+- 문구 수정 전 전체 EditMode57/57 통과, `Evidence/stage-map-tests.xml`. 저장 프리팹·모든 노드 참조·그림의 돌 개수/방향·한영30개 제목·잠금 진입 차단·최종 완료와 재도전·승패 강조·호스트 최소44px/경계·390→320→390·라이선스 전문 스크롤을 포함한다. `Evidence/host-*.png`28개와 `Evidence/map-*.png`12개는 현재 저장 씬의 Unity 카메라 렌더다. 이전 호스트 기록의 같은 이미지 경로는 이번 렌더로 갱신됐으므로 현재 해시는 `Evidence/stage-map-verification.json`을 기준으로 한다.
+- 두 개발 빌드는 오류/경고0이며 APK 고지8개가 원문 해시와 일치한다. 최신 소스·프리팹·40개 캡처·산출물 해시는 `Evidence/stage-map-verification.json`, 전체 상태는 `STAGE-MAP-REQUEST.json`이다. 이전 본문30 빌드의 총괄 브라우저 결과는 별도 이전 범위로 남기며 새 지도 브라우저 결과로 사용하지 않는다. 총괄의 지도 기능시험과 승인된 패배 문구 수정 후 최종 안내 재시험을 모두 통과했다. 두 빌드의 검사 범위를 나누어 기록한다.
+- 총괄의 실제 브라우저 입력(2026-10-14, 채팅 `01a138d9-7ede-70d0-ba36-e84a05e6b105`)에서 한영·390↔320·챕터1→2→3→1·잠금 살펴보기와 시작 차단·그림 도움말·언어/진행 재로드가 통과했다. 이미 완료한1단계를9수로 재승리한 뒤 다음2단계로 진입했고,2단계10수 패배 후 강조된 재도전 버튼으로 초기4수 배치가 복원됐다. 새 완료 증가나30단계 완주를 이 브라우저에서 검사한 것으로 기록하지 않는다. 쉼·라이선스 진입/스크롤/닫기와 콘솔 오류/경고0도 보고됐으며 고지 끝 문단은 이번에 반복하지 않았다. 출처: [총괄 브라우저 기록](../Docs/Management/Evidence/reference-ux-browser-20261014/README.md). 실제 Toss SDK/휴대폰/사람 사용성 시험과 구분한다.
+- 패배 팝업이 판을 가리므로 총괄 승인에 따라 `result_loss_horizontal/vertical/diagonal`의 둘째 문장만 ko/en에서 제거했다. Excel 생성 JSON을 동기화했고137개 중3개만 변경, 나머지134개와 stages/ads·코드·프리팹은 동일하다. 이전 결과샷 `Docs/Management/Evidence/reference-ux-browser-20261014/en-loss-retry-390.jpg`는 문구 수정 전 증거로 보존한다. `Evidence/loss-copy-change.json`에 전후 문구와 불변 소스 해시를 기록했다.
+- 최종 문자열로 별도 Unity11/11을 통과했다. 문자열 조회/포맷/저장 언어, 모든 저장 텍스트 바인딩·데이터/프리팹 유효성, 한영 승패/무승부·최종 완료 결과 렌더를 포함한다(`Evidence/loss-copy-tests.xml`). 초기57/57과 합산하지 않고 변경 없는 기존 기능의 증거를 유지한다. 320px 영어 결과 캡처에서 AI의 연결 방향 한 문장만 표시됨을 확인했다.
+- 총괄의 최종 WebGL 재로드 후 한국어 로비·그림 도움말,2단계10수 세로 패배를 다시 확인했다. 안내는 ‘AI가 세로로 네 개를 이었어요.’ 한 문장이며 재도전이 주요 행동으로 표시되고 로비 복귀도 정상이다. 최종 관찰 콘솔은 `[]`다. [최종 패배](../Docs/Management/Evidence/reference-ux-browser-20261014/final-ko-loss-390.jpg) · [최종 로비](../Docs/Management/Evidence/reference-ux-browser-20261014/final-ko-map-390.jpg) · [최종 도움말](../Docs/Management/Evidence/reference-ux-browser-20261014/final-ko-help-390.jpg). 최종 브라우저 범위는 한국어 세로 패배 하나이며 가로/대각선·영어 패배까지 모두 재현했다고 기록하지 않는다. Client는 총괄 보고·캡처·빈 콘솔을 읽고 현재7개 산출물과 Generated/Client 문자열 `57E392...`의 해시 일치를 확인했다. 추가 코드 변경·브라우저 실행·빌드·테스트 없이 문서만 마감했고, 실제 Toss SDK·실기기는 미검증으로 유지한다.
+## 호스트 영역·자체 그래픽·라이선스 메뉴 (이전 구현 및 유지 계약)
 
 - 계약 v4에 따라 WebGL 콘텐츠 상단은 **OS 상단 inset + 64 CSS px** 아래에 둔다. 64는 StageGame 설계 여유이며 공식 Toss 버튼 높이나 실기기 측정값이 아니다. 총괄이 확인한 [공식 Safe Area 문서](https://developers-apps-in-toss.toss.im/documentation/common/screen/safe-area), 확인일 2026-10-14. 실제 Toss SDK는 아직 연결하지 않았다.
 - HTML 캔버스/배경은 전체 viewport를 유지하고 CSS에서 inset을 빼지 않는다. `HostLayout.ContentArea`는 각 변의 Unity OS safe inset과 브리지 CSS inset 중 큰 값을 취한 후 상단 64를 한 번 추가한다. CSS→Unity 변환은 각 축의 실제 Screen/viewport 비율을 사용한다. 선택적 실제 호스트 컨트롤 바닥 좌표가 있으면 `max(OS top+64, controlsBottom+8)`을 쓴다. Android 단독 앱에는 추가64를 적용하지 않는다.
@@ -56,7 +72,7 @@
 ## 구조·자료구조 감사
 
 - 42칸 `int[]`와 7열 높이 배열은 작은 고정 보드에 적합하며 착수 위치를 바로 구한다. 별도 그래프나 범용 보드 계층을 추가하지 않았다.
-- 123개 문자열은 키 기반 Dictionary를 한 번 구성하고 언어 변경 시 기존 Text를 갱신한다. 화면 수가 적어 기존 GameApp의 직렬화 참조와 명시적 갱신으로 충분하며 전역 이벤트 버스나 MVVM 프레임워크를 추가하지 않았다.
+- 현재137개 문자열은 키 기반 Dictionary를 한 번 구성하고 언어 변경 시 기존 Text를 갱신한다. 화면 수가 적어 기존 GameApp의 직렬화 참조와 명시적 갱신으로 충분하며 전역 이벤트 버스나 MVVM 프레임워크를 추가하지 않았다.
 - `IAdService`는 플랫폼 경계를 나누고 RewardGate의 요청 토큰은 늦은/중복 콜백을 거부한다. Status와 저장 경고는 UI 문자열 키로 변환했다. 실 SDK가 연결됐다는 뜻은 아니다.
 - 결과 중복 거부에는 저장 List와 조회 HashSet을 사용한다. 완료 판 ID가 계속 쌓이므로 장기 저장 크기/압축 정책은 후속 검토 대상이다.
 - AI는 기존 iterative deepening/alpha-beta 및 노드·시간 제한을 유지한다. 분기마다 Board.Clone, Score 객체, iterator가 할당되므로 GC 부담 가능성이 있다. 실기기 할당량·프레임 p95를 측정하기 전 최적화 완료로 주장하지 않으며 이번에 풀링·undo 보드 등으로 재작성하지 않았다.
@@ -77,7 +93,7 @@
 - 이번 Editor 배치 smoke에서 최고 예산의 빈 판 AI 응답은 연출 대기를 포함해 약 280ms였다. 이는 단일 개발 PC 검사이며 모바일 성능으로 일반화하지 않는다.
 - `GameData`: JsonUtility wrapper 계약 v1을 읽고 정확히 30개, 연속 ID/챕터/문자열 참조/AI 범위/시작측/합법 시작 수열을 검사한다. 실패하면 로비에 명시적 오류를 표시하고 시작 버튼을 막는다.
 - `GameApp`: 로비/스테이지 탐색→대국→결과→재도전/다음 스테이지, 일시정지·로비 복귀, 승리 줄과 패배 방향, 효과음·설정·도움말·고지를 연결한다.
-- `ProgressStore`: 게임 데이터와 별도 저장 버전 1, 최고 해금/완료 판수/설정/광고 간격/처리한 판 ID를 PlayerPrefs로 저장한다. 비연속 A→B→A 및 재실행 후 같은 결과 중복 처리를 막는다. 저장 실패는 경고를 표시하고 현재 플레이/결과 화면 이동을 계속 허용한다.
+- `ProgressStore`: 게임 데이터와 별도 저장 버전1, 최고 해금/실제 최고 완료 단계/완료 판수/설정/광고 간격/처리한 판 ID를 PlayerPrefs로 저장한다. 비연속 A→B→A 및 재실행 후 같은 결과 중복 처리를 막는다. 저장 실패는 경고를 표시하고 현재 플레이/결과 화면 이동을 계속 허용한다.
 - 서버/로그인/계정/결제 없이 대국과 해금을 진행한다.
 
 ## 실제 저장 UI
@@ -117,7 +133,7 @@
 - 판매 노출 조건: 원스토어 광고 미연결 버전에서는 구매 버튼을 숨긴다. 아직 제공하지 않는 광고의 제거 상품을 판매하지 않는다.
 - 구현 예정: 플랫폼별 결제 어댑터, 서버 검증을 거친 구매 권리 적용, 구매 복구, 저장된 Unity 프리팹 기반 구매/복구 UI. 로컬 값만으로 구매 권리를 확정하지 않는다.
 - QA 예정: 구매·복구 성공/실패, 환불 후 권리 갱신, 광고 제거 적용, 판당 힌트 제한, 광고 미연결 버전의 판매 버튼 비노출을 검증한다. 아직 수행하지 않았다.
-- 최신 총괄 계약은 v4이며 서버 계획은 **Cloudflare Workers Free + D1 Free + Secrets/mTLS**다. 무료 한도 내 운영 방향이고 실제 토스 mTLS·소유권·SDK 검증 및 배포는 미실행이다. 상세 조건은 `Server/README.md`를 따른다. JSON schema v1 및 오프라인 대국 구조는 유지한다.
+- 최신 총괄 계약은 v5이며 서버 계획은 **Cloudflare Workers Free + D1 Free + Secrets/mTLS**다. 무료 한도 내 운영 방향이고 실제 토스 mTLS·소유권·SDK 검증 및 배포는 미실행이다. 상세 조건은 `Server/README.md`를 따른다. JSON schema v1 및 오프라인 대국 구조는 유지한다.
 
 ## 한영 개선 이전의 검증·수정 이력
 
@@ -142,10 +158,10 @@
 |---|---|
 | `stages.json` | `2D04B124A42F0F3798AD942E9AACAB97EE34A25F05B380144CD70F75C3904992` |
 | `ads.json` | `D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A` |
-| `strings.json` (한영 123개) | `ED5FD27463724F4789B2F5E96922316240F73BF73EBC9D663410F0758E0883C2` |
-| Android APK (35,559,979 bytes) | `05E70261507378EEC397416566567802B49FB1173BC58A4F22A72488B3EE4B8D` |
-| WebGL WASM | `FD86D320DB92967BBE3DDF6FFB9CA06C26120223E3034753413070792C53D581` |
-| WebGL data | `72BBB0E061B59AD7EE3F72EF8C34A76F60B7B4CAEDA67184A2EFEB8B51D53407` |
+| `strings.json` (한영137개, 승인 패배문구3개 수정) | `57E392CF68464898829946F17030E4AE3008AAB86370452BACF6DBE56D68A291` |
+| Android APK (39,792,595 bytes) | `865DAD68BA5A648829F83428C53F7BC343C4AB60595F54BE9080D402B932EC95` |
+| WebGL WASM | `D093BE45525525A092B3569D65CAE23B0A7A63C701A50859C41FFAE3ECC344C0` |
+| WebGL data | `FA73330ECB9D638D63BBA6B2B4403E5F23A8A5BAF6F93CF48173E3469C9B17EE` |
 | WebGL index.html | `53BDBF4813EA2CFE5A19E5C21B3B711CD6AD08AD1200254146D1AB3BA3C6C3CA` |
 | WebGL ui-text.js | `2D958DA273B7A6ACC2DFBD37EE24B034F0A82078A7BCA7755858A41C33A70FC8` |
 
@@ -163,6 +179,8 @@ $project = 'C:\Github\StageGame\Client'
 & $unity -batchmode -nographics -projectPath $project -executeMethod StageGame.Editor.LocalizationBuilder.Apply -quit -logFile "$project\Logs\localization-prefabs.log"
 # 호스트 UI는 LocalizationBuilder 이후 적용하며 기존 자산을 보존한다
 & $unity -batchmode -nographics -projectPath $project -executeMethod StageGame.Editor.SoftUiBuilder.Apply -quit -logFile "$project\Logs\host-ui-prefabs.log"
+# 챕터 지도/그림 도움말은 마지막에 적용한다
+& $unity -batchmode -nographics -projectPath $project -executeMethod StageGame.Editor.StageMapBuilder.Apply -quit -logFile "$project\Logs\stage-map-prefabs.log"
 # 테스트에는 -quit를 추가하지 않는다
 & $unity -batchmode -projectPath $project -runTests -testPlatform EditMode -testResults "$project\Logs\editmode-results.xml" -logFile "$project\Logs\tests.log"
 & $unity -batchmode -nographics -projectPath $project -buildTarget Android -executeMethod StageGame.Editor.ProjectBuilder.BuildAndroid -quit -logFile "$project\Logs\android-build.log"

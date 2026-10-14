@@ -1,0 +1,290 @@
+{
+  "status": "Complete: approved3-key change;focused11/11;both final builds0 errors/0 warnings;code/prefabs unchanged;root final Korean vertical-loss browser retest PASS",
+  "keys": [
+    "result_loss_horizontal",
+    "result_loss_vertical",
+    "result_loss_diagonal"
+  ],
+  "beforeStringsSha256": "87A4ADD450E8A57B3CEF5600B8A447C8A55C78CD1F75F75E0BD94AC9CA56F13D",
+  "unchangedSourceFiles": [
+    {
+      "path": "Assets/StageGame/Prefabs/AppRoot.prefab",
+      "bytes": 156457,
+      "sha256": "D270D74685F3064FD82A0EB7D5C42982AB638CEBA4415307D46EC3A8DA5A1065"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/Board/Board.prefab",
+      "bytes": 216897,
+      "sha256": "6A097704967E6C5CB713D140ADF677767F9EAD93A69A1F84B808A3C8EF268921"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/Board/Cell.prefab",
+      "bytes": 4652,
+      "sha256": "F8DA99CA738CB9D2F5734476D4723CFCF6D156B0F54DF06305CFA948AE504E28"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/CloseButton.prefab",
+      "bytes": 6180,
+      "sha256": "9B61743FC5B16A5B9ACB451B06A3FEFC0195A4B9D1CE21B52A741B30AB13AEEC"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/ModalFrame.prefab",
+      "bytes": 13927,
+      "sha256": "BBFF4AC2C07FC27F3F1956D1DC805A42E5DF69C9CCC56AA5311BC98A29D67BF2"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/PrimaryButton.prefab",
+      "bytes": 6171,
+      "sha256": "F5D74DB2F74BD9333B0526F6727C5AA491820910E96907371B15CC1D0414A4C6"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/StageCard.prefab",
+      "bytes": 9520,
+      "sha256": "F719C59A122C7E35C706CF09DD7B2DD0ADBB9EC0BE2D580A6BA8A371D4CD1276"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/StageNode.prefab",
+      "bytes": 8569,
+      "sha256": "1E94736C1B85ED256F8EDD5CEF148FA9DE3DD1A60AB697C8899B9353D46970BA"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/ConfirmModal.prefab",
+      "bytes": 21664,
+      "sha256": "466FFDAA4B2A3942B836373D46669BBA858157ADAD0569DC997757136E37BAFD"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/GameScreen.prefab",
+      "bytes": 66642,
+      "sha256": "B8AE406C921FEEB83AAC42643F69EECF8FABA2E460EDC7873023783EA8266516"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/HelpModal.prefab",
+      "bytes": 95060,
+      "sha256": "40701989DE343B7520FE7A139912F3A9CA108021E2B4CAAE8FB7D0D79B09C530"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/LobbyScreen.prefab",
+      "bytes": 118632,
+      "sha256": "25A8EECF467D0B010DD0C9FA8E06032A9C02888E87450FAB037B722BB45E7E10"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/NoticesModal.prefab",
+      "bytes": 16092,
+      "sha256": "D819F1BCFF3187A3711A41A2B768D29E7CA60F335A8FE3D1D8A6D6A4A09FEC8E"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/ResultModal.prefab",
+      "bytes": 38649,
+      "sha256": "63E04FCA751B18F6E84A52A477E79A0BD9F119B2DCE6A2DCB319DC42B4804D64"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/SettingsModal.prefab",
+      "bytes": 37944,
+      "sha256": "8D825C3CEE59DE9878CEA03E290E77ADAC7F2F31C15BD5DF065B9DF05E40220A"
+    },
+    {
+      "path": "Assets/StageGame/Editor/StageMapBuilder.cs",
+      "bytes": 12622,
+      "sha256": "123F74CB505D7CB292D39DEBEA0F1F060DA9B74A82AA65C745D63447893BDB07"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/ProgressStore.cs",
+      "bytes": 3572,
+      "sha256": "FCDB8DC6DE3B8DD0AEF425930F61B5EA3AB3E729C56384A8D72B841E548E17D1"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/GameApp.cs",
+      "bytes": 23101,
+      "sha256": "E79F57289BE0749E346767B2E53D464606D5BD86F79FCA3BC1E47CFE3430483F"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/HostLayout.cs",
+      "bytes": 1762,
+      "sha256": "3F35560AE219719C7A4ECAA265D6E7F48B517123DC210E02D5649DDB8B30E165"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/SafeAreaFitter.cs",
+      "bytes": 3002,
+      "sha256": "0B55A9E30DF61CCCEE80B26CC2DC6EBF2DAE2292F69AA6806CE40466A8B68E51"
+    }
+  ],
+  "rootBrowserBeforeCopy": "Docs/Management/Evidence/reference-ux-browser-20261014/README.md",
+  "historicalLossCapture": "Docs/Management/Evidence/reference-ux-browser-20261014/en-loss-retry-390.jpg",
+  "changes": [
+    {
+      "key": "result_loss_diagonal",
+      "beforeKo": "AI가 대각선으로 네 개를 이었어요.\n금색 줄을 살펴보세요.",
+      "afterKo": "AI가 대각선으로 네 개를 이었어요.",
+      "beforeEn": "The AI connected four diagonally.\nLook at the gold line.",
+      "afterEn": "The AI connected four diagonally."
+    },
+    {
+      "key": "result_loss_horizontal",
+      "beforeKo": "AI가 가로로 네 개를 이었어요.\n금색 줄을 살펴보세요.",
+      "afterKo": "AI가 가로로 네 개를 이었어요.",
+      "beforeEn": "The AI connected four across.\nLook at the gold line.",
+      "afterEn": "The AI connected four across."
+    },
+    {
+      "key": "result_loss_vertical",
+      "beforeKo": "AI가 세로로 네 개를 이었어요.\n금색 줄을 살펴보세요.",
+      "afterKo": "AI가 세로로 네 개를 이었어요.",
+      "beforeEn": "The AI connected four vertically.\nLook at the gold line.",
+      "afterEn": "The AI connected four vertically."
+    }
+  ],
+  "unchangedEntries": 134,
+  "afterStringsSha256": "57E392CF68464898829946F17030E4AE3008AAB86370452BACF6DBE56D68A291",
+  "focusedTests": {
+    "total": 11,
+    "passed": 11,
+    "failed": 0,
+    "file": "Evidence/loss-copy-tests.xml",
+    "log": "Logs/loss-copy-tests.log",
+    "scope": "Separate final copy-impact run; do not sum with initial full57"
+  },
+  "preCopyArtifacts": [
+    {
+      "path": "Builds/Android/StageGame-development.apk",
+      "bytes": 39792595,
+      "sha256": "256BD4A57F1724E92CC135073CCE31A22EFA4C3A56B1E1C5F552E979822698B2"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.wasm",
+      "bytes": 24390734,
+      "sha256": "D093BE45525525A092B3569D65CAE23B0A7A63C701A50859C41FFAE3ECC344C0"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.data",
+      "bytes": 18754010,
+      "sha256": "97139E530A503A059B86045CFDE50228B2F92313EDA3B68AFE5B8A131323AE71"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.framework.js",
+      "bytes": 761643,
+      "sha256": "F909F29D115947BE5BAB214FE3CD434A6197E6BDC2E24CE9C2933C64B58FAE08"
+    },
+    {
+      "path": "Builds/WebGL/index.html",
+      "bytes": 4416,
+      "sha256": "53BDBF4813EA2CFE5A19E5C21B3B711CD6AD08AD1200254146D1AB3BA3C6C3CA"
+    },
+    {
+      "path": "Builds/WebGL/ui-text.js",
+      "bytes": 448,
+      "sha256": "2D958DA273B7A6ACC2DFBD37EE24B034F0A82078A7BCA7755858A41C33A70FC8"
+    },
+    {
+      "path": "Builds/WebGL/host-layout.js",
+      "bytes": 2002,
+      "sha256": "187B6162FE987A784D66FB6F929EC64C4885D8BA2A5B5A7E176AF16DFC9DAC25"
+    }
+  ],
+  "preCopyLossCaptureSha256": "DD4F0AA844CCBE447FACFC3575D4A94F77C2EA5A5EDEB35B001291CEE6AAC896",
+  "finalArtifacts": [
+    {
+      "path": "Builds/Android/StageGame-development.apk",
+      "bytes": 39792595,
+      "sha256": "865DAD68BA5A648829F83428C53F7BC343C4AB60595F54BE9080D402B932EC95"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.wasm",
+      "bytes": 24390734,
+      "sha256": "D093BE45525525A092B3569D65CAE23B0A7A63C701A50859C41FFAE3ECC344C0"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.data",
+      "bytes": 18753989,
+      "sha256": "FA73330ECB9D638D63BBA6B2B4403E5F23A8A5BAF6F93CF48173E3469C9B17EE"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.framework.js",
+      "bytes": 761643,
+      "sha256": "F909F29D115947BE5BAB214FE3CD434A6197E6BDC2E24CE9C2933C64B58FAE08"
+    },
+    {
+      "path": "Builds/WebGL/index.html",
+      "bytes": 4416,
+      "sha256": "53BDBF4813EA2CFE5A19E5C21B3B711CD6AD08AD1200254146D1AB3BA3C6C3CA"
+    },
+    {
+      "path": "Builds/WebGL/ui-text.js",
+      "bytes": 448,
+      "sha256": "2D958DA273B7A6ACC2DFBD37EE24B034F0A82078A7BCA7755858A41C33A70FC8"
+    },
+    {
+      "path": "Builds/WebGL/host-layout.js",
+      "bytes": 2002,
+      "sha256": "187B6162FE987A784D66FB6F929EC64C4885D8BA2A5B5A7E176AF16DFC9DAC25"
+    }
+  ],
+  "rootFinalBrowserRetest": {
+    "result": "PASS",
+    "source": "Root coordinator report and saved final capture/README; Client inspected the evidence and rechecked current artifact/data hashes, without running a browser",
+    "sourceThreadId": "01a138d9-7ede-70d0-ba36-e84a05e6b105",
+    "reportedDateSeoul": "2026-10-14",
+    "report": "Docs/Management/Evidence/reference-ux-browser-20261014/README.md",
+    "scope": "Final copy-only build after3 approved bilingual sentence removals",
+    "viewport": "390x844,simulatedOS top59/bottom34 plus64 host allowance",
+    "language": "ko",
+    "stage": 2,
+    "plies": 10,
+    "lossDirection": "vertical",
+    "caption": "AI가 세로로 네 개를 이었어요.",
+    "passed": [
+      "Reload final WebGL and capture Korean lobby/illustrated help",
+      "Reproduce stage2 ten-ply vertical loss with one-sentence caption",
+      "Primary retry button displayed",
+      "Return to lobby"
+    ],
+    "consoleErrorsWarnings": [],
+    "consoleProof": "Docs/Management/Evidence/reference-ux-browser-20261014/final-console.json",
+    "captures": [
+      "Docs/Management/Evidence/reference-ux-browser-20261014/final-ko-map-390.jpg",
+      "Docs/Management/Evidence/reference-ux-browser-20261014/final-ko-help-390.jpg",
+      "Docs/Management/Evidence/reference-ux-browser-20261014/final-ko-loss-390.jpg"
+    ],
+    "stringsSha256": "57E392CF68464898829946F17030E4AE3008AAB86370452BACF6DBE56D68A291",
+    "currentClientArtifactsRechecked": true,
+    "artifacts": [
+      {
+        "path": "Builds/Android/StageGame-development.apk",
+        "bytes": 39792595,
+        "sha256": "865DAD68BA5A648829F83428C53F7BC343C4AB60595F54BE9080D402B932EC95"
+      },
+      {
+        "path": "Builds/WebGL/Build/WebGL.wasm",
+        "bytes": 24390734,
+        "sha256": "D093BE45525525A092B3569D65CAE23B0A7A63C701A50859C41FFAE3ECC344C0"
+      },
+      {
+        "path": "Builds/WebGL/Build/WebGL.data",
+        "bytes": 18753989,
+        "sha256": "FA73330ECB9D638D63BBA6B2B4403E5F23A8A5BAF6F93CF48173E3469C9B17EE"
+      },
+      {
+        "path": "Builds/WebGL/Build/WebGL.framework.js",
+        "bytes": 761643,
+        "sha256": "F909F29D115947BE5BAB214FE3CD434A6197E6BDC2E24CE9C2933C64B58FAE08"
+      },
+      {
+        "path": "Builds/WebGL/index.html",
+        "bytes": 4416,
+        "sha256": "53BDBF4813EA2CFE5A19E5C21B3B711CD6AD08AD1200254146D1AB3BA3C6C3CA"
+      },
+      {
+        "path": "Builds/WebGL/ui-text.js",
+        "bytes": 448,
+        "sha256": "2D958DA273B7A6ACC2DFBD37EE24B034F0A82078A7BCA7755858A41C33A70FC8"
+      },
+      {
+        "path": "Builds/WebGL/host-layout.js",
+        "bytes": 2002,
+        "sha256": "187B6162FE987A784D66FB6F929EC64C4885D8BA2A5B5A7E176AF16DFC9DAC25"
+      }
+    ],
+    "limitations": "Final browser retest covers Korean vertical loss only; horizontal/diagonal andEnglish copy validated separately indata/Unity checks. Initial full functional report remains a preceding build scope.",
+    "actualTossSdk": false,
+    "physicalDevice": false
+  }
+}

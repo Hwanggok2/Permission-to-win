@@ -27,5 +27,10 @@
       "bytes": 11904,
       "sha256": "3AD73294D2583AB6CA32DF5217EDBA067CCF41C746A895913CD560776BE0F2A9"
     }
-  ]
+  ],
+  "stageMapReuse": {
+    "generator": "Assets/StageGame/Editor/StageMapBuilder.cs",
+    "sha256": "123F74CB505D7CB292D39DEBEA0F1F060DA9B74A82AA65C745D63447893BDB07",
+    "usage": "Saved StageNode and help geometry reuse original SoftUI sprites. Three abstract direction patterns each contain four stones; no external reference artwork copied."
+  }
 }

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="11" result="Passed" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-14 12:43:42Z" end-time="2026-10-14 12:43:42Z" duration="0.4736305">
+  <test-suite type="TestSuite" id="1000" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="57" result="Passed" start-time="2026-10-14 12:43:42Z" end-time="2026-10-14 12:43:42Z" duration="0.473631" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1069" name="StageGame.Tests.dll" fullname="C:/Github/StageGame/Client/Library/ScriptAssemblies/StageGame.Tests.dll" runstate="Runnable" testcasecount="57" result="Passed" start-time="2026-10-14 12:43:42Z" end-time="2026-10-14 12:43:42Z" duration="0.394110" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="48368" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1070" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="57" result="Passed" start-time="2026-10-14 12:43:42Z" end-time="2026-10-14 12:43:42Z" duration="0.392665" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1071" name="Tests" fullname="StageGame.Tests" runstate="Runnable" testcasecount="57" result="Passed" start-time="2026-10-14 12:43:42Z" end-time="2026-10-14 12:43:42Z" duration="0.391227" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1001" name="CoreTests" fullname="StageGame.Tests.CoreTests" classname="StageGame.Tests.CoreTests" runstate="Runnable" testcasecount="25" result="Passed" start-time="2026-10-14 12:43:40Z" end-time="2026-10-14 12:43:40Z" duration="0.072675" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1027" name="SavedPrefabReferencesAndNestedButtonsValidate" fullname="StageGame.Tests.CoreTests.SavedPrefabReferencesAndNestedButtonsValidate" methodname="SavedPrefabReferencesAndNestedButtonsValidate" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="192553217" result="Passed" start-time="2026-10-14 12:43:40Z" end-time="2026-10-14 12:43:40Z" duration="0.057830" asserts="0">
+              <properties />
+              <output><![CDATA[[StageGame] Validation passed: 30 stages, 42 cells, 7 columns, nested CloseButtons.
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1039" name="LocalizationTests" fullname="StageGame.Tests.LocalizationTests" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-10-14 12:43:40Z" end-time="2026-10-14 12:43:40Z" duration="0.026889" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1049" name="EverySavedUiTextHasAKeyOrExplicitDynamicOwnerAndButtonsHaveTouchArea" fullname="StageGame.Tests.LocalizationTests.EverySavedUiTextHasAKeyOrExplicitDynamicOwnerAndButtonsHaveTouchArea" methodname="EverySavedUiTextHasAKeyOrExplicitDynamicOwnerAndButtonsHaveTouchArea" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="1382226448" result="Passed" start-time="2026-10-14 12:43:40Z" end-time="2026-10-14 12:43:40Z" duration="0.010369" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1040" name="LanguageLookupFormattingAndUnknownLocaleFollowContract" fullname="StageGame.Tests.LocalizationTests.LanguageLookupFormattingAndUnknownLocaleFollowContract" methodname="LanguageLookupFormattingAndUnknownLocaleFollowContract" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="1820838623" result="Passed" start-time="2026-10-14 12:43:40Z" end-time="2026-10-14 12:43:40Z" duration="0.006301" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1048" name="LegacyAndInvalidSavedLocalesPreserveProgressAndDefaultToKorean" fullname="StageGame.Tests.LocalizationTests.LegacyAndInvalidSavedLocalesPreserveProgressAndDefaultToKorean" methodname="LegacyAndInvalidSavedLocalesPreserveProgressAndDefaultToKorean" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="1427138172" result="Passed" start-time="2026-10-14 12:43:40Z" end-time="2026-10-14 12:43:40Z" duration="0.004835" asserts="0">
+              <properties />
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1047" name="MissingTranslationsAndInvalidArgumentsAreRejected" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-14 12:43:40Z" end-time="2026-10-14 12:43:40Z" duration="0.002535" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1041" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;&quot;,&quot;Text&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;&quot;,&quot;Text&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="1321090166" result="Passed" start-time="2026-10-14 12:43:40Z" end-time="2026-10-14 12:43:40Z" duration="0.000570" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1042" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;문구&quot;,&quot;&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;문구&quot;,&quot;&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="1087041662" result="Passed" start-time="2026-10-14 12:43:40Z" end-time="2026-10-14 12:43:40Z" duration="0.000162" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1043" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{0}&quot;,&quot;{1}&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{0}&quot;,&quot;{1}&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="846619423" result="Passed" start-time="2026-10-14 12:43:40Z" end-time="2026-10-14 12:43:40Z" duration="0.000139" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1044" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{0:00}&quot;,&quot;{0:00}&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{0:00}&quot;,&quot;{0:00}&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="852137281" result="Passed" start-time="2026-10-14 12:43:40Z" end-time="2026-10-14 12:43:40Z" duration="0.000233" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1045" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{broken}&quot;,&quot;{broken}&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{broken}&quot;,&quot;{broken}&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="1806833017" result="Passed" start-time="2026-10-14 12:43:40Z" end-time="2026-10-14 12:43:40Z" duration="0.000086" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1046" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{1}&quot;,&quot;{1}&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{1}&quot;,&quot;{1}&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="327058044" result="Passed" start-time="2026-10-14 12:43:40Z" end-time="2026-10-14 12:43:40Z" duration="0.000061" asserts="0">
+                <properties />
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestFixture" id="1050" name="PlayFlowTests" fullname="StageGame.Tests.PlayFlowTests" classname="StageGame.Tests.PlayFlowTests" runstate="Runnable" testcasecount="11" result="Passed" start-time="2026-10-14 12:43:42Z" end-time="2026-10-14 12:43:42Z" duration="0.368331" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1054" name="ResultPriorityAndFinalStageClearDriveReplayMap" fullname="StageGame.Tests.PlayFlowTests.ResultPriorityAndFinalStageClearDriveReplayMap" methodname="ResultPriorityAndFinalStageClearDriveReplayMap" classname="StageGame.Tests.PlayFlowTests" runstate="Runnable" seed="1416479462" result="Passed" start-time="2026-10-14 12:43:40Z" end-time="2026-10-14 12:43:42Z" duration="2.093396" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Capture] map-ko-320-result-0: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=30
+[Capture] map-ko-320-result-1: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=30
+[Capture] map-ko-320-result-2: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=30
+[Capture] map-ko-320-all-cleared: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=30
+[Capture] map-en-320-result-0: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=30
+[Capture] map-en-320-result-1: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=30
+[Capture] map-en-320-result-2: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=30
+[Capture] map-en-320-all-cleared: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=30
+Saving results to: C:\Github\StageGame\Client\Logs\loss-copy-tests.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -1,0 +1,122 @@
+{
+  "method": "Static saved YAML/reference read; no Unity, rendering, pointer or GUID-resolution execution",
+  "arrays": [
+    {
+      "field": "stageNodes",
+      "count": 10,
+      "uniqueCount": 10,
+      "allDeclared": true,
+      "ids": [
+        "7010295824065991243",
+        "6036165846148830377",
+        "1392005984032669006",
+        "721565626233961311",
+        "9162742542959132954",
+        "3617826207842058612",
+        "8677276343409075781",
+        "2985691587650007729",
+        "4950803097869185956",
+        "1118163832577712996"
+      ]
+    },
+    {
+      "field": "stageNodeNumbers",
+      "count": 10,
+      "uniqueCount": 10,
+      "allDeclared": true,
+      "ids": [
+        "7495094460214778985",
+        "6525357971873585803",
+        "1881123978613764972",
+        "236995636938716541",
+        "8530635251627740984",
+        "4287259303301369686",
+        "8151971106162370663",
+        "2316311414760946835",
+        "5620131095487413638",
+        "490604628144680262"
+      ]
+    },
+    {
+      "field": "stageNodeStates",
+      "count": 10,
+      "uniqueCount": 10,
+      "allDeclared": true,
+      "ids": [
+        "7270689960284089743",
+        "6227347765516249965",
+        "1656859597674955402",
+        "1129483260748776603",
+        "8829209059381001950",
+        "4006557506999860912",
+        "9062614415759415681",
+        "3224702375593823605",
+        "4691614158423428192",
+        "732884987817958560"
+      ]
+    }
+  ],
+  "scalars": [
+    {
+      "field": "chapterLabel",
+      "declared": true,
+      "id": "253933782249975905"
+    },
+    {
+      "field": "chapterTier",
+      "declared": true,
+      "id": "7502108330447340951"
+    },
+    {
+      "field": "retryLabel",
+      "declared": true,
+      "id": "5624641209382826095"
+    },
+    {
+      "field": "nextStageLabel",
+      "declared": true,
+      "id": "5216761253956070057"
+    },
+    {
+      "field": "resultLobbyLabel",
+      "declared": true,
+      "id": "5968308881232282813"
+    },
+    {
+      "field": "resultPrimarySlot",
+      "declared": true,
+      "id": "1036368037490223911"
+    },
+    {
+      "field": "resultSecondarySlot",
+      "declared": true,
+      "id": "1372783968778493708"
+    }
+  ],
+  "helpBindings": [
+    {
+      "key": "help_drop_title",
+      "targetDeclared": true,
+      "dataKeyExists": true
+    },
+    {
+      "key": "help_drop_caption",
+      "targetDeclared": true,
+      "dataKeyExists": true
+    },
+    {
+      "key": "help_connect_title",
+      "targetDeclared": true,
+      "dataKeyExists": true
+    },
+    {
+      "key": "help_connect_caption",
+      "targetDeclared": true,
+      "dataKeyExists": true
+    }
+  ],
+  "nodePrefabGuid": "1749f8c4ace242b458a1938330c0856c",
+  "nodeInstancesInLobby": 10,
+  "runtimeUiConstructionMatches": [],
+  "limits": "Local fileID declarations and source prefab GUID counts are necessary but do not prove native reference types/resolution, 5x2 geometry, hierarchy activation, raycast targets or44px. Supplied Client native tests/captures and root browser evidence are separate."
+}

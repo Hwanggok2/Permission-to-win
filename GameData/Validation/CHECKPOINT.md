@@ -1,6 +1,12 @@
 # 데이터 재동기화 준비 완료
 
-## 최신: 한국어·영어 지원
+## 최신: 단계 선택·그림 도움말 14개 추가 및 패배 안내 3개 수정
+
+2026-10-14. **기존 120개 보존 + 방향별 패배 안내 3개 승인 수정 + 신규 14개 = 총 137개**, schemaVersion 1이다. 총괄의 실제 브라우저 검사로 승인된 `result_loss_horizontal/vertical/diagonal`의 둘째 줄(금색 줄 안내)만 ko/en에서 삭제했다. Excel 변경 셀은 C101:C103·E101:E103이며, 나머지 기존 값과 전체 서식·행/열 크기·고정창·입력 유효성을 보존했다. 스테이지/광고 시트와 JSON 바이트도 그대로다. 반복 export 동일, `--check` 및 Python **36개 테스트 통과**. 추가 범위 B128:E141 및 수정 범위 B101:E103의 렌더를 확인했다. Client 재동기화 가능.
+
+`Generated/strings.json` SHA-256: `57e392cf68464898829946f17030e4ae3008aab86370452bacf6dbe56d68a291`. 원본과 전체 JSON 해시·신규 문구·포맷 인자 수는 [stage-map-strings-results.json](C:/Github/StageGame/GameData/Validation/stage-map-strings-results.json)에 기록했다. 입문/전술/도전은 1–10/11–20/21–30 챕터 표시명이다. 사람 난이도나 실제 클라이언트 UI 검증 완료를 뜻하지 않는다.
+
+## 이전: 한국어·영어 지원
 
 2026-10-14. 총괄 승인 및 Client 공유 요청을 반영해 Strings에 Content_Eng를 추가했다. ko/en 123개, schemaVersion 1, 기존 key/ko 유지. 신규 UI 키 65개이며 Client 요청 70개 전체의 문구·인자 수를 검증했다. `stages.json`과 `ads.json`은 이전 바이트 그대로다. exporter/`--check` 및 Python 36개 테스트가 통과했다. [계약·문자열 해시](C:/Github/StageGame/GameData/LOCALIZATION-CONTRACT.md), [보존 증거](C:/Github/StageGame/GameData/Validation/localization-results.json).
 

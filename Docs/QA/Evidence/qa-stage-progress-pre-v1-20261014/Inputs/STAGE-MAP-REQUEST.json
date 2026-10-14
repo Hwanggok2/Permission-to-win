@@ -1,0 +1,25 @@
+{
+  "status": "IMPLEMENTATION_PLAN_READY__WAITING_DATA_KEYS",
+  "dateSeoul": "2026-10-14",
+  "owner": "Client only. Root owns browser/Git integration.",
+  "scope": [
+    "Chapter pages of10 saved StageNode prefabs,5x2; locked inspection and blocked start",
+    "Stored geometric gravity/four-in-row help diagrams",
+    "Result emphasis: next after win; retry after loss/draw/final clear"
+  ],
+  "layout": {
+    "reference": "720x960",
+    "nodeSize": "120x120 reference,51.375 CSS px at320x568 top59 bottom34 plus64",
+    "chapterNavigation": "Existing Previous/Following,3 chapter pages",
+    "selection": "Bracketed number and background; cleared check+text, current/locked text",
+    "hierarchy": "Title,chapter controls,10 nodes,selected stage card,clear count,primary CTA,help/settings,banner reserve",
+    "preserve": "Existing sprite/font/host contract and saved prefab structure; older decorations disabled, not deleted"
+  },
+  "progress": {
+    "field": "highestClearedStage additive int in existing saveVersion1",
+    "legacy": "Infer at most unlockedStage-1; unlocked30 becomes cleared29 until a new win at30",
+    "retained": "processedMatchIds,completedMatches,ad counters,sound,language,existing recovery handling"
+  },
+  "strings": "Use all13 coordinator-provided stage_map/stage_state/help keys; no additional keys requested",
+  "verification": "Add save migration/final clear/replay,chapter selection/locked start,correct4-stone diagrams,result emphasis. Full EditMode,320/390 ko/en render bounds,Android/WebGL builds,hashes and IMPLEMENTATION.md. Root browser only."
+}

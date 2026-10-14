@@ -26,20 +26,32 @@ def cell_signature(cell):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--before', type=Path, help='optional untouched pre-edit workbook')
+    parser.add_argument('--report', type=Path, default=ROOT / 'Validation/localization-results.json',
+                        help='preservation evidence destination; used only with --before')
     args = parser.parse_args()
     request_path = ROOT.parent / 'Client/LOCALIZATION-REQUEST.json'
     request = json.loads(request_path.read_text(encoding='utf-8'))
+    revision_path = ROOT / 'Validation/approved-string-revisions.json'
+    revision_rows = json.loads(revision_path.read_text(encoding='utf-8'))['revisions']
+    revisions = {r['key']: r for r in revision_rows}
+    assert len(revisions) == len(revision_rows)
     expected = data.serialize(data.validate(data.read_source(data.SOURCE)))
     for name, content in expected.items():
         assert (data.GENERATED / name).read_bytes() == content, f'stale {name}'
     entries = json.loads(expected['strings.json'])['strings']
     by_key = {r['key']: r for r in entries}
     assert len(by_key) == len(entries)
+    for key, revision in revisions.items():
+        assert by_key[key] == {'key': key, **revision['after']}, f'approved copy mismatch: {key}'
     assert len({r['key'] for r in request['strings']}) == len(request['strings'])
     for row in request['strings']:
         actual = by_key[row['key']]
         for locale in ('ko', 'en'):
-            assert actual[locale] == row[locale], f"copy mismatch: {row['key']}/{locale}"
+            revision = revisions.get(row['key'])
+            if revision:
+                assert row[locale] in (revision['before'][locale], revision['after'][locale]), row['key']
+            else:
+                assert actual[locale] == row[locale], f"copy mismatch: {row['key']}/{locale}"
             assert len(data.format_indices(actual[locale], row['key'])) == row['formatArgCount']
     # These unchanged runtime bytes also cover source stage/ad value preservation.
     stable = {
@@ -53,6 +65,7 @@ def main():
         old, new = load_workbook(args.before), load_workbook(data.SOURCE)
         try:
             assert old.sheetnames == new.sheetnames
+            changed_cells = []
             for name in old.sheetnames:
                 a, b = old[name], new[name]
                 if name != 'Strings':
@@ -63,7 +76,16 @@ def main():
                 assert list(a.merged_cells.ranges) == list(b.merged_cells.ranges)
                 for row in a:
                     for cell in row:
-                        assert cell_signature(cell) == cell_signature(b[cell.coordinate]), (name, cell.coordinate)
+                        target = b[cell.coordinate]
+                        revision = revisions.get(a.cell(cell.row, 2).value) if name == 'Strings' else None
+                        locale = {3: 'ko', 5: 'en'}.get(cell.column)
+                        if revision and locale and cell.value != target.value:
+                            assert cell.value == revision['before'][locale], (name, cell.coordinate, 'before copy')
+                            assert target.value == revision['after'][locale], (name, cell.coordinate, 'after copy')
+                            assert cell_signature(cell)[1:] == cell_signature(target)[1:], (name, cell.coordinate, 'style')
+                            changed_cells.append(f'{name}!{cell.coordinate}')
+                        else:
+                            assert cell_signature(cell) == cell_signature(target), (name, cell.coordinate)
                 for key, dim in a.row_dimensions.items():
                     assert dim.height == b.row_dimensions[key].height, (name, key, 'row height')
                 for key, dim in a.column_dimensions.items():
@@ -77,18 +99,21 @@ def main():
                                            and v.formula1 == validation.formula1 and v.formula2 == validation.formula2
                                            for v in b.data_validations.dataValidation), (name, cell.coordinate, 'validation')
             preservation = {'beforeSha256': sha(args.before), 'unchangedSheets': ['Stages', 'AdConfig'],
-                            'preservedStringsRange': 'A1:D62', 'valuesStylesDimensionsPanesValidation': 'passed'}
+                            'comparedStringsRange': old['Strings'].calculate_dimension(),
+                            'approvedChangedCells': changed_cells,
+                            'otherValuesStylesDimensionsPanesValidation': 'passed'}
         finally:
             old.close()
             new.close()
     report = {'sourceSha256': sha(data.SOURCE), 'clientRequestSha256': sha(request_path),
+              'approvedRevisionsSha256': sha(revision_path), 'approvedRevisedKeys': sorted(revisions),
               'strings': len(entries), 'clientRequestedKeys': len(request['strings']),
               'locales': ['ko', 'en'], 'clientCopyAndFormatArgs': 'passed',
               'stableRuntimeHashes': stable, 'stringsSha256': sha(data.GENERATED / 'strings.json'),
               'preservation': preservation}
     # Only overwrite the evidence file when the full preservation comparison ran.
     if args.before:
-        (ROOT / 'Validation/localization-results.json').write_text(
+        args.report.write_text(
             json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(json.dumps(report, ensure_ascii=False, indent=2))
 

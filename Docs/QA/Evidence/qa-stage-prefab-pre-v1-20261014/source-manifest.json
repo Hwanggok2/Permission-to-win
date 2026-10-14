@@ -1,0 +1,54 @@
+[
+  {
+    "source": "Client/Assets/StageGame/Prefabs/AppRoot.prefab",
+    "sha256": "D270D74685F3064FD82A0EB7D5C42982AB638CEBA4415307D46EC3A8DA5A1065"
+  },
+  {
+    "source": "Client/Assets/StageGame/Prefabs/UI/Screens/LobbyScreen.prefab",
+    "sha256": "25A8EECF467D0B010DD0C9FA8E06032A9C02888E87450FAB037B722BB45E7E10"
+  },
+  {
+    "source": "Client/Assets/StageGame/Prefabs/UI/Screens/HelpModal.prefab",
+    "sha256": "40701989DE343B7520FE7A139912F3A9CA108021E2B4CAAE8FB7D0D79B09C530"
+  },
+  {
+    "source": "Client/Assets/StageGame/Prefabs/UI/Screens/ResultModal.prefab",
+    "sha256": "63E04FCA751B18F6E84A52A477E79A0BD9F119B2DCE6A2DCB319DC42B4804D64"
+  },
+  {
+    "source": "Client/Assets/StageGame/Prefabs/UI/Common/StageNode.prefab",
+    "sha256": "1E94736C1B85ED256F8EDD5CEF148FA9DE3DD1A60AB697C8899B9353D46970BA"
+  },
+  {
+    "source": "Client/Assets/StageGame/Prefabs/UI/Common/StageNode.prefab.meta",
+    "sha256": "E239F8C16162A1F5B13DB6131D280AB51CDB1B0CAB444244BD0F359EB5449B77"
+  },
+  {
+    "source": "Client/Assets/StageGame/Editor/StageMapBuilder.cs",
+    "sha256": "123F74CB505D7CB292D39DEBEA0F1F060DA9B74A82AA65C745D63447893BDB07"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/UI/GameApp.cs",
+    "sha256": "E79F57289BE0749E346767B2E53D464606D5BD86F79FCA3BC1E47CFE3430483F"
+  },
+  {
+    "source": "Client/Assets/StageGame/Tests/EditMode/StageMapTests.cs",
+    "sha256": "B04A32A6910D8132D549C7D49196E7E9FD25F9FC8AE30A42435F5CC3CD03AAD9"
+  },
+  {
+    "source": "Client/Assets/StageGame/Tests/EditMode/PlayFlowTests.cs",
+    "sha256": "E6689E963603B5363CE59C08EF9EBF384D59330EDC968499A8E83C2F80B17BBC"
+  },
+  {
+    "source": "Client/Assets/StageGame/Resources/GameData/strings.json",
+    "sha256": "87A4ADD450E8A57B3CEF5600B8A447C8A55C78CD1F75F75E0BD94AC9CA56F13D"
+  },
+  {
+    "source": "Client/STAGE-MAP-REQUEST.json",
+    "sha256": "CBEE4955AA4CC530F6DC9FB060BAFE445E75885070D6BD4F090D0DEFD55EA142"
+  },
+  {
+    "source": "Tests/check-stage-prefab.ps1",
+    "sha256": "CE59D762370C372628E5B91E768F2335206A5D40DAF9DD089B3BA1E778475C01"
+  }
+]
