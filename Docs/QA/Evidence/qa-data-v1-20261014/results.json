@@ -1,0 +1,27 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "exporterTests": {
+    "run": 21,
+    "failures": 0,
+    "errors": 0
+  },
+  "checks": [
+    {
+      "name": "excel_to_generated_bytes",
+      "status": "PASS",
+      "detail": "All three generated JSON files match the snapshotted Excel and actual exporter byte-for-byte."
+    },
+    {
+      "name": "generated_to_client_import",
+      "status": "PASS",
+      "detail": "All three Client imports are semantically identical."
+    },
+    {
+      "name": "batch_write_failure_preserves_all_outputs",
+      "status": "FAIL",
+      "detail": "Partial write after second replacement failure: changed=['stages.json']; missing titleKey references=['stage_001_qa_changed']"
+    }
+  ],
+  "sources_changed_during_run": [],
+  "limitations": "No workbook authoring, source writes, visual layout checks, Unity JSON, device or live ads. Exporter existing test outputs redirected under Tests/.work. Test snapshots preserve exact input."
+}

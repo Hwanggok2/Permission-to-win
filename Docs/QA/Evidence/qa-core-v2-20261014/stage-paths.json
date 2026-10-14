@@ -1,0 +1,3152 @@
+{
+  "method": "Player AiSearch depth 4/5/6, budget 30000; up to 12 diversified attempts. Stage AI uses GameApp fixed seed formula (id-1)*997\u002BMoveCount*31 and completes search; does NOT emulate GameApp 0.65s wall-clock cutoff. Whole-board oracle checks terminal path. Immediate-loss proof enumerates every player move and all immediate AI wins.",
+  "limitations": "Example paths only, not optimal-play forced wins, human playability, balance, fun, device behavior, or full solvability proof. Runtime cutoff can change AI moves.",
+  "stages": [
+    {
+      "stage": 1,
+      "status": "EXAMPLE_WIN_FOUND",
+      "openingMoves": "",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": []
+      },
+      "winningContinuation": [
+        3,
+        3,
+        3,
+        3,
+        1,
+        1,
+        2,
+        1,
+        4
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": 1,
+          "continuation": [
+            3,
+            3,
+            3,
+            3,
+            1,
+            1,
+            2,
+            1,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "status": "EXAMPLE_WIN_FOUND",
+      "openingMoves": "6,3,5,2",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": []
+      },
+      "winningContinuation": [
+        1,
+        3,
+        2,
+        3,
+        3,
+        2,
+        5,
+        5,
+        5,
+        5,
+        2,
+        4,
+        3,
+        2,
+        3,
+        2,
+        5,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        6,
+        6,
+        6,
+        6,
+        0,
+        6,
+        0,
+        4,
+        4
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": -1,
+          "continuation": [
+            1,
+            3,
+            2,
+            3,
+            3,
+            2,
+            5,
+            5,
+            5,
+            5,
+            2,
+            4,
+            2,
+            3,
+            2,
+            6,
+            3,
+            6,
+            6,
+            0,
+            5,
+            6,
+            1,
+            1,
+            1,
+            1,
+            1,
+            6,
+            4,
+            4
+          ]
+        },
+        {
+          "attempt": 1,
+          "winner": -1,
+          "continuation": [
+            1,
+            3,
+            2,
+            3,
+            3,
+            2,
+            5,
+            5,
+            5,
+            5,
+            2,
+            4,
+            3,
+            2,
+            6,
+            6,
+            6,
+            3,
+            0,
+            5,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            6,
+            6,
+            4,
+            4
+          ]
+        },
+        {
+          "attempt": 2,
+          "winner": 1,
+          "continuation": [
+            1,
+            3,
+            2,
+            3,
+            3,
+            2,
+            5,
+            5,
+            5,
+            5,
+            2,
+            4,
+            3,
+            2,
+            3,
+            2,
+            5,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            6,
+            6,
+            6,
+            6,
+            0,
+            6,
+            0,
+            4,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 3,
+      "status": "EXAMPLE_WIN_FOUND",
+      "openingMoves": "4,5,6,5,3,5",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [
+          5
+        ],
+        "1": [
+          5
+        ],
+        "2": [
+          5
+        ],
+        "3": [
+          5
+        ],
+        "4": [
+          5
+        ],
+        "5": [],
+        "6": [
+          5
+        ]
+      },
+      "winningContinuation": [
+        5,
+        3,
+        4,
+        0,
+        3,
+        3,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        3,
+        0,
+        0,
+        1,
+        1,
+        5,
+        4,
+        4,
+        1,
+        5,
+        4
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": 1,
+          "continuation": [
+            5,
+            3,
+            4,
+            0,
+            3,
+            3,
+            1,
+            2,
+            2,
+            2,
+            1,
+            2,
+            2,
+            0,
+            3,
+            0,
+            0,
+            1,
+            1,
+            5,
+            4,
+            4,
+            1,
+            5,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 4,
+      "status": "EXAMPLE_WIN_FOUND",
+      "openingMoves": "4,2,5,1,6,2",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": []
+      },
+      "winningContinuation": [
+        3
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": 1,
+          "continuation": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 5,
+      "status": "EXAMPLE_WIN_FOUND",
+      "openingMoves": "2,0,1,1,0,5",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": []
+      },
+      "winningContinuation": [
+        3,
+        4,
+        3,
+        3,
+        4,
+        3,
+        5,
+        2,
+        2,
+        4,
+        3,
+        4,
+        2,
+        1,
+        2,
+        2,
+        4,
+        5,
+        3,
+        4,
+        1,
+        1,
+        0
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": 1,
+          "continuation": [
+            3,
+            4,
+            3,
+            3,
+            4,
+            3,
+            5,
+            2,
+            2,
+            4,
+            3,
+            4,
+            2,
+            1,
+            2,
+            2,
+            4,
+            5,
+            3,
+            4,
+            1,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 6,
+      "status": "EXAMPLE_WIN_FOUND",
+      "openingMoves": "0,5,2,4,4,3,1,2",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [
+          6
+        ],
+        "1": [
+          6
+        ],
+        "2": [
+          6
+        ],
+        "3": [
+          6
+        ],
+        "4": [
+          6
+        ],
+        "5": [
+          6
+        ],
+        "6": []
+      },
+      "winningContinuation": [
+        6,
+        3,
+        3,
+        2,
+        2,
+        3,
+        1,
+        1,
+        1,
+        1,
+        3,
+        4,
+        2,
+        1,
+        3,
+        6,
+        4,
+        4,
+        2,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        6,
+        6,
+        6,
+        5,
+        5
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": 1,
+          "continuation": [
+            6,
+            3,
+            3,
+            2,
+            2,
+            3,
+            1,
+            1,
+            1,
+            1,
+            3,
+            4,
+            2,
+            1,
+            3,
+            6,
+            4,
+            4,
+            2,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            6,
+            6,
+            6,
+            5,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 7,
+      "status": "EXAMPLE_WIN_FOUND",
+      "openingMoves": "1,5,3,1,6,4,2,0",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": []
+      },
+      "winningContinuation": [
+        3,
+        3,
+        4,
+        3,
+        5,
+        3,
+        2
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": 1,
+          "continuation": [
+            3,
+            3,
+            4,
+            3,
+            5,
+            3,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 8,
+      "status": "EXAMPLE_WIN_FOUND",
+      "openingMoves": "0,1,3,2,4",
+      "starter": -1,
+      "immediateReplyProof": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": []
+      },
+      "winningContinuation": [
+        3,
+        2,
+        2,
+        3,
+        2,
+        6,
+        5,
+        0,
+        2,
+        2,
+        3,
+        3,
+        5,
+        5,
+        4,
+        3,
+        4
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": 1,
+          "continuation": [
+            3,
+            2,
+            2,
+            3,
+            2,
+            6,
+            5,
+            0,
+            2,
+            2,
+            3,
+            3,
+            5,
+            5,
+            4,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 9,
+      "status": "EXAMPLE_WIN_FOUND",
+      "openingMoves": "1,4,5,2,2,3,3,2",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": []
+      },
+      "winningContinuation": [
+        4,
+        3,
+        1
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": 1,
+          "continuation": [
+            4,
+            3,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 10,
+      "status": "NO_WIN_FOUND_NOT_PROOF",
+      "openingMoves": "2,3,0,0,6,3,4,3,4,2",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [
+          3
+        ],
+        "1": [
+          1,
+          3
+        ],
+        "2": [
+          3
+        ],
+        "3": [],
+        "4": [
+          3
+        ],
+        "5": [
+          3
+        ],
+        "6": [
+          3
+        ]
+      },
+      "winningContinuation": null,
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": -1,
+          "continuation": [
+            3,
+            4,
+            4,
+            2,
+            3,
+            2,
+            2,
+            4,
+            3,
+            0,
+            2,
+            0,
+            0,
+            4,
+            5,
+            0,
+            6,
+            6,
+            6,
+            6,
+            6,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "attempt": 1,
+          "winner": -1,
+          "continuation": [
+            3,
+            4,
+            4,
+            2,
+            3,
+            2,
+            2,
+            4,
+            3,
+            0,
+            2,
+            0,
+            0,
+            4,
+            5,
+            0,
+            6,
+            6,
+            6,
+            6,
+            6,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "attempt": 2,
+          "winner": -1,
+          "continuation": [
+            3,
+            4,
+            4,
+            2,
+            3,
+            2,
+            2,
+            4,
+            3,
+            0,
+            2,
+            0,
+            0,
+            4,
+            5,
+            0,
+            6,
+            6,
+            6,
+            6,
+            6,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "attempt": 3,
+          "winner": -1,
+          "continuation": [
+            3,
+            4,
+            6,
+            2,
+            5,
+            4,
+            2,
+            1
+          ]
+        },
+        {
+          "attempt": 4,
+          "winner": -1,
+          "continuation": [
+            3,
+            4,
+            2,
+            4,
+            3,
+            1
+          ]
+        },
+        {
+          "attempt": 5,
+          "winner": -1,
+          "continuation": [
+            3,
+            4,
+            4,
+            2,
+            3,
+            2,
+            2,
+            4,
+            3,
+            0,
+            2,
+            0,
+            0,
+            4,
+            5,
+            0,
+            6,
+            6,
+            6,
+            6,
+            6,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "attempt": 6,
+          "winner": -1,
+          "continuation": [
+            3,
+            4,
+            4,
+            2,
+            3,
+            2,
+            2,
+            4,
+            3,
+            0,
+            2,
+            0,
+            0,
+            4,
+            5,
+            0,
+            6,
+            6,
+            6,
+            6,
+            6,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "attempt": 7,
+          "winner": -1,
+          "continuation": [
+            3,
+            4,
+            4,
+            2,
+            6,
+            2,
+            2,
+            3,
+            6,
+            6,
+            3,
+            0,
+            2,
+            0,
+            0,
+            0,
+            4,
+            4,
+            5,
+            6,
+            6,
+            5,
+            1,
+            1
+          ]
+        },
+        {
+          "attempt": 8,
+          "winner": -1,
+          "continuation": [
+            3,
+            4,
+            0,
+            2,
+            2,
+            4,
+            3,
+            1
+          ]
+        },
+        {
+          "attempt": 9,
+          "winner": -1,
+          "continuation": [
+            3,
+            4,
+            4,
+            2,
+            3,
+            2,
+            2,
+            4,
+            3,
+            0,
+            2,
+            0,
+            0,
+            4,
+            5,
+            0,
+            6,
+            6,
+            6,
+            6,
+            6,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "attempt": 10,
+          "winner": -1,
+          "continuation": [
+            3,
+            4,
+            4,
+            2,
+            3,
+            2,
+            2,
+            4,
+            3,
+            0,
+            2,
+            0,
+            0,
+            4,
+            5,
+            0,
+            6,
+            6,
+            6,
+            6,
+            6,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "attempt": 11,
+          "winner": -1,
+          "continuation": [
+            3,
+            4,
+            4,
+            2,
+            2,
+            3,
+            6,
+            6,
+            3,
+            6,
+            2,
+            6,
+            6,
+            0,
+            2,
+            0,
+            0,
+            0,
+            4,
+            4,
+            5,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 11,
+      "status": "EXAMPLE_WIN_FOUND",
+      "openingMoves": "5,2,3,1,0,0,1,0,0,4,1,5",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": []
+      },
+      "winningContinuation": [
+        2
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": 1,
+          "continuation": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 12,
+      "status": "NO_WIN_FOUND_NOT_PROOF",
+      "openingMoves": "4,4,6,5,6,6,2,5,0,4,6,5",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [
+          5
+        ],
+        "1": [
+          5
+        ],
+        "2": [
+          5
+        ],
+        "3": [
+          5
+        ],
+        "4": [
+          5
+        ],
+        "5": [],
+        "6": [
+          5
+        ]
+      },
+      "winningContinuation": null,
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": -1,
+          "continuation": [
+            5,
+            4,
+            4,
+            2,
+            2,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "attempt": 1,
+          "winner": -1,
+          "continuation": [
+            5,
+            4,
+            4,
+            2,
+            2,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "attempt": 2,
+          "winner": -1,
+          "continuation": [
+            5,
+            4,
+            4,
+            2,
+            2,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "attempt": 3,
+          "winner": -1,
+          "continuation": [
+            5,
+            4,
+            4,
+            2,
+            6,
+            3,
+            1,
+            3
+          ]
+        },
+        {
+          "attempt": 4,
+          "winner": -1,
+          "continuation": [
+            5,
+            4,
+            4,
+            2,
+            2,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "attempt": 5,
+          "winner": -1,
+          "continuation": [
+            5,
+            4,
+            4,
+            2,
+            2,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "attempt": 6,
+          "winner": -1,
+          "continuation": [
+            5,
+            4,
+            4,
+            2,
+            2,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "attempt": 7,
+          "winner": -1,
+          "continuation": [
+            5,
+            4,
+            4,
+            2,
+            4,
+            3,
+            0,
+            3
+          ]
+        },
+        {
+          "attempt": 8,
+          "winner": -1,
+          "continuation": [
+            5,
+            4,
+            4,
+            2,
+            2,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "attempt": 9,
+          "winner": -1,
+          "continuation": [
+            5,
+            4,
+            4,
+            2,
+            2,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "attempt": 10,
+          "winner": -1,
+          "continuation": [
+            5,
+            4,
+            4,
+            2,
+            2,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "attempt": 11,
+          "winner": -1,
+          "continuation": [
+            5,
+            4,
+            4,
+            2,
+            5,
+            3,
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 13,
+      "status": "EXAMPLE_WIN_FOUND",
+      "openingMoves": "0,0,4,5,6,0,1,5,6,3",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": []
+      },
+      "winningContinuation": [
+        3,
+        0,
+        0,
+        5,
+        5,
+        3,
+        0,
+        6,
+        6,
+        3,
+        3,
+        5,
+        6,
+        6,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        5,
+        1,
+        4,
+        4
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": -1,
+          "continuation": [
+            3,
+            0,
+            0,
+            5,
+            5,
+            3,
+            3,
+            6,
+            6,
+            1,
+            1,
+            1,
+            1,
+            3,
+            6,
+            3,
+            1,
+            2,
+            2,
+            2,
+            5,
+            5,
+            0,
+            6,
+            2,
+            2
+          ]
+        },
+        {
+          "attempt": 1,
+          "winner": 0,
+          "continuation": [
+            5,
+            0,
+            0,
+            6,
+            3,
+            3,
+            4,
+            4,
+            3,
+            1,
+            4,
+            3,
+            1,
+            1,
+            5,
+            6,
+            3,
+            5,
+            4,
+            5,
+            0,
+            4,
+            6,
+            2,
+            2,
+            6,
+            2,
+            2,
+            2,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "attempt": 2,
+          "winner": -1,
+          "continuation": [
+            3,
+            0,
+            0,
+            5,
+            5,
+            3,
+            3,
+            6,
+            6,
+            1,
+            1,
+            1,
+            6,
+            2,
+            3,
+            3,
+            5,
+            1,
+            0,
+            5,
+            6,
+            2,
+            2,
+            2,
+            2,
+            4
+          ]
+        },
+        {
+          "attempt": 3,
+          "winner": -1,
+          "continuation": [
+            3,
+            0,
+            0,
+            5,
+            5,
+            3,
+            3,
+            6,
+            6,
+            1,
+            1,
+            1,
+            1,
+            3,
+            6,
+            3,
+            1,
+            2,
+            2,
+            2,
+            5,
+            5,
+            0,
+            6,
+            2,
+            2
+          ]
+        },
+        {
+          "attempt": 4,
+          "winner": -1,
+          "continuation": [
+            3,
+            0,
+            0,
+            5,
+            5,
+            3,
+            3,
+            6,
+            6,
+            1,
+            1,
+            1,
+            1,
+            3,
+            6,
+            3,
+            1,
+            2,
+            2,
+            2,
+            5,
+            5,
+            0,
+            6,
+            2,
+            2
+          ]
+        },
+        {
+          "attempt": 5,
+          "winner": 0,
+          "continuation": [
+            5,
+            0,
+            0,
+            6,
+            0,
+            3,
+            4,
+            3,
+            3,
+            1,
+            1,
+            3,
+            3,
+            4,
+            5,
+            4,
+            5,
+            5,
+            4,
+            6,
+            4,
+            2,
+            2,
+            2,
+            1,
+            6,
+            6,
+            2,
+            2,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "attempt": 6,
+          "winner": -1,
+          "continuation": [
+            3,
+            0,
+            0,
+            5,
+            5,
+            3,
+            3,
+            6,
+            6,
+            1,
+            1,
+            1,
+            1,
+            3,
+            6,
+            3,
+            1,
+            2,
+            2,
+            2,
+            5,
+            5,
+            0,
+            6,
+            2,
+            2
+          ]
+        },
+        {
+          "attempt": 7,
+          "winner": -1,
+          "continuation": [
+            3,
+            0,
+            0,
+            5,
+            5,
+            3,
+            3,
+            6,
+            6,
+            1,
+            1,
+            1,
+            1,
+            3,
+            6,
+            3,
+            1,
+            2,
+            2,
+            2,
+            5,
+            5,
+            0,
+            6,
+            2,
+            2
+          ]
+        },
+        {
+          "attempt": 8,
+          "winner": -1,
+          "continuation": [
+            3,
+            0,
+            0,
+            5,
+            5,
+            3,
+            3,
+            6,
+            6,
+            1,
+            1,
+            1,
+            1,
+            3,
+            6,
+            3,
+            1,
+            2,
+            2,
+            2,
+            5,
+            5,
+            0,
+            6,
+            2,
+            2
+          ]
+        },
+        {
+          "attempt": 9,
+          "winner": 1,
+          "continuation": [
+            3,
+            0,
+            0,
+            5,
+            5,
+            3,
+            0,
+            6,
+            6,
+            3,
+            3,
+            5,
+            6,
+            6,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            5,
+            1,
+            4,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 14,
+      "status": "EXAMPLE_WIN_FOUND",
+      "openingMoves": "0,3,3,3,6,1,1,3,6,1,2,4",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": []
+      },
+      "winningContinuation": [
+        2,
+        3,
+        4
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": 1,
+          "continuation": [
+            2,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 15,
+      "status": "EXAMPLE_WIN_FOUND",
+      "openingMoves": "2,1,1,2,1,1,5,2,6,2,6",
+      "starter": -1,
+      "immediateReplyProof": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": []
+      },
+      "winningContinuation": [
+        2
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": 1,
+          "continuation": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 16,
+      "status": "EXAMPLE_WIN_FOUND",
+      "openingMoves": "3,5,4,6,3,5,5,1,3,5,4,2,5,3",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [
+          4
+        ],
+        "1": [
+          4
+        ],
+        "2": [
+          4
+        ],
+        "3": [
+          4
+        ],
+        "4": [],
+        "5": [
+          4
+        ],
+        "6": [
+          4
+        ]
+      },
+      "winningContinuation": [
+        4,
+        4,
+        2,
+        3,
+        2
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": 1,
+          "continuation": [
+            4,
+            4,
+            2,
+            3,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 17,
+      "status": "EXAMPLE_WIN_FOUND",
+      "openingMoves": "3,5,0,1,0,3,1,3,3,6,2,6,2,5",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [
+          4
+        ],
+        "5": [],
+        "6": []
+      },
+      "winningContinuation": [
+        2
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": 1,
+          "continuation": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 18,
+      "status": "EXAMPLE_WIN_FOUND",
+      "openingMoves": "0,1,4,2,6,6,2,4,1,5,2,1,6,3",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": []
+      },
+      "winningContinuation": [
+        3,
+        3,
+        3
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": 1,
+          "continuation": [
+            3,
+            3,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 19,
+      "status": "EXAMPLE_WIN_FOUND",
+      "openingMoves": "4,0,4,3,5,1,3,4,0,4,2,1",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": []
+      },
+      "winningContinuation": [
+        5,
+        2,
+        3,
+        4,
+        4,
+        1,
+        1,
+        3,
+        2
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": 1,
+          "continuation": [
+            5,
+            2,
+            3,
+            4,
+            4,
+            1,
+            1,
+            3,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 20,
+      "status": "NO_WIN_FOUND_NOT_PROOF",
+      "openingMoves": "2,3,6,2,4,0,2,4,3,0,0,3,1,2,4,3",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [
+          5
+        ],
+        "1": [
+          5
+        ],
+        "2": [
+          5
+        ],
+        "3": [
+          5
+        ],
+        "4": [
+          5
+        ],
+        "5": [],
+        "6": [
+          5
+        ]
+      },
+      "winningContinuation": null,
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": -1,
+          "continuation": [
+            5,
+            3,
+            3,
+            4,
+            2,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "attempt": 1,
+          "winner": -1,
+          "continuation": [
+            5,
+            3,
+            3,
+            4,
+            2,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "attempt": 2,
+          "winner": -1,
+          "continuation": [
+            5,
+            3,
+            3,
+            4,
+            2,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "attempt": 3,
+          "winner": -1,
+          "continuation": [
+            5,
+            3,
+            3,
+            4,
+            2,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "attempt": 4,
+          "winner": -1,
+          "continuation": [
+            5,
+            3,
+            3,
+            4,
+            2,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "attempt": 5,
+          "winner": -1,
+          "continuation": [
+            5,
+            3,
+            3,
+            4,
+            0,
+            1,
+            4,
+            1
+          ]
+        },
+        {
+          "attempt": 6,
+          "winner": -1,
+          "continuation": [
+            5,
+            3,
+            3,
+            4,
+            6,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "attempt": 7,
+          "winner": -1,
+          "continuation": [
+            5,
+            3,
+            3,
+            4,
+            2,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "attempt": 8,
+          "winner": -1,
+          "continuation": [
+            5,
+            3,
+            3,
+            4,
+            2,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "attempt": 9,
+          "winner": -1,
+          "continuation": [
+            5,
+            3,
+            3,
+            4,
+            2,
+            1,
+            5,
+            1
+          ]
+        },
+        {
+          "attempt": 10,
+          "winner": -1,
+          "continuation": [
+            5,
+            3,
+            3,
+            4,
+            4,
+            1,
+            6,
+            1
+          ]
+        },
+        {
+          "attempt": 11,
+          "winner": -1,
+          "continuation": [
+            5,
+            3,
+            3,
+            4,
+            2,
+            1,
+            2,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 21,
+      "status": "EXAMPLE_WIN_FOUND",
+      "openingMoves": "5,1,3,3,4,2,1,2,4,6,2,1,2,4,6,6,6,2",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": []
+      },
+      "winningContinuation": [
+        3
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": 1,
+          "continuation": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 22,
+      "status": "NO_WIN_FOUND_NOT_PROOF",
+      "openingMoves": "2,3,3,0,6,1,0,6,1,0,3,4,1,4,6,3,0",
+      "starter": -1,
+      "immediateReplyProof": {
+        "0": [
+          2
+        ],
+        "1": [
+          2
+        ],
+        "2": [],
+        "3": [
+          2
+        ],
+        "4": [
+          2
+        ],
+        "5": [
+          2
+        ],
+        "6": [
+          2
+        ]
+      },
+      "winningContinuation": null,
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": -1,
+          "continuation": [
+            2,
+            4,
+            2,
+            2,
+            3,
+            2,
+            4,
+            6,
+            2,
+            1,
+            1,
+            6,
+            6,
+            3,
+            4,
+            5,
+            4,
+            1,
+            0,
+            0,
+            5,
+            5
+          ]
+        },
+        {
+          "attempt": 1,
+          "winner": -1,
+          "continuation": [
+            2,
+            4,
+            2,
+            2,
+            3,
+            2,
+            6,
+            4,
+            4,
+            6,
+            6,
+            3,
+            2,
+            5,
+            4,
+            0,
+            1,
+            1,
+            0,
+            1,
+            5,
+            5
+          ]
+        },
+        {
+          "attempt": 2,
+          "winner": -1,
+          "continuation": [
+            2,
+            4,
+            2,
+            2,
+            3,
+            2,
+            4,
+            6,
+            2,
+            1,
+            1,
+            6,
+            6,
+            3,
+            4,
+            5,
+            4,
+            1,
+            0,
+            0,
+            5,
+            5
+          ]
+        },
+        {
+          "attempt": 3,
+          "winner": -1,
+          "continuation": [
+            2,
+            4,
+            2,
+            2,
+            3,
+            2,
+            1,
+            6,
+            6,
+            1,
+            3,
+            2,
+            6,
+            5,
+            4,
+            4,
+            4,
+            1,
+            5,
+            5
+          ]
+        },
+        {
+          "attempt": 4,
+          "winner": -1,
+          "continuation": [
+            2,
+            4,
+            2,
+            2,
+            3,
+            2,
+            4,
+            6,
+            2,
+            1,
+            1,
+            6,
+            6,
+            3,
+            4,
+            5,
+            4,
+            1,
+            0,
+            0,
+            5,
+            5
+          ]
+        },
+        {
+          "attempt": 5,
+          "winner": -1,
+          "continuation": [
+            2,
+            4,
+            2,
+            2,
+            3,
+            2,
+            4,
+            6,
+            2,
+            1,
+            1,
+            6,
+            6,
+            3,
+            4,
+            5,
+            4,
+            1,
+            0,
+            0,
+            5,
+            5
+          ]
+        },
+        {
+          "attempt": 6,
+          "winner": -1,
+          "continuation": [
+            2,
+            4,
+            2,
+            2,
+            3,
+            2,
+            4,
+            6,
+            2,
+            1,
+            1,
+            6,
+            6,
+            3,
+            4,
+            5,
+            4,
+            1,
+            0,
+            0,
+            5,
+            5
+          ]
+        },
+        {
+          "attempt": 7,
+          "winner": -1,
+          "continuation": [
+            2,
+            4,
+            2,
+            2,
+            3,
+            2,
+            6,
+            4,
+            4,
+            6,
+            6,
+            3,
+            2,
+            5,
+            4,
+            0,
+            1,
+            1,
+            0,
+            1,
+            5,
+            5
+          ]
+        },
+        {
+          "attempt": 8,
+          "winner": -1,
+          "continuation": [
+            2,
+            4,
+            2,
+            2,
+            3,
+            2,
+            4,
+            6,
+            2,
+            1,
+            1,
+            6,
+            6,
+            3,
+            4,
+            5,
+            4,
+            1,
+            0,
+            0,
+            5,
+            5
+          ]
+        },
+        {
+          "attempt": 9,
+          "winner": -1,
+          "continuation": [
+            2,
+            4,
+            2,
+            2,
+            3,
+            2,
+            4,
+            6,
+            2,
+            1,
+            1,
+            6,
+            6,
+            3,
+            4,
+            5,
+            4,
+            1,
+            0,
+            0,
+            5,
+            5
+          ]
+        },
+        {
+          "attempt": 10,
+          "winner": -1,
+          "continuation": [
+            2,
+            4,
+            2,
+            2,
+            3,
+            2,
+            4,
+            6,
+            2,
+            1,
+            1,
+            6,
+            6,
+            3,
+            4,
+            5,
+            4,
+            1,
+            0,
+            0,
+            5,
+            5
+          ]
+        },
+        {
+          "attempt": 11,
+          "winner": -1,
+          "continuation": [
+            2,
+            4,
+            2,
+            2,
+            3,
+            2,
+            2,
+            4,
+            4,
+            3,
+            1,
+            1,
+            4,
+            6,
+            1,
+            6,
+            6,
+            5,
+            5,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 23,
+      "status": "EXAMPLE_WIN_FOUND",
+      "openingMoves": "5,2,2,6,1,3,2,2,4,0,3,5,1,4,5,1,2,0",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": []
+      },
+      "winningContinuation": [
+        1
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": 1,
+          "continuation": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 24,
+      "status": "NO_WIN_FOUND_NOT_PROOF",
+      "openingMoves": "0,4,0,6,4,0,5,6,1,4,3,2,0,2,3,3",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": []
+      },
+      "winningContinuation": null,
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": -1,
+          "continuation": [
+            3,
+            6,
+            6,
+            2,
+            2,
+            4,
+            3,
+            3,
+            4,
+            2,
+            4,
+            2,
+            0,
+            0,
+            6,
+            6,
+            1,
+            1
+          ]
+        },
+        {
+          "attempt": 1,
+          "winner": -1,
+          "continuation": [
+            2,
+            3,
+            5,
+            6,
+            3,
+            5
+          ]
+        },
+        {
+          "attempt": 2,
+          "winner": -1,
+          "continuation": [
+            2,
+            3,
+            5,
+            6,
+            3,
+            5
+          ]
+        },
+        {
+          "attempt": 3,
+          "winner": -1,
+          "continuation": [
+            3,
+            6,
+            6,
+            2,
+            2,
+            4,
+            3,
+            3,
+            4,
+            2,
+            4,
+            2,
+            0,
+            0,
+            6,
+            6,
+            1,
+            1
+          ]
+        },
+        {
+          "attempt": 4,
+          "winner": -1,
+          "continuation": [
+            3,
+            6,
+            6,
+            2,
+            2,
+            4,
+            3,
+            3,
+            4,
+            2,
+            4,
+            2,
+            0,
+            0,
+            6,
+            6,
+            1,
+            1
+          ]
+        },
+        {
+          "attempt": 5,
+          "winner": -1,
+          "continuation": [
+            6,
+            3,
+            5,
+            2,
+            3,
+            2
+          ]
+        },
+        {
+          "attempt": 6,
+          "winner": -1,
+          "continuation": [
+            2,
+            3,
+            5,
+            6,
+            3,
+            5
+          ]
+        },
+        {
+          "attempt": 7,
+          "winner": -1,
+          "continuation": [
+            3,
+            6,
+            6,
+            2,
+            2,
+            4,
+            3,
+            3,
+            4,
+            2,
+            4,
+            2,
+            0,
+            0,
+            6,
+            6,
+            1,
+            1
+          ]
+        },
+        {
+          "attempt": 8,
+          "winner": -1,
+          "continuation": [
+            3,
+            6,
+            6,
+            2,
+            2,
+            4,
+            3,
+            3,
+            4,
+            2,
+            4,
+            2,
+            0,
+            0,
+            6,
+            6,
+            1,
+            1
+          ]
+        },
+        {
+          "attempt": 9,
+          "winner": -1,
+          "continuation": [
+            2,
+            3,
+            5,
+            6,
+            1,
+            5
+          ]
+        },
+        {
+          "attempt": 10,
+          "winner": -1,
+          "continuation": [
+            5,
+            2,
+            3,
+            2
+          ]
+        },
+        {
+          "attempt": 11,
+          "winner": -1,
+          "continuation": [
+            3,
+            6,
+            6,
+            2,
+            2,
+            4,
+            3,
+            3,
+            4,
+            2,
+            4,
+            2,
+            0,
+            0,
+            6,
+            6,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 25,
+      "status": "EXAMPLE_WIN_FOUND",
+      "openingMoves": "5,4,4,3,4,4,1,1,1,3,2,4,2,0,1,6,1,1",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": []
+      },
+      "winningContinuation": [
+        3,
+        3,
+        2
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": 1,
+          "continuation": [
+            3,
+            3,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 26,
+      "status": "NO_WIN_FOUND_NOT_PROOF",
+      "openingMoves": "0,1,2,2,0,2,2,4,4,5,6,0,6,2,2,0,1,1,1,6",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [
+          3
+        ],
+        "1": [
+          3
+        ],
+        "3": [],
+        "4": [
+          3
+        ],
+        "5": [
+          3
+        ],
+        "6": [
+          3
+        ]
+      },
+      "winningContinuation": null,
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": 0,
+          "continuation": [
+            3,
+            0,
+            0,
+            1,
+            6,
+            3,
+            3,
+            4,
+            5,
+            5,
+            1,
+            3,
+            3,
+            3,
+            5,
+            5,
+            5,
+            4,
+            4,
+            4,
+            6,
+            6
+          ]
+        },
+        {
+          "attempt": 1,
+          "winner": 0,
+          "continuation": [
+            3,
+            0,
+            0,
+            1,
+            5,
+            3,
+            3,
+            5,
+            4,
+            3,
+            3,
+            3,
+            5,
+            4,
+            4,
+            5,
+            4,
+            1,
+            5,
+            6,
+            6,
+            6
+          ]
+        },
+        {
+          "attempt": 2,
+          "winner": 0,
+          "continuation": [
+            3,
+            0,
+            0,
+            1,
+            6,
+            3,
+            3,
+            4,
+            5,
+            5,
+            1,
+            3,
+            3,
+            3,
+            5,
+            5,
+            5,
+            4,
+            4,
+            4,
+            6,
+            6
+          ]
+        },
+        {
+          "attempt": 3,
+          "winner": 0,
+          "continuation": [
+            3,
+            0,
+            0,
+            1,
+            6,
+            3,
+            3,
+            4,
+            5,
+            5,
+            1,
+            3,
+            3,
+            3,
+            5,
+            5,
+            5,
+            4,
+            4,
+            4,
+            6,
+            6
+          ]
+        },
+        {
+          "attempt": 4,
+          "winner": 0,
+          "continuation": [
+            3,
+            0,
+            0,
+            1,
+            5,
+            3,
+            3,
+            5,
+            4,
+            3,
+            3,
+            3,
+            5,
+            4,
+            4,
+            5,
+            4,
+            1,
+            5,
+            6,
+            6,
+            6
+          ]
+        },
+        {
+          "attempt": 5,
+          "winner": 0,
+          "continuation": [
+            3,
+            0,
+            0,
+            1,
+            6,
+            3,
+            3,
+            4,
+            5,
+            5,
+            1,
+            3,
+            3,
+            3,
+            5,
+            5,
+            5,
+            4,
+            4,
+            4,
+            6,
+            6
+          ]
+        },
+        {
+          "attempt": 6,
+          "winner": 0,
+          "continuation": [
+            3,
+            0,
+            0,
+            1,
+            6,
+            3,
+            3,
+            4,
+            5,
+            5,
+            1,
+            3,
+            3,
+            3,
+            5,
+            5,
+            5,
+            4,
+            4,
+            4,
+            6,
+            6
+          ]
+        },
+        {
+          "attempt": 7,
+          "winner": 0,
+          "continuation": [
+            3,
+            0,
+            0,
+            1,
+            6,
+            3,
+            3,
+            4,
+            5,
+            5,
+            1,
+            3,
+            3,
+            3,
+            5,
+            5,
+            5,
+            4,
+            4,
+            4,
+            6,
+            6
+          ]
+        },
+        {
+          "attempt": 8,
+          "winner": 0,
+          "continuation": [
+            3,
+            0,
+            0,
+            1,
+            4,
+            4,
+            5,
+            3,
+            3,
+            3,
+            3,
+            6,
+            3,
+            1,
+            4,
+            5,
+            5,
+            4,
+            5,
+            6,
+            6,
+            5
+          ]
+        },
+        {
+          "attempt": 9,
+          "winner": 0,
+          "continuation": [
+            3,
+            0,
+            0,
+            1,
+            1,
+            5,
+            4,
+            4,
+            5,
+            6,
+            5,
+            3,
+            3,
+            4,
+            4,
+            5,
+            5,
+            3,
+            3,
+            3,
+            6,
+            6
+          ]
+        },
+        {
+          "attempt": 10,
+          "winner": 0,
+          "continuation": [
+            3,
+            0,
+            0,
+            1,
+            6,
+            3,
+            3,
+            4,
+            5,
+            5,
+            1,
+            3,
+            3,
+            3,
+            5,
+            5,
+            5,
+            4,
+            4,
+            4,
+            6,
+            6
+          ]
+        },
+        {
+          "attempt": 11,
+          "winner": 0,
+          "continuation": [
+            3,
+            0,
+            0,
+            1,
+            6,
+            3,
+            3,
+            4,
+            5,
+            5,
+            1,
+            3,
+            3,
+            3,
+            5,
+            5,
+            5,
+            4,
+            4,
+            4,
+            6,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 27,
+      "status": "EXAMPLE_WIN_FOUND",
+      "openingMoves": "4,3,6,0,0,3,2,5,6,5,6,6,1,2,6,1,5,1,3",
+      "starter": -1,
+      "immediateReplyProof": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": []
+      },
+      "winningContinuation": [
+        4
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": 1,
+          "continuation": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 28,
+      "status": "EXAMPLE_WIN_FOUND",
+      "openingMoves": "4,0,3,3,6,2,6,6,1,5,6,5,3,1,2,4,2,2,0,6",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": []
+      },
+      "winningContinuation": [
+        4,
+        3,
+        4
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": 1,
+          "continuation": [
+            4,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 29,
+      "status": "EXAMPLE_WIN_FOUND",
+      "openingMoves": "6,5,6,1,6,2,4,0,4,1,4,0,5,0,2,6,5,5,0,0,2,4",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [
+          3
+        ],
+        "1": [
+          3
+        ],
+        "2": [
+          3
+        ],
+        "3": [],
+        "4": [
+          3
+        ],
+        "5": [
+          3
+        ],
+        "6": [
+          3
+        ]
+      },
+      "winningContinuation": [
+        3,
+        3,
+        3
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": 1,
+          "continuation": [
+            3,
+            3,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 30,
+      "status": "EXAMPLE_WIN_FOUND",
+      "openingMoves": "2,4,0,4,5,0,0,1,0,1,4,6,3,1,4,4,1,6,4,2,3,1",
+      "starter": 1,
+      "immediateReplyProof": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "5": [],
+        "6": []
+      },
+      "winningContinuation": [
+        0,
+        3,
+        2
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "winner": 1,
+          "continuation": [
+            0,
+            3,
+            2
+          ]
+        }
+      ]
+    }
+  ]
+}

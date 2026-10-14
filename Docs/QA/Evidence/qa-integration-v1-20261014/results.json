@@ -1,0 +1,122 @@
+{
+  "reused_core_evidence": "qa-core-v4-20261014 (21/21; 1000 rule sequences; 1000 AI positions)",
+  "reused_stage_paths": "qa-core-v4-20261014/stage-paths.json (30/30 examples)",
+  "sources": [
+    {
+      "path": "Client\\Assets\\StageGame\\Scripts\\Core\\ConnectFourBoard.cs",
+      "sha256": "5a57257861061d89b71e9758b6e352a96e08d22c2b686c85c5cd503b0f25fb36",
+      "matches_v4": true
+    },
+    {
+      "path": "Client\\Assets\\StageGame\\Scripts\\Core\\AiSearch.cs",
+      "sha256": "fea609e5cc011d590c9beda3d401b3ccc420df7e0c9fad7efa18f99a9d72f63b",
+      "matches_v4": true
+    },
+    {
+      "path": "Client\\Assets\\StageGame\\Scripts\\Core\\GameData.cs",
+      "sha256": "68514eba29cb67339f40b2a13bf189920449413c0032fe1ad2e86943d31406b3",
+      "matches_v4": true
+    },
+    {
+      "path": "Client\\Assets\\StageGame\\Scripts\\Core\\ProgressStore.cs",
+      "sha256": "89764feadd1ec247765bb521f87555d8fb148d2da2ccb095d4c46966e81f71db",
+      "matches_v4": true
+    },
+    {
+      "path": "Client\\Assets\\StageGame\\Scripts\\Platform\\Advertising.cs",
+      "sha256": "3043e960fa8c5c3506442c60024351b70c7c548d2834d4d6a579683a4cae3d6c",
+      "matches_v4": true
+    },
+    {
+      "path": "Client\\Assets\\StageGame\\Scripts\\UI\\GameApp.cs",
+      "sha256": "90c2315f206cdfbfb65fa209acd503c66b5b61591f3833d45ee7de18c985c301",
+      "matches_v4": true
+    }
+  ],
+  "data": [
+    {
+      "file": "stages.json",
+      "generatedSha256": "2d04b124a42f0f3798ad942e9aacab97ee34a25f05b380144cd70f75c3904992",
+      "importedSha256": "2d04b124a42f0f3798ad942e9aacab97ee34a25f05b380144cd70f75c3904992",
+      "same_bytes": true,
+      "same_semantics": true,
+      "generated_matches_v4_paths": true
+    },
+    {
+      "file": "ads.json",
+      "generatedSha256": "d19f181faf52db28287bbed1b42291770dc3bf83d35e5cca8af4a6dcce9e194a",
+      "importedSha256": "d19f181faf52db28287bbed1b42291770dc3bf83d35e5cca8af4a6dcce9e194a",
+      "same_bytes": true,
+      "same_semantics": true,
+      "generated_matches_v4_paths": true
+    },
+    {
+      "file": "strings.json",
+      "generatedSha256": "f307e1900a7e0cdf72a1b50d33cbfb0eece4a6f46e69910978286a6cef2d7752",
+      "importedSha256": "f307e1900a7e0cdf72a1b50d33cbfb0eece4a6f46e69910978286a6cef2d7752",
+      "same_bytes": true,
+      "same_semantics": true,
+      "generated_matches_v4_paths": true
+    }
+  ],
+  "client_logs": [
+    {
+      "file": "editmode-results.xml",
+      "sha256": "155f08d2dd8b10fe0987e6b47d2b8aed60ee1ccbb86d810853f7c1657152a13d",
+      "source": "Client owner generated; QA read only",
+      "result": {
+        "result": "Passed",
+        "total": "30",
+        "passed": "30",
+        "failed": "0",
+        "start-time": "2026-10-14 05:49:32Z",
+        "end-time": "2026-10-14 05:49:32Z"
+      }
+    },
+    {
+      "file": "build-Android.txt",
+      "sha256": "5456f69d1ad17d4055d8326f2afcde530c1149c3d6bf99f107bdec84df5f870b",
+      "source": "Client owner generated; QA read only",
+      "summary": "Succeeded\nErrors: 0\nWarnings: 0\nBytes: 199588177\nDuration: 00:00:15.5672549\n"
+    },
+    {
+      "file": "build-WebGL.txt",
+      "sha256": "c06bde8ed921e5cacab739c7d88f5824acc9326e724119bbf5d5c79f4ea6ac85",
+      "source": "Client owner generated; QA read only",
+      "summary": "Succeeded\nErrors: 0\nWarnings: 0\nBytes: 43495257\nDuration: 00:00:03.2375711\n"
+    }
+  ],
+  "build_artifacts": [
+    {
+      "path": "Client\\Builds\\Android\\StageGame-development.apk",
+      "bytes": 34502184,
+      "sha256": "de438de38552c7009a4d95fc98c8e65a062d8cc2709fa47d4a35772a38658c38"
+    },
+    {
+      "path": "Client\\Builds\\WebGL\\Build\\WebGL.wasm",
+      "bytes": 23974965,
+      "sha256": "27eced4ccb227f6d7093ced53508e5aba79ec0bcc0b7dc94e68ac997ff313734"
+    },
+    {
+      "path": "Client\\Builds\\WebGL\\Build\\WebGL.data",
+      "bytes": 18675078,
+      "sha256": "fe8b1dc394f975e47a1514d57680ec4c953c78705b08dca25a9808db86998eb4"
+    },
+    {
+      "path": "Client\\Builds\\WebGL\\Build\\WebGL.framework.js",
+      "bytes": 759731,
+      "sha256": "bc9c4bd4c2ae55a4eb171247fba7e94eb4792dfb3f848d940c2ee761f8157605"
+    },
+    {
+      "path": "Client\\Builds\\WebGL\\Build\\WebGL.loader.js",
+      "bytes": 58348,
+      "sha256": "14f3d70e59e98a7582cf127634ce63e23994047baf0955416ce44ba0176d4acf"
+    },
+    {
+      "path": "Client\\Builds\\WebGL\\index.html",
+      "bytes": 7873,
+      "sha256": "13ba386ab414e5a8f371e36460b2be54b0dddab45bc760acdd8824efacf9cc14"
+    }
+  ],
+  "limitations": "Hashes tie current files to QA source/data evidence. Build logs/artifacts were produced by Client; no device, embedded-build data extraction, real ads, store approval, performance or human fun verification. 650ms GameApp cutoff may change AI paths."
+}

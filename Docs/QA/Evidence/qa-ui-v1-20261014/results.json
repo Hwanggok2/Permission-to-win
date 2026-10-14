@@ -1,0 +1,69 @@
+{
+  "runId": "qa-ui-v1-20261014",
+  "framework": ".NET 10.0.8",
+  "passed": 7,
+  "failed": 0,
+  "assertions": 1152,
+  "scope": "app.",
+  "randomRuleSequences": 0,
+  "randomAiPositions": 0,
+  "limitations": "Unity APIs replaced by explicitly scoped doubles; no Editor, device, native JSON, real persistence, real ads, or performance validation.",
+  "results": [
+    {
+      "name": "app.reward_callback_after_new_match",
+      "layer": "actual GameApp with UI/coroutine doubles",
+      "status": "PASS",
+      "assertions": 3,
+      "milliseconds": 69,
+      "error": null
+    },
+    {
+      "name": "app.reward_failure_duplicate_and_lobby",
+      "layer": "actual GameApp with UI/coroutine doubles",
+      "status": "PASS",
+      "assertions": 4,
+      "milliseconds": 5,
+      "error": null
+    },
+    {
+      "name": "app.interstitial_callback_after_stage_change",
+      "layer": "actual GameApp with UI/coroutine doubles",
+      "status": "PASS",
+      "assertions": 382,
+      "milliseconds": 7,
+      "error": null
+    },
+    {
+      "name": "app.interstitial_no_callback_timeout",
+      "layer": "actual GameApp with clock/coroutine doubles",
+      "status": "PASS",
+      "assertions": 379,
+      "milliseconds": 0,
+      "error": null
+    },
+    {
+      "name": "app.reward_no_callback_timeout",
+      "layer": "actual GameApp with clock/coroutine doubles",
+      "status": "PASS",
+      "assertions": 1,
+      "milliseconds": 0,
+      "error": null
+    },
+    {
+      "name": "app.pending_reward_blocks_moves_and_pause_cancels",
+      "layer": "actual GameApp with UI/coroutine doubles",
+      "status": "PASS",
+      "assertions": 3,
+      "milliseconds": 4,
+      "error": null
+    },
+    {
+      "name": "app.save_failure_still_exits_finished_match",
+      "layer": "actual GameApp; injected PlayerPrefs.Save exception",
+      "status": "PASS",
+      "assertions": 380,
+      "milliseconds": 0,
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "reused_core_evidence": "qa-core-v4-20261014 (21/21; 1000 rule sequences; 1000 AI positions)",
+  "focused_changed_ui_evidence": "qa-ui-v1-20261014 (7 app flow groups; Unity APIs replaced by doubles)",
+  "reused_stage_paths": "qa-core-v4-20261014/stage-paths.json (30/30 examples)",
+  "sources": [
+    {
+      "path": "Client\\Assets\\StageGame\\Scripts\\Core\\ConnectFourBoard.cs",
+      "sha256": "5a57257861061d89b71e9758b6e352a96e08d22c2b686c85c5cd503b0f25fb36",
+      "matches_v4": true,
+      "matches_focused_ui_run": true
+    },
+    {
+      "path": "Client\\Assets\\StageGame\\Scripts\\Core\\AiSearch.cs",
+      "sha256": "fea609e5cc011d590c9beda3d401b3ccc420df7e0c9fad7efa18f99a9d72f63b",
+      "matches_v4": true,
+      "matches_focused_ui_run": true
+    },
+    {
+      "path": "Client\\Assets\\StageGame\\Scripts\\Core\\GameData.cs",
+      "sha256": "68514eba29cb67339f40b2a13bf189920449413c0032fe1ad2e86943d31406b3",
+      "matches_v4": true,
+      "matches_focused_ui_run": true
+    },
+    {
+      "path": "Client\\Assets\\StageGame\\Scripts\\Core\\ProgressStore.cs",
+      "sha256": "89764feadd1ec247765bb521f87555d8fb148d2da2ccb095d4c46966e81f71db",
+      "matches_v4": true,
+      "matches_focused_ui_run": true
+    },
+    {
+      "path": "Client\\Assets\\StageGame\\Scripts\\Platform\\Advertising.cs",
+      "sha256": "3043e960fa8c5c3506442c60024351b70c7c548d2834d4d6a579683a4cae3d6c",
+      "matches_v4": true,
+      "matches_focused_ui_run": true
+    },
+    {
+      "path": "Client\\Assets\\StageGame\\Scripts\\UI\\GameApp.cs",
+      "sha256": "3bade827b9277d4e4a3c26cbecc43448f3940ce3b01b4b2a644c5264e7db65e2",
+      "matches_v4": false,
+      "matches_focused_ui_run": true
+    }
+  ],
+  "data": [
+    {
+      "file": "stages.json",
+      "generatedSha256": "2d04b124a42f0f3798ad942e9aacab97ee34a25f05b380144cd70f75c3904992",
+      "importedSha256": "2d04b124a42f0f3798ad942e9aacab97ee34a25f05b380144cd70f75c3904992",
+      "same_bytes": true,
+      "same_semantics": true,
+      "generated_matches_v4_paths": true
+    },
+    {
+      "file": "ads.json",
+      "generatedSha256": "d19f181faf52db28287bbed1b42291770dc3bf83d35e5cca8af4a6dcce9e194a",
+      "importedSha256": "d19f181faf52db28287bbed1b42291770dc3bf83d35e5cca8af4a6dcce9e194a",
+      "same_bytes": true,
+      "same_semantics": true,
+      "generated_matches_v4_paths": true
+    },
+    {
+      "file": "strings.json",
+      "generatedSha256": "f307e1900a7e0cdf72a1b50d33cbfb0eece4a6f46e69910978286a6cef2d7752",
+      "importedSha256": "f307e1900a7e0cdf72a1b50d33cbfb0eece4a6f46e69910978286a6cef2d7752",
+      "same_bytes": true,
+      "same_semantics": true,
+      "generated_matches_v4_paths": true
+    }
+  ],
+  "client_logs": [
+    {
+      "file": "editmode-results.xml",
+      "sha256": "af15da7484b2ce49dfefa99dc1c3255173bf2b1fc57b49fd935ec4042d39629f",
+      "source": "Client owner generated; QA read only",
+      "result": {
+        "result": "Passed",
+        "total": "30",
+        "passed": "30",
+        "failed": "0",
+        "start-time": "2026-10-14 06:06:05Z",
+        "end-time": "2026-10-14 06:06:06Z"
+      }
+    },
+    {
+      "file": "build-Android.txt",
+      "sha256": "ed25cd521fa90833e90887b8184d932bcfcc3fb77f144b0367df3e28c568a2ca",
+      "source": "Client owner generated; QA read only",
+      "summary": "Succeeded\nErrors: 0\nWarnings: 0\nBytes: 199817267\nDuration: 00:00:31.8185620\n"
+    },
+    {
+      "file": "build-WebGL.txt",
+      "sha256": "516bb1c6a96f9855bbda91f63a9221bd2bbd24873f783f2edbe5d11a1431564b",
+      "source": "Client owner generated; QA read only",
+      "summary": "Succeeded\nErrors: 0\nWarnings: 0\nBytes: 43498788\nDuration: 00:00:04.5538684\n"
+    }
+  ],
+  "build_artifacts": [
+    {
+      "path": "Client\\Builds\\Android\\StageGame-development.apk",
+      "bytes": 34676997,
+      "sha256": "8a809c7b1942e16d3b846721118a49d4e557cd24ea424e66d07c4d7c908c5688"
+    },
+    {
+      "path": "Client\\Builds\\WebGL\\Build\\WebGL.wasm",
+      "bytes": 23975543,
+      "sha256": "341a44cdabbcbf20faef276b248c6c2861ccddcdc42aacc2f3d79f64be05c18f"
+    },
+    {
+      "path": "Client\\Builds\\WebGL\\Build\\WebGL.data",
+      "bytes": 18683016,
+      "sha256": "449794a6fadda05c4d336993125d1cb67bac2b59eea918bb9ef9601e79b800eb"
+    },
+    {
+      "path": "Client\\Builds\\WebGL\\Build\\WebGL.framework.js",
+      "bytes": 759731,
+      "sha256": "bc9c4bd4c2ae55a4eb171247fba7e94eb4792dfb3f848d940c2ee761f8157605"
+    },
+    {
+      "path": "Client\\Builds\\WebGL\\Build\\WebGL.loader.js",
+      "bytes": 58348,
+      "sha256": "99c1d5885efdbaaec14f3c0c879f0f170581d73eeea22673b57ce19dfd2f3933"
+    },
+    {
+      "path": "Client\\Builds\\WebGL\\index.html",
+      "bytes": 2887,
+      "sha256": "62fcb82a2d89a739f0eeb79a772dbd7cfcfee03ef3d2d9b8c27d04d81b5c2e44"
+    }
+  ],
+  "graphics_ui_assets": [
+    {
+      "path": "Client/ProjectSettings/GraphicsSettings.asset",
+      "sha256": "e7fa2be87751d7cd410d6e362353087ce1ceceedc831f884919b9a465f7bd5a7"
+    },
+    {
+      "path": "Client/Assets/StageGame/Editor/ProjectBuilder.cs",
+      "sha256": "57c53d6e132a69e51c858c54088c34765caf6b4a8aaa4f050be52cd76b55eea4"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/AppRoot.prefab",
+      "sha256": "6c18b997f3ee52ff013d672a531c53b36072bd4517161c4d89a5ecea6993d47b"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Screens/NoticesModal.prefab",
+      "sha256": "b9e78ff148a2dc60911438e79c87def8826d3482a6e03eedd437b3b49248e6f2"
+    },
+    {
+      "path": "Client/Assets/StageGame/Scenes/Main.unity",
+      "sha256": "54db9ec6b5af4906cd2d03b770a7902491e7fa434ca07ae56b3479f98350100a"
+    }
+  ],
+  "data_validation_sources": [
+    {
+      "path": "GameData\\export_data.py",
+      "sha256": "d863497468c54d06a46386de0f18266f4803b7895e94d4bc49f32837ffa244ea",
+      "matches_data_v2": true
+    },
+    {
+      "path": "GameData\\test_export_data.py",
+      "sha256": "00aa733c1f33d8eed82b4c50175e00f474f74fba1901f7c36a24217b53d32801",
+      "matches_data_v2": true
+    },
+    {
+      "path": "GameData\\GameData_MVP.xlsx",
+      "sha256": "e236710c67014a3c4f6aced8121977a1185b447b2c7b1f9620c9edde2c2e5bc4",
+      "matches_data_v2": true
+    },
+    {
+      "path": "GameData\\audit_openings.py",
+      "sha256": "bb5343f1d69dc3a9d8c4fb7383e3d569d0d7d6f6c4ca7d7a131859b6ce685de7",
+      "matches_data_v2": true
+    },
+    {
+      "path": "GameData\\Validation\\opening-repairs.json",
+      "sha256": "4e73f06439baeb6bf9b7cef472dbb84e06be87fdb7488aaaf45e16f88950557d",
+      "matches_data_v2": true
+    },
+    {
+      "path": "GameData\\Generated\\stages.json",
+      "sha256": "2d04b124a42f0f3798ad942e9aacab97ee34a25f05b380144cd70f75c3904992",
+      "matches_data_v2": true
+    },
+    {
+      "path": "GameData\\Generated\\ads.json",
+      "sha256": "d19f181faf52db28287bbed1b42291770dc3bf83d35e5cca8af4a6dcce9e194a",
+      "matches_data_v2": true
+    },
+    {
+      "path": "GameData\\Generated\\strings.json",
+      "sha256": "f307e1900a7e0cdf72a1b50d33cbfb0eece4a6f46e69910978286a6cef2d7752",
+      "matches_data_v2": true
+    },
+    {
+      "path": "Client\\Assets\\StageGame\\Resources\\GameData\\stages.json",
+      "sha256": "2d04b124a42f0f3798ad942e9aacab97ee34a25f05b380144cd70f75c3904992",
+      "matches_data_v2": true
+    },
+    {
+      "path": "Client\\Assets\\StageGame\\Resources\\GameData\\ads.json",
+      "sha256": "d19f181faf52db28287bbed1b42291770dc3bf83d35e5cca8af4a6dcce9e194a",
+      "matches_data_v2": true
+    },
+    {
+      "path": "Client\\Assets\\StageGame\\Resources\\GameData\\strings.json",
+      "sha256": "f307e1900a7e0cdf72a1b50d33cbfb0eece4a6f46e69910978286a6cef2d7752",
+      "matches_data_v2": true
+    }
+  ],
+  "limitations": "Hashes tie current files to QA source/data evidence. Build logs/artifacts were produced by Client; no device, embedded-build data extraction, real ads, store approval, performance or human fun verification. 650ms GameApp cutoff may change AI paths."
+}

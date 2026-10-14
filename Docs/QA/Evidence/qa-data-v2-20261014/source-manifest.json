@@ -1,0 +1,46 @@
+[
+  {
+    "source": "GameData\\export_data.py",
+    "sha256": "d863497468c54d06a46386de0f18266f4803b7895e94d4bc49f32837ffa244ea"
+  },
+  {
+    "source": "GameData\\test_export_data.py",
+    "sha256": "00aa733c1f33d8eed82b4c50175e00f474f74fba1901f7c36a24217b53d32801"
+  },
+  {
+    "source": "GameData\\GameData_MVP.xlsx",
+    "sha256": "e236710c67014a3c4f6aced8121977a1185b447b2c7b1f9620c9edde2c2e5bc4"
+  },
+  {
+    "source": "GameData\\audit_openings.py",
+    "sha256": "bb5343f1d69dc3a9d8c4fb7383e3d569d0d7d6f6c4ca7d7a131859b6ce685de7"
+  },
+  {
+    "source": "GameData\\Validation\\opening-repairs.json",
+    "sha256": "4e73f06439baeb6bf9b7cef472dbb84e06be87fdb7488aaaf45e16f88950557d"
+  },
+  {
+    "source": "GameData\\Generated\\stages.json",
+    "sha256": "2d04b124a42f0f3798ad942e9aacab97ee34a25f05b380144cd70f75c3904992"
+  },
+  {
+    "source": "GameData\\Generated\\ads.json",
+    "sha256": "d19f181faf52db28287bbed1b42291770dc3bf83d35e5cca8af4a6dcce9e194a"
+  },
+  {
+    "source": "GameData\\Generated\\strings.json",
+    "sha256": "f307e1900a7e0cdf72a1b50d33cbfb0eece4a6f46e69910978286a6cef2d7752"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Resources\\GameData\\stages.json",
+    "sha256": "2d04b124a42f0f3798ad942e9aacab97ee34a25f05b380144cd70f75c3904992"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Resources\\GameData\\ads.json",
+    "sha256": "d19f181faf52db28287bbed1b42291770dc3bf83d35e5cca8af4a6dcce9e194a"
+  },
+  {
+    "source": "Client\\Assets\\StageGame\\Resources\\GameData\\strings.json",
+    "sha256": "f307e1900a7e0cdf72a1b50d33cbfb0eece4a6f46e69910978286a6cef2d7752"
+  }
+]

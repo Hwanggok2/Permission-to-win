@@ -1,0 +1,50 @@
+[
+  {
+    "source": "Client/Assets/StageGame/Scripts/Core/ConnectFourBoard.cs",
+    "sha256": "5A57257861061D89B71E9758B6E352A96E08D22C2B686C85C5CD503B0F25FB36"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/Core/AiSearch.cs",
+    "sha256": "FEA609E5CC011D590C9BEDA3D401B3CCC420DF7E0C9FAD7EFA18F99A9D72F63B"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/Core/GameData.cs",
+    "sha256": "68514EBA29CB67339F40B2A13BF189920449413C0032FE1AD2E86943D31406B3"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/Core/ProgressStore.cs",
+    "sha256": "89764FEADD1EC247765BB521F87555D8FB148D2DA2CCB095D4C46966E81F71DB"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/Platform/Advertising.cs",
+    "sha256": "3043E960FA8C5C3506442C60024351B70C7C548D2834D4D6A579683A4CAE3D6C"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/UI/GameApp.cs",
+    "sha256": "3BADE827B9277D4E4A3C26CBECC43448F3940CE3B01B4B2A644C5264E7DB65E2"
+  },
+  {
+    "source": "C:\\Github\\StageGame\\Client\\Assets\\StageGame\\Resources\\GameData\\stages.json",
+    "sha256": "2D04B124A42F0F3798AD942E9AACAB97EE34A25F05B380144CD70F75C3904992"
+  },
+  {
+    "source": "C:\\Github\\StageGame\\GameData\\Generated\\stages.json",
+    "sha256": "2D04B124A42F0F3798AD942E9AACAB97EE34A25F05B380144CD70F75C3904992"
+  },
+  {
+    "source": "C:\\Github\\StageGame\\Client\\Assets\\StageGame\\Resources\\GameData\\ads.json",
+    "sha256": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A"
+  },
+  {
+    "source": "C:\\Github\\StageGame\\GameData\\Generated\\ads.json",
+    "sha256": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A"
+  },
+  {
+    "source": "C:\\Github\\StageGame\\Client\\Assets\\StageGame\\Resources\\GameData\\strings.json",
+    "sha256": "F307E1900A7E0CDF72A1B50D33CBFB0EECE4A6F46E69910978286A6CEF2D7752"
+  },
+  {
+    "source": "C:\\Github\\StageGame\\GameData\\Generated\\strings.json",
+    "sha256": "F307E1900A7E0CDF72A1B50D33CBFB0EECE4A6F46E69910978286A6CEF2D7752"
+  }
+]

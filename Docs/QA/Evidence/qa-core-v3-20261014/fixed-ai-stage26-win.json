@@ -1,0 +1,63 @@
+{
+  "method": "All player legal moves, exactly one actual fixed-seed AI move at each AI turn; terminal outcomes only, unknown frontier never counted as loss. Actual C# rules previously cross-checked with independent oracle. No GameApp wall-clock cutoff.",
+  "results": [
+    {
+      "stage": 26,
+      "depth": 8,
+      "status": "INCOMPLETE_DEPTH_NOT_A_VERDICT",
+      "visited": 72,
+      "aiCalls": 35,
+      "seconds": 0.0188623,
+      "winningContinuation": null
+    },
+    {
+      "stage": 26,
+      "depth": 12,
+      "status": "INCOMPLETE_DEPTH_NOT_A_VERDICT",
+      "visited": 307,
+      "aiCalls": 145,
+      "seconds": 0.0342032,
+      "winningContinuation": null
+    },
+    {
+      "stage": 26,
+      "depth": 16,
+      "status": "INCOMPLETE_DEPTH_NOT_A_VERDICT",
+      "visited": 781,
+      "aiCalls": 359,
+      "seconds": 0.0454886,
+      "winningContinuation": null
+    },
+    {
+      "stage": 26,
+      "depth": 24,
+      "status": "PLAYER_WIN_EXISTS_TO_FIXED_AI",
+      "visited": 286,
+      "aiCalls": 134,
+      "seconds": 0.0143772,
+      "winningContinuation": [
+        3,
+        0,
+        0,
+        1,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        5,
+        3,
+        3,
+        1,
+        5,
+        5,
+        6,
+        4,
+        6,
+        3,
+        3
+      ]
+    }
+  ]
+}

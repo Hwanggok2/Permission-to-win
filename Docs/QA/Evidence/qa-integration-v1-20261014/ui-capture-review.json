@@ -1,0 +1,14 @@
+[
+  {
+    "path": "C:\\Github\\StageGame\\Client\\Evidence\\lobby.png",
+    "sha256": "64E185691AED01A9F76983C67022A0994EEAE31021ACD0B1557B81B50B304B43",
+    "source": "Client editor capture, read-only QA visual inspection",
+    "observation": "720x1280 capture: no observed Korean text, board or primary button clipping/overlap; not a device or browser runtime test"
+  },
+  {
+    "path": "C:\\Github\\StageGame\\Client\\Evidence\\match.png",
+    "sha256": "C2907653DF25590C52DD3046D665C2D1461F306200101DF92BA57D2375E8C5F4",
+    "source": "Client editor capture, read-only QA visual inspection",
+    "observation": "720x1280 capture: no observed Korean text, board or primary button clipping/overlap; not a device or browser runtime test"
+  }
+]

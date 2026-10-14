@@ -1,0 +1,180 @@
+{
+  "runId": "qa-core-v2-20261014",
+  "framework": ".NET 10.0.8",
+  "passed": 17,
+  "failed": 4,
+  "assertions": 2479388,
+  "randomRuleSequences": 1000,
+  "randomAiPositions": 1000,
+  "limitations": "Unity APIs replaced by explicitly scoped doubles; no Editor, device, native JSON, real persistence, real ads, or performance validation.",
+  "results": [
+    {
+      "name": "rules.fixed_vectors_both_starters",
+      "layer": "actual pure C#",
+      "status": "PASS",
+      "assertions": 6570,
+      "milliseconds": 12,
+      "error": null
+    },
+    {
+      "name": "rules.1000_seeded_sequences",
+      "layer": "actual pure C# vs whole-board oracle",
+      "status": "PASS",
+      "assertions": 2320604,
+      "milliseconds": 308,
+      "error": null
+    },
+    {
+      "name": "ai.immediate_win_and_block_all_depths",
+      "layer": "actual pure C#",
+      "status": "PASS",
+      "assertions": 41440,
+      "milliseconds": 14,
+      "error": null
+    },
+    {
+      "name": "ai.1000_legal_positions_budget_and_immutability",
+      "layer": "actual pure C#",
+      "status": "PASS",
+      "assertions": 107296,
+      "milliseconds": 265,
+      "error": null
+    },
+    {
+      "name": "ai.last_legal_move_and_dispose",
+      "layer": "actual pure C#",
+      "status": "PASS",
+      "assertions": 2221,
+      "milliseconds": 1,
+      "error": null
+    },
+    {
+      "name": "data.valid_30_and_opening_boundaries",
+      "layer": "actual validation; System.Text.Json double",
+      "status": "PASS",
+      "assertions": 25,
+      "milliseconds": 34,
+      "error": null
+    },
+    {
+      "name": "data.reject_truncated_stage_catalog",
+      "layer": "actual validation; System.Text.Json double",
+      "status": "FAIL",
+      "assertions": 0,
+      "milliseconds": 0,
+      "error": "Exception: 1-stage catalog under 30-stage contract was accepted"
+    },
+    {
+      "name": "ads.reward_duplicate_cancel_failure_retry",
+      "layer": "actual pure C#",
+      "status": "PASS",
+      "assertions": 28,
+      "milliseconds": 0,
+      "error": null
+    },
+    {
+      "name": "ads.grace_interval_cooldown_boundaries",
+      "layer": "actual pure C#; first clock origin unconfirmed",
+      "status": "PASS",
+      "assertions": 12,
+      "milliseconds": 0,
+      "error": null
+    },
+    {
+      "name": "progress.same_result_and_unlock_bounds",
+      "layer": "actual source; memory PlayerPrefs/JSON double",
+      "status": "PASS",
+      "assertions": 6,
+      "milliseconds": 2,
+      "error": null
+    },
+    {
+      "name": "progress.nonconsecutive_duplicate",
+      "layer": "actual source; memory PlayerPrefs double",
+      "status": "FAIL",
+      "assertions": 1,
+      "milliseconds": 0,
+      "error": "Exception: A,B,A accepted; completedMatches=3"
+    },
+    {
+      "name": "progress.duplicate_after_reload",
+      "layer": "actual source; memory PlayerPrefs double",
+      "status": "FAIL",
+      "assertions": 1,
+      "milliseconds": 0,
+      "error": "Exception: reloaded A accepted; completedMatches=2"
+    },
+    {
+      "name": "progress.corrupt_save_recovery",
+      "layer": "actual source; memory PlayerPrefs/JSON double",
+      "status": "PASS",
+      "assertions": 2,
+      "milliseconds": 3,
+      "error": null
+    },
+    {
+      "name": "app.reward_callback_after_new_match",
+      "layer": "actual GameApp with UI/coroutine doubles",
+      "status": "PASS",
+      "assertions": 3,
+      "milliseconds": 3,
+      "error": null
+    },
+    {
+      "name": "app.reward_failure_duplicate_and_lobby",
+      "layer": "actual GameApp with UI/coroutine doubles",
+      "status": "PASS",
+      "assertions": 4,
+      "milliseconds": 1,
+      "error": null
+    },
+    {
+      "name": "app.interstitial_callback_after_stage_change",
+      "layer": "actual GameApp with UI/coroutine doubles",
+      "status": "PASS",
+      "assertions": 382,
+      "milliseconds": 1,
+      "error": null
+    },
+    {
+      "name": "app.interstitial_no_callback_timeout",
+      "layer": "actual GameApp with clock/coroutine doubles",
+      "status": "PASS",
+      "assertions": 379,
+      "milliseconds": 0,
+      "error": null
+    },
+    {
+      "name": "app.reward_no_callback_timeout",
+      "layer": "actual GameApp with clock/coroutine doubles",
+      "status": "PASS",
+      "assertions": 1,
+      "milliseconds": 0,
+      "error": null
+    },
+    {
+      "name": "app.pending_reward_blocks_moves_and_pause_cancels",
+      "layer": "actual GameApp with UI/coroutine doubles",
+      "status": "PASS",
+      "assertions": 3,
+      "milliseconds": 0,
+      "error": null
+    },
+    {
+      "name": "app.save_failure_still_exits_finished_match",
+      "layer": "actual GameApp; injected PlayerPrefs.Save exception",
+      "status": "FAIL",
+      "assertions": 379,
+      "milliseconds": 0,
+      "error": "Exception: finished match has neither result nor lobby; resultRecorded=True"
+    },
+    {
+      "name": "data.actual_client_json",
+      "layer": "actual GameData validation; JSON double",
+      "status": "PASS",
+      "assertions": 31,
+      "milliseconds": 1,
+      "error": null
+    }
+  ]
+}

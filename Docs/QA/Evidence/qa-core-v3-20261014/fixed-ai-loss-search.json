@@ -1,0 +1,157 @@
+{
+  "method": "All player legal moves, exactly one actual fixed-seed AI move at each AI turn; terminal outcomes only, unknown frontier never counted as loss. Actual C# rules previously cross-checked with independent oracle. No GameApp wall-clock cutoff.",
+  "results": [
+    {
+      "stage": 10,
+      "depth": 8,
+      "status": "INCOMPLETE_DEPTH_NOT_A_VERDICT",
+      "visited": 329,
+      "aiCalls": 140,
+      "seconds": 0.0203966
+    },
+    {
+      "stage": 10,
+      "depth": 12,
+      "status": "INCOMPLETE_DEPTH_NOT_A_VERDICT",
+      "visited": 1124,
+      "aiCalls": 504,
+      "seconds": 0.0603034
+    },
+    {
+      "stage": 10,
+      "depth": 16,
+      "status": "INCOMPLETE_DEPTH_NOT_A_VERDICT",
+      "visited": 6863,
+      "aiCalls": 3048,
+      "seconds": 0.2800359
+    },
+    {
+      "stage": 10,
+      "depth": 24,
+      "status": "INCOMPLETE_DEPTH_NOT_A_VERDICT",
+      "visited": 31152,
+      "aiCalls": 14116,
+      "seconds": 0.3152616
+    },
+    {
+      "stage": 10,
+      "depth": 32,
+      "status": "EVERY_PLAYER_PATH_LOSES_TO_FIXED_AI",
+      "visited": 31582,
+      "aiCalls": 14331,
+      "seconds": 0.1548156
+    },
+    {
+      "stage": 12,
+      "depth": 8,
+      "status": "EVERY_PLAYER_PATH_LOSES_TO_FIXED_AI",
+      "visited": 110,
+      "aiCalls": 47,
+      "seconds": 0.0010212
+    },
+    {
+      "stage": 20,
+      "depth": 8,
+      "status": "EVERY_PLAYER_PATH_LOSES_TO_FIXED_AI",
+      "visited": 91,
+      "aiCalls": 40,
+      "seconds": 0.0029133
+    },
+    {
+      "stage": 22,
+      "depth": 8,
+      "status": "INCOMPLETE_DEPTH_NOT_A_VERDICT",
+      "visited": 57,
+      "aiCalls": 28,
+      "seconds": 0.0049652
+    },
+    {
+      "stage": 22,
+      "depth": 12,
+      "status": "INCOMPLETE_DEPTH_NOT_A_VERDICT",
+      "visited": 524,
+      "aiCalls": 240,
+      "seconds": 0.0361069
+    },
+    {
+      "stage": 22,
+      "depth": 16,
+      "status": "INCOMPLETE_DEPTH_NOT_A_VERDICT",
+      "visited": 2391,
+      "aiCalls": 1056,
+      "seconds": 0.0757456
+    },
+    {
+      "stage": 22,
+      "depth": 24,
+      "status": "EVERY_PLAYER_PATH_LOSES_TO_FIXED_AI",
+      "visited": 5808,
+      "aiCalls": 2629,
+      "seconds": 0.0978466
+    },
+    {
+      "stage": 24,
+      "depth": 8,
+      "status": "INCOMPLETE_DEPTH_NOT_A_VERDICT",
+      "visited": 190,
+      "aiCalls": 91,
+      "seconds": 0.0038069
+    },
+    {
+      "stage": 24,
+      "depth": 12,
+      "status": "INCOMPLETE_DEPTH_NOT_A_VERDICT",
+      "visited": 444,
+      "aiCalls": 210,
+      "seconds": 0.0056238
+    },
+    {
+      "stage": 24,
+      "depth": 16,
+      "status": "INCOMPLETE_DEPTH_NOT_A_VERDICT",
+      "visited": 1123,
+      "aiCalls": 531,
+      "seconds": 0.021183
+    },
+    {
+      "stage": 24,
+      "depth": 24,
+      "status": "EVERY_PLAYER_PATH_LOSES_TO_FIXED_AI",
+      "visited": 1250,
+      "aiCalls": 594,
+      "seconds": 0.0082121
+    },
+    {
+      "stage": 26,
+      "depth": 8,
+      "status": "INCOMPLETE_DEPTH_NOT_A_VERDICT",
+      "visited": 72,
+      "aiCalls": 35,
+      "seconds": 0.0020182
+    },
+    {
+      "stage": 26,
+      "depth": 12,
+      "status": "INCOMPLETE_DEPTH_NOT_A_VERDICT",
+      "visited": 307,
+      "aiCalls": 145,
+      "seconds": 0.0053429
+    },
+    {
+      "stage": 26,
+      "depth": 16,
+      "status": "INCOMPLETE_DEPTH_NOT_A_VERDICT",
+      "visited": 781,
+      "aiCalls": 359,
+      "seconds": 0.0081385
+    },
+    {
+      "stage": 26,
+      "depth": 24,
+      "status": "PLAYER_WIN_EXISTS_TO_FIXED_AI",
+      "visited": 286,
+      "aiCalls": 134,
+      "seconds": 0.0022374
+    }
+  ]
+}
