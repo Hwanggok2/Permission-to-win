@@ -107,3 +107,51 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# StageGame nested project and credential rules
+# Unity caches and builds
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Bb]uild/
+[Bb]uilds/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+.vs/
+.idea/
+*.csproj
+*.sln
+*.slnx
+*.pidb
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+# Tools and generated temporary files
+node_modules/
+__pycache__/
+.venv/
+.tools/
+tmp/
+*.log
+~$*
+.DS_Store
+Thumbs.db
+# Credentials/signing/configuration containing secrets
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+*.p12
+*.pfx
+*.pem
+*.key
+*service-account*.json
+*serviceAccount*.json
+credentials*.json
+local.properties
+google-services.json
+GoogleService-Info.plist
