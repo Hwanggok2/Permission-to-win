@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Failed(Child)" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-14 13:19:28Z" end-time="2026-10-14 13:19:29Z" duration="1.2543551">
+  <test-suite type="TestSuite" id="1000" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="59" result="Failed" site="Child" start-time="2026-10-14 13:19:28Z" end-time="2026-10-14 13:19:29Z" duration="1.254355" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1071" name="StageGame.Tests.dll" fullname="C:/Github/StageGame/Client/Library/ScriptAssemblies/StageGame.Tests.dll" runstate="Runnable" testcasecount="59" result="Failed" site="Child" start-time="2026-10-14 13:19:28Z" end-time="2026-10-14 13:19:29Z" duration="1.213358" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="54892" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1072" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="59" result="Failed" site="Child" start-time="2026-10-14 13:19:28Z" end-time="2026-10-14 13:19:29Z" duration="1.212463" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1073" name="Tests" fullname="StageGame.Tests" runstate="Runnable" testcasecount="59" result="Failed" site="Child" start-time="2026-10-14 13:19:28Z" end-time="2026-10-14 13:19:29Z" duration="1.211767" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1050" name="PlayFlowTests" fullname="StageGame.Tests.PlayFlowTests" classname="StageGame.Tests.PlayFlowTests" runstate="Runnable" testcasecount="13" result="Failed" site="Child" start-time="2026-10-14 13:19:28Z" end-time="2026-10-14 13:19:29Z" duration="1.209758" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1062" name="BothWinningMovesAnimateBeforeAdsAndTwoResultActions" fullname="StageGame.Tests.PlayFlowTests.BothWinningMovesAnimateBeforeAdsAndTwoResultActions" methodname="BothWinningMovesAnimateBeforeAdsAndTwoResultActions" classname="StageGame.Tests.PlayFlowTests" runstate="Runnable" seed="1018647687" result="Failed" start-time="2026-10-14 13:19:25Z" end-time="2026-10-14 13:19:27Z" duration="2.226914" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <failure>
+                <message><![CDATA[  animation-player-2 text: AdStatus: 광고를 준비하지 못했어요.
+  Expected: less than or equal to 26.0f
+  But was:  29.0f
+]]></message>
+                <stack-trace><![CDATA[at StageGame.Tests.PlayFlowTests.Capture (System.String name, StageGame.GameApp game, System.Int32 width, System.Int32 height, System.Boolean host) [0x00307] in C:\Github\StageGame\Client\Assets\StageGame\Tests\EditMode\PlayFlowTests.cs:550
+at StageGame.Tests.PlayFlowTests+<BothWinningMovesAnimateBeforeAdsAndTwoResultActions>d__22.MoveNext () [0x0081a] in C:\Github\StageGame\Client\Assets\StageGame\Tests\EditMode\PlayFlowTests.cs:448
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@aebcb98460c6\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[Capture] animation-player-0: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=30
+[Capture] animation-player-1: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=30
+]]></output>
+            </test-case>
+            <test-case id="1052" name="HostProfilesKeepAllScreensBelowControlsAndPreserveLicenseScroll" fullname="StageGame.Tests.PlayFlowTests.HostProfilesKeepAllScreensBelowControlsAndPreserveLicenseScroll" methodname="HostProfilesKeepAllScreensBelowControlsAndPreserveLicenseScroll" classname="StageGame.Tests.PlayFlowTests" runstate="Runnable" seed="1053157620" result="Failed" start-time="2026-10-14 13:19:27Z" end-time="2026-10-14 13:19:29Z" duration="2.344777" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  host-ko-390-result text: AdStatus: 
+  Expected: less than or equal to 26.0f
+  But was:  29.0f
+]]></message>
+                <stack-trace><![CDATA[at StageGame.Tests.PlayFlowTests.Capture (System.String name, StageGame.GameApp game, System.Int32 width, System.Int32 height, System.Boolean host) [0x00307] in C:\Github\StageGame\Client\Assets\StageGame\Tests\EditMode\PlayFlowTests.cs:550
+at StageGame.Tests.PlayFlowTests+<HostProfilesKeepAllScreensBelowControlsAndPreserveLicenseScroll>d__7.MoveNext () [0x004d4] in C:\Github\StageGame\Client\Assets\StageGame\Tests\EditMode\PlayFlowTests.cs:107
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@aebcb98460c6\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[Capture] host-ko-390-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=30
+[Capture] host-ko-390-settings: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=30
+[Capture] host-ko-390-notices-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=30
+[Capture] host-ko-390-help: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=30
+[Capture] host-ko-390-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=30
+[Capture] host-ko-390-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=30
+Saving results to: C:\Github\StageGame\Client\Evidence\graphics-refresh-preview-tests.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

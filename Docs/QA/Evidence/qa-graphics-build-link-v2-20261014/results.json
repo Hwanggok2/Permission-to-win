@@ -1,0 +1,1193 @@
+{
+  "method": "Read-only final Client artifacts and available root evidence; root report must be reviewed separately for completion and pointer scope",
+  "unity": {
+    "total": 59,
+    "passed": 59,
+    "failed": 0
+  },
+  "editorSafety": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "scope": "Separate Editor-only guard run; do not add to59 as one run"
+  },
+  "frozenAssetChecks": [
+    {
+      "path": "Assets/StageGame/Art/Disc.png",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/Disc.png.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/SoftUI/RoundRect96.png",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/SoftUI/RoundRect96.png.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/SoftUI/SoftDisc128.png",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/SoftUI/SoftDisc128.png.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/SoftUI.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/AiDiamond.png",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/AiDiamond.png.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/AiDiamondWin.png",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/AiDiamondWin.png.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/BoardTeal.png",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/BoardTeal.png.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/ButtonCream.png",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/ButtonCream.png.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/ButtonMint.png",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/ButtonMint.png.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconCheck.png",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconCheck.png.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconChevron.png",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconChevron.png.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconClose.png",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconClose.png.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconHelp.png",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconHelp.png.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconLock.png",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconLock.png.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconPause.png",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconPause.png.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconPlay.png",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconPlay.png.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconSettings.png",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconSettings.png.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/NodeCleared.png",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/NodeCleared.png.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/NodeCurrent.png",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/NodeCurrent.png.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/NodeLocked.png",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/NodeLocked.png.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/NodeSelected.png",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/NodeSelected.png.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/PanelCream.png",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/PanelCream.png.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/PlayerRing.png",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/PlayerRing.png.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/PlayerRingWin.png",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/PlayerRingWin.png.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/RecessedHole.png",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/RecessedHole.png.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/TabletopTheme.asset",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/TabletopTheme.asset.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Art.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Audio/Move.wav",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Audio/Move.wav.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Audio.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Editor/LocalizationBuilder.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Editor/LocalizationBuilder.cs.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Editor/ProjectBuilder.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Editor/ProjectBuilder.cs.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Editor/SoftUiBuilder.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Editor/SoftUiBuilder.cs.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Editor/StageGame.Editor.asmdef",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Editor/StageGame.Editor.asmdef.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Editor/StageMapBuilder.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Editor/StageMapBuilder.cs.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Editor/TabletopUiBuilder.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Editor/TabletopUiBuilder.cs.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Editor.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Fonts/NotoSansCJKkr-Regular.otf",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Fonts/NotoSansCJKkr-Regular.otf.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Fonts.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Plugins/WebGL/HostInsets.jslib",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Plugins/WebGL/HostInsets.jslib.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Plugins/WebGL/LocaleBridge.jslib",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Plugins/WebGL/LocaleBridge.jslib.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Plugins/WebGL.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Plugins.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/AppRoot.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/AppRoot.prefab.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/Board/Board.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/Board/Board.prefab.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/Board/Cell.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/Board/Cell.prefab.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/Board.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/CloseButton.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/CloseButton.prefab.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/ModalFrame.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/ModalFrame.prefab.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/PrimaryButton.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/PrimaryButton.prefab.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/StageCard.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/StageCard.prefab.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/StageNode.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/StageNode.prefab.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/ConfirmModal.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/ConfirmModal.prefab.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/GameScreen.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/GameScreen.prefab.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/HelpModal.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/HelpModal.prefab.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/LobbyScreen.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/LobbyScreen.prefab.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/NoticesModal.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/NoticesModal.prefab.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/ResultModal.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/ResultModal.prefab.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/SettingsModal.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/SettingsModal.prefab.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Resources/GameData/ads.json",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Resources/GameData/ads.json.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Resources/GameData/stages.json",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Resources/GameData/stages.json.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Resources/GameData/strings.json",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Resources/GameData/strings.json.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Resources/GameData.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Resources/LegalNotices.txt",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Resources/LegalNotices.txt.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Resources.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scenes/Main.unity",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scenes/Main.unity.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scenes.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/AiSearch.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/AiSearch.cs.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/ConnectFourBoard.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/ConnectFourBoard.cs.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/GameData.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/GameData.cs.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/ProgressStore.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/ProgressStore.cs.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/StringTable.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/StringTable.cs.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Platform/Advertising.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Platform/Advertising.cs.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Platform.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/StageGame.Runtime.asmdef",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/StageGame.Runtime.asmdef.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/GameApp.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/GameApp.cs.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/HostLayout.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/HostLayout.cs.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/SafeAreaFitter.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/SafeAreaFitter.cs.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/TabletopTheme.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/TabletopTheme.cs.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Tests/EditMode/CoreTests.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Tests/EditMode/CoreTests.cs.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Tests/EditMode/HostLayoutTests.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Tests/EditMode/HostLayoutTests.cs.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Tests/EditMode/LocalizationTests.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Tests/EditMode/LocalizationTests.cs.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Tests/EditMode/PlayFlowTests.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Tests/EditMode/PlayFlowTests.cs.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Tests/EditMode/StageGame.Tests.asmdef",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Tests/EditMode/StageGame.Tests.asmdef.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Tests/EditMode/StageMapTests.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Tests/EditMode/StageMapTests.cs.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Tests/EditMode.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Tests.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StreamingAssets/Notices/NotoSansCJKkr-OFL.txt",
+      "matches": true
+    },
+    {
+      "path": "Assets/StreamingAssets/Notices/NotoSansCJKkr-OFL.txt.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StreamingAssets/Notices/NotoSansKR-OFL.txt",
+      "matches": true
+    },
+    {
+      "path": "Assets/StreamingAssets/Notices/NotoSansKR-OFL.txt.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StreamingAssets/Notices/NUnit-ThirdPartyNotices.txt",
+      "matches": true
+    },
+    {
+      "path": "Assets/StreamingAssets/Notices/NUnit-ThirdPartyNotices.txt.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StreamingAssets/Notices/SOURCES.txt",
+      "matches": true
+    },
+    {
+      "path": "Assets/StreamingAssets/Notices/SOURCES.txt.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StreamingAssets/Notices/Unity-Companion-License-Full.txt",
+      "matches": true
+    },
+    {
+      "path": "Assets/StreamingAssets/Notices/Unity-Companion-License-Full.txt.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StreamingAssets/Notices/Unity-NUnit-LICENSE.txt",
+      "matches": true
+    },
+    {
+      "path": "Assets/StreamingAssets/Notices/Unity-NUnit-LICENSE.txt.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StreamingAssets/Notices/Unity-TestFramework-LICENSE.txt",
+      "matches": true
+    },
+    {
+      "path": "Assets/StreamingAssets/Notices/Unity-TestFramework-LICENSE.txt.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StreamingAssets/Notices/Unity-uGUI-LICENSE.txt",
+      "matches": true
+    },
+    {
+      "path": "Assets/StreamingAssets/Notices/Unity-uGUI-LICENSE.txt.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StreamingAssets/Notices.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/StreamingAssets.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/WebGLTemplates/StageGamePortrait/host-layout.js",
+      "matches": true
+    },
+    {
+      "path": "Assets/WebGLTemplates/StageGamePortrait/host-layout.js.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/WebGLTemplates/StageGamePortrait/index.html",
+      "matches": true
+    },
+    {
+      "path": "Assets/WebGLTemplates/StageGamePortrait/index.html.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/WebGLTemplates/StageGamePortrait/ui-text.js",
+      "matches": true
+    },
+    {
+      "path": "Assets/WebGLTemplates/StageGamePortrait/ui-text.js.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/WebGLTemplates/StageGamePortrait.meta",
+      "matches": true
+    },
+    {
+      "path": "Assets/WebGLTemplates.meta",
+      "matches": true
+    }
+  ],
+  "declaredCaptureDataChecks": [
+    {
+      "path": "Evidence/graphics-refresh-20261014/animation-ai-0.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/animation-ai-1.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/animation-ai-2.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/animation-player-0.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/animation-player-1.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/animation-player-2.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/en-confirm.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/en-help.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/en-lobby.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/en-match.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/en-restored.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/en-result.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/en-settings.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/help.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-en-320-confirm.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-en-320-help.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-en-320-lobby.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-en-320-match.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-en-320-notices-bottom.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-en-320-result.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-en-320-settings.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-en-390-confirm.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-en-390-help.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-en-390-lobby.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-en-390-match.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-en-390-notices-bottom.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-en-390-result.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-en-390-settings.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-ko-320-confirm.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-ko-320-help.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-ko-320-lobby.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-ko-320-match.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-ko-320-notices-bottom.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-ko-320-result.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-ko-320-settings.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-ko-390-confirm.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-ko-390-help.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-ko-390-lobby.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-ko-390-match.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-ko-390-notices-bottom.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-ko-390-result.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/host-ko-390-settings.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/ko-lobby.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/ko-match.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/ko-settings.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/lobby.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/map-en-320-all-cleared.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/map-en-320-locked.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/map-en-320-result-0.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/map-en-320-result-1.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/map-en-320-result-2.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/map-en-390-current.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/map-ko-320-all-cleared.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/map-ko-320-locked.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/map-ko-320-result-0.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/map-ko-320-result-1.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/map-ko-320-result-2.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/map-ko-390-current.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/match.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/notices.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/result.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/settings.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/graphics-refresh-20261014/animation-timeline.csv",
+      "matches": true
+    },
+    {
+      "path": "GameData/Generated/stages.json",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Resources/GameData/stages.json",
+      "matches": true
+    },
+    {
+      "path": "GameData/Generated/ads.json",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Resources/GameData/ads.json",
+      "matches": true
+    },
+    {
+      "path": "GameData/Generated/strings.json",
+      "matches": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Resources/GameData/strings.json",
+      "matches": true
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "Builds/Android/StageGame-development.apk",
+      "sha256": "A9BD2D986695C1000F0B4C031722BA7C4ED98104E85E5ECFAD8AE59FADC19C26",
+      "bytes": 36461106,
+      "matches": true
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.wasm",
+      "sha256": "FA25842E683D0C66795191799362F6045F2A91021F9C0FD12E65C0813445A590",
+      "bytes": 24395357,
+      "matches": true
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.data",
+      "sha256": "4B2EA54CD67DA41A41C02F5F1A41DEE15C8FAA669735333F9603D1AB09693330",
+      "bytes": 18819794,
+      "matches": true
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.framework.js",
+      "sha256": "F909F29D115947BE5BAB214FE3CD434A6197E6BDC2E24CE9C2933C64B58FAE08",
+      "bytes": 761643,
+      "matches": true
+    },
+    {
+      "path": "Builds/WebGL/index.html",
+      "sha256": "78D3D17A9163944E340C2EEF2B215C8FCDEBDF4C7F0F4F9A07E184104533C9D5",
+      "bytes": 4490,
+      "matches": true
+    },
+    {
+      "path": "Builds/WebGL/ui-text.js",
+      "sha256": "2D958DA273B7A6ACC2DFBD37EE24B034F0A82078A7BCA7755858A41C33A70FC8",
+      "bytes": 448,
+      "matches": true
+    },
+    {
+      "path": "Builds/WebGL/host-layout.js",
+      "sha256": "187B6162FE987A784D66FB6F929EC64C4885D8BA2A5B5A7E176AF16DFC9DAC25",
+      "bytes": 2002,
+      "matches": true
+    }
+  ],
+  "changesAfterFirstFreeze": [
+    "Client/Assets/StageGame/Editor/TabletopUiBuilder.cs",
+    "Client/Assets/StageGame/Tests/EditMode/StageMapTests.cs"
+  ],
+  "independent": [
+    {
+      "run": "qa-graphics-core-v2-20261014",
+      "passed": 31,
+      "failed": 1,
+      "assertions": 38772,
+      "currentProductMismatches": []
+    },
+    {
+      "run": "qa-graphics-l10n-final-20261014",
+      "passed": 1,
+      "failed": 0,
+      "assertions": 132,
+      "currentProductMismatches": []
+    }
+  ],
+  "notices": [
+    {
+      "entry": "assets/Notices/NotoSansCJKkr-OFL.txt",
+      "matches": true
+    },
+    {
+      "entry": "assets/Notices/NotoSansKR-OFL.txt",
+      "matches": true
+    },
+    {
+      "entry": "assets/Notices/NUnit-ThirdPartyNotices.txt",
+      "matches": true
+    },
+    {
+      "entry": "assets/Notices/SOURCES.txt",
+      "matches": true
+    },
+    {
+      "entry": "assets/Notices/Unity-Companion-License-Full.txt",
+      "matches": true
+    },
+    {
+      "entry": "assets/Notices/Unity-NUnit-LICENSE.txt",
+      "matches": true
+    },
+    {
+      "entry": "assets/Notices/Unity-TestFramework-LICENSE.txt",
+      "matches": true
+    },
+    {
+      "entry": "assets/Notices/Unity-uGUI-LICENSE.txt",
+      "matches": true
+    }
+  ],
+  "apkMatchesNoticeReport": true,
+  "rootWebglArtifactChecks": [
+    {
+      "path": "Client\\Builds\\WebGL\\index.html",
+      "matches": true
+    },
+    {
+      "path": "Client\\Builds\\WebGL\\host-layout.js",
+      "matches": true
+    },
+    {
+      "path": "Client\\Builds\\WebGL\\Build\\WebGL.loader.js",
+      "matches": true
+    },
+    {
+      "path": "Client\\Builds\\WebGL\\Build\\WebGL.framework.js",
+      "matches": true
+    },
+    {
+      "path": "Client\\Builds\\WebGL\\Build\\WebGL.data",
+      "matches": true
+    },
+    {
+      "path": "Client\\Builds\\WebGL\\Build\\WebGL.wasm",
+      "matches": true
+    }
+  ],
+  "changedDuringRead": [],
+  "limits": "No QA Unity/build/browser/device execution. Source-only editor guard update does not rerun59 or regenerate runtime. CAP-01 sparse capture close-icon observations require real browser confirmation. Existing live-ad,IAP,server,Toss,device and release gates remain."
+}

@@ -1,0 +1,21 @@
+{
+  "runId": "qa-graphics-l10n-final-20261014",
+  "framework": ".NET 10.0.8",
+  "passed": 1,
+  "failed": 0,
+  "assertions": 132,
+  "scope": "l10n.app_switch_same_match_and_relaunch",
+  "randomRuleSequences": 0,
+  "randomAiPositions": 0,
+  "limitations": "Unity APIs replaced by explicitly scoped doubles; no Editor, device, native JSON, real persistence, real ads, or performance validation.",
+  "results": [
+    {
+      "name": "l10n.app_switch_same_match_and_relaunch",
+      "layer": "actual GameApp; UI/coroutine/persistence doubles",
+      "status": "PASS",
+      "assertions": 132,
+      "milliseconds": 59,
+      "error": null
+    }
+  ]
+}

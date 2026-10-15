@@ -4,6 +4,14 @@
 
 실행 도구:
 
+- **최신 Rank UI v9 독립40/40 통과:** `run-rank-independent.ps1 -RunId <새ID>`는 후보12소스·Client/Generated6JSON·v8비교3JSON·계약/fixture 및 별도 [RankHarness](RankHarness/README.md) 도구를 고정해 컴파일/실행한다. `-SnapshotOnly`로 후보만 고정하거나 `-CandidateId qa-rank-v9-candidate-v1-20261014`로 같은 v9 후보를 재사용할 수 있다. `-Scope 'v9.,result.'`처럼 영향 묶음을 제한한다. QA-014 원래 재현·확인/토스트·237키/스토리 검사를 통과했고 runtime12+Client JSON3이 최종freeze와 일치한다. [결과와 제한](../Docs/QA/RANK-UI-RESULTS.md). 이 runner는 독립 .NET 검사이며 WebGL/브라우저를 실행하지 않는다. 이번 제품 웹 빌드와 새 브라우저 실행은 사용자 승인 대기다.
+- `Fixtures/rank-ui-interaction-cases.json`은 의미 기반 입력 준비물이다. 실제 소스 바인딩은 RankHarness/Program.cs에 있으며 승리선 helper와4벡터·구형 저장8개를 실행했다. 구 `run-independent.ps1`/GameApp/Tabletop32묶음·137키·두 결과 버튼 기대값을 새 Rank UI 통과로 사용하지 않는다.
+- `check-rank-data-preparation.py`는 **이전 v8/228키 시점의 정적 준비 검사**로 보존한다. 현재 v9/237키에 실행할 기준이 아니다. 당시47승인변경·30단계/광고 보존·해시/참조·23입력/복수승리4벡터 검산은 별도 Evidence에 보존했고 최신 데이터 검사는 RankHarness의v9 승인 변경/해시 검사로 대체했다.
+
+- `check-graphics-assets.ps1 -RunId <새 ID>`: 동결 소스/프리팹/아트/데이터·Client59검사/캡처를 보존하고 theme21·prefab sprite GUID·AppRoot theme/노드 icon10·이전 데이터/소스·제작도구 재적용 해시를 읽는다. 참조 존재를 시각 완성/실제 렌더로 대체하지 않는다.
+- `check-graphics-evidence.ps1 -RunId <새 ID>`: Client 최종 freeze·59검사와 별도 Editor guard1검사·62캡처/타임라인/데이터·7빌드산출물·APK 고지8개·독립 실행 소스·현재 총괄 브라우저 파일을 연결한다. 총괄 README가 실행 전일 수 있으므로 도구 완료만으로 실제 포인터 통과를 선언하지 않는다.
+- `run-independent.ps1 -RunId <새 ID> -Scope 'app.,l10n.,stageux.,ads.,data.actual_client_json,graphics.'`: 그래픽/새 결과 흐름 영향32묶음. 기존26은 sprite와 두 결과 버튼 계약에 맞췄고 graphics6은 연출 시간/입력/광고 순서, pause, 취소/순서 원복, 해금/로비, 무승부, 실제 Drop/Think 종료 진입을 확인한다. 중첩 IEnumerator·수동 시계·sprite identity·순서 목록은 명시적 대체 구현이며 Unity 스케줄·레이캐스트·그림 증거가 아니다.
+
 - 신규 단계 UX 입력 `Fixtures/stage-ux-legacy-saves.json`: 최초설치1개·구형 raw저장8개 및 독립 의미 기대값. `highestActuallyCompletedStage`는 기대 의미이며 실제 `highestClearedStage`에 연결한다. 실행결과는 [단계 UX 기록](../Docs/QA/STAGE-UX-RESULTS.md)을 따른다.
 - `run-progress-independent.ps1 -RunId <새 ID>`: 작업중UI와분리하여 ProgressStore/StringTable 실제소스 및 하네스/fixture를스냅샷으로 컴파일·검사한다. 구형이행·실제마지막완료·단조진척·중복/재도전·기존정보·잘못된입력/복구/저장예외8묶음이다. JSON/PlayerPrefs는기존명시적대체구현이며 native Unity·디스크내구성·GameApp/광고/CTA 검사를대신하지 않는다. 빌드중간파일은Tests/.work에둔다.
 

@@ -1,0 +1,156 @@
+{
+  "method": "Production AiSearch vs a reactive player that wins/blocks immediately, otherwise chooses random safe moves; seeds 0..255 per stage and revision.",
+  "limitation": "Bot comparison only. These percentages are not human win rates or proof of perceived difficulty.",
+  "stages": [
+    {
+      "id": 1,
+      "before": {
+        "games": 256,
+        "playerWins": 31,
+        "aiWins": 218,
+        "draws": 7
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 84,
+        "aiWins": 150,
+        "draws": 22
+      }
+    },
+    {
+      "id": 2,
+      "before": {
+        "games": 256,
+        "playerWins": 18,
+        "aiWins": 236,
+        "draws": 2
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 84,
+        "aiWins": 150,
+        "draws": 22
+      }
+    },
+    {
+      "id": 3,
+      "before": {
+        "games": 256,
+        "playerWins": 43,
+        "aiWins": 193,
+        "draws": 20
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 72,
+        "aiWins": 163,
+        "draws": 21
+      }
+    },
+    {
+      "id": 4,
+      "before": {
+        "games": 256,
+        "playerWins": 256,
+        "aiWins": 0,
+        "draws": 0
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 256,
+        "aiWins": 0,
+        "draws": 0
+      }
+    },
+    {
+      "id": 5,
+      "before": {
+        "games": 256,
+        "playerWins": 17,
+        "aiWins": 236,
+        "draws": 3
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 70,
+        "aiWins": 175,
+        "draws": 11
+      }
+    },
+    {
+      "id": 6,
+      "before": {
+        "games": 256,
+        "playerWins": 23,
+        "aiWins": 219,
+        "draws": 14
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 70,
+        "aiWins": 175,
+        "draws": 11
+      }
+    },
+    {
+      "id": 7,
+      "before": {
+        "games": 256,
+        "playerWins": 34,
+        "aiWins": 219,
+        "draws": 3
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 55,
+        "aiWins": 192,
+        "draws": 9
+      }
+    },
+    {
+      "id": 8,
+      "before": {
+        "games": 256,
+        "playerWins": 16,
+        "aiWins": 228,
+        "draws": 12
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 55,
+        "aiWins": 192,
+        "draws": 9
+      }
+    },
+    {
+      "id": 9,
+      "before": {
+        "games": 256,
+        "playerWins": 52,
+        "aiWins": 191,
+        "draws": 13
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 124,
+        "aiWins": 100,
+        "draws": 32
+      }
+    },
+    {
+      "id": 10,
+      "before": {
+        "games": 256,
+        "playerWins": 237,
+        "aiWins": 8,
+        "draws": 11
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 253,
+        "aiWins": 3,
+        "draws": 0
+      }
+    }
+  ]
+}

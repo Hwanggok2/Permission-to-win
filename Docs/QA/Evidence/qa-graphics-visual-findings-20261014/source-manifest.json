@@ -1,0 +1,26 @@
+[
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/animation-player-0.png",
+    "snapshot": "animation-player-0.png",
+    "sha256": "2E9B2328EE6EEA6B256FAC7E55530E315BB0E393C8C555881B45C3DB83D2ABF3",
+    "bytes": 68820,
+    "sourceModifiedSeoul": "2026-10-14 22:22:54 +09:00",
+    "changedDuringCopy": false
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/map-ko-320-result-0.png",
+    "snapshot": "map-ko-320-result-0.png",
+    "sha256": "F5B1C760CCC755C91FAAC5A5F8050A8055B7E35652831C23A9247CAA9F5CB899",
+    "bytes": 46710,
+    "sourceModifiedSeoul": "2026-10-14 22:23:26 +09:00",
+    "changedDuringCopy": false
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/map-ko-320-result-1.png",
+    "snapshot": "map-ko-320-result-1.png",
+    "sha256": "3740ECB4262111FE76CFE077D264CA0885A65A3A55613E366A4CBBF58FDD310F",
+    "bytes": 46598,
+    "sourceModifiedSeoul": "2026-10-14 22:23:27 +09:00",
+    "changedDuringCopy": false
+  }
+]

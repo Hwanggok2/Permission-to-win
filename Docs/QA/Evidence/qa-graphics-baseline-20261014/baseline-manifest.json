@@ -1,0 +1,308 @@
+[
+  {
+    "path": "Client/Assets/StageGame/Editor/StageMapBuilder.cs",
+    "sha256": "123F74CB505D7CB292D39DEBEA0F1F060DA9B74A82AA65C745D63447893BDB07",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Editor/StageMapBuilder.cs",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Prefabs/AppRoot.prefab",
+    "sha256": "D270D74685F3064FD82A0EB7D5C42982AB638CEBA4415307D46EC3A8DA5A1065",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Prefabs/AppRoot.prefab",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Prefabs/Board/Board.prefab",
+    "sha256": "6A097704967E6C5CB713D140ADF677767F9EAD93A69A1F84B808A3C8EF268921",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Prefabs/Board/Board.prefab",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Prefabs/Board/Cell.prefab",
+    "sha256": "F8DA99CA738CB9D2F5734476D4723CFCF6D156B0F54DF06305CFA948AE504E28",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Prefabs/Board/Cell.prefab",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Prefabs/UI/Common/CloseButton.prefab",
+    "sha256": "9B61743FC5B16A5B9ACB451B06A3FEFC0195A4B9D1CE21B52A741B30AB13AEEC",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Prefabs/UI/Common/CloseButton.prefab",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Prefabs/UI/Common/ModalFrame.prefab",
+    "sha256": "BBFF4AC2C07FC27F3F1956D1DC805A42E5DF69C9CCC56AA5311BC98A29D67BF2",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Prefabs/UI/Common/ModalFrame.prefab",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Prefabs/UI/Common/PrimaryButton.prefab",
+    "sha256": "F5D74DB2F74BD9333B0526F6727C5AA491820910E96907371B15CC1D0414A4C6",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Prefabs/UI/Common/PrimaryButton.prefab",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Prefabs/UI/Common/StageCard.prefab",
+    "sha256": "F719C59A122C7E35C706CF09DD7B2DD0ADBB9EC0BE2D580A6BA8A371D4CD1276",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Prefabs/UI/Common/StageCard.prefab",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Prefabs/UI/Common/StageNode.prefab",
+    "sha256": "1E94736C1B85ED256F8EDD5CEF148FA9DE3DD1A60AB697C8899B9353D46970BA",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Prefabs/UI/Common/StageNode.prefab",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Prefabs/UI/Common/StageNode.prefab.meta",
+    "sha256": "E239F8C16162A1F5B13DB6131D280AB51CDB1B0CAB444244BD0F359EB5449B77",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Prefabs/UI/Common/StageNode.prefab.meta",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Prefabs/UI/Screens/ConfirmModal.prefab",
+    "sha256": "466FFDAA4B2A3942B836373D46669BBA858157ADAD0569DC997757136E37BAFD",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Prefabs/UI/Screens/ConfirmModal.prefab",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Prefabs/UI/Screens/GameScreen.prefab",
+    "sha256": "B8AE406C921FEEB83AAC42643F69EECF8FABA2E460EDC7873023783EA8266516",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Prefabs/UI/Screens/GameScreen.prefab",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Prefabs/UI/Screens/HelpModal.prefab",
+    "sha256": "40701989DE343B7520FE7A139912F3A9CA108021E2B4CAAE8FB7D0D79B09C530",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Prefabs/UI/Screens/HelpModal.prefab",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Prefabs/UI/Screens/LobbyScreen.prefab",
+    "sha256": "25A8EECF467D0B010DD0C9FA8E06032A9C02888E87450FAB037B722BB45E7E10",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Prefabs/UI/Screens/LobbyScreen.prefab",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Prefabs/UI/Screens/NoticesModal.prefab",
+    "sha256": "D819F1BCFF3187A3711A41A2B768D29E7CA60F335A8FE3D1D8A6D6A4A09FEC8E",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Prefabs/UI/Screens/NoticesModal.prefab",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Prefabs/UI/Screens/ResultModal.prefab",
+    "sha256": "63E04FCA751B18F6E84A52A477E79A0BD9F119B2DCE6A2DCB319DC42B4804D64",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Prefabs/UI/Screens/ResultModal.prefab",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Prefabs/UI/Screens/SettingsModal.prefab",
+    "sha256": "8D825C3CEE59DE9878CEA03E290E77ADAC7F2F31C15BD5DF065B9DF05E40220A",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Prefabs/UI/Screens/SettingsModal.prefab",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Resources/GameData/strings.json",
+    "sha256": "57E392CF68464898829946F17030E4AE3008AAB86370452BACF6DBE56D68A291",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Resources/GameData/strings.json",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Scripts/Core/AiSearch.cs",
+    "sha256": "FEA609E5CC011D590C9BEDA3D401B3CCC420DF7E0C9FAD7EFA18F99A9D72F63B",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Scripts/Core/AiSearch.cs",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Scripts/Core/ConnectFourBoard.cs",
+    "sha256": "5A57257861061D89B71E9758B6E352A96E08D22C2B686C85C5CD503B0F25FB36",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Scripts/Core/ConnectFourBoard.cs",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Scripts/Core/GameData.cs",
+    "sha256": "72018B7041F6E255E5210B2BAD652117744D0BC7BAED9BFAC1CF70340AABB567",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Scripts/Core/GameData.cs",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Scripts/Core/ProgressStore.cs",
+    "sha256": "FCDB8DC6DE3B8DD0AEF425930F61B5EA3AB3E729C56384A8D72B841E548E17D1",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Scripts/Core/ProgressStore.cs",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Scripts/Core/StringTable.cs",
+    "sha256": "8D133248463B3466690BCC76BD9BBB31F7BA1703CDF84E3FF6788F2AB4374A1B",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Scripts/Core/StringTable.cs",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Scripts/Platform/Advertising.cs",
+    "sha256": "9D768FDDC0BCFB6801D7DEF5DC811FE9A699719CE6E56B909E62F2FFC814C23F",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Scripts/Platform/Advertising.cs",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Scripts/UI/GameApp.cs",
+    "sha256": "E79F57289BE0749E346767B2E53D464606D5BD86F79FCA3BC1E47CFE3430483F",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Scripts/UI/GameApp.cs",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Scripts/UI/HostLayout.cs",
+    "sha256": "3F35560AE219719C7A4ECAA265D6E7F48B517123DC210E02D5649DDB8B30E165",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Scripts/UI/HostLayout.cs",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Scripts/UI/SafeAreaFitter.cs",
+    "sha256": "0B55A9E30DF61CCCEE80B26CC2DC6EBF2DAE2292F69AA6806CE40466A8B68E51",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Scripts/UI/SafeAreaFitter.cs",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Tests/EditMode/LocalizationTests.cs",
+    "sha256": "1CD0940A03180969DB96DF3C9B8E6CA798ABFE78FFFC43D7AEC0399842398230",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Tests/EditMode/LocalizationTests.cs",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Tests/EditMode/PlayFlowTests.cs",
+    "sha256": "E6689E963603B5363CE59C08EF9EBF384D59330EDC968499A8E83C2F80B17BBC",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Tests/EditMode/PlayFlowTests.cs",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Tests/EditMode/StageMapTests.cs",
+    "sha256": "B04A32A6910D8132D549C7D49196E7E9FD25F9FC8AE30A42435F5CC3CD03AAD9",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Tests/EditMode/StageMapTests.cs",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Resources/GameData/ads.json",
+    "sha256": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Resources/GameData/ads.json",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Resources/GameData/stages.json",
+    "sha256": "2D04B124A42F0F3798AD942E9AACAB97EE34A25F05B380144CD70F75C3904992",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Resources/GameData/stages.json",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Resources/GameData/strings.json",
+    "sha256": "57E392CF68464898829946F17030E4AE3008AAB86370452BACF6DBE56D68A291",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Resources/GameData/strings.json",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Scripts/Core/AiSearch.cs",
+    "sha256": "FEA609E5CC011D590C9BEDA3D401B3CCC420DF7E0C9FAD7EFA18F99A9D72F63B",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Scripts/Core/AiSearch.cs",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Scripts/Core/ConnectFourBoard.cs",
+    "sha256": "5A57257861061D89B71E9758B6E352A96E08D22C2B686C85C5CD503B0F25FB36",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Scripts/Core/ConnectFourBoard.cs",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Scripts/Core/GameData.cs",
+    "sha256": "72018B7041F6E255E5210B2BAD652117744D0BC7BAED9BFAC1CF70340AABB567",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Scripts/Core/GameData.cs",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Scripts/Core/ProgressStore.cs",
+    "sha256": "FCDB8DC6DE3B8DD0AEF425930F61B5EA3AB3E729C56384A8D72B841E548E17D1",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Scripts/Core/ProgressStore.cs",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Scripts/Core/StringTable.cs",
+    "sha256": "8D133248463B3466690BCC76BD9BBB31F7BA1703CDF84E3FF6788F2AB4374A1B",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Scripts/Core/StringTable.cs",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Scripts/Platform/Advertising.cs",
+    "sha256": "9D768FDDC0BCFB6801D7DEF5DC811FE9A699719CE6E56B909E62F2FFC814C23F",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Scripts/Platform/Advertising.cs",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Client/Assets/StageGame/Scripts/UI/GameApp.cs",
+    "sha256": "E79F57289BE0749E346767B2E53D464606D5BD86F79FCA3BC1E47CFE3430483F",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Client/Assets/StageGame/Scripts/UI/GameApp.cs",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Docs/Management/Evidence/reference-ux-browser-20261014/en-retry-stage2-390.jpg",
+    "sha256": "F98BF8B0ABA6A0C6932D556DCE3AE3E0EDD57CF4F89EF908BD01CFC8E9BE21CE",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Docs/Management/Evidence/reference-ux-browser-20261014/en-retry-stage2-390.jpg",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Docs/Management/Evidence/reference-ux-browser-20261014/en-win-next-390.jpg",
+    "sha256": "33BB4BF301C6FADEE4A56EA5DD4286948704447CC195A0A428A8622D877B0DDF",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Docs/Management/Evidence/reference-ux-browser-20261014/en-win-next-390.jpg",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Docs/Management/Evidence/reference-ux-browser-20261014/final-artifacts.json",
+    "sha256": "32424C110A7B4D298E2848051A1FAD3B77E0B3B0D26BC6BCD5F6FFDADB103D0D",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Docs/Management/Evidence/reference-ux-browser-20261014/final-artifacts.json",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Docs/Management/Evidence/reference-ux-browser-20261014/final-console.json",
+    "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Docs/Management/Evidence/reference-ux-browser-20261014/final-console.json",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Docs/Management/Evidence/reference-ux-browser-20261014/final-ko-help-390.jpg",
+    "sha256": "31F96AD0D773B861F11EBFF389D741F52B31390D20464DD6064CA742E521CD90",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Docs/Management/Evidence/reference-ux-browser-20261014/final-ko-help-390.jpg",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Docs/Management/Evidence/reference-ux-browser-20261014/final-ko-loss-390.jpg",
+    "sha256": "53F5E74C8CB293D4D0262C0DA853C7FC582B49576A7B73C9BEEC707B00D986FA",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Docs/Management/Evidence/reference-ux-browser-20261014/final-ko-loss-390.jpg",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Docs/Management/Evidence/reference-ux-browser-20261014/final-ko-map-390.jpg",
+    "sha256": "37B1039C2CFFBA1524780E5616BCCE022FD1266ADDEB5A9B780BCC4FCE052F03",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Docs/Management/Evidence/reference-ux-browser-20261014/final-ko-map-390.jpg",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "Docs/Management/Evidence/reference-ux-browser-20261014/README.md",
+    "sha256": "6E332375B2858DC3EE887F2E195EB1B14B2406021955ADA5F55C53E0F16A15C3",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/Docs/Management/Evidence/reference-ux-browser-20261014/README.md",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "GameData/Generated/ads.json",
+    "sha256": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/GameData/Generated/ads.json",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "GameData/Generated/stages.json",
+    "sha256": "2D04B124A42F0F3798AD942E9AACAB97EE34A25F05B380144CD70F75C3904992",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/GameData/Generated/stages.json",
+    "matchesFrozenManifest": true
+  },
+  {
+    "path": "GameData/Generated/strings.json",
+    "sha256": "57E392CF68464898829946F17030E4AE3008AAB86370452BACF6DBE56D68A291",
+    "originalFrozenSource": "Docs/QA/Evidence/qa-stage-integration-final-20261014/GameData/Generated/strings.json",
+    "matchesFrozenManifest": true
+  }
+]

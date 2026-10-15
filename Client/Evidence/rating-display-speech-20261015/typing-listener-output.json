@@ -1,0 +1,27 @@
+{
+    "oldTyping": {
+        "peak": 0.028879789635539056,
+        "rms": 0.005214422009885311,
+        "sampledWindows": 763
+    },
+    "newTyping": {
+        "peak": 0.26325723528862,
+        "rms": 0.0335785336792469,
+        "sampledWindows": 1647
+    },
+    "musicOnly": {
+        "peak": 0.08744402229785919,
+        "rms": 0.027547579258680345,
+        "sampledWindows": 1270
+    },
+    "musicAndTyping": {
+        "peak": 0.2848462760448456,
+        "rms": 0.04306580871343613,
+        "sampledWindows": 1221
+    },
+    "allSounds": {
+        "peak": 0.49293944239616396,
+        "rms": 0.07371611893177033,
+        "sampledWindows": 1066
+    }
+}

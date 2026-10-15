@@ -1,0 +1,43 @@
+{
+  "fixtureVersion": 1,
+  "contractVersion": 10,
+  "status": "PREPARATION_ONLY_NOT_BOUND_OR_EXECUTED_AGAINST_PRODUCT",
+  "authority": "Coordinator relayed v10: about1s active AI-turn delay overlapping search; pause/confirmation suspend; Undo/accepted Retry/accepted Leave/destroy cancel; hints exempt.",
+  "timingModel": {
+    "targetActiveDelayMs": 1000,
+    "clockOrigin": "start of each non-hint AI turn, including AI-starting stage",
+    "activeWhen": "not applicationPaused AND not pauseModal AND not actionConfirmation",
+    "placementEligibility": "search complete AND accumulated active time reaches delay target AND match/search identity still valid",
+    "overlap": "eligibleActiveMs=max(delayTargetMs,searchCompletionActiveMs), never delay+search duration",
+    "timingTolerance": "Read frozen implementation target; allow only declared manual-frame/native scheduling tolerance. Do not claim exact wall-clock/device performance from manual time.",
+    "searchTimesBelow": "Reference-model values only, not measured actual AiSearch durations or AI stubs"
+  },
+  "timingCases": [
+    {"id":"fast_search_before_delay_boundary","searchCompletionActiveMs":100,"segments":[{"ms":950}],"expectedActiveMs":950,"eligible":false},
+    {"id":"one_ms_before_delay_boundary","searchCompletionActiveMs":100,"segments":[{"ms":999}],"expectedActiveMs":999,"eligible":false},
+    {"id":"fast_search_at_delay_boundary","searchCompletionActiveMs":100,"segments":[{"ms":1000}],"expectedActiveMs":1000,"eligible":true},
+    {"id":"search_overlaps_delay","searchCompletionActiveMs":650,"segments":[{"ms":1000}],"expectedActiveMs":1000,"eligible":true,"forbiddenSerialWaitMs":1650},
+    {"id":"application_pause_does_not_consume_remaining_delay","searchCompletionActiveMs":100,"segments":[{"ms":300},{"ms":2000,"applicationPaused":true},{"ms":699}],"expectedActiveMs":999,"eligible":false},
+    {"id":"application_resume_uses_remaining_delay","searchCompletionActiveMs":100,"segments":[{"ms":300},{"ms":2000,"applicationPaused":true},{"ms":700}],"expectedActiveMs":1000,"eligible":true},
+    {"id":"pause_modal_stops_delay","searchCompletionActiveMs":200,"segments":[{"ms":450},{"ms":3000,"pauseModal":true},{"ms":550}],"expectedActiveMs":1000,"eligible":true},
+    {"id":"confirmation_cancel_resumes_same_turn_delay","searchCompletionActiveMs":200,"segments":[{"ms":450},{"ms":3000,"actionConfirmation":true},{"ms":550}],"expectedActiveMs":1000,"eligible":true,"confirmationDecision":"cancel; preserve match/search identity"},
+    {"id":"nested_suspension_requires_all_reasons_cleared","searchCompletionActiveMs":100,"segments":[{"ms":200},{"ms":500,"applicationPaused":true,"actionConfirmation":true},{"ms":500,"actionConfirmation":true},{"ms":799}],"expectedActiveMs":999,"eligible":false},
+    {"id":"repeated_pause_no_wall_clock_catchup","searchCompletionActiveMs":200,"segments":[{"ms":250},{"ms":5000,"pauseModal":true},{"ms":250},{"ms":7000,"applicationPaused":true},{"ms":499}],"expectedActiveMs":999,"eligible":false},
+    {"id":"ai_starter_receives_same_delay","starter":-1,"opening":[],"searchCompletionActiveMs":100,"segments":[{"ms":999}],"expectedActiveMs":999,"eligible":false},
+    {"id":"hint_exempt_from_ai_presentation_delay","isHint":true,"searchCompletionActiveMs":100,"segments":[{"ms":100}],"expectedActiveMs":100,"eligible":true,"invariants":["recommendation only; no board move","no added1s presentation wait","no replayed player-turn toast","reward gating remains unchanged"]}
+  ],
+  "cancellationCases": [
+    {"id":"cancel_after_fast_search_during_remaining_wait","activeMsBeforeAction":300,"actions":["Undo","accepted Retry","accepted Leave","OnDestroy"],"invariants":["pending old AI move never lands","old search/wait coroutine is stopped or invalidated","old turn cannot mutate board/progress/toast in lobby or new match"]},
+    {"id":"cancel_while_search_incomplete","phase":"actual search has yielded before completion","actions":["Undo","accepted Retry","accepted Leave","OnDestroy"],"invariants":["search and delay both cancelled","no late best-so-far move applied","Undo restores exact opening/history prefix","no extra completed match"]},
+    {"id":"cancel_near_delay_boundary","activeMsBeforeAction":950,"actions":["Undo","accepted Retry","accepted Leave","OnDestroy"],"eventOrders":[["cancel","AI eligible"],["AI reply","Undo"]],"invariants":["one valid move or one Undo rollback; never stale extra reply","completed-pair Undo and pre-reply Undo restore same previous player turn","terminal result Undo remains forbidden"]},
+    {"id":"accepted_retry_resets_new_ai_turn_clock","starter":-1,"opening":[],"oldActiveMs":300,"action":"accepted Retry","newTurnProbeActiveMs":700,"eligibleInNewTurn":false,"invariants":["new match identity","new AI delay starts from zero","old300ms is not transferred","exactly one eventual new AI reply"]},
+    {"id":"ai_winning_move_waits_before_result_sequence","opening":[0,6,1,6,2,6],"playerPlace":4,"invariants":["AI cannot win before active delay matures","final-stone animation/result/ad boundary start only after actual winning AI move","result recorded once","player winning Place does not acquire an AI delay"]}
+  ],
+  "presentationCases": [
+    {"id":"turn_toast_text_only","invariants":["visible toast contains text only; no plate/background image","text and CanvasGroup do not intercept pointer input","existing one-toast/fade/lifecycle cancellation remains","language/hint refresh does not replay toast"],"requires":"saved prefab/component evidence and Client Unity captures; independent state alone does not prove visual/raycast behavior"},
+    {"id":"unity_1080_reference_and_narrow_regression","referenceResolution":[1080,1920],"nativeViewports":[[1080,1920],[390,844],[320,568]],"narrowSafeInsets":{"top":59,"bottom":34,"left":0,"right":0},"simulatedHostReservationCssPx":64,"invariants":["saved Unity layout and representative captures use1080x1920 reference","390/320 host/safe-area regressions preserve44CSSpx target and short-screen access","square board/equal spacing/uniform lines remain","confirmation/toast/story1to2lines remain legible and operable"],"notProof":"native host simulation is not WebGL/browser or actual Toss execution"},
+    {"id":"new_recruit_hat_and_aligned_lobby_header","stageIds":[1,2,3,4],"locales":["ko","en"],"invariants":["new recruit hat assigned to rank1 without overwriting user source assets","all needed sprite refs resolve","lobby and in-game header use same host-relative top placement","new hat has no clipping/face overlap at1080/390/320"],"titleExpectation":"READ_USER_FINAL_CHOICE_AND_APPROVED_EXCEL_DIFF; no assumed4목or커넥트포 choice"}
+  ],
+  "requiredFrozenBindings":["non-hint AI-turn start clock and active elapsed accumulator","pause/confirmation suspension predicate","search completion/turn identity/cancel path","hint bypass","text-only Toast serialized refs","1080reference layout/native timing/capture metadata","final title choice and approved strings if changed"],
+  "notProof":["fixture model checks are not product timing tests","v9 pass does not imply v10 pass","no product test until Client freeze readiness","no WebGL/Android builds or new browser execution before user approval","QA does not execute Unity or browser"]
+}

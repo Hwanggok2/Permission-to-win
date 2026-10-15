@@ -1,0 +1,462 @@
+[
+  {
+    "source": "Client/Assets/StageGame/Editor/TabletopUiBuilder.cs",
+    "sha256": "CA488E8289B32211EE5C51793444355B51658B60D9A1A295EAF5188262B3ACE2"
+  },
+  {
+    "source": "Client/Assets/StageGame/Resources/GameData/ads.json",
+    "sha256": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A"
+  },
+  {
+    "source": "Client/Assets/StageGame/Resources/GameData/stages.json",
+    "sha256": "2D04B124A42F0F3798AD942E9AACAB97EE34A25F05B380144CD70F75C3904992"
+  },
+  {
+    "source": "Client/Assets/StageGame/Resources/GameData/strings.json",
+    "sha256": "57E392CF68464898829946F17030E4AE3008AAB86370452BACF6DBE56D68A291"
+  },
+  {
+    "source": "Client/Assets/StageGame/Tests/EditMode/StageMapTests.cs",
+    "sha256": "BE1153C152C336667FD0191C3E8501070C81284E74CFB27DE6E712EE8C8B6B0C"
+  },
+  {
+    "source": "Client/Assets/StreamingAssets/Notices/NotoSansCJKkr-OFL.txt",
+    "sha256": "6587D53488CE62E197942A708671B5F11F99D105034795C23A41380275D69C1F"
+  },
+  {
+    "source": "Client/Assets/StreamingAssets/Notices/NotoSansKR-OFL.txt",
+    "sha256": "1C05C68C34F9708415AADA51F17E1B0092D2CEA709BF4A94CD38114F9E73D7D9"
+  },
+  {
+    "source": "Client/Assets/StreamingAssets/Notices/NUnit-ThirdPartyNotices.txt",
+    "sha256": "EF37B1CCBAE5E9B641482CBD77A74EE96193A39D232CC8D856B9044F37DB9244"
+  },
+  {
+    "source": "Client/Assets/StreamingAssets/Notices/SOURCES.txt",
+    "sha256": "647CB2C60B107FAB810AA3FE6DF07C7932F31AA21BFB11148F33EF5EAED7254C"
+  },
+  {
+    "source": "Client/Assets/StreamingAssets/Notices/Unity-Companion-License-Full.txt",
+    "sha256": "7A177190B6C4E511E096D7F0211E34C241E9D54954C87B61BF610BF0BCCB719E"
+  },
+  {
+    "source": "Client/Assets/StreamingAssets/Notices/Unity-NUnit-LICENSE.txt",
+    "sha256": "EA14F98BA99AFCC079EC2A8A6C38461B5BC4CA3D184AA87AD7C60DE9134C4D43"
+  },
+  {
+    "source": "Client/Assets/StreamingAssets/Notices/Unity-TestFramework-LICENSE.txt",
+    "sha256": "D3B09E9683AFBC8D468A83000308F18E7133EAF7879AF870747000A66E3C0693"
+  },
+  {
+    "source": "Client/Assets/StreamingAssets/Notices/Unity-uGUI-LICENSE.txt",
+    "sha256": "A8E0CAE87B2EDB8C205AE6C308F20B89A09F32D62BD4A3FF0343BB4724A4201E"
+  },
+  {
+    "source": "Client/Evidence/android-build-summary.txt",
+    "sha256": "ACD2E126CAF1485F59C01BB45136FBCBE260FFF5A33633E77A415E7D14029E7E"
+  },
+  {
+    "source": "Client/Evidence/apk-notices.json",
+    "sha256": "1371279384D2567624D8EC60C6B1DCC3CF9D854D0EC53D4739177C3EC71D8713"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/animation-ai-0.png",
+    "sha256": "72D74CA6D63AE605624C371108DB3E39624E6B9477C0DD64520B3B2399E52757"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/animation-ai-1.png",
+    "sha256": "9D73937A22E34D77A2AB4C823E445885EBAAEB83FF5B0BC05BCA17B324751BDA"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/animation-ai-2.png",
+    "sha256": "62E20D5A65157B57D67304F646A55FBC195A66720EA25FCD8F142AB30336A14E"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/animation-player-0.png",
+    "sha256": "FB719C9D29F37FCB9348C74FC32D6EF88E257C0E69A982F38DFF1D6CC088DE1E"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/animation-player-1.png",
+    "sha256": "711BFFDECD7E39A69858C9B967E9432E82223BCC9004585DDAFFD24583A5E8FE"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/animation-player-2.png",
+    "sha256": "9C58EADDB38581490A4E6C8B321D82C768E2424E59020AD330C981EDEA9F5A63"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/animation-timeline.csv",
+    "sha256": "CA3F4B941FB37DA2C5B5CBEE835FDEE86C9C1D9C7010A6BCAB2B91E0B4B096BF"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/en-confirm.png",
+    "sha256": "560E983D14EB6E411819F784D3EC8D4E66591C2807817836F5C3BBF04D107E5F"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/en-help.png",
+    "sha256": "B4874C2399F752BC36B3AF508B3BF8351CEFF376FB96C90C965168AEBEF24E67"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/en-lobby.png",
+    "sha256": "8D04567EFBC4CE653C8847AEF9B510FE6F7DD451BF036DE4869BD42754C240EF"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/en-match.png",
+    "sha256": "CBAF1E63CEB4278494CC6D520AF3E284856320F131E61A688A8B56FD3EA3DAB9"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/en-restored.png",
+    "sha256": "74AB1D3993244EA33325C42DF91316CF9D4837CA010DD84E4EC444B2CEA493A3"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/en-result.png",
+    "sha256": "BD423CB7C02A1BABBF6B8BAC6D262D1C603D5F933DEABB43ED6F3BA25252FA6B"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/en-settings.png",
+    "sha256": "8950BB91F8923784011C0846A565089D500C1BB64C7278282A5C31D21ACB6E64"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/help.png",
+    "sha256": "89C986AC8DA2E59C334CD1F5B750FBCD861089878173342E697670D47235403A"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-en-320-confirm.png",
+    "sha256": "7C3E815E9AE3259127FA2A258907D329EE5B003019054D5462A49A7CA1DFB62A"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-en-320-help.png",
+    "sha256": "5B47BDB947060293737E05F5D7C3F1CCAB854A1AD9C69EDA968DE074C318CDE0"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-en-320-lobby.png",
+    "sha256": "F18052A972ED5C31466F693E1E569A6062CEF30CB761494A1A1A741CEBEE31F9"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-en-320-match.png",
+    "sha256": "DAC8E3D1727C9FCF0006DD3375DB31C8C23AE2CB706D3D3F1E4E96719C88EF1F"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-en-320-notices-bottom.png",
+    "sha256": "CEBAE5B6D056F619041F1F00DE103F5E5FA3543472C5BC626239BF16DE55F1CE"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-en-320-result.png",
+    "sha256": "0A8459A6E1061FD8D663F7AB38AE318155A02DC747B2B5A45591CCD3E262CF90"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-en-320-settings.png",
+    "sha256": "E4FB47ACA4739579041B65AD5AA2B471699A5D4C9EB7F251CD4FCC6A20716E9C"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-en-390-confirm.png",
+    "sha256": "98A471548D16719A43F2553F399DA665DB16D840CEB2100591DE7F374FD0E388"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-en-390-help.png",
+    "sha256": "AB6C49F510DFE0C851A6834CD14C617A40FAEAD0930995FA11C7FA1A5B58487A"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-en-390-lobby.png",
+    "sha256": "FD6DBFDEB454B1A0836A6B3B267DB82B3E0A0647FD8F34644AB8760FAA3449F1"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-en-390-match.png",
+    "sha256": "650ECA99E00C6C06111319D279D8196CE2E062CE8C1AE6A1F82439D6BBBBBF9C"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-en-390-notices-bottom.png",
+    "sha256": "58513AB2418C69E74BC106066C76D9FD54CB3DB6AABCA93D6455D8F5B7CAB194"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-en-390-result.png",
+    "sha256": "96D301FC77D5212B6CDB85D0754F01D51898539CF904156EF3CF00300323E5B6"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-en-390-settings.png",
+    "sha256": "1411A686AE6F69160EAF8460B6B146B6CB067B128CDDDAD3B6B009B7E264144B"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-ko-320-confirm.png",
+    "sha256": "38EDDD5B97A8EE37DF6B742E75D49303B8B3BB039CC1DF4468B6EAA41063A03C"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-ko-320-help.png",
+    "sha256": "C9BE1E697F857DF758889DC02EAFCDC9AF3D1262E4D5CA3EEF9AB842C4AC250A"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-ko-320-lobby.png",
+    "sha256": "01A52907E4B903ED3B5DADC075D34A246125EBDB44EE4608B7BFB6532AE7E118"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-ko-320-match.png",
+    "sha256": "ECDFFB3967F68BBA93D562EF0E7D1A5F650925CCDB5C26CE5E55602BD4A3FF9C"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-ko-320-notices-bottom.png",
+    "sha256": "A6EC70EC6E0F6565CC4CE0F9777F06FF5E9A3FB6A371960FAE1886A0421F076F"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-ko-320-result.png",
+    "sha256": "7742022E05A5A95B355CD5EB5968C6302FF7368F78F3BB0D82D133C5A2B59EF9"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-ko-320-settings.png",
+    "sha256": "8C76876C3F2188A2487D40061C86810A09C33850637306A0CEB954F363331E9F"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-ko-390-confirm.png",
+    "sha256": "B31C91CA48144417153B8FCBEE0C6E23A9FDA655C89E2AABAE1A3C8F2E63B9AC"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-ko-390-help.png",
+    "sha256": "B2883925786342BCEB08ABCDFAD102007C812393A90059FFF2166E88A1BF070F"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-ko-390-lobby.png",
+    "sha256": "437703DB8BC80984B72DEBC04C5788AC1D0F5A9B3B7A374743888F311EBB8F7C"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-ko-390-match.png",
+    "sha256": "99D9D47EE325C399C02C4D5B4E778B56F45E150746BBA97ED0F5D2ABA89848A1"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-ko-390-notices-bottom.png",
+    "sha256": "BE83B7ED830A7426F9C91116C46EF1B2B429902E653B987193C5494432D63237"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-ko-390-result.png",
+    "sha256": "A53BE5D1E934506642EEBC15EBBB5BD77ADC6B73A8E7A122F0B4A7AD1D0CC662"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/host-ko-390-settings.png",
+    "sha256": "99C7B00F7DB38CF0E85667D2B6F71BC640D03ACB1FD4B8928FC3957692BE53B6"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/ko-lobby.png",
+    "sha256": "120A874AEE91A6D1ED1A4A6F7B11E01FD3B5B53774E73D8472598CAA3D4310ED"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/ko-match.png",
+    "sha256": "9016750468FAB85E0AF1DEC29F282B2F91649F7C4078AC1B873D7A6DBDB9180F"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/ko-settings.png",
+    "sha256": "7226182DC371B3C6D1A10D04C74946A2BB460F7969730451DB5B837854D10128"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/lobby.png",
+    "sha256": "120A874AEE91A6D1ED1A4A6F7B11E01FD3B5B53774E73D8472598CAA3D4310ED"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/map-en-320-all-cleared.png",
+    "sha256": "3427D3994847B06C638C4AE3E16C7BAB32D45C84F1DB2FA563478FBE19365247"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/map-en-320-locked.png",
+    "sha256": "F7703AD9F14E4F03CC3B6E8A83EAD87DF215F41C0E6C369E9AEF2F217AF9BC5B"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/map-en-320-result-0.png",
+    "sha256": "39FB82A643BC47262138A27DE194FD4D7F0B7F2B532BA26EF861B9AE78E99990"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/map-en-320-result-1.png",
+    "sha256": "0BCD1C3EC275DC101E3126AC1F87DF2D845FFDA4533694A23E8169B4AFDC6865"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/map-en-320-result-2.png",
+    "sha256": "BB634C6EECD24D91A99874AFC84A15D3179F9EA2F36AAD553A10DFC0D0026C0A"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/map-en-390-current.png",
+    "sha256": "93164F12794D5CC369260D13879579F0EA11E5B48249CB3AF8F34D573B8C8DD3"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/map-ko-320-all-cleared.png",
+    "sha256": "21A65095B7DEF9955651D2BBCB1AE968BEA8D65FDC0230C9B5C26278677D87C1"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/map-ko-320-locked.png",
+    "sha256": "F747C37F2D61C8A1D8DD6EE3A81FB5840DB25C4EDF5C6E2A3278E095123FEA3F"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/map-ko-320-result-0.png",
+    "sha256": "10AD2BE54A3E52ED0D7E8ECA41F4AA4DFD2FA72D2F4FEEEE604F28EACA3D2904"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/map-ko-320-result-1.png",
+    "sha256": "67A22F1854599AAD159860A0024D8969F3294A8926B376DABB755CB6D685F616"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/map-ko-320-result-2.png",
+    "sha256": "4160406242F32A2042F47622FF9D775CDF074E617E67FBBCB8C04B7FF2C3D446"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/map-ko-390-current.png",
+    "sha256": "9DB7F9102DE793A95542C798E62F8D25805822FE4862E0F33AEB3250C8891467"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/match.png",
+    "sha256": "14433BCA0B5EEE87AEA876F2FF55DD67E86B094B71604BBCB4BC4003698A7217"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/notices.png",
+    "sha256": "23217AD59483460016724245BC9473D32CB7DA920DDD5FECF70D18AB1FD91030"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/result.png",
+    "sha256": "C22E7657AE219C5BC47B7DB26467A2005FA12358F690C035FE8066368C16CDAC"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-20261014/settings.png",
+    "sha256": "19FCB96513E83A390BAC0B921906E91ACC50E67F2F4CAE65DF65A650C699223E"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-editor-safety-tests.xml",
+    "sha256": "64962DEB4C467FCABEA60C4F1606EAE7108FBF5EC7265CDC206ADA9ED3A16E49"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-idempotence.json",
+    "sha256": "523C358239F3F64BA05FE4AEC630AD26522ED57A2F3B982BFA3908DDF9132C47"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-source-freeze-before-editor-guard.json",
+    "sha256": "ADCC543960570D6390FFDC8C47C33387E201D37731D527C1651D10AAD5F96773"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-source-freeze.json",
+    "sha256": "2010591AD54EDEF740E0BEA1950082A27274379AADA4361F91F99193B2167992"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-tests.xml",
+    "sha256": "CB446F304A0EEA9E227813C97E33B507DC87E19D75910FF09D61288ACB90BE87"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-ui-audit.json",
+    "sha256": "733F852C593E4DA4A2BA06EC4D3E4228D8366708F7E36B0724A197FF2F1837AC"
+  },
+  {
+    "source": "Client/Evidence/graphics-refresh-verification.json",
+    "sha256": "ACB15851C60A47CFFEC94BE2BDFFE898C985CC61BC5A5839B6C618AA6C558BFF"
+  },
+  {
+    "source": "Client/Evidence/verification.json",
+    "sha256": "5988D83E74C7147FA6A61863183A94A53D933352E34745A13C3BEDF1F0C3EBE7"
+  },
+  {
+    "source": "Client/Evidence/webgl-build-summary.txt",
+    "sha256": "280F75A2C9D2EEB539FA7029129077013DE295B8C1ACA482E5992E497C9F9AF2"
+  },
+  {
+    "source": "Docs/QA/Evidence/qa-graphics-core-v2-20261014/post-run-source-check.json",
+    "sha256": "93AAABC79F61460A06053C18F37816F1E019C564D9339677BDBCC964E51AEBC2"
+  },
+  {
+    "source": "Docs/QA/Evidence/qa-graphics-core-v2-20261014/results.json",
+    "sha256": "776417A21D52864752C91ED2AF5DE08681C1234116A4903227FD9483E0DCC6B9"
+  },
+  {
+    "source": "Docs/QA/Evidence/qa-graphics-core-v2-20261014/source-manifest.json",
+    "sha256": "6B8D95DAA4B612EDD82B99628A7DBF399F09DF5343D5BD84B4E41CC2F56D992D"
+  },
+  {
+    "source": "Docs/QA/Evidence/qa-graphics-l10n-final-20261014/post-run-source-check.json",
+    "sha256": "9C57F87EFF2F7B61FE923613032FDBEA05BE1DD0A8D9652267DC77B484C9D086"
+  },
+  {
+    "source": "Docs/QA/Evidence/qa-graphics-l10n-final-20261014/results.json",
+    "sha256": "BA6243152309A93277F52F8FFDCDAFE2234C7832ED675E8224CA2CDCFABCBC81"
+  },
+  {
+    "source": "Docs/QA/Evidence/qa-graphics-l10n-final-20261014/source-manifest.json",
+    "sha256": "2A019F04BE5B667EB08A0326AFE2276E86ECB8A84B344DF0E9594147894BFB5A"
+  },
+  {
+    "source": "Docs\\Management\\Evidence\\graphics-refresh-browser-20261014\\after-en-game-320.jpg",
+    "sha256": "E3871283AAD8264DC602087F02240A6E7A15A3B52CA349E36C8E361E79019AD2"
+  },
+  {
+    "source": "Docs\\Management\\Evidence\\graphics-refresh-browser-20261014\\after-en-help-320.jpg",
+    "sha256": "37F4577895E27D7AB988A9813AD77CF8555A3CD3D9F447F959775F9C1CDFD1D9"
+  },
+  {
+    "source": "Docs\\Management\\Evidence\\graphics-refresh-browser-20261014\\after-en-licenses-scroll-320.jpg",
+    "sha256": "98B97AF946E0CCDA963B0C43725808A7BC5DB1758322D202EC95707D067FF5BD"
+  },
+  {
+    "source": "Docs\\Management\\Evidence\\graphics-refresh-browser-20261014\\after-en-lobby-320.jpg",
+    "sha256": "180B30F454FF40884D619877F7577F0C888256535E4A64C709A940C41C85D314"
+  },
+  {
+    "source": "Docs\\Management\\Evidence\\graphics-refresh-browser-20261014\\after-en-no-fill-320.jpg",
+    "sha256": "E69095A7672CF6722D51DEDBB6AA6A6CE28A1E5642C8997940C2024EF537E16C"
+  },
+  {
+    "source": "Docs\\Management\\Evidence\\graphics-refresh-browser-20261014\\after-en-restored-320.jpg",
+    "sha256": "5C7D318619167EC33D9FC5F8855A0DDAF772F3D96971225442EB40D7E9B1B4FA"
+  },
+  {
+    "source": "Docs\\Management\\Evidence\\graphics-refresh-browser-20261014\\after-en-settings-320.jpg",
+    "sha256": "293073E71BE1B98B98C45A7CA752805BE815FD595CF5A70F9F9F03DC068B254E"
+  },
+  {
+    "source": "Docs\\Management\\Evidence\\graphics-refresh-browser-20261014\\after-ko-ai-win-390.jpg",
+    "sha256": "3085346C168976D55851FE4DD1FE6EDFDEA39BA82111F55E73FCAE3DEC1332D4"
+  },
+  {
+    "source": "Docs\\Management\\Evidence\\graphics-refresh-browser-20261014\\after-ko-lobby-390.jpg",
+    "sha256": "96CA7F5E957850BCE8D81EDE933BE4BA9CC3FE5CD32067DD7AA9B213FEAD51A2"
+  },
+  {
+    "source": "Docs\\Management\\Evidence\\graphics-refresh-browser-20261014\\after-ko-locked-390.jpg",
+    "sha256": "A5F93AD6A545B086D4EF62BBA29CCFD2EA707FD9E3CF81ECCE09F95BAAE6298C"
+  },
+  {
+    "source": "Docs\\Management\\Evidence\\graphics-refresh-browser-20261014\\after-ko-player-win-390.jpg",
+    "sha256": "7A115FD0F1A7E29502D5C228C6DC3E68F85381D3BBDBA1CE5527F34535F02210"
+  },
+  {
+    "source": "Docs\\Management\\Evidence\\graphics-refresh-browser-20261014\\after-ko-restored-390.jpg",
+    "sha256": "BD007C2193CEF8D2ED002F6C92C726D1165C98C5D0CC9420EFAB15A9F9D695F8"
+  },
+  {
+    "source": "Docs\\Management\\Evidence\\graphics-refresh-browser-20261014\\before-game-390.jpg",
+    "sha256": "2CBF55CEE5D0D48B027EBF5204D7CE3D5C4C4CDC7D04463EFEDEA0A2082B8110"
+  },
+  {
+    "source": "Docs\\Management\\Evidence\\graphics-refresh-browser-20261014\\before-lobby-390.jpg",
+    "sha256": "3D83758A9BB803BFD9DA5BADC357BD0CE6DFAB80D8F28A9A3733203C1CB45B0B"
+  },
+  {
+    "source": "Docs\\Management\\Evidence\\graphics-refresh-browser-20261014\\browser-win-transition.jpg",
+    "sha256": "09C0DBEC03B2D0AA130B4328916DE5CF99A2F618518DA75082676208A80197D4"
+  },
+  {
+    "source": "Docs\\Management\\Evidence\\graphics-refresh-browser-20261014\\final-console.json",
+    "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945"
+  },
+  {
+    "source": "Docs\\Management\\Evidence\\graphics-refresh-browser-20261014\\README.md",
+    "sha256": "81F0930CFC81AEC2DF9FE1541DA2475E29E67635D8CFAF43FE754132E52C8494"
+  },
+  {
+    "source": "Docs\\Management\\Evidence\\graphics-refresh-browser-20261014\\webgl-artifacts.json",
+    "sha256": "F0F1F99A8F8B87A03E7025BE78FF2ED8C840935E56BF9F5DDC7FE7872D1A616C"
+  },
+  {
+    "source": "GameData/Generated/ads.json",
+    "sha256": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A"
+  },
+  {
+    "source": "GameData/Generated/stages.json",
+    "sha256": "2D04B124A42F0F3798AD942E9AACAB97EE34A25F05B380144CD70F75C3904992"
+  },
+  {
+    "source": "GameData/Generated/strings.json",
+    "sha256": "57E392CF68464898829946F17030E4AE3008AAB86370452BACF6DBE56D68A291"
+  },
+  {
+    "source": "Tests/check-graphics-evidence.ps1",
+    "sha256": "1D90E650FA39182C203C6F9DD4EFF94DE9FAC79EF9939C609DC9D2AA8DBF549C"
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "id": "C01",
+    "runtimeFile": "C01-uniform-v4.png",
+    "source": "Docs/Design/assets/characters-uniform-20261015-v4/C01-uniform-v4.png",
+    "sha256": "6f5e403375e158310f8d6f29c78ebf1e5fd5f9ea8015747385dfe4b62cac58b6",
+    "guid": "fc70fa4b5437f354bab70d87a1c25a90",
+    "states": {
+      "intro": -7822748177990576227,
+      "thinking": 305961503722060012,
+      "defeat": 100804651445603311
+    }
+  },
+  {
+    "id": "C02",
+    "runtimeFile": "C02-pixel-v6.png",
+    "source": "Docs/Design/assets/characters-pixel-20261015-v6/C02-pixel-v6.png",
+    "sha256": "0f6c78e8340bf0195479127e44474eda2f95c48e7c3e3c06d94b4a86aeed05a2",
+    "guid": "df923e1a1b2f409419e3d8500345347a",
+    "states": {
+      "intro": -8734148299612444479,
+      "thinking": -6223279633776069422,
+      "defeat": -7439943408336102376
+    }
+  },
+  {
+    "id": "C03",
+    "runtimeFile": "C03-pixel-v6.png",
+    "source": "Docs/Design/assets/characters-pixel-20261015-v6/C03-pixel-v6.png",
+    "sha256": "66e8a5d7a748a14b786b2e7ab3eb33e3c804780ae3ee1c97e060037f06eede3c",
+    "guid": "893de3c89c9d152408953c1aa8eab9e1",
+    "states": {
+      "intro": 2789846115468732091,
+      "thinking": -8323729618934179103,
+      "defeat": -3694768132547918690
+    }
+  },
+  {
+    "id": "C04",
+    "runtimeFile": "C04-pixel-v6.png",
+    "source": "Docs/Design/assets/characters-pixel-20261015-v6/C04-pixel-v6.png",
+    "sha256": "2720cdfb65bc9f407b8cf8693e35325178d76cda336aa9a87879f8a171ad439d",
+    "guid": "6b15483fcc48c0047868d75aa81222e5",
+    "states": {
+      "intro": -6285588269605269090,
+      "thinking": -1950845493800334766,
+      "defeat": 3123251067065155909
+    }
+  },
+  {
+    "id": "C05",
+    "runtimeFile": "C05-pixel-v5.png",
+    "source": "Docs/Design/assets/characters-pixel-20261015-v5/C05-pixel-v5.png",
+    "sha256": "ff40c3440d2dee55ead508f6720f423d679f899ed4596de1b8fd85155b2b73db",
+    "guid": "5b493cdab39c7d24eb0143095e0dcf5f",
+    "states": {
+      "intro": 8970494274485399101,
+      "thinking": 3500990205964971593,
+      "defeat": -6361491295316333348
+    }
+  },
+  {
+    "id": "C06",
+    "runtimeFile": "C06-pixel-v5.png",
+    "source": "Docs/Design/assets/characters-pixel-20261015-v5/C06-pixel-v5.png",
+    "sha256": "2ad2bb94659169ef81808426a455f6cb2412c7709a9d180365f60b0308c7e498",
+    "guid": "b7a65bfbe7804d245953853ca6b8d44d",
+    "states": {
+      "intro": 8515958293800088682,
+      "thinking": -7680357991829127454,
+      "defeat": -9118169926987633428
+    }
+  },
+  {
+    "id": "C07",
+    "runtimeFile": "C07-pixel-v5.png",
+    "source": "Docs/Design/assets/characters-pixel-20261015-v5/C07-pixel-v5.png",
+    "sha256": "72cf000eb5900918b52fd42f28dddf384c7b86538b33cdea3c2dcbfbb361189d",
+    "guid": "5a3d1732045520744b406e8e74912c8c",
+    "states": {
+      "intro": -5482189933337439761,
+      "thinking": 7359900526528934228,
+      "defeat": -453716048729196447
+    }
+  },
+  {
+    "id": "C08",
+    "runtimeFile": "C08-pixel-v5.png",
+    "source": "Docs/Design/assets/characters-pixel-20261015-v5/C08-pixel-v5.png",
+    "sha256": "aff2d97cec193ecf09b49dc5b258e01d687e138df3222e9cef7aeb43a05cb196",
+    "guid": "744d1d3a8f8fdfb47854e145d276780d",
+    "states": {
+      "intro": 7134745059691417745,
+      "thinking": 3365423449415337977,
+      "defeat": 367422446528644433
+    }
+  },
+  {
+    "id": "C09",
+    "runtimeFile": "C09-pixel-v5.png",
+    "source": "Docs/Design/assets/characters-pixel-20261015-v5/C09-pixel-v5.png",
+    "sha256": "76e4753608cb25078abd7344157b0b7c4ba4acd0c9115216e09428f986b1785a",
+    "guid": "bcd39acca2219d84db6350343f0ea867",
+    "states": {
+      "intro": -2256941328536126181,
+      "thinking": 3437910678834409194,
+      "defeat": -8399659736113425821
+    }
+  },
+  {
+    "id": "C10",
+    "runtimeFile": "C10-pixel-v5.png",
+    "source": "Docs/Design/assets/characters-pixel-20261015-v5/C10-pixel-v5.png",
+    "sha256": "d8c457097758f970e9f5994658e07a80f975863db44a9a137e985472839bba5d",
+    "guid": "99b9ab5b9b3c0004295efab575eb7634",
+    "states": {
+      "intro": -2651144201470020120,
+      "thinking": -7962699141557980466,
+      "defeat": 3715700231184435998
+    }
+  },
+  {
+    "id": "C11",
+    "runtimeFile": "C11-pixel-v5.png",
+    "source": "Docs/Design/assets/characters-pixel-20261015-v5/C11-pixel-v5.png",
+    "sha256": "7f47268fd1bd4a3f0f60f96b384f47cab52b86258075bde36fdf1cccd06ec9f5",
+    "guid": "7626bcef72f19a446ac4153f20309f30",
+    "states": {
+      "intro": 4535374299878132138,
+      "thinking": 552666783910760265,
+      "defeat": 528161403399245108
+    }
+  },
+  {
+    "id": "C12",
+    "runtimeFile": "C12-pixel-v5.png",
+    "source": "Docs/Design/assets/characters-pixel-20261015-v5/C12-pixel-v5.png",
+    "sha256": "268322da6fc0171b7671b03367deeabc64029aa248919f818c8738c2f8a42fe3",
+    "guid": "08eb5d4e50e7e1641bd183e883d5f06a",
+    "states": {
+      "intro": -1299047935375585700,
+      "thinking": 7120466355039061193,
+      "defeat": 2050436401168682753
+    }
+  },
+  {
+    "id": "C13",
+    "runtimeFile": "C13-pixel-v5.png",
+    "source": "Docs/Design/assets/characters-pixel-20261015-v5/C13-pixel-v5.png",
+    "sha256": "8b90c8d90ad750893a167a7d52bc3615e03f36d28f482a3d47e63f5d0ee6c0d4",
+    "guid": "68b2af5566567234c981fad345d9988e",
+    "states": {
+      "intro": 6108689220333141341,
+      "thinking": -5238196837225530641,
+      "defeat": 6056035637851378198
+    }
+  },
+  {
+    "id": "C14",
+    "runtimeFile": "C14-pixel-v5.png",
+    "source": "Docs/Design/assets/characters-pixel-20261015-v5/C14-pixel-v5.png",
+    "sha256": "b082bd16fe54c350a2e063efb25b0b1be73ac285796552b15d9897250dcf177a",
+    "guid": "fc37cff9aa2a2574e88bce2fadb56147",
+    "states": {
+      "intro": -7688132900994157004,
+      "thinking": -5816720624972631467,
+      "defeat": -9089371035263313388
+    }
+  },
+  {
+    "id": "C15",
+    "runtimeFile": "C15-pixel-v5.png",
+    "source": "Docs/Design/assets/characters-pixel-20261015-v5/C15-pixel-v5.png",
+    "sha256": "997434a9cee8ffbac42e8e75a41b84734410a778e2f30f37472c018c49ed332e",
+    "guid": "78d45a5d8117d004c87a52db8307cb3d",
+    "states": {
+      "intro": 8643232940150198014,
+      "thinking": 1521913797417655046,
+      "defeat": -7380052216032920726
+    }
+  },
+  {
+    "id": "C16",
+    "runtimeFile": "C16-pixel-v5.png",
+    "source": "Docs/Design/assets/characters-pixel-20261015-v5/C16-pixel-v5.png",
+    "sha256": "aa396ec3dcae5f17c9a8c28438e46006252315536c616e7e3013012fd9614f97",
+    "guid": "7ab713e77b38bcd448866f5162c6e584",
+    "states": {
+      "intro": -3530383986157784619,
+      "thinking": 4648415391211877289,
+      "defeat": -7592452111219345276
+    }
+  },
+  {
+    "id": "C17",
+    "runtimeFile": "C17-pixel-v5.png",
+    "source": "Docs/Design/assets/characters-pixel-20261015-v5/C17-pixel-v5.png",
+    "sha256": "dffe573b2c0ba0f5d1390a309fcd7892659999be2e78e763adaf4989661e45e3",
+    "guid": "f6aa7b1975b5ae8479e8b04d73643779",
+    "states": {
+      "intro": 4368115968801899630,
+      "thinking": -2580629948046691912,
+      "defeat": 7383370354363124756
+    }
+  },
+  {
+    "id": "C18",
+    "runtimeFile": "C18-pixel-v5.png",
+    "source": "Docs/Design/assets/characters-pixel-20261015-v5/C18-pixel-v5.png",
+    "sha256": "84ad0a77859553f70277dde1ffc6afd44cd4be0829043ece283f9e0f8db453c6",
+    "guid": "017c2558c94dbcf45a124b4f9f7f372a",
+    "states": {
+      "intro": -8587223875906227884,
+      "thinking": -6475336213088374650,
+      "defeat": -6094219038350367551
+    }
+  },
+  {
+    "id": "C19",
+    "runtimeFile": "C19-pixel-v5.png",
+    "source": "Docs/Design/assets/characters-pixel-20261015-v5/C19-pixel-v5.png",
+    "sha256": "1ba2b1c0cf5f5e8e09bc2ed5afd48cf70c6ac2918abf005e6dbbd0b650686af6",
+    "guid": "fa005637b620e62429417f92ea0bd86a",
+    "states": {
+      "intro": -7381129692931946000,
+      "thinking": 5072260763709650604,
+      "defeat": -1770653385917006942
+    }
+  },
+  {
+    "id": "C01Final",
+    "runtimeFile": "C01Final-uniform-v4.png",
+    "source": "Docs/Design/assets/characters-uniform-20261015-v4/C01Final-uniform-v4.png",
+    "sha256": "291cd6ca2490e25cb0b253b62100d564e57d0dca820c2d74a288e97aa3f5eedc",
+    "guid": "e056b9bd65304cf44b66be8621a4cdec",
+    "states": {
+      "intro": -7822748177990576227,
+      "thinking": 305961503722060012,
+      "defeat": 100804651445603311
+    }
+  }
+]

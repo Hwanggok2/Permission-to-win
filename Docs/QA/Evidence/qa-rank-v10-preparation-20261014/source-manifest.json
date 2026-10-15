@@ -1,0 +1,22 @@
+[
+  {
+    "source": "Tests/Fixtures/rank-v10-ai-timing-cases.json",
+    "sha256": "8fca9468554603e2adc5c34006589687e3553427e40aae21b0cde89060bfb2f2"
+  },
+  {
+    "source": "Docs/QA/V10-UI-RESULTS.md",
+    "sha256": "c9f4a4adc0d79910b18a8a5405cdb677c0becd4b6f8dc7786400c72e347de29b"
+  },
+  {
+    "source": "Docs/QA/TEST-PLAN.md",
+    "sha256": "f69309a07ec344635d20220f557d276fde48405336efd4f87b4e26bb732f5a8e"
+  },
+  {
+    "source": "Tests/RankHarness/README.md",
+    "sha256": "4b751171f8f5cc900cc725ea8d76cd0dc63bc5d7b1382c27744a0c7beda0c475"
+  },
+  {
+    "source": "Docs/Management/CONTRACT.md",
+    "sha256": "71729572d14c921974f332b92586ebfa9a1ff0b6338da070692cae5331abc7e4"
+  }
+]

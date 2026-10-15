@@ -1,0 +1,45 @@
+{
+  "status": "SQUARE_PAUSE_AND_FORK_DEFENSE_VERIFIED",
+  "atUtc": "2026-10-15T15:03:27.268255+00:00",
+  "unityTests": {
+    "total": "40",
+    "passed": "40",
+    "failed": "0",
+    "skipped": "0"
+  },
+  "dataTestsPassed": 46,
+  "changedAssets": [
+    "Assets/StageGame/Editor/RankUiBuilder.cs",
+    "Assets/StageGame/Prefabs/RankUI/Match.prefab",
+    "Assets/StageGame/Resources/GameData/stages.json",
+    "Assets/StageGame/Scripts/Core/AiSearch.cs",
+    "Assets/StageGame/Tests/EditMode/RankTurnTimerTests.cs"
+  ],
+  "unchangedBuildFiles": 17,
+  "pauseBackingSize": [
+    96,
+    96
+  ],
+  "pauseIconSize": [
+    120,
+    120
+  ],
+  "pauseVisualReview": [
+    "ko-1080-plain-match",
+    "ko-390-first-match"
+  ],
+  "pointerChecks": "center and side margins, ko/en 1080/390/320 widths",
+  "rating700Depth": 2,
+  "rating700AndUpOversight": 0,
+  "shortGameAudit": "short-game-comparison.json",
+  "auditedPlayerBranches": 329051,
+  "auditedAiReplies": 51136,
+  "auditedEarlyLosses": 0,
+  "generatedResourceHashes": {
+    "stages.json": "F4FEB86C397DDDF617423BE295D47A0AB36D43C74232BD6D9B04922DB1099C34",
+    "ads.json": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A",
+    "strings.json": "F39A258035741E60DD1CD822F216F3C106D4714467411FAB23B8EB8224928B31"
+  },
+  "newBuild": false,
+  "humanPlaytest": false
+}

@@ -1,0 +1,107 @@
+[
+  {
+    "aiRating": 200,
+    "aiDepth": 1,
+    "aiNodeBudget": 500,
+    "aiRandomPermille": 900,
+    "aiOversightPermille": 400
+  },
+  {
+    "aiRating": 300,
+    "aiDepth": 1,
+    "aiNodeBudget": 600,
+    "aiRandomPermille": 850,
+    "aiOversightPermille": 300
+  },
+  {
+    "aiRating": 400,
+    "aiDepth": 1,
+    "aiNodeBudget": 700,
+    "aiRandomPermille": 800,
+    "aiOversightPermille": 200
+  },
+  {
+    "aiRating": 500,
+    "aiDepth": 1,
+    "aiNodeBudget": 1000,
+    "aiRandomPermille": 700,
+    "aiOversightPermille": 120
+  },
+  {
+    "aiRating": 600,
+    "aiDepth": 2,
+    "aiNodeBudget": 1800,
+    "aiRandomPermille": 600,
+    "aiOversightPermille": 80
+  },
+  {
+    "aiRating": 700,
+    "aiDepth": 2,
+    "aiNodeBudget": 2500,
+    "aiRandomPermille": 500,
+    "aiOversightPermille": 0
+  },
+  {
+    "aiRating": 800,
+    "aiDepth": 4,
+    "aiNodeBudget": 8000,
+    "aiRandomPermille": 400,
+    "aiOversightPermille": 0
+  },
+  {
+    "aiRating": 900,
+    "aiDepth": 4,
+    "aiNodeBudget": 10000,
+    "aiRandomPermille": 300,
+    "aiOversightPermille": 0
+  },
+  {
+    "aiRating": 1000,
+    "aiDepth": 4,
+    "aiNodeBudget": 13000,
+    "aiRandomPermille": 220,
+    "aiOversightPermille": 0
+  },
+  {
+    "aiRating": 1100,
+    "aiDepth": 4,
+    "aiNodeBudget": 16000,
+    "aiRandomPermille": 160,
+    "aiOversightPermille": 0
+  },
+  {
+    "aiRating": 1200,
+    "aiDepth": 6,
+    "aiNodeBudget": 30000,
+    "aiRandomPermille": 100,
+    "aiOversightPermille": 0
+  },
+  {
+    "aiRating": 1300,
+    "aiDepth": 6,
+    "aiNodeBudget": 30000,
+    "aiRandomPermille": 60,
+    "aiOversightPermille": 0
+  },
+  {
+    "aiRating": 1400,
+    "aiDepth": 6,
+    "aiNodeBudget": 30000,
+    "aiRandomPermille": 30,
+    "aiOversightPermille": 0
+  },
+  {
+    "aiRating": 1500,
+    "aiDepth": 6,
+    "aiNodeBudget": 30000,
+    "aiRandomPermille": 10,
+    "aiOversightPermille": 0
+  },
+  {
+    "aiRating": 1600,
+    "aiDepth": 6,
+    "aiNodeBudget": 30000,
+    "aiRandomPermille": 0,
+    "aiOversightPermille": 0
+  }
+]

@@ -1,0 +1,163 @@
+{
+  "status": "CLIENT_SOURCE_READY_FOR_WEBGL_REBUILD_AND_DEVICE_RETEST",
+  "timestamp": "2026-10-15T16:31:54.031702+00:00",
+  "unity": {
+    "uniqueTests": 23,
+    "passed": 23,
+    "runs": [
+      {
+        "path": "unity-tests.xml",
+        "total": 21,
+        "passed": 19,
+        "failed": 2
+      },
+      {
+        "path": "unity-audio-tests.xml",
+        "total": 5,
+        "passed": 5,
+        "failed": 0
+      }
+    ],
+    "latestPerTest": {
+      "StageGame.Tests.HostLayoutTests.BrowserFallbackAndExplicitControlsUseCssCoordinates": {
+        "result": "Passed",
+        "run": "unity-tests.xml"
+      },
+      "StageGame.Tests.HostLayoutTests.InvalidInsetsFallBackToZeroWithoutRemovingHostAllowance": {
+        "result": "Passed",
+        "run": "unity-tests.xml"
+      },
+      "StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem(1)": {
+        "result": "Passed",
+        "run": "unity-tests.xml"
+      },
+      "StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem(2)": {
+        "result": "Passed",
+        "run": "unity-tests.xml"
+      },
+      "StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem(3)": {
+        "result": "Passed",
+        "run": "unity-tests.xml"
+      },
+      "StageGame.Tests.HostLayoutTests.SavedGraphicsAndSecondaryLicenseMenuKeepPrefabReferences": {
+        "result": "Passed",
+        "run": "unity-tests.xml"
+      },
+      "StageGame.Tests.HostLayoutTests.SideInsetsMergePerEdgeAndOversizedInsetsStayInsideScreen": {
+        "result": "Passed",
+        "run": "unity-tests.xml"
+      },
+      "StageGame.Tests.RankFlowTests.MobileVisualViewportKeepsWidthAndCssTouchSizeAcrossPixelRatios": {
+        "result": "Passed",
+        "run": "unity-tests.xml"
+      },
+      "StageGame.Tests.RankFlowTests.MusicContinuesThroughPauseAndConfirmationButSuspendsInBackground": {
+        "result": "Passed",
+        "run": "unity-tests.xml"
+      },
+      "StageGame.Tests.RankFlowTests.MusicKeepsItsPositionAcrossLobbyMatchAndResultReturn": {
+        "result": "Passed",
+        "run": "unity-tests.xml"
+      },
+      "StageGame.Tests.RankFlowTests.SoundButtonClickPlaysOnceAcrossOpenCloseAndRespectsDisabledAndOff": {
+        "result": "Passed",
+        "run": "unity-tests.xml"
+      },
+      "StageGame.Tests.RankFlowTests.SoundStoneImpactAndUiClickWorkWhileMusicContinuesThroughModal": {
+        "result": "Passed",
+        "run": "unity-tests.xml"
+      },
+      "StageGame.Tests.RankFlowTests.SpeechMuteHidesNoLettersAndScreenChangesCancelTheOldLine": {
+        "result": "Passed",
+        "run": "unity-tests.xml"
+      },
+      "StageGame.Tests.RankFlowTests.SpeechPausesWithDialogsFocusBackgroundAndAdsWhileMusicCanContinue": {
+        "result": "Passed",
+        "run": "unity-tests.xml"
+      },
+      "StageGame.Tests.RankFlowTests.SpeechTypesBothLanguagesWithClicksAndStableWrapping": {
+        "result": "Passed",
+        "run": "unity-tests.xml"
+      },
+      "StageGame.Tests.RankFlowTests.SpeechTypesWinAndLossDialogueAndRestartsForTheNextStage": {
+        "result": "Passed",
+        "run": "unity-tests.xml"
+      },
+      "StageGame.Tests.RankMusicAssetTests.LegacyMusicPreferenceDefaultsOnAndRoundTripsIndependently": {
+        "result": "Passed",
+        "run": "unity-tests.xml"
+      },
+      "StageGame.Tests.RankMusicAssetTests.SavedMusicReferencesOriginalAudioAndAllLicenseNoticesArePresent": {
+        "result": "Passed",
+        "run": "unity-tests.xml"
+      },
+      "StageGame.Tests.RankSoundAssetTests.AacSafeCopiesPreserveTheEntireOriginalAttackBetweenSilentGuards(\"TypingKey\")": {
+        "result": "Passed",
+        "run": "unity-audio-tests.xml"
+      },
+      "StageGame.Tests.RankSoundAssetTests.AacSafeCopiesPreserveTheEntireOriginalAttackBetweenSilentGuards(\"ButtonClick\")": {
+        "result": "Passed",
+        "run": "unity-audio-tests.xml"
+      },
+      "StageGame.Tests.RankSoundAssetTests.SavedSoundsUseShortPcmClipsAndCoverEveryButtonOnce": {
+        "result": "Passed",
+        "run": "unity-audio-tests.xml"
+      },
+      "StageGame.Tests.RatingDisplayAssetTests.SavedRatingsSliderAndDedicatedTypingClipHaveValidReferences": {
+        "result": "Passed",
+        "run": "unity-audio-tests.xml"
+      },
+      "StageGame.Tests.WebAudioImportAuditTests.ExportActualImportedAudioArtifactsAndSettings": {
+        "result": "Passed",
+        "run": "unity-audio-tests.xml"
+      }
+    },
+    "initialFailures": "Two exact imported-PCM equality assertions encountered resampler/codec ringing. Source WAV bytes now compared exactly, imported peak checked separately; both corrected tests passed."
+  },
+  "adapterChecks": 10,
+  "renderedScreens": 31,
+  "audioReport": "codec-report.json",
+  "actualUnityImport": "unity-import/import-settings.json",
+  "viewportMeasurements": "screens/viewport-metrics.json",
+  "changedExistingAssets": [
+    "Assets/StageGame/Editor/RankUiBuilder.cs",
+    "Assets/StageGame/Plugins/WebGL/HostInsets.jslib",
+    "Assets/StageGame/Prefabs/RankUI/RankAppRoot.prefab",
+    "Assets/StageGame/Scripts/UI/HostLayout.cs",
+    "Assets/StageGame/Scripts/UI/RankMatchFitter.cs",
+    "Assets/StageGame/Scripts/UI/SafeAreaFitter.cs",
+    "Assets/StageGame/Tests/EditMode/HostLayoutTests.cs",
+    "Assets/StageGame/Tests/EditMode/RankFlowTests.cs",
+    "Assets/StageGame/Tests/EditMode/RankRatingDisplayTests.cs",
+    "Assets/StageGame/Tests/EditMode/RankSoundTests.cs",
+    "Assets/WebGLTemplates/StageGamePortrait/host-layout.js",
+    "Assets/WebGLTemplates/StageGamePortrait/index.html"
+  ],
+  "newAssets": [
+    "Assets/StageGame/Audio/ButtonClickAacSafe.wav",
+    "Assets/StageGame/Audio/ButtonClickAacSafe.wav.meta",
+    "Assets/StageGame/Audio/TypingKeyAacSafe.wav",
+    "Assets/StageGame/Audio/TypingKeyAacSafe.wav.meta",
+    "Assets/StageGame/Tests/EditMode/RankMobileViewportTests.cs",
+    "Assets/StageGame/Tests/EditMode/RankMobileViewportTests.cs.meta",
+    "Assets/StageGame/Tests/EditMode/WebAudioImportAuditTests.cs",
+    "Assets/StageGame/Tests/EditMode/WebAudioImportAuditTests.cs.meta"
+  ],
+  "preserved": {
+    "originalAudio": true,
+    "art": true,
+    "gameData": true,
+    "core": true,
+    "scenes": true,
+    "otherPrefabs": true,
+    "assets": 488,
+    "buildFiles": 19
+  },
+  "limits": [
+    "No new WebGL or Android player build/deployment in Client session.",
+    "Unity RenderTexture previews use Expand-equivalent CanvasScaler math, not real iPhone execution.",
+    "Real iPhone Safari/Kakao decoding and visualViewport behavior require retest after coordinator rebuild.",
+    "Guarded effects add about 46 ms of onset latency."
+  ],
+  "localBrowserProbe": "file:// page open was rejected by browser-tool URL policy; no workaround was used. Coordinator independently supplied desktop Chromium codec evidence."
+}

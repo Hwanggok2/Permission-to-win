@@ -1,0 +1,35 @@
+{
+  "dateSeoul": "2026-10-14",
+  "method": "QA opened16 saved Client images with view_image, plus one prior-stage settings comparison. No QA Unity/browser/device execution.",
+  "base": "Client/Evidence/graphics-refresh-20261014/",
+  "reviewedCurrentImages": [
+    "animation-player-0.png", "animation-ai-0.png", "animation-player-1.png", "animation-ai-1.png",
+    "map-en-320-result-1.png", "map-ko-320-result-0.png", "host-ko-320-lobby.png", "host-en-320-help.png",
+    "host-ko-320-settings.png", "host-en-320-confirm.png", "host-ko-320-notices-bottom.png", "map-ko-320-result-2.png",
+    "host-en-390-settings.png", "host-en-320-settings.png", "host-ko-390-settings.png", "host-ko-320-confirm.png"
+  ],
+  "observations": [
+    "Player and AI enlarged last stones now render in front of the adjacent hole; placing images show smaller scale approaching the cell position.",
+    "Win/loss/draw images expose the board and two horizontal Retry/Lobby actions, with no visible Next, result Close, Pause or Hint.",
+    "Cream panels, teal recessed board, mint rings and coral diamonds are present across inspected lobby, game and modals.",
+    "Help uses a supported falling ring and abstract four-ring directional examples; legal screen includes the final licensing paragraph. These are saved render views, not QA pointer interactions."
+  ],
+  "captureDiscrepancy": {
+    "id": "CAP-01",
+    "status": "OPEN_CAPTURE_OBSERVATION_NOT_CONFIRMED_PRODUCT_DEFECT",
+    "affected": ["host-ko-320-settings.png", "host-en-320-confirm.png"],
+    "observation": "Close icon and eyebrow are absent in these two captures. The corresponding English320/Korean390/English390 settings and Korean320 pause captures show them.",
+    "baseline": "qa-stage-integration-final-20261014/Client/Evidence/host-ko-320-settings.png shows the close icon before graphics changes.",
+    "requestedConfirmation": "Root real browser: Korean settings and English pause at320x568, close visibility and pointer action. Do not infer product cause from inconsistent captures alone."
+  },
+  "animationEvidence": {
+    "source": "animation-timeline.csv and graphics-refresh-tests.xml, Client-run native Unity",
+    "playerLandedSeconds": 0.3909,
+    "aiLandedSeconds": 0.3975,
+    "playerAdPendingSeconds": 0.8930,
+    "aiAdPendingSeconds": 0.8990,
+    "scope": "Legal near-terminal fixtures enter actual Drop/Think; not human full matches or device performance. Static images alone do not establish duration."
+  },
+  "limits": "Not all62 supplied captures were manually inspected. Sprite existence and44px native assertions do not establish all pixels, pointer behavior or final aesthetic acceptance. Physical device, actual Toss, live ads and purchases remain untested.",
+  "hashes": "source-manifest.json contains the immutable snapshot hashes"
+}

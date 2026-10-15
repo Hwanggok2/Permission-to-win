@@ -1,0 +1,313 @@
+{
+  "sourceSha256": "b60229d2fbb81b4cd17b14805d45861d23168cd640b85b1a2d3e5c55f520cd15",
+  "clientRequestSha256": "211be733df62298c87ede4d8ee7b4b9742980aaa3410c375bed2d588c94c225f",
+  "approvedRevisionsSha256": "d70e801b1e4edc979642a83f60182cdabd0a9a7328914d872607f3f4c3a1daf2",
+  "approvedRevisedKeys": [
+    "client_help_rules",
+    "client_ui_player_turn",
+    "client_ui_start",
+    "game_brand",
+    "game_subtitle",
+    "game_title",
+    "help_drop_caption",
+    "help_drop_title",
+    "help_rules",
+    "match_instruction",
+    "match_legend",
+    "result_loss_diagonal",
+    "result_loss_horizontal",
+    "result_loss_vertical",
+    "stage_001",
+    "stage_002",
+    "stage_003",
+    "stage_004",
+    "stage_005",
+    "stage_006",
+    "stage_007",
+    "stage_008",
+    "stage_009",
+    "stage_010",
+    "stage_011",
+    "stage_012",
+    "stage_013",
+    "stage_014",
+    "stage_015",
+    "stage_016",
+    "stage_017",
+    "stage_018",
+    "stage_019",
+    "stage_020",
+    "stage_021",
+    "stage_022",
+    "stage_023",
+    "stage_024",
+    "stage_025",
+    "stage_026",
+    "stage_027",
+    "stage_028",
+    "stage_029",
+    "stage_030",
+    "stage_lock_requirement",
+    "stage_locked_detail",
+    "stage_replay",
+    "ui_next",
+    "ui_retry",
+    "web_canvas_label"
+  ],
+  "rankChangeSha256": "429bd9fb562b2888e45ea02df67e05c802c493ac5cf856e7af67cf055782bbb9",
+  "legacyStageFieldsUnchanged": true,
+  "stagesSha256": "6e66c8b0abe2dcc3b5297bf08a98953929b7e17b31e740569910255f7601fc26",
+  "rankUiAddedStrings": 91,
+  "rankUiRevisedStrings": 47,
+  "strings": 228,
+  "clientRequestedKeys": 70,
+  "locales": [
+    "ko",
+    "en"
+  ],
+  "clientCopyAndFormatArgs": "passed",
+  "stableRuntimeHashes": {
+    "ads.json": "d19f181faf52db28287bbed1b42291770dc3bf83d35e5cca8af4a6dcce9e194a"
+  },
+  "stringsSha256": "e191ce6773c2e608831f4f38bbb1b995bdd2caec3c156693cdbe71e50645828c",
+  "preservation": {
+    "beforeSha256": "b58027ecdbabf5c01992fd51c764cf58391550f2b783467e9b1ad753be4006cb",
+    "unchangedSheets": [
+      "AdConfig"
+    ],
+    "preservedStagesRange": "A1:K34",
+    "comparedStringsRange": "A1:E141",
+    "approvedChangedCells": [
+      "Strings!C5",
+      "Strings!E5",
+      "Strings!C6",
+      "Strings!E6",
+      "Strings!C7",
+      "Strings!E7",
+      "Strings!C8",
+      "Strings!E8",
+      "Strings!C9",
+      "Strings!E9",
+      "Strings!C10",
+      "Strings!E10",
+      "Strings!C11",
+      "Strings!E11",
+      "Strings!C12",
+      "Strings!E12",
+      "Strings!C13",
+      "Strings!E13",
+      "Strings!C14",
+      "Strings!E14",
+      "Strings!C15",
+      "Strings!E15",
+      "Strings!C16",
+      "Strings!E16",
+      "Strings!C17",
+      "Strings!E17",
+      "Strings!C18",
+      "Strings!E18",
+      "Strings!C19",
+      "Strings!E19",
+      "Strings!C20",
+      "Strings!E20",
+      "Strings!C21",
+      "Strings!E21",
+      "Strings!C22",
+      "Strings!E22",
+      "Strings!C23",
+      "Strings!E23",
+      "Strings!C24",
+      "Strings!E24",
+      "Strings!C25",
+      "Strings!E25",
+      "Strings!C26",
+      "Strings!E26",
+      "Strings!C27",
+      "Strings!E27",
+      "Strings!C28",
+      "Strings!E28",
+      "Strings!C29",
+      "Strings!E29",
+      "Strings!C30",
+      "Strings!E30",
+      "Strings!C31",
+      "Strings!E31",
+      "Strings!C32",
+      "Strings!E32",
+      "Strings!C33",
+      "Strings!E33",
+      "Strings!C34",
+      "Strings!E34",
+      "Strings!C35",
+      "Strings!E35",
+      "Strings!C41",
+      "Strings!C42",
+      "Strings!C53",
+      "Strings!E53",
+      "Strings!C64",
+      "Strings!E64",
+      "Strings!C65",
+      "Strings!E65",
+      "Strings!C68",
+      "Strings!C70",
+      "Strings!E70",
+      "Strings!C79",
+      "Strings!E79",
+      "Strings!C80",
+      "Strings!E80",
+      "Strings!C87",
+      "Strings!E87",
+      "Strings!C118",
+      "Strings!E118",
+      "Strings!C127",
+      "Strings!E127",
+      "Strings!C136",
+      "Strings!C137",
+      "Strings!C138",
+      "Strings!E138",
+      "Strings!C139",
+      "Strings!E139"
+    ],
+    "otherValuesStylesDimensionsPanesValidation": "passed"
+  },
+  "date": "2026-10-14",
+  "schemaVersion": 1,
+  "previousStrings": 137,
+  "preservedPreviousStrings": 90,
+  "currentEditRevisedStrings": 47,
+  "addedStrings": 91,
+  "rankCount": 10,
+  "stagesPerRank": 3,
+  "stagesPerStarLevel": 6,
+  "exportCheck": "passed",
+  "repeatExportIdenticalBytes": true,
+  "pythonTests": {
+    "passed": 42,
+    "failed": 0
+  },
+  "legacyColorAndImmediatePlacementText": "absent",
+  "visualReview": {
+    "ranges": [
+      [
+        "Stages",
+        "L1:Q9",
+        "stages-meta"
+      ],
+      [
+        "Stages",
+        "L28:Q34",
+        "stages-last"
+      ],
+      [
+        "Strings",
+        "B5:E16",
+        "strings-5"
+      ],
+      [
+        "Strings",
+        "B17:E28",
+        "strings-17"
+      ],
+      [
+        "Strings",
+        "B29:E35",
+        "strings-29"
+      ],
+      [
+        "Strings",
+        "B41:E42",
+        "strings-41"
+      ],
+      [
+        "Strings",
+        "B53:E53",
+        "strings-53"
+      ],
+      [
+        "Strings",
+        "B64:E65",
+        "strings-64"
+      ],
+      [
+        "Strings",
+        "B68:E68",
+        "strings-68"
+      ],
+      [
+        "Strings",
+        "B79:E80",
+        "strings-79"
+      ],
+      [
+        "Strings",
+        "B87:E87",
+        "strings-87"
+      ],
+      [
+        "Strings",
+        "B118:E118",
+        "strings-118"
+      ],
+      [
+        "Strings",
+        "B127:E127",
+        "strings-127"
+      ],
+      [
+        "Strings",
+        "B136:E139",
+        "strings-136"
+      ],
+      [
+        "Strings",
+        "B142:E155",
+        "new-142"
+      ],
+      [
+        "Strings",
+        "B156:E169",
+        "new-156"
+      ],
+      [
+        "Strings",
+        "B170:E183",
+        "new-170"
+      ],
+      [
+        "Strings",
+        "B184:E197",
+        "new-184"
+      ],
+      [
+        "Strings",
+        "B198:E211",
+        "new-198"
+      ],
+      [
+        "Strings",
+        "B212:E225",
+        "new-212"
+      ],
+      [
+        "Strings",
+        "B226:E232",
+        "new-226"
+      ],
+      [
+        "Strings",
+        "B70:E70",
+        "start"
+      ]
+    ],
+    "result": "passed"
+  },
+  "shortenedDescriptionsAndDialogue": {
+    "keys": 60,
+    "maxKoCharacters": 22,
+    "maxEnCharacters": 41
+  },
+  "startLabels": "client_ui_start=시작하기/Start; multiplayer_start=대국 시작/Start game",
+  "legacySaveIdAndChapterFields": "unchanged; runtime saved-game loading not run by data role",
+  "clientRuntimeUiVerification": "not performed by data role",
+  "rankAndStarsMeaning": "Designed progression labels; human difficulty unverified"
+}

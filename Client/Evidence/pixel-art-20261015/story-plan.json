@@ -1,0 +1,1261 @@
+{
+  "stages": [
+    {
+      "id": 1,
+      "chapter": 1,
+      "titleKey": "stage_001",
+      "aiDepth": 1,
+      "aiNodeBudget": 500,
+      "aiRandomPermille": 300,
+      "starter": 1,
+      "openingMoves": "",
+      "rankKey": "story_opponent_001",
+      "descriptionKey": "story_stage_desc_001",
+      "aiIntroKey": "story_first_intro",
+      "aiWinKey": "story_first_win",
+      "aiLoseKey": "story_first_lose",
+      "difficultyStars": 1.0,
+      "characterId": "C01"
+    },
+    {
+      "id": 2,
+      "chapter": 1,
+      "titleKey": "stage_002",
+      "aiDepth": 1,
+      "aiNodeBudget": 500,
+      "aiRandomPermille": 300,
+      "starter": 1,
+      "openingMoves": "6,3,5,2",
+      "rankKey": "story_opponent_002",
+      "descriptionKey": "story_stage_desc_002",
+      "aiIntroKey": "story_002_intro",
+      "aiWinKey": "story_002_win",
+      "aiLoseKey": "story_002_lose",
+      "difficultyStars": 1.0,
+      "characterId": "C02"
+    },
+    {
+      "id": 3,
+      "chapter": 1,
+      "titleKey": "stage_003",
+      "aiDepth": 1,
+      "aiNodeBudget": 800,
+      "aiRandomPermille": 250,
+      "starter": 1,
+      "openingMoves": "4,5,6,5,3,5",
+      "rankKey": "story_opponent_003",
+      "descriptionKey": "story_stage_desc_003",
+      "aiIntroKey": "story_003_intro",
+      "aiWinKey": "story_003_win",
+      "aiLoseKey": "story_003_lose",
+      "difficultyStars": 1.5,
+      "characterId": "C03"
+    },
+    {
+      "id": 4,
+      "chapter": 1,
+      "titleKey": "stage_004",
+      "aiDepth": 1,
+      "aiNodeBudget": 800,
+      "aiRandomPermille": 250,
+      "starter": 1,
+      "openingMoves": "4,2,5,1,6,2",
+      "rankKey": "story_opponent_004",
+      "descriptionKey": "story_stage_desc_004",
+      "aiIntroKey": "story_004_intro",
+      "aiWinKey": "story_004_win",
+      "aiLoseKey": "story_004_lose",
+      "difficultyStars": 1.5,
+      "characterId": "C04"
+    },
+    {
+      "id": 5,
+      "chapter": 1,
+      "titleKey": "stage_005",
+      "aiDepth": 2,
+      "aiNodeBudget": 1200,
+      "aiRandomPermille": 220,
+      "starter": 1,
+      "openingMoves": "2,0,1,1,0,5",
+      "rankKey": "story_opponent_005",
+      "descriptionKey": "story_stage_desc_005",
+      "aiIntroKey": "story_005_intro",
+      "aiWinKey": "story_005_win",
+      "aiLoseKey": "story_005_lose",
+      "difficultyStars": 2.0,
+      "characterId": "C05"
+    },
+    {
+      "id": 6,
+      "chapter": 1,
+      "titleKey": "stage_006",
+      "aiDepth": 2,
+      "aiNodeBudget": 1200,
+      "aiRandomPermille": 220,
+      "starter": 1,
+      "openingMoves": "0,5,2,4,4,3,1,2",
+      "rankKey": "story_opponent_006",
+      "descriptionKey": "story_stage_desc_006",
+      "aiIntroKey": "story_006_intro",
+      "aiWinKey": "story_006_win",
+      "aiLoseKey": "story_006_lose",
+      "difficultyStars": 2.0,
+      "characterId": "C06"
+    },
+    {
+      "id": 7,
+      "chapter": 1,
+      "titleKey": "stage_007",
+      "aiDepth": 2,
+      "aiNodeBudget": 1800,
+      "aiRandomPermille": 180,
+      "starter": 1,
+      "openingMoves": "1,5,3,1,6,4,2,0",
+      "rankKey": "story_opponent_007",
+      "descriptionKey": "story_stage_desc_007",
+      "aiIntroKey": "story_007_intro",
+      "aiWinKey": "story_007_win",
+      "aiLoseKey": "story_007_lose",
+      "difficultyStars": 2.5,
+      "characterId": "C07"
+    },
+    {
+      "id": 8,
+      "chapter": 1,
+      "titleKey": "stage_008",
+      "aiDepth": 2,
+      "aiNodeBudget": 1800,
+      "aiRandomPermille": 180,
+      "starter": -1,
+      "openingMoves": "0,1,3,2,4",
+      "rankKey": "story_opponent_008",
+      "descriptionKey": "story_stage_desc_008",
+      "aiIntroKey": "story_008_intro",
+      "aiWinKey": "story_008_win",
+      "aiLoseKey": "story_008_lose",
+      "difficultyStars": 2.5,
+      "characterId": "C08"
+    },
+    {
+      "id": 9,
+      "chapter": 1,
+      "titleKey": "stage_009",
+      "aiDepth": 2,
+      "aiNodeBudget": 2600,
+      "aiRandomPermille": 140,
+      "starter": 1,
+      "openingMoves": "1,4,5,2,2,3,3,2",
+      "rankKey": "story_opponent_009",
+      "descriptionKey": "story_stage_desc_009",
+      "aiIntroKey": "story_009_intro",
+      "aiWinKey": "story_009_win",
+      "aiLoseKey": "story_009_lose",
+      "difficultyStars": 3.0,
+      "characterId": "C09"
+    },
+    {
+      "id": 10,
+      "chapter": 1,
+      "titleKey": "stage_010",
+      "aiDepth": 2,
+      "aiNodeBudget": 2600,
+      "aiRandomPermille": 140,
+      "starter": 1,
+      "openingMoves": "3,3,4,1,3,1,1,5,3,0,4,0,1,2",
+      "rankKey": "story_opponent_010",
+      "descriptionKey": "story_stage_desc_010",
+      "aiIntroKey": "story_010_intro",
+      "aiWinKey": "story_010_win",
+      "aiLoseKey": "story_010_lose",
+      "difficultyStars": 3.0,
+      "characterId": "C10"
+    },
+    {
+      "id": 11,
+      "chapter": 2,
+      "titleKey": "stage_011",
+      "aiDepth": 3,
+      "aiNodeBudget": 3500,
+      "aiRandomPermille": 110,
+      "starter": 1,
+      "openingMoves": "5,2,3,1,0,0,1,0,0,4,1,5",
+      "rankKey": "story_opponent_011",
+      "descriptionKey": "story_stage_desc_011",
+      "aiIntroKey": "story_011_intro",
+      "aiWinKey": "story_011_win",
+      "aiLoseKey": "story_011_lose",
+      "difficultyStars": 3.5,
+      "characterId": "C11"
+    },
+    {
+      "id": 12,
+      "chapter": 2,
+      "titleKey": "stage_012",
+      "aiDepth": 3,
+      "aiNodeBudget": 3500,
+      "aiRandomPermille": 110,
+      "starter": 1,
+      "openingMoves": "6,1,6,6,5,3,4,5,1,3,3,2,0,6,6,2",
+      "rankKey": "story_opponent_012",
+      "descriptionKey": "story_stage_desc_012",
+      "aiIntroKey": "story_012_intro",
+      "aiWinKey": "story_012_win",
+      "aiLoseKey": "story_012_lose",
+      "difficultyStars": 3.5,
+      "characterId": "C12"
+    },
+    {
+      "id": 13,
+      "chapter": 2,
+      "titleKey": "stage_013",
+      "aiDepth": 3,
+      "aiNodeBudget": 5000,
+      "aiRandomPermille": 85,
+      "starter": 1,
+      "openingMoves": "0,0,4,5,6,0,1,5,6,3",
+      "rankKey": "story_opponent_013",
+      "descriptionKey": "story_stage_desc_013",
+      "aiIntroKey": "story_013_intro",
+      "aiWinKey": "story_013_win",
+      "aiLoseKey": "story_013_lose",
+      "difficultyStars": 4.0,
+      "characterId": "C13"
+    },
+    {
+      "id": 14,
+      "chapter": 2,
+      "titleKey": "stage_014",
+      "aiDepth": 3,
+      "aiNodeBudget": 5000,
+      "aiRandomPermille": 85,
+      "starter": 1,
+      "openingMoves": "0,3,3,3,6,1,1,3,6,1,2,4",
+      "rankKey": "story_opponent_014",
+      "descriptionKey": "story_stage_desc_014",
+      "aiIntroKey": "story_014_intro",
+      "aiWinKey": "story_014_win",
+      "aiLoseKey": "story_014_lose",
+      "difficultyStars": 4.0,
+      "characterId": "C13"
+    },
+    {
+      "id": 15,
+      "chapter": 2,
+      "titleKey": "stage_015",
+      "aiDepth": 3,
+      "aiNodeBudget": 6500,
+      "aiRandomPermille": 60,
+      "starter": -1,
+      "openingMoves": "2,1,1,2,1,1,5,2,6,2,6",
+      "rankKey": "story_opponent_015",
+      "descriptionKey": "story_stage_desc_015",
+      "aiIntroKey": "story_015_intro",
+      "aiWinKey": "story_015_win",
+      "aiLoseKey": "story_015_lose",
+      "difficultyStars": 4.5,
+      "characterId": "C14"
+    },
+    {
+      "id": 16,
+      "chapter": 2,
+      "titleKey": "stage_016",
+      "aiDepth": 3,
+      "aiNodeBudget": 6500,
+      "aiRandomPermille": 60,
+      "starter": 1,
+      "openingMoves": "3,5,4,6,3,5,5,1,3,5,4,2,5,3",
+      "rankKey": "story_opponent_016",
+      "descriptionKey": "story_stage_desc_016",
+      "aiIntroKey": "story_016_intro",
+      "aiWinKey": "story_016_win",
+      "aiLoseKey": "story_016_lose",
+      "difficultyStars": 4.5,
+      "characterId": "C14"
+    },
+    {
+      "id": 17,
+      "chapter": 2,
+      "titleKey": "stage_017",
+      "aiDepth": 4,
+      "aiNodeBudget": 8500,
+      "aiRandomPermille": 45,
+      "starter": 1,
+      "openingMoves": "3,5,0,1,0,3,1,3,3,6,2,6,2,5",
+      "rankKey": "story_opponent_017",
+      "descriptionKey": "story_stage_desc_017",
+      "aiIntroKey": "story_017_intro",
+      "aiWinKey": "story_017_win",
+      "aiLoseKey": "story_017_lose",
+      "difficultyStars": 5.0,
+      "characterId": "C15"
+    },
+    {
+      "id": 18,
+      "chapter": 2,
+      "titleKey": "stage_018",
+      "aiDepth": 4,
+      "aiNodeBudget": 8500,
+      "aiRandomPermille": 45,
+      "starter": 1,
+      "openingMoves": "0,1,4,2,6,6,2,4,1,5,2,1,6,3",
+      "rankKey": "story_opponent_018",
+      "descriptionKey": "story_stage_desc_018",
+      "aiIntroKey": "story_018_intro",
+      "aiWinKey": "story_018_win",
+      "aiLoseKey": "story_018_lose",
+      "difficultyStars": 5.0,
+      "characterId": "C15"
+    },
+    {
+      "id": 19,
+      "chapter": 2,
+      "titleKey": "stage_019",
+      "aiDepth": 4,
+      "aiNodeBudget": 11000,
+      "aiRandomPermille": 30,
+      "starter": 1,
+      "openingMoves": "4,0,4,3,5,1,3,4,0,4,2,1",
+      "rankKey": "story_opponent_019",
+      "descriptionKey": "story_stage_desc_019",
+      "aiIntroKey": "story_019_intro",
+      "aiWinKey": "story_019_win",
+      "aiLoseKey": "story_019_lose",
+      "difficultyStars": 5.5,
+      "characterId": "C16"
+    },
+    {
+      "id": 20,
+      "chapter": 2,
+      "titleKey": "stage_020",
+      "aiDepth": 4,
+      "aiNodeBudget": 11000,
+      "aiRandomPermille": 30,
+      "starter": 1,
+      "openingMoves": "2,5,5,3,6,5,3,0,5,6,1,4,3,2,6,2,0,1",
+      "rankKey": "story_opponent_020",
+      "descriptionKey": "story_stage_desc_020",
+      "aiIntroKey": "story_020_intro",
+      "aiWinKey": "story_020_win",
+      "aiLoseKey": "story_020_lose",
+      "difficultyStars": 5.5,
+      "characterId": "C16"
+    },
+    {
+      "id": 21,
+      "chapter": 3,
+      "titleKey": "stage_021",
+      "aiDepth": 4,
+      "aiNodeBudget": 14000,
+      "aiRandomPermille": 20,
+      "starter": 1,
+      "openingMoves": "5,1,3,3,4,2,1,2,4,6,2,1,2,4,6,6,6,2",
+      "rankKey": "story_opponent_021",
+      "descriptionKey": "story_stage_desc_021",
+      "aiIntroKey": "story_021_intro",
+      "aiWinKey": "story_021_win",
+      "aiLoseKey": "story_021_lose",
+      "difficultyStars": 6.0,
+      "characterId": "C17"
+    },
+    {
+      "id": 22,
+      "chapter": 3,
+      "titleKey": "stage_022",
+      "aiDepth": 4,
+      "aiNodeBudget": 14000,
+      "aiRandomPermille": 20,
+      "starter": -1,
+      "openingMoves": "2,1,5,0,0,2,0,6,3,3,6,6,6,3,2,1,5",
+      "rankKey": "story_opponent_022",
+      "descriptionKey": "story_stage_desc_022",
+      "aiIntroKey": "story_022_intro",
+      "aiWinKey": "story_022_win",
+      "aiLoseKey": "story_022_lose",
+      "difficultyStars": 6.0,
+      "characterId": "C17"
+    },
+    {
+      "id": 23,
+      "chapter": 3,
+      "titleKey": "stage_023",
+      "aiDepth": 5,
+      "aiNodeBudget": 18000,
+      "aiRandomPermille": 10,
+      "starter": 1,
+      "openingMoves": "5,2,2,6,1,3,2,2,4,0,3,5,1,4,5,1,2,0",
+      "rankKey": "story_opponent_023",
+      "descriptionKey": "story_stage_desc_023",
+      "aiIntroKey": "story_023_intro",
+      "aiWinKey": "story_023_win",
+      "aiLoseKey": "story_023_lose",
+      "difficultyStars": 6.5,
+      "characterId": "C18"
+    },
+    {
+      "id": 24,
+      "chapter": 3,
+      "titleKey": "stage_024",
+      "aiDepth": 5,
+      "aiNodeBudget": 18000,
+      "aiRandomPermille": 10,
+      "starter": 1,
+      "openingMoves": "0,6,5,0,3,6,5,1,1,1,2,4,6,1,4,4",
+      "rankKey": "story_opponent_024",
+      "descriptionKey": "story_stage_desc_024",
+      "aiIntroKey": "story_024_intro",
+      "aiWinKey": "story_024_win",
+      "aiLoseKey": "story_024_lose",
+      "difficultyStars": 6.5,
+      "characterId": "C18"
+    },
+    {
+      "id": 25,
+      "chapter": 3,
+      "titleKey": "stage_025",
+      "aiDepth": 5,
+      "aiNodeBudget": 22000,
+      "aiRandomPermille": 5,
+      "starter": 1,
+      "openingMoves": "5,4,4,3,4,4,1,1,1,3,2,4,2,0,1,6,1,1",
+      "rankKey": "story_opponent_025",
+      "descriptionKey": "story_stage_desc_025",
+      "aiIntroKey": "story_025_intro",
+      "aiWinKey": "story_025_win",
+      "aiLoseKey": "story_025_lose",
+      "difficultyStars": 7.0,
+      "characterId": "C02"
+    },
+    {
+      "id": 26,
+      "chapter": 3,
+      "titleKey": "stage_026",
+      "aiDepth": 5,
+      "aiNodeBudget": 22000,
+      "aiRandomPermille": 5,
+      "starter": 1,
+      "openingMoves": "0,4,6,3,3,5,0,4,4,3,2,3,3,0,4,1,0,2,2,4",
+      "rankKey": "story_opponent_026",
+      "descriptionKey": "story_stage_desc_026",
+      "aiIntroKey": "story_026_intro",
+      "aiWinKey": "story_026_win",
+      "aiLoseKey": "story_026_lose",
+      "difficultyStars": 7.0,
+      "characterId": "C03"
+    },
+    {
+      "id": 27,
+      "chapter": 3,
+      "titleKey": "stage_027",
+      "aiDepth": 5,
+      "aiNodeBudget": 26000,
+      "aiRandomPermille": 0,
+      "starter": -1,
+      "openingMoves": "4,3,6,0,0,3,2,5,6,5,6,6,1,2,6,1,5,1,3",
+      "rankKey": "story_opponent_027",
+      "descriptionKey": "story_stage_desc_027",
+      "aiIntroKey": "story_027_intro",
+      "aiWinKey": "story_027_win",
+      "aiLoseKey": "story_027_lose",
+      "difficultyStars": 7.5,
+      "characterId": "C04"
+    },
+    {
+      "id": 28,
+      "chapter": 3,
+      "titleKey": "stage_028",
+      "aiDepth": 5,
+      "aiNodeBudget": 26000,
+      "aiRandomPermille": 0,
+      "starter": 1,
+      "openingMoves": "4,0,3,3,6,2,6,6,1,5,6,5,3,1,2,4,2,2,0,6",
+      "rankKey": "story_opponent_028",
+      "descriptionKey": "story_stage_desc_028",
+      "aiIntroKey": "story_028_intro",
+      "aiWinKey": "story_028_win",
+      "aiLoseKey": "story_028_lose",
+      "difficultyStars": 7.5,
+      "characterId": "C05"
+    },
+    {
+      "id": 29,
+      "chapter": 3,
+      "titleKey": "stage_029",
+      "aiDepth": 6,
+      "aiNodeBudget": 30000,
+      "aiRandomPermille": 0,
+      "starter": 1,
+      "openingMoves": "6,5,6,1,6,2,4,0,4,1,4,0,5,0,2,6,5,5,0,0,2,4",
+      "rankKey": "story_opponent_029",
+      "descriptionKey": "story_stage_desc_029",
+      "aiIntroKey": "story_029_intro",
+      "aiWinKey": "story_029_win",
+      "aiLoseKey": "story_029_lose",
+      "difficultyStars": 8.0,
+      "characterId": "C19"
+    },
+    {
+      "id": 30,
+      "chapter": 3,
+      "titleKey": "stage_030",
+      "aiDepth": 6,
+      "aiNodeBudget": 30000,
+      "aiRandomPermille": 0,
+      "starter": 1,
+      "openingMoves": "2,4,0,4,5,0,0,1,0,1,4,6,3,1,4,4,1,6,4,2,3,1",
+      "rankKey": "story_opponent_030",
+      "descriptionKey": "story_stage_desc_030",
+      "aiIntroKey": "story_030_intro",
+      "aiWinKey": "story_030_win",
+      "aiLoseKey": "story_030_lose",
+      "difficultyStars": 8.0,
+      "characterId": "C01"
+    }
+  ],
+  "strings": [
+    {
+      "key": "story_opponent_001",
+      "ko": "훈련병 강민재",
+      "en": "Recruit Kang Min-jae"
+    },
+    {
+      "key": "story_stage_desc_001",
+      "ko": "프로 출신 입대자라는 소문을 듣고 동기가 도전한다.",
+      "en": "A fellow recruit challenges you after hearing you were a pro."
+    },
+    {
+      "key": "story_opponent_002",
+      "ko": "이병 문시온",
+      "en": "Pvt. Moon Si-on"
+    },
+    {
+      "key": "story_stage_desc_002",
+      "ko": "훈련을 마치고 이병이 된 당신. 부대에도 프로 소문이 퍼졌다.",
+      "en": "Training is over. Word of your pro career spreads through the unit."
+    },
+    {
+      "key": "story_002_intro",
+      "ko": "잠깐만, 진짜 프로랑 두는 거야?",
+      "en": "Wait, am I really playing a pro?"
+    },
+    {
+      "key": "story_002_win",
+      "ko": "나도 이런 수를 둘 수 있네!",
+      "en": "I can make moves like that too!"
+    },
+    {
+      "key": "story_002_lose",
+      "ko": "아, 그 한 칸을 놓쳤구나.",
+      "en": "Oh, I missed that one space."
+    },
+    {
+      "key": "story_opponent_003",
+      "ko": "일병 오준호",
+      "en": "Pfc. Oh Jun-ho"
+    },
+    {
+      "key": "story_stage_desc_003",
+      "ko": "오준호와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Oh Jun-ho. Learn each other's style."
+    },
+    {
+      "key": "story_003_intro",
+      "ko": "소문은 들었어. 직접 확인해 보자!",
+      "en": "I heard the rumors. Let me see for myself!"
+    },
+    {
+      "key": "story_003_win",
+      "ko": "오늘 얘깃거리는 내가 만들었네!",
+      "en": "Now I have a story to tell!"
+    },
+    {
+      "key": "story_003_lose",
+      "ko": "소문보다 잘하네. 인정!",
+      "en": "Better than the rumors. Respect!"
+    },
+    {
+      "key": "story_opponent_004",
+      "ko": "상병 정한결",
+      "en": "Cpl. Jung Han-gyeol"
+    },
+    {
+      "key": "story_stage_desc_004",
+      "ko": "정한결와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Jung Han-gyeol. Learn each other's style."
+    },
+    {
+      "key": "story_004_intro",
+      "ko": "네 수를 보고 왔어. 이번엔 읽어 볼게.",
+      "en": "I studied your moves. This time I can read you."
+    },
+    {
+      "key": "story_004_win",
+      "ko": "준비한 수가 통했어.",
+      "en": "My preparation paid off."
+    },
+    {
+      "key": "story_004_lose",
+      "ko": "그 수는 기록해 둬야겠네.",
+      "en": "I need to write that move down."
+    },
+    {
+      "key": "story_opponent_005",
+      "ko": "병장 남기석",
+      "en": "Sgt. Nam Gi-seok"
+    },
+    {
+      "key": "story_stage_desc_005",
+      "ko": "남기석와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Nam Gi-seok. Learn each other's style."
+    },
+    {
+      "key": "story_005_intro",
+      "ko": "편하게 둬. 나도 편하게 이겨 볼게.",
+      "en": "Relax. I plan to win at my own pace."
+    },
+    {
+      "key": "story_005_win",
+      "ko": "느긋해 보여도 판은 보고 있지.",
+      "en": "I may look relaxed, but I watch the board."
+    },
+    {
+      "key": "story_005_lose",
+      "ko": "오, 잠이 확 깨는 수였어.",
+      "en": "Now that move woke me up!"
+    },
+    {
+      "key": "story_opponent_006",
+      "ko": "하사 최건우",
+      "en": "Staff Sgt. Choi Geon-woo"
+    },
+    {
+      "key": "story_stage_desc_006",
+      "ko": "최건우와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Choi Geon-woo. Learn each other's style."
+    },
+    {
+      "key": "story_006_intro",
+      "ko": "한 수를 고른 이유가 궁금하군.",
+      "en": "Tell me why you chose that move."
+    },
+    {
+      "key": "story_006_win",
+      "ko": "놓친 수를 같이 살펴보자.",
+      "en": "Let us review the move you missed."
+    },
+    {
+      "key": "story_006_lose",
+      "ko": "좋은 판단이었다. 한 수 배웠다.",
+      "en": "Good judgment. I learned something."
+    },
+    {
+      "key": "story_opponent_007",
+      "ko": "공군 중사 한유진",
+      "en": "Air Force Tech Sgt. Han Yu-jin"
+    },
+    {
+      "key": "story_stage_desc_007",
+      "ko": "한유진와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Han Yu-jin. Learn each other's style."
+    },
+    {
+      "key": "story_007_intro",
+      "ko": "교류 대국이라니, 계산 좀 해 볼까?",
+      "en": "An exchange match? Time to calculate."
+    },
+    {
+      "key": "story_007_win",
+      "ko": "이 경로는 내가 먼저 봤네.",
+      "en": "I saw that route first."
+    },
+    {
+      "key": "story_007_lose",
+      "ko": "예상 밖이네. 다시 계산해 봐야겠어.",
+      "en": "Unexpected. I need to recalculate."
+    },
+    {
+      "key": "story_opponent_008",
+      "ko": "상사 박정민",
+      "en": "Master Sgt. Park Jeong-min"
+    },
+    {
+      "key": "story_stage_desc_008",
+      "ko": "박정민와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Park Jeong-min. Learn each other's style."
+    },
+    {
+      "key": "story_008_intro",
+      "ko": "긴장 풀고, 천천히 봐도 돼.",
+      "en": "Relax. Take your time."
+    },
+    {
+      "key": "story_008_win",
+      "ko": "오늘은 내가 조금 먼저 봤네.",
+      "en": "I spotted it a little sooner today."
+    },
+    {
+      "key": "story_008_lose",
+      "ko": "하하, 이건 시원하게 졌다!",
+      "en": "Ha! A fine way to lose!"
+    },
+    {
+      "key": "story_opponent_009",
+      "ko": "원사 한태식",
+      "en": "Sgt. Major Han Tae-sik"
+    },
+    {
+      "key": "story_stage_desc_009",
+      "ko": "한태식와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Han Tae-sik. Learn each other's style."
+    },
+    {
+      "key": "story_009_intro",
+      "ko": "서두르지 말고, 더 보자.",
+      "en": "No rush. Look a little longer."
+    },
+    {
+      "key": "story_009_win",
+      "ko": "아직 볼 수가 남아 있었다.",
+      "en": "There was still another move to see."
+    },
+    {
+      "key": "story_009_lose",
+      "ko": "깊이 봤군. 좋은 승부였다.",
+      "en": "You read deeply. Well played."
+    },
+    {
+      "key": "story_opponent_010",
+      "ko": "준위 배성훈",
+      "en": "Warrant Officer Bae Seong-hun"
+    },
+    {
+      "key": "story_stage_desc_010",
+      "ko": "배성훈와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Bae Seong-hun. Learn each other's style."
+    },
+    {
+      "key": "story_010_intro",
+      "ko": "여기 한 칸에서 길이 갈릴 것 같은데?",
+      "en": "This one space may change everything."
+    },
+    {
+      "key": "story_010_win",
+      "ko": "작은 차이가 컸지?",
+      "en": "A small difference mattered, right?"
+    },
+    {
+      "key": "story_010_lose",
+      "ko": "아하, 거기로 이어지는구나!",
+      "en": "Aha! So that is how it connects!"
+    },
+    {
+      "key": "story_opponent_011",
+      "ko": "소위 김준서",
+      "en": "2nd Lt. Kim Jun-seo"
+    },
+    {
+      "key": "story_stage_desc_011",
+      "ko": "김준서와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Kim Jun-seo. Learn each other's style."
+    },
+    {
+      "key": "story_011_intro",
+      "ko": "연습은 많이 했어. 잘 부탁해!",
+      "en": "I practiced a lot. Let us have a good game!"
+    },
+    {
+      "key": "story_011_win",
+      "ko": "연습한 수가 나왔어!",
+      "en": "That was the move I practiced!"
+    },
+    {
+      "key": "story_011_lose",
+      "ko": "준비 못 한 수였네. 더 배워야겠어.",
+      "en": "I was not ready for that. More to learn!"
+    },
+    {
+      "key": "story_opponent_012",
+      "ko": "소대장 서지훈",
+      "en": "Platoon Cmdr. Seo Ji-hoon"
+    },
+    {
+      "key": "story_stage_desc_012",
+      "ko": "서지훈와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Seo Ji-hoon. Learn each other's style."
+    },
+    {
+      "key": "story_012_intro",
+      "ko": "우리 소대의 소문난 실력, 보여 줄래?",
+      "en": "Show me the skill everyone talks about."
+    },
+    {
+      "key": "story_012_win",
+      "ko": "좋은 수였어. 다음 수까지 보자.",
+      "en": "Good move. Look one step further."
+    },
+    {
+      "key": "story_012_lose",
+      "ko": "이 실력, 중대장님도 궁금해하시겠네.",
+      "en": "The company commander should see this."
+    },
+    {
+      "key": "story_opponent_013",
+      "ko": "중대장 장태오",
+      "en": "Company Cmdr. Jang Tae-o"
+    },
+    {
+      "key": "story_stage_desc_013",
+      "ko": "장태오와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Jang Tae-o. Learn each other's style."
+    },
+    {
+      "key": "story_013_intro",
+      "ko": "어디 한번, 소문의 실력을 볼까?",
+      "en": "Let us see if the rumors are true."
+    },
+    {
+      "key": "story_013_win",
+      "ko": "이번 판은 내가 가져가겠군.",
+      "en": "This round is mine."
+    },
+    {
+      "key": "story_013_lose",
+      "ko": "좋아, 한 판 더! 이번엔 다른 수를 봐야겠군.",
+      "en": "Good! One more. I will try another move."
+    },
+    {
+      "key": "story_opponent_014",
+      "ko": "중대장 장태오",
+      "en": "Company Cmdr. Jang Tae-o"
+    },
+    {
+      "key": "story_stage_desc_014",
+      "ko": "장태오와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Jang Tae-o. Learn each other's style."
+    },
+    {
+      "key": "story_014_intro",
+      "ko": "어디 한번, 소문의 실력을 볼까?",
+      "en": "Let us see if the rumors are true."
+    },
+    {
+      "key": "story_014_win",
+      "ko": "이번 판은 내가 가져가겠군.",
+      "en": "This round is mine."
+    },
+    {
+      "key": "story_014_lose",
+      "ko": "좋아! 소문이 괜히 난 게 아니었군.",
+      "en": "Good! Those rumors were well earned."
+    },
+    {
+      "key": "story_opponent_015",
+      "ko": "작전참모 서강현",
+      "en": "Operations Officer Seo Gang-hyeon"
+    },
+    {
+      "key": "story_stage_desc_015",
+      "ko": "서강현와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Seo Gang-hyeon. Learn each other's style."
+    },
+    {
+      "key": "story_015_intro",
+      "ko": "다른 수라면 어떻게 될지 함께 보자.",
+      "en": "Let us consider the other possible moves."
+    },
+    {
+      "key": "story_015_win",
+      "ko": "비교한 수 중 이쪽이었군.",
+      "en": "That was the best of the moves I compared."
+    },
+    {
+      "key": "story_015_lose",
+      "ko": "그 선택은 놓쳤군. 다음 판에서 다시 비교해 보자.",
+      "en": "I missed that choice. Let us compare again."
+    },
+    {
+      "key": "story_opponent_016",
+      "ko": "작전참모 서강현",
+      "en": "Operations Officer Seo Gang-hyeon"
+    },
+    {
+      "key": "story_stage_desc_016",
+      "ko": "서강현와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Seo Gang-hyeon. Learn each other's style."
+    },
+    {
+      "key": "story_016_intro",
+      "ko": "다른 수라면 어떻게 될지 함께 보자.",
+      "en": "Let us consider the other possible moves."
+    },
+    {
+      "key": "story_016_win",
+      "ko": "비교한 수 중 이쪽이었군.",
+      "en": "That was the best of the moves I compared."
+    },
+    {
+      "key": "story_016_lose",
+      "ko": "그 선택지는 내가 놓쳤어.",
+      "en": "I overlooked that option."
+    },
+    {
+      "key": "story_opponent_017",
+      "ko": "대대장 이도현",
+      "en": "Battalion Cmdr. Lee Do-hyeon"
+    },
+    {
+      "key": "story_stage_desc_017",
+      "ko": "이도현와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Lee Do-hyeon. Learn each other's style."
+    },
+    {
+      "key": "story_017_intro",
+      "ko": "멋진 수라면 정면으로 받아 보겠네.",
+      "en": "I will meet your best move head-on."
+    },
+    {
+      "key": "story_017_win",
+      "ko": "이번에는 내 수가 먼저 닿았군.",
+      "en": "My move got there first."
+    },
+    {
+      "key": "story_017_lose",
+      "ko": "깔끔했네. 한 판 더 부탁하지.",
+      "en": "Cleanly played. One more game, please."
+    },
+    {
+      "key": "story_opponent_018",
+      "ko": "대대장 이도현",
+      "en": "Battalion Cmdr. Lee Do-hyeon"
+    },
+    {
+      "key": "story_stage_desc_018",
+      "ko": "이도현와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Lee Do-hyeon. Learn each other's style."
+    },
+    {
+      "key": "story_018_intro",
+      "ko": "멋진 수라면 정면으로 받아 보겠네.",
+      "en": "I will meet your best move head-on."
+    },
+    {
+      "key": "story_018_win",
+      "ko": "이번에는 내 수가 먼저 닿았군.",
+      "en": "My move got there first."
+    },
+    {
+      "key": "story_018_lose",
+      "ko": "깔끔한 수였다. 인정하지.",
+      "en": "A clean move. Well played."
+    },
+    {
+      "key": "story_opponent_019",
+      "ko": "연대장 백승우",
+      "en": "Regiment Cmdr. Baek Seung-woo"
+    },
+    {
+      "key": "story_stage_desc_019",
+      "ko": "백승우와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Baek Seung-woo. Learn each other's style."
+    },
+    {
+      "key": "story_019_intro",
+      "ko": "사람마다 기풍이 다르다지. 자네는 어떤가?",
+      "en": "Everyone has a style. What is yours?"
+    },
+    {
+      "key": "story_019_win",
+      "ko": "이번 판은 내 기풍이 통했군.",
+      "en": "My style worked this round."
+    },
+    {
+      "key": "story_019_lose",
+      "ko": "흥미로운 기풍이군. 조금 더 두어 보세.",
+      "en": "An interesting style. Let us play again."
+    },
+    {
+      "key": "story_opponent_020",
+      "ko": "연대장 백승우",
+      "en": "Regiment Cmdr. Baek Seung-woo"
+    },
+    {
+      "key": "story_stage_desc_020",
+      "ko": "백승우와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Baek Seung-woo. Learn each other's style."
+    },
+    {
+      "key": "story_020_intro",
+      "ko": "사람마다 기풍이 다르다지. 자네는 어떤가?",
+      "en": "Everyone has a style. What is yours?"
+    },
+    {
+      "key": "story_020_win",
+      "ko": "이번 판은 내 기풍이 통했군.",
+      "en": "My style worked this round."
+    },
+    {
+      "key": "story_020_lose",
+      "ko": "흥미롭군. 자네만의 수가 있어.",
+      "en": "Interesting. You have your own style."
+    },
+    {
+      "key": "story_opponent_021",
+      "ko": "부사단장 임재훈",
+      "en": "Deputy Division Cmdr. Lim Jae-hoon"
+    },
+    {
+      "key": "story_stage_desc_021",
+      "ko": "임재훈와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Lim Jae-hoon. Learn each other's style."
+    },
+    {
+      "key": "story_021_intro",
+      "ko": "오늘은 내가 한 수 배워 갈 차례인가?",
+      "en": "Is it my turn to learn something today?"
+    },
+    {
+      "key": "story_021_win",
+      "ko": "아직 내 감각도 쓸 만하군!",
+      "en": "My instincts still work!"
+    },
+    {
+      "key": "story_021_lose",
+      "ko": "정말 한 수 배웠네! 한 판 더 괜찮겠나?",
+      "en": "I learned a lot! How about one more?"
+    },
+    {
+      "key": "story_opponent_022",
+      "ko": "부사단장 임재훈",
+      "en": "Deputy Division Cmdr. Lim Jae-hoon"
+    },
+    {
+      "key": "story_stage_desc_022",
+      "ko": "임재훈와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Lim Jae-hoon. Learn each other's style."
+    },
+    {
+      "key": "story_022_intro",
+      "ko": "오늘은 내가 한 수 배워 갈 차례인가?",
+      "en": "Is it my turn to learn something today?"
+    },
+    {
+      "key": "story_022_win",
+      "ko": "아직 내 감각도 쓸 만하군!",
+      "en": "My instincts still work!"
+    },
+    {
+      "key": "story_022_lose",
+      "ko": "한 수 배웠네. 정말 즐거웠어.",
+      "en": "I learned a lot. That was fun."
+    },
+    {
+      "key": "story_opponent_023",
+      "ko": "사단장 윤정호",
+      "en": "Division Cmdr. Yoon Jeong-ho"
+    },
+    {
+      "key": "story_stage_desc_023",
+      "ko": "윤정호와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Yoon Jeong-ho. Learn each other's style."
+    },
+    {
+      "key": "story_023_intro",
+      "ko": "프로와의 대국이라니, 기대가 되는군.",
+      "en": "A match with a pro. I look forward to it."
+    },
+    {
+      "key": "story_023_win",
+      "ko": "좋은 승부였다. 다시 도전해 보게.",
+      "en": "A good game. Challenge me again."
+    },
+    {
+      "key": "story_023_lose",
+      "ko": "훌륭한 수였네. 한 판 더 두어 보세.",
+      "en": "An excellent move. Let us play again."
+    },
+    {
+      "key": "story_opponent_024",
+      "ko": "사단장 윤정호",
+      "en": "Division Cmdr. Yoon Jeong-ho"
+    },
+    {
+      "key": "story_stage_desc_024",
+      "ko": "사단장과 두 번째 대국. 마지막 수까지 집중하자.",
+      "en": "Your second game with the division commander. Focus to the last move."
+    },
+    {
+      "key": "story_024_intro",
+      "ko": "프로와의 대국이라니, 기대가 되는군.",
+      "en": "A match with a pro. I look forward to it."
+    },
+    {
+      "key": "story_024_win",
+      "ko": "좋은 승부였다. 다시 도전해 보게.",
+      "en": "A good game. Challenge me again."
+    },
+    {
+      "key": "story_024_lose",
+      "ko": "내가 졌군. 사단 병사 대회에서도 실력을 보여 주게.",
+      "en": "You beat me. Show your skill in our enlisted tournament."
+    },
+    {
+      "key": "story_opponent_025",
+      "ko": "64강 · 이병 문시온",
+      "en": "Round of 64 · Pvt. Moon Si-on"
+    },
+    {
+      "key": "story_stage_desc_025",
+      "ko": "사단 병사부 64강. 다시 만난 상대와 실력으로 겨룬다.",
+      "en": "The enlisted tournament: Round of 64. Let your moves speak."
+    },
+    {
+      "key": "story_025_intro",
+      "ko": "잠깐만, 나 이제 긴장 안 해. 연습했거든!",
+      "en": "I am not nervous now. I practiced!"
+    },
+    {
+      "key": "story_025_win",
+      "ko": "이번엔 내 수를 끝까지 봤어!",
+      "en": "This time I followed every move!"
+    },
+    {
+      "key": "story_025_lose",
+      "ko": "연습한 수는 보여 줬어. 다음 판도 응원할게!",
+      "en": "I showed what I learned. I am cheering for you!"
+    },
+    {
+      "key": "story_opponent_026",
+      "ko": "32강 · 일병 오준호",
+      "en": "Round of 32 · Pfc. Oh Jun-ho"
+    },
+    {
+      "key": "story_stage_desc_026",
+      "ko": "사단 병사부 32강. 다시 만난 상대와 실력으로 겨룬다.",
+      "en": "The enlisted tournament: Round of 32. Let your moves speak."
+    },
+    {
+      "key": "story_026_intro",
+      "ko": "오늘은 수다보다 수로 보여 줄게!",
+      "en": "Less talk today. Let my moves speak!"
+    },
+    {
+      "key": "story_026_win",
+      "ko": "오늘 얘깃거리는 이 판으로 정했어!",
+      "en": "This game will be my story today!"
+    },
+    {
+      "key": "story_026_lose",
+      "ko": "졌지만 멋진 판이었어. 꼭 올라가!",
+      "en": "I lost, but what a game. Keep going!"
+    },
+    {
+      "key": "story_opponent_027",
+      "ko": "16강 · 상병 정한결",
+      "en": "Round of 16 · Cpl. Jung Han-gyeol"
+    },
+    {
+      "key": "story_stage_desc_027",
+      "ko": "사단 병사부 16강. 다시 만난 상대와 실력으로 겨룬다.",
+      "en": "The enlisted tournament: Round of 16. Let your moves speak."
+    },
+    {
+      "key": "story_027_intro",
+      "ko": "지난 패배, 전부 복기했어.",
+      "en": "I reviewed every move from my last loss."
+    },
+    {
+      "key": "story_027_win",
+      "ko": "복기한 보람이 있었네.",
+      "en": "That review paid off."
+    },
+    {
+      "key": "story_027_lose",
+      "ko": "또 배울 수가 늘었네. 결승까지 가!",
+      "en": "More moves to learn. Reach the final!"
+    },
+    {
+      "key": "story_opponent_028",
+      "ko": "8강 · 병장 남기석",
+      "en": "Quarterfinal · Sgt. Nam Gi-seok"
+    },
+    {
+      "key": "story_stage_desc_028",
+      "ko": "사단 병사부 8강. 다시 만난 상대와 실력으로 겨룬다.",
+      "en": "The enlisted tournament: Quarterfinal. Let your moves speak."
+    },
+    {
+      "key": "story_028_intro",
+      "ko": "여기까지 왔으니, 이번엔 진지하게 둔다.",
+      "en": "We came this far. Time to get serious."
+    },
+    {
+      "key": "story_028_win",
+      "ko": "나도 끝까지 가 보고 싶거든.",
+      "en": "I want to go all the way too."
+    },
+    {
+      "key": "story_028_lose",
+      "ko": "인정. 내 몫까지 좋은 판 보여 줘.",
+      "en": "Respect. Play a good game for me too."
+    },
+    {
+      "key": "story_opponent_029",
+      "ko": "4강 · 일병 조은찬",
+      "en": "Semifinal · Pfc. Jo Eun-chan"
+    },
+    {
+      "key": "story_stage_desc_029",
+      "ko": "사단 병사부 4강. 다시 만난 상대와 실력으로 겨룬다.",
+      "en": "The enlisted tournament: Semifinal. Let your moves speak."
+    },
+    {
+      "key": "story_029_intro",
+      "ko": "프로라는 소문보다, 지금 이 판이 궁금해.",
+      "en": "I care more about this board than your fame."
+    },
+    {
+      "key": "story_029_win",
+      "ko": "명성보다 중요한 건 다음 수니까.",
+      "en": "The next move matters more than fame."
+    },
+    {
+      "key": "story_029_lose",
+      "ko": "좋은 수였어. 결승에서도 네 수를 둬.",
+      "en": "Good move. Play your game in the final."
+    },
+    {
+      "key": "story_opponent_030",
+      "ko": "결승 · 이병 강민재",
+      "en": "Final · Pvt. Kang Min-jae"
+    },
+    {
+      "key": "story_stage_desc_030",
+      "ko": "사단 병사부 결승. 다시 만난 상대와 실력으로 겨룬다.",
+      "en": "The enlisted tournament: Final. Let your moves speak."
+    },
+    {
+      "key": "story_030_intro",
+      "ko": "처음엔 자신만 있었지. 이번엔 준비했어.",
+      "en": "I only had confidence before. Now I am ready."
+    },
+    {
+      "key": "story_030_win",
+      "ko": "이번엔 내가 이겼다! 다시 와, 기다릴게.",
+      "en": "This time I won! Come back for a rematch."
+    },
+    {
+      "key": "story_030_lose",
+      "ko": "네가 챔피언이야. 다음에도 나랑 둬 줘.",
+      "en": "You are the champion. Play me again sometime."
+    },
+    {
+      "key": "action_to_round_64",
+      "ko": "64강으로",
+      "en": "To the round of 64"
+    },
+    {
+      "key": "story_champion",
+      "ko": "사단 병사부 4목 대회 우승!",
+      "en": "Division enlisted tournament champion!"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7926d46660012f24ab9e4e4461e9deb3, type: 3}
+  m_Name: TabletopTheme
+  m_EditorClassIdentifier: StageGame.Runtime::StageGame.TabletopTheme
+  panel: {fileID: 21300000, guid: fd2d662f9f6dd784f9837c6a04143ae8, type: 3}
+  primary: {fileID: 21300000, guid: 5f737b9d260d64048ac2a927d80b41fe, type: 3}
+  secondary: {fileID: 21300000, guid: a59b75e49570b4848b5eb8fd15cf65d6, type: 3}
+  board: {fileID: 21300000, guid: 44d74b9dbacfd7f40b89578cb8b2ef53, type: 3}
+  hole: {fileID: 21300000, guid: b35e58e7e1edc6a48bf1acc6894d9fde, type: 3}
+  player: {fileID: 21300000, guid: fecbe46f79afe9443a5680e310b692a8, type: 3}
+  opponent: {fileID: 21300000, guid: 40f0bd4e614d9ce4595e44b60b51c9a1, type: 3}
+  playerWin: {fileID: 21300000, guid: 0e5d2f348c46f994d83b9159e1c6c7f5, type: 3}
+  opponentWin: {fileID: 21300000, guid: 1d37f2919afc4144498a7a5033e1ffc6, type: 3}
+  nodeCurrent: {fileID: 21300000, guid: 38f5b1e7cc435ef4fb890b49e0f60718, type: 3}
+  nodeCleared: {fileID: 21300000, guid: 89b7b251fe506e1449ffc2dc5cf212f0, type: 3}
+  nodeLocked: {fileID: 21300000, guid: 046e3f70c23ae364e9227051afbb32f2, type: 3}
+  nodeSelected: {fileID: 21300000, guid: 4a8f082a6b8d6d843b0cfb3324ac319b, type: 3}
+  pause: {fileID: 21300000, guid: 342d6a94a565d0c4baad2e78f3751391, type: 3}
+  help: {fileID: 21300000, guid: eac0d85e02e0c8248b9fa340c491e369, type: 3}
+  settings: {fileID: 21300000, guid: b92c5246f0435044594875f2a7831325, type: 3}
+  chevron: {fileID: 21300000, guid: 3c1782cca156a53468e86bf2b5d10d6f, type: 3}
+  locked: {fileID: 21300000, guid: a31bcb5ee1726ae47b235f8061fa9554, type: 3}
+  check: {fileID: 21300000, guid: 815782ecfa391294590a633ee11cf7ae, type: 3}
+  play: {fileID: 21300000, guid: 6a5b8663241190a429365d64bf389849, type: 3}
+  close: {fileID: 21300000, guid: e9c804ae9cdf31c479b2afe157c213c1, type: 3}

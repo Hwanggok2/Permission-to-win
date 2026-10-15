@@ -1,0 +1,62 @@
+{
+  "apkSha256": "A9BD2D986695C1000F0B4C031722BA7C4ED98104E85E5ECFAD8AE59FADC19C26",
+  "verifiedAtUtc": "2026-10-14T13:29:27.315021+00:00",
+  "entries": [
+    {
+      "entry": "assets/Notices/NotoSansCJKkr-OFL.txt",
+      "bytes": 4808,
+      "sha256": "6587D53488CE62E197942A708671B5F11F99D105034795C23A41380275D69C1F",
+      "matchesSource": true,
+      "webglMatchesSource": true
+    },
+    {
+      "entry": "assets/Notices/NotoSansKR-OFL.txt",
+      "bytes": 4388,
+      "sha256": "1C05C68C34F9708415AADA51F17E1B0092D2CEA709BF4A94CD38114F9E73D7D9",
+      "matchesSource": true,
+      "webglMatchesSource": true
+    },
+    {
+      "entry": "assets/Notices/NUnit-ThirdPartyNotices.txt",
+      "bytes": 1249,
+      "sha256": "EF37B1CCBAE5E9B641482CBD77A74EE96193A39D232CC8D856B9044F37DB9244",
+      "matchesSource": true,
+      "webglMatchesSource": true
+    },
+    {
+      "entry": "assets/Notices/SOURCES.txt",
+      "bytes": 1451,
+      "sha256": "647CB2C60B107FAB810AA3FE6DF07C7932F31AA21BFB11148F33EF5EAED7254C",
+      "matchesSource": true,
+      "webglMatchesSource": true
+    },
+    {
+      "entry": "assets/Notices/Unity-Companion-License-Full.txt",
+      "bytes": 6002,
+      "sha256": "7A177190B6C4E511E096D7F0211E34C241E9D54954C87B61BF610BF0BCCB719E",
+      "matchesSource": true,
+      "webglMatchesSource": true
+    },
+    {
+      "entry": "assets/Notices/Unity-NUnit-LICENSE.txt",
+      "bytes": 433,
+      "sha256": "EA14F98BA99AFCC079EC2A8A6C38461B5BC4CA3D184AA87AD7C60DE9134C4D43",
+      "matchesSource": true,
+      "webglMatchesSource": true
+    },
+    {
+      "entry": "assets/Notices/Unity-TestFramework-LICENSE.txt",
+      "bytes": 475,
+      "sha256": "D3B09E9683AFBC8D468A83000308F18E7133EAF7879AF870747000A66E3C0693",
+      "matchesSource": true,
+      "webglMatchesSource": true
+    },
+    {
+      "entry": "assets/Notices/Unity-uGUI-LICENSE.txt",
+      "bytes": 457,
+      "sha256": "A8E0CAE87B2EDB8C205AE6C308F20B89A09F32D62BD4A3FF0343BB4724A4201E",
+      "matchesSource": true,
+      "webglMatchesSource": true
+    }
+  ]
+}

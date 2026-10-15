@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "interstitialGraceMatches": 3,
+  "interstitialEveryMatches": 2,
+  "interstitialCooldownSeconds": 90,
+  "bannerLobby": true,
+  "bannerResult": true,
+  "rewardedHintsPerMatch": 1
+}

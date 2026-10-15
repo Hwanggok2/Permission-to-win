@@ -177,7 +177,7 @@ static partial class Program
                 Check(app.turnLabel.text == rows["client_ui_player_turn"].GetProperty(locale).GetString(), "turn text not switched");
                 Check(app.localizedLabels[0].target.text == rows["ui_settings"].GetProperty(locale).GetString(), "static label not switched");
                 Check(app.hintLabel.text == rows["client_hint_used"].GetProperty(locale).GetString(), "used hint text not switched");
-                Check(app.stoneLabels[3].text == rows["player_stone"].GetProperty(locale).GetString(), "stone label not switched");
+                Check(app.stoneLabels.All(label=>label.text=="") && app.stones[3].sprite==app.theme.player && app.stones[2].sprite==app.theme.opponent, "language changed ring/diamond identity or restored obsolete text glyphs");
             }
             var restart = MakeApp(false);
             Check(((ProgressStore)Get(restart, "progress")).Data.language == "en" && !((ProgressStore)Get(restart, "progress")).Data.soundEnabled, "language/sound not restored by startup");

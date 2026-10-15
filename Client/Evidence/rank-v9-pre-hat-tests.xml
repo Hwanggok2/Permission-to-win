@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="73" result="Passed" total="73" passed="73" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-14 14:42:23Z" end-time="2026-10-14 14:42:25Z" duration="1.9152045">
+  <test-suite type="TestSuite" id="1000" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="73" result="Passed" start-time="2026-10-14 14:42:23Z" end-time="2026-10-14 14:42:25Z" duration="1.915205" total="73" passed="73" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1088" name="StageGame.Tests.dll" fullname="C:/Github/StageGame/Client/Library/ScriptAssemblies/StageGame.Tests.dll" runstate="Runnable" testcasecount="73" result="Passed" start-time="2026-10-14 14:42:23Z" end-time="2026-10-14 14:42:25Z" duration="1.873232" total="73" passed="73" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="48792" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1089" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="73" result="Passed" start-time="2026-10-14 14:42:23Z" end-time="2026-10-14 14:42:25Z" duration="1.872574" total="73" passed="73" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1090" name="Tests" fullname="StageGame.Tests" runstate="Runnable" testcasecount="73" result="Passed" start-time="2026-10-14 14:42:23Z" end-time="2026-10-14 14:42:25Z" duration="1.871598" total="73" passed="73" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1001" name="CoreTests" fullname="StageGame.Tests.CoreTests" classname="StageGame.Tests.CoreTests" runstate="Runnable" testcasecount="25" result="Passed" start-time="2026-10-14 14:41:13Z" end-time="2026-10-14 14:41:14Z" duration="0.120867" total="25" passed="25" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1026" name="AdPolicyRequiresGraceMatchesAndBothCooldowns" fullname="StageGame.Tests.CoreTests.AdPolicyRequiresGraceMatchesAndBothCooldowns" methodname="AdPolicyRequiresGraceMatchesAndBothCooldowns" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="127402092" result="Passed" start-time="2026-10-14 14:41:13Z" end-time="2026-10-14 14:41:13Z" duration="0.007958" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1010" name="AiBlocksImmediateLossEvenAtMaximumMistakes" fullname="StageGame.Tests.CoreTests.AiBlocksImmediateLossEvenAtMaximumMistakes" methodname="AiBlocksImmediateLossEvenAtMaximumMistakes" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="375009579" result="Passed" start-time="2026-10-14 14:41:13Z" end-time="2026-10-14 14:41:13Z" duration="0.005368" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1011" name="AiRespectsNodeAndStepBudgetsAndLeavesBoardUntouched" fullname="StageGame.Tests.CoreTests.AiRespectsNodeAndStepBudgetsAndLeavesBoardUntouched" methodname="AiRespectsNodeAndStepBudgetsAndLeavesBoardUntouched" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="848958753" result="Passed" start-time="2026-10-14 14:41:13Z" end-time="2026-10-14 14:41:13Z" duration="0.003036" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1009" name="AiTakesWinBeforeRandomMistake" fullname="StageGame.Tests.CoreTests.AiTakesWinBeforeRandomMistake" methodname="AiTakesWinBeforeRandomMistake" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1110906673" result="Passed" start-time="2026-10-14 14:41:13Z" end-time="2026-10-14 14:41:13Z" duration="0.000191" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1012" name="BundledDataReplaysEveryStageAndAiReturnsLegalMove" fullname="StageGame.Tests.CoreTests.BundledDataReplaysEveryStageAndAiReturnsLegalMove" methodname="BundledDataReplaysEveryStageAndAiReturnsLegalMove" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="929652398" result="Passed" start-time="2026-10-14 14:41:13Z" end-time="2026-10-14 14:41:14Z" duration="0.027453" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1008" name="CloneDoesNotMutateOriginal" fullname="StageGame.Tests.CoreTests.CloneDoesNotMutateOriginal" methodname="CloneDoesNotMutateOriginal" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1931296301" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000431" asserts="0">
+              <properties />
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1007" name="FourDirectionsWinAndFinishedBoardRejectsInput" fullname="StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput" classname="StageGame.Tests.CoreTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.001956" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1003" name="FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])" fullname="StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])" methodname="FourDirectionsWinAndFinishedBoardRejectsInput" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1130469649" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000364" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1004" name="FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])" fullname="StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])" methodname="FourDirectionsWinAndFinishedBoardRejectsInput" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="630564945" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000364" asserts="0">
+                <properties>
+                  <property name="childIndex" value="2" />
+                </properties>
+              </test-case>
+              <test-case id="1005" name="FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])" fullname="StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])" methodname="FourDirectionsWinAndFinishedBoardRejectsInput" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1535154564" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000364" asserts="0">
+                <properties>
+                  <property name="childIndex" value="3" />
+                </properties>
+              </test-case>
+              <test-case id="1006" name="FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])" fullname="StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])" methodname="FourDirectionsWinAndFinishedBoardRejectsInput" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1723611982" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000364" asserts="0">
+                <properties>
+                  <property name="childIndex" value="4" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1002" name="GravityAlternatesAndRejectsFullColumn" fullname="StageGame.Tests.CoreTests.GravityAlternatesAndRejectsFullColumn" methodname="GravityAlternatesAndRejectsFullColumn" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="2032511097" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000210" asserts="0">
+              <properties />
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1018" name="InvalidOrTerminalOpeningsFailLoudly" fullname="StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly" classname="StageGame.Tests.CoreTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.001557" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1013" name="InvalidOrTerminalOpeningsFailLoudly(&quot;0,0,0,0,0,0,0&quot;)" fullname="StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(&quot;0,0,0,0,0,0,0&quot;)" methodname="InvalidOrTerminalOpeningsFailLoudly" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1895737247" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000846" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1014" name="InvalidOrTerminalOpeningsFailLoudly(&quot;0,6,1,6,2,5,3&quot;)" fullname="StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(&quot;0,6,1,6,2,5,3&quot;)" methodname="InvalidOrTerminalOpeningsFailLoudly" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1286529908" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000065" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1015" name="InvalidOrTerminalOpeningsFailLoudly(&quot;7&quot;)" fullname="StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(&quot;7&quot;)" methodname="InvalidOrTerminalOpeningsFailLoudly" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="158500701" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000038" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1016" name="InvalidOrTerminalOpeningsFailLoudly(&quot;a&quot;)" fullname="StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(&quot;a&quot;)" methodname="InvalidOrTerminalOpeningsFailLoudly" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1924010584" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000033" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1017" name="InvalidOrTerminalOpeningsFailLoudly(&quot;0,&quot;)" fullname="StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(&quot;0,&quot;)" methodname="InvalidOrTerminalOpeningsFailLoudly" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1167240531" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000031" asserts="0">
+                <properties />
+              </test-case>
+            </test-suite>
+            <test-case id="1019" name="MalformedDataCannotSilentlyLoad" fullname="StageGame.Tests.CoreTests.MalformedDataCannotSilentlyLoad" methodname="MalformedDataCannotSilentlyLoad" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1324531385" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.001063" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1025" name="NoFillNeverRewardsAndEditorDuplicateOnlyGrantsOnce" fullname="StageGame.Tests.CoreTests.NoFillNeverRewardsAndEditorDuplicateOnlyGrantsOnce" methodname="NoFillNeverRewardsAndEditorDuplicateOnlyGrantsOnce" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="848823692" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000328" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1028" name="ProgressRejectsNonAdjacentAndReloadedDuplicateResults" fullname="StageGame.Tests.CoreTests.ProgressRejectsNonAdjacentAndReloadedDuplicateResults" methodname="ProgressRejectsNonAdjacentAndReloadedDuplicateResults" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1760412797" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.002259" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1024" name="RewardCompletesOnlyOnceAndRejectsStaleCallbacks" fullname="StageGame.Tests.CoreTests.RewardCompletesOnlyOnceAndRejectsStaleCallbacks" methodname="RewardCompletesOnlyOnceAndRejectsStaleCallbacks" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="984740934" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000249" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1027" name="SavedPrefabReferencesAndNestedButtonsValidate" fullname="StageGame.Tests.CoreTests.SavedPrefabReferencesAndNestedButtonsValidate" methodname="SavedPrefabReferencesAndNestedButtonsValidate" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="595664243" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.056148" asserts="0">
+              <properties />
+              <output><![CDATA[[Rank UI] Saved references,30 cards and42 board/preview intersections validated.
+]]></output>
+            </test-case>
+            <test-case id="1029" name="TruncatedStageCatalogIsRejected" fullname="StageGame.Tests.CoreTests.TruncatedStageCatalogIsRejected" methodname="TruncatedStageCatalogIsRejected" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="2136937771" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.001037" asserts="0">
+              <properties />
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1023" name="UnsuccessfulRewardCanRetryWithoutGrant" fullname="StageGame.Tests.CoreTests.UnsuccessfulRewardCanRetryWithoutGrant" classname="StageGame.Tests.CoreTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.001515" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1020" name="UnsuccessfulRewardCanRetryWithoutGrant(Unavailable)" fullname="StageGame.Tests.CoreTests.UnsuccessfulRewardCanRetryWithoutGrant(Unavailable)" methodname="UnsuccessfulRewardCanRetryWithoutGrant" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1676775894" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000379" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1021" name="UnsuccessfulRewardCanRetryWithoutGrant(Failed)" fullname="StageGame.Tests.CoreTests.UnsuccessfulRewardCanRetryWithoutGrant(Failed)" methodname="UnsuccessfulRewardCanRetryWithoutGrant" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1142869263" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000089" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1022" name="UnsuccessfulRewardCanRetryWithoutGrant(Cancelled)" fullname="StageGame.Tests.CoreTests.UnsuccessfulRewardCanRetryWithoutGrant(Cancelled)" methodname="UnsuccessfulRewardCanRetryWithoutGrant" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="876205342" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000056" asserts="0">
+                <properties />
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestFixture" id="1030" name="HostLayoutTests" fullname="StageGame.Tests.HostLayoutTests" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.012858" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1035" name="BrowserFallbackAndExplicitControlsUseCssCoordinates" fullname="StageGame.Tests.HostLayoutTests.BrowserFallbackAndExplicitControlsUseCssCoordinates" methodname="BrowserFallbackAndExplicitControlsUseCssCoordinates" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" seed="363648691" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.001741" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1037" name="InvalidInsetsFallBackToZeroWithoutRemovingHostAllowance" fullname="StageGame.Tests.HostLayoutTests.InvalidInsetsFallBackToZeroWithoutRemovingHostAllowance" methodname="InvalidInsetsFallBackToZeroWithoutRemovingHostAllowance" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" seed="634355427" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000269" asserts="0">
+              <properties />
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1034" name="OsInsetsAreMergedOnceAndHostBandIsBelowThem" fullname="StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000597" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1031" name="OsInsetsAreMergedOnceAndHostBandIsBelowThem(1)" fullname="StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem(1)" methodname="OsInsetsAreMergedOnceAndHostBandIsBelowThem" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" seed="1951461307" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000227" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1032" name="OsInsetsAreMergedOnceAndHostBandIsBelowThem(2)" fullname="StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem(2)" methodname="OsInsetsAreMergedOnceAndHostBandIsBelowThem" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" seed="2146362405" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000063" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1033" name="OsInsetsAreMergedOnceAndHostBandIsBelowThem(3)" fullname="StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem(3)" methodname="OsInsetsAreMergedOnceAndHostBandIsBelowThem" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" seed="96306555" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000031" asserts="0">
+                <properties />
+              </test-case>
+            </test-suite>
+            <test-case id="1038" name="SavedGraphicsAndSecondaryLicenseMenuKeepPrefabReferences" fullname="StageGame.Tests.HostLayoutTests.SavedGraphicsAndSecondaryLicenseMenuKeepPrefabReferences" methodname="SavedGraphicsAndSecondaryLicenseMenuKeepPrefabReferences" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" seed="748774579" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.008747" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1036" name="SideInsetsMergePerEdgeAndOversizedInsetsStayInsideScreen" fullname="StageGame.Tests.HostLayoutTests.SideInsetsMergePerEdgeAndOversizedInsetsStayInsideScreen" methodname="SideInsetsMergePerEdgeAndOversizedInsetsStayInsideScreen" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" seed="677440880" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000807" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1039" name="LocalizationTests" fullname="StageGame.Tests.LocalizationTests" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.009758" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1049" name="EverySavedUiTextHasAKeyOrExplicitDynamicOwnerAndButtonsHaveTouchArea" fullname="StageGame.Tests.LocalizationTests.EverySavedUiTextHasAKeyOrExplicitDynamicOwnerAndButtonsHaveTouchArea" methodname="EverySavedUiTextHasAKeyOrExplicitDynamicOwnerAndButtonsHaveTouchArea" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="262056833" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.002752" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1040" name="LanguageLookupFormattingAndUnknownLocaleFollowContract" fullname="StageGame.Tests.LocalizationTests.LanguageLookupFormattingAndUnknownLocaleFollowContract" methodname="LanguageLookupFormattingAndUnknownLocaleFollowContract" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="221605084" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.001179" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1048" name="LegacyAndInvalidSavedLocalesPreserveProgressAndDefaultToKorean" fullname="StageGame.Tests.LocalizationTests.LegacyAndInvalidSavedLocalesPreserveProgressAndDefaultToKorean" methodname="LegacyAndInvalidSavedLocalesPreserveProgressAndDefaultToKorean" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="339974541" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000519" asserts="0">
+              <properties />
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1047" name="MissingTranslationsAndInvalidArgumentsAreRejected" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.004333" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1041" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;&quot;,&quot;Text&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;&quot;,&quot;Text&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="723441270" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000313" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1042" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;문구&quot;,&quot;&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;문구&quot;,&quot;&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="1188576651" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000060" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1043" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{0}&quot;,&quot;{1}&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{0}&quot;,&quot;{1}&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="38877673" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000053" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1044" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{0:00}&quot;,&quot;{0:00}&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{0:00}&quot;,&quot;{0:00}&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="1097701411" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000164" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1045" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{broken}&quot;,&quot;{broken}&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{broken}&quot;,&quot;{broken}&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="457984624" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000096" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1046" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{1}&quot;,&quot;{1}&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{1}&quot;,&quot;{1}&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="1074812041" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000056" asserts="0">
+                <properties />
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestFixture" id="1069" name="RankDataTests" fullname="StageGame.Tests.RankDataTests" classname="StageGame.Tests.RankDataTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.026292" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="ParameterizedMethod" id="1079" name="InvalidOrWrongGroupStarsAreRejected" fullname="StageGame.Tests.RankDataTests.InvalidOrWrongGroupStarsAreRejected" classname="StageGame.Tests.RankDataTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.006201" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1076" name="InvalidOrWrongGroupStarsAreRejected(0)" fullname="StageGame.Tests.RankDataTests.InvalidOrWrongGroupStarsAreRejected(0)" methodname="InvalidOrWrongGroupStarsAreRejected" classname="StageGame.Tests.RankDataTests" runstate="Runnable" seed="1167848601" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.002370" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1077" name="InvalidOrWrongGroupStarsAreRejected(6)" fullname="StageGame.Tests.RankDataTests.InvalidOrWrongGroupStarsAreRejected(6)" methodname="InvalidOrWrongGroupStarsAreRejected" classname="StageGame.Tests.RankDataTests" runstate="Runnable" seed="1739793877" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.002713" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1078" name="InvalidOrWrongGroupStarsAreRejected(2)" fullname="StageGame.Tests.RankDataTests.InvalidOrWrongGroupStarsAreRejected(2)" methodname="InvalidOrWrongGroupStarsAreRejected" classname="StageGame.Tests.RankDataTests" runstate="Runnable" seed="1911928429" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.000817" asserts="0">
+                <properties />
+              </test-case>
+            </test-suite>
+            <test-suite type="ParameterizedMethod" id="1075" name="MissingBlankAndUnknownRankReferencesAreRejected" fullname="StageGame.Tests.RankDataTests.MissingBlankAndUnknownRankReferencesAreRejected" classname="StageGame.Tests.RankDataTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.019766" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1070" name="MissingBlankAndUnknownRankReferencesAreRejected(&quot;rankKey&quot;)" fullname="StageGame.Tests.RankDataTests.MissingBlankAndUnknownRankReferencesAreRejected(&quot;rankKey&quot;)" methodname="MissingBlankAndUnknownRankReferencesAreRejected" classname="StageGame.Tests.RankDataTests" runstate="Runnable" seed="916345943" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.004453" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1071" name="MissingBlankAndUnknownRankReferencesAreRejected(&quot;descriptionKey&quot;)" fullname="StageGame.Tests.RankDataTests.MissingBlankAndUnknownRankReferencesAreRejected(&quot;descriptionKey&quot;)" methodname="MissingBlankAndUnknownRankReferencesAreRejected" classname="StageGame.Tests.RankDataTests" runstate="Runnable" seed="388921290" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.003174" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1072" name="MissingBlankAndUnknownRankReferencesAreRejected(&quot;aiIntroKey&quot;)" fullname="StageGame.Tests.RankDataTests.MissingBlankAndUnknownRankReferencesAreRejected(&quot;aiIntroKey&quot;)" methodname="MissingBlankAndUnknownRankReferencesAreRejected" classname="StageGame.Tests.RankDataTests" runstate="Runnable" seed="158225169" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.004403" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1073" name="MissingBlankAndUnknownRankReferencesAreRejected(&quot;aiWinKey&quot;)" fullname="StageGame.Tests.RankDataTests.MissingBlankAndUnknownRankReferencesAreRejected(&quot;aiWinKey&quot;)" methodname="MissingBlankAndUnknownRankReferencesAreRejected" classname="StageGame.Tests.RankDataTests" runstate="Runnable" seed="1067426492" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.003055" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1074" name="MissingBlankAndUnknownRankReferencesAreRejected(&quot;aiLoseKey&quot;)" fullname="StageGame.Tests.RankDataTests.MissingBlankAndUnknownRankReferencesAreRejected(&quot;aiLoseKey&quot;)" methodname="MissingBlankAndUnknownRankReferencesAreRejected" classname="StageGame.Tests.RankDataTests" runstate="Runnable" seed="2032290415" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:14Z" duration="0.004276" asserts="0">
+                <properties />
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestFixture" id="1050" name="RankFlowTests" fullname="StageGame.Tests.RankFlowTests" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" testcasecount="18" result="Passed" start-time="2026-10-14 14:42:23Z" end-time="2026-10-14 14:42:25Z" duration="1.758635" total="18" passed="18" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1058" name="BothWinnersAnimatePauseRestoreThenAdsAndCorrectResultActions" fullname="StageGame.Tests.RankFlowTests.BothWinnersAnimatePauseRestoreThenAdsAndCorrectResultActions" methodname="BothWinnersAnimatePauseRestoreThenAdsAndCorrectResultActions" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1125442687" result="Passed" start-time="2026-10-14 14:41:14Z" end-time="2026-10-14 14:41:17Z" duration="3.700530" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1067" name="CancelledHintCannotChangeConfirmationOrRestoredNotice" fullname="StageGame.Tests.RankFlowTests.CancelledHintCannotChangeConfirmationOrRestoredNotice" methodname="CancelledHintCannotChangeConfirmationOrRestoredNotice" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="2093321456" result="Passed" start-time="2026-10-14 14:41:17Z" end-time="2026-10-14 14:41:19Z" duration="1.315413" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1060" name="CrossingWinsChooseOneContinuousLineThroughFinalStone" fullname="StageGame.Tests.RankFlowTests.CrossingWinsChooseOneContinuousLineThroughFinalStone" methodname="CrossingWinsChooseOneContinuousLineThroughFinalStone" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="2066677994" result="Passed" start-time="2026-10-14 14:41:19Z" end-time="2026-10-14 14:41:21Z" duration="1.849625" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] crossing-1-False: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] crossing-1-True: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] crossing--1-False: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] crossing--1-True: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+]]></output>
+            </test-case>
+            <test-case id="1066" name="DestroyedAppRejectsLateResultAndRewardCallbacksWithoutSaving" fullname="StageGame.Tests.RankFlowTests.DestroyedAppRejectsLateResultAndRewardCallbacksWithoutSaving" methodname="DestroyedAppRejectsLateResultAndRewardCallbacksWithoutSaving" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1149208411" result="Passed" start-time="2026-10-14 14:41:21Z" end-time="2026-10-14 14:41:23Z" duration="2.227987" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1063" name="DestructiveActionsRequireConfirmationAndCancelPreservesSelectionAndAi" fullname="StageGame.Tests.RankFlowTests.DestructiveActionsRequireConfirmationAndCancelPreservesSelectionAndAi" methodname="DestructiveActionsRequireConfirmationAndCancelPreservesSelectionAndAi" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1897582368" result="Passed" start-time="2026-10-14 14:41:23Z" end-time="2026-10-14 14:41:25Z" duration="1.873124" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1059" name="FinalStageAndAdTimeoutDoNotExposeNextOrAcceptLateCompletion" fullname="StageGame.Tests.RankFlowTests.FinalStageAndAdTimeoutDoNotExposeNextOrAcceptLateCompletion" methodname="FinalStageAndAdTimeoutDoNotExposeNextOrAcceptLateCompletion" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="2131375984" result="Passed" start-time="2026-10-14 14:41:25Z" end-time="2026-10-14 14:41:31Z" duration="6.180808" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1054" name="FreshRunIsConsumedButExistingAndRecoverySavesStayInLobby" fullname="StageGame.Tests.RankFlowTests.FreshRunIsConsumedButExistingAndRecoverySavesStayInLobby" methodname="FreshRunIsConsumedButExistingAndRecoverySavesStayInLobby" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="670325062" result="Passed" start-time="2026-10-14 14:41:31Z" end-time="2026-10-14 14:41:32Z" duration="1.575733" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Save recovery] JSON parse error: Invalid value.
+]]></output>
+            </test-case>
+            <test-case id="1053" name="OpeningAndAiStarterAreUndoFloorAndRetryIsFree" fullname="StageGame.Tests.RankFlowTests.OpeningAndAiStarterAreUndoFloorAndRetryIsFree" methodname="OpeningAndAiStarterAreUndoFloorAndRetryIsFree" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="70403187" result="Passed" start-time="2026-10-14 14:41:32Z" end-time="2026-10-14 14:41:34Z" duration="1.562842" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1057" name="PendingRewardCancelsOnUndoPauseRetryAndTimeout" fullname="StageGame.Tests.RankFlowTests.PendingRewardCancelsOnUndoPauseRetryAndTimeout" methodname="PendingRewardCancelsOnUndoPauseRetryAndTimeout" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1159392515" result="Passed" start-time="2026-10-14 14:41:34Z" end-time="2026-10-14 14:41:42Z" duration="7.854709" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1062" name="PreviewSavedRankScreens" fullname="StageGame.Tests.RankFlowTests.PreviewSavedRankScreens" methodname="PreviewSavedRankScreens" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1067321167" result="Passed" start-time="2026-10-14 14:41:42Z" end-time="2026-10-14 14:42:00Z" duration="17.963585" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] ko-390-first-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-390-preview: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-390-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-390-restart-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-390-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-390-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-390-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-390-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-390-help: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-390-settings: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-390-notices: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-390-pause: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-390-win: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-320-first-match: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-320-preview: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-320-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-320-restart-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-320-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-320-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-320-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-320-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-320-help: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-320-settings: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-320-notices: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-320-pause: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-320-win: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] en-390-first-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] en-390-preview: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] en-390-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] en-390-restart-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] en-390-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] en-390-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] en-390-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] en-390-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] en-390-help: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] en-390-settings: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] en-390-notices: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] en-390-pause: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] en-390-win: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] en-320-first-match: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] en-320-preview: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] en-320-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] en-320-restart-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] en-320-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] en-320-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] en-320-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] en-320-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] en-320-help: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] en-320-settings: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] en-320-notices: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] en-320-pause: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] en-320-win: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+]]></output>
+            </test-case>
+            <test-case id="1064" name="ResultRestartAndLobbyConfirmWhileNextStaysDirect" fullname="StageGame.Tests.RankFlowTests.ResultRestartAndLobbyConfirmWhileNextStaysDirect" methodname="ResultRestartAndLobbyConfirmWhileNextStaysDirect" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="26968501" result="Passed" start-time="2026-10-14 14:42:00Z" end-time="2026-10-14 14:42:04Z" duration="3.931441" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1056" name="RewardCompletionIsOnceAndUndoKeepsConsumedHint" fullname="StageGame.Tests.RankFlowTests.RewardCompletionIsOnceAndUndoKeepsConsumedHint" methodname="RewardCompletionIsOnceAndUndoKeepsConsumedHint" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="770057941" result="Passed" start-time="2026-10-14 14:42:04Z" end-time="2026-10-14 14:42:05Z" duration="1.586555" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1051" name="SelectionIsOnlyPreviewAndPlaceCommitsOnce" fullname="StageGame.Tests.RankFlowTests.SelectionIsOnlyPreviewAndPlaceCommitsOnce" methodname="SelectionIsOnlyPreviewAndPlaceCommitsOnce" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="2095539229" result="Passed" start-time="2026-10-14 14:42:05Z" end-time="2026-10-14 14:42:07Z" duration="1.558832" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1068" name="SquareBoardsUniformPixelLinesTopHeadersAndScrollableActionsMeetHostContract" fullname="StageGame.Tests.RankFlowTests.SquareBoardsUniformPixelLinesTopHeadersAndScrollableActionsMeetHostContract" methodname="SquareBoardsUniformPixelLinesTopHeadersAndScrollableActionsMeetHostContract" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="546359360" result="Passed" start-time="2026-10-14 14:42:07Z" end-time="2026-10-14 14:42:14Z" duration="6.874706" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] geometry-top-390: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] geometry-bottom-390: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] geometry-top-320: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] geometry-bottom-320: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] geometry-top-390: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] geometry-bottom-390: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-320-story-exact: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] en-320-story-exact: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+]]></output>
+            </test-case>
+            <test-case id="1055" name="ThirtyCardsReachBothEndsAndDetailBlocksLobbyAndPreservesScroll" fullname="StageGame.Tests.RankFlowTests.ThirtyCardsReachBothEndsAndDetailBlocksLobbyAndPreservesScroll" methodname="ThirtyCardsReachBothEndsAndDetailBlocksLobbyAndPreservesScroll" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="851128727" result="Passed" start-time="2026-10-14 14:42:14Z" end-time="2026-10-14 14:42:16Z" duration="1.761879" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1061" name="TopRowAnimationAvoidsStatusAndDrawKeepsTwoActions" fullname="StageGame.Tests.RankFlowTests.TopRowAnimationAvoidsStatusAndDrawKeepsTwoActions" methodname="TopRowAnimationAvoidsStatusAndDrawKeepsTwoActions" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1486134148" result="Passed" start-time="2026-10-14 14:42:16Z" end-time="2026-10-14 14:42:19Z" duration="3.589484" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] top-row-animation--1: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] top-row-animation-1: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] ko-320-draw: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+[Capture] en-320-draw: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=40
+]]></output>
+            </test-case>
+            <test-case id="1065" name="TurnToastNeverBlocksAndDoesNotOutliveItsTurnOrDuplicateOnLanguageHint" fullname="StageGame.Tests.RankFlowTests.TurnToastNeverBlocksAndDoesNotOutliveItsTurnOrDuplicateOnLanguageHint" methodname="TurnToastNeverBlocksAndDoesNotOutliveItsTurnOrDuplicateOnLanguageHint" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="942182432" result="Passed" start-time="2026-10-14 14:42:19Z" end-time="2026-10-14 14:42:22Z" duration="2.730605" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] en-390-turn-toast: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=40
+]]></output>
+            </test-case>
+            <test-case id="1052" name="UndoRestoresPairsAndCancelsInFlightAiWithoutChangingMatch" fullname="StageGame.Tests.RankFlowTests.UndoRestoresPairsAndCancelsInFlightAiWithoutChangingMatch" methodname="UndoRestoresPairsAndCancelsInFlightAiWithoutChangingMatch" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="788519612" result="Passed" start-time="2026-10-14 14:42:22Z" end-time="2026-10-14 14:42:25Z" duration="2.948884" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1080" name="StageMapTests" fullname="StageGame.Tests.StageMapTests" classname="StageGame.Tests.StageMapTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-14 14:42:25Z" end-time="2026-10-14 14:42:25Z" duration="0.099213" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1086" name="FinalClearSurvivesReloadAndReplayWithoutDuplicateCounters" fullname="StageGame.Tests.StageMapTests.FinalClearSurvivesReloadAndReplayWithoutDuplicateCounters" methodname="FinalClearSurvivesReloadAndReplayWithoutDuplicateCounters" classname="StageGame.Tests.StageMapTests" runstate="Runnable" seed="1471398451" result="Passed" start-time="2026-10-14 14:42:25Z" end-time="2026-10-14 14:42:25Z" duration="0.002331" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1085" name="LegacyProgressInfersOnlyStagesBeforeTheUnlock" fullname="StageGame.Tests.StageMapTests.LegacyProgressInfersOnlyStagesBeforeTheUnlock" classname="StageGame.Tests.StageMapTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-14 14:42:25Z" end-time="2026-10-14 14:42:25Z" duration="0.001426" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1082" name="LegacyProgressInfersOnlyStagesBeforeTheUnlock(1)" fullname="StageGame.Tests.StageMapTests.LegacyProgressInfersOnlyStagesBeforeTheUnlock(1)" methodname="LegacyProgressInfersOnlyStagesBeforeTheUnlock" classname="StageGame.Tests.StageMapTests" runstate="Runnable" seed="419330485" result="Passed" start-time="2026-10-14 14:42:25Z" end-time="2026-10-14 14:42:25Z" duration="0.000599" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1083" name="LegacyProgressInfersOnlyStagesBeforeTheUnlock(12)" fullname="StageGame.Tests.StageMapTests.LegacyProgressInfersOnlyStagesBeforeTheUnlock(12)" methodname="LegacyProgressInfersOnlyStagesBeforeTheUnlock" classname="StageGame.Tests.StageMapTests" runstate="Runnable" seed="1381275487" result="Passed" start-time="2026-10-14 14:42:25Z" end-time="2026-10-14 14:42:25Z" duration="0.000204" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1084" name="LegacyProgressInfersOnlyStagesBeforeTheUnlock(30)" fullname="StageGame.Tests.StageMapTests.LegacyProgressInfersOnlyStagesBeforeTheUnlock(30)" methodname="LegacyProgressInfersOnlyStagesBeforeTheUnlock" classname="StageGame.Tests.StageMapTests" runstate="Runnable" seed="450592863" result="Passed" start-time="2026-10-14 14:42:25Z" end-time="2026-10-14 14:42:25Z" duration="0.000181" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1081" name="RankMigrationRejectsUnsavedScenesBeforeWritingAssets" fullname="StageGame.Tests.StageMapTests.RankMigrationRejectsUnsavedScenesBeforeWritingAssets" methodname="RankMigrationRejectsUnsavedScenesBeforeWritingAssets" classname="StageGame.Tests.StageMapTests" runstate="Runnable" seed="1894239854" result="Passed" start-time="2026-10-14 14:42:25Z" end-time="2026-10-14 14:42:25Z" duration="0.074262" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Unloading the last loaded scene (build index: -1), is not supported. Please use SceneManager.LoadScene()/EditorSceneManager.OpenScene() to switch to another scene.
+]]></output>
+            </test-case>
+            <test-case id="1087" name="SavedNodesAndHelpAreNestedAndShowExactlyFourConnectedStones" fullname="StageGame.Tests.StageMapTests.SavedNodesAndHelpAreNestedAndShowExactlyFourConnectedStones" methodname="SavedNodesAndHelpAreNestedAndShowExactlyFourConnectedStones" classname="StageGame.Tests.StageMapTests" runstate="Runnable" seed="2035883389" result="Passed" start-time="2026-10-14 14:42:25Z" end-time="2026-10-14 14:42:25Z" duration="0.020314" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:\Github\StageGame\Client\Evidence\rank-v9-tests.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

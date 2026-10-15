@@ -6,7 +6,23 @@
 
 공통 실행: `Tests/run-independent.ps1 -RunId <새 ID>`. .NET 10.0.8에서 스냅샷 실제 소스를 컴파일한다. 규칙/AI/광고 상태는 실제 순수 C# 실행이며, ProgressStore와 GameApp은 `JsonUtility`, `PlayerPrefs`, UI/코루틴에 명시적인 대체 구현을 사용했다. 실제 Unity/디스크/SDK 동작까지 확인한 것은 아니다.
 
-**최신 체크포인트:** 확인된 열린 결함 **0건**. QA-010은 정확한 문구 비교·제공 Unity 영향11/11·최종 패배 화면과 빌드 대조로 종결했다. 신규 단계 UX의 독립 저장8/8·UI/광고/다국어26/26 및 제공 Unity 전체57/57은 각각의 실행 범위에서 유지하며 합산하지 않는다. 실제 기기/공식 광고/성능/사람 플레이/IAP·서버/출시 gate는 남는다.
+**최신 체크포인트:** v9 실제소스 독립40/40 통과. **QA-014 코드 수정·독립 재검증 통과**,runtime/Client JSON15파일이 최종freeze와 일치한다. [실행 결과](Evidence/qa-rank-v9-runtime-v1-20261014/results.json), [소스 연결](Evidence/qa-rank-v9-runtime-v1-20261014/runtime-freeze-link.json). 이번 웹 빌드/브라우저 실행은 사용자 승인 대기이고 실제 광고 SDK는 미연결이다. QA-011/012 종결은 이전 버전 기준이며 **QA-013은 시안 폐기로 후속 판정 중단·미확정 이력 보존**이다. 실제 기기/공식 광고/성능/사람 플레이/IAP·서버/출시 gate는 남는다.
+
+## QA-014 — RankGameApp 파괴 뒤 지연 전면광고 완료가 저장을 변경
+
+- 심각도/상태: **보통(P2), v9 코드 수정·독립 재검증 통과 / 최종 실행환경 확인 보류**. 현재 실제 광고 SDK는 미연결이며 실기기 증상은 확인하지 않았다. 아래 v8 실패는 수정 전 이력으로 보존한다.
+- 대상: `RankGameApp.OnDestroy()`와 `ResultAdBoundary()`의 callback 생명주기.
+- 재현: 광고 조건을 충족하는 승리 결과 → 약0.9초 연출/관찰 뒤 지연 전면광고 대기 → `OnDestroy()` → 보존된 callback에 `Completed` 전달.
+- 기대: 파괴 시 광고 취소를 요청하고 판 식별자/생명주기를 무효화하여 후속 callback이 광고 기록·저장·화면에 접근하지 않는다.
+- 실제: `OnDestroy()`가 AI/결과 coroutine·RewardGate만 취소한다. 광고 `CancelPending()` 호출 증가0, matchId와 result.activeSelf가 남아 callback이 `lastInterstitialMatch=0→4`와 시각을 변경하고 Save한다. 결과 총수는4로 유지한다.
+- 증거: [24묶음 실행](Evidence/qa-rank-runtime-v2-20261014/results.json)의 `result.destroy_cancels_ad_and_stale_callback`, [고정 소스](Evidence/qa-rank-runtime-v2-20261014/Sources/RankGameApp.cs), [재현 코드](Evidence/qa-rank-runtime-v2-20261014/TestTools/Program.cs). 대상 RankGameApp SHA-256 `A63CAD6404834545BB425AD0CD4A927F946A18B027C74ED7A842553E209C9899`.
+- 범위: 실제 제품 C#과 수동 Unity 대체환경/지연 광고 어댑터에서 재현했다. Unity 파괴 객체 접근 예외나 실제 SDK의 표시·콜백 타이밍을 재현했다고 주장하지 않는다. 현재 NoFill 일반 플레이에는 지연 광고가 없다.
+- Client 요청: `OnDestroy`에서 광고 표시/콜백 취소와 판/생명주기 무효화를 보장한다. 실패 callback뿐 아니라 중복·늦은 완료, 파괴 시 reward/AI/결과연출 취소도 유지하고 영향 native 검사/빌드 해시를 갱신한다. QA는 Client 파일을 수정하지 않는다.
+- 종료 조건: 동일 독립 파괴·늦은 callback 재현 통과, 정상 결과/NoFill/timeout·로비/Retry 취소 회귀, 최신 소스·Unity/빌드 연결. 현재 UI 가드 후속 변경은 이 파괴 경로를 수정하지 않았다.
+- 마지막 수정 전 재현: [impact-v3](Evidence/qa-rank-runtime-impact-v3-20261014/results.json)에서8통과/동일1실패,RankGameApp `2F36B95E8AD1F116D5C97D19AEBDB77C905934C3CDDE7B305445FB0F5922ECAE`,검사 중 원본 변경0.
+- v9 수정: OnDestroy에서 destroyed=true·matchId=null·pendingAction 초기화·광고취소를 적용하고 ResultAdBoundary는 destroyed/adGeneration/판ID를 검사한다. rewardGeneration은 이전 요청의 callback이 새 힌트/문구에 영향을 주지 못하게 한다. 소스 SHA-256 `3FDF28A138D2F931C63BCC95B8904B0E42A101E0F26DD545EE986AA19F7393F9`.
+- 재검증: [v9 독립40/40](Evidence/qa-rank-v9-runtime-v1-20261014/results.json)에서 기존 `result.destroy_cancels_ad_and_stale_callback`가 통과했다. 광고취소 호출이 늘고 늦은 Completed로 광고 기록이 바뀌지 않는다. 보상/AI/확인/토스트 파괴 정리와 기존 정상 광고4결과·중복·timeout·로비/새판 취소 회귀도 통과했다. fixture22개를40묶음에 더하지 않는다.
+- 최종 연결/한계: runtime12+Client JSON3이 최종freeze/현재파일과 일치하며 제공 Unity73/73 XML도 보존했다. QA는 Unity/브라우저/제품 빌드를 실행하지 않았다. 웹 재빌드·새 브라우저 실행은 사용자 승인 전 보류이므로 배포본/실제 SDK까지 종결한 것으로 표시하지 않는다. QA 소스 검증 업무는 완료했다.
 
 ## QA-001 — 저장 실패 시 종료 판에서 결과 화면으로 이동하지 못함
 
@@ -152,3 +168,33 @@
 - 최종 연결: [통합 증거](Evidence/qa-stage-integration-final-20261014/results.json)에서 기존 독립검사 런타임7소스, Client 선언 코드/프리팹20개, 재적용5프리팹의 현재 해시 일치를 확인했다. 최종 APK/WebGL7산출물과 Client 두 보고서·총괄 기록이 모두 일치한다. 코드/프리팹 변경이 없어 앞선8·26묶음을 반복하지 않았다.
 - 재시험: Client의 문구 수정 후 영향 **11/11**은 최초 전체57개와 별도다. QA는 갱신된320폭 한영 세로 패배 이미지2개와 총괄의390폭 한국어 최종 패배/로비/도움말3개를 읽어 한 문장 안내·재도전 강조·주요 잘림 없음 확인. 총괄은 최종 WebGL을 새로 불러와2단계10수 세로 패배와 로비 복귀를 실제 입력으로 확인했고 콘솔 오류/경고0이다. [캡처 검토](Evidence/qa-stage-integration-final-20261014/capture-review.json).
 - 종료 범위: 방향3개×한영은 정확한 데이터 비교, 최종 한영 세로 패배는 Unity 렌더, 최종 한국어 세로 패배는 브라우저 포인터 증거다. 모든 방향·언어를 최종 브라우저에서 재현했다고 주장하지 않는다. QA는 Unity나 브라우저를 직접 실행하지 않았다.
+
+## QA-011 — 확대 중인 마지막 말이 위 빈칸에 가려짐
+
+- 심각도/상태: **보통(P2), 수정·재검증 완료 / 종결**. 사용자 요청의 승리 마지막 말 연출이 가려지던 문제다. 게임 진행 차단이나 저장 손실 증거는 없다.
+- 출처/관찰: 총괄이 Client 중간 캡처에서 발견했고 QA가 [animation-player-0.png](Evidence/qa-graphics-visual-findings-20261014/animation-player-0.png)를 보존·열어 확인했다. 하단4열의 확대 민트 말 윗부분 위로 바로 위 빈칸 원형이 그려진다. QA가 연출을 실제 실행한 결과는 아니다.
+- 기대: 플레이어/AI 양측 승리의 마지막 말이 확대·놓임 중 인접 빈칸/말에 가려지지 않고 식별된다. 연출 완료 또는 취소/새 판 뒤에는 크기·위치·그리기 순서를 원래대로 복원한다.
+- 원인/수정 계획: 총괄은 렌더 sibling 순서를 원인으로 보고했고 Client가 마지막 말을 앞에 렌더한 뒤 취소 시 원복하도록 수정할 예정이다. 원인과 수정 효과는 QA 독립 실행 전이다.
+- 종료 조건: 소스 동결 후 RES07로 양측 승리 연속 렌더 및 정상 완료/취소/재시작 상태 복원을 확인한다. 정지 이미지 하나·관련 파일 존재만으로 애니메이션 전체 통과를 선언하지 않는다. [수정 전 해시](Evidence/qa-graphics-visual-findings-20261014/source-manifest.json).
+- 수정 확인: [독립 graphics6 포함31개 통과](Evidence/qa-graphics-core-v2-20261014/results.json)에서 확대/관찰/광고 대기의 취소·로비/새 판·파괴 시 원복을 확인했다. Client59/59의 양측 연출 및 취소 native 검사, 수정 후 양측 확대/배치4장에서도 가림이 해소됐다. [캡처/타임라인 판독](Evidence/qa-graphics-frozen-v1-20261014/capture-review.json). 실제 최종 브라우저 보고 연결은 대기 중이다.
+- 최종 종료 근거: [최종 브라우저 보고](Evidence/qa-graphics-browser-final-20261014/README.md)에서 실제9수 플레이어 승리·10수 AI 승리의 전환/승리 표시와 결과 보드 노출을 확인했다.400ms의 모든 프레임/취소 원복은 위 native/독립 증거와 구분하고 동일 배포본 해시를 연결해 종결한다.
+
+## QA-012 — 결과 화면에 일시정지 아이콘이 남음
+
+- 심각도/상태: **낮음(P3), 수정·재검증 완료 / 종결**. 결과에 Retry/Lobby 두 버튼만 남기는 요구와 맞지 않는 일시정지 아이콘이 표시되던 문제다.
+- 출처/관찰: 총괄 발견 후 QA가 [승리 결과](Evidence/qa-graphics-visual-findings-20261014/map-ko-320-result-0.png)와 [패배 결과](Evidence/qa-graphics-visual-findings-20261014/map-ko-320-result-1.png)를 읽었다. 둘 다 상단 오른쪽 일시정지 아이콘이 남는다. 총괄은 비활성 상태라고 보고했으며 QA는 캡처만으로 클릭 차단 여부를 판정하지 않는다.
+- 기대/수정 계획: 승리/패배/무승부/마지막30 결과에서 일시정지를 숨기고 Retry 후 진행 중에는 표시·동작을 복원한다. resolving/result 동안 입력 guard를 유지한다. Client가 수정할 예정이다.
+- 종료 조건: 소스 동결 후 RES08로 모든 결과의 가시성·Retry 복원 및 총괄 실제 포인터 동선을 확인한다. 보드 노출과 Retry/Lobby의 가로 배치는 중간 이미지에서 확인했으나 전체 결과 기능 통과로 승격하지 않는다. [관찰 범위](Evidence/qa-graphics-visual-findings-20261014/capture-review.json).
+- 수정 확인: 독립 승패/무승부/30 결과의 두 행동과 새 판 pause 표시/입력 복원, Client59/59의 `AssertTwoResultActions` 및 결과 캡처에서 숨김을 확인했다. 최종 빌드가 해당 런타임/프리팹과 연결됐으며 총괄 실제 포인터 보고를 받아 종료한다. [빌드 연결](Evidence/qa-graphics-build-link-v2-20261014/results.json).
+- 최종 종료 근거: 총괄이 실제 승패 결과에서 pause 미노출·보드 클릭 차단, Retry로 같은1단계 빈 판과 pause 복원, Lobby로 최고 해금2 선택을 확인했다. [최종 브라우저](Evidence/qa-graphics-browser-final-20261014/README.md)와 QA 결과 이미지 판독을 연결해 종결한다.
+
+## QA-013 — 일부 모달 캡처에서 닫기 표시 누락
+
+- 최신 처리: 사용자가 해당 Tabletop 시안을 폐기했으므로 **후속 판정 중단·미확정 이력 보존**. 아래 후보 증거를 삭제하거나 수정 완료로 바꾸지 않는다. 새 UI에 동일 결함이 있다고 가정하지 않으며 신규 닫기 표시/포인터 검증으로 확인한다.
+
+- 심각도/상태: **보통(P2) 표시 결함 후보, 실제 표시·클릭 재확인 필요**. 원인과 사용자의 닫기 조작 차단은 아직 확정하지 않았다.
+- 최종 브라우저 증거: [영어320 도움말](Evidence/qa-graphics-browser-final-20261014/after-en-help-320.jpg)의 상단 오른쪽에 닫기 아이콘/버튼이 보이지 않는다. 같은 빌드 [영어320 설정](Evidence/qa-graphics-browser-final-20261014/after-en-settings-320.jpg)에서는 보인다. 파일은 총괄 실제 WebGL 캡처이며 QA가 직접 열어 판독했다.
+- 선행 CAP-01: Client native `host-ko-320-settings.png`·`host-en-320-confirm.png`에도 닫기와 eyebrow가 누락됐지만 다른 언어/해상도 이미지에서는 정상이다. [관찰 목록](Evidence/qa-graphics-frozen-v1-20261014/capture-review.json). native 참조·hitbox 통과만으로 실제 표시 정상이라고 판정할 수 없다.
+- 기대: 결과 외 닫기가 있는 도움말/설정/일시정지에서는 사용자가 식별 가능한 닫기 표시와 정상 조작을 제공한다. 결과 Close 제거 요구를 다른 모달에 확대 적용하지 않는다.
+- 최소 재확인: 동일 최종 WebGL의320 영어 도움말에서 닫기 표시·클릭 및 새 캡처를 확인한다.320 한국어 설정·영어 일시정지도 비교한다. 실제 화면에서 재현되면 Client의 영향 범위 수정/검사를 요구하고, 캡처만의 문제면 그 근거를 남겨 후보를 기각한다. QA가 원인을 추측해 제품 코드를 수정하지 않는다.
+- 판정 제한: 총괄 완료 보고는 도움말 표시 및 라이선스 닫기 성공을 기록했으며 해당 도움말 캡처 시점의 닫기 표시/클릭을 명시하지 않는다. 이 후보를 숨기고 전체 그래픽을 통과 처리하지 않는다. 기존 QA-011/012 종결과 독립32묶음·native59/별도1·빌드 연결은 유지한다.

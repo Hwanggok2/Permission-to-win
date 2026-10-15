@@ -1,0 +1,78 @@
+[
+  {
+    "source": "Docs/QA/Evidence/qa-graphics-core-v2-20261014/ClientData/stages.json",
+    "sha256": "2d04b124a42f0f3798ad942e9aacab97ee34a25f05b380144cd70f75c3904992"
+  },
+  {
+    "source": "Docs/QA/Evidence/qa-graphics-core-v2-20261014/ClientData/strings.json",
+    "sha256": "57e392cf68464898829946f17030e4ae3008aab86370452bacf6dbe56d68a291"
+  },
+  {
+    "source": "Docs/QA/Evidence/qa-graphics-core-v2-20261014/ClientData/ads.json",
+    "sha256": "d19f181faf52db28287bbed1b42291770dc3bf83d35e5cca8af4a6dcce9e194a"
+  },
+  {
+    "source": "GameData/Generated/stages.json",
+    "sha256": "6e66c8b0abe2dcc3b5297bf08a98953929b7e17b31e740569910255f7601fc26"
+  },
+  {
+    "source": "GameData/Generated/strings.json",
+    "sha256": "e191ce6773c2e608831f4f38bbb1b995bdd2caec3c156693cdbe71e50645828c"
+  },
+  {
+    "source": "GameData/Generated/ads.json",
+    "sha256": "d19f181faf52db28287bbed1b42291770dc3bf83d35e5cca8af4a6dcce9e194a"
+  },
+  {
+    "source": "Client/Assets/StageGame/Resources/GameData/stages.json",
+    "sha256": "6e66c8b0abe2dcc3b5297bf08a98953929b7e17b31e740569910255f7601fc26"
+  },
+  {
+    "source": "Client/Assets/StageGame/Resources/GameData/strings.json",
+    "sha256": "e191ce6773c2e608831f4f38bbb1b995bdd2caec3c156693cdbe71e50645828c"
+  },
+  {
+    "source": "Client/Assets/StageGame/Resources/GameData/ads.json",
+    "sha256": "d19f181faf52db28287bbed1b42291770dc3bf83d35e5cca8af4a6dcce9e194a"
+  },
+  {
+    "source": "GameData/RANK-UI-CONTRACT.md",
+    "sha256": "f73bcf4b60a3526a10baee9ea6658c41644ea5a752170624a2dbb2dc32d4e5e1"
+  },
+  {
+    "source": "GameData/Validation/rank-ui-changes.json",
+    "sha256": "429bd9fb562b2888e45ea02df67e05c802c493ac5cf856e7af67cf055782bbb9"
+  },
+  {
+    "source": "GameData/Validation/rank-ui-results.json",
+    "sha256": "83787b8af6abfa98cbd121780c401e578bc19ac717836bc5c8a742f7ef2da910"
+  },
+  {
+    "source": "Docs/Management/CONTRACT.md",
+    "sha256": "7b27a2fd2e994d8ff869bcea284d9d73706079dc074b9d59db41a7db16aa3aed"
+  },
+  {
+    "source": "Docs/QA/RANK-UI-RESULTS.md",
+    "sha256": "b6490b1e4234194c788b2d3cd5ba210e85d7fffd80f77fab26e1b91679a12f6f"
+  },
+  {
+    "source": "Tests/Fixtures/rank-ui-interaction-cases.json",
+    "sha256": "c0f3a4bc474722bde78a22da1d1c9a7667b3055211960d4c20984c5c7051dd63"
+  },
+  {
+    "source": "Tests/Fixtures/rank-ui-crossing-win-cases.json",
+    "sha256": "33878b955ffde400682c61569119499d51146ef650f755b6097fd0ce6404356a"
+  },
+  {
+    "source": "Tests/RankHarness/README.md",
+    "sha256": "3730f662791b6e884a781f90abc37c5783e96cd95404eeb2f30c6a0beee489c8"
+  },
+  {
+    "source": "Tests/RankHarness/WinningSegmentOracle.cs",
+    "sha256": "73c8ecd042bf3e7ada06a46ddce0d19321884f9097f58bbf6177e96891242d16"
+  },
+  {
+    "source": "Tests/check-rank-data-preparation.py",
+    "sha256": "a57a053ee80899fb3bc4e4ab5240a3138a80e28af0094bb6449535633c755669"
+  }
+]

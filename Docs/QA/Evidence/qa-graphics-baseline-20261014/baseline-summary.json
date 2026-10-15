@@ -1,0 +1,20 @@
+{
+  "status": "PREPARATION_ONLY_NO_NEW_PRODUCT_TESTS",
+  "source": "Frozen stage UX final evidence, never the currently changing Client checkout",
+  "files": 43,
+  "manifestEntries": 51,
+  "duplicatePathEntries": 8,
+  "duplicateExplanation": "The source manifest contained slash/backslash spellings of eight identical paths. Normalized entries have identical hashes and refer to43 unique preserved files.",
+  "hashMismatches": 0,
+  "scopes": {
+    "runtimeAndLayout": 9,
+    "prefabs": 15,
+    "gameData": 6,
+    "screenshots": 5
+  },
+  "testExecution": false,
+  "unityExecution": false,
+  "browserExecution": false,
+  "deviceExecution": false,
+  "limitations": "Existing function evidence does not establish acceptance of the requested graphics renewal. Frozen UI is a before-reference only."
+}

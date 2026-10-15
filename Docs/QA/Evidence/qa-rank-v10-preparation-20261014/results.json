@@ -1,0 +1,101 @@
+{
+  "status": "PREPARATION_ONLY_REFERENCE_MODEL_CHECKED",
+  "fixtureCases": 20,
+  "groups": {
+    "timingCases": 12,
+    "cancellationCases": 5,
+    "presentationCases": 3
+  },
+  "referenceClockChecks": [
+    {
+      "id": "fast_search_before_delay_boundary",
+      "referenceActiveMs": 950,
+      "referenceWallMs": 950,
+      "referenceEligibleActiveMs": 1000,
+      "expectedEligible": false
+    },
+    {
+      "id": "one_ms_before_delay_boundary",
+      "referenceActiveMs": 999,
+      "referenceWallMs": 999,
+      "referenceEligibleActiveMs": 1000,
+      "expectedEligible": false
+    },
+    {
+      "id": "fast_search_at_delay_boundary",
+      "referenceActiveMs": 1000,
+      "referenceWallMs": 1000,
+      "referenceEligibleActiveMs": 1000,
+      "expectedEligible": true
+    },
+    {
+      "id": "search_overlaps_delay",
+      "referenceActiveMs": 1000,
+      "referenceWallMs": 1000,
+      "referenceEligibleActiveMs": 1000,
+      "expectedEligible": true
+    },
+    {
+      "id": "application_pause_does_not_consume_remaining_delay",
+      "referenceActiveMs": 999,
+      "referenceWallMs": 2999,
+      "referenceEligibleActiveMs": 1000,
+      "expectedEligible": false
+    },
+    {
+      "id": "application_resume_uses_remaining_delay",
+      "referenceActiveMs": 1000,
+      "referenceWallMs": 3000,
+      "referenceEligibleActiveMs": 1000,
+      "expectedEligible": true
+    },
+    {
+      "id": "pause_modal_stops_delay",
+      "referenceActiveMs": 1000,
+      "referenceWallMs": 4000,
+      "referenceEligibleActiveMs": 1000,
+      "expectedEligible": true
+    },
+    {
+      "id": "confirmation_cancel_resumes_same_turn_delay",
+      "referenceActiveMs": 1000,
+      "referenceWallMs": 4000,
+      "referenceEligibleActiveMs": 1000,
+      "expectedEligible": true
+    },
+    {
+      "id": "nested_suspension_requires_all_reasons_cleared",
+      "referenceActiveMs": 999,
+      "referenceWallMs": 1999,
+      "referenceEligibleActiveMs": 1000,
+      "expectedEligible": false
+    },
+    {
+      "id": "repeated_pause_no_wall_clock_catchup",
+      "referenceActiveMs": 999,
+      "referenceWallMs": 12999,
+      "referenceEligibleActiveMs": 1000,
+      "expectedEligible": false
+    },
+    {
+      "id": "ai_starter_receives_same_delay",
+      "referenceActiveMs": 999,
+      "referenceWallMs": 999,
+      "referenceEligibleActiveMs": 1000,
+      "expectedEligible": false
+    },
+    {
+      "id": "hint_exempt_from_ai_presentation_delay",
+      "referenceActiveMs": 100,
+      "referenceWallMs": 100,
+      "referenceEligibleActiveMs": 100,
+      "expectedEligible": true
+    }
+  ],
+  "runtimeApiBound": false,
+  "productTestsExecuted": false,
+  "unityOrBrowserExecuted": false,
+  "webglOrAndroidBuildExecuted": false,
+  "titleChoice": "pending user response",
+  "awaits": "Client freeze readiness then source-impact tests; no product build or new browser before explicit approval"
+}

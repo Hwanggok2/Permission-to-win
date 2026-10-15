@@ -1,0 +1,26 @@
+[
+  {
+    "source": "Client/Evidence/rank-v9-tests.xml",
+    "snapshot": "ClientProvided/rank-v9-tests.xml",
+    "sha256": "41310ae982ad187ad4558ba1ee970459dd28212c51dfabcaf8b7f7fd48994239",
+    "provider": "Client; QA did not execute Unity"
+  },
+  {
+    "source": "Client/Evidence/rank-v9-pre-hat-tests.xml",
+    "snapshot": "ClientProvided/rank-v9-pre-hat-tests.xml",
+    "sha256": "9ef5ebd0b8476a6e21e0efad79172cd1a91d657f588d97c5581d843a3dffa429",
+    "provider": "Client; QA did not execute Unity"
+  },
+  {
+    "source": "Client/Evidence/rank-v9-tests-initial.xml",
+    "snapshot": "ClientProvided/rank-v9-tests-initial.xml",
+    "sha256": "8cd30e91b0403f371564254b155a8e39c67b2f60251a21ad5788c011ed40ed9c",
+    "provider": "Client; QA did not execute Unity"
+  },
+  {
+    "source": "Client/Evidence/rank-v9-source-freeze.json",
+    "snapshot": "ClientProvided/rank-v9-source-freeze.json",
+    "sha256": "484bb34c8cb76b603adb583813fc25a42dfb8502e7f64bb4b12d362927326c4f",
+    "provider": "Client; QA did not execute Unity"
+  }
+]

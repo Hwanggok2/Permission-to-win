@@ -1,0 +1,45 @@
+{
+  "kind": "Node VM unit checks; no browser execution",
+  "checks": [
+    {
+      "name": "Plain viewport 390x664 has no fictional host inset",
+      "passed": true
+    },
+    {
+      "name": "Plain viewport 390x844 has no fictional host inset",
+      "passed": true
+    },
+    {
+      "name": "Plain viewport 454x768 has no fictional host inset",
+      "passed": true
+    },
+    {
+      "name": "Plain viewport 1080x1920 has no fictional host inset",
+      "passed": true
+    },
+    {
+      "name": "Visual viewport overrides layout viewport, including toolbar resize and offsets",
+      "passed": true
+    },
+    {
+      "name": "Inner dimensions remain a fallback without visualViewport",
+      "passed": true
+    },
+    {
+      "name": "Explicit SDK host retains its controls allowance and actual controls bounds",
+      "passed": true
+    },
+    {
+      "name": "Host preview is explicit",
+      "passed": true
+    },
+    {
+      "name": "Invalid inputs cannot inject nonfinite numbers into Unity",
+      "passed": true
+    },
+    {
+      "name": "Eight-float WebGL ABI preserves viewport and host activation",
+      "passed": true
+    }
+  ]
+}

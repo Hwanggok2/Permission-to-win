@@ -1,0 +1,172 @@
+{
+  "verifiedAtUtc": "2026-10-14T14:22:57.336630+00:00",
+  "status": "NATIVE_AND_BOTH_DEVELOPMENT_BUILDS_PASS__BROWSER_PENDING",
+  "tests": {
+    "path": "Evidence/rank-ui-tests.xml",
+    "id": "2",
+    "testcasecount": "67",
+    "result": "Passed",
+    "total": "67",
+    "passed": "67",
+    "failed": "0",
+    "inconclusive": "0",
+    "skipped": "0",
+    "asserts": "0",
+    "engine-version": "3.5.0.0",
+    "clr-version": "4.0.30319.42000",
+    "start-time": "2026-10-14 14:17:56Z",
+    "end-time": "2026-10-14 14:17:58Z",
+    "duration": "1.9157231"
+  },
+  "sourceFreeze": {
+    "path": "Evidence/rank-ui-source-freeze.json",
+    "assetCount": 281,
+    "changedAfterBothBuilds": []
+  },
+  "idempotence": "Evidence/rank-ui-idempotence.json PASS",
+  "uiAudit": "Evidence/rank-ui-ui-audit.json48finalcaptures",
+  "artProvenance": "Evidence/rank-ui-assets.json",
+  "android": {
+    "artifact": {
+      "path": "Builds/Android/StageGame-development.apk",
+      "bytes": 35568872,
+      "sha256": "282C16157C42421DA474724B8C750D24992506E9F408898D705EC06B7D6DEAC7"
+    },
+    "buildSummary": "Succeeded\nErrors: 0\nWarnings: 0\nBytes: 207438141\nDuration: 00:00:52.2034441\n",
+    "developmentOnly": true
+  },
+  "webgl": {
+    "completedAtUtc": "2026-10-14T14:21:06.781709+00:00",
+    "entry": "C:/Github/StageGame/Client/Builds/WebGL/index.html",
+    "summary": "Succeeded\nErrors: 0\nWarnings: 0\nBytes: 44164083\nDuration: 00:00:41.0106962\n",
+    "files": [
+      {
+        "path": "Builds/WebGL/Build/WebGL.data",
+        "bytes": 18873658,
+        "sha256": "8A0040A7AB446EF3D8823533A04E85930A2B3AD817AB04CDDD431392F2AC5E98"
+      },
+      {
+        "path": "Builds/WebGL/Build/WebGL.framework.js",
+        "bytes": 761643,
+        "sha256": "F909F29D115947BE5BAB214FE3CD434A6197E6BDC2E24CE9C2933C64B58FAE08"
+      },
+      {
+        "path": "Builds/WebGL/Build/WebGL.loader.js",
+        "bytes": 58348,
+        "sha256": "03AAF3E2319D566DE198A66BE4F5B233F5ABB78E90279739E79ECC977B67A835"
+      },
+      {
+        "path": "Builds/WebGL/Build/WebGL.wasm",
+        "bytes": 24444233,
+        "sha256": "CA66C107F9F6F3283F13971B2FBEA8CAC6860B9048A74D856E4098D381603FBE"
+      },
+      {
+        "path": "Builds/WebGL/host-layout.js",
+        "bytes": 2002,
+        "sha256": "187B6162FE987A784D66FB6F929EC64C4885D8BA2A5B5A7E176AF16DFC9DAC25"
+      },
+      {
+        "path": "Builds/WebGL/index.html",
+        "bytes": 4490,
+        "sha256": "BC0C2978899D9D401ADEAD4393976AC3D9F571291432B3CA5382C5E29934237E"
+      },
+      {
+        "path": "Builds/WebGL/TemplateData/profiler.js",
+        "bytes": 1573,
+        "sha256": "433E40AF9A544D1EF5FEC67B0B52AF25A851928626C3F3EF0D09B35DED610C0D"
+      },
+      {
+        "path": "Builds/WebGL/ui-text.js",
+        "bytes": 446,
+        "sha256": "676DB2313592E37CBDC7F1CBEEA964E688F9CBA051EF8743C6D06E7ADEFFC362"
+      }
+    ]
+  },
+  "notices": [
+    {
+      "entry": "assets/Notices/NotoSansCJKkr-OFL.txt",
+      "bytes": 4808,
+      "sha256": "6587D53488CE62E197942A708671B5F11F99D105034795C23A41380275D69C1F",
+      "matchesSource": true,
+      "webglMatchesSource": true
+    },
+    {
+      "entry": "assets/Notices/NotoSansKR-OFL.txt",
+      "bytes": 4388,
+      "sha256": "1C05C68C34F9708415AADA51F17E1B0092D2CEA709BF4A94CD38114F9E73D7D9",
+      "matchesSource": true,
+      "webglMatchesSource": true
+    },
+    {
+      "entry": "assets/Notices/NUnit-ThirdPartyNotices.txt",
+      "bytes": 1249,
+      "sha256": "EF37B1CCBAE5E9B641482CBD77A74EE96193A39D232CC8D856B9044F37DB9244",
+      "matchesSource": true,
+      "webglMatchesSource": true
+    },
+    {
+      "entry": "assets/Notices/SOURCES.txt",
+      "bytes": 1451,
+      "sha256": "647CB2C60B107FAB810AA3FE6DF07C7932F31AA21BFB11148F33EF5EAED7254C",
+      "matchesSource": true,
+      "webglMatchesSource": true
+    },
+    {
+      "entry": "assets/Notices/Unity-Companion-License-Full.txt",
+      "bytes": 6002,
+      "sha256": "7A177190B6C4E511E096D7F0211E34C241E9D54954C87B61BF610BF0BCCB719E",
+      "matchesSource": true,
+      "webglMatchesSource": true
+    },
+    {
+      "entry": "assets/Notices/Unity-NUnit-LICENSE.txt",
+      "bytes": 433,
+      "sha256": "EA14F98BA99AFCC079EC2A8A6C38461B5BC4CA3D184AA87AD7C60DE9134C4D43",
+      "matchesSource": true,
+      "webglMatchesSource": true
+    },
+    {
+      "entry": "assets/Notices/Unity-TestFramework-LICENSE.txt",
+      "bytes": 475,
+      "sha256": "D3B09E9683AFBC8D468A83000308F18E7133EAF7879AF870747000A66E3C0693",
+      "matchesSource": true,
+      "webglMatchesSource": true
+    },
+    {
+      "entry": "assets/Notices/Unity-uGUI-LICENSE.txt",
+      "bytes": 457,
+      "sha256": "A8E0CAE87B2EDB8C205AE6C308F20B89A09F32D62BD4A3FF0343BB4724A4201E",
+      "matchesSource": true,
+      "webglMatchesSource": true
+    }
+  ],
+  "gameData": [
+    {
+      "path": "Assets/StageGame/Resources/GameData/strings.json",
+      "bytes": 29131,
+      "sha256": "E191CE6773C2E608831F4F38BBB1B995BDD2CAEC3C156693CDBE71E50645828C",
+      "matchesGenerated": true
+    },
+    {
+      "path": "Assets/StageGame/Resources/GameData/stages.json",
+      "bytes": 13248,
+      "sha256": "6E66C8B0ABE2DCC3B5297BF08A98953929B7E17B31E740569910255F7601FC26",
+      "matchesGenerated": true
+    },
+    {
+      "path": "Assets/StageGame/Resources/GameData/ads.json",
+      "bytes": 205,
+      "sha256": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A",
+      "matchesGenerated": true
+    }
+  ],
+  "browser": "Root verification in progress; no Client browser operation.",
+  "device": "No physical-device test conducted. Root ADB recheck0devices reported.",
+  "notImplemented": [
+    "Production ad SDK",
+    "Ad removal IAP/verification server",
+    "Toss SDK/.ait distribution",
+    "Release signing/store submission"
+  ],
+  "packageManagerSettings": "Pre-existing untracked Unity PackageManager internal UI preferences/default registry; unchanged, not required by this feature. Root Git inclusion decision."
+}

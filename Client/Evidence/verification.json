@@ -1,22 +1,15 @@
 {
-  "verifiedAtUtc": "2026-10-14T12:47:20.130758Z",
+  "verifiedAtUtc": "2026-10-14T13:29:27.315021+00:00",
   "unity": "6000.3.15f1",
   "project": "C:\\Github\\StageGame\\Client",
   "tests": {
-    "total": 57,
-    "passed": 57,
+    "total": 59,
+    "passed": 59,
     "failed": 0,
-    "file": "Evidence/stage-map-tests.xml",
-    "log": "Logs/stage-map-tests.log",
-    "scope": "Initial full57/57 before approved3-key copy edit; runtime code/prefabs unchanged",
-    "finalCopyImpact": {
-      "total": 11,
-      "passed": 11,
-      "failed": 0,
-      "file": "Evidence/loss-copy-tests.xml",
-      "log": "Logs/loss-copy-tests.log",
-      "scope": "Separate final copy-impact run; do not sum with initial full57"
-    }
+    "file": "Evidence/graphics-refresh-tests.xml",
+    "log": "Logs/graphics-refresh-tests.log",
+    "endTimeUtc": "2026-10-14 13:25:48Z",
+    "scope": "Full final run after root visual corrections; includes saved scene PlayMode coroutine/render/host/profile/localization/progression checks. Not a physical-device or human-play claim."
   },
   "android": {
     "build": "Succeeded",
@@ -29,37 +22,37 @@
     "architecture": "arm64-v8a",
     "deviceTested": false,
     "releaseSigned": false,
-    "latestBuildLog": "Logs/android-stage-map-final.log"
+    "latestBuildLog": "Logs/android-graphics-refresh.log"
   },
   "webgl": {
     "build": "Succeeded",
     "errors": 0,
     "warnings": 0,
     "template": "StageGamePortrait",
-    "browserSmoke": "PASS from root coordinator: initial chapter-map functional flow and final Korean vertical-loss copy retest. See rootStageMapBrowserReport for separate scopes.",
-    "browserProof": "../Docs/Management/Evidence/reference-ux-browser-20261014/README.md",
+    "browserSmoke": "PASS: root actual-pointer test on final graphics build; see rootGraphicsBrowserReport for precise scope.",
+    "browserProof": "Docs/Management/Evidence/graphics-refresh-browser-20261014/README.md",
     "appsInTossSdk": false,
     "aitPackage": false,
-    "responsiveProof": "Evidence/stage-map-tests.xml; Evidence/host-*.png; Evidence/map-*.png",
-    "latestBuildLog": "Logs/webgl-stage-map-final.log",
-    "responsiveSmoke": "Root initial390->320->390 andko/en map/help passed;final copy-only390 retest passed. Unity render assertions provide44px hitbox evidence. Actual Toss/device not tested."
+    "responsiveProof": "Evidence/graphics-refresh-tests.xml; Evidence/graphics-refresh-20261014/",
+    "latestBuildLog": "Logs/webgl-graphics-refresh.log",
+    "responsiveSmoke": "PASS: root390->320->390 ko/en pointer flows; Unity final59 supplies44CSS/safe bounds checks. Actual phone/Toss not tested."
   },
   "ads": "NoFillAds only. Mock completion is UNITY_EDITOR-only.",
   "artifacts": [
     {
       "path": "Builds/Android/StageGame-development.apk",
-      "bytes": 39792595,
-      "sha256": "865DAD68BA5A648829F83428C53F7BC343C4AB60595F54BE9080D402B932EC95"
+      "bytes": 36461106,
+      "sha256": "A9BD2D986695C1000F0B4C031722BA7C4ED98104E85E5ECFAD8AE59FADC19C26"
     },
     {
       "path": "Builds/WebGL/Build/WebGL.wasm",
-      "bytes": 24390734,
-      "sha256": "D093BE45525525A092B3569D65CAE23B0A7A63C701A50859C41FFAE3ECC344C0"
+      "bytes": 24395357,
+      "sha256": "FA25842E683D0C66795191799362F6045F2A91021F9C0FD12E65C0813445A590"
     },
     {
       "path": "Builds/WebGL/Build/WebGL.data",
-      "bytes": 18753989,
-      "sha256": "FA73330ECB9D638D63BBA6B2B4403E5F23A8A5BAF6F93CF48173E3469C9B17EE"
+      "bytes": 18819794,
+      "sha256": "4B2EA54CD67DA41A41C02F5F1A41DEE15C8FAA669735333F9603D1AB09693330"
     },
     {
       "path": "Builds/WebGL/Build/WebGL.framework.js",
@@ -68,8 +61,8 @@
     },
     {
       "path": "Builds/WebGL/index.html",
-      "bytes": 4416,
-      "sha256": "53BDBF4813EA2CFE5A19E5C21B3B711CD6AD08AD1200254146D1AB3BA3C6C3CA"
+      "bytes": 4490,
+      "sha256": "78D3D17A9163944E340C2EEF2B215C8FCDEBDF4C7F0F4F9A07E184104533C9D5"
     },
     {
       "path": "Builds/WebGL/ui-text.js",
@@ -84,19 +77,22 @@
   ],
   "gameData": [
     {
-      "name": "stages.json",
+      "source": "GameData/Generated/stages.json",
+      "runtime": "Client/Assets/StageGame/Resources/GameData/stages.json",
       "sha256": "2D04B124A42F0F3798AD942E9AACAB97EE34A25F05B380144CD70F75C3904992",
-      "matchesSource": true
+      "matches": true
     },
     {
-      "name": "ads.json",
+      "source": "GameData/Generated/ads.json",
+      "runtime": "Client/Assets/StageGame/Resources/GameData/ads.json",
       "sha256": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A",
-      "matchesSource": true
+      "matches": true
     },
     {
-      "name": "strings.json",
+      "source": "GameData/Generated/strings.json",
+      "runtime": "Client/Assets/StageGame/Resources/GameData/strings.json",
       "sha256": "57E392CF68464898829946F17030E4AE3008AAB86370452BACF6DBE56D68A291",
-      "matchesSource": true
+      "matches": true
     }
   ],
   "runtimeSources": [
@@ -132,8 +128,8 @@
     },
     {
       "path": "Assets/StageGame/Scripts/UI/GameApp.cs",
-      "bytes": 23101,
-      "sha256": "E79F57289BE0749E346767B2E53D464606D5BD86F79FCA3BC1E47CFE3430483F"
+      "bytes": 26532,
+      "sha256": "0A518043B3DC66530ABCDA633578B727B81BC29867D1E1192BC2280E0EF47661"
     },
     {
       "path": "Assets/StageGame/Scripts/UI/HostLayout.cs",
@@ -144,6 +140,11 @@
       "path": "Assets/StageGame/Scripts/UI/SafeAreaFitter.cs",
       "bytes": 3002,
       "sha256": "0B55A9E30DF61CCCEE80B26CC2DC6EBF2DAE2292F69AA6806CE40466A8B68E51"
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/TabletopTheme.cs",
+      "bytes": 486,
+      "sha256": "E1B469F7DCAC82A073A52A8D2CCA6D47E64C53D04A152A6B263E92C87BA4DFAA"
     }
   ],
   "noticesPointerProof": "Evidence/notices-close-check.txt; Evidence/webgl-notices-close.jpg",
@@ -333,7 +334,8 @@
     ],
     "actualTossSdk": false,
     "physicalDevice": false,
-    "currentBuildScope": "Historical host/body30 build before the chapter-map change. This is not a browser result for the current new map."
+    "currentBuildScope": "Historical host/body30 build before the chapter-map change. This is not a browser result for the current new map.",
+    "applicability": "Historical pre-graphics build only; not current graphics/result browser verification."
   },
   "stageMap": {
     "evidence": "Evidence/stage-map-verification.json",
@@ -468,6 +470,580 @@
       "limitations": "Final browser retest covers Korean vertical loss only; horizontal/diagonal andEnglish copy validated separately indata/Unity checks. Initial full functional report remains a preceding build scope.",
       "actualTossSdk": false,
       "physicalDevice": false
+    },
+    "applicability": "Historical pre-graphics build only; not current graphics/result browser verification."
+  },
+  "historicalPreGraphicsTests": {
+    "total": 57,
+    "passed": 57,
+    "failed": 0,
+    "file": "Evidence/stage-map-tests.xml",
+    "log": "Logs/stage-map-tests.log",
+    "scope": "Initial full57/57 before approved3-key copy edit; runtime code/prefabs unchanged",
+    "finalCopyImpact": {
+      "total": 11,
+      "passed": 11,
+      "failed": 0,
+      "file": "Evidence/loss-copy-tests.xml",
+      "log": "Logs/loss-copy-tests.log",
+      "scope": "Separate final copy-impact run; do not sum with initial full57"
     }
-  }
+  },
+  "graphicsRefresh": {
+    "verifiedAtUtc": "2026-10-14T13:29:27.315021+00:00",
+    "status": "COMPLETE__ROOT_BROWSER_PASS__SOURCE_FROZEN",
+    "unity": "6000.3.15f1",
+    "tests": {
+      "total": 59,
+      "passed": 59,
+      "failed": 0,
+      "file": "Evidence/graphics-refresh-tests.xml",
+      "log": "Logs/graphics-refresh-tests.log",
+      "endTimeUtc": "2026-10-14 13:25:48Z",
+      "scope": "Full final run after root visual corrections; includes saved scene PlayMode coroutine/render/host/profile/localization/progression checks. Not a physical-device or human-play claim."
+    },
+    "sourceFreeze": {
+      "file": "Evidence/graphics-refresh-source-freeze.json",
+      "assetsFiles": 193,
+      "matchesAfterBothBuilds": true,
+      "differences": [],
+      "editorOnlySafetyUpdate": {
+        "atUtc": "2026-10-14T13:33:14.407871+00:00",
+        "previousFreeze": "Evidence/graphics-refresh-source-freeze-before-editor-guard.json",
+        "changes": [
+          {
+            "path": "Assets/StageGame/Editor/TabletopUiBuilder.cs",
+            "before": "536A594DA238EB83776D298EC9DCDB12EAD631E4672910E0E2DD0D28530BD41F",
+            "after": "CA488E8289B32211EE5C51793444355B51658B60D9A1A295EAF5188262B3ACE2"
+          },
+          {
+            "path": "Assets/StageGame/Tests/EditMode/StageMapTests.cs",
+            "before": "2D11FDD0B7B02B0CE678347B54C53E22F024AA37271F2BB58D6E17B84F97F66C",
+            "after": "BE1153C152C336667FD0191C3E8501070C81284E74CFB27DE6E712EE8C8B6B0C"
+          }
+        ],
+        "runtimePrefabArtBuildChanges": false,
+        "reason": "Abort before any writes in Play/prefab editing mode or with any dirty scene. Does not discard user scenes.",
+        "test": "Evidence/graphics-refresh-editor-safety-tests.xml",
+        "safeApplyLog": "Logs/tabletop-safety-apply.log"
+      }
+    },
+    "idempotence": {
+      "file": "Evidence/graphics-refresh-idempotence.json",
+      "files": 60,
+      "allIdentical": true
+    },
+    "artwork": "Evidence/tabletop-ui-assets.json",
+    "paletteAndTouchAudit": "Evidence/graphics-refresh-ui-audit.json",
+    "captures": [
+      {
+        "path": "Evidence/graphics-refresh-20261014/animation-ai-0.png",
+        "bytes": 69656,
+        "sha256": "72D74CA6D63AE605624C371108DB3E39624E6B9477C0DD64520B3B2399E52757"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/animation-ai-1.png",
+        "bytes": 68559,
+        "sha256": "9D73937A22E34D77A2AB4C823E445885EBAAEB83FF5B0BC05BCA17B324751BDA"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/animation-ai-2.png",
+        "bytes": 68723,
+        "sha256": "62E20D5A65157B57D67304F646A55FBC195A66720EA25FCD8F142AB30336A14E"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/animation-player-0.png",
+        "bytes": 69141,
+        "sha256": "FB719C9D29F37FCB9348C74FC32D6EF88E257C0E69A982F38DFF1D6CC088DE1E"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/animation-player-1.png",
+        "bytes": 68393,
+        "sha256": "711BFFDECD7E39A69858C9B967E9432E82223BCC9004585DDAFFD24583A5E8FE"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/animation-player-2.png",
+        "bytes": 70033,
+        "sha256": "9C58EADDB38581490A4E6C8B321D82C768E2424E59020AD330C981EDEA9F5A63"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/en-confirm.png",
+        "bytes": 79202,
+        "sha256": "560E983D14EB6E411819F784D3EC8D4E66591C2807817836F5C3BBF04D107E5F"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/en-help.png",
+        "bytes": 97223,
+        "sha256": "B4874C2399F752BC36B3AF508B3BF8351CEFF376FB96C90C965168AEBEF24E67"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/en-lobby.png",
+        "bytes": 91035,
+        "sha256": "8D04567EFBC4CE653C8847AEF9B510FE6F7DD451BF036DE4869BD42754C240EF"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/en-match.png",
+        "bytes": 80759,
+        "sha256": "CBAF1E63CEB4278494CC6D520AF3E284856320F131E61A688A8B56FD3EA3DAB9"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/en-restored.png",
+        "bytes": 92989,
+        "sha256": "74AB1D3993244EA33325C42DF91316CF9D4837CA010DD84E4EC444B2CEA493A3"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/en-result.png",
+        "bytes": 87172,
+        "sha256": "BD423CB7C02A1BABBF6B8BAC6D262D1C603D5F933DEABB43ED6F3BA25252FA6B"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/en-settings.png",
+        "bytes": 77354,
+        "sha256": "8950BB91F8923784011C0846A565089D500C1BB64C7278282A5C31D21ACB6E64"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/help.png",
+        "bytes": 87293,
+        "sha256": "89C986AC8DA2E59C334CD1F5B750FBCD861089878173342E697670D47235403A"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-en-320-confirm.png",
+        "bytes": 28132,
+        "sha256": "7C3E815E9AE3259127FA2A258907D329EE5B003019054D5462A49A7CA1DFB62A"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-en-320-help.png",
+        "bytes": 38115,
+        "sha256": "5B47BDB947060293737E05F5D7C3F1CCAB854A1AD9C69EDA968DE074C318CDE0"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-en-320-lobby.png",
+        "bytes": 36919,
+        "sha256": "F18052A972ED5C31466F693E1E569A6062CEF30CB761494A1A1A741CEBEE31F9"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-en-320-match.png",
+        "bytes": 49817,
+        "sha256": "DAC8E3D1727C9FCF0006DD3375DB31C8C23AE2CB706D3D3F1E4E96719C88EF1F"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-en-320-notices-bottom.png",
+        "bytes": 48607,
+        "sha256": "CEBAE5B6D056F619041F1F00DE103F5E5FA3543472C5BC626239BF16DE55F1CE"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-en-320-result.png",
+        "bytes": 47167,
+        "sha256": "0A8459A6E1061FD8D663F7AB38AE318155A02DC747B2B5A45591CCD3E262CF90"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-en-320-settings.png",
+        "bytes": 29675,
+        "sha256": "E4FB47ACA4739579041B65AD5AA2B471699A5D4C9EB7F251CD4FCC6A20716E9C"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-en-390-confirm.png",
+        "bytes": 39160,
+        "sha256": "98A471548D16719A43F2553F399DA665DB16D840CEB2100591DE7F374FD0E388"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-en-390-help.png",
+        "bytes": 52864,
+        "sha256": "AB6C49F510DFE0C851A6834CD14C617A40FAEAD0930995FA11C7FA1A5B58487A"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-en-390-lobby.png",
+        "bytes": 53730,
+        "sha256": "FD6DBFDEB454B1A0836A6B3B267DB82B3E0A0647FD8F34644AB8760FAA3449F1"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-en-390-match.png",
+        "bytes": 75014,
+        "sha256": "650ECA99E00C6C06111319D279D8196CE2E062CE8C1AE6A1F82439D6BBBBBF9C"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-en-390-notices-bottom.png",
+        "bytes": 72022,
+        "sha256": "58513AB2418C69E74BC106066C76D9FD54CB3DB6AABCA93D6455D8F5B7CAB194"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-en-390-result.png",
+        "bytes": 70947,
+        "sha256": "96D301FC77D5212B6CDB85D0754F01D51898539CF904156EF3CF00300323E5B6"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-en-390-settings.png",
+        "bytes": 41307,
+        "sha256": "1411A686AE6F69160EAF8460B6B146B6CB067B128CDDDAD3B6B009B7E264144B"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-ko-320-confirm.png",
+        "bytes": 27094,
+        "sha256": "38EDDD5B97A8EE37DF6B742E75D49303B8B3BB039CC1DF4468B6EAA41063A03C"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-ko-320-help.png",
+        "bytes": 34707,
+        "sha256": "C9BE1E697F857DF758889DC02EAFCDC9AF3D1262E4D5CA3EEF9AB842C4AC250A"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-ko-320-lobby.png",
+        "bytes": 33414,
+        "sha256": "01A52907E4B903ED3B5DADC075D34A246125EBDB44EE4608B7BFB6532AE7E118"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-ko-320-match.png",
+        "bytes": 46855,
+        "sha256": "ECDFFB3967F68BBA93D562EF0E7D1A5F650925CCDB5C26CE5E55602BD4A3FF9C"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-ko-320-notices-bottom.png",
+        "bytes": 47891,
+        "sha256": "A6EC70EC6E0F6565CC4CE0F9777F06FF5E9A3FB6A371960FAE1886A0421F076F"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-ko-320-result.png",
+        "bytes": 45288,
+        "sha256": "7742022E05A5A95B355CD5EB5968C6302FF7368F78F3BB0D82D133C5A2B59EF9"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-ko-320-settings.png",
+        "bytes": 27096,
+        "sha256": "8C76876C3F2188A2487D40061C86810A09C33850637306A0CEB954F363331E9F"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-ko-390-confirm.png",
+        "bytes": 37618,
+        "sha256": "B31C91CA48144417153B8FCBEE0C6E23A9FDA655C89E2AABAE1A3C8F2E63B9AC"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-ko-390-help.png",
+        "bytes": 47200,
+        "sha256": "B2883925786342BCEB08ABCDFAD102007C812393A90059FFF2166E88A1BF070F"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-ko-390-lobby.png",
+        "bytes": 47575,
+        "sha256": "437703DB8BC80984B72DEBC04C5788AC1D0F5A9B3B7A374743888F311EBB8F7C"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-ko-390-match.png",
+        "bytes": 71429,
+        "sha256": "99D9D47EE325C399C02C4D5B4E778B56F45E150746BBA97ED0F5D2ABA89848A1"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-ko-390-notices-bottom.png",
+        "bytes": 71179,
+        "sha256": "BE83B7ED830A7426F9C91116C46EF1B2B429902E653B987193C5494432D63237"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-ko-390-result.png",
+        "bytes": 67445,
+        "sha256": "A53BE5D1E934506642EEBC15EBBB5BD77ADC6B73A8E7A122F0B4A7AD1D0CC662"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/host-ko-390-settings.png",
+        "bytes": 37789,
+        "sha256": "99C7B00F7DB38CF0E85667D2B6F71BC640D03ACB1FD4B8928FC3957692BE53B6"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/ko-lobby.png",
+        "bytes": 82168,
+        "sha256": "120A874AEE91A6D1ED1A4A6F7B11E01FD3B5B53774E73D8472598CAA3D4310ED"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/ko-match.png",
+        "bytes": 81075,
+        "sha256": "9016750468FAB85E0AF1DEC29F282B2F91649F7C4078AC1B873D7A6DBDB9180F"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/ko-settings.png",
+        "bytes": 73165,
+        "sha256": "7226182DC371B3C6D1A10D04C74946A2BB460F7969730451DB5B837854D10128"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/lobby.png",
+        "bytes": 82168,
+        "sha256": "120A874AEE91A6D1ED1A4A6F7B11E01FD3B5B53774E73D8472598CAA3D4310ED"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/map-en-320-all-cleared.png",
+        "bytes": 38182,
+        "sha256": "3427D3994847B06C638C4AE3E16C7BAB32D45C84F1DB2FA563478FBE19365247"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/map-en-320-locked.png",
+        "bytes": 37369,
+        "sha256": "F7703AD9F14E4F03CC3B6E8A83EAD87DF215F41C0E6C369E9AEF2F217AF9BC5B"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/map-en-320-result-0.png",
+        "bytes": 47101,
+        "sha256": "39FB82A643BC47262138A27DE194FD4D7F0B7F2B532BA26EF861B9AE78E99990"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/map-en-320-result-1.png",
+        "bytes": 46788,
+        "sha256": "0BCD1C3EC275DC101E3126AC1F87DF2D845FFDA4533694A23E8169B4AFDC6865"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/map-en-320-result-2.png",
+        "bytes": 29891,
+        "sha256": "BB634C6EECD24D91A99874AFC84A15D3179F9EA2F36AAD553A10DFC0D0026C0A"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/map-en-390-current.png",
+        "bytes": 52170,
+        "sha256": "93164F12794D5CC369260D13879579F0EA11E5B48249CB3AF8F34D573B8C8DD3"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/map-ko-320-all-cleared.png",
+        "bytes": 33692,
+        "sha256": "21A65095B7DEF9955651D2BBCB1AE968BEA8D65FDC0230C9B5C26278677D87C1"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/map-ko-320-locked.png",
+        "bytes": 35841,
+        "sha256": "F747C37F2D61C8A1D8DD6EE3A81FB5840DB25C4EDF5C6E2A3278E095123FEA3F"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/map-ko-320-result-0.png",
+        "bytes": 45946,
+        "sha256": "10AD2BE54A3E52ED0D7E8ECA41F4AA4DFD2FA72D2F4FEEEE604F28EACA3D2904"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/map-ko-320-result-1.png",
+        "bytes": 45885,
+        "sha256": "67A22F1854599AAD159860A0024D8969F3294A8926B376DABB755CB6D685F616"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/map-ko-320-result-2.png",
+        "bytes": 28497,
+        "sha256": "4160406242F32A2042F47622FF9D775CDF074E617E67FBBCB8C04B7FF2C3D446"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/map-ko-390-current.png",
+        "bytes": 47078,
+        "sha256": "9DB7F9102DE793A95542C798E62F8D25805822FE4862E0F33AEB3250C8891467"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/match.png",
+        "bytes": 83289,
+        "sha256": "14433BCA0B5EEE87AEA876F2FF55DD67E86B094B71604BBCB4BC4003698A7217"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/notices.png",
+        "bytes": 105888,
+        "sha256": "23217AD59483460016724245BC9473D32CB7DA920DDD5FECF70D18AB1FD91030"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/result.png",
+        "bytes": 84736,
+        "sha256": "C22E7657AE219C5BC47B7DB26467A2005FA12358F690C035FE8066368C16CDAC"
+      },
+      {
+        "path": "Evidence/graphics-refresh-20261014/settings.png",
+        "bytes": 73157,
+        "sha256": "19FCB96513E83A390BAC0B921906E91ACC50E67F2F4CAE65DF65A650C699223E"
+      }
+    ],
+    "animation": {
+      "timeline": {
+        "path": "Evidence/graphics-refresh-20261014/animation-timeline.csv",
+        "bytes": 591,
+        "sha256": "CA3F4B941FB37DA2C5B5CBEE835FDEE86C9C1D9C7010A6BCAB2B91E0B4B096BF"
+      },
+      "flow": "Actual player UI drop and actual AI Think coroutine; both winning placements scale1.45->1 across400ms plus500ms line observation, foreground render then original sibling restoration; result pause hidden;2horizontalbuttons; duplicate/pending/timeout/late/cancel protections tested.",
+      "fixture": "Legal near-terminal board injected for deterministic test; not human full-match evidence."
+    },
+    "gameData": [
+      {
+        "source": "GameData/Generated/stages.json",
+        "runtime": "Client/Assets/StageGame/Resources/GameData/stages.json",
+        "sha256": "2D04B124A42F0F3798AD942E9AACAB97EE34A25F05B380144CD70F75C3904992",
+        "matches": true
+      },
+      {
+        "source": "GameData/Generated/ads.json",
+        "runtime": "Client/Assets/StageGame/Resources/GameData/ads.json",
+        "sha256": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A",
+        "matches": true
+      },
+      {
+        "source": "GameData/Generated/strings.json",
+        "runtime": "Client/Assets/StageGame/Resources/GameData/strings.json",
+        "sha256": "57E392CF68464898829946F17030E4AE3008AAB86370452BACF6DBE56D68A291",
+        "matches": true
+      }
+    ],
+    "android": {
+      "result": "Succeeded",
+      "errors": 0,
+      "warnings": 0,
+      "log": "Logs/android-graphics-refresh.log",
+      "summary": "Evidence/android-build-summary.txt",
+      "physicalDeviceTested": false,
+      "releaseSigned": false
+    },
+    "webgl": {
+      "result": "Succeeded",
+      "errors": 0,
+      "warnings": 0,
+      "log": "Logs/webgl-graphics-refresh.log",
+      "summary": "Evidence/webgl-build-summary.txt",
+      "actualTossSdk": false,
+      "aitPackage": false
+    },
+    "artifacts": [
+      {
+        "path": "Builds/Android/StageGame-development.apk",
+        "bytes": 36461106,
+        "sha256": "A9BD2D986695C1000F0B4C031722BA7C4ED98104E85E5ECFAD8AE59FADC19C26"
+      },
+      {
+        "path": "Builds/WebGL/Build/WebGL.wasm",
+        "bytes": 24395357,
+        "sha256": "FA25842E683D0C66795191799362F6045F2A91021F9C0FD12E65C0813445A590"
+      },
+      {
+        "path": "Builds/WebGL/Build/WebGL.data",
+        "bytes": 18819794,
+        "sha256": "4B2EA54CD67DA41A41C02F5F1A41DEE15C8FAA669735333F9603D1AB09693330"
+      },
+      {
+        "path": "Builds/WebGL/Build/WebGL.framework.js",
+        "bytes": 761643,
+        "sha256": "F909F29D115947BE5BAB214FE3CD434A6197E6BDC2E24CE9C2933C64B58FAE08"
+      },
+      {
+        "path": "Builds/WebGL/index.html",
+        "bytes": 4490,
+        "sha256": "78D3D17A9163944E340C2EEF2B215C8FCDEBDF4C7F0F4F9A07E184104533C9D5"
+      },
+      {
+        "path": "Builds/WebGL/ui-text.js",
+        "bytes": 448,
+        "sha256": "2D958DA273B7A6ACC2DFBD37EE24B034F0A82078A7BCA7755858A41C33A70FC8"
+      },
+      {
+        "path": "Builds/WebGL/host-layout.js",
+        "bytes": 2002,
+        "sha256": "187B6162FE987A784D66FB6F929EC64C4885D8BA2A5B5A7E176AF16DFC9DAC25"
+      }
+    ],
+    "notices": {
+      "files": 8,
+      "apkAndWebglMatchSource": true,
+      "file": "Evidence/apk-notices.json",
+      "newThirdPartyContent": false
+    },
+    "rootBrowser": {
+      "status": "PASS",
+      "reportedDateSeoul": "2026-10-14",
+      "sourceThreadId": "01a138d9-7ede-70d0-ba36-e84a05e6b105",
+      "owner": "Root coordinator operated actual WebGL with pointer. Client read report/captures/console and compared hashes; Client did not operate browser.",
+      "report": "Docs/Management/Evidence/graphics-refresh-browser-20261014/README.md",
+      "artifactManifest": "Docs/Management/Evidence/graphics-refresh-browser-20261014/webgl-artifacts.json",
+      "profile": "Desktop IAB,390x844 ->320x568 ->390x844; simulated OS top59/bottom34/left-right0 plus64CSS host reservation.",
+      "passed": [
+        "Korean390 actual stage1 nine-ply player win, gold rim preserving mint ring, visible board and exactly two horizontal result actions",
+        "Result board click cannot add moves; retry restores same stage1 empty board and pause icon; lobby selects highest unlocked stage2",
+        "Actual stage2 starts at4plies, reaches10-ply AI vertical win, preserves coral diamond with gold rim and two result actions",
+        "Locked stage3 inspected; start does not enter match",
+        "English320 lobby/game/settings/rules/license, middle-section license scroll and close",
+        "Same-column repeated pointer input across AI turns; NoFill hint does not block subsequent move/AI reply",
+        "Reload restores language/progression;390 Korean restored; observed console warnings/errors empty"
+      ],
+      "consoleProof": "Docs/Management/Evidence/graphics-refresh-browser-20261014/final-console.json",
+      "consoleErrorsWarnings": [],
+      "captures": [
+        "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-en-game-320.jpg",
+        "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-en-help-320.jpg",
+        "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-en-licenses-scroll-320.jpg",
+        "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-en-lobby-320.jpg",
+        "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-en-no-fill-320.jpg",
+        "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-en-restored-320.jpg",
+        "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-en-settings-320.jpg",
+        "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-ko-ai-win-390.jpg",
+        "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-ko-lobby-390.jpg",
+        "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-ko-locked-390.jpg",
+        "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-ko-player-win-390.jpg",
+        "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-ko-restored-390.jpg"
+      ],
+      "artifactsComparedToCurrentClient": 6,
+      "clientArtifactsRechecked": 7,
+      "sourceFreezeFilesRechecked": 193,
+      "sourceFreezeUnchanged": true,
+      "animationTimingEvidence": "Client/Evidence/graphics-refresh-20261014/animation-timeline.csv and final59 Unity tests; browser static captures do not prove all400ms frames.",
+      "limits": "Browser covers real stage1 replay win and stage2 AI vertical win, not all30 human stages. License pointer test reached middle, full text inclusion verified separately by package bytes. Actual phone0connected/notrun; TossSDK/realAds/IAP/server not tested.",
+      "physicalDevice": false,
+      "actualTossSdk": false
+    },
+    "limitations": [
+      "Android physical-device test not run",
+      "Toss native SDK/ait packaging not implemented",
+      "No real ad SDK/account: NoFillAds only; test completion adapters UNITY_EDITOR only",
+      "Purchase/server verification and release signing/store approval remain planned/unverified"
+    ],
+    "editorSafety": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "file": "Evidence/graphics-refresh-editor-safety-tests.xml",
+      "log": "Logs/graphics-refresh-editor-safety.log",
+      "scope": "Separate Editor-only preflight regression after full59 runtime pass. Test rejects unsaved test scene before writes, keeps it dirty and keeps AppRoot bytes identical. Successful clean Apply also leaves every runtime/prefab/art byte identical. Do not present as one combined60-test run."
+    },
+    "finalEvidenceCheckedAtUtc": "2026-10-14T13:42:09.789554+00:00"
+  },
+  "rootGraphicsBrowserReport": {
+    "status": "PASS",
+    "reportedDateSeoul": "2026-10-14",
+    "sourceThreadId": "01a138d9-7ede-70d0-ba36-e84a05e6b105",
+    "owner": "Root coordinator operated actual WebGL with pointer. Client read report/captures/console and compared hashes; Client did not operate browser.",
+    "report": "Docs/Management/Evidence/graphics-refresh-browser-20261014/README.md",
+    "artifactManifest": "Docs/Management/Evidence/graphics-refresh-browser-20261014/webgl-artifacts.json",
+    "profile": "Desktop IAB,390x844 ->320x568 ->390x844; simulated OS top59/bottom34/left-right0 plus64CSS host reservation.",
+    "passed": [
+      "Korean390 actual stage1 nine-ply player win, gold rim preserving mint ring, visible board and exactly two horizontal result actions",
+      "Result board click cannot add moves; retry restores same stage1 empty board and pause icon; lobby selects highest unlocked stage2",
+      "Actual stage2 starts at4plies, reaches10-ply AI vertical win, preserves coral diamond with gold rim and two result actions",
+      "Locked stage3 inspected; start does not enter match",
+      "English320 lobby/game/settings/rules/license, middle-section license scroll and close",
+      "Same-column repeated pointer input across AI turns; NoFill hint does not block subsequent move/AI reply",
+      "Reload restores language/progression;390 Korean restored; observed console warnings/errors empty"
+    ],
+    "consoleProof": "Docs/Management/Evidence/graphics-refresh-browser-20261014/final-console.json",
+    "consoleErrorsWarnings": [],
+    "captures": [
+      "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-en-game-320.jpg",
+      "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-en-help-320.jpg",
+      "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-en-licenses-scroll-320.jpg",
+      "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-en-lobby-320.jpg",
+      "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-en-no-fill-320.jpg",
+      "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-en-restored-320.jpg",
+      "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-en-settings-320.jpg",
+      "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-ko-ai-win-390.jpg",
+      "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-ko-lobby-390.jpg",
+      "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-ko-locked-390.jpg",
+      "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-ko-player-win-390.jpg",
+      "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-ko-restored-390.jpg"
+    ],
+    "artifactsComparedToCurrentClient": 6,
+    "clientArtifactsRechecked": 7,
+    "sourceFreezeFilesRechecked": 193,
+    "sourceFreezeUnchanged": true,
+    "animationTimingEvidence": "Client/Evidence/graphics-refresh-20261014/animation-timeline.csv and final59 Unity tests; browser static captures do not prove all400ms frames.",
+    "limits": "Browser covers real stage1 replay win and stage2 AI vertical win, not all30 human stages. License pointer test reached middle, full text inclusion verified separately by package bytes. Actual phone0connected/notrun; TossSDK/realAds/IAP/server not tested.",
+    "physicalDevice": false,
+    "actualTossSdk": false
+  },
+  "editorSafety": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "file": "Evidence/graphics-refresh-editor-safety-tests.xml",
+    "log": "Logs/graphics-refresh-editor-safety.log",
+    "scope": "Separate Editor-only preflight regression after full59 runtime pass. Test rejects unsaved test scene before writes, keeps it dirty and keeps AppRoot bytes identical. Successful clean Apply also leaves every runtime/prefab/art byte identical. Do not present as one combined60-test run."
+  },
+  "finalEvidenceCheckedAtUtc": "2026-10-14T13:42:09.789554+00:00"
 }

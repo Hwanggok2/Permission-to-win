@@ -1,0 +1,186 @@
+{
+  "status": "SAVED_PREFABS_AND_EDITOR_TESTS_PASS",
+  "atUtc": "2026-10-15T10:32:08.736642+00:00",
+  "dateSeoul": "2026-10-15",
+  "request": "Connect approved Easy Lemon as match-only low-volume looping music with independent persisted settings and license notices.",
+  "applyMethod": "StageGame.Editor.RankUiBuilder.ApplyBackgroundMusic",
+  "applyLog": "Logs/easy-lemon-apply.log",
+  "audio": {
+    "source": "C:\\Github\\StageGame\\Overview\\Audio\\originals\\easy-lemon.mp3",
+    "asset": {
+      "path": "Assets/StageGame/Audio/EasyLemon.mp3",
+      "bytes": 5057420,
+      "sha256": "2486B8ECFE4575F9AB31613A2C03C2EE45E6E5280301D05B4DD7237C9E1C2531"
+    },
+    "sourceBytesUnchanged": true,
+    "volume": 0.12,
+    "loop": true,
+    "spatialBlend": 0,
+    "playOnAwake": false,
+    "import": "CompressedInMemory,Vorbis,quality0.65; original MP3 bytes retained."
+  },
+  "behavior": [
+    "Match plays; lobby stops/reset position.",
+    "Pause/action confirmation, app pause/focus loss and pending rewarded/interstitial ads pause music; applicable resume uses UnPause at retained position.",
+    "Reward/interstitial completion, failure, cancellation, no-fill and timeout do not override OFF.",
+    "Music OFF persists in ProgressData.musicMuted independently from soundEnabled; legacy saves default on."
+  ],
+  "localization": {
+    "keys": [
+      "settings_music_on",
+      "settings_music_off"
+    ],
+    "stringCount": 420,
+    "changedBy": "Root session exported Excel and copied Resources;Client did not edit GameData or Resources/GameData/strings.json.",
+    "generatedEqualsClient": true
+  },
+  "license": {
+    "notice": "Assets/StreamingAssets/Notices/Easy-Lemon-Attribution.txt",
+    "compiled": "Assets/StageGame/Resources/LegalNotices.txt",
+    "exportMethod": "StageGame.Editor.LocalizationBuilder.ExportLegalNotices",
+    "existingNoticeFilesUnchanged": true,
+    "allExistingIncludedNoticesPreserved": true
+  },
+  "tests": {
+    "total": 95,
+    "passed": 95,
+    "failed": 0,
+    "skipped": 0,
+    "results": "Evidence/easy-lemon-tests.xml",
+    "log": "Logs/easy-lemon-tests.log",
+    "newMusicTests": [
+      {
+        "name": "MusicPauseFocusAndBackgroundResumeTheSameTrackAndLobbyStopsIt",
+        "result": "Passed",
+        "seconds": 2.193127
+      },
+      {
+        "name": "MusicSettingRestoresAfterReloadAndBothLanguagesFitSavedSettings",
+        "result": "Passed",
+        "seconds": 4.274933
+      },
+      {
+        "name": "MusicWaitsForInterstitialAndLateCallbacksCannotOverrideOffOrLobby",
+        "result": "Passed",
+        "seconds": 7.619998
+      },
+      {
+        "name": "MusicWaitsForRewardAdsAndResumesOnFailureCancellationOrTimeout",
+        "result": "Passed",
+        "seconds": 7.593018
+      },
+      {
+        "name": "LegacyMusicPreferenceDefaultsOnAndRoundTripsIndependently",
+        "result": "Passed",
+        "seconds": 0.001472
+      },
+      {
+        "name": "SavedMusicReferencesOriginalAudioAndAllLicenseNoticesArePresent",
+        "result": "Passed",
+        "seconds": 0.097436
+      }
+    ]
+  },
+  "changedAssets": [
+    "Assets/StageGame/Editor/LocalizationBuilder.cs",
+    "Assets/StageGame/Editor/RankUiBuilder.cs",
+    "Assets/StageGame/Prefabs/RankUI/RankAppRoot.prefab",
+    "Assets/StageGame/Prefabs/RankUI/Settings.prefab",
+    "Assets/StageGame/Resources/LegalNotices.txt",
+    "Assets/StageGame/Scripts/Core/ProgressStore.cs",
+    "Assets/StageGame/Scripts/UI/RankGameApp.cs"
+  ],
+  "addedAssets": [
+    "Assets/StageGame/Audio/EasyLemon.mp3",
+    "Assets/StageGame/Audio/EasyLemon.mp3.meta",
+    "Assets/StageGame/Tests/EditMode/RankMusicTests.cs",
+    "Assets/StageGame/Tests/EditMode/RankMusicTests.cs.meta",
+    "Assets/StreamingAssets/Notices/Easy-Lemon-Attribution.txt",
+    "Assets/StreamingAssets/Notices/Easy-Lemon-Attribution.txt.meta"
+  ],
+  "externalChanges": [
+    "Assets/StageGame/Resources/GameData/strings.json"
+  ],
+  "preservation": "All other pre-existing Assets retain the pre-task SHA256, including pixel art,Match/Lobby prefabs,stages and ads data.",
+  "sourceFreeze": "Evidence/easy-lemon-source-freeze.json",
+  "assetCount": 480,
+  "captureCount": 13,
+  "captures": [
+    {
+      "path": "Evidence/easy-lemon-20261015/en-1080-music-license.png",
+      "bytes": 580346,
+      "sha256": "9133A622CE77DB4B637EF68485B7AF07645462789BBF3B52195828681AC2C697"
+    },
+    {
+      "path": "Evidence/easy-lemon-20261015/en-1080-music-off.png",
+      "bytes": 558597,
+      "sha256": "1D7D6E4AD99010201DD6D7859A5C9A24B9E2BF6B38ED67FE9542F55E13FF9273"
+    },
+    {
+      "path": "Evidence/easy-lemon-20261015/en-1080-music-on.png",
+      "bytes": 558544,
+      "sha256": "D2FCDEA4232F873B2169202B0FA289C563F75355CD440A54A019E0AB9B860959"
+    },
+    {
+      "path": "Evidence/easy-lemon-20261015/en-320-music-off.png",
+      "bytes": 81127,
+      "sha256": "957B158ADAB18544C783B44019A6303F6A130695605A375CE43009185C1EC6BE"
+    },
+    {
+      "path": "Evidence/easy-lemon-20261015/en-320-music-on.png",
+      "bytes": 81066,
+      "sha256": "891EC595A62097BAE929E972B2DCDE16699252CD3B2553908A566D555C736902"
+    },
+    {
+      "path": "Evidence/easy-lemon-20261015/en-390-music-off.png",
+      "bytes": 166241,
+      "sha256": "A816837D02E3734BA42867FABD3BE99809958A6BFA786215122E24CB6E624937"
+    },
+    {
+      "path": "Evidence/easy-lemon-20261015/en-390-music-on.png",
+      "bytes": 166178,
+      "sha256": "9775989AC3CA8EC40AF6132331894DCD2455A5C6958AE5020BCE0512C3B750BA"
+    },
+    {
+      "path": "Evidence/easy-lemon-20261015/ko-1080-music-off.png",
+      "bytes": 555170,
+      "sha256": "00722676306A97161A04E22CA1D221B1117DEDB37C4B9FF317213679F1E08A09"
+    },
+    {
+      "path": "Evidence/easy-lemon-20261015/ko-1080-music-on.png",
+      "bytes": 555004,
+      "sha256": "BD0A5BCA7907DFF9A1441A6E1E4FD469C1D1AE1E4ED61A3411B2901E1C2D5E8C"
+    },
+    {
+      "path": "Evidence/easy-lemon-20261015/ko-320-music-off.png",
+      "bytes": 81034,
+      "sha256": "F897B9B6B2BC8CE9426ABCF3600C89D5F42DF84DB9DF85801BF612BC11CE06C3"
+    },
+    {
+      "path": "Evidence/easy-lemon-20261015/ko-320-music-on.png",
+      "bytes": 81055,
+      "sha256": "59D5B180931903FBC26AF7146C2A1E513D0BD1E43696F38763916E2304B363CE"
+    },
+    {
+      "path": "Evidence/easy-lemon-20261015/ko-390-music-off.png",
+      "bytes": 165129,
+      "sha256": "241DBADAEE3EF30B5A8DF1360C6910F758E4A9933CF6BC79BF6F2756280FC5E8"
+    },
+    {
+      "path": "Evidence/easy-lemon-20261015/ko-390-music-on.png",
+      "bytes": 165134,
+      "sha256": "946C4C48C5AE9AFAE1C5EC3628552661D38F0D240CB6B2FDC6461E3FBCC316D6"
+    }
+  ],
+  "visuallyInspected": [
+    "Evidence/easy-lemon-20261015/ko-390-music-on.png",
+    "Evidence/easy-lemon-20261015/en-320-music-off.png",
+    "Evidence/easy-lemon-20261015/en-1080-music-license.png"
+  ],
+  "buildFilesUnchanged": 17,
+  "limits": [
+    "Human listening not performed; perceived loudness and loop transition not assessed.",
+    "Web/browser and physical-device audio/autoplay validation not performed.",
+    "No WebGL/Android build, commit or push executed;17 existing build files unchanged."
+  ]
+}

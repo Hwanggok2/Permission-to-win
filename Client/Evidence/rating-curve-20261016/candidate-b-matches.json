@@ -1,0 +1,305 @@
+{
+  "method": "128 games per rating: 8 fixed openings x 8 paired seeds x 2 colors. Fixed opponent: depth 4, 10000 nodes, 25% safe random, no oversight. Score counts a draw as half a win. Same openings/colors/seeds across ratings. Bot proxy only, not human win rate or Elo.",
+  "results": [
+    {
+      "profile": {
+        "aiRating": 200,
+        "aiDepth": 1,
+        "aiNodeBudget": 500,
+        "aiRandomPermille": 900,
+        "aiOversightPermille": 400
+      },
+      "result": {
+        "games": 128,
+        "wins": 0,
+        "losses": 128,
+        "draws": 0,
+        "maxNodes": 7,
+        "searches": 941,
+        "scorePercent": 0.0,
+        "meanPlies": 17.953125,
+        "maxMilliseconds": 1.5017
+      }
+    },
+    {
+      "profile": {
+        "aiRating": 300,
+        "aiDepth": 1,
+        "aiNodeBudget": 600,
+        "aiRandomPermille": 850,
+        "aiOversightPermille": 300
+      },
+      "result": {
+        "games": 128,
+        "wins": 1,
+        "losses": 127,
+        "draws": 0,
+        "maxNodes": 7,
+        "searches": 1001,
+        "scorePercent": 0.78125,
+        "meanPlies": 18.8828125,
+        "maxMilliseconds": 0.1219
+      }
+    },
+    {
+      "profile": {
+        "aiRating": 400,
+        "aiDepth": 1,
+        "aiNodeBudget": 700,
+        "aiRandomPermille": 800,
+        "aiOversightPermille": 200
+      },
+      "result": {
+        "games": 128,
+        "wins": 1,
+        "losses": 125,
+        "draws": 2,
+        "maxNodes": 7,
+        "searches": 1135,
+        "scorePercent": 1.5625,
+        "meanPlies": 20.96875,
+        "maxMilliseconds": 0.0595
+      }
+    },
+    {
+      "profile": {
+        "aiRating": 500,
+        "aiDepth": 1,
+        "aiNodeBudget": 1000,
+        "aiRandomPermille": 700,
+        "aiOversightPermille": 120
+      },
+      "result": {
+        "games": 128,
+        "wins": 3,
+        "losses": 120,
+        "draws": 5,
+        "maxNodes": 7,
+        "searches": 1320,
+        "scorePercent": 4.296875,
+        "meanPlies": 23.828125,
+        "maxMilliseconds": 0.3461
+      }
+    },
+    {
+      "profile": {
+        "aiRating": 600,
+        "aiDepth": 2,
+        "aiNodeBudget": 1800,
+        "aiRandomPermille": 600,
+        "aiOversightPermille": 80
+      },
+      "result": {
+        "games": 128,
+        "wins": 19,
+        "losses": 100,
+        "draws": 9,
+        "maxNodes": 112,
+        "searches": 1634,
+        "scorePercent": 18.359375,
+        "meanPlies": 28.59375,
+        "maxMilliseconds": 1.0681
+      }
+    },
+    {
+      "profile": {
+        "aiRating": 700,
+        "aiDepth": 2,
+        "aiNodeBudget": 2500,
+        "aiRandomPermille": 500,
+        "aiOversightPermille": 0
+      },
+      "result": {
+        "games": 128,
+        "wins": 24,
+        "losses": 86,
+        "draws": 18,
+        "maxNodes": 112,
+        "searches": 1919,
+        "scorePercent": 25.78125,
+        "meanPlies": 32.9609375,
+        "maxMilliseconds": 1.4806
+      }
+    },
+    {
+      "profile": {
+        "aiRating": 800,
+        "aiDepth": 4,
+        "aiNodeBudget": 8000,
+        "aiRandomPermille": 400,
+        "aiOversightPermille": 0
+      },
+      "result": {
+        "games": 128,
+        "wins": 39,
+        "losses": 75,
+        "draws": 14,
+        "maxNodes": 2109,
+        "searches": 1955,
+        "scorePercent": 35.9375,
+        "meanPlies": 33.40625,
+        "maxMilliseconds": 8.329
+      }
+    },
+    {
+      "profile": {
+        "aiRating": 900,
+        "aiDepth": 4,
+        "aiNodeBudget": 10000,
+        "aiRandomPermille": 300,
+        "aiOversightPermille": 0
+      },
+      "result": {
+        "games": 128,
+        "wins": 44,
+        "losses": 57,
+        "draws": 27,
+        "maxNodes": 1896,
+        "searches": 1993,
+        "scorePercent": 44.921875,
+        "meanPlies": 33.921875,
+        "maxMilliseconds": 7.0705
+      }
+    },
+    {
+      "profile": {
+        "aiRating": 1000,
+        "aiDepth": 4,
+        "aiNodeBudget": 13000,
+        "aiRandomPermille": 220,
+        "aiOversightPermille": 0
+      },
+      "result": {
+        "games": 128,
+        "wins": 46,
+        "losses": 47,
+        "draws": 35,
+        "maxNodes": 2113,
+        "searches": 2029,
+        "scorePercent": 49.609375,
+        "meanPlies": 34.46875,
+        "maxMilliseconds": 7.2349
+      }
+    },
+    {
+      "profile": {
+        "aiRating": 1100,
+        "aiDepth": 4,
+        "aiNodeBudget": 16000,
+        "aiRandomPermille": 160,
+        "aiOversightPermille": 0
+      },
+      "result": {
+        "games": 128,
+        "wins": 54,
+        "losses": 39,
+        "draws": 35,
+        "maxNodes": 1951,
+        "searches": 2002,
+        "scorePercent": 55.859375,
+        "meanPlies": 33.984375,
+        "maxMilliseconds": 8.1321
+      }
+    },
+    {
+      "profile": {
+        "aiRating": 1200,
+        "aiDepth": 6,
+        "aiNodeBudget": 30000,
+        "aiRandomPermille": 100,
+        "aiOversightPermille": 0
+      },
+      "result": {
+        "games": 128,
+        "wins": 85,
+        "losses": 22,
+        "draws": 21,
+        "maxNodes": 30000,
+        "searches": 1968,
+        "scorePercent": 74.609375,
+        "meanPlies": 33.2421875,
+        "maxMilliseconds": 116.033
+      }
+    },
+    {
+      "profile": {
+        "aiRating": 1300,
+        "aiDepth": 6,
+        "aiNodeBudget": 30000,
+        "aiRandomPermille": 60,
+        "aiOversightPermille": 0
+      },
+      "result": {
+        "games": 128,
+        "wins": 87,
+        "losses": 21,
+        "draws": 20,
+        "maxNodes": 30000,
+        "searches": 1959,
+        "scorePercent": 75.78125,
+        "meanPlies": 33.09375,
+        "maxMilliseconds": 111.4613
+      }
+    },
+    {
+      "profile": {
+        "aiRating": 1400,
+        "aiDepth": 6,
+        "aiNodeBudget": 30000,
+        "aiRandomPermille": 30,
+        "aiOversightPermille": 0
+      },
+      "result": {
+        "games": 128,
+        "wins": 94,
+        "losses": 18,
+        "draws": 16,
+        "maxNodes": 30000,
+        "searches": 1910,
+        "scorePercent": 79.6875,
+        "meanPlies": 32.3046875,
+        "maxMilliseconds": 108.9875
+      }
+    },
+    {
+      "profile": {
+        "aiRating": 1500,
+        "aiDepth": 6,
+        "aiNodeBudget": 30000,
+        "aiRandomPermille": 10,
+        "aiOversightPermille": 0
+      },
+      "result": {
+        "games": 128,
+        "wins": 100,
+        "losses": 16,
+        "draws": 12,
+        "maxNodes": 30000,
+        "searches": 1877,
+        "scorePercent": 82.8125,
+        "meanPlies": 31.7578125,
+        "maxMilliseconds": 111.9927
+      }
+    },
+    {
+      "profile": {
+        "aiRating": 1600,
+        "aiDepth": 6,
+        "aiNodeBudget": 30000,
+        "aiRandomPermille": 0,
+        "aiOversightPermille": 0
+      },
+      "result": {
+        "games": 128,
+        "wins": 99,
+        "losses": 18,
+        "draws": 11,
+        "maxNodes": 30000,
+        "searches": 1881,
+        "scorePercent": 81.640625,
+        "meanPlies": 31.828125,
+        "maxMilliseconds": 108.6791
+      }
+    }
+  ]
+}

@@ -1,0 +1,419 @@
+{
+  "changes": [
+    {
+      "sheet": "Stages",
+      "cell": "J5",
+      "before": "빈 판에서 중앙과 네 개 연결 연습",
+      "after": "빈 판에서 중앙과 연결 연습"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J6",
+      "before": "빈 판에서 중앙과 네 개 연결 연습",
+      "after": "빈 판에서 중앙과 연결 연습"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J7",
+      "before": "빈 판에서 중앙과 네 개 연결 연습",
+      "after": "빈 판에서 중앙과 연결 연습"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "I8",
+      "before": "4,2,5,1,6,2",
+      "after": null
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J8",
+      "before": "즉시 연결 가능한 열 찾기",
+      "after": "빈 판에서 중앙과 연결 연습"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "H9",
+      "before": 1,
+      "after": -1
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J9",
+      "before": "빈 판에서 중앙과 네 개 연결 연습",
+      "after": "AI 선공에 대응하는 전개"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J10",
+      "before": "빈 판에서 중앙과 네 개 연결 연습",
+      "after": "빈 판에서 중앙과 연결 연습"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "I11",
+      "before": null,
+      "after": "3,2"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J11",
+      "before": "빈 판에서 중앙과 네 개 연결 연습",
+      "after": "초기 배치에서 연결 공간 넓히기"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "H12",
+      "before": 1,
+      "after": -1
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J12",
+      "before": "빈 판에서 중앙과 네 개 연결 연습",
+      "after": "AI 선공에 대응하는 전개"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "I13",
+      "before": "1,4,5,2,2,3,3,2",
+      "after": null
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J13",
+      "before": "다음에 두 위협을 만드는 수 탐색",
+      "after": "빈 판에서 중앙과 연결 연습"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "I14",
+      "before": "3,3,4,1,3,1,1,5,3,0,4,0,1,2",
+      "after": null
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J14",
+      "before": "상대의 즉시 승리 위협 하나 차단",
+      "after": "빈 판에서 중앙과 연결 연습"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "H15",
+      "before": 1,
+      "after": -1
+    },
+    {
+      "sheet": "Stages",
+      "cell": "I15",
+      "before": "5,2,3,1,0,0,1,0,0,4,1,5",
+      "after": null
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J15",
+      "before": "중력을 고려한 대각 연결 찾기",
+      "after": "AI 선공에 대응하는 전개"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "I16",
+      "before": "6,1,6,6,5,3,4,5,1,3,3,2,0,6,6,2",
+      "after": "2,4"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J16",
+      "before": "상대의 즉시 승리 위협 하나 차단",
+      "after": "초기 배치에서 연결 공간 넓히기"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "I17",
+      "before": "0,0,4,5,6,0,1,5,6,3",
+      "after": null
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J17",
+      "before": "중앙과 양옆의 연결 가능성 비교",
+      "after": "빈 판에서 중앙과 연결 연습"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "H18",
+      "before": 1,
+      "after": -1
+    },
+    {
+      "sheet": "Stages",
+      "cell": "I18",
+      "before": "0,3,3,3,6,1,1,3,6,1,2,4",
+      "after": null
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J18",
+      "before": "다음에 두 위협을 만드는 수 탐색",
+      "after": "AI 선공에 대응하는 전개"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "H19",
+      "before": -1,
+      "after": 1
+    },
+    {
+      "sheet": "Stages",
+      "cell": "I19",
+      "before": "2,1,1,2,1,1,5,2,6,2,6",
+      "after": null
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J19",
+      "before": "즉시 연결 가능한 열 찾기",
+      "after": "빈 판에서 중앙과 연결 연습"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "I20",
+      "before": "3,5,4,6,3,5,5,1,3,5,4,2,5,3",
+      "after": null
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J20",
+      "before": "상대의 대각 즉시 위협 차단",
+      "after": "빈 판에서 중앙과 연결 연습"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "I21",
+      "before": "3,5,0,1,0,3,1,3,3,6,2,6,2,5",
+      "after": "3,2,4,5"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J21",
+      "before": "중력을 고려한 대각 연결 찾기",
+      "after": "초기 배치에서 연결 공간 넓히기"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "H22",
+      "before": 1,
+      "after": -1
+    },
+    {
+      "sheet": "Stages",
+      "cell": "I22",
+      "before": "0,1,4,2,6,6,2,4,1,5,2,1,6,3",
+      "after": null
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J22",
+      "before": "다음에 두 위협을 만드는 수 탐색",
+      "after": "AI 선공에 대응하는 전개"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "I23",
+      "before": "4,0,4,3,5,1,3,4,0,4,2,1",
+      "after": null
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J23",
+      "before": "중앙과 양옆의 연결 가능성 비교",
+      "after": "빈 판에서 중앙과 연결 연습"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "I24",
+      "before": "2,5,5,3,6,5,3,0,5,6,1,4,3,2,6,2,0,1",
+      "after": null
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J24",
+      "before": "상대의 즉시 승리 위협 하나 차단",
+      "after": "빈 판에서 중앙과 연결 연습"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "I25",
+      "before": "5,1,3,3,4,2,1,2,4,6,2,1,2,4,6,6,6,2",
+      "after": "2,4,3,1"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J25",
+      "before": "즉시 연결 가능한 열 찾기",
+      "after": "초기 배치에서 연결 공간 넓히기"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "I26",
+      "before": "2,1,5,0,0,2,0,6,3,3,6,6,6,3,2,1,5",
+      "after": null
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J26",
+      "before": "상대의 즉시 승리 위협 하나 차단",
+      "after": "AI 선공에 대응하는 전개"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "I27",
+      "before": "5,2,2,6,1,3,2,2,4,0,3,5,1,4,5,1,2,0",
+      "after": null
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J27",
+      "before": "중력을 고려한 대각 연결 찾기",
+      "after": "빈 판에서 중앙과 연결 연습"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "I28",
+      "before": "0,6,5,0,3,6,5,1,1,1,2,4,6,1,4,4",
+      "after": null
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J28",
+      "before": "중앙과 양옆의 연결 가능성 비교",
+      "after": "빈 판에서 중앙과 연결 연습"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "I29",
+      "before": "5,4,4,3,4,4,1,1,1,3,2,4,2,0,1,6,1,1",
+      "after": "3,2,2,4"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J29",
+      "before": "다음에 두 위협을 만드는 수 탐색",
+      "after": "초기 배치에서 연결 공간 넓히기"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "H30",
+      "before": 1,
+      "after": -1
+    },
+    {
+      "sheet": "Stages",
+      "cell": "I30",
+      "before": "0,4,6,3,3,5,0,4,4,3,2,3,3,0,4,1,0,2,2,4",
+      "after": null
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J30",
+      "before": "상대의 대각 즉시 위협 차단",
+      "after": "AI 선공에 대응하는 전개"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "H31",
+      "before": -1,
+      "after": 1
+    },
+    {
+      "sheet": "Stages",
+      "cell": "I31",
+      "before": "4,3,6,0,0,3,2,5,6,5,6,6,1,2,6,1,5,1,3",
+      "after": null
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J31",
+      "before": "즉시 연결 가능한 열 찾기",
+      "after": "대회 자유 대국"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "I32",
+      "before": "4,0,3,3,6,2,6,6,1,5,6,5,3,1,2,4,2,2,0,6",
+      "after": null
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J32",
+      "before": "다음에 두 위협을 만드는 수 탐색",
+      "after": "대회 자유 대국"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "I33",
+      "before": "6,5,6,1,6,2,4,0,4,1,4,0,5,0,2,6,5,5,0,0,2,4",
+      "after": "2,4,4,2"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J33",
+      "before": "상대의 즉시 승리 위협 하나 차단",
+      "after": "초기 배치에서 연결 공간 넓히기"
+    },
+    {
+      "sheet": "Stages",
+      "cell": "H34",
+      "before": 1,
+      "after": -1
+    },
+    {
+      "sheet": "Stages",
+      "cell": "I34",
+      "before": "2,4,0,4,5,0,0,1,0,1,4,6,3,1,4,4,1,6,4,2,3,1",
+      "after": null
+    },
+    {
+      "sheet": "Stages",
+      "cell": "J34",
+      "before": "다음에 두 위협을 만드는 수 탐색",
+      "after": "AI 선공에 대응하는 전개"
+    },
+    {
+      "sheet": "Strings",
+      "cell": "C291",
+      "before": "병장 남기석",
+      "after": "분대장 남기석"
+    },
+    {
+      "sheet": "Strings",
+      "cell": "E291",
+      "before": "Sgt. Nam Gi-seok",
+      "after": "Squad Leader Nam Gi-seok"
+    },
+    {
+      "sheet": "Strings",
+      "cell": "C292",
+      "before": "남기석와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "after": "병장 분대장 남기석과의 부대 대국. 느긋한 표정 뒤의 수를 읽는다."
+    },
+    {
+      "sheet": "Strings",
+      "cell": "E292",
+      "before": "A friendly match with Nam Gi-seok. Learn each other's style.",
+      "after": "Play Sergeant Nam Gi-seok, the squad leader. Read the moves behind his relaxed smile."
+    },
+    {
+      "sheet": "Strings",
+      "cell": "C406",
+      "before": "8강 · 병장 남기석",
+      "after": "8강 · 분대장 남기석"
+    },
+    {
+      "sheet": "Strings",
+      "cell": "E406",
+      "before": "Quarterfinal · Sgt. Nam Gi-seok",
+      "after": "Quarterfinal · Squad Leader Nam Gi-seok"
+    }
+  ],
+  "styleAndValidationPreserved": true
+}

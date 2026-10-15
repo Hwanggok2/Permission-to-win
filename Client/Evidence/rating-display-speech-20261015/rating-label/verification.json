@@ -1,0 +1,15 @@
+{
+  "status": "RATING_LABEL_DATA_VERIFIED",
+  "label": {
+    "key": "ai_rating",
+    "ko": "Rating {0}",
+    "en": "Rating {0}"
+  },
+  "onlyRatingTranslationsChanged": true,
+  "sourceAndRuntimeHashes": {
+    "stages.json": "F65E440A49077958477A8EFB8E39914D1092C824B6BF505EB6851602591B0A6E",
+    "ads.json": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A",
+    "strings.json": "F39A258035741E60DD1CD822F216F3C106D4714467411FAB23B8EB8224928B31"
+  },
+  "unityRerun": false
+}

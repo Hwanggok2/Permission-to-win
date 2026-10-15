@@ -1,0 +1,1370 @@
+{
+  "method": "96-board secondary suite (16 per horizon, 32 hashed seeds). Initially held out from candidate B; its 600 attack regression prompted the final depth-4 change at 600/700. Values for unchanged profiles reuse the exact candidate B evaluation. Final independent validation is separate in validation-tactics.json. Bounded tactical scores, not human win rates.",
+  "results": [
+    {
+      "rating": 200,
+      "before": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 347,
+            "percent": 67.7734375
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 121,
+            "percent": 23.6328125
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 125,
+            "percent": 24.4140625
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 356,
+            "percent": 69.53125
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 308,
+            "percent": 60.15625
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 368,
+            "percent": 71.875
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 7,
+        "meanNodes": 0.3151041666666667,
+        "maxMilliseconds": 1.8144
+      },
+      "after": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 347,
+            "percent": 67.7734375
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 121,
+            "percent": 23.6328125
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 125,
+            "percent": 24.4140625
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 356,
+            "percent": 69.53125
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 308,
+            "percent": 60.15625
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 368,
+            "percent": 71.875
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 7,
+        "meanNodes": 0.3151041666666667,
+        "maxMilliseconds": 1.6477
+      }
+    },
+    {
+      "rating": 300,
+      "before": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 389,
+            "percent": 75.9765625
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 138,
+            "percent": 26.953125
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 129,
+            "percent": 25.1953125
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 400,
+            "percent": 78.125
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 310,
+            "percent": 60.546875
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 373,
+            "percent": 72.8515625
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 7,
+        "meanNodes": 0.5048828125,
+        "maxMilliseconds": 0.7153
+      },
+      "after": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 389,
+            "percent": 75.9765625
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 138,
+            "percent": 26.953125
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 129,
+            "percent": 25.1953125
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 400,
+            "percent": 78.125
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 310,
+            "percent": 60.546875
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 373,
+            "percent": 72.8515625
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 7,
+        "meanNodes": 0.5048828125,
+        "maxMilliseconds": 0.3097
+      }
+    },
+    {
+      "rating": 400,
+      "before": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 425,
+            "percent": 83.0078125
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 153,
+            "percent": 29.8828125
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 147,
+            "percent": 28.7109375
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 426,
+            "percent": 83.203125
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 320,
+            "percent": 62.5
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 386,
+            "percent": 75.390625
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 7,
+        "meanNodes": 0.8011067708333334,
+        "maxMilliseconds": 0.2672
+      },
+      "after": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 425,
+            "percent": 83.0078125
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 153,
+            "percent": 29.8828125
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 147,
+            "percent": 28.7109375
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 426,
+            "percent": 83.203125
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 320,
+            "percent": 62.5
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 386,
+            "percent": 75.390625
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 7,
+        "meanNodes": 0.8011067708333334,
+        "maxMilliseconds": 0.2126
+      }
+    },
+    {
+      "rating": 500,
+      "before": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 463,
+            "percent": 90.4296875
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 167,
+            "percent": 32.6171875
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 154,
+            "percent": 30.078125
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 460,
+            "percent": 89.84375
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 326,
+            "percent": 63.671875
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 392,
+            "percent": 76.5625
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 7,
+        "meanNodes": 1.0390625,
+        "maxMilliseconds": 0.25
+      },
+      "after": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 463,
+            "percent": 90.4296875
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 196,
+            "percent": 38.28125
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 166,
+            "percent": 32.421875
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 460,
+            "percent": 89.84375
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 332,
+            "percent": 64.84375
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 392,
+            "percent": 76.5625
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 7,
+        "meanNodes": 1.3232421875,
+        "maxMilliseconds": 0.2183
+      }
+    },
+    {
+      "rating": 600,
+      "before": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 472,
+            "percent": 92.1875
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 200,
+            "percent": 39.0625
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 169,
+            "percent": 33.0078125
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 470,
+            "percent": 91.796875
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 336,
+            "percent": 65.625
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 392,
+            "percent": 76.5625
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 7,
+        "meanNodes": 1.3740234375,
+        "maxMilliseconds": 0.2656
+      },
+      "after": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 472,
+            "percent": 92.1875
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 249,
+            "percent": 48.6328125
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 190,
+            "percent": 37.109375
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 470,
+            "percent": 91.796875
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 477,
+            "percent": 93.1640625
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 404,
+            "percent": 78.90625
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 1701,
+        "meanNodes": 285.6904296875,
+        "maxMilliseconds": 6.1093
+      }
+    },
+    {
+      "rating": 700,
+      "before": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 171,
+            "percent": 33.3984375
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 150,
+            "percent": 29.296875
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 487,
+            "percent": 95.1171875
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 377,
+            "percent": 73.6328125
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 112,
+        "meanNodes": 43.376953125,
+        "maxMilliseconds": 0.7686
+      },
+      "after": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 303,
+            "percent": 59.1796875
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 214,
+            "percent": 41.796875
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 491,
+            "percent": 95.8984375
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 416,
+            "percent": 81.25
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 1701,
+        "meanNodes": 371.1256510416667,
+        "maxMilliseconds": 5.1453
+      }
+    },
+    {
+      "rating": 800,
+      "before": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 184,
+            "percent": 35.9375
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 167,
+            "percent": 32.6171875
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 489,
+            "percent": 95.5078125
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 380,
+            "percent": 74.21875
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 112,
+        "meanNodes": 45.884765625,
+        "maxMilliseconds": 0.5951
+      },
+      "after": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 347,
+            "percent": 67.7734375
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 236,
+            "percent": 46.09375
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 494,
+            "percent": 96.484375
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 431,
+            "percent": 84.1796875
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 1701,
+        "meanNodes": 443.640625,
+        "maxMilliseconds": 7.1935
+      }
+    },
+    {
+      "rating": 900,
+      "before": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 195,
+            "percent": 38.0859375
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 167,
+            "percent": 32.6171875
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 489,
+            "percent": 95.5078125
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 381,
+            "percent": 74.4140625
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 112,
+        "meanNodes": 47.763346354166664,
+        "maxMilliseconds": 0.4533
+      },
+      "after": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 387,
+            "percent": 75.5859375
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 262,
+            "percent": 51.171875
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 499,
+            "percent": 97.4609375
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 445,
+            "percent": 86.9140625
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 1701,
+        "meanNodes": 516.8284505208334,
+        "maxMilliseconds": 7.2349
+      }
+    },
+    {
+      "rating": 1000,
+      "before": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 208,
+            "percent": 40.625
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 166,
+            "percent": 32.421875
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 491,
+            "percent": 95.8984375
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 387,
+            "percent": 75.5859375
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 112,
+        "meanNodes": 49.425130208333336,
+        "maxMilliseconds": 1.8576
+      },
+      "after": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 419,
+            "percent": 81.8359375
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 265,
+            "percent": 51.7578125
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 503,
+            "percent": 98.2421875
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 456,
+            "percent": 89.0625
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 1701,
+        "meanNodes": 566.9736328125,
+        "maxMilliseconds": 6.5078
+      }
+    },
+    {
+      "rating": 1100,
+      "before": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 233,
+            "percent": 45.5078125
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 178,
+            "percent": 34.765625
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 494,
+            "percent": 96.484375
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 394,
+            "percent": 76.953125
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 112,
+        "meanNodes": 53.560872395833336,
+        "maxMilliseconds": 0.9241
+      },
+      "after": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 448,
+            "percent": 87.5
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 290,
+            "percent": 56.640625
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 506,
+            "percent": 98.828125
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 467,
+            "percent": 91.2109375
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 1701,
+        "meanNodes": 618.3723958333334,
+        "maxMilliseconds": 6.3612
+      }
+    },
+    {
+      "rating": 1200,
+      "before": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 367,
+            "percent": 71.6796875
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 318,
+            "percent": 62.109375
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 497,
+            "percent": 97.0703125
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 421,
+            "percent": 82.2265625
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 425,
+        "meanNodes": 136.08951822916666,
+        "maxMilliseconds": 1.6817
+      },
+      "after": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 471,
+            "percent": 91.9921875
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 459,
+            "percent": 89.6484375
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 507,
+            "percent": 99.0234375
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 498,
+            "percent": 97.265625
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 28924,
+        "meanNodes": 7428.438151041667,
+        "maxMilliseconds": 103.5408
+      }
+    },
+    {
+      "rating": 1300,
+      "before": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 387,
+            "percent": 75.5859375
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 348,
+            "percent": 67.96875
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 499,
+            "percent": 97.4609375
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 422,
+            "percent": 82.421875
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 425,
+        "meanNodes": 145.92708333333334,
+        "maxMilliseconds": 1.7743
+      },
+      "after": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 491,
+            "percent": 95.8984375
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 474,
+            "percent": 92.578125
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 510,
+            "percent": 99.609375
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 500,
+            "percent": 97.65625
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 28924,
+        "meanNodes": 7756.379557291667,
+        "maxMilliseconds": 98.9475
+      }
+    },
+    {
+      "rating": 1400,
+      "before": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 408,
+            "percent": 79.6875
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 355,
+            "percent": 69.3359375
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 500,
+            "percent": 97.65625
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 429,
+            "percent": 83.7890625
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 425,
+        "meanNodes": 153.24283854166666,
+        "maxMilliseconds": 2.2048
+      },
+      "after": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 504,
+            "percent": 98.4375
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 496,
+            "percent": 96.875
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 505,
+            "percent": 98.6328125
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 28924,
+        "meanNodes": 8008.246744791667,
+        "maxMilliseconds": 97.6479
+      }
+    },
+    {
+      "rating": 1500,
+      "before": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 431,
+            "percent": 84.1796875
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 273,
+            "percent": 53.3203125
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 504,
+            "percent": 98.4375
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 459,
+            "percent": 89.6484375
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 1701,
+        "meanNodes": 584.3792317708334,
+        "maxMilliseconds": 6.2576
+      },
+      "after": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 510,
+            "percent": 99.609375
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 507,
+            "percent": 99.0234375
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 510,
+            "percent": 99.609375
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 28924,
+        "meanNodes": 8215.426106770834,
+        "maxMilliseconds": 55.4972
+      }
+    },
+    {
+      "rating": 1600,
+      "before": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "attack_3",
+            "choices": 512,
+            "correct": 451,
+            "percent": 88.0859375
+          },
+          {
+            "category": "attack_5",
+            "choices": 512,
+            "correct": 292,
+            "percent": 57.03125
+          },
+          {
+            "category": "defense_2",
+            "choices": 512,
+            "correct": 512,
+            "percent": 100.0
+          },
+          {
+            "category": "defense_4",
+            "choices": 512,
+            "correct": 506,
+            "percent": 98.828125
+          },
+          {
+            "category": "defense_6",
+            "choices": 512,
+            "correct": 468,
+            "percent": 91.40625
+          }
+        ],
+        "searches": 3072,
+        "maxNodes": 1701,
+        "meanNodes": 626.4768880208334,
+        "maxMilliseconds": 3.9515
+      },
+      "after": {
+        "metrics": [
+          {
+            "category": "attack_1",
+            "choices": 16,
+            "correct": 16,
+            "percent": 100.0
+          },
+          {
+            "category": "attack_3",
+            "choices": 16,
+            "correct": 16,
+            "percent": 100.0
+          },
+          {
+            "category": "attack_5",
+            "choices": 16,
+            "correct": 16,
+            "percent": 100.0
+          },
+          {
+            "category": "defense_2",
+            "choices": 16,
+            "correct": 16,
+            "percent": 100.0
+          },
+          {
+            "category": "defense_4",
+            "choices": 16,
+            "correct": 16,
+            "percent": 100.0
+          },
+          {
+            "category": "defense_6",
+            "choices": 16,
+            "correct": 16,
+            "percent": 100.0
+          }
+        ],
+        "searches": 96,
+        "maxNodes": 28924,
+        "meanNodes": 8293.354166666666,
+        "maxMilliseconds": 53.5901
+      }
+    }
+  ]
+}

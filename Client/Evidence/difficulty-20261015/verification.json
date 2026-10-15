@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-15",
+  "status": "applied-and-verified",
+  "excelChangedCells": 56,
+  "earlyOpeningsChanged": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "preserved": [
+    "AI runtime algorithm",
+    "All UI/art",
+    "Stage identities, chapters, stars, characters, dialogue",
+    "418 strings and ad configuration",
+    "Progress/save meaning",
+    "Other workbook values, styles, dimensions, panes, validation"
+  ],
+  "tests": {
+    "python": {
+      "passed": 45,
+      "failed": 0,
+      "log": "data-tests.txt"
+    },
+    "unityCore": {
+      "passed": 25,
+      "failed": 0,
+      "xml": "unity-core-tests.xml"
+    },
+    "exporterCheck": "PASS",
+    "generatedClientJsonEqual": true
+  },
+  "benchmark": {
+    "file": "bot-comparison.json",
+    "productionAi": true,
+    "games": 5120,
+    "stage2PlayerWinsBefore": 18,
+    "stage2PlayerWinsAfter": 84,
+    "gamesPerRevisionPerStage": 256,
+    "limitation": "Reactive bot comparison, not human win rate or proof of perceived difficulty."
+  },
+  "sourceChanges": [
+    "Client/Assets/StageGame/Resources/GameData/stages.json",
+    "GameData/GameData_MVP.xlsx",
+    "GameData/test_export_data.py",
+    "GameData/Generated/stages.json"
+  ],
+  "sourceFreeze": "source-freeze.json",
+  "notRun": [
+    "Full Unity UI suite",
+    "New Android/WebGL builds",
+    "Browser/device/human play balance validation"
+  ]
+}

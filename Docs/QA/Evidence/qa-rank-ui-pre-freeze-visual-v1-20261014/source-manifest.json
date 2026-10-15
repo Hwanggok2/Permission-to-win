@@ -1,0 +1,20 @@
+[
+  {
+    "source": "Client/Evidence/rank-ui-20261014/ko-390-lobby.png",
+    "snapshot": "ko-390-lobby.png",
+    "sha256": "8A92F90EFF32E4583678A563FA6A0CBF5E0DE51300AA9C77BB0E43B45D3C71FE",
+    "changedDuringCopy": false
+  },
+  {
+    "source": "Client/Evidence/rank-ui-20261014/en-320-lobby-middle.png",
+    "snapshot": "en-320-lobby-middle.png",
+    "sha256": "8BBDEEB7B838D9CA94C5878C4A7022A327B90C6A7AB6399B5B4D8D5129C1230A",
+    "changedDuringCopy": false
+  },
+  {
+    "source": "Client/Evidence/rank-ui-20261014/ko-320-win.png",
+    "snapshot": "ko-320-win.png",
+    "sha256": "49DD369D26290854558C65839B1D5D010896F33F71874A94F186912495B11DE6",
+    "changedDuringCopy": false
+  }
+]

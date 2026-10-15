@@ -1,0 +1,27 @@
+{
+  "dateSeoul": "2026-10-14",
+  "method": "QA read five saved root browser images; actual pointer actions were performed and reported by root",
+  "reviewed": [
+    "after-ko-player-win-390.jpg",
+    "after-ko-ai-win-390.jpg",
+    "after-en-settings-320.jpg",
+    "after-en-help-320.jpg",
+    "after-en-game-320.jpg"
+  ],
+  "confirmedVisuals": [
+    "Both result images expose the board, preserve mint/coral token identity and gold winning marks, and show Retry/Lobby side by side without result Pause/Next/Close.",
+    "English320 gameplay preserves all seven board columns, top Pause and bottom hint action.",
+    "English320 settings shows a visible top-right close button."
+  ],
+  "openCandidate": {
+    "id": "QA-013",
+    "image": "after-en-help-320.jpg",
+    "observation": "Top-right close icon/button is not visible in the supplied final English320 help capture, unlike the settings image.",
+    "related": "CAP-01 sparse native settings/pause capture omissions",
+    "status": "Need actual same-build English320 help close visibility and pointer confirmation; capture/render cause and interaction failure not established",
+    "requestedScope": "Also compare Korean320 settings and English320 pause to resolve the two native observations. No broad game retest is required without a source change."
+  },
+  "qa011_qa012": "Closed using prior independent and native evidence, current artifact hashes and root final result/retry/pause pointer report",
+  "limits": "Neither static images nor root final-state captures establish every400ms animation frame. Native timeline is separate. No physical device,Toss,live-ad,IAP/server or release test.",
+  "hashes": "source-manifest.json"
+}

@@ -1,0 +1,53 @@
+{
+  "status": "VICTORY_PAUSE_DEFENSE_VERIFIED",
+  "atUtc": "2026-10-15T14:36:13.145135+00:00",
+  "victoryKey": "result_win",
+  "pauseIconSizeBefore": [
+    60,
+    60
+  ],
+  "pauseIconSizeAfter": [
+    120,
+    120
+  ],
+  "pauseTransparentBackground": true,
+  "pausePointerChecks": "center and both transparent side margins, ko/en at 1080x1920, 390x844, 320x568",
+  "unityRuns": [
+    {
+      "file": "unity-tests.xml",
+      "total": 7,
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "file": "unity-pointer-tests.xml",
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    }
+  ],
+  "latestUniqueUnityTestsPassed": 7,
+  "dataTestsPassed": 46,
+  "exportCheck": true,
+  "generatedResourceHashes": {
+    "stages.json": "51769ADF0813DE25F22ED454169BB116F445ADE9FB11B2C22EBE6A0531DD9715",
+    "strings.json": "F39A258035741E60DD1CD822F216F3C106D4714467411FAB23B8EB8224928B31",
+    "ads.json": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A"
+  },
+  "unchangedArtAudioSceneFiles": 280,
+  "unchangedBuildFiles": 17,
+  "newBuild": false,
+  "humanBalancePlaytest": false,
+  "benchmark": "defense-comparison.json",
+  "balanceScope": "Only 28 authored oversight cells; other settings, ratings, openings and strings preserved.",
+  "renders": 94,
+  "visualReview": [
+    "ko-1080-plain-match",
+    "ko-1080-win",
+    "ko-390-first-match",
+    "ko-320-first-match",
+    "en-390-win"
+  ]
+}

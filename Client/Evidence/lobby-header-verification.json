@@ -1,0 +1,103 @@
+{
+  "recordedAtUtc": "2026-10-14T15:36:04.373041+00:00",
+  "status": "SAVED_PREFAB_AND_NATIVE_PREVIEW_CONFIRMED__TARGETED_RETEST_BLOCKED_BY_OPEN_EDITOR",
+  "change": "Lobby title, help, settings, warning and stage list top lowered216design units; footer remains anchored. Latest user request supersedes v10 equal lobby/match header Y.",
+  "geometry": {
+    "designWidth": 1080,
+    "headerCenterYBefore": -82.5,
+    "headerCenterYAfter": -298.5,
+    "listTopBefore": 217.5,
+    "listTopAfter": 433.5,
+    "additionalTopGapAt320": 64
+  },
+  "apply": "Logs/lobby-header-apply.log: Unity exit0; saved prefabs and Validate succeeded.",
+  "preview": "Native1080 and390, both plain and host inset renders inspected. At320 plain, measured header top gap68px before capture.",
+  "targetedTest": "First test reached320plain and failed an overly strict72px expectation; measured68px includes64px saved gap plus4px editor RenderTexture padding. Assertion corrected to actual64px layout requirement. Rerun did not start because a newly opened Client editor owns UnityLockfile; no passing rerun claimed.",
+  "captures": [
+    {
+      "path": "Evidence/lobby-header-20261015/ko-1080-header-lobby.png",
+      "width": 1080,
+      "height": 1920,
+      "sha256": "2A5FD160B0FAC832CD9FCE6E59F9D186EEB8CB5BC41EF3DE8F0A9CFB0DBC0CF3"
+    },
+    {
+      "path": "Evidence/lobby-header-20261015/ko-1080-header-match.png",
+      "width": 1080,
+      "height": 1920,
+      "sha256": "19D6D628C35D2FD3AB2D37F8660E17513BF88FD9A5DE7ED9B711609067C68F13"
+    },
+    {
+      "path": "Evidence/lobby-header-20261015/ko-1080-host-lobby-end.png",
+      "width": 1080,
+      "height": 1920,
+      "sha256": "320C898610C66AB8C048BFCB4B2E5531F9C2038AB11B3E8F2963DE5AA48249D9"
+    },
+    {
+      "path": "Evidence/lobby-header-20261015/ko-1080-host-lobby.png",
+      "width": 1080,
+      "height": 1920,
+      "sha256": "2A5FD160B0FAC832CD9FCE6E59F9D186EEB8CB5BC41EF3DE8F0A9CFB0DBC0CF3"
+    },
+    {
+      "path": "Evidence/lobby-header-20261015/ko-1080-plain-lobby-end.png",
+      "width": 1080,
+      "height": 1920,
+      "sha256": "3916FBBA4A4F1DA13A3A2AE23D6A0F7BC6CD709A96C272FB60F148B05ED9B5F3"
+    },
+    {
+      "path": "Evidence/lobby-header-20261015/ko-1080-plain-lobby.png",
+      "width": 1080,
+      "height": 1920,
+      "sha256": "3EB72141771D3C4E0376E859D3E4C45868BE4230402DC1345E209CC6C96014C1"
+    },
+    {
+      "path": "Evidence/lobby-header-20261015/ko-1080-text-only-toast.png",
+      "width": 1080,
+      "height": 1920,
+      "sha256": "BF542146837965F71F1FB9FDC4792864CA1AC5DC880F224D8E020A5BF275F5DB"
+    },
+    {
+      "path": "Evidence/lobby-header-20261015/ko-390-host-lobby-end.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "FF692208051AB58EBE175E873D0B52D65902CEC1D9F6C6E9DFE08FF46C645009"
+    },
+    {
+      "path": "Evidence/lobby-header-20261015/ko-390-host-lobby.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "73D494374A4BCC41FE137348F19E9C3EE386CD680522DB9A03C3E9CCB1589577"
+    },
+    {
+      "path": "Evidence/lobby-header-20261015/ko-390-plain-lobby-end.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "F820003E9675B3C89337D587F9043462A6DEBA7EEFE7C41EECEF31DE11282AC5"
+    },
+    {
+      "path": "Evidence/lobby-header-20261015/ko-390-plain-lobby.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "8A4AA2DE3A373FDD775ED929ACFD3D3EA638916294633056EE1FCE5F9BFA4A10"
+    }
+  ],
+  "changedAssetsSinceV10": [
+    {
+      "path": "Assets/StageGame/Editor/RankUiBuilder.cs",
+      "sha256": "1F959F8B88E5DA454C93F74E25D80D1C8155DEAB21D1ADB2B071C8A2A18E75CB"
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/RankUI/Lobby.prefab",
+      "sha256": "7053369B22BAD1B7A2F89B8285FB69D67642079C0AD00278BD4CD4849730FF50"
+    },
+    {
+      "path": "Assets/StageGame/Tests/EditMode/RankFlowTests.cs",
+      "sha256": "C4DA30222BE76603177360B20ECD304309F578EE899BE8D97A57EA6DE2B8090B"
+    },
+    {
+      "path": "Assets/StageGame/Tests/EditMode/RankV10Tests.cs",
+      "sha256": "87F83FD4F67B0D61AA58D9B01152C5320281D5746717890788EA804678AF05CB"
+    }
+  ],
+  "builds": "All17 previously recorded WebGL/Android files unchanged; no new build/browser execution."
+}

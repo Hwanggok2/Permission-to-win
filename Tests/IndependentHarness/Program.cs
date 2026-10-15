@@ -153,7 +153,7 @@ static partial class Program
     }
     static GameApp MakeApp(bool reset = true, bool startMatch = true)
     {
-        if (reset) PlayerPrefs.Reset(); Time.realtimeSinceStartup = 0;
+        if (reset) PlayerPrefs.Reset(); Time.realtimeSinceStartup = 0; Time.unscaledDeltaTime=.05f;
         var json = DataJson();
         for (int i=0;i<3;i++) Resources.Assets["GameData/" + new[] { "stages","ads","strings" }[i]] = new TextAsset { text=json[i] };
         var app = new GameApp();
@@ -164,6 +164,10 @@ static partial class Program
             if (field.FieldType == typeof(Button)) ((Button)field.GetValue(app)).gameObject.SetActive(true);
         }
         app.stones = Enumerable.Range(0,42).Select(_ => new Image()).ToArray();
+        var boardParent=new Transform();
+        for(int i=0;i<42;i++){app.stones[i].transform.SetParent(boardParent); app.stones[i].rectTransform.anchoredPosition=new Vector2((i%7)*100,(i/7)*100);}
+        app.theme=new TabletopTheme();
+        foreach(var field in typeof(TabletopTheme).GetFields()) if(field.FieldType==typeof(Sprite)) field.SetValue(app.theme,new Sprite{name=field.Name});
         app.stoneLabels = Enumerable.Range(0,42).Select(_ => new Text()).ToArray();
         app.columnLabels = Enumerable.Range(0,7).Select(_ => new Text()).ToArray();
         app.localizedLabels = Array.Empty<LocalizedLabel>();
@@ -172,6 +176,7 @@ static partial class Program
         app.stageNodes = Enumerable.Range(0,10).Select(_ => new Button()).ToArray();
         app.stageNodeNumbers = Enumerable.Range(0,10).Select(_ => new Text()).ToArray();
         app.stageNodeStates = Enumerable.Range(0,10).Select(_ => new Text()).ToArray();
+        app.stageNodeIcons = Enumerable.Range(0,10).Select(_ => new Image()).ToArray();
         foreach (var node in app.stageNodes) node.gameObject.SetActive(true);
         // Sentinels prove assignment between supplied slots; they are not prefab geometry.
         app.resultPrimarySlot.anchoredPosition = new Vector2(0,100);
@@ -334,14 +339,14 @@ static partial class Program
         Run("app.interstitial_callback_after_stage_change", "actual GameApp with UI/coroutine doubles", () =>
         {
             var app=MakeApp();var ads=new DelayedAds();Set(app,"ads",ads);var p=(ProgressStore)Get(app,"progress");p.Data.completedMatches=3;
-            Set(app,"board",Replay(new[]{0,6,1,6,2,5,3}));Call(app,"Finish");Check(ads.Interstitials.Count==1,"eligible ad missing");
+            Set(app,"board",Replay(new[]{0,6,1,6,2,5,3}));Call(app,"Finish"); AdvanceToResult(app); Check(ads.Interstitials.Count==1,"eligible ad missing");
             Check(!app.retry.interactable,"actions enabled before resolution");app.StartStage(1);ads.Interstitials[0](AdResult.Completed);
             Check(p.Data.lastInterstitialMatch==0,"stale completion updates new match");Check(!app.result.activeSelf,"old result active");
         });
         Run("app.interstitial_no_callback_timeout", "actual GameApp with clock/coroutine doubles", () =>
         {
             var app=MakeApp();var ads=new DelayedAds();Set(app,"ads",ads);((ProgressStore)Get(app,"progress")).Data.completedMatches=3;
-            Set(app,"board",Replay(new[]{0,6,1,6,2,5,3}));Call(app,"Finish");Time.realtimeSinceStartup=5;app.AdvanceCoroutines();
+            Set(app,"board",Replay(new[]{0,6,1,6,2,5,3}));Call(app,"Finish"); AdvanceToResult(app); Time.realtimeSinceStartup+=5;app.AdvanceCoroutines();
             Check(app.retry.interactable && app.resultLobby.interactable,"result remains blocked after timeout");
         });
         Run("app.reward_no_callback_timeout", "actual GameApp with clock/coroutine doubles", () =>
@@ -362,7 +367,7 @@ static partial class Program
         Run("app.save_failure_still_exits_finished_match", "actual GameApp; injected PlayerPrefs.Save exception", () =>
         {
             var app=MakeApp();Set(app,"board",Replay(new[]{0,6,1,6,2,5,3}));PlayerPrefs.ThrowOnSave=true;
-            try { Call(app,"Finish"); } catch(TargetInvocationException) { }
+            try { Call(app,"Finish"); AdvanceToResult(app); } catch(TargetInvocationException) { }
             finally { PlayerPrefs.ThrowOnSave=false; }
             Check(app.result.activeSelf || app.lobby.activeSelf,"finished match has neither result nor lobby; resultRecorded="+Get(app,"resultRecorded"));
             var warning=((ProgressStore)Get(app,"progress")).SaveWarning;
@@ -377,6 +382,7 @@ static partial class Program
             });
         RunLocalization(args);
         RunStageUx(args);
+        RunGraphics();
         var report=new { runId=Path.GetFileName(Path.GetDirectoryName(args[0])), framework=System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription,
             passed, failed, assertions, scope=Filter.Length==0?"all":Filter, randomRuleSequences=ruleSequences, randomAiPositions=aiPositions,
             limitations="Unity APIs replaced by explicitly scoped doubles; no Editor, device, native JSON, real persistence, real ads, or performance validation.", results=Results };

@@ -1,0 +1,88 @@
+{
+    "clips": [
+        {
+            "source": "Assets/StageGame/Audio/TypingKey.wav",
+            "activeTarget": "WebGL",
+            "defaultFormat": "PCM",
+            "webFormat": "AAC",
+            "loadType": "DecompressOnLoad",
+            "samples": 1544,
+            "frequency": 44100,
+            "peak": 0.545806884765625,
+            "artifacts": [
+                "VirtualArtifacts/Primary/ffefbc555f541d9429e34630db57ab1b",
+                "VirtualArtifacts/Primary/ffefbc555f541d9429e34630db57ab1b.resource"
+            ]
+        },
+        {
+            "source": "Assets/StageGame/Audio/TypingKeyAacSafe.wav",
+            "activeTarget": "WebGL",
+            "defaultFormat": "PCM",
+            "webFormat": "AAC",
+            "loadType": "DecompressOnLoad",
+            "samples": 8820,
+            "frequency": 44100,
+            "peak": 0.55615234375,
+            "artifacts": [
+                "VirtualArtifacts/Primary/ffa24fe0123f92a4089c4f6fb5385a08",
+                "VirtualArtifacts/Primary/ffa24fe0123f92a4089c4f6fb5385a08.resource"
+            ]
+        },
+        {
+            "source": "Assets/StageGame/Audio/ButtonClick.wav",
+            "activeTarget": "WebGL",
+            "defaultFormat": "PCM",
+            "webFormat": "AAC",
+            "loadType": "DecompressOnLoad",
+            "samples": 2426,
+            "frequency": 44100,
+            "peak": 0.280120849609375,
+            "artifacts": [
+                "VirtualArtifacts/Primary/d8d12672a1ef8604aa9326703944cdfb",
+                "VirtualArtifacts/Primary/d8d12672a1ef8604aa9326703944cdfb.resource"
+            ]
+        },
+        {
+            "source": "Assets/StageGame/Audio/ButtonClickAacSafe.wav",
+            "activeTarget": "WebGL",
+            "defaultFormat": "PCM",
+            "webFormat": "AAC",
+            "loadType": "DecompressOnLoad",
+            "samples": 8820,
+            "frequency": 44100,
+            "peak": 0.276275634765625,
+            "artifacts": [
+                "VirtualArtifacts/Primary/5671ec54979312d4098712fe09cb87f8",
+                "VirtualArtifacts/Primary/5671ec54979312d4098712fe09cb87f8.resource"
+            ]
+        },
+        {
+            "source": "Assets/StageGame/Audio/GoStonePlaceHeavy.wav",
+            "activeTarget": "WebGL",
+            "defaultFormat": "PCM",
+            "webFormat": "AAC",
+            "loadType": "DecompressOnLoad",
+            "samples": 13230,
+            "frequency": 44100,
+            "peak": 0.6541748046875,
+            "artifacts": [
+                "VirtualArtifacts/Primary/ed5d1ccf8eeebe14e96f1e0741698edf",
+                "VirtualArtifacts/Primary/ed5d1ccf8eeebe14e96f1e0741698edf.resource"
+            ]
+        },
+        {
+            "source": "Assets/StageGame/Audio/EasyLemon.mp3",
+            "activeTarget": "WebGL",
+            "defaultFormat": "Vorbis",
+            "webFormat": "AAC",
+            "loadType": "CompressedInMemory",
+            "samples": 5573376,
+            "frequency": 44100,
+            "peak": 0.0,
+            "artifacts": [
+                "VirtualArtifacts/Primary/b51687f1999502744b57c46bba356ed1",
+                "VirtualArtifacts/Primary/b51687f1999502744b57c46bba356ed1.resource"
+            ]
+        }
+    ]
+}

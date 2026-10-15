@@ -31,7 +31,7 @@ static partial class Program
     {
         var terminal = Replay(outcome==0 ? new[]{0,6,1,6,2,5,3} : outcome==1 ? new[]{0,6,1,6,2,6,4,6} : Draw);
         Check(terminal.IsFinished && (outcome==2 ? terminal.IsDraw : terminal.Winner==(outcome==0?1:-1)), "terminal fixture outcome");
-        Set(app,"board",terminal); Call(app,"RefreshBoard"); Call(app,"Finish");
+        Set(app,"board",terminal); Call(app,"RefreshBoard"); Call(app,"Finish"); AdvanceToResult(app);
     }
     static void RunStageUx(string[] args)
     {
@@ -62,14 +62,14 @@ static partial class Program
         Run("stageux.initial_and_legacy_lobby_restore_actual_completion", "actual GameApp startup with memory save/UI doubles", () => {
             var fresh=MakeApp(true,false);
             Check(fresh.lobby.activeSelf && !fresh.match.activeSelf && (int)Get(fresh,"selected")==0,"fresh lobby selection");
-            Check(fresh.stageNodeNumbers[0].text=="[01]" && fresh.play.interactable,"fresh start unavailable");
+            Check(fresh.stageNodeNumbers[0].text=="01" && ((Image)fresh.stageNodes[0].targetGraphic).sprite==fresh.theme.nodeSelected && fresh.play.interactable,"fresh start unavailable");
             Check(((ProgressStore)Get(fresh,"progress")).Data.highestClearedStage==0,"fresh clear claimed");
             foreach(int unlocked in new[]{13,30})
             {
                 PlayerPrefs.Reset(); PlayerPrefs.SetString(ProgressKey,"{\"saveVersion\":1,\"unlockedStage\":"+unlocked+",\"completedMatches\":42,\"lastInterstitialMatch\":38,\"lastInterstitialUtc\":123456,\"soundEnabled\":false,\"language\":\"en\"}");
                 var app=MakeApp(false,false); var p=(ProgressStore)Get(app,"progress"); var t=(StringTable)Get(app,"strings");
                 Check((int)Get(app,"selected")==unlocked-1 && !app.match.activeSelf,"restore selected wrong stage or started a match");
-                Check(app.stageNodeNumbers[(unlocked-1)%10].text=="["+unlocked.ToString("00")+"]","restored chapter slot");
+                Check(app.stageNodeNumbers[(unlocked-1)%10].text==unlocked.ToString("00") && ((Image)app.stageNodes[(unlocked-1)%10].targetGraphic).sprite==app.theme.nodeSelected,"restored chapter slot");
                 Check(app.stageNodeStates[(unlocked-1)%10].text==t.Text("stage_state_current"),"unlocked stage incorrectly cleared");
                 Check(app.progressLabel.text==t.Format("stage_cleared_progress",unlocked-1,30),"progress label overclaims completion");
                 app.SetLanguage("ko"); app.SetLanguage("en");
@@ -89,13 +89,15 @@ static partial class Program
                     for(int slot=0;slot<10;slot++)
                     {
                         int id=chapter*10+slot+1; Check(ClickEnabled(app.stageNodes[slot]),"node not inspectable");
-                        Check((int)Get(app,"selected")==id-1 && app.stageNodeNumbers[slot].text=="["+id.ToString("00")+"]","wrong node selection");
+                        Check((int)Get(app,"selected")==id-1 && app.stageNodeNumbers[slot].text==id.ToString("00") && ((Image)app.stageNodes[slot].targetGraphic).sprite==app.theme.nodeSelected,"wrong node selection");
                         for(int row=0;row<10;row++)
                         {
                             int nodeId=chapter*10+row+1;
                             string state=nodeId<=12 ? "✓ "+t.Text("stage_state_cleared") : t.Text(nodeId==13 ? "stage_state_current":"stage_state_locked");
                             Check(app.stageNodeStates[row].text==state,"non-color state missing/wrong");
-                            string number=nodeId.ToString("00"); Check(app.stageNodeNumbers[row].text==(row==slot?"["+number+"]":number),"selected marker not separate from number");
+                            string number=nodeId.ToString("00"); Check(app.stageNodeNumbers[row].text==number,"node number changed");
+                            Check(((Image)app.stageNodes[row].targetGraphic).sprite==(row==slot?app.theme.nodeSelected:nodeId>13?app.theme.nodeLocked:nodeId<=12?app.theme.nodeCleared:app.theme.nodeCurrent),"selected/state sprite wrong");
+                            Check(app.stageNodeIcons[row].sprite==(nodeId>13?app.theme.locked:nodeId<=12?app.theme.check:app.theme.play),"node glyph wrong");
                         }
                         Check(app.play.interactable==(id<=13),"locked start button state");
                         if(id>13)
@@ -121,6 +123,7 @@ static partial class Program
             {
                 for(int slot=0;slot<10;slot++)
                 {
+                    Set(app,"selected",chapter*10); Call(app,"RefreshLobby");
                     int stage=chapter*10+slot; ClickEnabled(app.stageNodes[slot]); int before=ads.CancelCalls;
                     Check(ClickEnabled(app.play),"unlocked stage start blocked");
                     Check((int)Get(app,"activeStage")==stage && app.match.activeSelf && !app.lobby.activeSelf,"wrong stage started");
@@ -132,31 +135,30 @@ static partial class Program
             }
             Check(ids.Count==30 && p.Data.completedMatches==0 && p.Data.highestClearedStage==29,"starting/leaving falsely completed stages");
         });
-        Run("stageux.win_loss_draw_primary_cta_no_fill_and_language_switch", "actual result state and listener actions; no pixel proof", () => {
+        Run("stageux.win_loss_draw_two_actions_no_fill_and_language_switch", "actual result state and listener actions; no pixel proof", () => {
             foreach(string language in new[]{"ko","en"}) for(int outcome=0;outcome<3;outcome++)
             {
                 var app=MakeApp(true,false); var p=(ProgressStore)Get(app,"progress"); p.Data.unlockedStage=10; p.Data.highestClearedStage=9;
                 app.SetLanguage(language); app.StartStage(9); string old=(string)Get(app,"matchId"); FinishFixture(app,outcome);
-                Check(app.result.activeSelf && app.nextStage.gameObject.activeSelf==(outcome==0),"next visibility wrong");
-                var primary=outcome==0?app.nextStage:app.retry;
-                Check(Mint(primary.targetGraphic.color) && !Mint(app.resultLobby.targetGraphic.color),"primary CTA emphasis wrong");
-                Check(Position((RectTransform)app.retry.transform,outcome==0?app.resultSecondarySlot:app.resultPrimarySlot),"retry slot assignment wrong");
+                Check(app.result.activeSelf && !app.nextStage.gameObject.activeSelf && !app.resultClose.gameObject.activeSelf,"removed actions visible");
+                var primary=app.retry;
+                Check(((Image)primary.targetGraphic).sprite==app.theme.primary && ((Image)app.resultLobby.targetGraphic).sprite==app.theme.secondary,"result button artwork binding wrong");
                 Check(p.Data.completedMatches==1 && p.Data.highestClearedStage==(outcome==0?10:9),"result counting/completion wrong");
                 Call(app,"Finish"); Check(p.Data.completedMatches==1,"duplicate Finish counted");
                 app.SetLanguage(language=="ko"?"en":"ko");
-                Check(p.Data.completedMatches==1 && Mint(primary.targetGraphic.color) && app.nextStage.gameObject.activeSelf==(outcome==0),"language switch changed result/priority");
+                Check(p.Data.completedMatches==1 && ((Image)primary.targetGraphic).sprite==app.theme.primary && !app.nextStage.gameObject.activeSelf,"language switch changed result/priority");
                 var ads=new DelayedAds(); Set(app,"ads",ads); Check(ClickEnabled(primary),"NoFill blocks primary CTA");
-                Check(ads.CancelCalls==1 && (int)Get(app,"activeStage")== (outcome==0?10:9) && (string)Get(app,"matchId")!=old,"CTA wrong next/retry or duplicate transition");
+                Check(ads.CancelCalls==1 && (int)Get(app,"activeStage")==9 && (string)Get(app,"matchId")!=old,"retry wrong stage or duplicate transition");
                 Check(!app.result.activeSelf && app.match.activeSelf && p.Data.completedMatches==1,"CTA left old result or added a result");
             }
         });
         Run("stageux.final30_is_retry_and_reloads_as_cleared_map", "actual GameApp final clear and saved restart", () => {
             var app=MakeApp(true,false); var p=(ProgressStore)Get(app,"progress"); p.Data.unlockedStage=30; p.Data.highestClearedStage=29;
             app.SetLanguage("en"); app.StartStage(29); FinishFixture(app,0);
-            Check(p.Data.highestClearedStage==30 && p.Data.unlockedStage==30 && !app.nextStage.gameObject.activeSelf && Mint(app.retry.targetGraphic.color),"final stage not distinguished");
+            Check(p.Data.highestClearedStage==30 && p.Data.unlockedStage==30 && !app.nextStage.gameObject.activeSelf && ((Image)app.retry.targetGraphic).sprite==app.theme.primary,"final stage not distinguished");
             string before=(string)Get(app,"matchId"); Check(ClickEnabled(app.retry) && (int)Get(app,"activeStage")==29 && before!=(string)Get(app,"matchId"),"final retry entered31 or reused match");
             app.ShowLobby(); var t=(StringTable)Get(app,"strings");
-            Check(app.stageNodeNumbers[9].text=="[30]" && app.stageNodeStates.All(s=>s.text=="✓ "+t.Text("stage_state_cleared")) && app.playLabel.text==t.Text("stage_replay"),"cleared map/replay label wrong");
+            Check(app.stageNodeNumbers[9].text=="30" && ((Image)app.stageNodes[9].targetGraphic).sprite==app.theme.nodeSelected && app.stageNodeStates.All(s=>s.text=="✓ "+t.Text("stage_state_cleared")) && app.playLabel.text==t.Text("stage_replay"),"cleared map/replay label wrong");
             var restart=MakeApp(false,false); var restored=(ProgressStore)Get(restart,"progress");
             Check(restored.Data.highestClearedStage==30 && restored.Data.completedMatches==1 && (int)Get(restart,"selected")==29,"final completion restore wrong");
         });
@@ -167,9 +169,9 @@ static partial class Program
                 var ads=new DelayedAds(); Set(app,"ads",ads); string id=(string)Get(app,"matchId"); FinishFixture(app,outcome);
                 Check(ads.Interstitials.Count==1,"eligible result did not request one ad");
                 Check(new[]{app.retry,app.nextStage,app.resultLobby,app.resultClose}.All(b=>!b.interactable),"actions enabled during ad boundary");
-                var primary=outcome==0?app.nextStage:app.retry; Check(!ClickEnabled(primary) && (string)Get(app,"matchId")==id,"pending CTA started another match");
+                var primary=app.retry; Check(!ClickEnabled(primary) && (string)Get(app,"matchId")==id,"pending CTA started another match");
                 ads.Interstitials[0](resolution); app.AdvanceCoroutines();
-                Check(new[]{app.retry,app.nextStage,app.resultLobby,app.resultClose}.All(b=>b.interactable),"terminal ad result leaves actions blocked");
+                Check(app.retry.interactable && app.resultLobby.interactable && !app.nextStage.interactable && !app.resultClose.interactable,"terminal ad actions wrong");
                 int last=p.Data.lastInterstitialMatch; Check(last==(resolution==AdResult.Completed?4:0),"ad history changed on non-completion");
                 Check(ClickEnabled(primary),"resolved CTA blocked"); string next=(string)Get(app,"matchId");
                 ads.Interstitials[0](AdResult.Completed); app.AdvanceCoroutines();

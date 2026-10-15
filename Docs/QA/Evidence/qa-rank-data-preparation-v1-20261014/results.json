@@ -1,0 +1,29 @@
+{
+  "status": "FROZEN_JSON_STATIC_CHECKS_AND_REFERENCE_PREPARATION_PASSED",
+  "frozenGeneratedClientSha256": {
+    "stages": "6e66c8b0abe2dcc3b5297bf08a98953929b7e17b31e740569910255f7601fc26",
+    "strings": "e191ce6773c2e608831f4f38bbb1b995bdd2caec3c156693cdbe71e50645828c",
+    "ads": "d19f181faf52db28287bbed1b42291770dc3bf83d35e5cca8af4a6dcce9e194a"
+  },
+  "legacyStageFieldsPreserved": true,
+  "strings": {
+    "total": 228,
+    "preserved": 90,
+    "approvedChanges": 47,
+    "added": 91
+  },
+  "shortDescriptionDialogueCount": 60,
+  "maxShortTextCharacters": {
+    "ko": 22,
+    "en": 41
+  },
+  "stageRankStarsAndDialogueReferences": 30,
+  "interactionScenariosPrepared": 23,
+  "crossingWinReferenceVectorsChecked": 4,
+  "changedDuringRead": [],
+  "runtimeProductTestsExecuted": false,
+  "winningSegmentCSharpHelperCompiled": false,
+  "unityBrowserDeviceExecuted": false,
+  "excelExporterTestsIndependentlyRerun": false,
+  "limitations": "Static JSON/preservation checks and independent fixture coherence only; Client UI remains unfrozen. Data team's 42-test result is reported evidence, not an independent QA execution. No render, interaction, runtime validation, performance or release acceptance."
+}

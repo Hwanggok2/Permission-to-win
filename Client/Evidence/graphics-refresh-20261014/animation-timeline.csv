@@ -1,0 +1,11 @@
+side,event,elapsedSeconds,scale,resolving,resultActive,retryEnabled,adCalls,moveCount
+player,enlarged,0.0020,1.4500,True,False,False,0,7
+player,placing,0.1807,1.0641,True,False,False,0,7
+player,landed,0.3909,1.0000,True,False,False,0,7
+player,adPending,0.8930,1.0000,True,True,False,1,7
+player,actionsEnabled,0.8965,1.0000,False,True,True,1,7
+ai,enlarged,0.0000,1.4500,True,False,False,0,7
+ai,placing,0.1801,1.0716,True,False,False,0,7
+ai,landed,0.3975,1.0000,True,False,False,0,7
+ai,adPending,0.8990,1.0000,True,True,False,1,7
+ai,actionsEnabled,0.8993,1.0000,False,True,True,1,7

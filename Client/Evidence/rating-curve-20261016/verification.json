@@ -1,0 +1,266 @@
+{
+  "status": "ALL_RATING_CURVES_VERIFIED",
+  "atUtc": "2026-10-15T15:53:42.312684+00:00",
+  "unityTests": {
+    "total": 44,
+    "passed": 44,
+    "failed": 0,
+    "skipped": 0
+  },
+  "unityResults": "unity-final-tests.xml",
+  "dataTestsPassed": 46,
+  "exportCheck": true,
+  "changedFrozenAssets": [
+    "Assets/StageGame/Resources/GameData/stages.json",
+    "Assets/StageGame/Tests/EditMode/OpeningTests.cs",
+    "Assets/StageGame/Tests/EditMode/RankTurnTimerTests.cs"
+  ],
+  "preservedFrozenAssets": 497,
+  "unchangedBuildFiles": 17,
+  "workbookChangedCells": 70,
+  "beginnerStagesUnchanged": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "aiSearchUnchanged": true,
+  "generatedResourceHashes": {
+    "stages.json": "FDC8A3FBE94A3B1CDE00989FC10EA6EFEF88AC95158DBBD762C0E8A0DA7A3B38",
+    "strings.json": "F39A258035741E60DD1CD822F216F3C106D4714467411FAB23B8EB8224928B31",
+    "ads.json": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A"
+  },
+  "finalProfiles": [
+    {
+      "aiRating": 200,
+      "aiDepth": 1,
+      "aiNodeBudget": 500,
+      "aiRandomPermille": 900,
+      "aiOversightPermille": 400
+    },
+    {
+      "aiRating": 300,
+      "aiDepth": 1,
+      "aiNodeBudget": 600,
+      "aiRandomPermille": 850,
+      "aiOversightPermille": 300
+    },
+    {
+      "aiRating": 400,
+      "aiDepth": 1,
+      "aiNodeBudget": 700,
+      "aiRandomPermille": 800,
+      "aiOversightPermille": 200
+    },
+    {
+      "aiRating": 500,
+      "aiDepth": 1,
+      "aiNodeBudget": 1000,
+      "aiRandomPermille": 700,
+      "aiOversightPermille": 120
+    },
+    {
+      "aiRating": 600,
+      "aiDepth": 4,
+      "aiNodeBudget": 4000,
+      "aiRandomPermille": 600,
+      "aiOversightPermille": 80
+    },
+    {
+      "aiRating": 700,
+      "aiDepth": 4,
+      "aiNodeBudget": 6000,
+      "aiRandomPermille": 500,
+      "aiOversightPermille": 0
+    },
+    {
+      "aiRating": 800,
+      "aiDepth": 4,
+      "aiNodeBudget": 8000,
+      "aiRandomPermille": 400,
+      "aiOversightPermille": 0
+    },
+    {
+      "aiRating": 900,
+      "aiDepth": 4,
+      "aiNodeBudget": 10000,
+      "aiRandomPermille": 300,
+      "aiOversightPermille": 0
+    },
+    {
+      "aiRating": 1000,
+      "aiDepth": 4,
+      "aiNodeBudget": 13000,
+      "aiRandomPermille": 220,
+      "aiOversightPermille": 0
+    },
+    {
+      "aiRating": 1100,
+      "aiDepth": 4,
+      "aiNodeBudget": 16000,
+      "aiRandomPermille": 160,
+      "aiOversightPermille": 0
+    },
+    {
+      "aiRating": 1200,
+      "aiDepth": 6,
+      "aiNodeBudget": 30000,
+      "aiRandomPermille": 100,
+      "aiOversightPermille": 0
+    },
+    {
+      "aiRating": 1300,
+      "aiDepth": 6,
+      "aiNodeBudget": 30000,
+      "aiRandomPermille": 60,
+      "aiOversightPermille": 0
+    },
+    {
+      "aiRating": 1400,
+      "aiDepth": 6,
+      "aiNodeBudget": 30000,
+      "aiRandomPermille": 30,
+      "aiOversightPermille": 0
+    },
+    {
+      "aiRating": 1500,
+      "aiDepth": 6,
+      "aiNodeBudget": 30000,
+      "aiRandomPermille": 10,
+      "aiOversightPermille": 0
+    },
+    {
+      "aiRating": 1600,
+      "aiDepth": 6,
+      "aiNodeBudget": 30000,
+      "aiRandomPermille": 0,
+      "aiOversightPermille": 0
+    }
+  ],
+  "finalHeldoutTactics": {
+    "boards": 48,
+    "seedsPerStochasticProfile": 16,
+    "deterministicProfileTrialsPerBoard": 1,
+    "source": "validation-tactics.json",
+    "measuredAttackAndDefenseNondecreasing": true
+  },
+  "finalMatches": {
+    "games": 1920,
+    "source": "final-matches.json",
+    "fixedOpponent": "depth 4 / 10000 nodes / safe random 250 permille / oversight 0",
+    "scoreIsNotStrictlyMonotonic": true
+  },
+  "shortGameAudit": {
+    "source": "final-short-games.json",
+    "ratings": "700..1600",
+    "seedsPerStarter": 2,
+    "playerBranches": 101374,
+    "aiReplies": 15980,
+    "earlyLosses": 0
+  },
+  "summary": [
+    {
+      "rating": 200,
+      "attackPercent": 37.760416666666664,
+      "defensePercent": 59.895833333333336,
+      "botScorePercent": 0.0
+    },
+    {
+      "rating": 300,
+      "attackPercent": 44.53125,
+      "defensePercent": 64.58333333333333,
+      "botScorePercent": 0.78125
+    },
+    {
+      "rating": 400,
+      "attackPercent": 49.21875,
+      "defensePercent": 67.96875,
+      "botScorePercent": 1.5625
+    },
+    {
+      "rating": 500,
+      "attackPercent": 55.208333333333336,
+      "defensePercent": 70.3125,
+      "botScorePercent": 4.296875
+    },
+    {
+      "rating": 600,
+      "attackPercent": 61.979166666666664,
+      "defensePercent": 87.5,
+      "botScorePercent": 18.359375
+    },
+    {
+      "rating": 700,
+      "attackPercent": 66.40625,
+      "defensePercent": 93.22916666666667,
+      "botScorePercent": 23.828125
+    },
+    {
+      "rating": 800,
+      "attackPercent": 70.3125,
+      "defensePercent": 94.27083333333333,
+      "botScorePercent": 35.9375
+    },
+    {
+      "rating": 900,
+      "attackPercent": 74.73958333333333,
+      "defensePercent": 95.83333333333333,
+      "botScorePercent": 44.921875
+    },
+    {
+      "rating": 1000,
+      "attackPercent": 77.60416666666667,
+      "defensePercent": 97.13541666666667,
+      "botScorePercent": 49.609375
+    },
+    {
+      "rating": 1100,
+      "attackPercent": 80.98958333333333,
+      "defensePercent": 97.13541666666667,
+      "botScorePercent": 55.859375
+    },
+    {
+      "rating": 1200,
+      "attackPercent": 95.3125,
+      "defensePercent": 98.69791666666667,
+      "botScorePercent": 74.609375
+    },
+    {
+      "rating": 1300,
+      "attackPercent": 97.13541666666667,
+      "defensePercent": 99.21875,
+      "botScorePercent": 75.78125
+    },
+    {
+      "rating": 1400,
+      "attackPercent": 98.4375,
+      "defensePercent": 99.47916666666667,
+      "botScorePercent": 79.6875
+    },
+    {
+      "rating": 1500,
+      "attackPercent": 99.47916666666667,
+      "defensePercent": 99.47916666666667,
+      "botScorePercent": 82.8125
+    },
+    {
+      "rating": 1600,
+      "attackPercent": 100.0,
+      "defensePercent": 100.0,
+      "botScorePercent": 81.640625
+    }
+  ],
+  "unityClosed": true,
+  "newPlayerBuild": false,
+  "humanPlaytest": false,
+  "deviceValidation": false,
+  "notes": [
+    "Ratings are internal content labels, not measured Elo.",
+    "Tactical percentages cover bounded sampled positions, not perfect play.",
+    "Each rating has two stages; all initial layouts and metadata are preserved.",
+    "Unchanged candidate B audit rows are reused exactly; changed 600/700 profiles were rerun.",
+    "Source freeze is relative to Client for files and repository root for dataSources."
+  ]
+}

@@ -1,0 +1,753 @@
+{
+  "method": "Latest observed result per case across full run and focused rerun, not a new test execution. Four array-parameter CoreTests have identical names in NUnit XML and are retained separately by occurrence; no CoreTests were in the rerun.",
+  "casesCovered": 104,
+  "latestPassed": 104,
+  "runs": [
+    {
+      "file": "Evidence/heavy-stone-speech-tests.xml",
+      "result": "Failed(Child)",
+      "total": 104,
+      "passed": 101,
+      "failed": 3,
+      "skipped": 0
+    },
+    {
+      "file": "Evidence/heavy-stone-speech-retest.xml",
+      "result": "Passed",
+      "total": 7,
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0
+    }
+  ],
+  "cases": [
+    {
+      "name": "StageGame.Tests.CoreTests.AdPolicyRequiresGraceMatchesAndBothCooldowns",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1026"
+    },
+    {
+      "name": "StageGame.Tests.CoreTests.AiBlocksImmediateLossEvenAtMaximumMistakes",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1010"
+    },
+    {
+      "name": "StageGame.Tests.CoreTests.AiRespectsNodeAndStepBudgetsAndLeavesBoardUntouched",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1011"
+    },
+    {
+      "name": "StageGame.Tests.CoreTests.AiTakesWinBeforeRandomMistake",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1009"
+    },
+    {
+      "name": "StageGame.Tests.CoreTests.BundledDataReplaysEveryStageAndAiReturnsLegalMove",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1012"
+    },
+    {
+      "name": "StageGame.Tests.CoreTests.CloneDoesNotMutateOriginal",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1008"
+    },
+    {
+      "name": "StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1003"
+    },
+    {
+      "name": "StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])",
+      "caseOccurrence": 2,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1004"
+    },
+    {
+      "name": "StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])",
+      "caseOccurrence": 3,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1005"
+    },
+    {
+      "name": "StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])",
+      "caseOccurrence": 4,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1006"
+    },
+    {
+      "name": "StageGame.Tests.CoreTests.GravityAlternatesAndRejectsFullColumn",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1002"
+    },
+    {
+      "name": "StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(\"0,\")",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1017"
+    },
+    {
+      "name": "StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(\"0,0,0,0,0,0,0\")",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1013"
+    },
+    {
+      "name": "StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(\"0,6,1,6,2,5,3\")",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1014"
+    },
+    {
+      "name": "StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(\"7\")",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1015"
+    },
+    {
+      "name": "StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(\"a\")",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1016"
+    },
+    {
+      "name": "StageGame.Tests.CoreTests.MalformedDataCannotSilentlyLoad",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1019"
+    },
+    {
+      "name": "StageGame.Tests.CoreTests.NoFillNeverRewardsAndEditorDuplicateOnlyGrantsOnce",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1025"
+    },
+    {
+      "name": "StageGame.Tests.CoreTests.ProgressRejectsNonAdjacentAndReloadedDuplicateResults",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1028"
+    },
+    {
+      "name": "StageGame.Tests.CoreTests.RewardCompletesOnlyOnceAndRejectsStaleCallbacks",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1024"
+    },
+    {
+      "name": "StageGame.Tests.CoreTests.SavedPrefabReferencesAndNestedButtonsValidate",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1027"
+    },
+    {
+      "name": "StageGame.Tests.CoreTests.TruncatedStageCatalogIsRejected",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1029"
+    },
+    {
+      "name": "StageGame.Tests.CoreTests.UnsuccessfulRewardCanRetryWithoutGrant(Cancelled)",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1022"
+    },
+    {
+      "name": "StageGame.Tests.CoreTests.UnsuccessfulRewardCanRetryWithoutGrant(Failed)",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1021"
+    },
+    {
+      "name": "StageGame.Tests.CoreTests.UnsuccessfulRewardCanRetryWithoutGrant(Unavailable)",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1020"
+    },
+    {
+      "name": "StageGame.Tests.HostLayoutTests.BrowserFallbackAndExplicitControlsUseCssCoordinates",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1035"
+    },
+    {
+      "name": "StageGame.Tests.HostLayoutTests.InvalidInsetsFallBackToZeroWithoutRemovingHostAllowance",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1037"
+    },
+    {
+      "name": "StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem(1)",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1031"
+    },
+    {
+      "name": "StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem(2)",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1032"
+    },
+    {
+      "name": "StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem(3)",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1033"
+    },
+    {
+      "name": "StageGame.Tests.HostLayoutTests.SavedGraphicsAndSecondaryLicenseMenuKeepPrefabReferences",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1038"
+    },
+    {
+      "name": "StageGame.Tests.HostLayoutTests.SideInsetsMergePerEdgeAndOversizedInsetsStayInsideScreen",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1036"
+    },
+    {
+      "name": "StageGame.Tests.LocalizationTests.EverySavedUiTextHasAKeyOrExplicitDynamicOwnerAndButtonsHaveTouchArea",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1049"
+    },
+    {
+      "name": "StageGame.Tests.LocalizationTests.LanguageLookupFormattingAndUnknownLocaleFollowContract",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1040"
+    },
+    {
+      "name": "StageGame.Tests.LocalizationTests.LegacyAndInvalidSavedLocalesPreserveProgressAndDefaultToKorean",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1048"
+    },
+    {
+      "name": "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"\",\"Text\")",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1041"
+    },
+    {
+      "name": "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"{0:00}\",\"{0:00}\")",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1044"
+    },
+    {
+      "name": "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"{0}\",\"{1}\")",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1043"
+    },
+    {
+      "name": "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"{1}\",\"{1}\")",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1046"
+    },
+    {
+      "name": "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"{broken}\",\"{broken}\")",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1045"
+    },
+    {
+      "name": "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"문구\",\"\")",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1042"
+    },
+    {
+      "name": "StageGame.Tests.OpeningSearchTests.GuardedOpeningAvoidsTheObservedEarlyDoubleThreat",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1054"
+    },
+    {
+      "name": "StageGame.Tests.OpeningSearchTests.GuardedOpeningUsesCenterWithoutRandomMistakesAndKeepsStepBudget(-1)",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1052"
+    },
+    {
+      "name": "StageGame.Tests.OpeningSearchTests.GuardedOpeningUsesCenterWithoutRandomMistakesAndKeepsStepBudget(1)",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1051"
+    },
+    {
+      "name": "StageGame.Tests.RankDataTests.InvalidOrDecreasingStarsAreRejected(0.0f)",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1105"
+    },
+    {
+      "name": "StageGame.Tests.RankDataTests.InvalidOrDecreasingStarsAreRejected(1.25f)",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1107"
+    },
+    {
+      "name": "StageGame.Tests.RankDataTests.InvalidOrDecreasingStarsAreRejected(2.0f)",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1108"
+    },
+    {
+      "name": "StageGame.Tests.RankDataTests.InvalidOrDecreasingStarsAreRejected(8.5f)",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1106"
+    },
+    {
+      "name": "StageGame.Tests.RankDataTests.MissingAndUnknownCharacterIdsAreRejected",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1098"
+    },
+    {
+      "name": "StageGame.Tests.RankDataTests.MissingBlankAndUnknownRankReferencesAreRejected(\"aiIntroKey\")",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1101"
+    },
+    {
+      "name": "StageGame.Tests.RankDataTests.MissingBlankAndUnknownRankReferencesAreRejected(\"aiLoseKey\")",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1103"
+    },
+    {
+      "name": "StageGame.Tests.RankDataTests.MissingBlankAndUnknownRankReferencesAreRejected(\"aiWinKey\")",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1102"
+    },
+    {
+      "name": "StageGame.Tests.RankDataTests.MissingBlankAndUnknownRankReferencesAreRejected(\"descriptionKey\")",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1100"
+    },
+    {
+      "name": "StageGame.Tests.RankDataTests.MissingBlankAndUnknownRankReferencesAreRejected(\"rankKey\")",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1099"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.Actual1080DesignFitsAllActionsBelowSharedTopGap",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1090"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.ActualAiStarterPlacesOnceAndUndoRestoresOpeningPhase",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1057"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.AiWaitOverlapsSearchAndExcludesPauseAndConfirmationTime",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1088"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.AiWaitingCancelsOnUndoRestartLeaveAndHintsHaveNoOneSecondDelay",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1089"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.BothWinnersAnimatePauseRestoreThenAdsAndCorrectResultActions",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-retest.xml",
+      "xmlId": "1070"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.CancelledHintCannotChangeConfirmationOrRestoredNotice",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1095"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.CaptureAllSelectedPixelPortraits",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1059"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.CaptureCorrectedPixelPortraitStates",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1060"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.CapturePixelArtAndLocalizedLayouts",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-retest.xml",
+      "xmlId": "1062"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.CrossingWinsChooseOneContinuousLineThroughFinalStone",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1072"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.DestroyedAppRejectsLateResultAndRewardCallbacksWithoutSaving",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1094"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.DestructiveActionsRequireConfirmationAndCancelPreservesSelectionAndAi",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1091"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.FinalStageAndAdTimeoutDoNotExposeNextOrAcceptLateCompletion",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1071"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.FreshRunIsConsumedButExistingAndRecoverySavesStayInLobby",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1066"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.HalfStarsAndFinalRankRenderWithReservedBannerSpace",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1081"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.MusicAndStonePlacementProduceStrongerNonClippingListenerOutput",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1075"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.MusicContinuesThroughPauseAndConfirmationButSuspendsInBackground",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1077"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.MusicKeepsItsPositionAcrossLobbyMatchAndResultReturn",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1078"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.MusicSettingRestoresAfterReloadAndBothLanguagesFitSavedSettings",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1076"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.MusicWaitsForInterstitialAndLateCallbacksCannotOverrideMusicPreference",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1080"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.MusicWaitsForRewardAdsAndResumesOnFailureCancellationOrTimeout",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1079"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.OpeningAndAiStarterAreUndoFloorAndRetryIsFree",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1065"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.OpeningProtectionEndsAfterFiveAiMovesAndDoesNotStrengthenHints",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1056"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.PendingRewardCancelsOnUndoPauseRetryAndTimeout",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1069"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.PixelPortraitsFollowCharacterAndMatchState",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1058"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.PixelTournamentInviteAndFinalAreBoundToWins",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1061"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.PreviewSavedRankScreens",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1074"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.ResultRestartAndLobbyConfirmWhileNextStaysDirect",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1092"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.RewardCompletionIsOnceAndUndoKeepsConsumedHint",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1068"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.SelectionIsOnlyPreviewAndPlaceCommitsOnce",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1063"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.SoundButtonClickPlaysOnceAcrossOpenCloseAndRespectsDisabledAndOff",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1082"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.SoundStoneImpactAndUiClickWorkWhileMusicContinuesThroughModal",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1083"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.SpeechMuteHidesNoLettersAndScreenChangesCancelTheOldLine",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-retest.xml",
+      "xmlId": "1086"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.SpeechPausesWithDialogsFocusBackgroundAndAdsWhileMusicCanContinue",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-retest.xml",
+      "xmlId": "1085"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.SpeechTypesBothLanguagesWithClicksAndStableWrapping",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-retest.xml",
+      "xmlId": "1084"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.SpeechTypesWinAndLossDialogueAndRestartsForTheNextStage",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-retest.xml",
+      "xmlId": "1087"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.SquareBoardsUniformPixelLinesTopHeadersAndScrollableActionsMeetHostContract",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-retest.xml",
+      "xmlId": "1096"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.ThirtyCardsReachBothEndsAndDetailBlocksLobbyAndPreservesScroll",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1067"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.TopRowAnimationAvoidsStatusAndDrawKeepsTwoActions",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1073"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.TurnToastNeverBlocksAndDoesNotOutliveItsTurnOrDuplicateOnLanguageHint",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1093"
+    },
+    {
+      "name": "StageGame.Tests.RankFlowTests.UndoRestoresPairsAndCancelsInFlightAiWithoutChangingMatch",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1064"
+    },
+    {
+      "name": "StageGame.Tests.RankMusicAssetTests.LegacyMusicPreferenceDefaultsOnAndRoundTripsIndependently",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1111"
+    },
+    {
+      "name": "StageGame.Tests.RankMusicAssetTests.SavedMusicReferencesOriginalAudioAndAllLicenseNoticesArePresent",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1112"
+    },
+    {
+      "name": "StageGame.Tests.RankSoundAssetTests.SavedSoundsUseShortPcmClipsAndCoverEveryButtonOnce",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1114"
+    },
+    {
+      "name": "StageGame.Tests.StageMapTests.FinalClearSurvivesReloadAndReplayWithoutDuplicateCounters",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1121"
+    },
+    {
+      "name": "StageGame.Tests.StageMapTests.LegacyProgressInfersOnlyStagesBeforeTheUnlock(1)",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1117"
+    },
+    {
+      "name": "StageGame.Tests.StageMapTests.LegacyProgressInfersOnlyStagesBeforeTheUnlock(12)",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1118"
+    },
+    {
+      "name": "StageGame.Tests.StageMapTests.LegacyProgressInfersOnlyStagesBeforeTheUnlock(30)",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1119"
+    },
+    {
+      "name": "StageGame.Tests.StageMapTests.RankMigrationRejectsUnsavedScenesBeforeWritingAssets",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1116"
+    },
+    {
+      "name": "StageGame.Tests.StageMapTests.SavedNodesAndHelpAreNestedAndShowExactlyFourConnectedStones",
+      "caseOccurrence": 1,
+      "result": "Passed",
+      "source": "Evidence/heavy-stone-speech-tests.xml",
+      "xmlId": "1122"
+    }
+  ]
+}

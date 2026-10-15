@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-14 15:32:51Z" end-time="2026-10-14 15:32:54Z" duration="2.894749">
+  <test-suite type="TestSuite" id="1000" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="76" result="Failed" site="Child" start-time="2026-10-14 15:32:51Z" end-time="2026-10-14 15:32:54Z" duration="2.894749" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1091" name="StageGame.Tests.dll" fullname="C:/Github/StageGame/Client/Library/ScriptAssemblies/StageGame.Tests.dll" runstate="Runnable" testcasecount="76" result="Failed" site="Child" start-time="2026-10-14 15:32:51Z" end-time="2026-10-14 15:32:54Z" duration="2.857860" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="54544" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1092" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="76" result="Failed" site="Child" start-time="2026-10-14 15:32:51Z" end-time="2026-10-14 15:32:54Z" duration="2.857010" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1093" name="Tests" fullname="StageGame.Tests" runstate="Runnable" testcasecount="76" result="Failed" site="Child" start-time="2026-10-14 15:32:51Z" end-time="2026-10-14 15:32:54Z" duration="2.856273" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1050" name="RankFlowTests" fullname="StageGame.Tests.RankFlowTests" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" testcasecount="21" result="Failed" site="Child" start-time="2026-10-14 15:32:51Z" end-time="2026-10-14 15:32:54Z" duration="2.854968" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1065" name="Actual1080DesignHasTextOnlyToastAndLowerLobbyHeader" fullname="StageGame.Tests.RankFlowTests.Actual1080DesignHasTextOnlyToastAndLowerLobbyHeader" methodname="Actual1080DesignHasTextOnlyToastAndLowerLobbyHeader" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1747079453" result="Failed" start-time="2026-10-14 15:32:50Z" end-time="2026-10-14 15:32:54Z" duration="4.020879" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Saved lobby must keep a top exclusion area even without host insets.
+  Expected: greater than or equal to 71.9000015f
+  But was:  68.0f
+]]></message>
+                <stack-trace><![CDATA[at StageGame.Tests.RankFlowTests+<>c__DisplayClass40_1.<Actual1080DesignHasTextOnlyToastAndLowerLobbyHeader>b__3 () [0x00053] in C:\Github\StageGame\Client\Assets\StageGame\Tests\EditMode\RankV10Tests.cs:67
+at StageGame.Tests.RankFlowTests+<Capture>d__36.MoveNext () [0x002b9] in C:\Github\StageGame\Client\Assets\StageGame\Tests\EditMode\RankFlowTests.cs:103
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@aebcb98460c6\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[Capture] ko-1080-text-only-toast: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=60
+[Capture] ko-1080-header-match: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=60
+[Capture] ko-1080-header-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=60
+[Capture] ko-1080-plain-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=60
+[Capture] ko-1080-plain-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=60
+[Capture] ko-1080-host-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=60
+[Capture] ko-1080-host-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=60
+[Capture] ko-390-plain-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=60
+[Capture] ko-390-plain-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=60
+[Capture] ko-390-host-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=60
+[Capture] ko-390-host-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=60
+Saving results to: C:\Github\StageGame\Client\Evidence\lobby-header-tests.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

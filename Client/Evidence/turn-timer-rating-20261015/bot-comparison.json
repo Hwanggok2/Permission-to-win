@@ -1,0 +1,487 @@
+{
+  "method": "Production AiSearch vs an immediate-win/block reactive proxy, otherwise random safe moves; same seeds 0..255. Before includes the actual first-five-turn depth>=4/random=0 override; after uses authored profiles throughout.",
+  "limitation": "Internal rating labels are design tiers, not measured Elo. Bot win rates are not human win rates.",
+  "games": 15360,
+  "stages": [
+    {
+      "stage": 1,
+      "rating": 200,
+      "before": {
+        "games": 256,
+        "playerWins": 43,
+        "aiWins": 198,
+        "draws": 15
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 216,
+        "aiWins": 37,
+        "draws": 3
+      }
+    },
+    {
+      "stage": 2,
+      "rating": 200,
+      "before": {
+        "games": 256,
+        "playerWins": 43,
+        "aiWins": 198,
+        "draws": 15
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 216,
+        "aiWins": 37,
+        "draws": 3
+      }
+    },
+    {
+      "stage": 3,
+      "rating": 300,
+      "before": {
+        "games": 256,
+        "playerWins": 31,
+        "aiWins": 211,
+        "draws": 14
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 194,
+        "aiWins": 57,
+        "draws": 5
+      }
+    },
+    {
+      "stage": 4,
+      "rating": 300,
+      "before": {
+        "games": 256,
+        "playerWins": 31,
+        "aiWins": 211,
+        "draws": 14
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 194,
+        "aiWins": 57,
+        "draws": 5
+      }
+    },
+    {
+      "stage": 5,
+      "rating": 400,
+      "before": {
+        "games": 256,
+        "playerWins": 39,
+        "aiWins": 207,
+        "draws": 10
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 170,
+        "aiWins": 80,
+        "draws": 6
+      }
+    },
+    {
+      "stage": 6,
+      "rating": 400,
+      "before": {
+        "games": 256,
+        "playerWins": 27,
+        "aiWins": 219,
+        "draws": 10
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 184,
+        "aiWins": 70,
+        "draws": 2
+      }
+    },
+    {
+      "stage": 7,
+      "rating": 500,
+      "before": {
+        "games": 256,
+        "playerWins": 16,
+        "aiWins": 221,
+        "draws": 19
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 174,
+        "aiWins": 73,
+        "draws": 9
+      }
+    },
+    {
+      "stage": 8,
+      "rating": 500,
+      "before": {
+        "games": 256,
+        "playerWins": 34,
+        "aiWins": 216,
+        "draws": 6
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 137,
+        "aiWins": 110,
+        "draws": 9
+      }
+    },
+    {
+      "stage": 9,
+      "rating": 600,
+      "before": {
+        "games": 256,
+        "playerWins": 18,
+        "aiWins": 235,
+        "draws": 3
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 143,
+        "aiWins": 104,
+        "draws": 9
+      }
+    },
+    {
+      "stage": 10,
+      "rating": 600,
+      "before": {
+        "games": 256,
+        "playerWins": 18,
+        "aiWins": 235,
+        "draws": 3
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 143,
+        "aiWins": 104,
+        "draws": 9
+      }
+    },
+    {
+      "stage": 11,
+      "rating": 700,
+      "before": {
+        "games": 256,
+        "playerWins": 21,
+        "aiWins": 229,
+        "draws": 6
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 114,
+        "aiWins": 132,
+        "draws": 10
+      }
+    },
+    {
+      "stage": 12,
+      "rating": 700,
+      "before": {
+        "games": 256,
+        "playerWins": 20,
+        "aiWins": 230,
+        "draws": 6
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 149,
+        "aiWins": 98,
+        "draws": 9
+      }
+    },
+    {
+      "stage": 13,
+      "rating": 800,
+      "before": {
+        "games": 256,
+        "playerWins": 17,
+        "aiWins": 235,
+        "draws": 4
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 98,
+        "aiWins": 150,
+        "draws": 8
+      }
+    },
+    {
+      "stage": 14,
+      "rating": 800,
+      "before": {
+        "games": 256,
+        "playerWins": 19,
+        "aiWins": 234,
+        "draws": 3
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 70,
+        "aiWins": 175,
+        "draws": 11
+      }
+    },
+    {
+      "stage": 15,
+      "rating": 900,
+      "before": {
+        "games": 256,
+        "playerWins": 7,
+        "aiWins": 246,
+        "draws": 3
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 86,
+        "aiWins": 161,
+        "draws": 9
+      }
+    },
+    {
+      "stage": 16,
+      "rating": 900,
+      "before": {
+        "games": 256,
+        "playerWins": 7,
+        "aiWins": 246,
+        "draws": 3
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 86,
+        "aiWins": 161,
+        "draws": 9
+      }
+    },
+    {
+      "stage": 17,
+      "rating": 1000,
+      "before": {
+        "games": 256,
+        "playerWins": 15,
+        "aiWins": 229,
+        "draws": 12
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 78,
+        "aiWins": 162,
+        "draws": 16
+      }
+    },
+    {
+      "stage": 18,
+      "rating": 1000,
+      "before": {
+        "games": 256,
+        "playerWins": 27,
+        "aiWins": 223,
+        "draws": 6
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 46,
+        "aiWins": 198,
+        "draws": 12
+      }
+    },
+    {
+      "stage": 19,
+      "rating": 1100,
+      "before": {
+        "games": 256,
+        "playerWins": 2,
+        "aiWins": 252,
+        "draws": 2
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 57,
+        "aiWins": 186,
+        "draws": 13
+      }
+    },
+    {
+      "stage": 20,
+      "rating": 1100,
+      "before": {
+        "games": 256,
+        "playerWins": 2,
+        "aiWins": 252,
+        "draws": 2
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 57,
+        "aiWins": 186,
+        "draws": 13
+      }
+    },
+    {
+      "stage": 21,
+      "rating": 1200,
+      "before": {
+        "games": 256,
+        "playerWins": 4,
+        "aiWins": 252,
+        "draws": 0
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 49,
+        "aiWins": 203,
+        "draws": 4
+      }
+    },
+    {
+      "stage": 22,
+      "rating": 1200,
+      "before": {
+        "games": 256,
+        "playerWins": 17,
+        "aiWins": 236,
+        "draws": 3
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 37,
+        "aiWins": 213,
+        "draws": 6
+      }
+    },
+    {
+      "stage": 23,
+      "rating": 1300,
+      "before": {
+        "games": 256,
+        "playerWins": 0,
+        "aiWins": 255,
+        "draws": 1
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 26,
+        "aiWins": 225,
+        "draws": 5
+      }
+    },
+    {
+      "stage": 24,
+      "rating": 1300,
+      "before": {
+        "games": 256,
+        "playerWins": 0,
+        "aiWins": 255,
+        "draws": 1
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 26,
+        "aiWins": 225,
+        "draws": 5
+      }
+    },
+    {
+      "stage": 25,
+      "rating": 1400,
+      "before": {
+        "games": 256,
+        "playerWins": 1,
+        "aiWins": 255,
+        "draws": 0
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 25,
+        "aiWins": 226,
+        "draws": 5
+      }
+    },
+    {
+      "stage": 26,
+      "rating": 1400,
+      "before": {
+        "games": 256,
+        "playerWins": 7,
+        "aiWins": 248,
+        "draws": 1
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 19,
+        "aiWins": 232,
+        "draws": 5
+      }
+    },
+    {
+      "stage": 27,
+      "rating": 1500,
+      "before": {
+        "games": 256,
+        "playerWins": 0,
+        "aiWins": 256,
+        "draws": 0
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 5,
+        "aiWins": 246,
+        "draws": 5
+      }
+    },
+    {
+      "stage": 28,
+      "rating": 1500,
+      "before": {
+        "games": 256,
+        "playerWins": 0,
+        "aiWins": 256,
+        "draws": 0
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 5,
+        "aiWins": 246,
+        "draws": 5
+      }
+    },
+    {
+      "stage": 29,
+      "rating": 1600,
+      "before": {
+        "games": 256,
+        "playerWins": 0,
+        "aiWins": 256,
+        "draws": 0
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 5,
+        "aiWins": 248,
+        "draws": 3
+      }
+    },
+    {
+      "stage": 30,
+      "rating": 1600,
+      "before": {
+        "games": 256,
+        "playerWins": 0,
+        "aiWins": 256,
+        "draws": 0
+      },
+      "after": {
+        "games": 256,
+        "playerWins": 10,
+        "aiWins": 245,
+        "draws": 1
+      }
+    }
+  ]
+}

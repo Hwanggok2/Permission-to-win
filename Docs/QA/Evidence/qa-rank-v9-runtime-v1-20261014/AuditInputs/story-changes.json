@@ -1,0 +1,958 @@
+{
+  "date": "2026-10-14",
+  "reason": "사용자 지정 첫 대사와 프로 출신 훈련병에게 도전하는 서사. 검증용 기록이며 원본은 Excel.",
+  "revisions": [
+    {
+      "key": "ai_rank_01_intro",
+      "before": {
+        "ko": "차근차근 네 돌을 이어봐요.",
+        "en": "Let us connect four, one move at a time."
+      },
+      "after": {
+        "ko": "프로라며? 나도 한 판 붙어볼래.",
+        "en": "So you're a pro? Let me try a round."
+      },
+      "row": 143
+    },
+    {
+      "key": "ai_rank_01_win",
+      "before": {
+        "ko": "이번엔 제가 먼저 이었네요!",
+        "en": "I connected four first this time!"
+      },
+      "after": {
+        "ko": "나도 프로 해도 되겠는데?",
+        "en": "Maybe I should go pro too!"
+      },
+      "row": 144
+    },
+    {
+      "key": "ai_rank_01_lose",
+      "before": {
+        "ko": "멋진 첫걸음이에요!",
+        "en": "A great first step!"
+      },
+      "after": {
+        "ko": "소문이 진짜였네. 다음엔 내가 이긴다.",
+        "en": "The rumors were true. Next time, I'll win."
+      },
+      "row": 145
+    },
+    {
+      "key": "ai_rank_02_intro",
+      "before": {
+        "ko": "어떤 수를 고를지 궁금하네요.",
+        "en": "I wonder which move you will choose."
+      },
+      "after": {
+        "ko": "프로가 왔다며? 소문 한번 확인해볼까?",
+        "en": "A pro joined us? Let's test those rumors."
+      },
+      "row": 147
+    },
+    {
+      "key": "ai_rank_02_win",
+      "before": {
+        "ko": "다음 판도 겨뤄봐요!",
+        "en": "Let us have a rematch!"
+      },
+      "after": {
+        "ko": "소문보다 내가 더 센 것 같은데?",
+        "en": "Looks like I beat the rumors."
+      },
+      "row": 148
+    },
+    {
+      "key": "ai_rank_02_lose",
+      "before": {
+        "ko": "그 자리를 잘 찾았어요!",
+        "en": "You found just the right spot!"
+      },
+      "after": {
+        "ko": "소문날 만하네. 다음 판은 내 거야.",
+        "en": "Those rumors make sense. Next round is mine."
+      },
+      "row": 149
+    },
+    {
+      "key": "ai_rank_03_intro",
+      "before": {
+        "ko": "서로의 다음 수를 읽어볼까요?",
+        "en": "Can we read each other's next move?"
+      },
+      "after": {
+        "ko": "프로도 빈틈은 있겠지? 내가 찾아볼게.",
+        "en": "Even pros leave openings. I'll find yours."
+      },
+      "row": 151
+    },
+    {
+      "key": "ai_rank_03_win",
+      "before": {
+        "ko": "이번 수는 통했네요!",
+        "en": "That move worked this time!"
+      },
+      "after": {
+        "ko": "찾았다, 프로의 빈틈!",
+        "en": "Found it: a pro's weak spot!"
+      },
+      "row": 152
+    },
+    {
+      "key": "ai_rank_03_lose",
+      "before": {
+        "ko": "제 예상을 넘은 한 수였어요!",
+        "en": "That move surprised me!"
+      },
+      "after": {
+        "ko": "빈틈이 없네. 다음엔 꼭 찾아낸다.",
+        "en": "No opening this time. I'll find one next round."
+      },
+      "row": 153
+    },
+    {
+      "key": "ai_rank_04_intro",
+      "before": {
+        "ko": "여러 방향을 함께 살펴봐요.",
+        "en": "Let us watch every direction."
+      },
+      "after": {
+        "ko": "프로의 전략, 내 수랑 겨뤄볼까?",
+        "en": "Let's see your strategy against mine."
+      },
+      "row": 155
+    },
+    {
+      "key": "ai_rank_04_win",
+      "before": {
+        "ko": "이번엔 제가 한발 빨랐네요!",
+        "en": "I got there first this time!"
+      },
+      "after": {
+        "ko": "이번 작전은 내가 한 수 위였네.",
+        "en": "My plan was one move ahead."
+      },
+      "row": 156
+    },
+    {
+      "key": "ai_rank_04_lose",
+      "before": {
+        "ko": "여러 길을 잘 봤네요!",
+        "en": "You spotted the possibilities!"
+      },
+      "after": {
+        "ko": "전략 좋네. 다음엔 내가 읽어낸다.",
+        "en": "Good strategy. Next time, I'll read your moves."
+      },
+      "row": 157
+    },
+    {
+      "key": "ai_rank_05_intro",
+      "before": {
+        "ko": "어떤 연결을 보여줄 건가요?",
+        "en": "What connection will you show me?"
+      },
+      "after": {
+        "ko": "여기서 내가 제일 센데, 프로는 다를까?",
+        "en": "I'm the best here. Can a pro change that?"
+      },
+      "row": 159
+    },
+    {
+      "key": "ai_rank_05_win",
+      "before": {
+        "ko": "이번 연결은 제 차지네요!",
+        "en": "This connection was mine!"
+      },
+      "after": {
+        "ko": "우리 부대 강자는 아직 나네!",
+        "en": "I'm still the one to beat around here!"
+      },
+      "row": 160
+    },
+    {
+      "key": "ai_rank_05_lose",
+      "before": {
+        "ko": "깔끔한 연결이었어요!",
+        "en": "That was a neat connection!"
+      },
+      "after": {
+        "ko": "강자 자리 내줬네. 다음엔 되찾는다.",
+        "en": "You took my top spot. I'll win it back."
+      },
+      "row": 161
+    },
+    {
+      "key": "ai_rank_06_intro",
+      "before": {
+        "ko": "작은 빈틈도 놓치지 말아요.",
+        "en": "Keep an eye on every opening."
+      },
+      "after": {
+        "ko": "프로라고 서두를 건 없지. 한 판 해볼까?",
+        "en": "No rush, pro. Shall we play a round?"
+      },
+      "row": 163
+    },
+    {
+      "key": "ai_rank_06_win",
+      "before": {
+        "ko": "작은 빈틈을 찾았네요!",
+        "en": "I found a small opening!"
+      },
+      "after": {
+        "ko": "차분하게 두니 프로도 잡히네.",
+        "en": "A steady game can beat a pro too."
+      },
+      "row": 164
+    },
+    {
+      "key": "ai_rank_06_lose",
+      "before": {
+        "ko": "빈틈을 잘 찾았어요!",
+        "en": "You found the opening!"
+      },
+      "after": {
+        "ko": "침착하네. 다음엔 내가 먼저 잇겠어.",
+        "en": "Cool under pressure. I'll connect first next time."
+      },
+      "row": 165
+    },
+    {
+      "key": "ai_rank_07_intro",
+      "before": {
+        "ko": "한 수 뒤의 모양도 생각해봐요.",
+        "en": "Picture the board one move ahead."
+      },
+      "after": {
+        "ko": "몇 수 앞까지 봐? 나랑 한번 겨뤄보자.",
+        "en": "How many moves ahead can you see? Let's play."
+      },
+      "row": 167
+    },
+    {
+      "key": "ai_rank_07_win",
+      "before": {
+        "ko": "다음 수가 잘 풀렸네요!",
+        "en": "My next move worked out!"
+      },
+      "after": {
+        "ko": "프로보다 한 수 더 봤나 보네.",
+        "en": "Looks like I saw one move further."
+      },
+      "row": 168
+    },
+    {
+      "key": "ai_rank_07_lose",
+      "before": {
+        "ko": "앞을 내다본 좋은 수였어요!",
+        "en": "You thought ahead!"
+      },
+      "after": {
+        "ko": "더 멀리 봤군. 다음엔 내가 앞서간다.",
+        "en": "You saw further. I'll get ahead next time."
+      },
+      "row": 169
+    },
+    {
+      "key": "ai_rank_08_intro",
+      "before": {
+        "ko": "공격과 방어, 둘 다 챙겨봐요.",
+        "en": "Watch both attack and defense."
+      },
+      "after": {
+        "ko": "오래 둔 경험도 만만치 않아. 붙어볼까?",
+        "en": "Years of play count for something. Ready?"
+      },
+      "row": 171
+    },
+    {
+      "key": "ai_rank_08_win",
+      "before": {
+        "ko": "이번엔 연결을 지켰네요!",
+        "en": "I kept my connection this time!"
+      },
+      "after": {
+        "ko": "이런 판은 경험이 답이지.",
+        "en": "Experience wins this kind of game."
+      },
+      "row": 172
+    },
+    {
+      "key": "ai_rank_08_lose",
+      "before": {
+        "ko": "공격과 방어가 모두 좋았어요!",
+        "en": "Well played on both fronts!"
+      },
+      "after": {
+        "ko": "경험만으론 안 되네. 다음엔 다를 거야.",
+        "en": "Experience wasn't enough. Next time will be different."
+      },
+      "row": 173
+    },
+    {
+      "key": "ai_rank_09_intro",
+      "before": {
+        "ko": "마지막까지 차분하게 겨뤄봐요.",
+        "en": "Stay focused to the last move."
+      },
+      "after": {
+        "ko": "나도 프로에게 도전할 차례지?",
+        "en": "My turn to challenge the pro, right?"
+      },
+      "row": 175
+    },
+    {
+      "key": "ai_rank_09_win",
+      "before": {
+        "ko": "이번엔 제가 끝까지 지켰네요!",
+        "en": "I held on to the end this time!"
+      },
+      "after": {
+        "ko": "도전하길 잘했네. 프로를 이겼어!",
+        "en": "Glad I challenged you. I beat the pro!"
+      },
+      "row": 176
+    },
+    {
+      "key": "ai_rank_09_lose",
+      "before": {
+        "ko": "끝까지 좋은 선택이었어요!",
+        "en": "Good choices right to the end!"
+      },
+      "after": {
+        "ko": "도전할 맛 나네. 다음엔 내가 이긴다.",
+        "en": "Now that's a challenge. Next time, I'll win."
+      },
+      "row": 177
+    },
+    {
+      "key": "ai_rank_10_intro",
+      "before": {
+        "ko": "여기까지 왔으니 멋지게 겨뤄봐요!",
+        "en": "You made it here, so let us play!"
+      },
+      "after": {
+        "ko": "마지막 도전자야. 프로 실력 보여줘.",
+        "en": "I'm your final challenger. Show me your pro skills."
+      },
+      "row": 179
+    },
+    {
+      "key": "ai_rank_10_win",
+      "before": {
+        "ko": "다시 겨룰 날을 기다릴게요!",
+        "en": "I look forward to our rematch!"
+      },
+      "after": {
+        "ko": "마지막 승부는 내 거네. 다시 붙을까?",
+        "en": "The final round is mine. Want a rematch?"
+      },
+      "row": 180
+    },
+    {
+      "key": "ai_rank_10_lose",
+      "before": {
+        "ko": "정말 멋진 승부였어요!",
+        "en": "What a great game!"
+      },
+      "after": {
+        "ko": "프로답네. 다음 승부는 내가 가져간다.",
+        "en": "A true pro. Next time, the win is mine."
+      },
+      "row": 181
+    },
+    {
+      "key": "game_subtitle",
+      "before": {
+        "ko": "한 수씩, 다음 계급으로",
+        "en": "One move closer to your next rank"
+      },
+      "after": {
+        "ko": "프로 소문을 듣고 찾아온 도전자들",
+        "en": "Challengers have heard you are a pro"
+      },
+      "row": 65
+    },
+    {
+      "key": "rank_label",
+      "before": {
+        "ko": "계급: {0}",
+        "en": "Rank: {0}"
+      },
+      "after": {
+        "ko": "도전자 계급: {0}",
+        "en": "Challenger rank: {0}"
+      },
+      "row": 228
+    },
+    {
+      "key": "rank_progress",
+      "before": {
+        "ko": "계급 {0} / {1}",
+        "en": "Rank {0} / {1}"
+      },
+      "after": {
+        "ko": "도전자 계급 {0} / {1}",
+        "en": "Challenger rank {0} / {1}"
+      },
+      "row": 231
+    }
+  ],
+  "additions": [
+    {
+      "key": "story_premise",
+      "ko": "사회에서는 4목 프로, 오늘부터는 훈련병.",
+      "en": "A four-in-a-row pro in civilian life, a recruit today."
+    },
+    {
+      "key": "story_first_intro",
+      "ko": "이 게임의 프로라고 했지? 그런데 내가 이길 것 같아.",
+      "en": "You said you were a pro at this game? I think I can beat you."
+    },
+    {
+      "key": "story_first_win",
+      "ko": "프로라는 말, 거짓말이었나?",
+      "en": "Was that pro story just a bluff?"
+    },
+    {
+      "key": "story_first_lose",
+      "ko": "프로는 역시 다르네. 다음엔 내가 이긴다.",
+      "en": "A pro really is different. Next time, I win."
+    }
+  ],
+  "stageRevisions": [
+    {
+      "id": 1,
+      "before": {
+        "aiIntroKey": "ai_rank_01_intro",
+        "aiWinKey": "ai_rank_01_win",
+        "aiLoseKey": "ai_rank_01_lose"
+      },
+      "after": {
+        "aiIntroKey": "story_first_intro",
+        "aiWinKey": "story_first_win",
+        "aiLoseKey": "story_first_lose"
+      }
+    }
+  ],
+  "previousStages": [
+    {
+      "id": 1,
+      "chapter": 1,
+      "titleKey": "stage_001",
+      "aiDepth": 1,
+      "aiNodeBudget": 500,
+      "aiRandomPermille": 250,
+      "starter": 1,
+      "openingMoves": "",
+      "rankKey": "rank_01",
+      "descriptionKey": "stage_desc_001",
+      "aiIntroKey": "ai_rank_01_intro",
+      "aiWinKey": "ai_rank_01_win",
+      "aiLoseKey": "ai_rank_01_lose",
+      "difficultyStars": 1
+    },
+    {
+      "id": 2,
+      "chapter": 1,
+      "titleKey": "stage_002",
+      "aiDepth": 1,
+      "aiNodeBudget": 600,
+      "aiRandomPermille": 250,
+      "starter": 1,
+      "openingMoves": "6,3,5,2",
+      "rankKey": "rank_01",
+      "descriptionKey": "stage_desc_002",
+      "aiIntroKey": "ai_rank_01_intro",
+      "aiWinKey": "ai_rank_01_win",
+      "aiLoseKey": "ai_rank_01_lose",
+      "difficultyStars": 1
+    },
+    {
+      "id": 3,
+      "chapter": 1,
+      "titleKey": "stage_003",
+      "aiDepth": 1,
+      "aiNodeBudget": 800,
+      "aiRandomPermille": 200,
+      "starter": 1,
+      "openingMoves": "4,5,6,5,3,5",
+      "rankKey": "rank_01",
+      "descriptionKey": "stage_desc_003",
+      "aiIntroKey": "ai_rank_01_intro",
+      "aiWinKey": "ai_rank_01_win",
+      "aiLoseKey": "ai_rank_01_lose",
+      "difficultyStars": 1
+    },
+    {
+      "id": 4,
+      "chapter": 1,
+      "titleKey": "stage_004",
+      "aiDepth": 2,
+      "aiNodeBudget": 1000,
+      "aiRandomPermille": 150,
+      "starter": 1,
+      "openingMoves": "4,2,5,1,6,2",
+      "rankKey": "rank_02",
+      "descriptionKey": "stage_desc_004",
+      "aiIntroKey": "ai_rank_02_intro",
+      "aiWinKey": "ai_rank_02_win",
+      "aiLoseKey": "ai_rank_02_lose",
+      "difficultyStars": 1
+    },
+    {
+      "id": 5,
+      "chapter": 1,
+      "titleKey": "stage_005",
+      "aiDepth": 1,
+      "aiNodeBudget": 700,
+      "aiRandomPermille": 200,
+      "starter": 1,
+      "openingMoves": "2,0,1,1,0,5",
+      "rankKey": "rank_02",
+      "descriptionKey": "stage_desc_005",
+      "aiIntroKey": "ai_rank_02_intro",
+      "aiWinKey": "ai_rank_02_win",
+      "aiLoseKey": "ai_rank_02_lose",
+      "difficultyStars": 1
+    },
+    {
+      "id": 6,
+      "chapter": 1,
+      "titleKey": "stage_006",
+      "aiDepth": 2,
+      "aiNodeBudget": 1200,
+      "aiRandomPermille": 150,
+      "starter": 1,
+      "openingMoves": "0,5,2,4,4,3,1,2",
+      "rankKey": "rank_02",
+      "descriptionKey": "stage_desc_006",
+      "aiIntroKey": "ai_rank_02_intro",
+      "aiWinKey": "ai_rank_02_win",
+      "aiLoseKey": "ai_rank_02_lose",
+      "difficultyStars": 1
+    },
+    {
+      "id": 7,
+      "chapter": 1,
+      "titleKey": "stage_007",
+      "aiDepth": 2,
+      "aiNodeBudget": 1200,
+      "aiRandomPermille": 180,
+      "starter": 1,
+      "openingMoves": "1,5,3,1,6,4,2,0",
+      "rankKey": "rank_03",
+      "descriptionKey": "stage_desc_007",
+      "aiIntroKey": "ai_rank_03_intro",
+      "aiWinKey": "ai_rank_03_win",
+      "aiLoseKey": "ai_rank_03_lose",
+      "difficultyStars": 2
+    },
+    {
+      "id": 8,
+      "chapter": 1,
+      "titleKey": "stage_008",
+      "aiDepth": 2,
+      "aiNodeBudget": 1500,
+      "aiRandomPermille": 150,
+      "starter": -1,
+      "openingMoves": "0,1,3,2,4",
+      "rankKey": "rank_03",
+      "descriptionKey": "stage_desc_008",
+      "aiIntroKey": "ai_rank_03_intro",
+      "aiWinKey": "ai_rank_03_win",
+      "aiLoseKey": "ai_rank_03_lose",
+      "difficultyStars": 2
+    },
+    {
+      "id": 9,
+      "chapter": 1,
+      "titleKey": "stage_009",
+      "aiDepth": 2,
+      "aiNodeBudget": 1800,
+      "aiRandomPermille": 100,
+      "starter": 1,
+      "openingMoves": "1,4,5,2,2,3,3,2",
+      "rankKey": "rank_03",
+      "descriptionKey": "stage_desc_009",
+      "aiIntroKey": "ai_rank_03_intro",
+      "aiWinKey": "ai_rank_03_win",
+      "aiLoseKey": "ai_rank_03_lose",
+      "difficultyStars": 2
+    },
+    {
+      "id": 10,
+      "chapter": 1,
+      "titleKey": "stage_010",
+      "aiDepth": 2,
+      "aiNodeBudget": 2000,
+      "aiRandomPermille": 100,
+      "starter": 1,
+      "openingMoves": "3,3,4,1,3,1,1,5,3,0,4,0,1,2",
+      "rankKey": "rank_04",
+      "descriptionKey": "stage_desc_010",
+      "aiIntroKey": "ai_rank_04_intro",
+      "aiWinKey": "ai_rank_04_win",
+      "aiLoseKey": "ai_rank_04_lose",
+      "difficultyStars": 2
+    },
+    {
+      "id": 11,
+      "chapter": 2,
+      "titleKey": "stage_011",
+      "aiDepth": 2,
+      "aiNodeBudget": 2200,
+      "aiRandomPermille": 100,
+      "starter": 1,
+      "openingMoves": "5,2,3,1,0,0,1,0,0,4,1,5",
+      "rankKey": "rank_04",
+      "descriptionKey": "stage_desc_011",
+      "aiIntroKey": "ai_rank_04_intro",
+      "aiWinKey": "ai_rank_04_win",
+      "aiLoseKey": "ai_rank_04_lose",
+      "difficultyStars": 2
+    },
+    {
+      "id": 12,
+      "chapter": 2,
+      "titleKey": "stage_012",
+      "aiDepth": 3,
+      "aiNodeBudget": 3500,
+      "aiRandomPermille": 80,
+      "starter": 1,
+      "openingMoves": "6,1,6,6,5,3,4,5,1,3,3,2,0,6,6,2",
+      "rankKey": "rank_04",
+      "descriptionKey": "stage_desc_012",
+      "aiIntroKey": "ai_rank_04_intro",
+      "aiWinKey": "ai_rank_04_win",
+      "aiLoseKey": "ai_rank_04_lose",
+      "difficultyStars": 2
+    },
+    {
+      "id": 13,
+      "chapter": 2,
+      "titleKey": "stage_013",
+      "aiDepth": 2,
+      "aiNodeBudget": 2500,
+      "aiRandomPermille": 120,
+      "starter": 1,
+      "openingMoves": "0,0,4,5,6,0,1,5,6,3",
+      "rankKey": "rank_05",
+      "descriptionKey": "stage_desc_013",
+      "aiIntroKey": "ai_rank_05_intro",
+      "aiWinKey": "ai_rank_05_win",
+      "aiLoseKey": "ai_rank_05_lose",
+      "difficultyStars": 3
+    },
+    {
+      "id": 14,
+      "chapter": 2,
+      "titleKey": "stage_014",
+      "aiDepth": 3,
+      "aiNodeBudget": 4000,
+      "aiRandomPermille": 80,
+      "starter": 1,
+      "openingMoves": "0,3,3,3,6,1,1,3,6,1,2,4",
+      "rankKey": "rank_05",
+      "descriptionKey": "stage_desc_014",
+      "aiIntroKey": "ai_rank_05_intro",
+      "aiWinKey": "ai_rank_05_win",
+      "aiLoseKey": "ai_rank_05_lose",
+      "difficultyStars": 3
+    },
+    {
+      "id": 15,
+      "chapter": 2,
+      "titleKey": "stage_015",
+      "aiDepth": 3,
+      "aiNodeBudget": 4000,
+      "aiRandomPermille": 80,
+      "starter": -1,
+      "openingMoves": "2,1,1,2,1,1,5,2,6,2,6",
+      "rankKey": "rank_05",
+      "descriptionKey": "stage_desc_015",
+      "aiIntroKey": "ai_rank_05_intro",
+      "aiWinKey": "ai_rank_05_win",
+      "aiLoseKey": "ai_rank_05_lose",
+      "difficultyStars": 3
+    },
+    {
+      "id": 16,
+      "chapter": 2,
+      "titleKey": "stage_016",
+      "aiDepth": 3,
+      "aiNodeBudget": 4500,
+      "aiRandomPermille": 60,
+      "starter": 1,
+      "openingMoves": "3,5,4,6,3,5,5,1,3,5,4,2,5,3",
+      "rankKey": "rank_06",
+      "descriptionKey": "stage_desc_016",
+      "aiIntroKey": "ai_rank_06_intro",
+      "aiWinKey": "ai_rank_06_win",
+      "aiLoseKey": "ai_rank_06_lose",
+      "difficultyStars": 3
+    },
+    {
+      "id": 17,
+      "chapter": 2,
+      "titleKey": "stage_017",
+      "aiDepth": 2,
+      "aiNodeBudget": 3000,
+      "aiRandomPermille": 100,
+      "starter": 1,
+      "openingMoves": "3,5,0,1,0,3,1,3,3,6,2,6,2,5",
+      "rankKey": "rank_06",
+      "descriptionKey": "stage_desc_017",
+      "aiIntroKey": "ai_rank_06_intro",
+      "aiWinKey": "ai_rank_06_win",
+      "aiLoseKey": "ai_rank_06_lose",
+      "difficultyStars": 3
+    },
+    {
+      "id": 18,
+      "chapter": 2,
+      "titleKey": "stage_018",
+      "aiDepth": 3,
+      "aiNodeBudget": 5000,
+      "aiRandomPermille": 60,
+      "starter": 1,
+      "openingMoves": "0,1,4,2,6,6,2,4,1,5,2,1,6,3",
+      "rankKey": "rank_06",
+      "descriptionKey": "stage_desc_018",
+      "aiIntroKey": "ai_rank_06_intro",
+      "aiWinKey": "ai_rank_06_win",
+      "aiLoseKey": "ai_rank_06_lose",
+      "difficultyStars": 3
+    },
+    {
+      "id": 19,
+      "chapter": 2,
+      "titleKey": "stage_019",
+      "aiDepth": 3,
+      "aiNodeBudget": 5000,
+      "aiRandomPermille": 60,
+      "starter": 1,
+      "openingMoves": "4,0,4,3,5,1,3,4,0,4,2,1",
+      "rankKey": "rank_07",
+      "descriptionKey": "stage_desc_019",
+      "aiIntroKey": "ai_rank_07_intro",
+      "aiWinKey": "ai_rank_07_win",
+      "aiLoseKey": "ai_rank_07_lose",
+      "difficultyStars": 4
+    },
+    {
+      "id": 20,
+      "chapter": 2,
+      "titleKey": "stage_020",
+      "aiDepth": 4,
+      "aiNodeBudget": 6500,
+      "aiRandomPermille": 40,
+      "starter": 1,
+      "openingMoves": "2,5,5,3,6,5,3,0,5,6,1,4,3,2,6,2,0,1",
+      "rankKey": "rank_07",
+      "descriptionKey": "stage_desc_020",
+      "aiIntroKey": "ai_rank_07_intro",
+      "aiWinKey": "ai_rank_07_win",
+      "aiLoseKey": "ai_rank_07_lose",
+      "difficultyStars": 4
+    },
+    {
+      "id": 21,
+      "chapter": 3,
+      "titleKey": "stage_021",
+      "aiDepth": 3,
+      "aiNodeBudget": 6000,
+      "aiRandomPermille": 60,
+      "starter": 1,
+      "openingMoves": "5,1,3,3,4,2,1,2,4,6,2,1,2,4,6,6,6,2",
+      "rankKey": "rank_07",
+      "descriptionKey": "stage_desc_021",
+      "aiIntroKey": "ai_rank_07_intro",
+      "aiWinKey": "ai_rank_07_win",
+      "aiLoseKey": "ai_rank_07_lose",
+      "difficultyStars": 4
+    },
+    {
+      "id": 22,
+      "chapter": 3,
+      "titleKey": "stage_022",
+      "aiDepth": 4,
+      "aiNodeBudget": 8500,
+      "aiRandomPermille": 40,
+      "starter": -1,
+      "openingMoves": "2,1,5,0,0,2,0,6,3,3,6,6,6,3,2,1,5",
+      "rankKey": "rank_08",
+      "descriptionKey": "stage_desc_022",
+      "aiIntroKey": "ai_rank_08_intro",
+      "aiWinKey": "ai_rank_08_win",
+      "aiLoseKey": "ai_rank_08_lose",
+      "difficultyStars": 4
+    },
+    {
+      "id": 23,
+      "chapter": 3,
+      "titleKey": "stage_023",
+      "aiDepth": 4,
+      "aiNodeBudget": 9000,
+      "aiRandomPermille": 30,
+      "starter": 1,
+      "openingMoves": "5,2,2,6,1,3,2,2,4,0,3,5,1,4,5,1,2,0",
+      "rankKey": "rank_08",
+      "descriptionKey": "stage_desc_023",
+      "aiIntroKey": "ai_rank_08_intro",
+      "aiWinKey": "ai_rank_08_win",
+      "aiLoseKey": "ai_rank_08_lose",
+      "difficultyStars": 4
+    },
+    {
+      "id": 24,
+      "chapter": 3,
+      "titleKey": "stage_024",
+      "aiDepth": 3,
+      "aiNodeBudget": 6500,
+      "aiRandomPermille": 50,
+      "starter": 1,
+      "openingMoves": "0,6,5,0,3,6,5,1,1,1,2,4,6,1,4,4",
+      "rankKey": "rank_08",
+      "descriptionKey": "stage_desc_024",
+      "aiIntroKey": "ai_rank_08_intro",
+      "aiWinKey": "ai_rank_08_win",
+      "aiLoseKey": "ai_rank_08_lose",
+      "difficultyStars": 4
+    },
+    {
+      "id": 25,
+      "chapter": 3,
+      "titleKey": "stage_025",
+      "aiDepth": 4,
+      "aiNodeBudget": 11000,
+      "aiRandomPermille": 25,
+      "starter": 1,
+      "openingMoves": "5,4,4,3,4,4,1,1,1,3,2,4,2,0,1,6,1,1",
+      "rankKey": "rank_09",
+      "descriptionKey": "stage_desc_025",
+      "aiIntroKey": "ai_rank_09_intro",
+      "aiWinKey": "ai_rank_09_win",
+      "aiLoseKey": "ai_rank_09_lose",
+      "difficultyStars": 5
+    },
+    {
+      "id": 26,
+      "chapter": 3,
+      "titleKey": "stage_026",
+      "aiDepth": 4,
+      "aiNodeBudget": 12000,
+      "aiRandomPermille": 20,
+      "starter": 1,
+      "openingMoves": "0,4,6,3,3,5,0,4,4,3,2,3,3,0,4,1,0,2,2,4",
+      "rankKey": "rank_09",
+      "descriptionKey": "stage_desc_026",
+      "aiIntroKey": "ai_rank_09_intro",
+      "aiWinKey": "ai_rank_09_win",
+      "aiLoseKey": "ai_rank_09_lose",
+      "difficultyStars": 5
+    },
+    {
+      "id": 27,
+      "chapter": 3,
+      "titleKey": "stage_027",
+      "aiDepth": 4,
+      "aiNodeBudget": 14000,
+      "aiRandomPermille": 20,
+      "starter": -1,
+      "openingMoves": "4,3,6,0,0,3,2,5,6,5,6,6,1,2,6,1,5,1,3",
+      "rankKey": "rank_09",
+      "descriptionKey": "stage_desc_027",
+      "aiIntroKey": "ai_rank_09_intro",
+      "aiWinKey": "ai_rank_09_win",
+      "aiLoseKey": "ai_rank_09_lose",
+      "difficultyStars": 5
+    },
+    {
+      "id": 28,
+      "chapter": 3,
+      "titleKey": "stage_028",
+      "aiDepth": 5,
+      "aiNodeBudget": 18000,
+      "aiRandomPermille": 10,
+      "starter": 1,
+      "openingMoves": "4,0,3,3,6,2,6,6,1,5,6,5,3,1,2,4,2,2,0,6",
+      "rankKey": "rank_10",
+      "descriptionKey": "stage_desc_028",
+      "aiIntroKey": "ai_rank_10_intro",
+      "aiWinKey": "ai_rank_10_win",
+      "aiLoseKey": "ai_rank_10_lose",
+      "difficultyStars": 5
+    },
+    {
+      "id": 29,
+      "chapter": 3,
+      "titleKey": "stage_029",
+      "aiDepth": 5,
+      "aiNodeBudget": 22000,
+      "aiRandomPermille": 0,
+      "starter": 1,
+      "openingMoves": "6,5,6,1,6,2,4,0,4,1,4,0,5,0,2,6,5,5,0,0,2,4",
+      "rankKey": "rank_10",
+      "descriptionKey": "stage_desc_029",
+      "aiIntroKey": "ai_rank_10_intro",
+      "aiWinKey": "ai_rank_10_win",
+      "aiLoseKey": "ai_rank_10_lose",
+      "difficultyStars": 5
+    },
+    {
+      "id": 30,
+      "chapter": 3,
+      "titleKey": "stage_030",
+      "aiDepth": 6,
+      "aiNodeBudget": 26000,
+      "aiRandomPermille": 0,
+      "starter": 1,
+      "openingMoves": "2,4,0,4,5,0,0,1,0,1,4,6,3,1,4,4,1,6,4,2,3,1",
+      "rankKey": "rank_10",
+      "descriptionKey": "stage_desc_030",
+      "aiIntroKey": "ai_rank_10_intro",
+      "aiWinKey": "ai_rank_10_win",
+      "aiLoseKey": "ai_rank_10_lose",
+      "difficultyStars": 5
+    }
+  ],
+  "visualRanges": [
+    [
+      "Strings",
+      "B65:E65",
+      "subtitle"
+    ],
+    [
+      "Strings",
+      "B228:E231",
+      "rank-labels"
+    ],
+    [
+      "Strings",
+      "B238:E241",
+      "first"
+    ],
+    [
+      "Stages",
+      "O5:Q7",
+      "stage1"
+    ],
+    [
+      "Strings",
+      "B142:E155",
+      "dialogue-142"
+    ],
+    [
+      "Strings",
+      "B156:E169",
+      "dialogue-156"
+    ],
+    [
+      "Strings",
+      "B170:E181",
+      "dialogue-170"
+    ]
+  ]
+}

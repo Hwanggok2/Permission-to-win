@@ -54,5 +54,6 @@
     "progress": "Persisted match IDs plus HashSet for idempotency; storage grows per completed match, long-term compaction remains future work",
     "ai": "Existing iterative deepening/alpha-beta and cooperative 16-node stepping retained. Clone + Score + iterator allocations exist per branch; physical-device GC/p95 not measured. No pooling or architecture rewrite.",
     "board": "int[42] cells + int[7] heights; constant-time landing lookup"
-  }
+  },
+  "supersededByGraphicsRefresh": "Current graphics/result contract and evidence: GRAPHICS-REFRESH-REQUEST.json / Evidence/graphics-refresh-verification.json. Existing document is historical baseline."
 }

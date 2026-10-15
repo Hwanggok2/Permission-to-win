@@ -15,7 +15,8 @@ $qaSources = @(
     'Client/Assets/StageGame/Scripts/Core/StringTable.cs',
     'Client/Assets/StageGame/Scripts/Core/ProgressStore.cs',
     'Client/Assets/StageGame/Scripts/Platform/Advertising.cs',
-    'Client/Assets/StageGame/Scripts/UI/GameApp.cs'
+    'Client/Assets/StageGame/Scripts/UI/GameApp.cs',
+    'Client/Assets/StageGame/Scripts/UI/TabletopTheme.cs'
 )
 $qaManifest = foreach ($qaSource in $qaSources) {
     $qaOriginal = Join-Path $qaRoot $qaSource
@@ -45,13 +46,15 @@ foreach ($qaInput in @(
     @{source='Docs/QA/Evidence/qa-l10n-core-v1-20261014/ClientData/strings.json'; name='previous-123-strings.json'},
     @{source='Client/STAGE-MAP-REQUEST.json'; name='stage-map-request.json'},
     @{source='Tests/Fixtures/stage-ux-approved-copy-changes.json'; name='approved-copy-changes.json'},
+    @{source='Tests/Fixtures/rank-ui-interaction-cases.json'; name='rank-ui-interaction-cases.json'},
+    @{source='Tests/Fixtures/rank-ui-crossing-win-cases.json'; name='rank-ui-crossing-win-cases.json'},
     @{source='Client/Assets/StageGame/Editor/StageMapBuilder.cs'; name='StageMapBuilder.cs'}
 )) {
     $qaCopy = Join-Path $qaAuditInputs $qaInput.name
     Copy-Item -LiteralPath (Join-Path $qaRoot $qaInput.source) -Destination $qaCopy
     $qaManifest += [pscustomobject]@{source=$qaInput.source; sha256=(Get-FileHash -LiteralPath $qaCopy -Algorithm SHA256).Hash}
 }
-foreach ($qaTool in @('Tests/run-independent.ps1','Tests/IndependentHarness/Program.cs','Tests/IndependentHarness/LocalizationChecks.cs','Tests/IndependentHarness/StageUxChecks.cs','Tests/IndependentHarness/UnityStubs.cs','Tests/IndependentHarness/IndependentHarness.csproj')) {
+foreach ($qaTool in @('Tests/run-independent.ps1','Tests/IndependentHarness/Program.cs','Tests/IndependentHarness/LocalizationChecks.cs','Tests/IndependentHarness/StageUxChecks.cs','Tests/IndependentHarness/GraphicsChecks.cs','Tests/IndependentHarness/UnityStubs.cs','Tests/IndependentHarness/IndependentHarness.csproj')) {
     $qaCopy = Join-Path $qaAuditInputs (Split-Path $qaTool -Leaf)
     Copy-Item -LiteralPath (Join-Path $qaRoot $qaTool) -Destination $qaCopy
     $qaManifest += [pscustomobject]@{source=$qaTool; sha256=(Get-FileHash -LiteralPath $qaCopy -Algorithm SHA256).Hash}

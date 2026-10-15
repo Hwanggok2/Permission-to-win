@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-15",
+  "status": "UNITY_APPLIED_EDITOR_VERIFIED",
+  "redrawnCharacters": 18,
+  "redrawnStates": 54,
+  "thisRevisionCharacters": [
+    "C02",
+    "C03",
+    "C04"
+  ],
+  "thisRevisionStates": 9,
+  "selectedAtlases": 20,
+  "selectedStates": 60,
+  "manualCorrections": [
+    "C08",
+    "C13",
+    "C16",
+    "C02"
+  ],
+  "pendingArtDetails": [],
+  "manualRankReview": "C02 defeat corrected to one stripe; prior C08 three chevrons, C13 three diamonds and C16 three flowers retained. Raised hands naturally obscure portions of other insignia/flags.",
+  "styleReview": {
+    "date": "2026-10-15",
+    "status": "REVIEWED",
+    "reviewedGameCaptures": 69,
+    "reviewMethod": "Inspected three contact sheets containing all 63 native 390-wide portrait crops, six native-resolution C03 crops, and full C03 stage 3 / tournament stage 26 screens. Inspected all nine C02-C04 atlas states and the final C02 insignia close-up.",
+    "style": "C02-C04 now have coarse stepped face, hair and hand silhouettes matching the recruit anchor. Distinct anxious, playful and analytical personalities retained. C05-C19 selected v5 portraits remain chunky pixel art; rounded body/face traits retain stepped contours.",
+    "uniform": "C02 one stripe, C03 two stripes, C04 three stripes in all states; C02 defeat extra stripe removed. C01 has no rank; final C01 has one stripe. Existing v5 shoulder corrections retained.",
+    "screens": [
+      "game-portraits-1.png",
+      "game-portraits-2.png",
+      "game-portraits-3.png",
+      "oh-junho-in-game.png",
+      "style-comparison.png",
+      "C02-rank-after.png"
+    ],
+    "scope": "Visual review by the assistant, not user acceptance or physical-device testing. Forced portrait-state captures verify art display, not dialogue/result timing."
+  },
+  "unityTests": {
+    "result": "Passed",
+    "total": "3",
+    "passed": "3",
+    "failed": "0",
+    "skipped": "0"
+  },
+  "unityTestScope": "Portrait selection through 30 stages and match states, explicit selected revision for every character; point/no-mipmap/uncompressed imports; saved prefab references; all 19 characters plus final variant and C03 tournament appearance in three states. C03 stages 3 and 26 also captured at 1080 width.",
+  "runtimeReferenceAudit": "Client/Evidence/pixel-complete-20261015/runtime-reference-audit.json",
+  "captures": 69,
+  "captureWidths": [
+    390,
+    1080
+  ],
+  "previousV4AtlasesPreserved": 20,
+  "manualAlphaAndOutsideRegionsPreserved": true,
+  "priorFullSuite": "Client/Evidence/opening-ranks-20261015/unity-tests.xml (87 passed before this art revision; not rerun)",
+  "newAndroidBuild": false,
+  "newWebGLBuild": false,
+  "physicalDeviceTest": false,
+  "sourceFreeze": "Client/Evidence/pixel-complete-20261015/source-freeze.json"
+}

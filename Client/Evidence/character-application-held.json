@@ -1,0 +1,26 @@
+{
+  "status": "USER_HELD__RUNTIME_RESTORED_TO_VERIFIED_PROGRESSION",
+  "recordedAtUtc": "2026-10-14T16:06:04.3259902Z",
+  "instruction": "Image approval and separate user application instruction required before further Client character edits.",
+  "restoredFiles": [
+    "Assets/StageGame/Scripts/UI/RankGameApp.cs",
+    "Assets/StageGame/Scripts/UI/RankTheme.cs"
+  ],
+  "baseline": "Evidence/progression-source-freeze.json",
+  "assetsMatched": 321,
+  "newAssets": 0,
+  "priorBuildFilesMatched": 17,
+  "archive": "Archive/Character-20261015",
+  "drafts": [
+    "RankGameApp-state-draft.cs.txt",
+    "RankTheme-state-draft.cs.txt"
+  ],
+  "atlas": "RecruitThreeStateV11-not-applied.png",
+  "unityImportPerformed": false,
+  "prefabConnectionPerformed": false,
+  "unityRunPerformed": false,
+  "newBuildOrBrowserRunPerformed": false,
+  "draftTested": false,
+  "dataTextChangePerformed": false,
+  "note": "Previous lobby spacing,18ranks,half-star difficulty remain fully intact. No character runtime change remains."
+}

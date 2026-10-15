@@ -1,0 +1,1185 @@
+{
+  "method": "Snapshot and static serialized-reference read only; no QA Unity/browser/render execution",
+  "files": 214,
+  "themeReferences": [
+    {
+      "field": "panel",
+      "guid": "fd2d662f9f6dd784f9837c6a04143ae8",
+      "resolved": true
+    },
+    {
+      "field": "primary",
+      "guid": "5f737b9d260d64048ac2a927d80b41fe",
+      "resolved": true
+    },
+    {
+      "field": "secondary",
+      "guid": "a59b75e49570b4848b5eb8fd15cf65d6",
+      "resolved": true
+    },
+    {
+      "field": "board",
+      "guid": "44d74b9dbacfd7f40b89578cb8b2ef53",
+      "resolved": true
+    },
+    {
+      "field": "hole",
+      "guid": "b35e58e7e1edc6a48bf1acc6894d9fde",
+      "resolved": true
+    },
+    {
+      "field": "player",
+      "guid": "fecbe46f79afe9443a5680e310b692a8",
+      "resolved": true
+    },
+    {
+      "field": "opponent",
+      "guid": "40f0bd4e614d9ce4595e44b60b51c9a1",
+      "resolved": true
+    },
+    {
+      "field": "playerWin",
+      "guid": "0e5d2f348c46f994d83b9159e1c6c7f5",
+      "resolved": true
+    },
+    {
+      "field": "opponentWin",
+      "guid": "1d37f2919afc4144498a7a5033e1ffc6",
+      "resolved": true
+    },
+    {
+      "field": "nodeCurrent",
+      "guid": "38f5b1e7cc435ef4fb890b49e0f60718",
+      "resolved": true
+    },
+    {
+      "field": "nodeCleared",
+      "guid": "89b7b251fe506e1449ffc2dc5cf212f0",
+      "resolved": true
+    },
+    {
+      "field": "nodeLocked",
+      "guid": "046e3f70c23ae364e9227051afbb32f2",
+      "resolved": true
+    },
+    {
+      "field": "nodeSelected",
+      "guid": "4a8f082a6b8d6d843b0cfb3324ac319b",
+      "resolved": true
+    },
+    {
+      "field": "pause",
+      "guid": "342d6a94a565d0c4baad2e78f3751391",
+      "resolved": true
+    },
+    {
+      "field": "help",
+      "guid": "eac0d85e02e0c8248b9fa340c491e369",
+      "resolved": true
+    },
+    {
+      "field": "settings",
+      "guid": "b92c5246f0435044594875f2a7831325",
+      "resolved": true
+    },
+    {
+      "field": "chevron",
+      "guid": "3c1782cca156a53468e86bf2b5d10d6f",
+      "resolved": true
+    },
+    {
+      "field": "locked",
+      "guid": "a31bcb5ee1726ae47b235f8061fa9554",
+      "resolved": true
+    },
+    {
+      "field": "check",
+      "guid": "815782ecfa391294590a633ee11cf7ae",
+      "resolved": true
+    },
+    {
+      "field": "play",
+      "guid": "6a5b8663241190a429365d64bf389849",
+      "resolved": true
+    },
+    {
+      "field": "close",
+      "guid": "e9c804ae9cdf31c479b2afe157c213c1",
+      "resolved": true
+    }
+  ],
+  "prefabSpriteReferences": [
+    {
+      "prefab": "Board.prefab",
+      "fileID": "21300000",
+      "guid": "44d74b9dbacfd7f40b89578cb8b2ef53",
+      "resolved": true
+    },
+    {
+      "prefab": "Cell.prefab",
+      "fileID": "21300000",
+      "guid": "b35e58e7e1edc6a48bf1acc6894d9fde",
+      "resolved": true
+    },
+    {
+      "prefab": "CloseButton.prefab",
+      "fileID": "21300000",
+      "guid": "a59b75e49570b4848b5eb8fd15cf65d6",
+      "resolved": true
+    },
+    {
+      "prefab": "CloseButton.prefab",
+      "fileID": "21300000",
+      "guid": "e9c804ae9cdf31c479b2afe157c213c1",
+      "resolved": true
+    },
+    {
+      "prefab": "ModalFrame.prefab",
+      "fileID": "21300000",
+      "guid": "fd2d662f9f6dd784f9837c6a04143ae8",
+      "resolved": true
+    },
+    {
+      "prefab": "PrimaryButton.prefab",
+      "fileID": "21300000",
+      "guid": "a59b75e49570b4848b5eb8fd15cf65d6",
+      "resolved": true
+    },
+    {
+      "prefab": "StageCard.prefab",
+      "fileID": "21300000",
+      "guid": "fd2d662f9f6dd784f9837c6a04143ae8",
+      "resolved": true
+    },
+    {
+      "prefab": "StageNode.prefab",
+      "fileID": "21300000",
+      "guid": "046e3f70c23ae364e9227051afbb32f2",
+      "resolved": true
+    },
+    {
+      "prefab": "StageNode.prefab",
+      "fileID": "21300000",
+      "guid": "a31bcb5ee1726ae47b235f8061fa9554",
+      "resolved": true
+    },
+    {
+      "prefab": "GameScreen.prefab",
+      "fileID": "21300000",
+      "guid": "fd2d662f9f6dd784f9837c6a04143ae8",
+      "resolved": true
+    },
+    {
+      "prefab": "GameScreen.prefab",
+      "fileID": "21300000",
+      "guid": "fd2d662f9f6dd784f9837c6a04143ae8",
+      "resolved": true
+    },
+    {
+      "prefab": "GameScreen.prefab",
+      "fileID": "21300000",
+      "guid": "fd2d662f9f6dd784f9837c6a04143ae8",
+      "resolved": true
+    },
+    {
+      "prefab": "GameScreen.prefab",
+      "fileID": "21300000",
+      "guid": "fd2d662f9f6dd784f9837c6a04143ae8",
+      "resolved": true
+    },
+    {
+      "prefab": "GameScreen.prefab",
+      "fileID": "21300000",
+      "guid": "fd2d662f9f6dd784f9837c6a04143ae8",
+      "resolved": true
+    },
+    {
+      "prefab": "GameScreen.prefab",
+      "fileID": "21300000",
+      "guid": "342d6a94a565d0c4baad2e78f3751391",
+      "resolved": true
+    },
+    {
+      "prefab": "GameScreen.prefab",
+      "fileID": "21300000",
+      "guid": "fecbe46f79afe9443a5680e310b692a8",
+      "resolved": true
+    },
+    {
+      "prefab": "GameScreen.prefab",
+      "fileID": "21300000",
+      "guid": "fd2d662f9f6dd784f9837c6a04143ae8",
+      "resolved": true
+    },
+    {
+      "prefab": "GameScreen.prefab",
+      "fileID": "21300000",
+      "guid": "fd2d662f9f6dd784f9837c6a04143ae8",
+      "resolved": true
+    },
+    {
+      "prefab": "GameScreen.prefab",
+      "fileID": "21300000",
+      "guid": "40f0bd4e614d9ce4595e44b60b51c9a1",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "fecbe46f79afe9443a5680e310b692a8",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "b35e58e7e1edc6a48bf1acc6894d9fde",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "b35e58e7e1edc6a48bf1acc6894d9fde",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "b35e58e7e1edc6a48bf1acc6894d9fde",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "44d74b9dbacfd7f40b89578cb8b2ef53",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "fecbe46f79afe9443a5680e310b692a8",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "fecbe46f79afe9443a5680e310b692a8",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "fecbe46f79afe9443a5680e310b692a8",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "b35e58e7e1edc6a48bf1acc6894d9fde",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "fecbe46f79afe9443a5680e310b692a8",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "fecbe46f79afe9443a5680e310b692a8",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "44d74b9dbacfd7f40b89578cb8b2ef53",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "fecbe46f79afe9443a5680e310b692a8",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "44d74b9dbacfd7f40b89578cb8b2ef53",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "fecbe46f79afe9443a5680e310b692a8",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "b35e58e7e1edc6a48bf1acc6894d9fde",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "b35e58e7e1edc6a48bf1acc6894d9fde",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "b35e58e7e1edc6a48bf1acc6894d9fde",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "b35e58e7e1edc6a48bf1acc6894d9fde",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "fecbe46f79afe9443a5680e310b692a8",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "b35e58e7e1edc6a48bf1acc6894d9fde",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "44d74b9dbacfd7f40b89578cb8b2ef53",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "fecbe46f79afe9443a5680e310b692a8",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "fecbe46f79afe9443a5680e310b692a8",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "fecbe46f79afe9443a5680e310b692a8",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "b35e58e7e1edc6a48bf1acc6894d9fde",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "fecbe46f79afe9443a5680e310b692a8",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "a59b75e49570b4848b5eb8fd15cf65d6",
+      "resolved": true
+    },
+    {
+      "prefab": "HelpModal.prefab",
+      "fileID": "21300000",
+      "guid": "40f0bd4e614d9ce4595e44b60b51c9a1",
+      "resolved": true
+    },
+    {
+      "prefab": "LobbyScreen.prefab",
+      "fileID": "21300000",
+      "guid": "3c1782cca156a53468e86bf2b5d10d6f",
+      "resolved": true
+    },
+    {
+      "prefab": "LobbyScreen.prefab",
+      "fileID": "21300000",
+      "guid": "bce71d0f56ecb7944b6694c4bad4ee52",
+      "resolved": true
+    },
+    {
+      "prefab": "LobbyScreen.prefab",
+      "fileID": "21300000",
+      "guid": "6a5b8663241190a429365d64bf389849",
+      "resolved": true
+    },
+    {
+      "prefab": "LobbyScreen.prefab",
+      "fileID": "21300000",
+      "guid": "3c1782cca156a53468e86bf2b5d10d6f",
+      "resolved": true
+    },
+    {
+      "prefab": "LobbyScreen.prefab",
+      "fileID": "21300000",
+      "guid": "fecbe46f79afe9443a5680e310b692a8",
+      "resolved": true
+    },
+    {
+      "prefab": "LobbyScreen.prefab",
+      "fileID": "21300000",
+      "guid": "bce71d0f56ecb7944b6694c4bad4ee52",
+      "resolved": true
+    },
+    {
+      "prefab": "LobbyScreen.prefab",
+      "fileID": "21300000",
+      "guid": "40f0bd4e614d9ce4595e44b60b51c9a1",
+      "resolved": true
+    },
+    {
+      "prefab": "LobbyScreen.prefab",
+      "fileID": "21300000",
+      "guid": "2a6d7d76600c011438250e3d2ba95598",
+      "resolved": true
+    },
+    {
+      "prefab": "LobbyScreen.prefab",
+      "fileID": "21300000",
+      "guid": "bce71d0f56ecb7944b6694c4bad4ee52",
+      "resolved": true
+    },
+    {
+      "prefab": "LobbyScreen.prefab",
+      "fileID": "21300000",
+      "guid": "fecbe46f79afe9443a5680e310b692a8",
+      "resolved": true
+    },
+    {
+      "prefab": "LobbyScreen.prefab",
+      "fileID": "21300000",
+      "guid": "eac0d85e02e0c8248b9fa340c491e369",
+      "resolved": true
+    },
+    {
+      "prefab": "LobbyScreen.prefab",
+      "fileID": "21300000",
+      "guid": "bce71d0f56ecb7944b6694c4bad4ee52",
+      "resolved": true
+    },
+    {
+      "prefab": "LobbyScreen.prefab",
+      "fileID": "21300000",
+      "guid": "40f0bd4e614d9ce4595e44b60b51c9a1",
+      "resolved": true
+    },
+    {
+      "prefab": "LobbyScreen.prefab",
+      "fileID": "21300000",
+      "guid": "b92c5246f0435044594875f2a7831325",
+      "resolved": true
+    },
+    {
+      "prefab": "ResultModal.prefab",
+      "fileID": "21300000",
+      "guid": "2a6d7d76600c011438250e3d2ba95598",
+      "resolved": true
+    }
+  ],
+  "appThemeBound": true,
+  "stageNodeIconCount": 10,
+  "missingIconLocalIds": [],
+  "priorComparisons": [
+    {
+      "path": "Client/Assets/StageGame/Editor/StageMapBuilder.cs",
+      "unchanged": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/AppRoot.prefab",
+      "unchanged": false
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/Board/Board.prefab",
+      "unchanged": false
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/Board/Cell.prefab",
+      "unchanged": false
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Common/CloseButton.prefab",
+      "unchanged": false
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Common/ModalFrame.prefab",
+      "unchanged": false
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Common/PrimaryButton.prefab",
+      "unchanged": false
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Common/StageCard.prefab",
+      "unchanged": false
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Common/StageNode.prefab",
+      "unchanged": false
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Common/StageNode.prefab.meta",
+      "unchanged": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Screens/ConfirmModal.prefab",
+      "unchanged": false
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Screens/GameScreen.prefab",
+      "unchanged": false
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Screens/HelpModal.prefab",
+      "unchanged": false
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Screens/LobbyScreen.prefab",
+      "unchanged": false
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Screens/NoticesModal.prefab",
+      "unchanged": false
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Screens/ResultModal.prefab",
+      "unchanged": false
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Screens/SettingsModal.prefab",
+      "unchanged": false
+    },
+    {
+      "path": "Client/Assets/StageGame/Resources/GameData/ads.json",
+      "unchanged": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Resources/GameData/stages.json",
+      "unchanged": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Resources/GameData/strings.json",
+      "unchanged": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Scripts/Core/AiSearch.cs",
+      "unchanged": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Scripts/Core/ConnectFourBoard.cs",
+      "unchanged": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Scripts/Core/GameData.cs",
+      "unchanged": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Scripts/Core/ProgressStore.cs",
+      "unchanged": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Scripts/Core/StringTable.cs",
+      "unchanged": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Scripts/Platform/Advertising.cs",
+      "unchanged": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Scripts/UI/GameApp.cs",
+      "unchanged": false
+    },
+    {
+      "path": "Client/Assets/StageGame/Scripts/UI/HostLayout.cs",
+      "unchanged": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Scripts/UI/SafeAreaFitter.cs",
+      "unchanged": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Tests/EditMode/LocalizationTests.cs",
+      "unchanged": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Tests/EditMode/PlayFlowTests.cs",
+      "unchanged": false
+    },
+    {
+      "path": "Client/Assets/StageGame/Tests/EditMode/StageMapTests.cs",
+      "unchanged": false
+    },
+    {
+      "path": "GameData/Generated/ads.json",
+      "unchanged": true
+    },
+    {
+      "path": "GameData/Generated/stages.json",
+      "unchanged": true
+    },
+    {
+      "path": "GameData/Generated/strings.json",
+      "unchanged": true
+    }
+  ],
+  "reapply": [
+    {
+      "path": "Assets/StageGame/Prefabs/AppRoot.prefab",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/Board/Board.prefab",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/Board/Cell.prefab",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/CloseButton.prefab",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/ModalFrame.prefab",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/PrimaryButton.prefab",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/StageCard.prefab",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/StageNode.prefab",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/ConfirmModal.prefab",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/GameScreen.prefab",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/HelpModal.prefab",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/LobbyScreen.prefab",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/NoticesModal.prefab",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/ResultModal.prefab",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/SettingsModal.prefab",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/AiDiamond.png",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/AiDiamond.png.meta",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/AiDiamondWin.png",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/AiDiamondWin.png.meta",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/BoardTeal.png",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/BoardTeal.png.meta",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/ButtonCream.png",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/ButtonCream.png.meta",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/ButtonMint.png",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/ButtonMint.png.meta",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconCheck.png",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconCheck.png.meta",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconChevron.png",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconChevron.png.meta",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconClose.png",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconClose.png.meta",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconHelp.png",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconHelp.png.meta",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconLock.png",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconLock.png.meta",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconPause.png",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconPause.png.meta",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconPlay.png",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconPlay.png.meta",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconSettings.png",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/IconSettings.png.meta",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/NodeCleared.png",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/NodeCleared.png.meta",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/NodeCurrent.png",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/NodeCurrent.png.meta",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/NodeLocked.png",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/NodeLocked.png.meta",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/NodeSelected.png",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/NodeSelected.png.meta",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/PanelCream.png",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/PanelCream.png.meta",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/PlayerRing.png",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/PlayerRing.png.meta",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/PlayerRingWin.png",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/PlayerRingWin.png.meta",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/RecessedHole.png",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/RecessedHole.png.meta",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/TabletopTheme.asset",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Art/TabletopUI/TabletopTheme.asset.meta",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    },
+    {
+      "path": "Assets/StageGame/Scenes/Main.unity",
+      "reportedUnchanged": true,
+      "matchesCurrent": true
+    }
+  ],
+  "unity": {
+    "total": 59,
+    "passed": 59,
+    "failed": 0,
+    "startUtc": "2026-10-14 13:25:42Z",
+    "endUtc": "2026-10-14 13:25:48Z",
+    "cases": [
+      {
+        "name": "StageGame.Tests.CoreTests.AdPolicyRequiresGraceMatchesAndBothCooldowns",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.AiBlocksImmediateLossEvenAtMaximumMistakes",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.AiRespectsNodeAndStepBudgetsAndLeavesBoardUntouched",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.AiTakesWinBeforeRandomMistake",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.BundledDataReplaysEveryStageAndAiReturnsLegalMove",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.CloneDoesNotMutateOriginal",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.GravityAlternatesAndRejectsFullColumn",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(\"0,0,0,0,0,0,0\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(\"0,6,1,6,2,5,3\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(\"7\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(\"a\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(\"0,\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.MalformedDataCannotSilentlyLoad",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.NoFillNeverRewardsAndEditorDuplicateOnlyGrantsOnce",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.ProgressRejectsNonAdjacentAndReloadedDuplicateResults",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.RewardCompletesOnlyOnceAndRejectsStaleCallbacks",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.SavedPrefabReferencesAndNestedButtonsValidate",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.TruncatedStageCatalogIsRejected",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.UnsuccessfulRewardCanRetryWithoutGrant(Unavailable)",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.UnsuccessfulRewardCanRetryWithoutGrant(Failed)",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.UnsuccessfulRewardCanRetryWithoutGrant(Cancelled)",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.HostLayoutTests.BrowserFallbackAndExplicitControlsUseCssCoordinates",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.HostLayoutTests.InvalidInsetsFallBackToZeroWithoutRemovingHostAllowance",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem(1)",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem(2)",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem(3)",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.HostLayoutTests.SavedGraphicsAndSecondaryLicenseMenuKeepPrefabReferences",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.HostLayoutTests.SideInsetsMergePerEdgeAndOversizedInsetsStayInsideScreen",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.EverySavedUiTextHasAKeyOrExplicitDynamicOwnerAndButtonsHaveTouchArea",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.LanguageLookupFormattingAndUnknownLocaleFollowContract",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.LegacyAndInvalidSavedLocalesPreserveProgressAndDefaultToKorean",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"\",\"Text\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"문구\",\"\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"{0}\",\"{1}\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"{0:00}\",\"{0:00}\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"{broken}\",\"{broken}\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"{1}\",\"{1}\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.PlayFlowTests.BothWinningMovesAnimateBeforeAdsAndTwoResultActions",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.PlayFlowTests.ChapterMapSelectsLockedStagesAndKeepsStatesAcrossLanguages",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.PlayFlowTests.DuplicateRewardCompletionStartsOnlyOneHint",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.PlayFlowTests.EveryStageTitleFitsInBothLanguages",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.PlayFlowTests.HighestAiBudgetYieldsFramesAndReturnsWithinActiveDeadline",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.PlayFlowTests.HostProfilesKeepAllScreensBelowControlsAndPreserveLicenseScroll",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.PlayFlowTests.LanguageButtonsUpdateAllScreensAndSurviveSceneReload",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.PlayFlowTests.RewardIsCancelledByModalBackgroundAndMatchTransition",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.PlayFlowTests.RewardPendingLocksBoardAndTimeoutCancelsLateSuccess",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.PlayFlowTests.SafeAreaRefitsAfterCanvasLayoutChangesWithoutScreenResize",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.PlayFlowTests.SavedSceneSupportsLobbyMatchResultAndProgress",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.PlayFlowTests.TwoResultActionsAndFinalStageClearDriveReplayMap",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.PlayFlowTests.WinningPresentationCancelsCleanlyAndAdTimeoutRejectsLateCompletion",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.StageMapTests.FinalClearSurvivesReloadAndReplayWithoutDuplicateCounters",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.StageMapTests.LegacyProgressInfersOnlyStagesBeforeTheUnlock(1)",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.StageMapTests.LegacyProgressInfersOnlyStagesBeforeTheUnlock(12)",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.StageMapTests.LegacyProgressInfersOnlyStagesBeforeTheUnlock(30)",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.StageMapTests.SavedNodesAndHelpAreNestedAndShowExactlyFourConnectedStones",
+        "result": "Passed"
+      }
+    ]
+  },
+  "changedDuringRead": [],
+  "limits": "GUID/fileID existence does not prove Unity reference type resolution, sprite pixels,9-slice shape,glyph visibility,hitbox or visual acceptance. Reapply is Client-provided evidence; QA did not run builder. Builds and root browser follow separately."
+}

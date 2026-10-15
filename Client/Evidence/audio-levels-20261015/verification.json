@@ -1,0 +1,58 @@
+{
+  "status": "SAVED_PREFAB_AND_LISTENER_OUTPUT_TESTS_PASS",
+  "atUtc": "2026-10-15T11:20:39.923017+00:00",
+  "request": "Music and stone placement too quiet in Unity Editor Play.",
+  "changes": {
+    "musicSourceVolume": {
+      "before": 0.12,
+      "after": 0.3
+    },
+    "stoneOneShotVolumeScale": {
+      "before": 0.3,
+      "after": 1.0
+    }
+  },
+  "applyMethod": "StageGame.Editor.RankUiBuilder.ApplyAudioLevels",
+  "applyLog": "Logs/audio-levels-apply.log",
+  "changedAssets": [
+    "Assets/StageGame/Editor/RankUiBuilder.cs",
+    "Assets/StageGame/Prefabs/RankUI/RankAppRoot.prefab",
+    "Assets/StageGame/Scripts/UI/RankGameApp.cs",
+    "Assets/StageGame/Tests/EditMode/RankMusicTests.cs"
+  ],
+  "sourceFreeze": "Evidence/audio-levels-20261015/source-freeze.json",
+  "editorContext": {
+    "saveExists": false,
+    "soundEnabled": true,
+    "musicMuted": false,
+    "editorMasterMute": "False",
+    "previousMusicVolume": 0.11999999731779099,
+    "listenerVolume": 1.0
+  },
+  "output": {
+    "measurement": "AudioListener.GetOutputData channel0 windows in Unity Play; engine output signal, not microphone or human listening.",
+    "file": "Evidence/audio-levels-20261015/listener-output.json",
+    "musicRmsRatio": 2.5287921865262337,
+    "musicGainDb": 8.058262818970046,
+    "stonePeakRatio": 3.3333330714684823,
+    "stoneGainDb": 10.457574223247965,
+    "offOutputPeak": 0.0
+  },
+  "tests": {
+    "scope": "Targeted music/audio regression",
+    "total": 7,
+    "passed": 7,
+    "failed": 0,
+    "skipped": 0,
+    "results": "Evidence/audio-levels-20261015/tests.xml",
+    "log": "Logs/audio-levels-tests.log",
+    "previousFullRegression": "95/95 before this volume correction; not rerun as a full suite."
+  },
+  "preservation": "Original MP3/WAV, all other pre-existing Assets and user ON/OFF preferences retained. No data edits.",
+  "buildFilesUnchanged": 17,
+  "limits": [
+    "No human listening or OS output-device/loudness measurement.",
+    "No new player build, browser/device validation, commit or push.",
+    "Music remains match-only; lobby intentionally stops it."
+  ]
+}

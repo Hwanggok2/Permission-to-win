@@ -1,0 +1,110 @@
+{
+  "method": "Unity 6000.3.15f1 Windows actual WebGL AudioImporter AAC .resource decoded by FFmpeg; desktop, not iOS",
+  "clips": [
+    {
+      "name": "TypingKey",
+      "originalSource": {
+        "path": "Assets/StageGame/Audio/TypingKey.wav",
+        "sha256": "948CA89DDAD1278D61F9D2897BB009B669EF8F5685D4D8C6478A9C42E5EF3DC0",
+        "seconds": 0.03501133786848073,
+        "peak": 0.54998779296875,
+        "rms": 0.08939660070778777,
+        "energy": 12.339265424758196,
+        "firstAboveOnePercentMs": 0.022675736961451247
+      },
+      "originalUnityAAC": {
+        "path": "Evidence/web-audio-fsb-20261016/unity-import/TypingKey-decoded.wav",
+        "sha256": "A6FABBB0A43F9932499479FE5312C50E041AF7EC2F292451F6640A6BD772B78B",
+        "seconds": 0.046439909297052155,
+        "peak": 0.0986328125,
+        "rms": 0.014383629433278524,
+        "energy": 0.42370825354009867,
+        "firstAboveOnePercentMs": 10.612244897959185
+      },
+      "guardedUnityAAC": {
+        "path": "Evidence/web-audio-fsb-20261016/unity-import/TypingKeyAacSafe-decoded.wav",
+        "sha256": "8957D4320F106B1985E90048A16977A70FB081BFF986DC5FE77E590299C6343A",
+        "seconds": 0.2089795918367347,
+        "peak": 0.5447998046875,
+        "rms": 0.036513142901302954,
+        "energy": 12.286859715357423,
+        "firstAboveOnePercentMs": 46.46258503401361
+      },
+      "guardedSource": {
+        "path": "Assets/StageGame/Audio/TypingKeyAacSafe.wav",
+        "sha256": "DC9FCF1A52F59E4B23107A3651C8DCC6295E2D88BE66F89F81EEE43BEAF6C32D",
+        "seconds": 0.2,
+        "peak": 0.54998779296875,
+        "rms": 0.037403337890444144,
+        "energy": 12.339265424758196,
+        "firstAboveOnePercentMs": 46.46258503401361
+      },
+      "guardedPeakRetention": 0.990567084674287,
+      "guardedEnergyRetention": 0.9957529311837621
+    },
+    {
+      "name": "ButtonClick",
+      "originalSource": {
+        "path": "Assets/StageGame/Audio/ButtonClick.wav",
+        "sha256": "C0360958AC0F5505A5B6086383D194009641332F9C550D16A482406DEB7591A9",
+        "seconds": 0.055011337868480725,
+        "peak": 0.279998779296875,
+        "rms": 0.04028077763297892,
+        "energy": 3.936284579336643,
+        "firstAboveOnePercentMs": 0.045351473922902494
+      },
+      "originalUnityAAC": {
+        "path": "Evidence/web-audio-fsb-20261016/unity-import/ButtonClick-decoded.wav",
+        "sha256": "D9E3090F2EE93481D61D986385404B05D9922DFB48A71FCA25D89F95B43875FB",
+        "seconds": 0.06965986394557823,
+        "peak": 0.0380859375,
+        "rms": 0.005672117825912236,
+        "energy": 0.09883521217852831,
+        "firstAboveOnePercentMs": 10.90702947845805
+      },
+      "guardedUnityAAC": {
+        "path": "Evidence/web-audio-fsb-20261016/unity-import/ButtonClickAacSafe-decoded.wav",
+        "sha256": "61C93C2766A9FD7703736E6C3D9EC28808FEFA99485157AA4631A0C45033DDFF",
+        "seconds": 0.2089795918367347,
+        "peak": 0.279510498046875,
+        "rms": 0.020631837811487055,
+        "energy": 3.9229998933151364,
+        "firstAboveOnePercentMs": 46.48526077097505
+      },
+      "guardedSource": {
+        "path": "Assets/StageGame/Audio/ButtonClickAacSafe.wav",
+        "sha256": "AEB39CC536D462F823F15FCA07FC5407E82D8CA8A3AE3F6255B6AADFF83A8A2D",
+        "seconds": 0.2,
+        "peak": 0.279998779296875,
+        "rms": 0.021125595107174436,
+        "energy": 3.936284579336643,
+        "firstAboveOnePercentMs": 46.48526077097505
+      },
+      "guardedPeakRetention": 0.9982561307901907,
+      "guardedEnergyRetention": 0.9966250697189821
+    },
+    {
+      "name": "GoStonePlaceHeavy",
+      "originalSource": {
+        "path": "Assets/StageGame/Audio/GoStonePlaceHeavy.wav",
+        "sha256": "26B529579D0BFFF92B1891BD61B674DEA20490A78CB890F746676C5B710D94DA",
+        "seconds": 0.3,
+        "peak": 0.649993896484375,
+        "rms": 0.09074243729356066,
+        "energy": 108.93833272065967,
+        "firstAboveOnePercentMs": 8.866213151927438
+      },
+      "originalUnityAAC": {
+        "path": "Evidence/web-audio-fsb-20261016/unity-import/GoStonePlaceHeavy-decoded.wav",
+        "sha256": "8EF3225D8EF00B7BE787504664ACF28918572D5A14FF7C45AE15DD7C44DB7E4E",
+        "seconds": 0.301859410430839,
+        "peak": 0.650421142578125,
+        "rms": 0.0897498070661846,
+        "energy": 107.2285309843719,
+        "firstAboveOnePercentMs": 10.226757369614512
+      }
+    }
+  ],
+  "originalAudioAndMetasUnchanged": true,
+  "deviceSafariKakaoValidation": "PENDING new WebGL build and real device retest"
+}

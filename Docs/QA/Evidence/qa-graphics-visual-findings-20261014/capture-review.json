@@ -1,0 +1,35 @@
+{
+  "dateSeoul": "2026-10-14",
+  "status": "TWO_VISUAL_FINDINGS_OPEN_BEFORE_SOURCE_FREEZE",
+  "discoveredBy": "Root coordinator reviewing Client intermediate graphics captures",
+  "qaMethod": "Preserved three supplied PNG files and opened them with view_image; no Unity, browser, product-test or device execution",
+  "reviewedImages": [
+    {
+      "path": "animation-player-0.png",
+      "finding": "QA-011",
+      "observation": "The enlarged mint ring in bottom-row column4 is occluded at its top by the empty circular cell directly above it.",
+      "rootReportedCause": "Sibling render order; Client plans to render last coin in front and restore on cancellation",
+      "causeIndependentlyExecuted": false
+    },
+    {
+      "path": "map-ko-320-result-0.png",
+      "finding": "QA-012",
+      "observation": "Korean win result keeps the pause icon visible at top-right. Board and winning stones remain visible; Retry and Lobby appear side by side.",
+      "rootReportsPauseDisabled": true,
+      "pointerStateVerifiedByQa": false
+    },
+    {
+      "path": "map-ko-320-result-1.png",
+      "finding": "QA-012",
+      "observation": "Korean loss result keeps the pause icon visible at top-right. Board and winning stones remain visible; Retry and Lobby appear side by side.",
+      "rootReportsPauseDisabled": true,
+      "pointerStateVerifiedByQa": false
+    }
+  ],
+  "plannedRegression": [
+    "RES07: player and AI last-coin animation remains in front throughout motion; size, position and render order restore after completion or cancellation/new match.",
+    "RES08: pause hidden for win/loss/draw/final30 results; visible and usable again on Retry; resolving/result input guard tested separately from visibility."
+  ],
+  "limits": "Intermediate screenshots establish only the visible problems and partial layout implementation. They do not establish animation timing, actual input behavior, all outcome/locale coverage, fixed defects or final visual acceptance.",
+  "hashes": "source-manifest.json; no image changed during copy"
+}

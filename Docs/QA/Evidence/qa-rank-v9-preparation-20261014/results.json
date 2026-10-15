@@ -1,0 +1,19 @@
+{
+  "status": "PREPARATION_ONLY_NO_PRODUCT_EXECUTION",
+  "contractVersion": 9,
+  "fixtureCaseCount": 22,
+  "groups": {
+    "confirmationCases": 9,
+    "toastCases": 6,
+    "storyCases": 4,
+    "lifecycleCases": 2,
+    "layoutCases": 1
+  },
+  "uniqueIds": true,
+  "exactUserKoreanLinesPreserved": true,
+  "actualApiBound": false,
+  "runtimeTestsExecuted": false,
+  "browserOrUnityExecuted": false,
+  "phoneTesting": "postponed by user",
+  "awaits": "Root readiness handoff after Client/story data freeze"
+}

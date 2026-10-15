@@ -1,0 +1,7 @@
+{
+  "name": "StageGame.Editor",
+  "rootNamespace": "StageGame.Editor",
+  "references": ["StageGame.Runtime", "UnityEngine.UI"],
+  "includePlatforms": ["Editor"],
+  "autoReferenced": true
+}

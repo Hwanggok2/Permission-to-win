@@ -1,0 +1,142 @@
+[
+  {
+    "source": "Client/Assets/StageGame/Scripts/Core/ConnectFourBoard.cs",
+    "snapshot": "Sources/ConnectFourBoard.cs",
+    "sha256": "5A57257861061D89B71E9758B6E352A96E08D22C2B686C85C5CD503B0F25FB36"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/Core/AiSearch.cs",
+    "snapshot": "Sources/AiSearch.cs",
+    "sha256": "FEA609E5CC011D590C9BEDA3D401B3CCC420DF7E0C9FAD7EFA18F99A9D72F63B"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/Core/GameData.cs",
+    "snapshot": "Sources/GameData.cs",
+    "sha256": "7A95FF7D9AF9301E1DCB5F1D96670C6FBA039F05A34C336D8DDD2EFCB7F9BD57"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/Core/StringTable.cs",
+    "snapshot": "Sources/StringTable.cs",
+    "sha256": "8D133248463B3466690BCC76BD9BBB31F7BA1703CDF84E3FF6788F2AB4374A1B"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/Core/ProgressStore.cs",
+    "snapshot": "Sources/ProgressStore.cs",
+    "sha256": "FCDB8DC6DE3B8DD0AEF425930F61B5EA3AB3E729C56384A8D72B841E548E17D1"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/Platform/Advertising.cs",
+    "snapshot": "Sources/Advertising.cs",
+    "sha256": "9D768FDDC0BCFB6801D7DEF5DC811FE9A699719CE6E56B909E62F2FFC814C23F"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/UI/RankGameApp.cs",
+    "snapshot": "Sources/RankGameApp.cs",
+    "sha256": "2F36B95E8AD1F116D5C97D19AEBDB77C905934C3CDDE7B305445FB0F5922ECAE"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/UI/RankTheme.cs",
+    "snapshot": "Sources/RankTheme.cs",
+    "sha256": "03D751F0357AA84A940DDC368AE683097C26CE57B020765D542A0A042C3C938E"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/UI/RankStageCard.cs",
+    "snapshot": "Sources/RankStageCard.cs",
+    "sha256": "D15B3BC33E25F3A878A879D74C37E7C505FE1BCB0E3627573AEFACFE706A8EC7"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/UI/RankDetailBlocker.cs",
+    "snapshot": "Sources/RankDetailBlocker.cs",
+    "sha256": "DE10A00BC6339CCC491AE40FE7AFBCD0F695017C5C6A06B3A3B00CF8080AA68D"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/UI/GameApp.cs",
+    "snapshot": "Sources/GameApp.cs",
+    "sha256": "0A518043B3DC66530ABCDA633578B727B81BC29867D1E1192BC2280E0EF47661"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/UI/TabletopTheme.cs",
+    "snapshot": "Sources/TabletopTheme.cs",
+    "sha256": "E1B469F7DCAC82A073A52A8D2CCA6D47E64C53D04A152A6B263E92C87BA4DFAA"
+  },
+  {
+    "source": "Client/Assets/StageGame/Resources/GameData/stages.json",
+    "snapshot": "ClientData/stages.json",
+    "sha256": "6E66C8B0ABE2DCC3B5297BF08A98953929B7E17B31E740569910255F7601FC26"
+  },
+  {
+    "source": "GameData/Generated/stages.json",
+    "snapshot": "GeneratedData/stages.json",
+    "sha256": "6E66C8B0ABE2DCC3B5297BF08A98953929B7E17B31E740569910255F7601FC26"
+  },
+  {
+    "source": "Client/Assets/StageGame/Resources/GameData/strings.json",
+    "snapshot": "ClientData/strings.json",
+    "sha256": "E191CE6773C2E608831F4F38BBB1B995BDD2CAEC3C156693CDBE71E50645828C"
+  },
+  {
+    "source": "GameData/Generated/strings.json",
+    "snapshot": "GeneratedData/strings.json",
+    "sha256": "E191CE6773C2E608831F4F38BBB1B995BDD2CAEC3C156693CDBE71E50645828C"
+  },
+  {
+    "source": "Client/Assets/StageGame/Resources/GameData/ads.json",
+    "snapshot": "ClientData/ads.json",
+    "sha256": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A"
+  },
+  {
+    "source": "GameData/Generated/ads.json",
+    "snapshot": "GeneratedData/ads.json",
+    "sha256": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A"
+  },
+  {
+    "source": "Docs/Management/CONTRACT.md",
+    "snapshot": "AuditInputs/CONTRACT.md",
+    "sha256": "7B27A2FD2E994D8FF869BCEA284D9D73706079DC074B9D59DB41A7DB16AA3AED"
+  },
+  {
+    "source": "GameData/RANK-UI-CONTRACT.md",
+    "snapshot": "AuditInputs/RANK-UI-CONTRACT.md",
+    "sha256": "F73BCF4B60A3526A10BAEE9EA6658C41644EA5A752170624A2DBB2DC32D4E5E1"
+  },
+  {
+    "source": "Tests/Fixtures/rank-ui-interaction-cases.json",
+    "snapshot": "AuditInputs/rank-ui-interaction-cases.json",
+    "sha256": "C0F3A4BC474722BDE78A22DA1D1C9A7667B3055211960D4C20984C5C7051DD63"
+  },
+  {
+    "source": "Tests/Fixtures/rank-ui-crossing-win-cases.json",
+    "snapshot": "AuditInputs/rank-ui-crossing-win-cases.json",
+    "sha256": "33878B955FFDE400682C61569119499D51146EF650F755B6097FD0CE6404356A"
+  },
+  {
+    "source": "Tests/Fixtures/stage-ux-legacy-saves.json",
+    "snapshot": "AuditInputs/stage-ux-legacy-saves.json",
+    "sha256": "0DE2521AAC3206891714663D8D2EE85A5FDF67A31330BA2FB30FEABA4C532F1E"
+  },
+  {
+    "source": "Tests/RankHarness/Program.cs",
+    "snapshot": "TestTools/Program.cs",
+    "sha256": "270175A13E822C8619CF1D632B3FF199F5051F3557AEFE8070E410B7591F88A6"
+  },
+  {
+    "source": "Tests/RankHarness/RankHarness.csproj",
+    "snapshot": "TestTools/RankHarness.csproj",
+    "sha256": "15EF6238F06AF94EDF8B803CA8F0A1336B6DAE7F1766F004FB0785AB46BD1E35"
+  },
+  {
+    "source": "Tests/RankHarness/UnityStubs.cs",
+    "snapshot": "TestTools/UnityStubs.cs",
+    "sha256": "95763027B28A1BDF8CD47A45D74C5704A84295F610442BC1305094A02D8E6FC6"
+  },
+  {
+    "source": "Tests/RankHarness/WinningSegmentOracle.cs",
+    "snapshot": "TestTools/WinningSegmentOracle.cs",
+    "sha256": "73C8ECD042BF3E7ADA06A46DDCE0D19321884F9097F58BBF6177E96891242D16"
+  },
+  {
+    "source": "Tests/run-rank-independent.ps1",
+    "snapshot": "TestTools/run-rank-independent.ps1",
+    "sha256": "11A7B58F0B2093D1C7E246EDC47BDB30D3BCD082034DAE5A620FDEE568CD2962"
+  }
+]

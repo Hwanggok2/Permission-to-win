@@ -1,0 +1,655 @@
+{
+  "status": "SAVED_PREFAB_AND_LAYOUT_TESTS_PASS",
+  "dateSeoul": "2026-10-15",
+  "recordedAtUtc": "2026-10-14T16:21:15.3826255Z",
+  "request": "Match top gap equal to lobby",
+  "designWidth": 1080,
+  "topGap": 216,
+  "topGapAt390": 78,
+  "topGapAt320": 64,
+  "implementation": "Match Scroll offsetMax.y=-216; viewport excludes top area even while scrolling. Local board/button/runtime positions unchanged.",
+  "prefabSaved": true,
+  "applyMethod": "StageGame.Editor.RankUiBuilder.ApplyMatchTopGap",
+  "applyLog": "Logs/match-top-gap-apply.log",
+  "tests": {
+    "passed": 3,
+    "failed": 0,
+    "skipped": 0,
+    "file": "Evidence/match-top-gap-tests.xml",
+    "names": [
+      "Actual1080DesignHasTextOnlyToastAndMatchingLowerHeaders",
+      "PreviewSavedRankScreens",
+      "SquareBoardsUniformPixelLinesTopHeadersAndScrollableActionsMeetHostContract"
+    ]
+  },
+  "nativeSizes": [
+    "1080x1920",
+    "390x844",
+    "320x568"
+  ],
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "checks": [
+    "Lobby and match header world Y match.",
+    "Square board and44px hit regions retained.",
+    "Bottom match actions accessible after scrolling.",
+    "Result and modal captures rendered.",
+    "Reversing only Scroll anchoredPosition.y=-108 and sizeDelta.y=-216 reproduces previous prefab SHA256 exactly."
+  ],
+  "changedAssets": [
+    "Assets/StageGame/Editor/RankUiBuilder.cs",
+    "Assets/StageGame/Prefabs/RankUI/Match.prefab",
+    "Assets/StageGame/Tests/EditMode/RankFlowTests.cs",
+    "Assets/StageGame/Tests/EditMode/RankV10Tests.cs",
+    "Assets/StageGame/Tests/EditMode/RankV9Tests.cs"
+  ],
+  "sourceFreeze": "Evidence/match-top-gap-source-freeze.json",
+  "assetCount": 321,
+  "captureCount": 119,
+  "captures": [
+    {
+      "path": "Evidence/match-top-gap-20261015/en-1080-detail-bottom.png",
+      "bytes": 73774,
+      "sha256": "F7B18641A262A3288F42775FBB2864F9CB607EEF0056A9842E87B711C984A0A1"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-1080-detail.png",
+      "bytes": 73774,
+      "sha256": "F7B18641A262A3288F42775FBB2864F9CB607EEF0056A9842E87B711C984A0A1"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-1080-first-match.png",
+      "bytes": 79748,
+      "sha256": "175DF6F4DE78CD3D6ECB0218E35F7B325B77F6E4974D025D5CD0AA79E3883B10"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-1080-help.png",
+      "bytes": 104625,
+      "sha256": "9258DC10EA5AE7C256ED52A846EBA300EAC7803978F71F04F7C7B5915C95A159"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-1080-lobby-end.png",
+      "bytes": 101970,
+      "sha256": "9D635354745389F4D26F97A0DF0DD3D2FD698471E5EB36211BF3611D559BA5E3"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-1080-lobby.png",
+      "bytes": 109837,
+      "sha256": "6BBD4CBD0F4AAB7F69B9B548878E7859E6728EBE7A3CC5B9101F3F628A7CAAB5"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-1080-match-bottom.png",
+      "bytes": 93908,
+      "sha256": "BDF7CD119E334B4A3832C4F753E236B96BB4B831B97167C11CCD655514E212DF"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-1080-notices.png",
+      "bytes": 181732,
+      "sha256": "D243621F04777C2C5B5CA7AEC82EAB3022FC4CC431DD605841DA09E75B9FF915"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-1080-pause.png",
+      "bytes": 90977,
+      "sha256": "EDD29A762195BA460CA308B866985652D4E7F9F2F382264132FC9BBD153281B6"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-1080-preview.png",
+      "bytes": 84091,
+      "sha256": "2761C19C024CB022D2C70FB8BA8A805D6B494EDF17EBE37C8D3E1E5EB29B831A"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-1080-restart-confirm.png",
+      "bytes": 119049,
+      "sha256": "8B112E2226A25DB9365E1BF4353FBD54A74792881393EC5A97098B0B0DF180B4"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-1080-settings.png",
+      "bytes": 85609,
+      "sha256": "E40419D2E83FBE1855CFEE30A1D15F267FED097D55391A73656C1A7EE46D4E0D"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-1080-win.png",
+      "bytes": 83623,
+      "sha256": "A0B63F976C2C8BFF640C97C77D8C9AC11D77C22E226573B84A709F6AFEE01BD1"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-320-detail-bottom.png",
+      "bytes": 10683,
+      "sha256": "E660F5C1A5FC699150E21C1FF76F957DAE842B2D99BAEA4C23CA588864A64D1E"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-320-detail.png",
+      "bytes": 11583,
+      "sha256": "BC4C14779F20F531F362F54ABB752104490148C8E23DADD9325B0A2708A0520B"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-320-first-match.png",
+      "bytes": 13499,
+      "sha256": "51727A4C55FF12A731F227B9E272443A6976DF1BFEA0553137F485E28C5D6A58"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-320-help.png",
+      "bytes": 19682,
+      "sha256": "691D7BF0A44E9DB8E3145CD0E53A83690B1C6C307F0BF4D0C092A00013ABE8D6"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-320-lobby-end.png",
+      "bytes": 15527,
+      "sha256": "13CA86F57302DD1246B83D30DD0E2114400B740EBFF5303DCB83E2C5FEAF8601"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-320-lobby.png",
+      "bytes": 17153,
+      "sha256": "E25816E025B8B7AF869CDFB70A7FCE8BF8B4E358A3BC56D957F895D6DF5D5054"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-320-match-bottom.png",
+      "bytes": 10326,
+      "sha256": "72CE37C020D35F97740C04538BB8862112C35F53662B10B16907179BEE620312"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-320-notices.png",
+      "bytes": 43423,
+      "sha256": "471FFB5FB372C665C870619325C7687A4628E7E5ACFC4700D1EC3AFA050A8626"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-320-pause.png",
+      "bytes": 17885,
+      "sha256": "5CB46C0D6E5D761DC176810629EECE455454BB59D44FEFECEF665A0D3C7F1279"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-320-preview.png",
+      "bytes": 13499,
+      "sha256": "51727A4C55FF12A731F227B9E272443A6976DF1BFEA0553137F485E28C5D6A58"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-320-rank-hat-01.png",
+      "bytes": 13453,
+      "sha256": "BD04787EBEE2DE93AB13B3649CC3BB26A91A6F89E99E67969423901D35129F00"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-320-rank-hat-02.png",
+      "bytes": 12486,
+      "sha256": "CC6320A3CC714096162B6BA4B39F2EC49682965323EBEC8AEC757EBAE3B1FBBB"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-320-rank-hat-03.png",
+      "bytes": 13783,
+      "sha256": "1699CAAB8CC1AED34834DBAA488CE59F0D854587BD602627226F588C38628F8E"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-320-rank-hat-04.png",
+      "bytes": 14636,
+      "sha256": "3B6FFEADFA2B8368FB6C16DFEDD4D4898456624104714966BD3EA120A435E5DB"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-320-rank-hat-05.png",
+      "bytes": 13280,
+      "sha256": "48046B0272F0AE0FB7D71AA03701346DF2331576BD950BAE61DC3EFE228751F1"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-320-rank-hat-06.png",
+      "bytes": 14706,
+      "sha256": "A4E4961F967BA05AB4BBB859DF3D4BD63E4AC0267C891D5249B031781436A923"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-320-rank-hat-07.png",
+      "bytes": 13347,
+      "sha256": "ACD3F9EB1317F073C9E2AD0449D3E689C0472B0AC041C0929871AC20A7986911"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-320-rank-hat-08.png",
+      "bytes": 13966,
+      "sha256": "370DF04497C1565B7152B5883DD52FF49A56723A775EAB6A51409EFDE2FCAFFF"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-320-rank-hat-09.png",
+      "bytes": 14553,
+      "sha256": "4DF4EB11C14E9D5966E524B8EA3CE917B7EA7E4FFA997728B96B8DDB389CD73B"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-320-rank-hat-10.png",
+      "bytes": 14779,
+      "sha256": "21EF88E972FBA549BBEB04FDD4978DA7E57BD90ACECA3450621055F15F684227"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-320-restart-confirm.png",
+      "bytes": 17800,
+      "sha256": "5C2266D350C8FA145AC1C39EC45DC70D36941A6A939D1874D6960102D744AB30"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-320-settings.png",
+      "bytes": 17092,
+      "sha256": "1B57C5220E487ED6A13136B9A35C0FAA5ED919EACBC288B14BB3BE2F2227728C"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-320-story-exact.png",
+      "bytes": 13453,
+      "sha256": "BD04787EBEE2DE93AB13B3649CC3BB26A91A6F89E99E67969423901D35129F00"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-320-win.png",
+      "bytes": 11861,
+      "sha256": "6B54B82C64B91A9E88F6AC5F162BB7E53997EDFDC15CBFE6288CCD1B6678053D"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-390-detail-bottom.png",
+      "bytes": 18616,
+      "sha256": "4CD69060955D05DCED32C557EC9F65B00497C86AF2FE2726475AE1A3B9C380E4"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-390-detail.png",
+      "bytes": 18616,
+      "sha256": "4CD69060955D05DCED32C557EC9F65B00497C86AF2FE2726475AE1A3B9C380E4"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-390-first-match.png",
+      "bytes": 23834,
+      "sha256": "816164ABDD99C47301F28A8FA63DD635DBD55D65EB4253A8D44302914D96D9FB"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-390-help.png",
+      "bytes": 28687,
+      "sha256": "2CDE515BEE42D3F40694A07FDE46BFFE3825B3F1F1522CC61F1048CF4EDEA19D"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-390-lobby-end.png",
+      "bytes": 28314,
+      "sha256": "4886F18A8C75CC2AAE57313E34ABAECC1FF5023FD4133393C5080C89A6152B06"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-390-lobby.png",
+      "bytes": 32658,
+      "sha256": "C1E153FB319575868F0FF2EF2232EC004754452A560AE6C31C83C56A2143CC76"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-390-match-bottom.png",
+      "bytes": 25665,
+      "sha256": "D7B4772ED87F713E261779483321EEF1D9FE7D12F72DC7C01912BDA96F25D672"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-390-notices.png",
+      "bytes": 62408,
+      "sha256": "86CC960C12CC8BFE7521700C7BA482014242BAA84EEEDB99FA03D05C07B390D3"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-390-pause.png",
+      "bytes": 28101,
+      "sha256": "A8E4A0D7B3FF4C9736AF598ECFE185C0956806AC641ED5811B9FADD7275A4154"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-390-preview.png",
+      "bytes": 24737,
+      "sha256": "52DC1063F56E65A054492E1C9B4C80D4480BCE59B14AD6BE3A3EDE4826E6E571"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-390-restart-confirm.png",
+      "bytes": 35330,
+      "sha256": "446A021223849A25587D588B6BB37A487E7620D977CC884BB02AFFC2D31E7938"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-390-settings.png",
+      "bytes": 24133,
+      "sha256": "9EADF41CD63C936FDCD7A22755D17E1F2524CFAF11987ADFEFDD17C09A3A6810"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/en-390-win.png",
+      "bytes": 21798,
+      "sha256": "F166655C4C247C9F53F7668ED6BE2F6FBD1D083B291687FE6BDB9619928B784B"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/geometry-bottom-320.png",
+      "bytes": 9260,
+      "sha256": "B0E87FECAD3B128D9454739F65231C970AAB79243FE0E9C02983F808822985A2"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/geometry-bottom-390.png",
+      "bytes": 22315,
+      "sha256": "BE4C620CFD765D121804F4C8D86F691172029E43C436EBC0C483C380829AF40F"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/geometry-top-320.png",
+      "bytes": 11707,
+      "sha256": "5B9DF0577B45259032A12962EFE9A5FD7F75E13A3C2D4E8261879A4D12B987F3"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/geometry-top-390.png",
+      "bytes": 21145,
+      "sha256": "1060BC76311350D47C27454F841D2509166A0F825894D1E4D4F30F6688B283CF"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-1080-detail-bottom.png",
+      "bytes": 78205,
+      "sha256": "2178F6C4B3320D3EEDDEF4DDEB127C06EB03B2DDD30E2E3BD3BF3F4449449C00"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-1080-detail.png",
+      "bytes": 78205,
+      "sha256": "2178F6C4B3320D3EEDDEF4DDEB127C06EB03B2DDD30E2E3BD3BF3F4449449C00"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-1080-first-match.png",
+      "bytes": 71934,
+      "sha256": "9EBFB1A0FD46FBE717D07D08727B199F5B3688A7B2099FA6E0E9CDDBF28ADB3E"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-1080-header-lobby.png",
+      "bytes": 93100,
+      "sha256": "8DF172E27025B391668ABFC4FFEF5F3F69BCDC0E621D50B81FC7130836E0500C"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-1080-header-match.png",
+      "bytes": 71934,
+      "sha256": "9EBFB1A0FD46FBE717D07D08727B199F5B3688A7B2099FA6E0E9CDDBF28ADB3E"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-1080-help.png",
+      "bytes": 87457,
+      "sha256": "DAEFCB5E62F2F745D5DA6DB60F3EA35C85F60F51A2BE685B9CE2AD873B7C7936"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-1080-host-lobby-end.png",
+      "bytes": 80872,
+      "sha256": "DA056306D6C7E08FB98DB0563B74C2B407CFB664403C3D22748E7E1384ED992D"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-1080-host-lobby.png",
+      "bytes": 93100,
+      "sha256": "8DF172E27025B391668ABFC4FFEF5F3F69BCDC0E621D50B81FC7130836E0500C"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-1080-lobby-end.png",
+      "bytes": 80872,
+      "sha256": "DA056306D6C7E08FB98DB0563B74C2B407CFB664403C3D22748E7E1384ED992D"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-1080-lobby.png",
+      "bytes": 93100,
+      "sha256": "8DF172E27025B391668ABFC4FFEF5F3F69BCDC0E621D50B81FC7130836E0500C"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-1080-match-bottom.png",
+      "bytes": 88565,
+      "sha256": "678CB2C9A99B0F04EB831E329E83CFFD3555152B9FB1AF145BA4673CC26CCBFE"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-1080-notices.png",
+      "bytes": 186272,
+      "sha256": "11B95E2096D81506B8881681EBCAE971A2296961FC1BD8F82C56EC961DE1D4EE"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-1080-pause.png",
+      "bytes": 86364,
+      "sha256": "6FEFCB6986DC2C1974198757467B0EB16529A41A0213AE42A1CEF86672EB119D"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-1080-plain-lobby-end.png",
+      "bytes": 83777,
+      "sha256": "DB37D9E05A738836F6B24FAB9B6C894EEF86ED2D1963A44ADFBB744EC0C23B0A"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-1080-plain-lobby.png",
+      "bytes": 96980,
+      "sha256": "004997259A6F147430DC703D415C5632B0597588FD60FB99B3A26166FD551E4A"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-1080-preview.png",
+      "bytes": 76884,
+      "sha256": "951EB748F7C31D5F7AA72A49F02E0C04FC37658D7D2457F1281FD3BDB72CC61E"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-1080-restart-confirm.png",
+      "bytes": 109517,
+      "sha256": "42127503EE3EB3C84C318CBA94FBB48171A37AD030725B7BD1CE0523D28D488D"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-1080-settings.png",
+      "bytes": 81561,
+      "sha256": "BFC19823E6E580503144C3F478B0AECF5AEB76C9426D384B5D74CDC53C98733D"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-1080-text-only-toast.png",
+      "bytes": 74805,
+      "sha256": "AE075FAA58E1D3469EE1633A6677C97E0D48946F5D1D0172BE992DC48B4BF9E4"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-1080-win.png",
+      "bytes": 75250,
+      "sha256": "40063E52B7E67619DCFBEAFDC30E2C2235E23D3D036CD40CFEDCE7E54F643ECE"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-detail-bottom.png",
+      "bytes": 10622,
+      "sha256": "A0BB34D1DB6CA9C6CACD2020A1BF2ECDC5EF0DCD516C6B4B899BF04315683F10"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-detail.png",
+      "bytes": 11253,
+      "sha256": "E6450DC6ABE0AB3B385CF6545FD26480EFEDB74D74669F097FFDE935FB62F0E3"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-first-match.png",
+      "bytes": 11668,
+      "sha256": "7A4AE2A89973338E391ADEA828ECCE3D15A5E7F65A5D0F3D7E928749A66E5F4A"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-help.png",
+      "bytes": 17506,
+      "sha256": "9EDE070430D3D7788BD5FAF5C6338CA7173C64880B1C2A0EAED8025428B58EF2"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-host-lobby-end.png",
+      "bytes": 12773,
+      "sha256": "F85789181548B7EF2F96C3BAC07E58987F73E0AB9B88373405286F4E1C88AB30"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-host-lobby.png",
+      "bytes": 14851,
+      "sha256": "F6E5B559D71A2C7BCB8FD7FCDFE33895096223FBD25BE65FE594E55D1F442F54"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-lobby-end.png",
+      "bytes": 12781,
+      "sha256": "B3C571D97AD68766701F1FD0DFB779AEF61201A6678D043CB8200A8E1F6723FB"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-lobby.png",
+      "bytes": 14221,
+      "sha256": "BFD9DF635E990806A761362B2E672BBE3ED0DA1A87E5F10751E0EB4C92A2E39B"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-match-bottom.png",
+      "bytes": 10118,
+      "sha256": "408F1FB2E16E3D7E041ACCA553A6148DFD7E1D0D46F1D8F470E4EB5CD2251DAE"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-notices.png",
+      "bytes": 42583,
+      "sha256": "553A76383D094EF6AAA2EF535DE520B017B785A72AA958EADE4E6DF898337917"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-pause.png",
+      "bytes": 16988,
+      "sha256": "FFF9DC2179357DE3B2225A6D3605296D3E92AD60900E66519C07792E250F18C4"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-plain-lobby-end.png",
+      "bytes": 16758,
+      "sha256": "3E007215452C3CFACB1AD0EFD72680182816339874314DCD63A56D596074581C"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-plain-lobby.png",
+      "bytes": 19919,
+      "sha256": "F110D415C4A26B13500C16A6C49CCB6E74C06522B989F1C8BCE8B5259B5145E8"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-preview.png",
+      "bytes": 11668,
+      "sha256": "7A4AE2A89973338E391ADEA828ECCE3D15A5E7F65A5D0F3D7E928749A66E5F4A"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-rank-hat-01.png",
+      "bytes": 11717,
+      "sha256": "D7EA6487173B11B4A98A89908E42EE0095AEAE30BE12A83B7CDBDB117C56B7F4"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-rank-hat-02.png",
+      "bytes": 10586,
+      "sha256": "E680096BB53E754908D544BC4977BCC7BE8C452C915E197D838382240A92FF7E"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-rank-hat-03.png",
+      "bytes": 10842,
+      "sha256": "0A47DC0AAB852A66E339E2E20BFA031192E6088D22F178E679E52A3D5ADA39E7"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-rank-hat-04.png",
+      "bytes": 12040,
+      "sha256": "4F95395E3DC770ED4ECC17AA99340436E607CD1BE455E4A1F09A3291B4C1DE4C"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-rank-hat-05.png",
+      "bytes": 10861,
+      "sha256": "CD3E11D1C6CD08B83576A5898018F507E1E66833FED3FF0169B320017F2E38CE"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-rank-hat-06.png",
+      "bytes": 12003,
+      "sha256": "EFB9C985754F4A4CE8B247A33595F09F3F6C24017297ADF45619C0DA1459DC9B"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-rank-hat-07.png",
+      "bytes": 11799,
+      "sha256": "28F8D99CAAFC7D36DC93137240EB9BC109105554897A646F8C6CC49A0D9A882B"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-rank-hat-08.png",
+      "bytes": 11588,
+      "sha256": "29C11BEDEE786A22BFE697E438242732BFC0AE252C8C7E7AACEAE1D4E225407B"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-rank-hat-09.png",
+      "bytes": 12410,
+      "sha256": "DADB4870F957BD8C0B7BD01AE6DC808FA33CBB1817DAEE104E940B1091A4C617"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-rank-hat-10.png",
+      "bytes": 12152,
+      "sha256": "AA93FE7199381829D1AED8FE6BF35D41EDCC40F4D59A26ABA0E1DD52495E7F5D"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-restart-confirm.png",
+      "bytes": 16250,
+      "sha256": "0208E849BBBC7940D9AD97801466F2893A785E3D8CC6FB091A20EEDB44E7641E"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-settings.png",
+      "bytes": 16541,
+      "sha256": "D052E4D9640A2528ACDCA393AFAAFE3132B194E15AF709D56F71B9479F609B31"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-story-exact.png",
+      "bytes": 11717,
+      "sha256": "D7EA6487173B11B4A98A89908E42EE0095AEAE30BE12A83B7CDBDB117C56B7F4"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-320-win.png",
+      "bytes": 10306,
+      "sha256": "2B5BBB14DD19797C2166028FFDDC5D243BF388E79F58038816E0EEB1EEC99E1F"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-390-detail-bottom.png",
+      "bytes": 18489,
+      "sha256": "2BDBD7F8F307C82355519632FB4DAAEA18C358B39B4A4CFE68C4C003AC876438"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-390-detail.png",
+      "bytes": 18489,
+      "sha256": "2BDBD7F8F307C82355519632FB4DAAEA18C358B39B4A4CFE68C4C003AC876438"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-390-first-match.png",
+      "bytes": 21116,
+      "sha256": "558128E22CB8FF7F655BCC1C4081CB54A167E3C1F1CE739390112891EB2AAD51"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-390-help.png",
+      "bytes": 24900,
+      "sha256": "9293639FD345549DF38B0A83AE2874C085DAAAC0F5949D2AFFAC99051DE5F62E"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-390-host-lobby-end.png",
+      "bytes": 21374,
+      "sha256": "5B78AF374CFD6BDBBB0289B07F15322007BC1B56DA2FCBC3EB7C10C043ABD686"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-390-host-lobby.png",
+      "bytes": 25761,
+      "sha256": "8C81BA658E7D97DA44DAB8239DC086F13D3CC95F0CC73BFB059CC92A4C17E2DF"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-390-lobby-end.png",
+      "bytes": 21444,
+      "sha256": "24DE777AA3680E13DF46D06E2831943BF170C99E7C6AD196758F5D5B4CAD8C65"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-390-lobby.png",
+      "bytes": 24980,
+      "sha256": "43A0BA5E565558104A18DE6ECC39101D86C744E4F5F9D5A9AFCD4DB4E90DEC80"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-390-match-bottom.png",
+      "bytes": 23552,
+      "sha256": "E93A8F00B5CC043594E27B93E643DBD30FE940586FE2DA9527B36E034A27DF26"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-390-notices.png",
+      "bytes": 61289,
+      "sha256": "E010B760D7990928FB050B3409E7728C1BDA094BDDEF9E86F3369A30F4AA1590"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-390-pause.png",
+      "bytes": 26005,
+      "sha256": "7D25DF7F398A069A44BAF97B15E081E930AAE00974B3D68B7D8D61410AE646A7"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-390-plain-lobby-end.png",
+      "bytes": 25948,
+      "sha256": "12D2DE76BED63695945D31C2EF1ED682C974E27946FD0EEEE94460572AA3A5EA"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-390-plain-lobby.png",
+      "bytes": 29440,
+      "sha256": "B677031033E80086AA46B1BFE589CEC8FFA40BA96134F946CE36E117474993B1"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-390-preview.png",
+      "bytes": 22309,
+      "sha256": "76502DBC884F22DF9958B9D7F6E14A075506BC360317E1644964B8310CB3BC59"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-390-restart-confirm.png",
+      "bytes": 30737,
+      "sha256": "2E326E165983A02837CB6ED7BFB62054AF6FEB0C3E1FCCFB033AA08869F651FF"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-390-settings.png",
+      "bytes": 22196,
+      "sha256": "DACD31B007C25D6BC6FEC769395CFCCA55E43DA326830BC78AA4AC23ED25125E"
+    },
+    {
+      "path": "Evidence/match-top-gap-20261015/ko-390-win.png",
+      "bytes": 19273,
+      "sha256": "A7CB5AD3D33D1F921EB269CF8CC6FA8411DCCB5555B89473DBCD4B9D8043AD4C"
+    }
+  ],
+  "buildFilesUnchanged": 17,
+  "preserved": "Lobby spacing,data/art and all runtime C# match progression freeze;character application remains held.",
+  "limits": [
+    "New layout uses scrolling where viewport height is insufficient,including1080host profile.",
+    "Three relevant layout tests rerun; full78test suite not rerun for this prefab-only change.",
+    "No new player build,browser or physical-device run."
+  ]
+}

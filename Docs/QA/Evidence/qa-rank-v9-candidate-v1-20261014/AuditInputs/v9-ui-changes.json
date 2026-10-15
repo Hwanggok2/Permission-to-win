@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-14",
+  "reason": "총괄 승인 v9 확인 패널/다시하기 명칭. 콘텐츠 원본은 Excel이고 이 파일은 검증용 변경 기록이다.",
+  "revisions": [
+    {
+      "key": "confirm_leave",
+      "before": {
+        "ko": "로비로 나가기",
+        "en": "Leave game"
+      },
+      "after": {
+        "ko": "나가기",
+        "en": "Leave"
+      },
+      "row": 108
+    },
+    {
+      "key": "retry",
+      "before": {
+        "ko": "재도전",
+        "en": "Retry"
+      },
+      "after": {
+        "ko": "다시하기",
+        "en": "Restart"
+      },
+      "row": 214
+    },
+    {
+      "key": "ui_retry",
+      "before": {
+        "ko": "재도전",
+        "en": "Retry"
+      },
+      "after": {
+        "ko": "다시하기",
+        "en": "Restart"
+      },
+      "row": 41
+    },
+    {
+      "key": "stage_replay",
+      "before": {
+        "ko": "재도전",
+        "en": "Play again"
+      },
+      "after": {
+        "ko": "다시하기",
+        "en": "Restart"
+      },
+      "row": 136
+    }
+  ],
+  "additions": [
+    {
+      "key": "confirm_exit_title",
+      "ko": "나가시겠습니까?",
+      "en": "Leave this game?"
+    },
+    {
+      "key": "confirm_exit_body",
+      "ko": "이 대국을 나가고 로비로 돌아가요.",
+      "en": "Leave this game and return to the lobby."
+    },
+    {
+      "key": "confirm_retry_title",
+      "ko": "다시하시겠습니까?",
+      "en": "Restart this game?"
+    },
+    {
+      "key": "confirm_retry_body",
+      "ko": "이 대국을 처음부터 다시 시작해요.",
+      "en": "Start this game again from the beginning."
+    },
+    {
+      "key": "ui_cancel",
+      "ko": "취소",
+      "en": "Cancel"
+    }
+  ],
+  "reusedToastKey": "ui_player_turn",
+  "visualRanges": [
+    [
+      "B108:E108",
+      "confirm_leave"
+    ],
+    [
+      "B214:E214",
+      "retry"
+    ],
+    [
+      "B41:E41",
+      "ui_retry"
+    ],
+    [
+      "B136:E136",
+      "stage_replay"
+    ],
+    [
+      "B233:E237",
+      "new"
+    ]
+  ]
+}

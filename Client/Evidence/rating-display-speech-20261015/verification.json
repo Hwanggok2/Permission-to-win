@@ -1,0 +1,130 @@
+{
+  "status": "RATING_DISPLAY_SLIDER_TYPING_VERIFIED",
+  "atUtc": "2026-10-15T14:09:19.979879+00:00",
+  "ratings": {
+    "places": [
+      "all 30 stage cards",
+      "stage selection detail header",
+      "match opponent panel"
+    ],
+    "key": "ai_rating",
+    "languages": [
+      "ko",
+      "en"
+    ],
+    "profileDataUnchanged": true
+  },
+  "timer": {
+    "seconds": 30,
+    "location": "Empty wooden strip inside the board, above the top grid line",
+    "text": "Smaller label centered above slider",
+    "slider": "Read-only, normalized remaining/30, red below or at 5 seconds",
+    "headerTimerRemoved": true,
+    "ruleUnchanged": true
+  },
+  "typing": {
+    "asset": "Assets/StageGame/Audio/TypingKey.wav",
+    "sha256": "948CA89DDAD1278D61F9D2897BB009B669EF8F5685D4D8C6478A9C42E5EF3DC0",
+    "source": "Original reproducible procedural keyboard tick via Tools/SynthesizeGameAudio.py",
+    "durationSeconds": 0.03501133786848073,
+    "clipPeak": 0.54998779296875,
+    "playbackGain": 0.75,
+    "previousClip": "ButtonClick.wav",
+    "previousGain": 0.18,
+    "listenerOutput": {
+      "oldTyping": {
+        "peak": 0.028879789635539055,
+        "rms": 0.005214422009885311,
+        "sampledWindows": 763
+      },
+      "newTyping": {
+        "peak": 0.26325723528862,
+        "rms": 0.0335785336792469,
+        "sampledWindows": 1647
+      },
+      "musicOnly": {
+        "peak": 0.08744402229785919,
+        "rms": 0.027547579258680344,
+        "sampledWindows": 1270
+      },
+      "musicAndTyping": {
+        "peak": 0.2848462760448456,
+        "rms": 0.04306580871343613,
+        "sampledWindows": 1221
+      },
+      "allSounds": {
+        "peak": 0.49293944239616394,
+        "rms": 0.07371611893177032,
+        "sampledWindows": 1066
+      }
+    },
+    "effectMuteAndSpeechPausePreserved": true
+  },
+  "unity": {
+    "runs": [
+      {
+        "file": "unity-tests.xml",
+        "total": "114",
+        "passed": "113",
+        "failed": "1",
+        "skipped": "0",
+        "result": "Failed(Child)"
+      },
+      {
+        "file": "unity-retest.xml",
+        "total": "9",
+        "passed": "9",
+        "failed": "0",
+        "skipped": "0",
+        "result": "Passed"
+      }
+    ],
+    "latestPassingCases": 114,
+    "failed": 0,
+    "skipped": 0
+  },
+  "data": {
+    "testsPassed": 46,
+    "exporterCheck": true,
+    "resourceHashesMatch": true,
+    "strings": 423,
+    "workbookPreservation": "workbook-changes.json"
+  },
+  "visuals": {
+    "sizes": [
+      "1080x1920",
+      "390x844",
+      "320x568"
+    ],
+    "languages": [
+      "ko",
+      "en"
+    ],
+    "inspected": true,
+    "gridAndStonePositionsPreserved": true,
+    "allMatchActionsFit1080": true
+  },
+  "changedAssets": [
+    "Assets/StageGame/Audio/TypingKey.wav",
+    "Assets/StageGame/Audio/TypingKey.wav.meta",
+    "Assets/StageGame/Editor/PixelArtBuilder.cs",
+    "Assets/StageGame/Editor/RankUiBuilder.cs",
+    "Assets/StageGame/Prefabs/RankUI/Match.prefab",
+    "Assets/StageGame/Prefabs/RankUI/RankAppRoot.prefab",
+    "Assets/StageGame/Prefabs/RankUI/StageCard.prefab",
+    "Assets/StageGame/Resources/GameData/strings.json",
+    "Assets/StageGame/Scripts/UI/RankGameApp.cs",
+    "Assets/StageGame/Scripts/UI/RankStageCard.cs",
+    "Assets/StageGame/Tests/EditMode/LocalizationTests.cs",
+    "Assets/StageGame/Tests/EditMode/RankRatingDisplayTests.cs",
+    "Assets/StageGame/Tests/EditMode/RankRatingDisplayTests.cs.meta"
+  ],
+  "existingAudioArtScenesUnchanged": true,
+  "unchangedBuildFiles": 17,
+  "notPerformed": [
+    "human audio listening",
+    "new Android/WebGL build",
+    "browser/device playtest",
+    "Git commit/push"
+  ]
+}

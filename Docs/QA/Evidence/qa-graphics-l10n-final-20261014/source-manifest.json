@@ -1,0 +1,118 @@
+[
+  {
+    "source": "Client/Assets/StageGame/Scripts/Core/ConnectFourBoard.cs",
+    "sha256": "5A57257861061D89B71E9758B6E352A96E08D22C2B686C85C5CD503B0F25FB36"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/Core/AiSearch.cs",
+    "sha256": "FEA609E5CC011D590C9BEDA3D401B3CCC420DF7E0C9FAD7EFA18F99A9D72F63B"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/Core/GameData.cs",
+    "sha256": "72018B7041F6E255E5210B2BAD652117744D0BC7BAED9BFAC1CF70340AABB567"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/Core/StringTable.cs",
+    "sha256": "8D133248463B3466690BCC76BD9BBB31F7BA1703CDF84E3FF6788F2AB4374A1B"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/Core/ProgressStore.cs",
+    "sha256": "FCDB8DC6DE3B8DD0AEF425930F61B5EA3AB3E729C56384A8D72B841E548E17D1"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/Platform/Advertising.cs",
+    "sha256": "9D768FDDC0BCFB6801D7DEF5DC811FE9A699719CE6E56B909E62F2FFC814C23F"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/UI/GameApp.cs",
+    "sha256": "0A518043B3DC66530ABCDA633578B727B81BC29867D1E1192BC2280E0EF47661"
+  },
+  {
+    "source": "Client/Assets/StageGame/Scripts/UI/TabletopTheme.cs",
+    "sha256": "E1B469F7DCAC82A073A52A8D2CCA6D47E64C53D04A152A6B263E92C87BA4DFAA"
+  },
+  {
+    "source": "C:\\Github\\StageGame\\Client\\Assets\\StageGame\\Resources\\GameData\\stages.json",
+    "sha256": "2D04B124A42F0F3798AD942E9AACAB97EE34A25F05B380144CD70F75C3904992"
+  },
+  {
+    "source": "C:\\Github\\StageGame\\GameData\\Generated\\stages.json",
+    "sha256": "2D04B124A42F0F3798AD942E9AACAB97EE34A25F05B380144CD70F75C3904992"
+  },
+  {
+    "source": "C:\\Github\\StageGame\\Client\\Assets\\StageGame\\Resources\\GameData\\ads.json",
+    "sha256": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A"
+  },
+  {
+    "source": "C:\\Github\\StageGame\\GameData\\Generated\\ads.json",
+    "sha256": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A"
+  },
+  {
+    "source": "C:\\Github\\StageGame\\Client\\Assets\\StageGame\\Resources\\GameData\\strings.json",
+    "sha256": "57E392CF68464898829946F17030E4AE3008AAB86370452BACF6DBE56D68A291"
+  },
+  {
+    "source": "C:\\Github\\StageGame\\GameData\\Generated\\strings.json",
+    "sha256": "57E392CF68464898829946F17030E4AE3008AAB86370452BACF6DBE56D68A291"
+  },
+  {
+    "source": "Client/LOCALIZATION-REQUEST.json",
+    "sha256": "211BE733DF62298C87EDE4D8EE7B4B9742980AAA3410C375BED2D588C94C225F"
+  },
+  {
+    "source": "Client/Assets/StageGame/Editor/ProjectBuilder.cs",
+    "sha256": "53B813B3C01272F2DCFE76013220973680D5711E4AD5F89B730B57C3B253279E"
+  },
+  {
+    "source": "GameData/LOCALIZATION-CONTRACT.md",
+    "sha256": "E42579A87E7D81FC89D1D260DE603FE596DC50C1E6CB7094046C0AE6AC0EA54F"
+  },
+  {
+    "source": "Docs/QA/Evidence/qa-ui-v1-20261014/ClientData/strings.json",
+    "sha256": "F307E1900A7E0CDF72A1B50D33CBFB0EECE4A6F46E69910978286A6CEF2D7752"
+  },
+  {
+    "source": "Docs/QA/Evidence/qa-l10n-core-v1-20261014/ClientData/strings.json",
+    "sha256": "ED5FD27463724F4789B2F5E96922316240F73BF73EBC9D663410F0758E0883C2"
+  },
+  {
+    "source": "Client/STAGE-MAP-REQUEST.json",
+    "sha256": "276ABACF1C2A880B7B615B342024E20212E914461AA3FB7694E8D3D4FE467FC1"
+  },
+  {
+    "source": "Tests/Fixtures/stage-ux-approved-copy-changes.json",
+    "sha256": "E692AA175295E14D17DD347904931F08F893C97D5039F7638F32FBD0FEFD7B02"
+  },
+  {
+    "source": "Client/Assets/StageGame/Editor/StageMapBuilder.cs",
+    "sha256": "123F74CB505D7CB292D39DEBEA0F1F060DA9B74A82AA65C745D63447893BDB07"
+  },
+  {
+    "source": "Tests/run-independent.ps1",
+    "sha256": "9D6BD9FE622BD50840173DE16D5FC34C9AFE16E4DDE9E5104AD46AD269D50B09"
+  },
+  {
+    "source": "Tests/IndependentHarness/Program.cs",
+    "sha256": "7CD2FB1C871A47A708EF592F00E8877711B2C596FE4A6AF308617072C3A6CD89"
+  },
+  {
+    "source": "Tests/IndependentHarness/LocalizationChecks.cs",
+    "sha256": "1D276501D6CB90570640C83824CCBA3A0C36DEBB875DAAE60ECF7F60DB8243BC"
+  },
+  {
+    "source": "Tests/IndependentHarness/StageUxChecks.cs",
+    "sha256": "D7F8B43673994868F129D807A537C76DC311B16F79D8E9EF931F574EE48E3D12"
+  },
+  {
+    "source": "Tests/IndependentHarness/GraphicsChecks.cs",
+    "sha256": "BED74DFC7D65F7E086D9DEEFB68AF9A198C5779A17D8E7CB1632CEA1098FA134"
+  },
+  {
+    "source": "Tests/IndependentHarness/UnityStubs.cs",
+    "sha256": "6F88C948C12F83A61B592408FBDD229A0DA587A5B0AA2D79F331A9C3BD4D407B"
+  },
+  {
+    "source": "Tests/IndependentHarness/IndependentHarness.csproj",
+    "sha256": "B8E96F7684D92FB207F0FDE64A69052D966C25D259AB2646CD92B1CF10A2225F"
+  }
+]

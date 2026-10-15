@@ -1,0 +1,167 @@
+{
+  "version": "v9",
+  "status": "BUILD_ALREADY_COMPLETED_BEFORE_APPROVAL_INSTRUCTION__BROWSER_AND_FURTHER_BUILDS_HELD",
+  "recordedAtUtc": "2026-10-14T14:49:22.430010+00:00",
+  "timing": "The native tool returned completed Unity process with exit0 and Succeeded before the new approval instruction arrived in this Client chat. No process remained to stop. No newbuild orbrowser test after that instruction.",
+  "buildLogLastWriteUtc": "2026-10-14T14:47:20.698684+00:00",
+  "buildSummary": "Succeeded\nErrors: 0\nWarnings: 0\nBytes: 44225172\nDuration: 00:00:28.3487196\n",
+  "webglFiles": [
+    {
+      "path": "Builds/WebGL/Build/WebGL.data",
+      "bytes": 18925724,
+      "sha256": "04DEA2A7570BAD089438166A0E40943A6773F1ABD027DD9143B134DF0611C472",
+      "modifiedUtc": "2026-10-14T14:47:17.391723+00:00"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.framework.js",
+      "bytes": 761643,
+      "sha256": "F909F29D115947BE5BAB214FE3CD434A6197E6BDC2E24CE9C2933C64B58FAE08",
+      "modifiedUtc": "2026-10-14T14:47:18.089656+00:00"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.loader.js",
+      "bytes": 58348,
+      "sha256": "1D4C7ED46D41C5D5C44F5B3300BF29DD912799343B1A17623F4B335D7F339F13",
+      "modifiedUtc": "2026-10-14T14:47:18.091169+00:00"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.wasm",
+      "bytes": 24453256,
+      "sha256": "402BF4A39C73B3A712489EDFA76F535AF54B07821C12892BA824D5CA904722B0",
+      "modifiedUtc": "2026-10-14T14:47:17.433738+00:00"
+    },
+    {
+      "path": "Builds/WebGL/host-layout.js",
+      "bytes": 2002,
+      "sha256": "187B6162FE987A784D66FB6F929EC64C4885D8BA2A5B5A7E176AF16DFC9DAC25",
+      "modifiedUtc": "2026-10-14T11:58:33.526339+00:00"
+    },
+    {
+      "path": "Builds/WebGL/index.html",
+      "bytes": 4490,
+      "sha256": "BC0C2978899D9D401ADEAD4393976AC3D9F571291432B3CA5382C5E29934237E",
+      "modifiedUtc": "2026-10-14T14:20:33.319261+00:00"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/profiler.js",
+      "bytes": 1573,
+      "sha256": "433E40AF9A544D1EF5FEC67B0B52AF25A851928626C3F3EF0D09B35DED610C0D",
+      "modifiedUtc": "2026-04-29T09:07:42+00:00"
+    },
+    {
+      "path": "Builds/WebGL/ui-text.js",
+      "bytes": 446,
+      "sha256": "676DB2313592E37CBDC7F1CBEEA964E688F9CBA051EF8743C6D06E7ADEFFC362",
+      "modifiedUtc": "2026-10-14T14:47:18.142178+00:00"
+    }
+  ],
+  "changedSinceV8": [
+    {
+      "path": "Builds/WebGL/Build/WebGL.data",
+      "beforeSha256": "8A0040A7AB446EF3D8823533A04E85930A2B3AD817AB04CDDD431392F2AC5E98",
+      "afterSha256": "04DEA2A7570BAD089438166A0E40943A6773F1ABD027DD9143B134DF0611C472"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.loader.js",
+      "beforeSha256": "03AAF3E2319D566DE198A66BE4F5B233F5ABB78E90279739E79ECC977B67A835",
+      "afterSha256": "1D4C7ED46D41C5D5C44F5B3300BF29DD912799343B1A17623F4B335D7F339F13"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.wasm",
+      "beforeSha256": "CA66C107F9F6F3283F13971B2FBEA8CAC6860B9048A74D856E4098D381603FBE",
+      "afterSha256": "402BF4A39C73B3A712489EDFA76F535AF54B07821C12892BA824D5CA904722B0"
+    }
+  ],
+  "tests": {
+    "id": "2",
+    "testcasecount": "73",
+    "result": "Passed",
+    "total": "73",
+    "passed": "73",
+    "failed": "0",
+    "inconclusive": "0",
+    "skipped": "0",
+    "asserts": "0",
+    "engine-version": "3.5.0.0",
+    "clr-version": "4.0.30319.42000",
+    "start-time": "2026-10-14 14:45:44Z",
+    "end-time": "2026-10-14 14:45:46Z",
+    "duration": "1.9256168"
+  },
+  "sourceFreeze": {
+    "path": "Evidence/rank-v9-source-freeze.json",
+    "fileCount": 311,
+    "changedAfterBuild": []
+  },
+  "uiAudit": "Evidence/rank-v9-ui-audit.json87captures",
+  "idempotence": "Evidence/rank-v9-idempotence.jsonPASS",
+  "notices": [
+    {
+      "name": "NotoSansCJKkr-OFL.txt",
+      "sha256": "6587D53488CE62E197942A708671B5F11F99D105034795C23A41380275D69C1F",
+      "webglMatchesSource": true
+    },
+    {
+      "name": "NotoSansKR-OFL.txt",
+      "sha256": "1C05C68C34F9708415AADA51F17E1B0092D2CEA709BF4A94CD38114F9E73D7D9",
+      "webglMatchesSource": true
+    },
+    {
+      "name": "NUnit-ThirdPartyNotices.txt",
+      "sha256": "EF37B1CCBAE5E9B641482CBD77A74EE96193A39D232CC8D856B9044F37DB9244",
+      "webglMatchesSource": true
+    },
+    {
+      "name": "SOURCES.txt",
+      "sha256": "647CB2C60B107FAB810AA3FE6DF07C7932F31AA21BFB11148F33EF5EAED7254C",
+      "webglMatchesSource": true
+    },
+    {
+      "name": "Unity-Companion-License-Full.txt",
+      "sha256": "7A177190B6C4E511E096D7F0211E34C241E9D54954C87B61BF610BF0BCCB719E",
+      "webglMatchesSource": true
+    },
+    {
+      "name": "Unity-NUnit-LICENSE.txt",
+      "sha256": "EA14F98BA99AFCC079EC2A8A6C38461B5BC4CA3D184AA87AD7C60DE9134C4D43",
+      "webglMatchesSource": true
+    },
+    {
+      "name": "Unity-TestFramework-LICENSE.txt",
+      "sha256": "D3B09E9683AFBC8D468A83000308F18E7133EAF7879AF870747000A66E3C0693",
+      "webglMatchesSource": true
+    },
+    {
+      "name": "Unity-uGUI-LICENSE.txt",
+      "sha256": "A8E0CAE87B2EDB8C205AE6C308F20B89A09F32D62BD4A3FF0343BB4724A4201E",
+      "webglMatchesSource": true
+    }
+  ],
+  "data": [
+    {
+      "name": "strings",
+      "sha256": "4FA6C54394FD59846131794852EA025D4FA7DCB6725AB2A1DFB7435F1FA50DE4",
+      "matchesGenerated": true
+    },
+    {
+      "name": "stages",
+      "sha256": "6F76D1575F71FD0240CF7B5774BD2A3FED41FB1828BD0CB85464F34E72122E7E",
+      "matchesGenerated": true
+    },
+    {
+      "name": "ads",
+      "sha256": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A",
+      "matchesGenerated": true
+    }
+  ],
+  "android": "No v9Androidbuild. v8APK retained unchanged; no device test.",
+  "browser": "HELD pending explicit userapproval; Clientdidnotoperatebrowser.",
+  "QA": "IndependentQA ongoing separately; nativeQA014regressionpasses.",
+  "timingEvidence": {
+    "unityLogCreatedUtc": "2026-10-14T14:46:41Z",
+    "buildReportLastWriteUtc": "2026-10-14T14:47:18Z",
+    "unityLogLastWriteUtc": "2026-10-14T14:47:20.698684+00:00",
+    "meaning": "Log creation is launch evidence, not a separately captured process-start timestamp. The owned Start-Process handle completed WaitForExit with exit0 before the approval-instruction message arrived.",
+    "processInventory": "A later read-only CIM listing was unavailable in sandbox; no process was killed and no other project was operated."
+  }
+}

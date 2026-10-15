@@ -1,0 +1,269 @@
+{
+  "runId": "qa-graphics-core-v2-20261014",
+  "framework": ".NET 10.0.8",
+  "passed": 31,
+  "failed": 1,
+  "assertions": 38772,
+  "scope": "app.,l10n.,stageux.,ads.,data.actual_client_json,graphics.",
+  "randomRuleSequences": 0,
+  "randomAiPositions": 0,
+  "limitations": "Unity APIs replaced by explicitly scoped doubles; no Editor, device, native JSON, real persistence, real ads, or performance validation.",
+  "results": [
+    {
+      "name": "ads.reward_duplicate_cancel_failure_retry",
+      "layer": "actual pure C#",
+      "status": "PASS",
+      "assertions": 28,
+      "milliseconds": 0,
+      "error": null
+    },
+    {
+      "name": "ads.grace_interval_cooldown_boundaries",
+      "layer": "actual pure C#; first clock origin unconfirmed",
+      "status": "PASS",
+      "assertions": 12,
+      "milliseconds": 0,
+      "error": null
+    },
+    {
+      "name": "app.reward_callback_after_new_match",
+      "layer": "actual GameApp with UI/coroutine doubles",
+      "status": "PASS",
+      "assertions": 3,
+      "milliseconds": 51,
+      "error": null
+    },
+    {
+      "name": "app.reward_failure_duplicate_and_lobby",
+      "layer": "actual GameApp with UI/coroutine doubles",
+      "status": "PASS",
+      "assertions": 4,
+      "milliseconds": 3,
+      "error": null
+    },
+    {
+      "name": "app.interstitial_callback_after_stage_change",
+      "layer": "actual GameApp with UI/coroutine doubles",
+      "status": "PASS",
+      "assertions": 383,
+      "milliseconds": 6,
+      "error": null
+    },
+    {
+      "name": "app.interstitial_no_callback_timeout",
+      "layer": "actual GameApp with clock/coroutine doubles",
+      "status": "PASS",
+      "assertions": 380,
+      "milliseconds": 0,
+      "error": null
+    },
+    {
+      "name": "app.reward_no_callback_timeout",
+      "layer": "actual GameApp with clock/coroutine doubles",
+      "status": "PASS",
+      "assertions": 1,
+      "milliseconds": 0,
+      "error": null
+    },
+    {
+      "name": "app.pending_reward_blocks_moves_and_pause_cancels",
+      "layer": "actual GameApp with UI/coroutine doubles",
+      "status": "PASS",
+      "assertions": 3,
+      "milliseconds": 3,
+      "error": null
+    },
+    {
+      "name": "app.save_failure_still_exits_finished_match",
+      "layer": "actual GameApp; injected PlayerPrefs.Save exception",
+      "status": "PASS",
+      "assertions": 381,
+      "milliseconds": 1,
+      "error": null
+    },
+    {
+      "name": "data.actual_client_json",
+      "layer": "actual GameData validation; JSON double",
+      "status": "PASS",
+      "assertions": 31,
+      "milliseconds": 1,
+      "error": null
+    },
+    {
+      "name": "l10n.catalog_137_and_bilingual_lookup",
+      "layer": "actual StringTable; JSON double",
+      "status": "PASS",
+      "assertions": 824,
+      "milliseconds": 4,
+      "error": null
+    },
+    {
+      "name": "l10n.previous_58_and_requested_ui_70_separation",
+      "layer": "independent JSON comparison",
+      "status": "PASS",
+      "assertions": 436,
+      "milliseconds": 17,
+      "error": null
+    },
+    {
+      "name": "l10n.missing_duplicate_empty_and_schema_rejected",
+      "layer": "actual StringTable; JSON double",
+      "status": "PASS",
+      "assertions": 16,
+      "milliseconds": 5,
+      "error": null
+    },
+    {
+      "name": "l10n.format_syntax_reordering_literals_and_argument_errors",
+      "layer": "actual StringTable; framework formatting",
+      "status": "PASS",
+      "assertions": 29,
+      "milliseconds": 2,
+      "error": null
+    },
+    {
+      "name": "l10n.legacy_unknown_locale_and_saved_language_restore",
+      "layer": "actual progress; memory PlayerPrefs/JSON double",
+      "status": "PASS",
+      "assertions": 41,
+      "milliseconds": 1,
+      "error": null
+    },
+    {
+      "name": "l10n.warning_keys_localized_and_save_failure_nonfatal",
+      "layer": "actual progress/StringTable; persistence double",
+      "status": "PASS",
+      "assertions": 9,
+      "milliseconds": 2,
+      "error": null
+    },
+    {
+      "name": "l10n.literal_ui_key_references_exist",
+      "layer": "static source/data check; not prefab execution",
+      "status": "PASS",
+      "assertions": 18,
+      "milliseconds": 2,
+      "error": null
+    },
+    {
+      "name": "l10n.app_switch_same_match_and_relaunch",
+      "layer": "actual GameApp; UI/coroutine/persistence doubles",
+      "status": "FAIL",
+      "assertions": 115,
+      "milliseconds": 1,
+      "error": "Exception: stone label not switched"
+    },
+    {
+      "name": "stageux.catalog_adds_exact14_with_only_three_approved_copy_changes",
+      "layer": "independent JSON expectations; actual StringTable formats",
+      "status": "PASS",
+      "assertions": 289,
+      "milliseconds": 3,
+      "error": null
+    },
+    {
+      "name": "stageux.initial_and_legacy_lobby_restore_actual_completion",
+      "layer": "actual GameApp startup with memory save/UI doubles",
+      "status": "PASS",
+      "assertions": 13,
+      "milliseconds": 3,
+      "error": null
+    },
+    {
+      "name": "stageux.chapter_states_all30_ko_en_and_locked_start_guard",
+      "layer": "actual GameApp node listeners; local UI flags",
+      "status": "PASS",
+      "assertions": 2672,
+      "milliseconds": 2,
+      "error": null
+    },
+    {
+      "name": "stageux.each_unlocked_node_starts_exactly_its_mapped_stage",
+      "layer": "actual GameApp listeners with synthetic legal starts",
+      "status": "PASS",
+      "assertions": 121,
+      "milliseconds": 1,
+      "error": null
+    },
+    {
+      "name": "stageux.win_loss_draw_two_actions_no_fill_and_language_switch",
+      "layer": "actual result state and listener actions; no pixel proof",
+      "status": "PASS",
+      "assertions": 6216,
+      "milliseconds": 6,
+      "error": null
+    },
+    {
+      "name": "stageux.final30_is_retry_and_reloads_as_cleared_map",
+      "layer": "actual GameApp final clear and saved restart",
+      "status": "PASS",
+      "assertions": 384,
+      "milliseconds": 1,
+      "error": null
+    },
+    {
+      "name": "stageux.primary_actions_respect_ad_boundary_and_stale_callbacks",
+      "layer": "actual GameApp with delayed ad/coroutine doubles",
+      "status": "PASS",
+      "assertions": 9315,
+      "milliseconds": 6,
+      "error": null
+    },
+    {
+      "name": "stageux.save_warning_replaces_clear_count_without_losing_state",
+      "layer": "actual lobby state with memory save failure",
+      "status": "PASS",
+      "assertions": 5,
+      "milliseconds": 0,
+      "error": null
+    },
+    {
+      "name": "graphics.both_winners_timeline_front_order_input_and_ad_once",
+      "layer": "actual GameApp; logical .05s scheduler and sprite identity/sibling-list doubles",
+      "status": "PASS",
+      "assertions": 924,
+      "milliseconds": 2,
+      "error": null
+    },
+    {
+      "name": "graphics.application_pause_freezes_active_presentation_time",
+      "layer": "actual pause handler; clock doubles",
+      "status": "PASS",
+      "assertions": 762,
+      "milliseconds": 1,
+      "error": null
+    },
+    {
+      "name": "graphics.cancel_at_animation_observation_or_ad_restores_and_ignores_stale",
+      "layer": "actual cancel methods; delayed SDK and hierarchy doubles",
+      "status": "PASS",
+      "assertions": 2718,
+      "milliseconds": 5,
+      "error": null
+    },
+    {
+      "name": "graphics.lobby_selects_highest_unlocked_and_retry_same_stage",
+      "layer": "actual result button listeners and memory reload",
+      "status": "PASS",
+      "assertions": 9660,
+      "milliseconds": 8,
+      "error": null
+    },
+    {
+      "name": "graphics.draw_skips_win_animation_but_settles_two_actions_once",
+      "layer": "actual terminal draw and result state; delayed ad",
+      "status": "PASS",
+      "assertions": 2273,
+      "milliseconds": 1,
+      "error": null
+    },
+    {
+      "name": "graphics.actual_player_drop_and_ai_think_enter_finish_sequence",
+      "layer": "actual GameApp Drop/Think plus deterministic terminal opportunities",
+      "status": "PASS",
+      "assertions": 706,
+      "milliseconds": 1,
+      "error": null
+    }
+  ]
+}

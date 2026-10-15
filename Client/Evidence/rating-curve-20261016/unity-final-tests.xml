@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="44" result="Passed" total="44" passed="44" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-15 15:49:27Z" end-time="2026-10-15 15:49:35Z" duration="8.4877567">
+  <test-suite type="TestSuite" id="1000" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="123" result="Passed" start-time="2026-10-15 15:49:27Z" end-time="2026-10-15 15:49:35Z" duration="8.487757" total="44" passed="44" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1146" name="StageGame.Tests.dll" fullname="C:/Github/StageGame/Client/Library/ScriptAssemblies/StageGame.Tests.dll" runstate="Runnable" testcasecount="123" result="Passed" start-time="2026-10-15 15:49:27Z" end-time="2026-10-15 15:49:35Z" duration="8.446565" total="44" passed="44" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="38968" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1147" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="123" result="Passed" start-time="2026-10-15 15:49:27Z" end-time="2026-10-15 15:49:35Z" duration="8.446214" total="44" passed="44" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1148" name="Tests" fullname="StageGame.Tests" runstate="Runnable" testcasecount="123" result="Passed" start-time="2026-10-15 15:49:27Z" end-time="2026-10-15 15:49:35Z" duration="8.445581" total="44" passed="44" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1001" name="CoreTests" fullname="StageGame.Tests.CoreTests" classname="StageGame.Tests.CoreTests" runstate="Runnable" testcasecount="25" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.212990" total="25" passed="25" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1026" name="AdPolicyRequiresGraceMatchesAndBothCooldowns" fullname="StageGame.Tests.CoreTests.AdPolicyRequiresGraceMatchesAndBothCooldowns" methodname="AdPolicyRequiresGraceMatchesAndBothCooldowns" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="196141893" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.006504" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1010" name="AiBlocksImmediateLossEvenAtMaximumMistakes" fullname="StageGame.Tests.CoreTests.AiBlocksImmediateLossEvenAtMaximumMistakes" methodname="AiBlocksImmediateLossEvenAtMaximumMistakes" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1600861594" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.004716" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1011" name="AiRespectsNodeAndStepBudgetsAndLeavesBoardUntouched" fullname="StageGame.Tests.CoreTests.AiRespectsNodeAndStepBudgetsAndLeavesBoardUntouched" methodname="AiRespectsNodeAndStepBudgetsAndLeavesBoardUntouched" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1876992443" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.002582" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1009" name="AiTakesWinBeforeRandomMistake" fullname="StageGame.Tests.CoreTests.AiTakesWinBeforeRandomMistake" methodname="AiTakesWinBeforeRandomMistake" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="211273467" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.001448" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1012" name="BundledDataReplaysEveryStageAndAiReturnsLegalMove" fullname="StageGame.Tests.CoreTests.BundledDataReplaysEveryStageAndAiReturnsLegalMove" methodname="BundledDataReplaysEveryStageAndAiReturnsLegalMove" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1304689666" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.123495" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1008" name="CloneDoesNotMutateOriginal" fullname="StageGame.Tests.CoreTests.CloneDoesNotMutateOriginal" methodname="CloneDoesNotMutateOriginal" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1950073890" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.000273" asserts="0">
+              <properties />
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1007" name="FourDirectionsWinAndFinishedBoardRejectsInput" fullname="StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput" classname="StageGame.Tests.CoreTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.001935" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1003" name="FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])" fullname="StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])" methodname="FourDirectionsWinAndFinishedBoardRejectsInput" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="11258565" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.000287" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1004" name="FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])" fullname="StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])" methodname="FourDirectionsWinAndFinishedBoardRejectsInput" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="208181612" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.000287" asserts="0">
+                <properties>
+                  <property name="childIndex" value="2" />
+                </properties>
+              </test-case>
+              <test-case id="1005" name="FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])" fullname="StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])" methodname="FourDirectionsWinAndFinishedBoardRejectsInput" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="112704870" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.000287" asserts="0">
+                <properties>
+                  <property name="childIndex" value="3" />
+                </properties>
+              </test-case>
+              <test-case id="1006" name="FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])" fullname="StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])" methodname="FourDirectionsWinAndFinishedBoardRejectsInput" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="2062051160" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.000287" asserts="0">
+                <properties>
+                  <property name="childIndex" value="4" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1002" name="GravityAlternatesAndRejectsFullColumn" fullname="StageGame.Tests.CoreTests.GravityAlternatesAndRejectsFullColumn" methodname="GravityAlternatesAndRejectsFullColumn" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1452087960" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.000159" asserts="0">
+              <properties />
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1018" name="InvalidOrTerminalOpeningsFailLoudly" fullname="StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly" classname="StageGame.Tests.CoreTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.001354" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1013" name="InvalidOrTerminalOpeningsFailLoudly(&quot;0,0,0,0,0,0,0&quot;)" fullname="StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(&quot;0,0,0,0,0,0,0&quot;)" methodname="InvalidOrTerminalOpeningsFailLoudly" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="814318691" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.000810" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1014" name="InvalidOrTerminalOpeningsFailLoudly(&quot;0,6,1,6,2,5,3&quot;)" fullname="StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(&quot;0,6,1,6,2,5,3&quot;)" methodname="InvalidOrTerminalOpeningsFailLoudly" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1851947970" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.000048" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1015" name="InvalidOrTerminalOpeningsFailLoudly(&quot;7&quot;)" fullname="StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(&quot;7&quot;)" methodname="InvalidOrTerminalOpeningsFailLoudly" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1792688176" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.000043" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1016" name="InvalidOrTerminalOpeningsFailLoudly(&quot;a&quot;)" fullname="StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(&quot;a&quot;)" methodname="InvalidOrTerminalOpeningsFailLoudly" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="380009462" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.000028" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1017" name="InvalidOrTerminalOpeningsFailLoudly(&quot;0,&quot;)" fullname="StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(&quot;0,&quot;)" methodname="InvalidOrTerminalOpeningsFailLoudly" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1776938569" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.000026" asserts="0">
+                <properties />
+              </test-case>
+            </test-suite>
+            <test-case id="1019" name="MalformedDataCannotSilentlyLoad" fullname="StageGame.Tests.CoreTests.MalformedDataCannotSilentlyLoad" methodname="MalformedDataCannotSilentlyLoad" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1574359297" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.001497" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1025" name="NoFillNeverRewardsAndEditorDuplicateOnlyGrantsOnce" fullname="StageGame.Tests.CoreTests.NoFillNeverRewardsAndEditorDuplicateOnlyGrantsOnce" methodname="NoFillNeverRewardsAndEditorDuplicateOnlyGrantsOnce" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="662189314" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.000311" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1028" name="ProgressRejectsNonAdjacentAndReloadedDuplicateResults" fullname="StageGame.Tests.CoreTests.ProgressRejectsNonAdjacentAndReloadedDuplicateResults" methodname="ProgressRejectsNonAdjacentAndReloadedDuplicateResults" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="266164445" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.002041" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1024" name="RewardCompletesOnlyOnceAndRejectsStaleCallbacks" fullname="StageGame.Tests.CoreTests.RewardCompletesOnlyOnceAndRejectsStaleCallbacks" methodname="RewardCompletesOnlyOnceAndRejectsStaleCallbacks" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="886600248" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.000153" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1027" name="SavedPrefabReferencesAndNestedButtonsValidate" fullname="StageGame.Tests.CoreTests.SavedPrefabReferencesAndNestedButtonsValidate" methodname="SavedPrefabReferencesAndNestedButtonsValidate" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1134691063" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.055393" asserts="0">
+              <properties />
+              <output><![CDATA[[Rank UI] Saved references,30 cards and42 board/preview intersections validated.
+]]></output>
+            </test-case>
+            <test-case id="1029" name="TruncatedStageCatalogIsRejected" fullname="StageGame.Tests.CoreTests.TruncatedStageCatalogIsRejected" methodname="TruncatedStageCatalogIsRejected" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1134766592" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.001372" asserts="0">
+              <properties />
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1023" name="UnsuccessfulRewardCanRetryWithoutGrant" fullname="StageGame.Tests.CoreTests.UnsuccessfulRewardCanRetryWithoutGrant" classname="StageGame.Tests.CoreTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.001125" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1020" name="UnsuccessfulRewardCanRetryWithoutGrant(Unavailable)" fullname="StageGame.Tests.CoreTests.UnsuccessfulRewardCanRetryWithoutGrant(Unavailable)" methodname="UnsuccessfulRewardCanRetryWithoutGrant" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1840092521" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.000245" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1021" name="UnsuccessfulRewardCanRetryWithoutGrant(Failed)" fullname="StageGame.Tests.CoreTests.UnsuccessfulRewardCanRetryWithoutGrant(Failed)" methodname="UnsuccessfulRewardCanRetryWithoutGrant" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="48433290" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.000054" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1022" name="UnsuccessfulRewardCanRetryWithoutGrant(Cancelled)" fullname="StageGame.Tests.CoreTests.UnsuccessfulRewardCanRetryWithoutGrant(Cancelled)" methodname="UnsuccessfulRewardCanRetryWithoutGrant" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="833769603" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.000037" asserts="0">
+                <properties />
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestFixture" id="1050" name="OpeningSearchTests" fullname="StageGame.Tests.OpeningSearchTests" classname="StageGame.Tests.OpeningSearchTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.018200" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1054" name="GuardedOpeningAvoidsTheObservedEarlyDoubleThreat" fullname="StageGame.Tests.OpeningSearchTests.GuardedOpeningAvoidsTheObservedEarlyDoubleThreat" methodname="GuardedOpeningAvoidsTheObservedEarlyDoubleThreat" classname="StageGame.Tests.OpeningSearchTests" runstate="Runnable" seed="1789272282" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.000815" asserts="0">
+              <properties />
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1053" name="GuardedOpeningUsesCenterWithoutRandomMistakesAndKeepsStepBudget" fullname="StageGame.Tests.OpeningSearchTests.GuardedOpeningUsesCenterWithoutRandomMistakesAndKeepsStepBudget" classname="StageGame.Tests.OpeningSearchTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.016880" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1051" name="GuardedOpeningUsesCenterWithoutRandomMistakesAndKeepsStepBudget(1)" fullname="StageGame.Tests.OpeningSearchTests.GuardedOpeningUsesCenterWithoutRandomMistakesAndKeepsStepBudget(1)" methodname="GuardedOpeningUsesCenterWithoutRandomMistakesAndKeepsStepBudget" classname="StageGame.Tests.OpeningSearchTests" runstate="Runnable" seed="1302970628" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.009388" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1052" name="GuardedOpeningUsesCenterWithoutRandomMistakesAndKeepsStepBudget(-1)" fullname="StageGame.Tests.OpeningSearchTests.GuardedOpeningUsesCenterWithoutRandomMistakesAndKeepsStepBudget(-1)" methodname="GuardedOpeningUsesCenterWithoutRandomMistakesAndKeepsStepBudget" classname="StageGame.Tests.OpeningSearchTests" runstate="Runnable" seed="309373708" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:08Z" duration="0.007108" asserts="0">
+                <properties />
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestFixture" id="1055" name="RankFlowTests" fullname="StageGame.Tests.RankFlowTests" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" testcasecount="49" result="Passed" start-time="2026-10-15 15:49:27Z" end-time="2026-10-15 15:49:28Z" duration="1.156417" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1057" name="ActualAiStarterPlacesOnceAndUndoRestoresOpeningPhase" fullname="StageGame.Tests.RankFlowTests.ActualAiStarterPlacesOnceAndUndoRestoresOpeningPhase" methodname="ActualAiStarterPlacesOnceAndUndoRestoresOpeningPhase" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1081443886" result="Passed" start-time="2026-10-15 15:49:08Z" end-time="2026-10-15 15:49:12Z" duration="3.519221" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1097" name="AiWaitingCancelsOnUndoRestartLeaveAndHintsHaveNoOneSecondDelay" fullname="StageGame.Tests.RankFlowTests.AiWaitingCancelsOnUndoRestartLeaveAndHintsHaveNoOneSecondDelay" methodname="AiWaitingCancelsOnUndoRestartLeaveAndHintsHaveNoOneSecondDelay" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="593360952" result="Passed" start-time="2026-10-15 15:49:12Z" end-time="2026-10-15 15:49:16Z" duration="4.839725" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1096" name="AiWaitOverlapsSearchAndExcludesPauseAndConfirmationTime" fullname="StageGame.Tests.RankFlowTests.AiWaitOverlapsSearchAndExcludesPauseAndConfirmationTime" methodname="AiWaitOverlapsSearchAndExcludesPauseAndConfirmationTime" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="406544635" result="Passed" start-time="2026-10-15 15:49:16Z" end-time="2026-10-15 15:49:21Z" duration="4.305751" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[V10 AI] Highest-budget response active seconds=1.00485873222351; search and delay overlap.
+]]></output>
+            </test-case>
+            <test-case id="1058" name="HighestRatingFindsFivePlyAttackWithinTheRealTurnDeadline" fullname="StageGame.Tests.RankFlowTests.HighestRatingFindsFivePlyAttackWithinTheRealTurnDeadline" methodname="HighestRatingFindsFivePlyAttackWithinTheRealTurnDeadline" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1409904495" result="Passed" start-time="2026-10-15 15:49:21Z" end-time="2026-10-15 15:49:24Z" duration="3.397931" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1056" name="RatedMatchesUseTheirAuthoredStrengthFromTheFirstMove" fullname="StageGame.Tests.RankFlowTests.RatedMatchesUseTheirAuthoredStrengthFromTheFirstMove" methodname="RatedMatchesUseTheirAuthoredStrengthFromTheFirstMove" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1099333721" result="Passed" start-time="2026-10-15 15:49:24Z" end-time="2026-10-15 15:49:26Z" duration="1.570933" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1092" name="TurnTimerExpiresOnceInSelectedColumnAndResetsAfterAiAndUndo" fullname="StageGame.Tests.RankFlowTests.TurnTimerExpiresOnceInSelectedColumnAndResetsAfterAiAndUndo" methodname="TurnTimerExpiresOnceInSelectedColumnAndResetsAfterAiAndUndo" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1606222844" result="Passed" start-time="2026-10-15 15:49:26Z" end-time="2026-10-15 15:49:28Z" duration="2.467639" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1125" name="RatingSearchTests" fullname="StageGame.Tests.RatingSearchTests" classname="StageGame.Tests.RatingSearchTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-10-15 15:49:28Z" end-time="2026-10-15 15:49:35Z" duration="7.270288" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1126" name="AllAuthoredRatingsImproveImmediateAttackAndDefenseWhileBeginnersStillMiss" fullname="StageGame.Tests.RatingSearchTests.AllAuthoredRatingsImproveImmediateAttackAndDefenseWhileBeginnersStillMiss" methodname="AllAuthoredRatingsImproveImmediateAttackAndDefenseWhileBeginnersStillMiss" classname="StageGame.Tests.RatingSearchTests" runstate="Runnable" seed="1995353978" result="Passed" start-time="2026-10-15 15:49:28Z" end-time="2026-10-15 15:49:35Z" duration="6.651012" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1136" name="HighestRatingFindsDeeperAttacksAndAvoidsSixPlyLosses" fullname="StageGame.Tests.RatingSearchTests.HighestRatingFindsDeeperAttacksAndAvoidsSixPlyLosses" classname="StageGame.Tests.RatingSearchTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-15 15:49:35Z" end-time="2026-10-15 15:49:35Z" duration="0.087621" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1132" name="HighestRatingFindsDeeperAttacksAndAvoidsSixPlyLosses(&quot;3,4,1,0,0,5,4,6,2,1,1,3,4,6&quot;,System.Int32[])" fullname="StageGame.Tests.RatingSearchTests.HighestRatingFindsDeeperAttacksAndAvoidsSixPlyLosses(&quot;3,4,1,0,0,5,4,6,2,1,1,3,4,6&quot;,System.Int32[])" methodname="HighestRatingFindsDeeperAttacksAndAvoidsSixPlyLosses" classname="StageGame.Tests.RatingSearchTests" runstate="Runnable" seed="1887485516" result="Passed" start-time="2026-10-15 15:49:35Z" end-time="2026-10-15 15:49:35Z" duration="0.025858" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1133" name="HighestRatingFindsDeeperAttacksAndAvoidsSixPlyLosses(&quot;4,5,5,3,1,0,0,0,2,5,0,2,3,6&quot;,System.Int32[])" fullname="StageGame.Tests.RatingSearchTests.HighestRatingFindsDeeperAttacksAndAvoidsSixPlyLosses(&quot;4,5,5,3,1,0,0,0,2,5,0,2,3,6&quot;,System.Int32[])" methodname="HighestRatingFindsDeeperAttacksAndAvoidsSixPlyLosses" classname="StageGame.Tests.RatingSearchTests" runstate="Runnable" seed="1866345858" result="Passed" start-time="2026-10-15 15:49:35Z" end-time="2026-10-15 15:49:35Z" duration="0.025640" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1134" name="HighestRatingFindsDeeperAttacksAndAvoidsSixPlyLosses(&quot;2,0,2,4,1,0,4,0,0,2,2&quot;,System.Int32[])" fullname="StageGame.Tests.RatingSearchTests.HighestRatingFindsDeeperAttacksAndAvoidsSixPlyLosses(&quot;2,0,2,4,1,0,4,0,0,2,2&quot;,System.Int32[])" methodname="HighestRatingFindsDeeperAttacksAndAvoidsSixPlyLosses" classname="StageGame.Tests.RatingSearchTests" runstate="Runnable" seed="2041404608" result="Passed" start-time="2026-10-15 15:49:35Z" end-time="2026-10-15 15:49:35Z" duration="0.016001" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1135" name="HighestRatingFindsDeeperAttacksAndAvoidsSixPlyLosses(&quot;6,4,6,3,1,3,3,6,1,5,6,6,3,3,4,4,2&quot;,System.Int32[])" fullname="StageGame.Tests.RatingSearchTests.HighestRatingFindsDeeperAttacksAndAvoidsSixPlyLosses(&quot;6,4,6,3,1,3,3,6,1,5,6,6,3,3,4,4,2&quot;,System.Int32[])" methodname="HighestRatingFindsDeeperAttacksAndAvoidsSixPlyLosses" classname="StageGame.Tests.RatingSearchTests" runstate="Runnable" seed="423441378" result="Passed" start-time="2026-10-15 15:49:35Z" end-time="2026-10-15 15:49:35Z" duration="0.019011" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="ParameterizedMethod" id="1131" name="MidRatingsAvoidTheObservedSevenMoveForkEvenWhenChoosingRandomly" fullname="StageGame.Tests.RatingSearchTests.MidRatingsAvoidTheObservedSevenMoveForkEvenWhenChoosingRandomly" classname="StageGame.Tests.RatingSearchTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-15 15:49:35Z" end-time="2026-10-15 15:49:35Z" duration="0.529276" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1127" name="MidRatingsAvoidTheObservedSevenMoveForkEvenWhenChoosingRandomly(3,3,4)" fullname="StageGame.Tests.RatingSearchTests.MidRatingsAvoidTheObservedSevenMoveForkEvenWhenChoosingRandomly(3,3,4)" methodname="MidRatingsAvoidTheObservedSevenMoveForkEvenWhenChoosingRandomly" classname="StageGame.Tests.RatingSearchTests" runstate="Runnable" seed="668199674" result="Passed" start-time="2026-10-15 15:49:35Z" end-time="2026-10-15 15:49:35Z" duration="0.131472" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1128" name="MidRatingsAvoidTheObservedSevenMoveForkEvenWhenChoosingRandomly(3,3,2)" fullname="StageGame.Tests.RatingSearchTests.MidRatingsAvoidTheObservedSevenMoveForkEvenWhenChoosingRandomly(3,3,2)" methodname="MidRatingsAvoidTheObservedSevenMoveForkEvenWhenChoosingRandomly" classname="StageGame.Tests.RatingSearchTests" runstate="Runnable" seed="410394199" result="Passed" start-time="2026-10-15 15:49:35Z" end-time="2026-10-15 15:49:35Z" duration="0.122321" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1129" name="MidRatingsAvoidTheObservedSevenMoveForkEvenWhenChoosingRandomly(3,0,4)" fullname="StageGame.Tests.RatingSearchTests.MidRatingsAvoidTheObservedSevenMoveForkEvenWhenChoosingRandomly(3,0,4)" methodname="MidRatingsAvoidTheObservedSevenMoveForkEvenWhenChoosingRandomly" classname="StageGame.Tests.RatingSearchTests" runstate="Runnable" seed="1948799596" result="Passed" start-time="2026-10-15 15:49:35Z" end-time="2026-10-15 15:49:35Z" duration="0.145572" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1130" name="MidRatingsAvoidTheObservedSevenMoveForkEvenWhenChoosingRandomly(3,6,2)" fullname="StageGame.Tests.RatingSearchTests.MidRatingsAvoidTheObservedSevenMoveForkEvenWhenChoosingRandomly(3,6,2)" methodname="MidRatingsAvoidTheObservedSevenMoveForkEvenWhenChoosingRandomly" classname="StageGame.Tests.RatingSearchTests" runstate="Runnable" seed="1222421261" result="Passed" start-time="2026-10-15 15:49:35Z" end-time="2026-10-15 15:49:35Z" duration="0.128877" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1137" name="OversightRemainsLegalDeterministicAndRespectsTerminalBoards" fullname="StageGame.Tests.RatingSearchTests.OversightRemainsLegalDeterministicAndRespectsTerminalBoards" methodname="OversightRemainsLegalDeterministicAndRespectsTerminalBoards" classname="StageGame.Tests.RatingSearchTests" runstate="Runnable" seed="1311468011" result="Passed" start-time="2026-10-15 15:49:35Z" end-time="2026-10-15 15:49:35Z" duration="0.001407" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Github/StageGame/Client/Evidence/rating-curve-20261016/unity-final-tests.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

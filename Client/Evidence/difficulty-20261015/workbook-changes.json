@@ -1,0 +1,285 @@
+{
+  "changedCells": [
+    {
+      "cell": "G5",
+      "before": 300,
+      "after": 850
+    },
+    {
+      "cell": "J5",
+      "before": "중앙과 양옆의 연결 가능성 비교",
+      "after": "빈 판에서 중앙과 네 개 연결 연습"
+    },
+    {
+      "cell": "G6",
+      "before": 300,
+      "after": 850
+    },
+    {
+      "cell": "I6",
+      "before": "6,3,5,2",
+      "after": null
+    },
+    {
+      "cell": "J6",
+      "before": "두 돌의 연결을 이어 갈 자리 찾기",
+      "after": "빈 판에서 중앙과 네 개 연결 연습"
+    },
+    {
+      "cell": "G7",
+      "before": 250,
+      "after": 750
+    },
+    {
+      "cell": "I7",
+      "before": "4,5,6,5,3,5",
+      "after": null
+    },
+    {
+      "cell": "J7",
+      "before": "상대의 즉시 승리 위협 하나 차단",
+      "after": "빈 판에서 중앙과 네 개 연결 연습"
+    },
+    {
+      "cell": "G8",
+      "before": 250,
+      "after": 750
+    },
+    {
+      "cell": "E9",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "cell": "G9",
+      "before": 220,
+      "after": 650
+    },
+    {
+      "cell": "I9",
+      "before": "2,0,1,1,0,5",
+      "after": null
+    },
+    {
+      "cell": "J9",
+      "before": "중앙과 양옆의 연결 가능성 비교",
+      "after": "빈 판에서 중앙과 네 개 연결 연습"
+    },
+    {
+      "cell": "E10",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "cell": "G10",
+      "before": 220,
+      "after": 650
+    },
+    {
+      "cell": "I10",
+      "before": "0,5,2,4,4,3,1,2",
+      "after": null
+    },
+    {
+      "cell": "J10",
+      "before": "상대의 즉시 승리 위협 하나 차단",
+      "after": "빈 판에서 중앙과 네 개 연결 연습"
+    },
+    {
+      "cell": "E11",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "cell": "G11",
+      "before": 180,
+      "after": 550
+    },
+    {
+      "cell": "I11",
+      "before": "1,5,3,1,6,4,2,0",
+      "after": null
+    },
+    {
+      "cell": "J11",
+      "before": "두 돌의 연결을 이어 갈 자리 찾기",
+      "after": "빈 판에서 중앙과 네 개 연결 연습"
+    },
+    {
+      "cell": "E12",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "cell": "G12",
+      "before": 180,
+      "after": 550
+    },
+    {
+      "cell": "H12",
+      "before": -1,
+      "after": 1
+    },
+    {
+      "cell": "I12",
+      "before": "0,1,3,2,4",
+      "after": null
+    },
+    {
+      "cell": "J12",
+      "before": "중앙과 양옆의 연결 가능성 비교",
+      "after": "빈 판에서 중앙과 네 개 연결 연습"
+    },
+    {
+      "cell": "E13",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "cell": "G13",
+      "before": 140,
+      "after": 450
+    },
+    {
+      "cell": "E14",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "cell": "G14",
+      "before": 140,
+      "after": 450
+    },
+    {
+      "cell": "E15",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "cell": "G15",
+      "before": 110,
+      "after": 350
+    },
+    {
+      "cell": "E16",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "cell": "G16",
+      "before": 110,
+      "after": 350
+    },
+    {
+      "cell": "E17",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "cell": "G17",
+      "before": 85,
+      "after": 280
+    },
+    {
+      "cell": "E18",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "cell": "G18",
+      "before": 85,
+      "after": 280
+    },
+    {
+      "cell": "G19",
+      "before": 60,
+      "after": 220
+    },
+    {
+      "cell": "G20",
+      "before": 60,
+      "after": 220
+    },
+    {
+      "cell": "E21",
+      "before": 4,
+      "after": 3
+    },
+    {
+      "cell": "G21",
+      "before": 45,
+      "after": 160
+    },
+    {
+      "cell": "E22",
+      "before": 4,
+      "after": 3
+    },
+    {
+      "cell": "G22",
+      "before": 45,
+      "after": 160
+    },
+    {
+      "cell": "G23",
+      "before": 30,
+      "after": 120
+    },
+    {
+      "cell": "G24",
+      "before": 30,
+      "after": 120
+    },
+    {
+      "cell": "G25",
+      "before": 20,
+      "after": 80
+    },
+    {
+      "cell": "G26",
+      "before": 20,
+      "after": 80
+    },
+    {
+      "cell": "E27",
+      "before": 5,
+      "after": 4
+    },
+    {
+      "cell": "G27",
+      "before": 10,
+      "after": 60
+    },
+    {
+      "cell": "E28",
+      "before": 5,
+      "after": 4
+    },
+    {
+      "cell": "G28",
+      "before": 10,
+      "after": 60
+    },
+    {
+      "cell": "G29",
+      "before": 5,
+      "after": 40
+    },
+    {
+      "cell": "G30",
+      "before": 5,
+      "after": 40
+    },
+    {
+      "cell": "G31",
+      "before": 0,
+      "after": 20
+    },
+    {
+      "cell": "G32",
+      "before": 0,
+      "after": 20
+    }
+  ],
+  "preserved": "All other values, cell styles, sheet order, dimensions, merged cells, freeze panes and validations"
+}

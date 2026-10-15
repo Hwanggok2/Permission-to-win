@@ -1,0 +1,27 @@
+{
+    "musicBefore": {
+        "peak": 0.03497760742902756,
+        "rms": 0.010115721262991429,
+        "sampledWindows": 2303
+    },
+    "musicAfter": {
+        "peak": 0.08744402229785919,
+        "rms": 0.02557135373353958,
+        "sampledWindows": 2611
+    },
+    "moveBefore": {
+        "peak": 0.13563428819179536,
+        "rms": 0.016292504966259004,
+        "sampledWindows": 1049
+    },
+    "moveAfter": {
+        "peak": 0.45055481791496279,
+        "rms": 0.06293051689863205,
+        "sampledWindows": 981
+    },
+    "muted": {
+        "peak": 0.0,
+        "rms": 0.0,
+        "sampledWindows": 896
+    }
+}

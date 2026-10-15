@@ -1,0 +1,6 @@
+{
+  "name": "StageGame.Runtime",
+  "rootNamespace": "StageGame",
+  "references": ["UnityEngine.UI"],
+  "autoReferenced": true
+}

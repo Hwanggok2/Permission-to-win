@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="5" result="Passed" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-15 16:29:19Z" end-time="2026-10-15 16:29:19Z" duration="0.1450192">
+  <test-suite type="TestSuite" id="1000" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="127" result="Passed" start-time="2026-10-15 16:29:19Z" end-time="2026-10-15 16:29:19Z" duration="0.145019" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1152" name="StageGame.Tests.dll" fullname="C:/Github/StageGame/Client/Library/ScriptAssemblies/StageGame.Tests.dll" runstate="Runnable" testcasecount="127" result="Passed" start-time="2026-10-15 16:29:19Z" end-time="2026-10-15 16:29:19Z" duration="0.136709" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="14032" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1153" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="127" result="Passed" start-time="2026-10-15 16:29:19Z" end-time="2026-10-15 16:29:19Z" duration="0.135388" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1154" name="Tests" fullname="StageGame.Tests" runstate="Runnable" testcasecount="127" result="Passed" start-time="2026-10-15 16:29:19Z" end-time="2026-10-15 16:29:19Z" duration="0.134478" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1124" name="RankSoundAssetTests" fullname="StageGame.Tests.RankSoundAssetTests" classname="StageGame.Tests.RankSoundAssetTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-15 16:29:19Z" end-time="2026-10-15 16:29:19Z" duration="0.100887" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="ParameterizedMethod" id="1128" name="AacSafeCopiesPreserveTheEntireOriginalAttackBetweenSilentGuards" fullname="StageGame.Tests.RankSoundAssetTests.AacSafeCopiesPreserveTheEntireOriginalAttackBetweenSilentGuards" classname="StageGame.Tests.RankSoundAssetTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-15 16:29:19Z" end-time="2026-10-15 16:29:19Z" duration="0.029940" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1126" name="AacSafeCopiesPreserveTheEntireOriginalAttackBetweenSilentGuards(&quot;TypingKey&quot;)" fullname="StageGame.Tests.RankSoundAssetTests.AacSafeCopiesPreserveTheEntireOriginalAttackBetweenSilentGuards(&quot;TypingKey&quot;)" methodname="AacSafeCopiesPreserveTheEntireOriginalAttackBetweenSilentGuards" classname="StageGame.Tests.RankSoundAssetTests" runstate="Runnable" seed="1141767132" result="Passed" start-time="2026-10-15 16:29:19Z" end-time="2026-10-15 16:29:19Z" duration="0.022389" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1127" name="AacSafeCopiesPreserveTheEntireOriginalAttackBetweenSilentGuards(&quot;ButtonClick&quot;)" fullname="StageGame.Tests.RankSoundAssetTests.AacSafeCopiesPreserveTheEntireOriginalAttackBetweenSilentGuards(&quot;ButtonClick&quot;)" methodname="AacSafeCopiesPreserveTheEntireOriginalAttackBetweenSilentGuards" classname="StageGame.Tests.RankSoundAssetTests" runstate="Runnable" seed="1311318339" result="Passed" start-time="2026-10-15 16:29:19Z" end-time="2026-10-15 16:29:19Z" duration="0.003112" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1125" name="SavedSoundsUseShortPcmClipsAndCoverEveryButtonOnce" fullname="StageGame.Tests.RankSoundAssetTests.SavedSoundsUseShortPcmClipsAndCoverEveryButtonOnce" methodname="SavedSoundsUseShortPcmClipsAndCoverEveryButtonOnce" classname="StageGame.Tests.RankSoundAssetTests" runstate="Runnable" seed="1066959181" result="Passed" start-time="2026-10-15 16:29:19Z" end-time="2026-10-15 16:29:19Z" duration="0.064124" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1122" name="RatingDisplayAssetTests" fullname="StageGame.Tests.RatingDisplayAssetTests" classname="StageGame.Tests.RatingDisplayAssetTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-15 16:29:19Z" end-time="2026-10-15 16:29:19Z" duration="0.002805" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1123" name="SavedRatingsSliderAndDedicatedTypingClipHaveValidReferences" fullname="StageGame.Tests.RatingDisplayAssetTests.SavedRatingsSliderAndDedicatedTypingClipHaveValidReferences" methodname="SavedRatingsSliderAndDedicatedTypingClipHaveValidReferences" classname="StageGame.Tests.RatingDisplayAssetTests" runstate="Runnable" seed="245742242" result="Passed" start-time="2026-10-15 16:29:19Z" end-time="2026-10-15 16:29:19Z" duration="0.001819" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1150" name="WebAudioImportAuditTests" fullname="StageGame.Tests.WebAudioImportAuditTests" classname="StageGame.Tests.WebAudioImportAuditTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-15 16:29:19Z" end-time="2026-10-15 16:29:19Z" duration="0.020100" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1151" name="ExportActualImportedAudioArtifactsAndSettings" fullname="StageGame.Tests.WebAudioImportAuditTests.ExportActualImportedAudioArtifactsAndSettings" methodname="ExportActualImportedAudioArtifactsAndSettings" classname="StageGame.Tests.WebAudioImportAuditTests" runstate="Runnable" seed="889531075" result="Passed" start-time="2026-10-15 16:29:19Z" end-time="2026-10-15 16:29:19Z" duration="0.019628" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Github/StageGame/Client/Evidence/web-audio-fsb-20261016/unity-audio-tests.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

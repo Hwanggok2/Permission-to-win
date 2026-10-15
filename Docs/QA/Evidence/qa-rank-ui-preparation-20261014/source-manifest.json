@@ -1,0 +1,42 @@
+[
+  {
+    "source": "Tests/Fixtures/rank-ui-interaction-cases.json",
+    "sha256": "40816c6ba348c2fa872b0880468e67f548885a803f7d469271ab196eda9ee704"
+  },
+  {
+    "source": "Tests/run-independent.ps1",
+    "sha256": "6c566e401a0ec0999d231703a6e01081e291f22aeb94c81b3896feca44a0f409"
+  },
+  {
+    "source": "Tests/IndependentHarness/Program.cs",
+    "sha256": "7cd2fb1c871a47a708ef592f00e8877711b2c596fe4a6af308617072c3a6cd89"
+  },
+  {
+    "source": "Tests/IndependentHarness/UnityStubs.cs",
+    "sha256": "6f88c948c12f83a61b592408fbdd229a0da587a5b0aa2d79f331a9c3bd4d407b"
+  },
+  {
+    "source": "Tests/IndependentHarness/LocalizationChecks.cs",
+    "sha256": "1d276501d6cb90570640c83824ccba3a0c36debb875daae60ecf7f60db8243bc"
+  },
+  {
+    "source": "Tests/IndependentHarness/StageUxChecks.cs",
+    "sha256": "d7f8b43673994868f129d807a537c76dc311b16f79d8e9ef931f574ee48e3d12"
+  },
+  {
+    "source": "Tests/IndependentHarness/GraphicsChecks.cs",
+    "sha256": "bed74dfc7d65f7e086d9deefb68af9a198c5779a17d8e7cb1632cea1098fa134"
+  },
+  {
+    "source": "Tests/IndependentHarness/IndependentHarness.csproj",
+    "sha256": "b8e96f7684d92fb207f0fde64a69052d966c25d259ab2646cd92b1cf10a2225f"
+  },
+  {
+    "source": "Docs/QA/RANK-UI-RESULTS.md",
+    "sha256": "ec0f8c0f115170b527e924cc4baaab1f919d46c8682586062abcf499df72b517"
+  },
+  {
+    "source": "Docs/Management/CONTRACT.md",
+    "sha256": "7b27a2fd2e994d8ff869bcea284d9d73706079dc074b9d59db41a7db16aa3aed"
+  }
+]

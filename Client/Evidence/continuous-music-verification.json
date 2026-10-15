@@ -1,0 +1,36 @@
+{
+  "status": "CONTINUOUS_MUSIC_EDITOR_TESTS_PASS",
+  "atUtc": "2026-10-15T11:41:23.313086+00:00",
+  "request": "Play BGM in lobby and preserve playback through lobby/match transitions.",
+  "implementation": "The saved root AudioSource is allowed while either lobby or match is active. Screen transitions no longer stop/reset the clip.",
+  "musicVolume": 0.3,
+  "moveVolumeScale": 1.0,
+  "behavior": [
+    "Lobby,settings,help and stage details retain continuous music.",
+    "Lobby/match transitions retain the same source,clip and playback position.",
+    "Result-to-lobby confirmation pauses as before,then resumes at the retained position.",
+    "OFF preference,app pause/focus loss,ad waiting and explicit pause remain effective."
+  ],
+  "tests": {
+    "scope": "Targeted music regression including actual AudioListener output",
+    "total": 8,
+    "passed": 8,
+    "failed": 0,
+    "skipped": 0,
+    "results": "Evidence/continuous-music-tests.xml",
+    "log": "Logs/continuous-music-tests.log",
+    "continuityCase": "MusicKeepsItsPositionAcrossLobbyMatchAndResultReturn",
+    "checks": "Seek12seconds;3lobby/match round trips retain and advance playback;result return resumes;OFF persists on both screens;foreground resumes in lobby."
+  },
+  "changedAssets": [
+    "Assets/StageGame/Scripts/UI/RankGameApp.cs",
+    "Assets/StageGame/Tests/EditMode/RankMusicTests.cs"
+  ],
+  "sourceFreeze": "Evidence/continuous-music-source-freeze.json",
+  "preservation": "All other480-baseline Assets unchanged,including every prefab,audio file and game-data JSON.",
+  "buildFilesUnchanged": 17,
+  "limits": [
+    "No human listening,player build,browser or physical-device validation.",
+    "No commit or push."
+  ]
+}

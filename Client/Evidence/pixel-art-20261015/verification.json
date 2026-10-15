@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-15",
+  "status": "UNITY_APPLIED_AND_EDITOR_VERIFIED",
+  "authorization": "User explicitly extended this design session to Client/GameData and approved Unity import, saved prefab application and editor verification.",
+  "portraits": 19,
+  "states": 57,
+  "c06BadgeVersion": "cap-v2 downward V",
+  "stages": {
+    "unit": 24,
+    "tournament": 6
+  },
+  "strings": 418,
+  "unityTests": {
+    "result": "Passed",
+    "total": "82",
+    "passed": "82",
+    "failed": "0",
+    "skipped": "0"
+  },
+  "unityTestEvidence": "Client/Evidence/pixel-art-20261015/unity-tests-verified.xml",
+  "dataTestsPassed": 45,
+  "dataCheck": "Exporter --check passed; all three Generated/Resources JSON byte-identical",
+  "sourceArtPreserved": true,
+  "screenshots": 40,
+  "savedPrefabApplication": true,
+  "runtimeUiTreeConstructionAdded": false,
+  "newWebGLBuild": false,
+  "newAndroidBuild": false,
+  "browserRun": false,
+  "physicalDeviceTest": false,
+  "sourceFreeze": "Client/Evidence/pixel-art-20261015/source-freeze.json",
+  "earlierRuns": [
+    "rank-flow-tests.xml: initial 23/25; portrait/dialogue overlap found visually, star contrast failure corrected",
+    "reward-timeout-tests.xml: timeout case passed alone without runtime changes",
+    "unity-tests-final.xml: intermediate full run before final empty-star and text-only toast correction"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-15",
+  "status": "UNITY_APPLIED_EDITOR_VERIFIED",
+  "portraits": 19,
+  "uniformVariants": 1,
+  "states": 60,
+  "emptyBoards": 24,
+  "aiStarts": 8,
+  "firstFiveAiTurns": {
+    "minimumDepth": 4,
+    "minimumNodeBudget": 3500,
+    "randomPermille": 0
+  },
+  "unityTests": {
+    "result": "Passed",
+    "total": "87",
+    "passed": "87",
+    "failed": "0",
+    "skipped": "0"
+  },
+  "unityTestsScope": "Prior full-suite baseline before v5/v6 art; focused current v6 validation is separate.",
+  "portraitStyleRevision": "Client/Evidence/pixel-complete-20261015/verification.json",
+  "dataTestsPassed": 45,
+  "workbookCellsChanged": 69,
+  "oldSourceArtPreserved": true,
+  "openingAudit": {
+    "playerBranches": 110008,
+    "earlyPlayerWins": 0,
+    "maxNodes": 2326,
+    "scope": "all legal human continuations before the fifth AI reply at the minimum opening-protection configuration; both empty-board starters and six prefills"
+  },
+  "pendingArtDetails": [],
+  "screenshots": 58,
+  "newAndroidBuild": false,
+  "newWebGLBuild": false,
+  "physicalDeviceOrHumanBalanceTest": false,
+  "sourceFreeze": "Client/Evidence/opening-ranks-20261015/source-freeze.json"
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "source": "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-en-game-320.jpg",
+    "snapshot": "after-en-game-320.jpg",
+    "sha256": "E3871283AAD8264DC602087F02240A6E7A15A3B52CA349E36C8E361E79019AD2"
+  },
+  {
+    "source": "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-en-help-320.jpg",
+    "snapshot": "after-en-help-320.jpg",
+    "sha256": "37F4577895E27D7AB988A9813AD77CF8555A3CD3D9F447F959775F9C1CDFD1D9"
+  },
+  {
+    "source": "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-en-licenses-scroll-320.jpg",
+    "snapshot": "after-en-licenses-scroll-320.jpg",
+    "sha256": "98B97AF946E0CCDA963B0C43725808A7BC5DB1758322D202EC95707D067FF5BD"
+  },
+  {
+    "source": "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-en-lobby-320.jpg",
+    "snapshot": "after-en-lobby-320.jpg",
+    "sha256": "180B30F454FF40884D619877F7577F0C888256535E4A64C709A940C41C85D314"
+  },
+  {
+    "source": "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-en-no-fill-320.jpg",
+    "snapshot": "after-en-no-fill-320.jpg",
+    "sha256": "E69095A7672CF6722D51DEDBB6AA6A6CE28A1E5642C8997940C2024EF537E16C"
+  },
+  {
+    "source": "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-en-restored-320.jpg",
+    "snapshot": "after-en-restored-320.jpg",
+    "sha256": "5C7D318619167EC33D9FC5F8855A0DDAF772F3D96971225442EB40D7E9B1B4FA"
+  },
+  {
+    "source": "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-en-settings-320.jpg",
+    "snapshot": "after-en-settings-320.jpg",
+    "sha256": "293073E71BE1B98B98C45A7CA752805BE815FD595CF5A70F9F9F03DC068B254E"
+  },
+  {
+    "source": "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-ko-ai-win-390.jpg",
+    "snapshot": "after-ko-ai-win-390.jpg",
+    "sha256": "3085346C168976D55851FE4DD1FE6EDFDEA39BA82111F55E73FCAE3DEC1332D4"
+  },
+  {
+    "source": "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-ko-lobby-390.jpg",
+    "snapshot": "after-ko-lobby-390.jpg",
+    "sha256": "96CA7F5E957850BCE8D81EDE933BE4BA9CC3FE5CD32067DD7AA9B213FEAD51A2"
+  },
+  {
+    "source": "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-ko-locked-390.jpg",
+    "snapshot": "after-ko-locked-390.jpg",
+    "sha256": "A5F93AD6A545B086D4EF62BBA29CCFD2EA707FD9E3CF81ECCE09F95BAAE6298C"
+  },
+  {
+    "source": "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-ko-player-win-390.jpg",
+    "snapshot": "after-ko-player-win-390.jpg",
+    "sha256": "7A115FD0F1A7E29502D5C228C6DC3E68F85381D3BBDBA1CE5527F34535F02210"
+  },
+  {
+    "source": "Docs/Management/Evidence/graphics-refresh-browser-20261014/after-ko-restored-390.jpg",
+    "snapshot": "after-ko-restored-390.jpg",
+    "sha256": "BD007C2193CEF8D2ED002F6C92C726D1165C98C5D0CC9420EFAB15A9F9D695F8"
+  },
+  {
+    "source": "Docs/Management/Evidence/graphics-refresh-browser-20261014/before-game-390.jpg",
+    "snapshot": "before-game-390.jpg",
+    "sha256": "2CBF55CEE5D0D48B027EBF5204D7CE3D5C4C4CDC7D04463EFEDEA0A2082B8110"
+  },
+  {
+    "source": "Docs/Management/Evidence/graphics-refresh-browser-20261014/before-lobby-390.jpg",
+    "snapshot": "before-lobby-390.jpg",
+    "sha256": "3D83758A9BB803BFD9DA5BADC357BD0CE6DFAB80D8F28A9A3733203C1CB45B0B"
+  },
+  {
+    "source": "Docs/Management/Evidence/graphics-refresh-browser-20261014/browser-win-transition.jpg",
+    "snapshot": "browser-win-transition.jpg",
+    "sha256": "09C0DBEC03B2D0AA130B4328916DE5CF99A2F618518DA75082676208A80197D4"
+  },
+  {
+    "source": "Docs/Management/Evidence/graphics-refresh-browser-20261014/final-console.json",
+    "snapshot": "final-console.json",
+    "sha256": "4F53CDA18C2BAA0C0354BB5F9A3ECBE5ED12AB4D8E11BA873C2F11161202B945"
+  },
+  {
+    "source": "Docs/Management/Evidence/graphics-refresh-browser-20261014/README.md",
+    "snapshot": "README.md",
+    "sha256": "B88855C01D6CB2D2249A929DE3D0E4D832105718C2B93BC796FF85DFC9BCC41C"
+  },
+  {
+    "source": "Docs/Management/Evidence/graphics-refresh-browser-20261014/webgl-artifacts.json",
+    "snapshot": "webgl-artifacts.json",
+    "sha256": "F0F1F99A8F8B87A03E7025BE78FF2ED8C840935E56BF9F5DDC7FE7872D1A616C"
+  }
+]

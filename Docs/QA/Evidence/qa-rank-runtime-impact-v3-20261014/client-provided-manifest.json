@@ -1,0 +1,20 @@
+[
+  {
+    "source": "Client\\Evidence\\rank-ui-tests.xml",
+    "snapshot": "ClientProvided\\rank-ui-tests.xml",
+    "sha256": "647eca4e8fdcfaa87d3e2e972cdab897c23906d41287f4dbb03e763d0f1d00e0",
+    "reportedBy": "Client; QA did not run Unity"
+  },
+  {
+    "source": "Client\\Evidence\\rank-ui-tests-initial.xml",
+    "snapshot": "ClientProvided\\rank-ui-tests-initial.xml",
+    "sha256": "0d83087a9315cd29379ef6150aafd71d9dc42c70cb03b490138dbe804fc2680d",
+    "reportedBy": "Client; QA did not run Unity"
+  },
+  {
+    "source": "Client\\Evidence\\rank-ui-source-freeze.json",
+    "snapshot": "ClientProvided\\rank-ui-source-freeze.json",
+    "sha256": "b222629cad33095789a3a93b02a5d9c89a41e685c6ab7fb1739e1698dabcecef",
+    "reportedBy": "Client; QA did not run Unity"
+  }
+]

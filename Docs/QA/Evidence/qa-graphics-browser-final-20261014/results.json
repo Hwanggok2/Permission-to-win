@@ -1,0 +1,41 @@
+{
+  "method": "Root actual browser report and captures read/snapshotted by QA; no QA browser execution",
+  "rootReportComplete": true,
+  "webglArtifactLinks": [
+    {
+      "path": "Client\\Builds\\WebGL\\index.html",
+      "sha256": "78D3D17A9163944E340C2EEF2B215C8FCDEBDF4C7F0F4F9A07E184104533C9D5",
+      "matches": true
+    },
+    {
+      "path": "Client\\Builds\\WebGL\\host-layout.js",
+      "sha256": "187B6162FE987A784D66FB6F929EC64C4885D8BA2A5B5A7E176AF16DFC9DAC25",
+      "matches": true
+    },
+    {
+      "path": "Client\\Builds\\WebGL\\Build\\WebGL.loader.js",
+      "sha256": "1C4F5D405B6FEEEEDF677702A03622539D250F1DE2EAAB172A45CD268100D454",
+      "matches": true
+    },
+    {
+      "path": "Client\\Builds\\WebGL\\Build\\WebGL.framework.js",
+      "sha256": "F909F29D115947BE5BAB214FE3CD434A6197E6BDC2E24CE9C2933C64B58FAE08",
+      "matches": true
+    },
+    {
+      "path": "Client\\Builds\\WebGL\\Build\\WebGL.data",
+      "sha256": "4B2EA54CD67DA41A41C02F5F1A41DEE15C8FAA669735333F9603D1AB09693330",
+      "matches": true
+    },
+    {
+      "path": "Client\\Builds\\WebGL\\Build\\WebGL.wasm",
+      "sha256": "FA25842E683D0C66795191799362F6045F2A91021F9C0FD12E65C0813445A590",
+      "matches": true
+    }
+  ],
+  "consoleErrorWarningCount": 0,
+  "changedDuringRead": [],
+  "linkedBuildEvidence": "../qa-graphics-build-link-v2-20261014/results.json",
+  "scope": "Korean390 actual9ply playerwin and10ply AIwin, result board input lock, Retry same stage/pause restored, Lobby highestunlock, English320 settings/help/license middle scroll+close/samecolumn/NoFill/reload, Korean390 restore. Full animation timing is native evidence separately.",
+  "unverified": "CAP-01 exact Korean320settings andEnglish320pause close-icon cases not explicitly reported; no physical device,Toss,liveads,IAP/server/release."
+}

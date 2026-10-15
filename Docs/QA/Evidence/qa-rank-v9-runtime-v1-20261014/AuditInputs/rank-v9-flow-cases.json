@@ -1,0 +1,41 @@
+{
+  "fixtureVersion": 1,
+  "contractVersion": 9,
+  "status": "PREPARATION_ONLY_WAITING_FOR_CLIENT_AND_STORY_DATA_FREEZE",
+  "coordinates": "columns0..6; row0=bottom; player=1; AI=-1",
+  "bindingPolicy": "Semantic actions only. Read frozen actual APIs before binding. User buttons request confirmation; internal StartStage/ShowLobby setup calls need not do so.",
+  "confirmationCases": [
+    {"id":"match_retry_cancel_player_turn","opening":[3,2],"selectColumn":4,"actions":["click match Retry","cancel confirmation"],"unchanged":["board","turn","matchId","undoHistory","selectedColumn","hintGranted","progressCounters","language"],"expectedNewMatches":0,"expectedScreen":"same match"},
+    {"id":"match_retry_cancel_ai_search","opening":[3,2],"playerPlace":4,"actions":["click match Retry during AI search","cancel confirmation","allow AI to resume"],"invariants":["no restart before acceptance","same match identity and player move","one AI reply only","no new completion or ad request"],"pauseAndResumeBinding":"READ_FROZEN_CONFIRM_IMPLEMENTATION"},
+    {"id":"pause_lobby_cancel","actions":["open pause","click leave for lobby","cancel confirmation"],"invariants":["preserve board and match identity","restore originating pause state","restore usable resume/leave controls","no completion/save reset"]},
+    {"id":"result_retry_cancel","outcomes":["player-win","AI-win","draw"],"stageIds":[1,30],"actions":["click result Retry","cancel confirmation"],"invariants":["same terminal board and match","same result actions and dialogue","no new result record or ad request","no new game until accepted"]},
+    {"id":"result_lobby_cancel","outcomes":["player-win","AI-win","draw"],"actions":["click result Lobby","cancel confirmation"],"invariants":["same visible result and terminal board","same completion/ad counters","input recovers after cancel"]},
+    {"id":"retry_accept_exactly_once","origins":["match-retry","result-retry"],"acceptEvents":3,"invariants":["request alone does not change board or matchId","accept creates one new match at same stage opening","remaining old accept events cannot restart it","undo history and preview reset once","no completed match from abandoned nonterminal board"]},
+    {"id":"lobby_accept_exactly_once","origins":["pause-leave","result-lobby"],"acceptEvents":3,"invariants":["request alone preserves board and matchId","one lobby transition","highest unlocked selected","old AI/reward/result callbacks cannot mutate lobby or next match","no new completion count"]},
+    {"id":"confirmation_stale_after_transition","interveningActions":["start another permitted stage","destroy app"],"lateEvents":["accept","cancel"],"invariants":["old pending action does not execute on new match","destroyed app does not mutate state or save","new confirmation has independent request identity"]},
+    {"id":"next_immediate_once","stageIds":[1,29],"events":["click Next","duplicate old Next event"],"invariants":["no confirmation panel","one move to next unlocked stage","one new match identity","no duplicate result count"],"stage30":"Next hidden"}
+  ],
+  "toastCases": [
+    {"id":"toast_new_player_turn","triggers":["fresh stage1","start existing stage on player turn","actual AI reply"],"invariants":["one visible current-player toast","localized text","fade completes and hides","no pointer interception"],"duration":"READ_FROZEN_IMPLEMENTATION_NO_INVENTED_DURATION"},
+    {"id":"toast_language_and_hint_no_replay","actions":["change ko to en during toast","change en to ko after toast","compute hint on same player turn"],"invariants":["no duplicate turn transition or extra toast coroutine","visible text follows language","hint does not replay a turn toast"]},
+    {"id":"toast_undo_transition","phases":["AI searching","AI completed"],"actions":["Undo","repeat Undo at opening floor"],"invariants":["only current player-turn toast may survive","no duplicate old AI-turn callback","no replay caused by rejected Undo"]},
+    {"id":"toast_previous_match_cancelled","actions":["show toast","accept Retry or Lobby","start next match","resume retained old toast iterator"],"invariants":["old toast cannot hide or overwrite new toast","old animation cannot change new match","old popup does not remain on lobby"]},
+    {"id":"toast_modal_and_terminal_cleanup","actions":["show toast","open confirmation or pause","cancel or resume","reach result"],"invariants":["toast does not cover confirmation/result","current controls remain clickable","no stale popup after modal closes","no duplicate replay from language refresh"]},
+    {"id":"toast_application_pause","actions":["pause application during toast","resume application"],"invariants":["no duplicate toast identity","no previous-match animation after transition","timing policy matches frozen implementation"]}
+  ],
+  "storyCases": [
+    {"id":"stage1_exact_korean_and_outcome_direction","stageId":1,"exactKoIntro":"이 게임의 프로라고 했지? 그런데 내가 이길 것 같아.","exactKoAiWin":"프로라는 말, 거짓말이었나?","aiWinMeaning":"AI wins / player loses","aiLoseMeaning":"AI loses / player wins; recognizes player's skill","aiLoseExactAndEnglish":"READ_FINAL_APPROVED_STORY_DATA"},
+    {"id":"story_locale_and_stage_mapping","stageIds":[1,2,3,4,28,29,30],"locales":["ko","en"],"outcomes":["intro","AI-win","AI-lose"],"invariants":["actual stage reference resolves correct approved text","stage1-specific key is allowed by final contract","changing locale preserves match and does not replay toast","last opponent does not promise nonexistent stage31"]},
+    {"id":"story_data_legacy_preservation","baseline":"qa-rank-runtime-impact-v3-20261014","invariants":["all30 IDs/chapter/title references retained unless approved","all openingMoves/starter/AI settings preserved","ads unchanged unless expressly revised","only approved string/reference changes","all final keys have ko/en and matching format arguments"],"stringCount":"READ_FINAL_CONTRACT_NOT_FIXED_228_OR_233"},
+    {"id":"story_bubble_render","locales":["ko","en"],"viewportWidths":[320,390],"invariants":["user's exact first line is not shortened to old22-character rule","approved one-or-two-line bubble has no clipping/truncation","AI face/rank/stars remain legible","outcome dialogue stays visible with result board"],"requires":"Client native captures and Root actual browser evidence"}
+  ],
+  "lifecycleCases": [
+    {"id":"qa014_destroy_pending_interstitial","completedMatchesBeforeFinish":3,"actions":["finish winning match","wait through final stone animation and win-line observation","hold interstitial callback","OnDestroy","late Completed callback twice"],"expectedCancelRequest":true,"unchangedAfterDestroy":["lastInterstitialMatch","lastInterstitialUtc","completedMatches","savedProgress","UI state"],"priorFailure":"v8 cancelDelta0 and lastInterstitialMatch0to4"},
+    {"id":"destroy_reward_ai_toast_cleanup","pendingWork":["reward callback","AI iterator","toast iterator","confirmation action"],"actions":["OnDestroy","resume old callback or iterator"],"invariants":["no new board move","no reward granted","no new match or saved progress","no old popup mutation"]}
+  ],
+  "layoutCases": [
+    {"id":"square_board_and_small_viewport_access","viewportWidths":[320,390],"availableHeightEdge":411,"invariants":["outer board width equals height","seven by six real playable intersections","internal6by5 cells have dx=dy","uniform visible grid line thickness","title/pause8to12CSSpx below host reservation target","AI hat face/rank/stars centered as group with speech below","player avatar and persistent turn row absent","round Place and simple Undo/Retry","scroll preserves access rather than shrinking below44CSSpx"],"requires":"Saved prefab geometry plus native/rendered and Root browser pointer measurements"}
+  ],
+  "requiredFrozenBindings":["confirmation request/accept/cancel and return state","confirmation action identity","toast identity/routine/visibility/alpha/text","destroyed lifecycle guard and ad cancellation","final story keys/count/approved changes","new layout refs and scroll topology"],
+  "notProof":["JSON syntax and case preparation are not product tests","no automatic execution before readiness handoff","browser belongs to Root","physical phone tests postponed by user"]
+}

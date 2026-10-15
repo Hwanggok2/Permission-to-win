@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-15",
+  "status": "UNITY_APPLIED_EDITOR_VERIFIED",
+  "redrawnCharacters": 15,
+  "redrawnStates": 45,
+  "selectedAtlases": 20,
+  "selectedStates": 60,
+  "manualCorrections": [
+    "C08",
+    "C13",
+    "C16"
+  ],
+  "pendingArtDetails": [],
+  "manualRankReview": "C08 thinking three chevrons; C13 all four unobscured straps three diamonds; C16 all six straps three flowers. Buttons excluded. Raised hands naturally obscure portions of other insignia/flags.",
+  "styleReview": "Compared original recruit and 15 redrawn atlases; stepped coarse contours replace smooth face, hat and hand edges. Reviewed 28 captured portrait regions and full-size C16/C18/C19 game screens.",
+  "unityTests": {
+    "result": "Passed",
+    "total": "3",
+    "passed": "3",
+    "failed": "0",
+    "skipped": "0"
+  },
+  "unityTestScope": "Portrait selection through 30 stages and match states; point/no-mipmap/uncompressed imports; saved prefab references; seven representative characters in three states and two capture widths.",
+  "captures": 28,
+  "captureWidths": [
+    390,
+    1080
+  ],
+  "previousV4AtlasesPreserved": 20,
+  "manualAlphaAndOutsideRegionsPreserved": true,
+  "priorFullSuite": "Client/Evidence/opening-ranks-20261015/unity-tests.xml (87 passed before this art revision; not rerun)",
+  "newAndroidBuild": false,
+  "newWebGLBuild": false,
+  "physicalDeviceTest": false,
+  "sourceFreeze": "Client/Evidence/insignia-pixels-20261015/source-freeze.json"
+}

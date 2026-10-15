@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-15",
+  "status": "REVIEWED",
+  "reviewedGameCaptures": 69,
+  "reviewMethod": "Inspected three contact sheets containing all 63 native 390-wide portrait crops, six native-resolution C03 crops, and full C03 stage 3 / tournament stage 26 screens. Inspected all nine C02-C04 atlas states and the final C02 insignia close-up.",
+  "style": "C02-C04 now have coarse stepped face, hair and hand silhouettes matching the recruit anchor. Distinct anxious, playful and analytical personalities retained. C05-C19 selected v5 portraits remain chunky pixel art; rounded body/face traits retain stepped contours.",
+  "uniform": "C02 one stripe, C03 two stripes, C04 three stripes in all states; C02 defeat extra stripe removed. C01 has no rank; final C01 has one stripe. Existing v5 shoulder corrections retained.",
+  "screens": [
+    "game-portraits-1.png",
+    "game-portraits-2.png",
+    "game-portraits-3.png",
+    "oh-junho-in-game.png",
+    "style-comparison.png",
+    "C02-rank-after.png"
+  ],
+  "scope": "Visual review by the assistant, not user acceptance or physical-device testing. Forced portrait-state captures verify art display, not dialogue/result timing."
+}

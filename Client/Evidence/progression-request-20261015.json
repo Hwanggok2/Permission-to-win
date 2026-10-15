@@ -1,0 +1,310 @@
+{
+  "status": "USER_APPROVED_GAMEDATA_SCOPE__APPLIED_AND_VERIFIED",
+  "scope": "30stable stage IDs; original openings/starter/chapter and saves retained. Excel source plus exporter/validation and Client consumer must change together. No dot-art or new character implementation.",
+  "difficulty": "1 to8 in0.5 steps; each level occurs twice. AI depth/node budgets nondecreasing and random-choice rate nonincreasing. Intended progression, not human-tested difficulty rating.",
+  "rank": "18display titles; first6 once, remaining12 twice; final29-30 Division Commander. Game progression mixes rank/title; not a claim about an actual promotion path.",
+  "lobbyBottom": "Match existing added top gap216design units at1080width; reserve space only, no ad SDK or live banner.",
+  "stages": [
+    {
+      "id": 1,
+      "rankKey": "rank_01",
+      "rankKo": "훈련병",
+      "rankEn": "Recruit",
+      "difficultyStars": 1.0,
+      "aiDepth": 1,
+      "aiNodeBudget": 500,
+      "aiRandomPermille": 300
+    },
+    {
+      "id": 2,
+      "rankKey": "rank_02",
+      "rankKo": "이등병",
+      "rankEn": "Private",
+      "difficultyStars": 1.0,
+      "aiDepth": 1,
+      "aiNodeBudget": 500,
+      "aiRandomPermille": 300
+    },
+    {
+      "id": 3,
+      "rankKey": "rank_03",
+      "rankKo": "일병",
+      "rankEn": "Private First Class",
+      "difficultyStars": 1.5,
+      "aiDepth": 1,
+      "aiNodeBudget": 800,
+      "aiRandomPermille": 250
+    },
+    {
+      "id": 4,
+      "rankKey": "rank_04",
+      "rankKo": "상병",
+      "rankEn": "Corporal",
+      "difficultyStars": 1.5,
+      "aiDepth": 1,
+      "aiNodeBudget": 800,
+      "aiRandomPermille": 250
+    },
+    {
+      "id": 5,
+      "rankKey": "rank_05",
+      "rankKo": "병장",
+      "rankEn": "Sergeant",
+      "difficultyStars": 2.0,
+      "aiDepth": 2,
+      "aiNodeBudget": 1200,
+      "aiRandomPermille": 220
+    },
+    {
+      "id": 6,
+      "rankKey": "rank_06",
+      "rankKo": "하사",
+      "rankEn": "Staff Sergeant",
+      "difficultyStars": 2.0,
+      "aiDepth": 2,
+      "aiNodeBudget": 1200,
+      "aiRandomPermille": 220
+    },
+    {
+      "id": 7,
+      "rankKey": "rank_07",
+      "rankKo": "중사",
+      "rankEn": "Sergeant First Class",
+      "difficultyStars": 2.5,
+      "aiDepth": 2,
+      "aiNodeBudget": 1800,
+      "aiRandomPermille": 180
+    },
+    {
+      "id": 8,
+      "rankKey": "rank_07",
+      "rankKo": "중사",
+      "rankEn": "Sergeant First Class",
+      "difficultyStars": 2.5,
+      "aiDepth": 2,
+      "aiNodeBudget": 1800,
+      "aiRandomPermille": 180
+    },
+    {
+      "id": 9,
+      "rankKey": "rank_08",
+      "rankKo": "상사",
+      "rankEn": "Master Sergeant",
+      "difficultyStars": 3.0,
+      "aiDepth": 2,
+      "aiNodeBudget": 2600,
+      "aiRandomPermille": 140
+    },
+    {
+      "id": 10,
+      "rankKey": "rank_08",
+      "rankKo": "상사",
+      "rankEn": "Master Sergeant",
+      "difficultyStars": 3.0,
+      "aiDepth": 2,
+      "aiNodeBudget": 2600,
+      "aiRandomPermille": 140
+    },
+    {
+      "id": 11,
+      "rankKey": "rank_09",
+      "rankKo": "원사",
+      "rankEn": "Sergeant Major",
+      "difficultyStars": 3.5,
+      "aiDepth": 3,
+      "aiNodeBudget": 3500,
+      "aiRandomPermille": 110
+    },
+    {
+      "id": 12,
+      "rankKey": "rank_09",
+      "rankKo": "원사",
+      "rankEn": "Sergeant Major",
+      "difficultyStars": 3.5,
+      "aiDepth": 3,
+      "aiNodeBudget": 3500,
+      "aiRandomPermille": 110
+    },
+    {
+      "id": 13,
+      "rankKey": "rank_10",
+      "rankKo": "준위",
+      "rankEn": "Warrant Officer",
+      "difficultyStars": 4.0,
+      "aiDepth": 3,
+      "aiNodeBudget": 5000,
+      "aiRandomPermille": 85
+    },
+    {
+      "id": 14,
+      "rankKey": "rank_10",
+      "rankKo": "준위",
+      "rankEn": "Warrant Officer",
+      "difficultyStars": 4.0,
+      "aiDepth": 3,
+      "aiNodeBudget": 5000,
+      "aiRandomPermille": 85
+    },
+    {
+      "id": 15,
+      "rankKey": "rank_11",
+      "rankKo": "소위",
+      "rankEn": "Second Lieutenant",
+      "difficultyStars": 4.5,
+      "aiDepth": 3,
+      "aiNodeBudget": 6500,
+      "aiRandomPermille": 60
+    },
+    {
+      "id": 16,
+      "rankKey": "rank_11",
+      "rankKo": "소위",
+      "rankEn": "Second Lieutenant",
+      "difficultyStars": 4.5,
+      "aiDepth": 3,
+      "aiNodeBudget": 6500,
+      "aiRandomPermille": 60
+    },
+    {
+      "id": 17,
+      "rankKey": "rank_12",
+      "rankKo": "중위",
+      "rankEn": "First Lieutenant",
+      "difficultyStars": 5.0,
+      "aiDepth": 4,
+      "aiNodeBudget": 8500,
+      "aiRandomPermille": 45
+    },
+    {
+      "id": 18,
+      "rankKey": "rank_12",
+      "rankKo": "중위",
+      "rankEn": "First Lieutenant",
+      "difficultyStars": 5.0,
+      "aiDepth": 4,
+      "aiNodeBudget": 8500,
+      "aiRandomPermille": 45
+    },
+    {
+      "id": 19,
+      "rankKey": "rank_13",
+      "rankKo": "대위",
+      "rankEn": "Captain",
+      "difficultyStars": 5.5,
+      "aiDepth": 4,
+      "aiNodeBudget": 11000,
+      "aiRandomPermille": 30
+    },
+    {
+      "id": 20,
+      "rankKey": "rank_13",
+      "rankKo": "대위",
+      "rankEn": "Captain",
+      "difficultyStars": 5.5,
+      "aiDepth": 4,
+      "aiNodeBudget": 11000,
+      "aiRandomPermille": 30
+    },
+    {
+      "id": 21,
+      "rankKey": "rank_14",
+      "rankKo": "소령",
+      "rankEn": "Major",
+      "difficultyStars": 6.0,
+      "aiDepth": 4,
+      "aiNodeBudget": 14000,
+      "aiRandomPermille": 20
+    },
+    {
+      "id": 22,
+      "rankKey": "rank_14",
+      "rankKo": "소령",
+      "rankEn": "Major",
+      "difficultyStars": 6.0,
+      "aiDepth": 4,
+      "aiNodeBudget": 14000,
+      "aiRandomPermille": 20
+    },
+    {
+      "id": 23,
+      "rankKey": "rank_15",
+      "rankKo": "중령",
+      "rankEn": "Lieutenant Colonel",
+      "difficultyStars": 6.5,
+      "aiDepth": 5,
+      "aiNodeBudget": 18000,
+      "aiRandomPermille": 10
+    },
+    {
+      "id": 24,
+      "rankKey": "rank_15",
+      "rankKo": "중령",
+      "rankEn": "Lieutenant Colonel",
+      "difficultyStars": 6.5,
+      "aiDepth": 5,
+      "aiNodeBudget": 18000,
+      "aiRandomPermille": 10
+    },
+    {
+      "id": 25,
+      "rankKey": "rank_16",
+      "rankKo": "대령",
+      "rankEn": "Colonel",
+      "difficultyStars": 7.0,
+      "aiDepth": 5,
+      "aiNodeBudget": 22000,
+      "aiRandomPermille": 5
+    },
+    {
+      "id": 26,
+      "rankKey": "rank_16",
+      "rankKo": "대령",
+      "rankEn": "Colonel",
+      "difficultyStars": 7.0,
+      "aiDepth": 5,
+      "aiNodeBudget": 22000,
+      "aiRandomPermille": 5
+    },
+    {
+      "id": 27,
+      "rankKey": "rank_17",
+      "rankKo": "준장",
+      "rankEn": "Brigadier General",
+      "difficultyStars": 7.5,
+      "aiDepth": 5,
+      "aiNodeBudget": 26000,
+      "aiRandomPermille": 0
+    },
+    {
+      "id": 28,
+      "rankKey": "rank_17",
+      "rankKo": "준장",
+      "rankEn": "Brigadier General",
+      "difficultyStars": 7.5,
+      "aiDepth": 5,
+      "aiNodeBudget": 26000,
+      "aiRandomPermille": 0
+    },
+    {
+      "id": 29,
+      "rankKey": "rank_18",
+      "rankKo": "사단장",
+      "rankEn": "Division Commander",
+      "difficultyStars": 8.0,
+      "aiDepth": 6,
+      "aiNodeBudget": 30000,
+      "aiRandomPermille": 0
+    },
+    {
+      "id": 30,
+      "rankKey": "rank_18",
+      "rankKo": "사단장",
+      "rankEn": "Division Commander",
+      "difficultyStars": 8.0,
+      "aiDepth": 6,
+      "aiNodeBudget": 30000,
+      "aiRandomPermille": 0
+    }
+  ],
+  "verification": "Evidence/progression-verification.json"
+}

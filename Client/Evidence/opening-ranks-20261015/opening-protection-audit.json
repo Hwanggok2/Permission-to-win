@@ -1,0 +1,82 @@
+[
+  {
+    "starter": 1,
+    "playerBranches": 15676,
+    "aiMoves": 15676,
+    "earlyPlayerWins": 0,
+    "aiWins": 3345,
+    "maxNodes": 2322,
+    "opening": "",
+    "firstLoss": null
+  },
+  {
+    "starter": -1,
+    "playerBranches": 1498,
+    "aiMoves": 1499,
+    "earlyPlayerWins": 0,
+    "aiWins": 539,
+    "maxNodes": 1769,
+    "opening": "",
+    "firstLoss": null
+  },
+  {
+    "starter": 1,
+    "playerBranches": 17249,
+    "aiMoves": 17249,
+    "earlyPlayerWins": 0,
+    "aiWins": 4901,
+    "maxNodes": 2222,
+    "opening": "3,2",
+    "firstLoss": null
+  },
+  {
+    "starter": 1,
+    "playerBranches": 15808,
+    "aiMoves": 15808,
+    "earlyPlayerWins": 0,
+    "aiWins": 4735,
+    "maxNodes": 2166,
+    "opening": "2,4",
+    "firstLoss": null
+  },
+  {
+    "starter": 1,
+    "playerBranches": 13782,
+    "aiMoves": 13782,
+    "earlyPlayerWins": 0,
+    "aiWins": 5949,
+    "maxNodes": 2139,
+    "opening": "3,2,4,5",
+    "firstLoss": null
+  },
+  {
+    "starter": 1,
+    "playerBranches": 14168,
+    "aiMoves": 14168,
+    "earlyPlayerWins": 0,
+    "aiWins": 6216,
+    "maxNodes": 2089,
+    "opening": "2,4,3,1",
+    "firstLoss": null
+  },
+  {
+    "starter": 1,
+    "playerBranches": 15703,
+    "aiMoves": 15703,
+    "earlyPlayerWins": 0,
+    "aiWins": 5646,
+    "maxNodes": 2191,
+    "opening": "3,2,2,4",
+    "firstLoss": null
+  },
+  {
+    "starter": 1,
+    "playerBranches": 16124,
+    "aiMoves": 16124,
+    "earlyPlayerWins": 0,
+    "aiWins": 4636,
+    "maxNodes": 2326,
+    "opening": "2,4,4,2",
+    "firstLoss": null
+  }
+]

@@ -1,0 +1,214 @@
+{
+  "scope": "v8 candidate independent runtime; superseded UI behavior must not be claimed as v9 acceptance",
+  "runs": [
+    "qa-rank-runtime-v2-20261014",
+    "qa-rank-runtime-impact-v3-20261014"
+  ],
+  "distinctGroups": 25,
+  "passedDistinctGroups": 24,
+  "failedDistinctGroups": 1,
+  "singleRunAllPass": false,
+  "assertionsMustNotBeSummedAcrossOverlappingRuns": true,
+  "latestResultByGroup": [
+    {
+      "name": "data.frozen_rank_contract",
+      "status": "PASS",
+      "assertions": 64,
+      "milliseconds": 51,
+      "error": null,
+      "evidenceRun": "qa-rank-runtime-v2-20261014"
+    },
+    {
+      "name": "data.invalid_rank_fields_rejected_safe_start",
+      "status": "PASS",
+      "assertions": 43,
+      "milliseconds": 74,
+      "error": null,
+      "evidenceRun": "qa-rank-runtime-v2-20261014"
+    },
+    {
+      "name": "firstload.fresh_once_and_existing_stage1",
+      "status": "PASS",
+      "assertions": 4,
+      "milliseconds": 10,
+      "error": null,
+      "evidenceRun": "qa-rank-runtime-v2-20261014"
+    },
+    {
+      "name": "firstload.legacy_saves_and_corrupt_recovery",
+      "status": "PASS",
+      "assertions": 50,
+      "milliseconds": 13,
+      "error": null,
+      "evidenceRun": "qa-rank-runtime-v2-20261014"
+    },
+    {
+      "name": "firstload.save_failure_keeps_playable_session",
+      "status": "PASS",
+      "assertions": 2,
+      "milliseconds": 2,
+      "error": null,
+      "evidenceRun": "qa-rank-runtime-v2-20261014"
+    },
+    {
+      "name": "input.preview_nonmutating_lowest_empty_full_column",
+      "status": "PASS",
+      "assertions": 7,
+      "milliseconds": 4,
+      "error": null,
+      "evidenceRun": "qa-rank-runtime-v2-20261014"
+    },
+    {
+      "name": "input.place_repeat_real_ai_exactly_once",
+      "status": "PASS",
+      "assertions": 6,
+      "milliseconds": 3,
+      "error": null,
+      "evidenceRun": "qa-rank-runtime-v2-20261014"
+    },
+    {
+      "name": "undo.pending_search_and_stale_response",
+      "status": "PASS",
+      "assertions": 5,
+      "milliseconds": 1,
+      "error": null,
+      "evidenceRun": "qa-rank-runtime-v2-20261014"
+    },
+    {
+      "name": "undo.completed_pairs_opening_floor_and_alternative",
+      "status": "PASS",
+      "assertions": 16,
+      "milliseconds": 1,
+      "error": null,
+      "evidenceRun": "qa-rank-runtime-v2-20261014"
+    },
+    {
+      "name": "undo.ai_starter_and_completion_order_race",
+      "status": "PASS",
+      "assertions": 11,
+      "milliseconds": 2,
+      "error": null,
+      "evidenceRun": "qa-rank-runtime-v2-20261014"
+    },
+    {
+      "name": "cancel.retry_lobby_new_stage_reject_old_ai",
+      "status": "PASS",
+      "assertions": 16,
+      "milliseconds": 2,
+      "error": null,
+      "evidenceRun": "qa-rank-runtime-v2-20261014"
+    },
+    {
+      "name": "pause.search_language_change_resume",
+      "status": "PASS",
+      "assertions": 12,
+      "milliseconds": 2,
+      "error": null,
+      "evidenceRun": "qa-rank-runtime-v2-20261014"
+    },
+    {
+      "name": "hint.completed_duplicate_undo_consumption_preserved",
+      "status": "PASS",
+      "assertions": 11,
+      "milliseconds": 4,
+      "error": null,
+      "evidenceRun": "qa-rank-runtime-v2-20261014"
+    },
+    {
+      "name": "hint.cancel_timeout_and_stale_callbacks",
+      "status": "PASS",
+      "assertions": 39,
+      "milliseconds": 5,
+      "error": null,
+      "evidenceRun": "qa-rank-runtime-v2-20261014"
+    },
+    {
+      "name": "result.both_winners_timeline_input_lock_single_save",
+      "status": "PASS",
+      "assertions": 676,
+      "milliseconds": 4,
+      "error": null,
+      "evidenceRun": "qa-rank-runtime-impact-v3-20261014"
+    },
+    {
+      "name": "result.real_place_and_real_ai_terminal_paths",
+      "status": "PASS",
+      "assertions": 12,
+      "milliseconds": 3,
+      "error": null,
+      "evidenceRun": "qa-rank-runtime-impact-v3-20261014"
+    },
+    {
+      "name": "result.next_retry_lobby_stage_boundaries",
+      "status": "PASS",
+      "assertions": 12970,
+      "milliseconds": 16,
+      "error": null,
+      "evidenceRun": "qa-rank-runtime-impact-v3-20261014"
+    },
+    {
+      "name": "result.ad_results_duplicate_and_timeout",
+      "status": "PASS",
+      "assertions": 1625,
+      "milliseconds": 3,
+      "error": null,
+      "evidenceRun": "qa-rank-runtime-impact-v3-20261014"
+    },
+    {
+      "name": "result.cancel_animation_observation_ad_and_pause",
+      "status": "PASS",
+      "assertions": 2268,
+      "milliseconds": 6,
+      "error": null,
+      "evidenceRun": "qa-rank-runtime-impact-v3-20261014"
+    },
+    {
+      "name": "result.destroy_cancels_ad_and_stale_callback",
+      "status": "FAIL",
+      "assertions": 324,
+      "milliseconds": 1,
+      "error": "Exception: OnDestroy did not cancel pending interstitial or rejected no stale completion; cancelDelta=0, lastInterstitialMatch=4",
+      "evidenceRun": "qa-rank-runtime-impact-v3-20261014"
+    },
+    {
+      "name": "result.save_failure_still_shows_result",
+      "status": "PASS",
+      "assertions": 3,
+      "milliseconds": 0,
+      "error": null,
+      "evidenceRun": "qa-rank-runtime-impact-v3-20261014"
+    },
+    {
+      "name": "winning_line.crossing_both_sides_and_mirrors",
+      "status": "PASS",
+      "assertions": 3156,
+      "milliseconds": 5,
+      "error": null,
+      "evidenceRun": "qa-rank-runtime-v2-20261014"
+    },
+    {
+      "name": "detail.cards_boundaries_scroll_blocker_lifecycle",
+      "status": "PASS",
+      "assertions": 86,
+      "milliseconds": 1,
+      "error": null,
+      "evidenceRun": "qa-rank-runtime-v2-20261014"
+    },
+    {
+      "name": "language.switch_preserves_match_preview_and_result",
+      "status": "PASS",
+      "assertions": 327,
+      "milliseconds": 1,
+      "error": null,
+      "evidenceRun": "qa-rank-runtime-impact-v3-20261014"
+    },
+    {
+      "name": "input.hidden_screen_and_duplicate_next",
+      "status": "PASS",
+      "assertions": 330,
+      "milliseconds": 67,
+      "error": null,
+      "evidenceRun": "qa-rank-runtime-impact-v3-20261014"
+    }
+  ]
+}

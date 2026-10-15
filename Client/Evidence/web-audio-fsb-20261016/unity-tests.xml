@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="21" result="Failed(Child)" total="21" passed="19" failed="2" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-15 16:27:49Z" end-time="2026-10-15 16:27:53Z" duration="4.3896355">
+  <test-suite type="TestSuite" id="1000" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="126" result="Failed" site="Child" start-time="2026-10-15 16:27:49Z" end-time="2026-10-15 16:27:53Z" duration="4.389636" total="21" passed="19" failed="2" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1150" name="StageGame.Tests.dll" fullname="C:/Github/StageGame/Client/Library/ScriptAssemblies/StageGame.Tests.dll" runstate="Runnable" testcasecount="126" result="Failed" site="Child" start-time="2026-10-15 16:27:49Z" end-time="2026-10-15 16:27:53Z" duration="4.344358" total="21" passed="19" failed="2" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="11836" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1151" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="126" result="Failed" site="Child" start-time="2026-10-15 16:27:49Z" end-time="2026-10-15 16:27:53Z" duration="4.343542" total="21" passed="19" failed="2" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1152" name="Tests" fullname="StageGame.Tests" runstate="Runnable" testcasecount="126" result="Failed" site="Child" start-time="2026-10-15 16:27:49Z" end-time="2026-10-15 16:27:53Z" duration="4.342934" total="21" passed="19" failed="2" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1030" name="HostLayoutTests" fullname="StageGame.Tests.HostLayoutTests" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-15 16:26:44Z" end-time="2026-10-15 16:26:44Z" duration="0.092753" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1035" name="BrowserFallbackAndExplicitControlsUseCssCoordinates" fullname="StageGame.Tests.HostLayoutTests.BrowserFallbackAndExplicitControlsUseCssCoordinates" methodname="BrowserFallbackAndExplicitControlsUseCssCoordinates" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" seed="386154212" result="Passed" start-time="2026-10-15 16:26:44Z" end-time="2026-10-15 16:26:44Z" duration="0.010625" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1037" name="InvalidInsetsFallBackToZeroWithoutRemovingHostAllowance" fullname="StageGame.Tests.HostLayoutTests.InvalidInsetsFallBackToZeroWithoutRemovingHostAllowance" methodname="InvalidInsetsFallBackToZeroWithoutRemovingHostAllowance" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" seed="1782897980" result="Passed" start-time="2026-10-15 16:26:44Z" end-time="2026-10-15 16:26:44Z" duration="0.000241" asserts="0">
+              <properties />
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1034" name="OsInsetsAreMergedOnceAndHostBandIsBelowThem" fullname="StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-15 16:26:44Z" end-time="2026-10-15 16:26:44Z" duration="0.001586" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1031" name="OsInsetsAreMergedOnceAndHostBandIsBelowThem(1)" fullname="StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem(1)" methodname="OsInsetsAreMergedOnceAndHostBandIsBelowThem" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" seed="606902601" result="Passed" start-time="2026-10-15 16:26:44Z" end-time="2026-10-15 16:26:44Z" duration="0.000254" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1032" name="OsInsetsAreMergedOnceAndHostBandIsBelowThem(2)" fullname="StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem(2)" methodname="OsInsetsAreMergedOnceAndHostBandIsBelowThem" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" seed="1729980666" result="Passed" start-time="2026-10-15 16:26:44Z" end-time="2026-10-15 16:26:44Z" duration="0.000040" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1033" name="OsInsetsAreMergedOnceAndHostBandIsBelowThem(3)" fullname="StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem(3)" methodname="OsInsetsAreMergedOnceAndHostBandIsBelowThem" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" seed="326089849" result="Passed" start-time="2026-10-15 16:26:44Z" end-time="2026-10-15 16:26:44Z" duration="0.000033" asserts="0">
+                <properties />
+              </test-case>
+            </test-suite>
+            <test-case id="1038" name="SavedGraphicsAndSecondaryLicenseMenuKeepPrefabReferences" fullname="StageGame.Tests.HostLayoutTests.SavedGraphicsAndSecondaryLicenseMenuKeepPrefabReferences" methodname="SavedGraphicsAndSecondaryLicenseMenuKeepPrefabReferences" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" seed="986059515" result="Passed" start-time="2026-10-15 16:26:44Z" end-time="2026-10-15 16:26:44Z" duration="0.068872" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1036" name="SideInsetsMergePerEdgeAndOversizedInsetsStayInsideScreen" fullname="StageGame.Tests.HostLayoutTests.SideInsetsMergePerEdgeAndOversizedInsetsStayInsideScreen" methodname="SideInsetsMergePerEdgeAndOversizedInsetsStayInsideScreen" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" seed="656984959" result="Passed" start-time="2026-10-15 16:26:44Z" end-time="2026-10-15 16:26:44Z" duration="0.002594" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1055" name="RankFlowTests" fullname="StageGame.Tests.RankFlowTests" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" testcasecount="50" result="Passed" start-time="2026-10-15 16:27:49Z" end-time="2026-10-15 16:27:53Z" duration="4.198609" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1076" name="MobileVisualViewportKeepsWidthAndCssTouchSizeAcrossPixelRatios" fullname="StageGame.Tests.RankFlowTests.MobileVisualViewportKeepsWidthAndCssTouchSizeAcrossPixelRatios" methodname="MobileVisualViewportKeepsWidthAndCssTouchSizeAcrossPixelRatios" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1724901633" result="Passed" start-time="2026-10-15 16:26:44Z" end-time="2026-10-15 16:27:20Z" duration="35.529137" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[MobileViewport] {"name":"ko-390x664-dpr1-match","titleTopCss":110.91851806640625,"boardWidthCss":337.3583984375,"contentWidthCss":389.9999084472656,"minimumTapCss":49.28935241699219,"bottomCss":19.729415893554689}
+[Capture] ko-390x664-dpr1-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[MobileViewport] {"name":"ko-390x664-dpr1-lobby","titleTopCss":115.79168701171875,"boardWidthCss":0.0,"contentWidthCss":390.0,"minimumTapCss":0.0,"bottomCss":0.0}
+[Capture] ko-390x664-dpr1-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[MobileViewport] {"name":"ko-390x664-dpr1.5-match","titleTopCss":110.91845703125,"boardWidthCss":337.3583984375,"contentWidthCss":390.0,"minimumTapCss":49.289337158203128,"bottomCss":19.7293758392334}
+[Capture] ko-390x664-dpr1.5-match: screen=640x480, canvas=(x:0.00, y:0.00, width:585.00, height:996.00), scale=0.51875, ppu=0.51875, fontSize=78
+[MobileViewport] {"name":"ko-390x664-dpr1.5-lobby","titleTopCss":115.7916259765625,"boardWidthCss":0.0,"contentWidthCss":390.0,"minimumTapCss":0.0,"bottomCss":0.0}
+[Capture] ko-390x664-dpr1.5-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:585.00, height:996.00), scale=0.51875, ppu=0.51875, fontSize=78
+[MobileViewport] {"name":"ko-390x664-dpr2-match","titleTopCss":110.9185791015625,"boardWidthCss":337.3583984375,"contentWidthCss":390.0,"minimumTapCss":49.28935241699219,"bottomCss":19.7293758392334}
+[Capture] ko-390x664-dpr2-match: screen=640x480, canvas=(x:0.00, y:0.00, width:780.00, height:1328.00), scale=0.6916667, ppu=0.6916667, fontSize=78
+[MobileViewport] {"name":"ko-390x664-dpr2-lobby","titleTopCss":115.79168701171875,"boardWidthCss":0.0,"contentWidthCss":390.0,"minimumTapCss":0.0,"bottomCss":0.0}
+[Capture] ko-390x664-dpr2-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:780.00, height:1328.00), scale=0.6916667, ppu=0.6916667, fontSize=78
+[MobileViewport] {"name":"ko-390x844-dpr1-match","titleTopCss":114.16668701171875,"boardWidthCss":381.3333740234375,"contentWidthCss":390.0000305175781,"minimumTapCss":55.714263916015628,"bottomCss":126.95823669433594}
+[Capture] ko-390x844-dpr1-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[MobileViewport] {"name":"ko-390x844-dpr1-lobby","titleTopCss":115.7916259765625,"boardWidthCss":0.0,"contentWidthCss":390.0000305175781,"minimumTapCss":0.0,"bottomCss":0.0}
+[Capture] ko-390x844-dpr1-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[MobileViewport] {"name":"ko-454x768-dpr1-match","titleTopCss":127.6453857421875,"boardWidthCss":390.5228271484375,"contentWidthCss":454.0,"minimumTapCss":57.056884765625,"bottomCss":22.951332092285158}
+[Capture] ko-454x768-dpr1-match: screen=640x480, canvas=(x:0.00, y:0.00, width:454.00, height:768.00), scale=0.4, ppu=0.4, fontSize=78
+[MobileViewport] {"name":"ko-454x768-dpr1-lobby","titleTopCss":133.4805908203125,"boardWidthCss":0.0,"contentWidthCss":454.0,"minimumTapCss":0.0,"bottomCss":0.0}
+[Capture] ko-454x768-dpr1-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:454.00, height:768.00), scale=0.4, ppu=0.4, fontSize=78
+[MobileViewport] {"name":"ko-1080x1920-dpr1-match","titleTopCss":297.244384765625,"boardWidthCss":991.6171264648438,"contentWidthCss":1080.0,"minimumTapCss":144.8790283203125,"bottomCss":55.042762756347659}
+[Capture] ko-1080x1920-dpr1-match: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[MobileViewport] {"name":"ko-1080x1920-dpr1-lobby","titleTopCss":306.5,"boardWidthCss":0.0,"contentWidthCss":1080.0,"minimumTapCss":0.0,"bottomCss":0.0}
+[Capture] ko-1080x1920-dpr1-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[MobileViewport] {"name":"en-390x664-dpr1-match","titleTopCss":110.91851806640625,"boardWidthCss":337.3583984375,"contentWidthCss":390.0,"minimumTapCss":49.28935241699219,"bottomCss":19.7293758392334}
+[Capture] en-390x664-dpr1-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[MobileViewport] {"name":"en-390x664-dpr1-lobby","titleTopCss":115.79168701171875,"boardWidthCss":0.0,"contentWidthCss":390.0,"minimumTapCss":0.0,"bottomCss":0.0}
+[Capture] en-390x664-dpr1-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[MobileViewport] {"name":"en-390x664-dpr1.5-match","titleTopCss":110.91845703125,"boardWidthCss":337.3583984375,"contentWidthCss":390.0,"minimumTapCss":49.289337158203128,"bottomCss":19.7293758392334}
+[Capture] en-390x664-dpr1.5-match: screen=640x480, canvas=(x:0.00, y:0.00, width:585.00, height:996.00), scale=0.51875, ppu=0.51875, fontSize=78
+[MobileViewport] {"name":"en-390x664-dpr1.5-lobby","titleTopCss":115.7916259765625,"boardWidthCss":0.0,"contentWidthCss":390.0,"minimumTapCss":0.0,"bottomCss":0.0}
+[Capture] en-390x664-dpr1.5-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:585.00, height:996.00), scale=0.51875, ppu=0.51875, fontSize=78
+[MobileViewport] {"name":"en-390x664-dpr2-match","titleTopCss":110.91851806640625,"boardWidthCss":337.3583984375,"contentWidthCss":390.0,"minimumTapCss":49.28935241699219,"bottomCss":19.7293758392334}
+[Capture] en-390x664-dpr2-match: screen=640x480, canvas=(x:0.00, y:0.00, width:780.00, height:1328.00), scale=0.6916667, ppu=0.6916667, fontSize=78
+[MobileViewport] {"name":"en-390x664-dpr2-lobby","titleTopCss":115.79168701171875,"boardWidthCss":0.0,"contentWidthCss":390.0,"minimumTapCss":0.0,"bottomCss":0.0}
+[Capture] en-390x664-dpr2-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:780.00, height:1328.00), scale=0.6916667, ppu=0.6916667, fontSize=78
+[MobileViewport] {"name":"en-390x844-dpr1-match","titleTopCss":114.16668701171875,"boardWidthCss":381.3333740234375,"contentWidthCss":390.0000305175781,"minimumTapCss":55.714263916015628,"bottomCss":126.95823669433594}
+[Capture] en-390x844-dpr1-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[MobileViewport] {"name":"en-390x844-dpr1-lobby","titleTopCss":115.7916259765625,"boardWidthCss":0.0,"contentWidthCss":390.0000305175781,"minimumTapCss":0.0,"bottomCss":0.0}
+[Capture] en-390x844-dpr1-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[MobileViewport] {"name":"en-454x768-dpr1-match","titleTopCss":127.6453857421875,"boardWidthCss":390.5228271484375,"contentWidthCss":454.0,"minimumTapCss":57.056884765625,"bottomCss":22.951332092285158}
+[Capture] en-454x768-dpr1-match: screen=640x480, canvas=(x:0.00, y:0.00, width:454.00, height:768.00), scale=0.4, ppu=0.4, fontSize=78
+[MobileViewport] {"name":"en-454x768-dpr1-lobby","titleTopCss":133.4805908203125,"boardWidthCss":0.0,"contentWidthCss":454.0,"minimumTapCss":0.0,"bottomCss":0.0}
+[Capture] en-454x768-dpr1-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:454.00, height:768.00), scale=0.4, ppu=0.4, fontSize=78
+[MobileViewport] {"name":"en-1080x1920-dpr1-match","titleTopCss":297.244384765625,"boardWidthCss":991.6171264648438,"contentWidthCss":1080.0,"minimumTapCss":144.8790283203125,"bottomCss":55.042762756347659}
+[Capture] en-1080x1920-dpr1-match: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[MobileViewport] {"name":"en-1080x1920-dpr1-lobby","titleTopCss":306.5,"boardWidthCss":0.0,"contentWidthCss":1080.0,"minimumTapCss":0.0,"bottomCss":0.0}
+[Capture] en-1080x1920-dpr1-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] toss-390x844-dpr1-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] toss-390x844-dpr1.5-match: screen=640x480, canvas=(x:0.00, y:0.00, width:585.00, height:1266.00), scale=0.5416667, ppu=0.5416667, fontSize=78
+[Capture] toss-390x844-dpr2-match: screen=640x480, canvas=(x:0.00, y:0.00, width:780.00, height:1688.00), scale=0.7222222, ppu=0.7222222, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1079" name="MusicContinuesThroughPauseAndConfirmationButSuspendsInBackground" fullname="StageGame.Tests.RankFlowTests.MusicContinuesThroughPauseAndConfirmationButSuspendsInBackground" methodname="MusicContinuesThroughPauseAndConfirmationButSuspendsInBackground" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="136732564" result="Passed" start-time="2026-10-15 16:27:20Z" end-time="2026-10-15 16:27:23Z" duration="2.666057" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1080" name="MusicKeepsItsPositionAcrossLobbyMatchAndResultReturn" fullname="StageGame.Tests.RankFlowTests.MusicKeepsItsPositionAcrossLobbyMatchAndResultReturn" methodname="MusicKeepsItsPositionAcrossLobbyMatchAndResultReturn" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1250081773" result="Passed" start-time="2026-10-15 16:27:23Z" end-time="2026-10-15 16:27:26Z" duration="3.367095" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1087" name="SoundButtonClickPlaysOnceAcrossOpenCloseAndRespectsDisabledAndOff" fullname="StageGame.Tests.RankFlowTests.SoundButtonClickPlaysOnceAcrossOpenCloseAndRespectsDisabledAndOff" methodname="SoundButtonClickPlaysOnceAcrossOpenCloseAndRespectsDisabledAndOff" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1819376155" result="Passed" start-time="2026-10-15 16:27:26Z" end-time="2026-10-15 16:27:29Z" duration="2.896046" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1088" name="SoundStoneImpactAndUiClickWorkWhileMusicContinuesThroughModal" fullname="StageGame.Tests.RankFlowTests.SoundStoneImpactAndUiClickWorkWhileMusicContinuesThroughModal" methodname="SoundStoneImpactAndUiClickWorkWhileMusicContinuesThroughModal" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="264098325" result="Passed" start-time="2026-10-15 16:27:29Z" end-time="2026-10-15 16:27:33Z" duration="3.703450" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1091" name="SpeechMuteHidesNoLettersAndScreenChangesCancelTheOldLine" fullname="StageGame.Tests.RankFlowTests.SpeechMuteHidesNoLettersAndScreenChangesCancelTheOldLine" methodname="SpeechMuteHidesNoLettersAndScreenChangesCancelTheOldLine" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1435626576" result="Passed" start-time="2026-10-15 16:27:33Z" end-time="2026-10-15 16:27:37Z" duration="4.766754" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1090" name="SpeechPausesWithDialogsFocusBackgroundAndAdsWhileMusicCanContinue" fullname="StageGame.Tests.RankFlowTests.SpeechPausesWithDialogsFocusBackgroundAndAdsWhileMusicCanContinue" methodname="SpeechPausesWithDialogsFocusBackgroundAndAdsWhileMusicCanContinue" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1152988423" result="Passed" start-time="2026-10-15 16:27:37Z" end-time="2026-10-15 16:27:42Z" duration="4.424905" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1089" name="SpeechTypesBothLanguagesWithClicksAndStableWrapping" fullname="StageGame.Tests.RankFlowTests.SpeechTypesBothLanguagesWithClicksAndStableWrapping" methodname="SpeechTypesBothLanguagesWithClicksAndStableWrapping" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1633954831" result="Passed" start-time="2026-10-15 16:27:42Z" end-time="2026-10-15 16:27:47Z" duration="5.641936" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] ko-typing: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-complete: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] en-typing: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] en-complete: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1092" name="SpeechTypesWinAndLossDialogueAndRestartsForTheNextStage" fullname="StageGame.Tests.RankFlowTests.SpeechTypesWinAndLossDialogueAndRestartsForTheNextStage" methodname="SpeechTypesWinAndLossDialogueAndRestartsForTheNextStage" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="133019084" result="Passed" start-time="2026-10-15 16:27:47Z" end-time="2026-10-15 16:27:53Z" duration="5.646192" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1119" name="RankMusicAssetTests" fullname="StageGame.Tests.RankMusicAssetTests" classname="StageGame.Tests.RankMusicAssetTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-15 16:27:53Z" end-time="2026-10-15 16:27:53Z" duration="0.099906" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1120" name="LegacyMusicPreferenceDefaultsOnAndRoundTripsIndependently" fullname="StageGame.Tests.RankMusicAssetTests.LegacyMusicPreferenceDefaultsOnAndRoundTripsIndependently" methodname="LegacyMusicPreferenceDefaultsOnAndRoundTripsIndependently" classname="StageGame.Tests.RankMusicAssetTests" runstate="Runnable" seed="1982322705" result="Passed" start-time="2026-10-15 16:27:53Z" end-time="2026-10-15 16:27:53Z" duration="0.001482" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1121" name="SavedMusicReferencesOriginalAudioAndAllLicenseNoticesArePresent" fullname="StageGame.Tests.RankMusicAssetTests.SavedMusicReferencesOriginalAudioAndAllLicenseNoticesArePresent" methodname="SavedMusicReferencesOriginalAudioAndAllLicenseNoticesArePresent" classname="StageGame.Tests.RankMusicAssetTests" runstate="Runnable" seed="543190593" result="Passed" start-time="2026-10-15 16:27:53Z" end-time="2026-10-15 16:27:53Z" duration="0.097583" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1124" name="RankSoundAssetTests" fullname="StageGame.Tests.RankSoundAssetTests" classname="StageGame.Tests.RankSoundAssetTests" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2026-10-15 16:27:53Z" end-time="2026-10-15 16:27:53Z" duration="0.023687" total="3" passed="1" failed="2" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="ParameterizedMethod" id="1128" name="AacSafeCopiesPreserveTheEntireOriginalAttackBetweenSilentGuards" fullname="StageGame.Tests.RankSoundAssetTests.AacSafeCopiesPreserveTheEntireOriginalAttackBetweenSilentGuards" classname="StageGame.Tests.RankSoundAssetTests" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2026-10-15 16:27:53Z" end-time="2026-10-15 16:27:53Z" duration="0.018381" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1126" name="AacSafeCopiesPreserveTheEntireOriginalAttackBetweenSilentGuards(&quot;TypingKey&quot;)" fullname="StageGame.Tests.RankSoundAssetTests.AacSafeCopiesPreserveTheEntireOriginalAttackBetweenSilentGuards(&quot;TypingKey&quot;)" methodname="AacSafeCopiesPreserveTheEntireOriginalAttackBetweenSilentGuards" classname="StageGame.Tests.RankSoundAssetTests" runstate="Runnable" seed="1922132685" result="Failed" start-time="2026-10-15 16:27:53Z" end-time="2026-10-15 16:27:53Z" duration="0.014900" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  PCM sample 1924
+  Expected: 0.0d +/- 9.9999997473787516E-06d
+  But was:  3.0517578125E-05d
+]]></message>
+                  <stack-trace><![CDATA[at StageGame.Tests.RankSoundAssetTests.AacSafeCopiesPreserveTheEntireOriginalAttackBetweenSilentGuards (System.String name) [0x000b5] in C:\Github\StageGame\Client\Assets\StageGame\Tests\EditMode\RankSoundTests.cs:41
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1127" name="AacSafeCopiesPreserveTheEntireOriginalAttackBetweenSilentGuards(&quot;ButtonClick&quot;)" fullname="StageGame.Tests.RankSoundAssetTests.AacSafeCopiesPreserveTheEntireOriginalAttackBetweenSilentGuards(&quot;ButtonClick&quot;)" methodname="AacSafeCopiesPreserveTheEntireOriginalAttackBetweenSilentGuards" classname="StageGame.Tests.RankSoundAssetTests" runstate="Runnable" seed="1875990233" result="Failed" start-time="2026-10-15 16:27:53Z" end-time="2026-10-15 16:27:53Z" duration="0.002743" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  PCM sample 1927
+  Expected: 0.0d +/- 9.9999997473787516E-06d
+  But was:  -3.0517578125E-05d
+]]></message>
+                  <stack-trace><![CDATA[at StageGame.Tests.RankSoundAssetTests.AacSafeCopiesPreserveTheEntireOriginalAttackBetweenSilentGuards (System.String name) [0x000b5] in C:\Github\StageGame\Client\Assets\StageGame\Tests\EditMode\RankSoundTests.cs:41
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </test-suite>
+            <test-case id="1125" name="SavedSoundsUseShortPcmClipsAndCoverEveryButtonOnce" fullname="StageGame.Tests.RankSoundAssetTests.SavedSoundsUseShortPcmClipsAndCoverEveryButtonOnce" methodname="SavedSoundsUseShortPcmClipsAndCoverEveryButtonOnce" classname="StageGame.Tests.RankSoundAssetTests" runstate="Runnable" seed="1978201069" result="Passed" start-time="2026-10-15 16:27:53Z" end-time="2026-10-15 16:27:53Z" duration="0.004467" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Github/StageGame/Client/Evidence/web-audio-fsb-20261016/unity-tests.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

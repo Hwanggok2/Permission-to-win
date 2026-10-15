@@ -1,0 +1,50 @@
+{
+  "scope": "Calculated contrast of opaque authored text/background colors. Disabled controls, decorations, embossed coin marks and photographic rendering excluded; not an accessibility certification.",
+  "pairs": [
+    {
+      "name": "Body/cream",
+      "fg": "173E43",
+      "bg": "F5F2E9",
+      "ratio": 10.38
+    },
+    {
+      "name": "Panel",
+      "fg": "173E43",
+      "bg": "FFFDF6",
+      "ratio": 11.42
+    },
+    {
+      "name": "Primary mint",
+      "fg": "173E43",
+      "bg": "67D6B0",
+      "ratio": 6.54
+    },
+    {
+      "name": "Selected gold",
+      "fg": "173E43",
+      "bg": "E4B65C",
+      "ratio": 6.17
+    },
+    {
+      "name": "Completed node",
+      "fg": "173E43",
+      "bg": "D3E8D8",
+      "ratio": 9.03
+    },
+    {
+      "name": "Locked node",
+      "fg": "173E43",
+      "bg": "E4E4D8",
+      "ratio": 9.07
+    }
+  ],
+  "touchReference": {
+    "size": "720x960",
+    "minProfile": "320x568 with OS59top/34bottom plus64CSS reserved",
+    "contentScale": 0.428125,
+    "buttonsCss": 47.09375,
+    "nodesCss": 51.375,
+    "boardColumnsCss": 44.03571428571429
+  },
+  "runtimeVerification": "PASS: final59/59 includes both languages,390->320->390, all7 screens, every active button >=44CSS, all active graphics within reserved-safe bounds, legal scroll, title/description text height. See graphics-refresh-tests.xml."
+}

@@ -1,0 +1,490 @@
+{
+  "changes": [
+    {
+      "sheet": "Stages",
+      "cell": "G5",
+      "before": 850,
+      "after": 900
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G6",
+      "before": 850,
+      "after": 900
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F7",
+      "before": 800,
+      "after": 600
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G7",
+      "before": 750,
+      "after": 850
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F8",
+      "before": 800,
+      "after": 600
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G8",
+      "before": 750,
+      "after": 850
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F9",
+      "before": 1200,
+      "after": 700
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G9",
+      "before": 650,
+      "after": 800
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F10",
+      "before": 1200,
+      "after": 700
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G10",
+      "before": 650,
+      "after": 800
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F11",
+      "before": 1800,
+      "after": 800
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G11",
+      "before": 550,
+      "after": 750
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F12",
+      "before": 1800,
+      "after": 800
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G12",
+      "before": 550,
+      "after": 750
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F13",
+      "before": 2600,
+      "after": 1000
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G13",
+      "before": 450,
+      "after": 700
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F14",
+      "before": 2600,
+      "after": 1000
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G14",
+      "before": 450,
+      "after": 700
+    },
+    {
+      "sheet": "Stages",
+      "cell": "E15",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F15",
+      "before": 3500,
+      "after": 1200
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G15",
+      "before": 350,
+      "after": 650
+    },
+    {
+      "sheet": "Stages",
+      "cell": "E16",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F16",
+      "before": 3500,
+      "after": 1200
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G16",
+      "before": 350,
+      "after": 650
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F17",
+      "before": 5000,
+      "after": 1800
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G17",
+      "before": 280,
+      "after": 600
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F18",
+      "before": 5000,
+      "after": 1800
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G18",
+      "before": 280,
+      "after": 600
+    },
+    {
+      "sheet": "Stages",
+      "cell": "E19",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F19",
+      "before": 6500,
+      "after": 2200
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G19",
+      "before": 220,
+      "after": 550
+    },
+    {
+      "sheet": "Stages",
+      "cell": "E20",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F20",
+      "before": 6500,
+      "after": 2200
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G20",
+      "before": 220,
+      "after": 550
+    },
+    {
+      "sheet": "Stages",
+      "cell": "E21",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F21",
+      "before": 8500,
+      "after": 2600
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G21",
+      "before": 160,
+      "after": 500
+    },
+    {
+      "sheet": "Stages",
+      "cell": "E22",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F22",
+      "before": 8500,
+      "after": 2600
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G22",
+      "before": 160,
+      "after": 500
+    },
+    {
+      "sheet": "Stages",
+      "cell": "E23",
+      "before": 4,
+      "after": 2
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F23",
+      "before": 11000,
+      "after": 3000
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G23",
+      "before": 120,
+      "after": 400
+    },
+    {
+      "sheet": "Stages",
+      "cell": "E24",
+      "before": 4,
+      "after": 2
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F24",
+      "before": 11000,
+      "after": 3000
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G24",
+      "before": 120,
+      "after": 400
+    },
+    {
+      "sheet": "Stages",
+      "cell": "E25",
+      "before": 4,
+      "after": 3
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F25",
+      "before": 14000,
+      "after": 3500
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G25",
+      "before": 80,
+      "after": 350
+    },
+    {
+      "sheet": "Stages",
+      "cell": "E26",
+      "before": 4,
+      "after": 3
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F26",
+      "before": 14000,
+      "after": 3500
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G26",
+      "before": 80,
+      "after": 350
+    },
+    {
+      "sheet": "Stages",
+      "cell": "E27",
+      "before": 4,
+      "after": 3
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F27",
+      "before": 18000,
+      "after": 4000
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G27",
+      "before": 60,
+      "after": 300
+    },
+    {
+      "sheet": "Stages",
+      "cell": "E28",
+      "before": 4,
+      "after": 3
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F28",
+      "before": 18000,
+      "after": 4000
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G28",
+      "before": 60,
+      "after": 300
+    },
+    {
+      "sheet": "Stages",
+      "cell": "E29",
+      "before": 5,
+      "after": 3
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F29",
+      "before": 22000,
+      "after": 5000
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G29",
+      "before": 40,
+      "after": 250
+    },
+    {
+      "sheet": "Stages",
+      "cell": "E30",
+      "before": 5,
+      "after": 3
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F30",
+      "before": 22000,
+      "after": 5000
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G30",
+      "before": 40,
+      "after": 250
+    },
+    {
+      "sheet": "Stages",
+      "cell": "E31",
+      "before": 5,
+      "after": 4
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F31",
+      "before": 26000,
+      "after": 6000
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G31",
+      "before": 20,
+      "after": 200
+    },
+    {
+      "sheet": "Stages",
+      "cell": "E32",
+      "before": 5,
+      "after": 4
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F32",
+      "before": 26000,
+      "after": 6000
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G32",
+      "before": 20,
+      "after": 200
+    },
+    {
+      "sheet": "Stages",
+      "cell": "E33",
+      "before": 6,
+      "after": 4
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F33",
+      "before": 30000,
+      "after": 7500
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G33",
+      "before": 0,
+      "after": 150
+    },
+    {
+      "sheet": "Stages",
+      "cell": "E34",
+      "before": 6,
+      "after": 4
+    },
+    {
+      "sheet": "Stages",
+      "cell": "F34",
+      "before": 30000,
+      "after": 7500
+    },
+    {
+      "sheet": "Stages",
+      "cell": "G34",
+      "before": 0,
+      "after": 150
+    },
+    {
+      "sheet": "Strings",
+      "cell": "C118",
+      "before": "1. 열을 골라 놓일 자리를 확인해요.\n\n2. '놓기'를 누르면 가장 아래 빈칸에 돌이 놓여요.\n\n3. 가로·세로·대각선으로 네 돌을 먼저 이으면 승리해요.\n\n나는 흑돌, AI는 백돌이에요.",
+      "after": "1. 열을 골라 놓일 자리를 확인해요.\n\n2. '놓기'로 돌을 놓아요. 턴마다 30초, 시간이 끝나면 자동으로 놓여요.\n\n3. 가로·세로·대각선으로 네 돌을 먼저 이으면 승리해요.\n\n나는 흑돌, AI는 백돌이에요."
+    },
+    {
+      "sheet": "Strings",
+      "cell": "E118",
+      "before": "1. Choose a column to preview your stone.\n\n2. Press Place to put it in the lowest empty space.\n\n3. Connect four across, vertically or diagonally first to win.\n\nYou play black. The AI plays white.",
+      "after": "1. Choose a column to preview your stone.\n\n2. Press Place. You have 30 seconds per turn; then a stone is placed automatically.\n\n3. Connect four across, vertically or diagonally first to win.\n\nYou play black. The AI plays white."
+    },
+    {
+      "sheet": "Strings",
+      "cell": "C139",
+      "before": "열을 고르고 '놓기'를 누르면 가장 아래 빈칸에 놓여요.",
+      "after": "열을 고르고 '놓기'를 눌러요.\n턴마다 30초, 시간이 끝나면 자동으로 놓여요."
+    },
+    {
+      "sheet": "Strings",
+      "cell": "E139",
+      "before": "Choose a column, then press Place to fill its lowest empty space.",
+      "after": "Choose a column, then press Place.\n30 seconds per turn; after that, a stone is placed automatically."
+    }
+  ],
+  "addedStageColumns": [
+    "AiRating",
+    "AiOversightPermille"
+  ],
+  "addedStrings": 2,
+  "existingStylesPreserved": true
+}

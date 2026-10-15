@@ -1,0 +1,1476 @@
+{
+  "method": "Read-only Client Unity/build/capture and optional root browser evidence; no QA Unity/build/browser/device execution",
+  "unity": {
+    "total": 57,
+    "passed": 57,
+    "failed": 0,
+    "endUtc": "2026-10-14 12:32:04Z",
+    "cases": [
+      {
+        "name": "StageGame.Tests.CoreTests.AdPolicyRequiresGraceMatchesAndBothCooldowns",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.AiBlocksImmediateLossEvenAtMaximumMistakes",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.AiRespectsNodeAndStepBudgetsAndLeavesBoardUntouched",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.AiTakesWinBeforeRandomMistake",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.BundledDataReplaysEveryStageAndAiReturnsLegalMove",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.CloneDoesNotMutateOriginal",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.GravityAlternatesAndRejectsFullColumn",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(\"0,0,0,0,0,0,0\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(\"0,6,1,6,2,5,3\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(\"7\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(\"a\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(\"0,\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.MalformedDataCannotSilentlyLoad",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.NoFillNeverRewardsAndEditorDuplicateOnlyGrantsOnce",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.ProgressRejectsNonAdjacentAndReloadedDuplicateResults",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.RewardCompletesOnlyOnceAndRejectsStaleCallbacks",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.SavedPrefabReferencesAndNestedButtonsValidate",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.TruncatedStageCatalogIsRejected",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.UnsuccessfulRewardCanRetryWithoutGrant(Unavailable)",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.UnsuccessfulRewardCanRetryWithoutGrant(Failed)",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.CoreTests.UnsuccessfulRewardCanRetryWithoutGrant(Cancelled)",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.HostLayoutTests.BrowserFallbackAndExplicitControlsUseCssCoordinates",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.HostLayoutTests.InvalidInsetsFallBackToZeroWithoutRemovingHostAllowance",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem(1)",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem(2)",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem(3)",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.HostLayoutTests.SavedGraphicsAndSecondaryLicenseMenuKeepPrefabReferences",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.HostLayoutTests.SideInsetsMergePerEdgeAndOversizedInsetsStayInsideScreen",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.EverySavedUiTextHasAKeyOrExplicitDynamicOwnerAndButtonsHaveTouchArea",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.LanguageLookupFormattingAndUnknownLocaleFollowContract",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.LegacyAndInvalidSavedLocalesPreserveProgressAndDefaultToKorean",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"\",\"Text\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"문구\",\"\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"{0}\",\"{1}\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"{0:00}\",\"{0:00}\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"{broken}\",\"{broken}\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"{1}\",\"{1}\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.PlayFlowTests.ChapterMapSelectsLockedStagesAndKeepsStatesAcrossLanguages",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.PlayFlowTests.DuplicateRewardCompletionStartsOnlyOneHint",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.PlayFlowTests.EveryStageTitleFitsInBothLanguages",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.PlayFlowTests.HighestAiBudgetYieldsFramesAndReturnsWithinActiveDeadline",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.PlayFlowTests.HostProfilesKeepAllScreensBelowControlsAndPreserveLicenseScroll",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.PlayFlowTests.LanguageButtonsUpdateAllScreensAndSurviveSceneReload",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.PlayFlowTests.ResultPriorityAndFinalStageClearDriveReplayMap",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.PlayFlowTests.RewardIsCancelledByModalBackgroundAndMatchTransition",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.PlayFlowTests.RewardPendingLocksBoardAndTimeoutCancelsLateSuccess",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.PlayFlowTests.SafeAreaRefitsAfterCanvasLayoutChangesWithoutScreenResize",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.PlayFlowTests.SavedSceneSupportsLobbyMatchResultAndProgress",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.StageMapTests.FinalClearSurvivesReloadAndReplayWithoutDuplicateCounters",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.StageMapTests.LegacyProgressInfersOnlyStagesBeforeTheUnlock(1)",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.StageMapTests.LegacyProgressInfersOnlyStagesBeforeTheUnlock(12)",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.StageMapTests.LegacyProgressInfersOnlyStagesBeforeTheUnlock(30)",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.StageMapTests.SavedNodesAndHelpAreNestedAndShowExactlyFourConnectedStones",
+        "result": "Passed"
+      }
+    ],
+    "matchesDeclaration": true
+  },
+  "finalCopyUnity": {
+    "total": 11,
+    "passed": 11,
+    "failed": 0,
+    "endUtc": "2026-10-14 12:43:42Z",
+    "cases": [
+      {
+        "name": "StageGame.Tests.CoreTests.SavedPrefabReferencesAndNestedButtonsValidate",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.EverySavedUiTextHasAKeyOrExplicitDynamicOwnerAndButtonsHaveTouchArea",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.LanguageLookupFormattingAndUnknownLocaleFollowContract",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.LegacyAndInvalidSavedLocalesPreserveProgressAndDefaultToKorean",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"\",\"Text\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"문구\",\"\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"{0}\",\"{1}\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"{0:00}\",\"{0:00}\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"{broken}\",\"{broken}\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"{1}\",\"{1}\")",
+        "result": "Passed"
+      },
+      {
+        "name": "StageGame.Tests.PlayFlowTests.ResultPriorityAndFinalStageClearDriveReplayMap",
+        "result": "Passed"
+      }
+    ],
+    "matchesDeclaration": true,
+    "scope": "Separate copy-impact run; overlaps initial57, never sum as68",
+    "unchangedSourceMatches": [
+      {
+        "path": "Assets/StageGame/Prefabs/AppRoot.prefab",
+        "matches": true
+      },
+      {
+        "path": "Assets/StageGame/Prefabs/Board/Board.prefab",
+        "matches": true
+      },
+      {
+        "path": "Assets/StageGame/Prefabs/Board/Cell.prefab",
+        "matches": true
+      },
+      {
+        "path": "Assets/StageGame/Prefabs/UI/Common/CloseButton.prefab",
+        "matches": true
+      },
+      {
+        "path": "Assets/StageGame/Prefabs/UI/Common/ModalFrame.prefab",
+        "matches": true
+      },
+      {
+        "path": "Assets/StageGame/Prefabs/UI/Common/PrimaryButton.prefab",
+        "matches": true
+      },
+      {
+        "path": "Assets/StageGame/Prefabs/UI/Common/StageCard.prefab",
+        "matches": true
+      },
+      {
+        "path": "Assets/StageGame/Prefabs/UI/Common/StageNode.prefab",
+        "matches": true
+      },
+      {
+        "path": "Assets/StageGame/Prefabs/UI/Screens/ConfirmModal.prefab",
+        "matches": true
+      },
+      {
+        "path": "Assets/StageGame/Prefabs/UI/Screens/GameScreen.prefab",
+        "matches": true
+      },
+      {
+        "path": "Assets/StageGame/Prefabs/UI/Screens/HelpModal.prefab",
+        "matches": true
+      },
+      {
+        "path": "Assets/StageGame/Prefabs/UI/Screens/LobbyScreen.prefab",
+        "matches": true
+      },
+      {
+        "path": "Assets/StageGame/Prefabs/UI/Screens/NoticesModal.prefab",
+        "matches": true
+      },
+      {
+        "path": "Assets/StageGame/Prefabs/UI/Screens/ResultModal.prefab",
+        "matches": true
+      },
+      {
+        "path": "Assets/StageGame/Prefabs/UI/Screens/SettingsModal.prefab",
+        "matches": true
+      },
+      {
+        "path": "Assets/StageGame/Editor/StageMapBuilder.cs",
+        "matches": true
+      },
+      {
+        "path": "Assets/StageGame/Scripts/Core/ProgressStore.cs",
+        "matches": true
+      },
+      {
+        "path": "Assets/StageGame/Scripts/UI/GameApp.cs",
+        "matches": true
+      },
+      {
+        "path": "Assets/StageGame/Scripts/UI/HostLayout.cs",
+        "matches": true
+      },
+      {
+        "path": "Assets/StageGame/Scripts/UI/SafeAreaFitter.cs",
+        "matches": true
+      }
+    ]
+  },
+  "captureProvenance": {
+    "initialRunRetained": 32,
+    "finalCopyRunRefreshed": [
+      "Evidence/map-en-320-all-cleared.png",
+      "Evidence/map-en-320-result-0.png",
+      "Evidence/map-en-320-result-1.png",
+      "Evidence/map-en-320-result-2.png",
+      "Evidence/map-ko-320-all-cleared.png",
+      "Evidence/map-ko-320-result-0.png",
+      "Evidence/map-ko-320-result-1.png",
+      "Evidence/map-ko-320-result-2.png"
+    ],
+    "basis": "ResultPriorityAndFinalStageClearDriveReplayMap passed in final11; PlayFlowTests writes six outcome and two all-cleared images; captured file times agree with final XML"
+  },
+  "artifacts": [
+    {
+      "path": "Builds/Android/StageGame-development.apk",
+      "sha256": "865DAD68BA5A648829F83428C53F7BC343C4AB60595F54BE9080D402B932EC95",
+      "bytes": 39792595,
+      "matchesMap": true,
+      "matchesVerification": true
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.wasm",
+      "sha256": "D093BE45525525A092B3569D65CAE23B0A7A63C701A50859C41FFAE3ECC344C0",
+      "bytes": 24390734,
+      "matchesMap": true,
+      "matchesVerification": true
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.data",
+      "sha256": "FA73330ECB9D638D63BBA6B2B4403E5F23A8A5BAF6F93CF48173E3469C9B17EE",
+      "bytes": 18753989,
+      "matchesMap": true,
+      "matchesVerification": true
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.framework.js",
+      "sha256": "F909F29D115947BE5BAB214FE3CD434A6197E6BDC2E24CE9C2933C64B58FAE08",
+      "bytes": 761643,
+      "matchesMap": true,
+      "matchesVerification": true
+    },
+    {
+      "path": "Builds/WebGL/index.html",
+      "sha256": "53BDBF4813EA2CFE5A19E5C21B3B711CD6AD08AD1200254146D1AB3BA3C6C3CA",
+      "bytes": 4416,
+      "matchesMap": true,
+      "matchesVerification": true
+    },
+    {
+      "path": "Builds/WebGL/ui-text.js",
+      "sha256": "2D958DA273B7A6ACC2DFBD37EE24B034F0A82078A7BCA7755858A41C33A70FC8",
+      "bytes": 448,
+      "matchesMap": true,
+      "matchesVerification": true
+    },
+    {
+      "path": "Builds/WebGL/host-layout.js",
+      "sha256": "187B6162FE987A784D66FB6F929EC64C4885D8BA2A5B5A7E176AF16DFC9DAC25",
+      "bytes": 2002,
+      "matchesMap": true,
+      "matchesVerification": true
+    }
+  ],
+  "declaredSourceCaptureMatches": [
+    {
+      "path": "Assets/StageGame/Prefabs/AppRoot.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/Board/Board.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/Board/Cell.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/CloseButton.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/ModalFrame.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/PrimaryButton.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/StageCard.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/StageNode.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/ConfirmModal.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/GameScreen.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/HelpModal.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/LobbyScreen.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/NoticesModal.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/ResultModal.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/SettingsModal.prefab",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Editor/StageMapBuilder.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/ProgressStore.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/GameApp.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/HostLayout.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/SafeAreaFitter.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Resources/GameData/strings.json",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-en-320-confirm.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-en-320-help.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-en-320-lobby.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-en-320-match.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-en-320-notices-bottom.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-en-320-result.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-en-320-settings.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-en-390-confirm.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-en-390-help.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-en-390-lobby.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-en-390-match.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-en-390-notices-bottom.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-en-390-result.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-en-390-settings.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-ko-320-confirm.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-ko-320-help.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-ko-320-lobby.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-ko-320-match.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-ko-320-notices-bottom.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-ko-320-result.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-ko-320-settings.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-ko-390-confirm.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-ko-390-help.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-ko-390-lobby.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-ko-390-match.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-ko-390-notices-bottom.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-ko-390-result.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/host-ko-390-settings.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/map-en-320-all-cleared.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/map-en-320-locked.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/map-en-320-result-0.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/map-en-320-result-1.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/map-en-320-result-2.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/map-en-390-current.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/map-ko-320-all-cleared.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/map-ko-320-locked.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/map-ko-320-result-0.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/map-ko-320-result-1.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/map-ko-320-result-2.png",
+      "matches": true
+    },
+    {
+      "path": "Evidence/map-ko-390-current.png",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/AiSearch.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/ConnectFourBoard.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/GameData.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/ProgressStore.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Core/StringTable.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/Platform/Advertising.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/GameApp.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/HostLayout.cs",
+      "matches": true
+    },
+    {
+      "path": "Assets/StageGame/Scripts/UI/SafeAreaFitter.cs",
+      "matches": true
+    }
+  ],
+  "runtimeAndDataVsIndependent": [
+    {
+      "source": "Client/Assets/StageGame/Scripts/Core/ConnectFourBoard.cs",
+      "independentSha256": "5A57257861061D89B71E9758B6E352A96E08D22C2B686C85C5CD503B0F25FB36",
+      "currentSha256": "5A57257861061D89B71E9758B6E352A96E08D22C2B686C85C5CD503B0F25FB36",
+      "matches": true,
+      "approvedCopyOnlyChange": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/Core/AiSearch.cs",
+      "independentSha256": "FEA609E5CC011D590C9BEDA3D401B3CCC420DF7E0C9FAD7EFA18F99A9D72F63B",
+      "currentSha256": "FEA609E5CC011D590C9BEDA3D401B3CCC420DF7E0C9FAD7EFA18F99A9D72F63B",
+      "matches": true,
+      "approvedCopyOnlyChange": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/Core/GameData.cs",
+      "independentSha256": "72018B7041F6E255E5210B2BAD652117744D0BC7BAED9BFAC1CF70340AABB567",
+      "currentSha256": "72018B7041F6E255E5210B2BAD652117744D0BC7BAED9BFAC1CF70340AABB567",
+      "matches": true,
+      "approvedCopyOnlyChange": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/Core/StringTable.cs",
+      "independentSha256": "8D133248463B3466690BCC76BD9BBB31F7BA1703CDF84E3FF6788F2AB4374A1B",
+      "currentSha256": "8D133248463B3466690BCC76BD9BBB31F7BA1703CDF84E3FF6788F2AB4374A1B",
+      "matches": true,
+      "approvedCopyOnlyChange": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/Core/ProgressStore.cs",
+      "independentSha256": "FCDB8DC6DE3B8DD0AEF425930F61B5EA3AB3E729C56384A8D72B841E548E17D1",
+      "currentSha256": "FCDB8DC6DE3B8DD0AEF425930F61B5EA3AB3E729C56384A8D72B841E548E17D1",
+      "matches": true,
+      "approvedCopyOnlyChange": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/Platform/Advertising.cs",
+      "independentSha256": "9D768FDDC0BCFB6801D7DEF5DC811FE9A699719CE6E56B909E62F2FFC814C23F",
+      "currentSha256": "9D768FDDC0BCFB6801D7DEF5DC811FE9A699719CE6E56B909E62F2FFC814C23F",
+      "matches": true,
+      "approvedCopyOnlyChange": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/UI/GameApp.cs",
+      "independentSha256": "E79F57289BE0749E346767B2E53D464606D5BD86F79FCA3BC1E47CFE3430483F",
+      "currentSha256": "E79F57289BE0749E346767B2E53D464606D5BD86F79FCA3BC1E47CFE3430483F",
+      "matches": true,
+      "approvedCopyOnlyChange": false
+    },
+    {
+      "source": "C:\\Github\\StageGame\\Client\\Assets\\StageGame\\Resources\\GameData\\stages.json",
+      "independentSha256": "2D04B124A42F0F3798AD942E9AACAB97EE34A25F05B380144CD70F75C3904992",
+      "currentSha256": "2D04B124A42F0F3798AD942E9AACAB97EE34A25F05B380144CD70F75C3904992",
+      "matches": true,
+      "approvedCopyOnlyChange": false
+    },
+    {
+      "source": "C:\\Github\\StageGame\\GameData\\Generated\\stages.json",
+      "independentSha256": "2D04B124A42F0F3798AD942E9AACAB97EE34A25F05B380144CD70F75C3904992",
+      "currentSha256": "2D04B124A42F0F3798AD942E9AACAB97EE34A25F05B380144CD70F75C3904992",
+      "matches": true,
+      "approvedCopyOnlyChange": false
+    },
+    {
+      "source": "C:\\Github\\StageGame\\Client\\Assets\\StageGame\\Resources\\GameData\\ads.json",
+      "independentSha256": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A",
+      "currentSha256": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A",
+      "matches": true,
+      "approvedCopyOnlyChange": false
+    },
+    {
+      "source": "C:\\Github\\StageGame\\GameData\\Generated\\ads.json",
+      "independentSha256": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A",
+      "currentSha256": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A",
+      "matches": true,
+      "approvedCopyOnlyChange": false
+    },
+    {
+      "source": "C:\\Github\\StageGame\\Client\\Assets\\StageGame\\Resources\\GameData\\strings.json",
+      "independentSha256": "87A4ADD450E8A57B3CEF5600B8A447C8A55C78CD1F75F75E0BD94AC9CA56F13D",
+      "currentSha256": "57E392CF68464898829946F17030E4AE3008AAB86370452BACF6DBE56D68A291",
+      "matches": false,
+      "approvedCopyOnlyChange": true
+    },
+    {
+      "source": "C:\\Github\\StageGame\\GameData\\Generated\\strings.json",
+      "independentSha256": "87A4ADD450E8A57B3CEF5600B8A447C8A55C78CD1F75F75E0BD94AC9CA56F13D",
+      "currentSha256": "57E392CF68464898829946F17030E4AE3008AAB86370452BACF6DBE56D68A291",
+      "matches": false,
+      "approvedCopyOnlyChange": true
+    }
+  ],
+  "changesSinceStaticPrefabReview": [
+    "Client/Assets/StageGame/Resources/GameData/strings.json"
+  ],
+  "clientReapplyEvidence": [
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Common/StageNode.prefab",
+      "reportedUnchanged": true,
+      "currentMatchesAfter": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/LobbyScreen.prefab",
+      "reportedUnchanged": true,
+      "currentMatchesAfter": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/HelpModal.prefab",
+      "reportedUnchanged": true,
+      "currentMatchesAfter": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/UI/Screens/ResultModal.prefab",
+      "reportedUnchanged": true,
+      "currentMatchesAfter": true
+    },
+    {
+      "path": "Assets/StageGame/Prefabs/AppRoot.prefab",
+      "reportedUnchanged": true,
+      "currentMatchesAfter": true
+    }
+  ],
+  "copyCorrection": {
+    "method": "Independent exact JSON comparison, no game/Unity/Excel/exporter execution",
+    "result": "PASS",
+    "rowCount": 137,
+    "approvedChangedKeys": [
+      "result_loss_diagonal",
+      "result_loss_horizontal",
+      "result_loss_vertical"
+    ],
+    "unchangedRows": 134,
+    "generatedSha256": "57E392CF68464898829946F17030E4AE3008AAB86370452BACF6DBE56D68A291",
+    "clientSha256": "57E392CF68464898829946F17030E4AE3008AAB86370452BACF6DBE56D68A291",
+    "failures": [],
+    "changedDuringRead": [],
+    "limits": "Exact copy/data change verification only. Root must confirm final loss UI and final artifact linkage before QA-010 closure."
+  },
+  "apkNotices": [
+    {
+      "entry": "assets/Notices/NotoSansKR-OFL.txt",
+      "matches": true
+    },
+    {
+      "entry": "assets/Notices/NUnit-ThirdPartyNotices.txt",
+      "matches": true
+    },
+    {
+      "entry": "assets/Notices/NotoSansCJKkr-OFL.txt",
+      "matches": true
+    },
+    {
+      "entry": "assets/Notices/Unity-NUnit-LICENSE.txt",
+      "matches": true
+    },
+    {
+      "entry": "assets/Notices/Unity-TestFramework-LICENSE.txt",
+      "matches": true
+    },
+    {
+      "entry": "assets/Notices/Unity-uGUI-LICENSE.txt",
+      "matches": true
+    },
+    {
+      "entry": "assets/Notices/SOURCES.txt",
+      "matches": true
+    },
+    {
+      "entry": "assets/Notices/Unity-Companion-License-Full.txt",
+      "matches": true
+    }
+  ],
+  "apkMatchesNoticeReport": true,
+  "captureCount": 40,
+  "buildReports": {
+    "android": {
+      "build": "Succeeded",
+      "errors": 0,
+      "warnings": 0,
+      "package": "com.stagegame.prototype",
+      "version": "0.1.0",
+      "minSdk": 25,
+      "targetSdk": 36,
+      "architecture": "arm64-v8a",
+      "deviceTested": false,
+      "releaseSigned": false,
+      "latestBuildLog": "Logs/android-stage-map-final.log"
+    },
+    "webgl": {
+      "build": "Succeeded",
+      "errors": 0,
+      "warnings": 0,
+      "template": "StageGamePortrait",
+      "browserSmoke": "PASS from root coordinator: initial chapter-map functional flow and final Korean vertical-loss copy retest. See rootStageMapBrowserReport for separate scopes.",
+      "browserProof": "../Docs/Management/Evidence/reference-ux-browser-20261014/README.md",
+      "appsInTossSdk": false,
+      "aitPackage": false,
+      "responsiveProof": "Evidence/stage-map-tests.xml; Evidence/host-*.png; Evidence/map-*.png",
+      "latestBuildLog": "Logs/webgl-stage-map-final.log",
+      "responsiveSmoke": "Root initial390->320->390 andko/en map/help passed;final copy-only390 retest passed. Unity render assertions provide44px hitbox evidence. Actual Toss/device not tested."
+    }
+  },
+  "browser": {
+    "rootArtifactMatches": [
+      {
+        "path": "Builds/Android/StageGame-development.apk",
+        "matches": true
+      },
+      {
+        "path": "Builds/WebGL/Build/WebGL.wasm",
+        "matches": true
+      },
+      {
+        "path": "Builds/WebGL/Build/WebGL.data",
+        "matches": true
+      },
+      {
+        "path": "Builds/WebGL/Build/WebGL.framework.js",
+        "matches": true
+      },
+      {
+        "path": "Builds/WebGL/index.html",
+        "matches": true
+      },
+      {
+        "path": "Builds/WebGL/ui-text.js",
+        "matches": true
+      },
+      {
+        "path": "Builds/WebGL/host-layout.js",
+        "matches": true
+      }
+    ],
+    "consoleEntryCount": 0,
+    "report": "Docs/Management/Evidence/reference-ux-browser-20261014/README.md",
+    "scope": "Root executes real localhost pointers. QA only reads evidence. Native migration/final30/draw automatic tests are distinct from human browser play."
+  },
+  "postCopy": [
+    {
+      "source": "Client/Assets/StageGame/Editor/StageMapBuilder.cs",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Prefabs/AppRoot.prefab",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Prefabs/Board/Board.prefab",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Prefabs/Board/Cell.prefab",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Prefabs/UI/Common/CloseButton.prefab",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Prefabs/UI/Common/ModalFrame.prefab",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Prefabs/UI/Common/PrimaryButton.prefab",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Prefabs/UI/Common/StageCard.prefab",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Prefabs/UI/Common/StageNode.prefab",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Prefabs/UI/Common/StageNode.prefab.meta",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Prefabs/UI/Screens/ConfirmModal.prefab",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Prefabs/UI/Screens/GameScreen.prefab",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Prefabs/UI/Screens/HelpModal.prefab",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Prefabs/UI/Screens/LobbyScreen.prefab",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Prefabs/UI/Screens/NoticesModal.prefab",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Prefabs/UI/Screens/ResultModal.prefab",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Prefabs/UI/Screens/SettingsModal.prefab",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Resources/GameData/strings.json",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/Core/AiSearch.cs",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/Core/ConnectFourBoard.cs",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/Core/GameData.cs",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/Core/ProgressStore.cs",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/Core/StringTable.cs",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/Platform/Advertising.cs",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/UI/GameApp.cs",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/UI/HostLayout.cs",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/UI/SafeAreaFitter.cs",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Tests/EditMode/LocalizationTests.cs",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Tests/EditMode/PlayFlowTests.cs",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StageGame/Tests/EditMode/StageMapTests.cs",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StreamingAssets/Notices/NotoSansCJKkr-OFL.txt",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StreamingAssets/Notices/NotoSansKR-OFL.txt",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StreamingAssets/Notices/NUnit-ThirdPartyNotices.txt",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StreamingAssets/Notices/SOURCES.txt",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StreamingAssets/Notices/Unity-Companion-License-Full.txt",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StreamingAssets/Notices/Unity-NUnit-LICENSE.txt",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StreamingAssets/Notices/Unity-TestFramework-LICENSE.txt",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Assets/StreamingAssets/Notices/Unity-uGUI-LICENSE.txt",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/android-build-summary.txt",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/apk-notices.json",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-en-320-confirm.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-en-320-help.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-en-320-lobby.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-en-320-match.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-en-320-notices-bottom.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-en-320-result.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-en-320-settings.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-en-390-confirm.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-en-390-help.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-en-390-lobby.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-en-390-match.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-en-390-notices-bottom.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-en-390-result.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-en-390-settings.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-ko-320-confirm.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-ko-320-help.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-ko-320-lobby.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-ko-320-match.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-ko-320-notices-bottom.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-ko-320-result.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-ko-320-settings.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-ko-390-confirm.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-ko-390-help.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-ko-390-lobby.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-ko-390-match.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-ko-390-notices-bottom.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-ko-390-result.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/host-ko-390-settings.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/loss-copy-change.json",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/loss-copy-tests.xml",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/map-en-320-all-cleared.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/map-en-320-locked.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/map-en-320-result-0.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/map-en-320-result-1.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/map-en-320-result-2.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/map-en-390-current.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/map-ko-320-all-cleared.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/map-ko-320-locked.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/map-ko-320-result-0.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/map-ko-320-result-1.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/map-ko-320-result-2.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/map-ko-390-current.png",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/stage-map-idempotence.json",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/stage-map-tests.xml",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/stage-map-verification.json",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/verification.json",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/Evidence/webgl-build-summary.txt",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client/STAGE-MAP-REQUEST.json",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client\\Assets\\StageGame\\Resources\\GameData\\ads.json",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client\\Assets\\StageGame\\Resources\\GameData\\stages.json",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client\\Assets\\StageGame\\Resources\\GameData\\strings.json",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client\\Assets\\StageGame\\Scripts\\Core\\AiSearch.cs",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client\\Assets\\StageGame\\Scripts\\Core\\ConnectFourBoard.cs",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client\\Assets\\StageGame\\Scripts\\Core\\GameData.cs",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client\\Assets\\StageGame\\Scripts\\Core\\ProgressStore.cs",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client\\Assets\\StageGame\\Scripts\\Core\\StringTable.cs",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client\\Assets\\StageGame\\Scripts\\Platform\\Advertising.cs",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Client\\Assets\\StageGame\\Scripts\\UI\\GameApp.cs",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Docs/Management/CONTRACT.md",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Docs/QA/Evidence/qa-stage-loss-copy-fixed-v1-20261014/results.json",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Docs\\Management\\Evidence\\reference-ux-browser-20261014\\before-copy-fix-artifacts.json",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Docs\\Management\\Evidence\\reference-ux-browser-20261014\\before-lobby-390.jpg",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Docs\\Management\\Evidence\\reference-ux-browser-20261014\\console-before-copy-fix.json",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Docs\\Management\\Evidence\\reference-ux-browser-20261014\\en-help-320.jpg",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Docs\\Management\\Evidence\\reference-ux-browser-20261014\\en-licenses-scroll-390.jpg",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Docs\\Management\\Evidence\\reference-ux-browser-20261014\\en-loss-retry-390.jpg",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Docs\\Management\\Evidence\\reference-ux-browser-20261014\\en-map-320.jpg",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Docs\\Management\\Evidence\\reference-ux-browser-20261014\\en-restored-390.jpg",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Docs\\Management\\Evidence\\reference-ux-browser-20261014\\en-retry-stage2-390.jpg",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Docs\\Management\\Evidence\\reference-ux-browser-20261014\\en-win-next-390.jpg",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Docs\\Management\\Evidence\\reference-ux-browser-20261014\\final-artifacts.json",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Docs\\Management\\Evidence\\reference-ux-browser-20261014\\final-console.json",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Docs\\Management\\Evidence\\reference-ux-browser-20261014\\final-ko-help-390.jpg",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Docs\\Management\\Evidence\\reference-ux-browser-20261014\\final-ko-loss-390.jpg",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Docs\\Management\\Evidence\\reference-ux-browser-20261014\\final-ko-map-390.jpg",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Docs\\Management\\Evidence\\reference-ux-browser-20261014\\ko-chapter3-390.jpg",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Docs\\Management\\Evidence\\reference-ux-browser-20261014\\ko-help-320.jpg",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Docs\\Management\\Evidence\\reference-ux-browser-20261014\\ko-help-390.jpg",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Docs\\Management\\Evidence\\reference-ux-browser-20261014\\ko-locked-390.jpg",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Docs\\Management\\Evidence\\reference-ux-browser-20261014\\ko-map-320.jpg",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Docs\\Management\\Evidence\\reference-ux-browser-20261014\\ko-map-390.jpg",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Docs\\Management\\Evidence\\reference-ux-browser-20261014\\ko-map-restored-390.jpg",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Docs\\Management\\Evidence\\reference-ux-browser-20261014\\README.md",
+      "changedDuringRead": false
+    },
+    {
+      "source": "GameData\\Generated\\ads.json",
+      "changedDuringRead": false
+    },
+    {
+      "source": "GameData\\Generated\\stages.json",
+      "changedDuringRead": false
+    },
+    {
+      "source": "GameData\\Generated\\strings.json",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Tests/check-stage-evidence.ps1",
+      "changedDuringRead": false
+    },
+    {
+      "source": "Tests/Fixtures/stage-ux-approved-copy-changes.json",
+      "changedDuringRead": false
+    }
+  ],
+  "limits": "Unity57 precedes the approved3 loss-text correction; a separate final11 overlaps that suite and refreshed8 of40 captures, leaving32 initial captures. Runtime/prefabs remain unchanged. Final text uses exact bilingual JSON comparison plus final ko/en vertical-loss render images and root Korean vertical-loss pointer retest. Native JSON/PlayerPrefs and render events are not device durability or Toss SDK. Final30 images use injected terminal fixtures, not a human30-stage campaign. BuildReport bytes are not APK file size. Existing release gates remain."
+}

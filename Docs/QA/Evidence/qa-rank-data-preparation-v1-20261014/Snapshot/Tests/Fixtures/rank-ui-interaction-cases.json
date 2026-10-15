@@ -1,0 +1,43 @@
+{
+  "fixtureVersion": 1,
+  "contractVersion": 8,
+  "status": "PREPARATION_ONLY_NOT_EXECUTED_AGAINST_PRODUCT",
+  "authority": "Coordinator relayed user redesign: gravity7x6, selection thenPlace, free pairUndo with opening floor, fresh-install auto stage1, new rank UI and resultNext restored",
+  "coordinates": "columns0..6; row0=bottom; player=1; AI=-1",
+  "fieldNames": "Semantic expectations only; bind to actual frozen API. AI reply columns below are controlled fixture inputs, not predicted AI search outputs.",
+  "rankStars": {"stageCount":30,"rankCount":10,"stagesPerRank":3,"starCount":5,"stagesPerStar":6,"formula":"rankOrdinal=1+floor((stageId-1)/3); stars=1+floor((stageId-1)/6)","boundaryStageIds":[1,3,4,6,7,12,13,18,19,24,25,27,28,30]},
+  "boardCases": [
+    {"id":"select_without_place","starter":1,"opening":[3,2],"selectColumns":[4,1,4],"expectedHistory":[3,2],"expectedNext":1,"expectedPreview":{"column":4,"row":0},"expectedNewAiRequests":0},
+    {"id":"select_lowest_empty","starter":1,"opening":[3,2,3,2],"selectColumns":[3],"expectedHistory":[3,2,3,2],"expectedPreview":{"column":3,"row":2}},
+    {"id":"full_column_rejected","starter":1,"opening":[0,0,0,0,0,0],"selectColumns":[3,0],"attemptPlace":true,"expectedHistory":[0,0,0,0,0,0],"expectedFullColumn":0,"expectedPreview":null,"expectedPlaceEnabled":false},
+    {"id":"one_place_one_ai","starter":1,"opening":[3,2],"selectColumns":[4],"placeCalls":3,"controlledAiReply":5,"expectedHistory":[3,2,4,5],"expectedPlayerMovesAdded":1,"expectedAiMovesAdded":1},
+    {"id":"undo_completed_pair","starter":1,"opening":[3,2],"turnPairs":[[4,5]],"undoCalls":1,"expectedHistory":[3,2],"expectedNext":1},
+    {"id":"undo_pending_ai","starter":1,"opening":[3,2],"playerPlaced":4,"aiStatus":"searching","undoCalls":1,"lateAiReply":5,"expectedHistory":[3,2],"expectedNext":1,"lateReplyMustBeIgnored":true},
+    {"id":"undo_ai_finish_same_frame","starter":1,"opening":[3,2],"playerPlaced":4,"controlledAiReply":5,"eventOrders":[["undo","ai-complete"],["ai-complete","undo"]],"expectedHistory":[3,2],"expectedNext":1},
+    {"id":"repeated_undo_opening_floor","starter":1,"opening":[3,2],"turnPairs":[[4,5],[0,6]],"undoCalls":3,"expectedHistoryAfterEach":[[3,2,4,5],[3,2],[3,2]],"expectedNext":1},
+    {"id":"ai_starter_opening_floor","starter":-1,"opening":[3],"turnPairs":[[4,5]],"undoCalls":2,"expectedHistoryAfterEach":[[3],[3]],"expectedNext":1},
+    {"id":"undo_then_alternative_place","starter":1,"opening":[3,2],"turnPairs":[[4,5]],"undoCalls":1,"alternatePlayerPlace":0,"controlledAiReplyAfterUndo":6,"expectedHistory":[3,2,0,6],"expectedNext":1},
+    {"id":"retry_during_ai","starter":1,"opening":[3,2],"playerPlaced":4,"aiStatus":"searching","action":"retry","lateAiReply":5,"expectedHistory":[3,2],"lateReplyMustBeIgnored":true,"expectedNewCompletedMatches":0},
+    {"id":"lobby_during_ai","starter":1,"opening":[3,2],"playerPlaced":4,"action":"lobby","lateAiReply":5,"expectedScreen":"lobby","lateReplyMustBeIgnored":true,"expectedNewCompletedMatches":0},
+    {"id":"terminal_undo_rejected","starter":1,"opening":[0,6,1,6,2,5],"playerPlaced":3,"undoCalls":1,"phases":["resolving","result"],"expectedHistory":[0,6,1,6,2,5,3],"expectedUndoEnabled":false,"invariants":["no duplicate result save","no completion inflation","no stale result/AI mutation of a new match"]}
+  ],
+  "lifecycleCases": [
+    {"id":"fresh_install_first_launch","rawSave":null,"newUserCriterion":"save key absent","expectedAutoStageId":1,"expectedAutoStartCount":1,"expectedLaterLaunchScreen":"lobby","followups":["lobby then relaunch","exit during first match","save failure"],"markerWriteAndFailurePolicy":"READ_FROZEN_IMPLEMENTATION"},
+    {"id":"existing_saved_stage1_no_first_flag","rawSave":"{\"saveVersion\":1,\"unlockedStage\":1,\"highestClearedStage\":0,\"completedMatches\":0,\"language\":\"en\",\"soundEnabled\":false}","expectedAutoStartCount":0,"expectedLaunchScreen":"lobby","invariants":["preserve English and muted sound","do not reset because new first flag is absent"]},
+    {"id":"existing_save_not_fresh","reuseFixture":"stage-ux-legacy-saves.json","caseIds":["legacy_unlock_1","legacy_unlock_2","legacy_unlock_10","legacy_unlock_11","legacy_unlock_20","legacy_unlock_21","legacy_unlock_30_is_not_30_complete"],"invariants":["preserve progression language sound and ad history","missing additive marker must not overwrite old progress","unlock30 does not imply cleared30"]},
+    {"id":"result_next_boundaries","stageIds":[1,9,10,29,30],"outcomes":["win","loss","draw"],"invariants":["Next never enters stage31","Retry same stage new match","Lobby selects highest unlocked","result recorded once","NoFill never blocks progression","no result Close"],"nextVisibility":"win AND stageId<30","lossDrawActions":["Retry","Lobby"]},
+    {"id":"multiplayer_placeholder","action":"multiplayer","invariants":["localized coming-soon only","no network matching or room creation","no account required","no progression mutation"]}
+  ],
+  "modalCases":[
+    {"id":"preview_blocks_cards_preserves_scroll","initialScroll":0.42,"selectedStageId":13,"actions":["open preview","click background different card","close X"],"expectedSelectedStageId":13,"expectedFinalScroll":0.42,"expectedNewMatches":0},
+    {"id":"preview_boundaries_and_opening","stageIds":[1,3,4,6,7,27,28,30],"invariants":["render actual stage opening without mutation","left/right never select0or31","locked stage inspectable but start blocked","X visible and clickable","rank stars description and opening refer to the same selected stage"]}
+  ],
+  "additionalCases":[
+    {"id":"undo_preserves_consumed_hint","before":{"hintGranted":true,"hintColumn":4},"action":"undo","after":{"hintGranted":true,"hintColumn":-1},"invariants":["clear recommendation only","no new reward entitlement","no new ad request or result count"]},
+    {"id":"preview_blocks_all_lobby_actions","phases":["sliding-open","open","sliding-closed"],"blockedActions":["card-select","lobbySettings","lobbyHelp","multiplayer"],"invariants":["no underlying modal opens","no hidden selection mutation","controls restore after close","scroll position preserved"]},
+    {"id":"rank_runtime_fields_rejected","stringFields":["rankKey","descriptionKey","aiIntroKey","aiWinKey","aiLoseKey"],"mutations":["missing","empty","unknown-key"],"invalidStars":[0,6],"invariants":["explicit validation rejection","safe fallback without null-reference UI","exporter and runtime checks reported separately"]}
+  ],
+  "activeTypes":["RankGameApp","RankTheme","RankStageCard"],
+  "requiresFrozenBindings":["selection/preview state","Place/Undo/Retry handlers","history and opening floor","AI cancellation identity","first-launch marker","rank/dialogue/star data","new result Next rules"],
+  "notProof":["fixture syntax is not product validation","controlledAI replies are not liveAI behavior","no Unity/browser/device execution"]
+}

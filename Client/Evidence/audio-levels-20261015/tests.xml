@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="7" result="Passed" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-15 11:18:40Z" end-time="2026-10-15 11:18:47Z" duration="6.4327738">
+  <test-suite type="TestSuite" id="1000" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="96" result="Passed" start-time="2026-10-15 11:18:40Z" end-time="2026-10-15 11:18:47Z" duration="6.432774" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1114" name="StageGame.Tests.dll" fullname="C:/Github/StageGame/Client/Library/ScriptAssemblies/StageGame.Tests.dll" runstate="Runnable" testcasecount="96" result="Passed" start-time="2026-10-15 11:18:40Z" end-time="2026-10-15 11:18:47Z" duration="6.378054" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="48644" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1115" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="96" result="Passed" start-time="2026-10-15 11:18:40Z" end-time="2026-10-15 11:18:47Z" duration="6.376709" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1116" name="Tests" fullname="StageGame.Tests" runstate="Runnable" testcasecount="96" result="Passed" start-time="2026-10-15 11:18:40Z" end-time="2026-10-15 11:18:47Z" duration="6.375493" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1055" name="RankFlowTests" fullname="StageGame.Tests.RankFlowTests" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" testcasecount="34" result="Passed" start-time="2026-10-15 11:18:40Z" end-time="2026-10-15 11:18:46Z" duration="6.197102" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1075" name="MusicAndStonePlacementProduceStrongerNonClippingListenerOutput" fullname="StageGame.Tests.RankFlowTests.MusicAndStonePlacementProduceStrongerNonClippingListenerOutput" methodname="MusicAndStonePlacementProduceStrongerNonClippingListenerOutput" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1104086151" result="Passed" start-time="2026-10-15 11:18:20Z" end-time="2026-10-15 11:18:25Z" duration="5.022996" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1077" name="MusicPauseFocusAndBackgroundResumeTheSameTrackAndLobbyStopsIt" fullname="StageGame.Tests.RankFlowTests.MusicPauseFocusAndBackgroundResumeTheSameTrackAndLobbyStopsIt" methodname="MusicPauseFocusAndBackgroundResumeTheSameTrackAndLobbyStopsIt" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="2117970611" result="Passed" start-time="2026-10-15 11:18:25Z" end-time="2026-10-15 11:18:27Z" duration="2.283382" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1076" name="MusicSettingRestoresAfterReloadAndBothLanguagesFitSavedSettings" fullname="StageGame.Tests.RankFlowTests.MusicSettingRestoresAfterReloadAndBothLanguagesFitSavedSettings" methodname="MusicSettingRestoresAfterReloadAndBothLanguagesFitSavedSettings" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1397250330" result="Passed" start-time="2026-10-15 11:18:27Z" end-time="2026-10-15 11:18:31Z" duration="4.351128" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] ko-1080-music-on: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-390-music-on: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-320-music-on: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-music-off: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-390-music-off: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-320-music-off: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] en-1080-music-on: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-390-music-on: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] en-320-music-on: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] en-1080-music-off: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-390-music-off: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] en-320-music-off: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] en-1080-music-license: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1079" name="MusicWaitsForInterstitialAndLateCallbacksCannotOverrideOffOrLobby" fullname="StageGame.Tests.RankFlowTests.MusicWaitsForInterstitialAndLateCallbacksCannotOverrideOffOrLobby" methodname="MusicWaitsForInterstitialAndLateCallbacksCannotOverrideOffOrLobby" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1351253900" result="Passed" start-time="2026-10-15 11:18:31Z" end-time="2026-10-15 11:18:39Z" duration="7.396707" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1078" name="MusicWaitsForRewardAdsAndResumesOnFailureCancellationOrTimeout" fullname="StageGame.Tests.RankFlowTests.MusicWaitsForRewardAdsAndResumesOnFailureCancellationOrTimeout" methodname="MusicWaitsForRewardAdsAndResumesOnFailureCancellationOrTimeout" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="342049194" result="Passed" start-time="2026-10-15 11:18:39Z" end-time="2026-10-15 11:18:46Z" duration="7.672688" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1103" name="RankMusicAssetTests" fullname="StageGame.Tests.RankMusicAssetTests" classname="StageGame.Tests.RankMusicAssetTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-15 11:18:46Z" end-time="2026-10-15 11:18:47Z" duration="0.164764" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1104" name="LegacyMusicPreferenceDefaultsOnAndRoundTripsIndependently" fullname="StageGame.Tests.RankMusicAssetTests.LegacyMusicPreferenceDefaultsOnAndRoundTripsIndependently" methodname="LegacyMusicPreferenceDefaultsOnAndRoundTripsIndependently" classname="StageGame.Tests.RankMusicAssetTests" runstate="Runnable" seed="927480270" result="Passed" start-time="2026-10-15 11:18:46Z" end-time="2026-10-15 11:18:46Z" duration="0.004720" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1105" name="SavedMusicReferencesOriginalAudioAndAllLicenseNoticesArePresent" fullname="StageGame.Tests.RankMusicAssetTests.SavedMusicReferencesOriginalAudioAndAllLicenseNoticesArePresent" methodname="SavedMusicReferencesOriginalAudioAndAllLicenseNoticesArePresent" classname="StageGame.Tests.RankMusicAssetTests" runstate="Runnable" seed="95929555" result="Passed" start-time="2026-10-15 11:18:46Z" end-time="2026-10-15 11:18:47Z" duration="0.159090" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:\Github\StageGame\Client\Evidence\audio-levels-20261015\tests.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

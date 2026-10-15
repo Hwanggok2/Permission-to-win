@@ -1,0 +1,90 @@
+{
+  "scope": "Read-only fingerprint beforev10; no build authorized",
+  "files": [
+    {
+      "path": "Builds/WebGL/Build/WebGL.data",
+      "bytes": 18925724,
+      "sha256": "04DEA2A7570BAD089438166A0E40943A6773F1ABD027DD9143B134DF0611C472"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.framework.js",
+      "bytes": 761643,
+      "sha256": "F909F29D115947BE5BAB214FE3CD434A6197E6BDC2E24CE9C2933C64B58FAE08"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.loader.js",
+      "bytes": 58348,
+      "sha256": "1D4C7ED46D41C5D5C44F5B3300BF29DD912799343B1A17623F4B335D7F339F13"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.wasm",
+      "bytes": 24453256,
+      "sha256": "402BF4A39C73B3A712489EDFA76F535AF54B07821C12892BA824D5CA904722B0"
+    },
+    {
+      "path": "Builds/WebGL/host-layout.js",
+      "bytes": 2002,
+      "sha256": "187B6162FE987A784D66FB6F929EC64C4885D8BA2A5B5A7E176AF16DFC9DAC25"
+    },
+    {
+      "path": "Builds/WebGL/index.html",
+      "bytes": 4490,
+      "sha256": "BC0C2978899D9D401ADEAD4393976AC3D9F571291432B3CA5382C5E29934237E"
+    },
+    {
+      "path": "Builds/WebGL/StreamingAssets/Notices/NotoSansCJKkr-OFL.txt",
+      "bytes": 4808,
+      "sha256": "6587D53488CE62E197942A708671B5F11F99D105034795C23A41380275D69C1F"
+    },
+    {
+      "path": "Builds/WebGL/StreamingAssets/Notices/NotoSansKR-OFL.txt",
+      "bytes": 4388,
+      "sha256": "1C05C68C34F9708415AADA51F17E1B0092D2CEA709BF4A94CD38114F9E73D7D9"
+    },
+    {
+      "path": "Builds/WebGL/StreamingAssets/Notices/NUnit-ThirdPartyNotices.txt",
+      "bytes": 1249,
+      "sha256": "EF37B1CCBAE5E9B641482CBD77A74EE96193A39D232CC8D856B9044F37DB9244"
+    },
+    {
+      "path": "Builds/WebGL/StreamingAssets/Notices/SOURCES.txt",
+      "bytes": 1451,
+      "sha256": "647CB2C60B107FAB810AA3FE6DF07C7932F31AA21BFB11148F33EF5EAED7254C"
+    },
+    {
+      "path": "Builds/WebGL/StreamingAssets/Notices/Unity-Companion-License-Full.txt",
+      "bytes": 6002,
+      "sha256": "7A177190B6C4E511E096D7F0211E34C241E9D54954C87B61BF610BF0BCCB719E"
+    },
+    {
+      "path": "Builds/WebGL/StreamingAssets/Notices/Unity-NUnit-LICENSE.txt",
+      "bytes": 433,
+      "sha256": "EA14F98BA99AFCC079EC2A8A6C38461B5BC4CA3D184AA87AD7C60DE9134C4D43"
+    },
+    {
+      "path": "Builds/WebGL/StreamingAssets/Notices/Unity-TestFramework-LICENSE.txt",
+      "bytes": 475,
+      "sha256": "D3B09E9683AFBC8D468A83000308F18E7133EAF7879AF870747000A66E3C0693"
+    },
+    {
+      "path": "Builds/WebGL/StreamingAssets/Notices/Unity-uGUI-LICENSE.txt",
+      "bytes": 457,
+      "sha256": "A8E0CAE87B2EDB8C205AE6C308F20B89A09F32D62BD4A3FF0343BB4724A4201E"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/profiler.js",
+      "bytes": 1573,
+      "sha256": "433E40AF9A544D1EF5FEC67B0B52AF25A851928626C3F3EF0D09B35DED610C0D"
+    },
+    {
+      "path": "Builds/WebGL/ui-text.js",
+      "bytes": 446,
+      "sha256": "676DB2313592E37CBDC7F1CBEEA964E688F9CBA051EF8743C6D06E7ADEFFC362"
+    },
+    {
+      "path": "Builds/Android/StageGame-development.apk",
+      "bytes": 35568872,
+      "sha256": "282C16157C42421DA474724B8C750D24992506E9F408898D705EC06B7D6DEAC7"
+    }
+  ]
+}

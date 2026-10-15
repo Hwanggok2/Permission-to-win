@@ -1,0 +1,134 @@
+{
+  "version": "v9",
+  "provenance": "Original procedural RankUiBuilder sprites; existing PNGs preserved.10geometric hats(no copied militaryinsignia),roundPlaceadded; finalhatadjustmentchangesonlyRect160x96,y40. ExistingNotoSansCJKfontunchanged.",
+  "files": [
+    {
+      "path": "Assets/StageGame/Art/RankUI/AiFace.png",
+      "sha256": "4E15182C47A709AF8D2B7B47D136CFFC7B5098A14D3EC864F4D7263E98C55059"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/BlackButton.png",
+      "sha256": "4874AEB14BF8022DBF566558ACA72926EB4306F7124977F52566128C46BBCCD2"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/BlackStone.png",
+      "sha256": "656F67817CD03255CD1C13831420441FBA67D517964FCDEF412C5FA6B949B813"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/BlackWin.png",
+      "sha256": "011F22FD8B0FB8E74DA795D00E697D8A4E5AD405D13BA0C5FCC5E6D922F52368"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/CurrentCard.png",
+      "sha256": "4B0FDFEC1B7CC072847B1EEADDEDAB40364F02CCECDD2684AE246CFD0FD49DDF"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/IconCheck.png",
+      "sha256": "42C1843437BFEDB18C81F2AAC7C8A6372B403F8A9EC28B9AB796BBAA36B381C6"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/IconClose.png",
+      "sha256": "1368C45CA8D23C9799C6B5413548F55F46634CEE611449ECB510A21BFF3E4B0A"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/IconHelp.png",
+      "sha256": "7C85C8342C457509275DA7AB1DA1809F43E91EAC6F4BE699D702D203EB4E4A16"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/IconLeft.png",
+      "sha256": "5EB6EE1A4D6ADAC79B25ACEBF97EA5CD96736C317DEFDD4A65DBF5B96A5914B1"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/IconLock.png",
+      "sha256": "44C85D60F794595CFD48B5FBBF00E27234FCF16D277A9BCC58BD98AE8D0D21DF"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/IconPause.png",
+      "sha256": "C6F2BF80104617BE3392154911EBA9D46041553AD748D48C752ACAC760CDFC24"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/IconRight.png",
+      "sha256": "C3A25DBC76CC9CC142BA6751E9C5D9E735B6C545251E88F731C73EBD641EC99C"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/IconSettings.png",
+      "sha256": "CDB178E9CFF3F2848E80821F75C98518B50BF77C29B236604E9DAAEA799D29C6"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/IconStar.png",
+      "sha256": "3EB74D683DBE609C512F67B11D789B3F00659732AB45637BA013CDD0E45447C6"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/IconUndo.png",
+      "sha256": "40F43F55D8D6979662977B268C4C8F41910039B907D2DE7116C6BC5C18E9D1AE"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/LockedCard.png",
+      "sha256": "104837994649D5A782F69E453D39A5BA1F5FBBFE8CE75B070B548F7610EC8921"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/PlayerFace.png",
+      "sha256": "FFC506BCDDAD2C8C6E4C83D83CCE160F502D41EE899FDFD3E92FDFC15CA21C9B"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/Preview.png",
+      "sha256": "6327EF0B37F5BA34D2B23BFBAF43E7AEA6407DA14EFCB078DA0C7ACE2B01C704"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/RankHat01.png",
+      "sha256": "B37963391AE0B7F60B5DCA42250F282BF0F5BCF16C530AD38179B3C05F81B07A"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/RankHat02.png",
+      "sha256": "FCAA5C5FAA21B4C65772733B8B8993DB4F7020E506D1231F066D563867E66E9B"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/RankHat03.png",
+      "sha256": "740BE1F783E5BFC15724FF2CD8F32D3B84E92C243F24919AEB074472D0392411"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/RankHat04.png",
+      "sha256": "3906BA93479D8E9494D5E280971412D399E66D4000DB573C229591676E9AAF56"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/RankHat05.png",
+      "sha256": "3AF2E97D4825F4272BE132FAB15A91C83017CB0B088A7C2D2AF635ACA27B23C9"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/RankHat06.png",
+      "sha256": "0311039A6F5D982ECD0F9F3F7F25E9D410B3D9C40D3A03FADC3A3FEE58DEE056"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/RankHat07.png",
+      "sha256": "96664885963B8A9DC10AD824B3E27C01C398BB3FB1B8CB40C9932A1E414496AA"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/RankHat08.png",
+      "sha256": "AA469CC21028C11E75E23C4B03D7824F51E6CA2391F393328A5156777A6FCCC9"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/RankHat09.png",
+      "sha256": "81884E4A5ED731B6ECF2961BE05FEF45C5A5CF50002EFED872F5C2FA0BC5D4E8"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/RankHat10.png",
+      "sha256": "07B96F75ADC1794E0A7388204D6EBCD421C877D450CFB5467915D389C1A6A946"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/RoundPrimary.png",
+      "sha256": "987A744AD15CF4B79927B7455E47EEDD0DC7E90ED89C98C075431068F206DF87"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/WhitePanel.png",
+      "sha256": "093C35D3A548B34F16B08C598272531B143FC0CBA2ED9981A80ADB661FE4F770"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/WhiteStone.png",
+      "sha256": "CC55CCC335129F83ACA35FCFCAD3B616D4C54800C8B732CF9A97F72CFDBFDA03"
+    },
+    {
+      "path": "Assets/StageGame/Art/RankUI/WhiteWin.png",
+      "sha256": "0096DFB10F4041E1BC941A646BD501C7539C2F0FF12F6FF4BD6C2FB5F62179F3"
+    }
+  ]
+}

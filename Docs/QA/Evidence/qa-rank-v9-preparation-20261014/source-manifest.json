@@ -1,0 +1,22 @@
+[
+  {
+    "source": "Tests/Fixtures/rank-v9-flow-cases.json",
+    "sha256": "406c1df6b08f96f71ae29eeb50a7152ffee583eff9568666d34b00f95c70685f"
+  },
+  {
+    "source": "Tests/RankHarness/README.md",
+    "sha256": "cb423475cc53b5c967cc67ee0366bb75599517890fa227645ba118d344b2ad6d"
+  },
+  {
+    "source": "Docs/QA/RANK-UI-RESULTS.md",
+    "sha256": "0802aa86b95a5ee956d51319dfe1976d80ce316350c175071714ad41685ccdfc"
+  },
+  {
+    "source": "Docs/QA/TEST-PLAN.md",
+    "sha256": "51dc47d2a6f51b54fa03ae63a3f330d487eeca290a763b90976df838d6a230c2"
+  },
+  {
+    "source": "Docs/Management/CONTRACT.md",
+    "sha256": "a9412b46ea333ee024b2cba6c4bfe42260de01ee716d8d5be6a957ce88122384"
+  }
+]

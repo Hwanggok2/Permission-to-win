@@ -18,18 +18,53 @@ namespace UnityEngine
         public GameObject gameObject = new GameObject();
         public Transform transform = new RectTransform();
         public T GetComponentInChildren<T>() where T : new() => new T();
+        public T GetComponent<T>() where T : class, new() => this is T own ? own : this is UI.Button button && button.targetGraphic is T graphic ? graphic : new T();
     }
-    public class Transform { }
+    public class Transform
+    {
+        Transform parent;
+        readonly List<Transform> children = new List<Transform>();
+        public Vector3 localScale = Vector3.one;
+        public void SetParent(Transform value) { parent?.children.Remove(this); parent=value; parent?.children.Add(this); }
+        public int GetSiblingIndex() => parent == null ? 0 : parent.children.IndexOf(this);
+        public void SetSiblingIndex(int index) { if(parent==null)return; parent.children.Remove(this); parent.children.Insert(Math.Clamp(index,0,parent.children.Count),this); }
+        public void SetAsLastSibling() { if(parent!=null) SetSiblingIndex(parent.children.Count-1); }
+    }
     public class RectTransform : Transform { public Vector2 anchoredPosition; }
     public struct Vector2
     {
         public float x, y;
         public Vector2(float x, float y) { this.x=x; this.y=y; }
+        public static Vector2 up => new Vector2(0,1);
+        public static Vector2 operator +(Vector2 a,Vector2 b) => new Vector2(a.x+b.x,a.y+b.y);
+        public static Vector2 operator *(Vector2 a,float b) => new Vector2(a.x*b,a.y*b);
+    }
+    public struct Vector3
+    {
+        public float x,y,z;
+        public Vector3(float x,float y,float z) {this.x=x;this.y=y;this.z=z;}
+        public static Vector3 one => new Vector3(1,1,1);
+        public static Vector3 operator *(Vector3 a,float b) => new Vector3(a.x*b,a.y*b,a.z*b);
     }
     public sealed class Coroutine
     {
         public IEnumerator Iterator;
         public bool Stopped;
+        public readonly Stack<IEnumerator> Stack = new Stack<IEnumerator>();
+        public float WaitUntil;
+        public void Step()
+        {
+            if(Stopped || Time.realtimeSinceStartup<WaitUntil)return;
+            while(Stack.Count>0)
+            {
+                var current=Stack.Peek();
+                if(!current.MoveNext()){Stack.Pop();continue;}
+                if(current.Current is IEnumerator nested){Stack.Push(nested);continue;}
+                if(current.Current is WaitForSecondsRealtime wait) WaitUntil=Time.realtimeSinceStartup+wait.Duration;
+                return;
+            }
+            Stopped=true;
+        }
     }
     public class MonoBehaviour : Component
     {
@@ -38,20 +73,21 @@ namespace UnityEngine
         {
             var coroutine = new Coroutine { Iterator = iterator };
             Coroutines.Add(coroutine);
-            if (!iterator.MoveNext()) coroutine.Stopped = true;
+            coroutine.Stack.Push(iterator); coroutine.Step();
             return coroutine;
         }
         protected void StopCoroutine(Coroutine coroutine) { coroutine.Stopped = true; }
         public void AdvanceCoroutines()
         {
             foreach (var coroutine in Coroutines.ToArray())
-                if (!coroutine.Stopped && !coroutine.Iterator.MoveNext()) coroutine.Stopped = true;
+                coroutine.Step();
         }
     }
     public struct Color
     {
         public float r, g, b, a;
         public Color(float r, float g, float b, float a) { this.r=r; this.g=g; this.b=b; this.a=a; }
+        public static Color white => new Color(1,1,1,1);
         public static implicit operator Color(Color32 c) => new Color(c.r/255f,c.g/255f,c.b/255f,c.a/255f);
     }
     public struct Color32
@@ -59,11 +95,19 @@ namespace UnityEngine
         public byte r, g, b, a;
         public Color32(byte r, byte g, byte b, byte a) { this.r=r; this.g=g; this.b=b; this.a=a; }
     }
-    public static class Mathf { public static int Clamp(int n, int low, int high) => Math.Clamp(n, low, high); }
+    public static class Mathf
+    {
+        public static int Clamp(int n,int low,int high)=>Math.Clamp(n,low,high);
+        public static float Clamp01(float n)=>Math.Clamp(n,0,1);
+        public static float Pow(float n,float p)=>MathF.Pow(n,p);
+        public static float Lerp(float a,float b,float t)=>a+(b-a)*Clamp01(t);
+    }
     public enum KeyCode { Escape }
     public static class Input { public static bool GetKeyDown(KeyCode code) => false; }
-    public sealed class WaitForSecondsRealtime { public WaitForSecondsRealtime(float time) { } }
-    public static class Time { public static float realtimeSinceStartup; }
+    public sealed class WaitForSecondsRealtime { public readonly float Duration; public WaitForSecondsRealtime(float time) { Duration=time; } }
+    public static class Time { public static float realtimeSinceStartup; public static float unscaledDeltaTime=.05f; }
+    public class ScriptableObject { }
+    public sealed class Sprite { public string name; }
     public sealed class AudioClip { }
     public sealed class AudioSource { public void PlayOneShot(AudioClip clip, float volume) { } }
     public static class Debug { public static void LogError(object message) { } public static void Log(object message) { } public static void LogWarning(object message) { } }
@@ -94,7 +138,7 @@ namespace UnityEngine.UI
 {
     public class Graphic : UnityEngine.Component { public UnityEngine.Color color; }
     public sealed class Text : Graphic { public string text; }
-    public sealed class Image : Graphic { }
+    public sealed class Image : Graphic { public UnityEngine.Sprite sprite; public UnityEngine.RectTransform rectTransform => (UnityEngine.RectTransform)transform; }
     public sealed class Button : UnityEngine.Component
     {
         public bool interactable = true;

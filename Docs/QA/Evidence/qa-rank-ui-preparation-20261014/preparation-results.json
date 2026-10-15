@@ -1,0 +1,20 @@
+{
+  "status": "PREPARATION_ONLY_NO_PRODUCT_TESTS",
+  "contractVersion": 8,
+  "scenarioCount": 20,
+  "boardCases": 13,
+  "lifecycleCases": 5,
+  "modalCases": 2,
+  "fixtureOnlyLegalExpectedSequencesChecked": 15,
+  "fixtureSchemaAndLegacyReferencesValid": true,
+  "harnessInputSnapshottedByRunner": true,
+  "actualApiBindingsImplemented": false,
+  "productTestsExecuted": false,
+  "unityBrowserDeviceExecuted": false,
+  "priorEvidencePreserved": [
+    "qa-graphics-frozen-v1-20261014",
+    "qa-graphics-build-link-v2-20261014",
+    "qa-graphics-browser-final-20261014"
+  ],
+  "limitations": "Only fixture coherence and evidence preparation. Old Tabletop tool expectations remain archived and must be revised after Client/Data freeze; no current-product acceptance."
+}

@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-15",
+  "status": "applied-and-editor-verified",
+  "request": "Align pause and title heights, remove title background, enlarge and raise title, compact opponent panel to prevent overlap.",
+  "apply": {
+    "method": "StageGame.Editor.PixelArtBuilder.ApplyMatchHeader",
+    "log": "Client/Logs/pixel-header-apply.log",
+    "savedPrefab": "Client/Assets/StageGame/Prefabs/RankUI/Match.prefab",
+    "rootPrefab": "RankAppRoot.prefab inherits the updated Match prefab without serialized overrides."
+  },
+  "layout1080Units": {
+    "titleFont": 78,
+    "titleAndPauseHeight": 156,
+    "titleMovedUp": 4.5,
+    "opponentPanelSize": [
+      600,
+      216
+    ],
+    "gapAboveAndBelowPanel": 7.5
+  },
+  "validation": {
+    "result": "Passed",
+    "passed": 4,
+    "failed": 0,
+    "skipped": 0,
+    "tests": [
+      "Actual1080DesignFitsAllActionsBelowSharedTopGap",
+      "CapturePixelArtAndLocalizedLayouts",
+      "HalfStarsAndFinalRankRenderWithReservedBannerSpace",
+      "SquareBoardsUniformPixelLinesTopHeadersAndScrollableActionsMeetHostContract"
+    ],
+    "xml": "layout-tests.xml",
+    "sizes": [
+      [
+        320,
+        568
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        1080,
+        1920
+      ]
+    ],
+    "languages": [
+      "ko",
+      "en"
+    ],
+    "screenshots": 23,
+    "visuallyInspected": [
+      "ko-stage-2.png",
+      "ko-1080-final.png",
+      "en-stage-7.png",
+      "en-320-preview.png",
+      "ko-1080-plain-match.png"
+    ]
+  },
+  "baseline": "Client/Evidence/pixel-art-20261015/source-freeze.json",
+  "baselineFiles": 375,
+  "changedFiles": [
+    "Client/Assets/StageGame/Editor/PixelArtBuilder.cs",
+    "Client/Assets/StageGame/Prefabs/RankUI/Match.prefab",
+    "Client/Assets/StageGame/Tests/EditMode/PixelArtTests.cs",
+    "Client/Assets/StageGame/Tests/EditMode/RankV10Tests.cs"
+  ],
+  "sourceFreeze": "source-freeze.json",
+  "preserved": {
+    "art": true,
+    "runtimeScripts": true,
+    "gameData": true
+  },
+  "notRun": [
+    "Full 82-test suite for this header revision",
+    "New Android/WebGL builds",
+    "Browser/device checks"
+  ]
+}

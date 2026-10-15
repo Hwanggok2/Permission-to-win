@@ -1,0 +1,112 @@
+{
+  "status": "INDEPENDENT_RUNTIME_SOURCE_MATCHES_CLIENT_FINAL_FREEZE",
+  "runtimeAndClientJsonFilesChecked": 15,
+  "files": [
+    {
+      "source": "Client/Assets/StageGame/Scripts/Core/ConnectFourBoard.cs",
+      "sha256": "5A57257861061D89B71E9758B6E352A96E08D22C2B686C85C5CD503B0F25FB36",
+      "matchesClientFreeze": true,
+      "matchesCurrentSource": true
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/Core/AiSearch.cs",
+      "sha256": "FEA609E5CC011D590C9BEDA3D401B3CCC420DF7E0C9FAD7EFA18F99A9D72F63B",
+      "matchesClientFreeze": true,
+      "matchesCurrentSource": true
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/Core/GameData.cs",
+      "sha256": "7A95FF7D9AF9301E1DCB5F1D96670C6FBA039F05A34C336D8DDD2EFCB7F9BD57",
+      "matchesClientFreeze": true,
+      "matchesCurrentSource": true
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/Core/StringTable.cs",
+      "sha256": "8D133248463B3466690BCC76BD9BBB31F7BA1703CDF84E3FF6788F2AB4374A1B",
+      "matchesClientFreeze": true,
+      "matchesCurrentSource": true
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/Core/ProgressStore.cs",
+      "sha256": "FCDB8DC6DE3B8DD0AEF425930F61B5EA3AB3E729C56384A8D72B841E548E17D1",
+      "matchesClientFreeze": true,
+      "matchesCurrentSource": true
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/Platform/Advertising.cs",
+      "sha256": "9D768FDDC0BCFB6801D7DEF5DC811FE9A699719CE6E56B909E62F2FFC814C23F",
+      "matchesClientFreeze": true,
+      "matchesCurrentSource": true
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/UI/RankGameApp.cs",
+      "sha256": "3FDF28A138D2F931C63BCC95B8904B0E42A101E0F26DD545EE986AA19F7393F9",
+      "matchesClientFreeze": true,
+      "matchesCurrentSource": true
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/UI/RankTheme.cs",
+      "sha256": "ADB10A22A8DCA1507A43A5F2DC2042E099A9FEBCA7013D7145FC80FBE60FA930",
+      "matchesClientFreeze": true,
+      "matchesCurrentSource": true
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/UI/RankStageCard.cs",
+      "sha256": "D15B3BC33E25F3A878A879D74C37E7C505FE1BCB0E3627573AEFACFE706A8EC7",
+      "matchesClientFreeze": true,
+      "matchesCurrentSource": true
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/UI/RankDetailBlocker.cs",
+      "sha256": "DE10A00BC6339CCC491AE40FE7AFBCD0F695017C5C6A06B3A3B00CF8080AA68D",
+      "matchesClientFreeze": true,
+      "matchesCurrentSource": true
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/UI/GameApp.cs",
+      "sha256": "0A518043B3DC66530ABCDA633578B727B81BC29867D1E1192BC2280E0EF47661",
+      "matchesClientFreeze": true,
+      "matchesCurrentSource": true
+    },
+    {
+      "source": "Client/Assets/StageGame/Scripts/UI/TabletopTheme.cs",
+      "sha256": "E1B469F7DCAC82A073A52A8D2CCA6D47E64C53D04A152A6B263E92C87BA4DFAA",
+      "matchesClientFreeze": true,
+      "matchesCurrentSource": true
+    },
+    {
+      "source": "Client/Assets/StageGame/Resources/GameData/stages.json",
+      "sha256": "6F76D1575F71FD0240CF7B5774BD2A3FED41FB1828BD0CB85464F34E72122E7E",
+      "matchesClientFreeze": true,
+      "matchesCurrentSource": true
+    },
+    {
+      "source": "Client/Assets/StageGame/Resources/GameData/strings.json",
+      "sha256": "4FA6C54394FD59846131794852EA025D4FA7DCB6725AB2A1DFB7435F1FA50DE4",
+      "matchesClientFreeze": true,
+      "matchesCurrentSource": true
+    },
+    {
+      "source": "Client/Assets/StageGame/Resources/GameData/ads.json",
+      "sha256": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A",
+      "matchesClientFreeze": true,
+      "matchesCurrentSource": true
+    }
+  ],
+  "clientProvidedUnityTests": {
+    "total": 73,
+    "passed": 73,
+    "failed": 0,
+    "skipped": 0,
+    "startUtc": "2026-10-14 14:45:44Z",
+    "endUtc": "2026-10-14 14:45:46Z",
+    "qaExecutedUnity": false
+  },
+  "sourceChangedDuringIndependentRun": false,
+  "otherChangedInput": "Docs/Management/CONTRACT.md only; adds user approval requirement before WebGL rebuild/new browser execution",
+  "latestContractSha256": "9c2e0c8145b960d18f934d42c52a3fe609be7797bdf068dbcab4c07687c3ae8c",
+  "webBuildOrBrowserExecutedByQa": false,
+  "newWebBuildAndBrowser": "await explicit user approval; Root owns approval/browser",
+  "physicalPhone": "postponed by user",
+  "limitations": "15 runtime/Client JSON entries matched. This is not a complete prefab/art/build manifest audit or a browser/render verification."
+}

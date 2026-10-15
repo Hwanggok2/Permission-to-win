@@ -1,0 +1,18 @@
+{
+  "changes": [
+    {
+      "sheet": "Strings",
+      "cell": "C427",
+      "before": "AI 레이팅 {0}",
+      "after": "Rating {0}"
+    },
+    {
+      "sheet": "Strings",
+      "cell": "E427",
+      "before": "AI Rating {0}",
+      "after": "Rating {0}"
+    }
+  ],
+  "otherValuesAndStylesPreserved": true,
+  "sheetFeaturesPreserved": true
+}

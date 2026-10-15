@@ -1,0 +1,44 @@
+[
+  {
+    "path": "Builds/Android/StageGame-development.apk",
+    "bytes": 39792595,
+    "sha256": "865DAD68BA5A648829F83428C53F7BC343C4AB60595F54BE9080D402B932EC95",
+    "matchesClientReport": true
+  },
+  {
+    "path": "Builds/WebGL/Build/WebGL.wasm",
+    "bytes": 24390734,
+    "sha256": "D093BE45525525A092B3569D65CAE23B0A7A63C701A50859C41FFAE3ECC344C0",
+    "matchesClientReport": true
+  },
+  {
+    "path": "Builds/WebGL/Build/WebGL.data",
+    "bytes": 18753989,
+    "sha256": "FA73330ECB9D638D63BBA6B2B4403E5F23A8A5BAF6F93CF48173E3469C9B17EE",
+    "matchesClientReport": true
+  },
+  {
+    "path": "Builds/WebGL/Build/WebGL.framework.js",
+    "bytes": 761643,
+    "sha256": "F909F29D115947BE5BAB214FE3CD434A6197E6BDC2E24CE9C2933C64B58FAE08",
+    "matchesClientReport": true
+  },
+  {
+    "path": "Builds/WebGL/index.html",
+    "bytes": 4416,
+    "sha256": "53BDBF4813EA2CFE5A19E5C21B3B711CD6AD08AD1200254146D1AB3BA3C6C3CA",
+    "matchesClientReport": true
+  },
+  {
+    "path": "Builds/WebGL/ui-text.js",
+    "bytes": 448,
+    "sha256": "2D958DA273B7A6ACC2DFBD37EE24B034F0A82078A7BCA7755858A41C33A70FC8",
+    "matchesClientReport": true
+  },
+  {
+    "path": "Builds/WebGL/host-layout.js",
+    "bytes": 2002,
+    "sha256": "187B6162FE987A784D66FB6F929EC64C4885D8BA2A5B5A7E176AF16DFC9DAC25",
+    "matchesClientReport": true
+  }
+]

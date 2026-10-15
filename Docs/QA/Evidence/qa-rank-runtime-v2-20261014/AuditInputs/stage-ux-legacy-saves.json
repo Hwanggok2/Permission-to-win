@@ -1,0 +1,54 @@
+{
+  "fixtureVersion": 1,
+  "status": "INPUT_FIXTURES_ONLY_SEE_QA_EVIDENCE_FOR_EXECUTION_RESULTS",
+  "saveKey": "stagegame.progress.v1",
+  "stageCount": 30,
+  "expectedFieldNote": "highestActuallyCompletedStage is a semantic test expectation, not a prescribed runtime field name. rawSaveJson deliberately has no new completion field.",
+  "cases": [
+    {
+      "id": "fresh_install",
+      "rawSaveJson": null,
+      "expected": { "unlockedStage": 1, "highestActuallyCompletedStage": 0, "completedMatches": 0, "lastInterstitialMatch": 0, "lastInterstitialUtc": 0, "language": "ko", "soundEnabled": true, "processedMatchIds": [] }
+    },
+    {
+      "id": "legacy_unlock_1",
+      "rawSaveJson": "{\"saveVersion\":1,\"unlockedStage\":1,\"completedMatches\":12,\"lastInterstitialMatch\":8,\"lastInterstitialUtc\":123456,\"language\":\"en\",\"soundEnabled\":false,\"processedMatchIds\":[\"old-A\",\"old-B\"]}",
+      "expected": { "unlockedStage": 1, "highestActuallyCompletedStage": 0, "completedMatches": 12, "lastInterstitialMatch": 8, "lastInterstitialUtc": 123456, "language": "en", "soundEnabled": false, "processedMatchIds": ["old-A", "old-B"] }
+    },
+    {
+      "id": "legacy_unlock_2",
+      "rawSaveJson": "{\"saveVersion\":1,\"unlockedStage\":2,\"completedMatches\":12,\"lastInterstitialMatch\":8,\"lastInterstitialUtc\":123456,\"language\":\"en\",\"soundEnabled\":false,\"processedMatchIds\":[\"old-A\",\"old-B\"]}",
+      "expected": { "unlockedStage": 2, "highestActuallyCompletedStage": 1, "completedMatches": 12, "lastInterstitialMatch": 8, "lastInterstitialUtc": 123456, "language": "en", "soundEnabled": false, "processedMatchIds": ["old-A", "old-B"] }
+    },
+    {
+      "id": "legacy_unlock_10",
+      "rawSaveJson": "{\"saveVersion\":1,\"unlockedStage\":10,\"completedMatches\":32,\"lastInterstitialMatch\":28,\"lastInterstitialUtc\":123456,\"language\":\"en\",\"soundEnabled\":false,\"processedMatchIds\":[\"old-A\",\"old-B\"]}",
+      "expected": { "unlockedStage": 10, "highestActuallyCompletedStage": 9, "completedMatches": 32, "lastInterstitialMatch": 28, "lastInterstitialUtc": 123456, "language": "en", "soundEnabled": false, "processedMatchIds": ["old-A", "old-B"] }
+    },
+    {
+      "id": "legacy_unlock_11",
+      "rawSaveJson": "{\"saveVersion\":1,\"unlockedStage\":11,\"completedMatches\":32,\"lastInterstitialMatch\":28,\"lastInterstitialUtc\":123456,\"language\":\"en\",\"soundEnabled\":false,\"processedMatchIds\":[\"old-A\",\"old-B\"]}",
+      "expected": { "unlockedStage": 11, "highestActuallyCompletedStage": 10, "completedMatches": 32, "lastInterstitialMatch": 28, "lastInterstitialUtc": 123456, "language": "en", "soundEnabled": false, "processedMatchIds": ["old-A", "old-B"] }
+    },
+    {
+      "id": "legacy_unlock_20",
+      "rawSaveJson": "{\"saveVersion\":1,\"unlockedStage\":20,\"completedMatches\":42,\"lastInterstitialMatch\":38,\"lastInterstitialUtc\":123456,\"language\":\"en\",\"soundEnabled\":false,\"processedMatchIds\":[\"old-A\",\"old-B\"]}",
+      "expected": { "unlockedStage": 20, "highestActuallyCompletedStage": 19, "completedMatches": 42, "lastInterstitialMatch": 38, "lastInterstitialUtc": 123456, "language": "en", "soundEnabled": false, "processedMatchIds": ["old-A", "old-B"] }
+    },
+    {
+      "id": "legacy_unlock_21",
+      "rawSaveJson": "{\"saveVersion\":1,\"unlockedStage\":21,\"completedMatches\":42,\"lastInterstitialMatch\":38,\"lastInterstitialUtc\":123456,\"language\":\"en\",\"soundEnabled\":false,\"processedMatchIds\":[\"old-A\",\"old-B\"]}",
+      "expected": { "unlockedStage": 21, "highestActuallyCompletedStage": 20, "completedMatches": 42, "lastInterstitialMatch": 38, "lastInterstitialUtc": 123456, "language": "en", "soundEnabled": false, "processedMatchIds": ["old-A", "old-B"] }
+    },
+    {
+      "id": "legacy_unlock_30_is_not_30_complete",
+      "rawSaveJson": "{\"saveVersion\":1,\"unlockedStage\":30,\"completedMatches\":42,\"lastInterstitialMatch\":38,\"lastInterstitialUtc\":123456,\"language\":\"en\",\"soundEnabled\":false,\"processedMatchIds\":[\"old-A\",\"old-B\"]}",
+      "expected": { "unlockedStage": 30, "highestActuallyCompletedStage": 29, "completedMatches": 42, "lastInterstitialMatch": 38, "lastInterstitialUtc": 123456, "language": "en", "soundEnabled": false, "processedMatchIds": ["old-A", "old-B"] }
+    },
+    {
+      "id": "legacy_language_absent",
+      "rawSaveJson": "{\"saveVersion\":1,\"unlockedStage\":7,\"completedMatches\":12,\"lastInterstitialMatch\":8,\"lastInterstitialUtc\":123456,\"soundEnabled\":false,\"processedMatchIds\":[\"old-A\",\"old-B\"]}",
+      "expected": { "unlockedStage": 7, "highestActuallyCompletedStage": 6, "completedMatches": 12, "lastInterstitialMatch": 8, "lastInterstitialUtc": 123456, "language": "ko", "soundEnabled": false, "processedMatchIds": ["old-A", "old-B"] }
+    }
+  ]
+}

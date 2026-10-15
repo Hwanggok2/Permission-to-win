@@ -10,6 +10,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="LocalizationChecks.cs" />
     <Compile Include="StageUxChecks.cs" />
+    <Compile Include="GraphicsChecks.cs" />
     <Compile Include="UnityStubs.cs" />
     <Compile Include="$(SourceSnapshotPath)/*.cs" />
   </ItemGroup>

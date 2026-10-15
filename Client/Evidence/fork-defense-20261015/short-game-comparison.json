@@ -1,0 +1,109 @@
+{
+  "method": "Exact archived previous AI and current production AI. Empty boards, both starters, all legal player sequences through their fourth placement, 32 match seeds per rating/starter. Counts are traversal branches, not human games or unique board states.",
+  "results": [
+    {
+      "rating": 700,
+      "starter": 1,
+      "before": {
+        "starter": 1,
+        "seeds": 32,
+        "playerBranches": 89598,
+        "aiMoves": 12768,
+        "earlyPlayerWins": 207,
+        "aiWins": 0,
+        "maxNodes": 7,
+        "firstLoss": "seed=0: 3,3,2,0,4,3,1,",
+        "maxSearchMilliseconds": 10.932
+      },
+      "after": {
+        "starter": 1,
+        "seeds": 32,
+        "playerBranches": 89599,
+        "aiMoves": 12768,
+        "earlyPlayerWins": 0,
+        "aiWins": 0,
+        "maxNodes": 112,
+        "firstLoss": null,
+        "maxSearchMilliseconds": 2.7922
+      }
+    },
+    {
+      "rating": 700,
+      "starter": -1,
+      "before": {
+        "starter": -1,
+        "seeds": 32,
+        "playerBranches": 67193,
+        "aiMoves": 12800,
+        "earlyPlayerWins": 24,
+        "aiWins": 3201,
+        "maxNodes": 7,
+        "firstLoss": "seed=3: 1,3,0,4,1,5,1,2,",
+        "maxSearchMilliseconds": 0.4209
+      },
+      "after": {
+        "starter": -1,
+        "seeds": 32,
+        "playerBranches": 74969,
+        "aiMoves": 12800,
+        "earlyPlayerWins": 0,
+        "aiWins": 2090,
+        "maxNodes": 112,
+        "firstLoss": null,
+        "maxSearchMilliseconds": 0.9135
+      }
+    },
+    {
+      "rating": 800,
+      "starter": 1,
+      "before": {
+        "starter": 1,
+        "seeds": 32,
+        "playerBranches": 89596,
+        "aiMoves": 12768,
+        "earlyPlayerWins": 166,
+        "aiWins": 0,
+        "maxNodes": 63,
+        "firstLoss": "seed=0: 3,3,2,0,4,3,1,",
+        "maxSearchMilliseconds": 1.3304
+      },
+      "after": {
+        "starter": 1,
+        "seeds": 32,
+        "playerBranches": 89599,
+        "aiMoves": 12768,
+        "earlyPlayerWins": 0,
+        "aiWins": 0,
+        "maxNodes": 112,
+        "firstLoss": null,
+        "maxSearchMilliseconds": 1.9108
+      }
+    },
+    {
+      "rating": 800,
+      "starter": -1,
+      "before": {
+        "starter": -1,
+        "seeds": 32,
+        "playerBranches": 71055,
+        "aiMoves": 12800,
+        "earlyPlayerWins": 2,
+        "aiWins": 2646,
+        "maxNodes": 63,
+        "firstLoss": "seed=8: 6,2,2,1,1,3,3,0,",
+        "maxSearchMilliseconds": 0.4878
+      },
+      "after": {
+        "starter": -1,
+        "seeds": 32,
+        "playerBranches": 74884,
+        "aiMoves": 12800,
+        "earlyPlayerWins": 0,
+        "aiWins": 2102,
+        "maxNodes": 112,
+        "firstLoss": null,
+        "maxSearchMilliseconds": 1.3264
+      }
+    }
+  ]
+}

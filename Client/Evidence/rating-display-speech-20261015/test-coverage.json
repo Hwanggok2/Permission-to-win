@@ -1,0 +1,458 @@
+{
+  "StageGame.Tests.CoreTests.AdPolicyRequiresGraceMatchesAndBothCooldowns#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.CoreTests.AiBlocksImmediateLossEvenAtMaximumMistakes#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.CoreTests.AiRespectsNodeAndStepBudgetsAndLeavesBoardUntouched#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.CoreTests.AiTakesWinBeforeRandomMistake#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.CoreTests.BundledDataReplaysEveryStageAndAiReturnsLegalMove#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.CoreTests.CloneDoesNotMutateOriginal#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])#2": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])#3": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.CoreTests.FourDirectionsWinAndFinishedBoardRejectsInput(System.Int32[])#4": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.CoreTests.GravityAlternatesAndRejectsFullColumn#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(\"0,0,0,0,0,0,0\")#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(\"0,6,1,6,2,5,3\")#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(\"7\")#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(\"a\")#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.CoreTests.InvalidOrTerminalOpeningsFailLoudly(\"0,\")#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.CoreTests.MalformedDataCannotSilentlyLoad#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.CoreTests.NoFillNeverRewardsAndEditorDuplicateOnlyGrantsOnce#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.CoreTests.ProgressRejectsNonAdjacentAndReloadedDuplicateResults#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.CoreTests.RewardCompletesOnlyOnceAndRejectsStaleCallbacks#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.CoreTests.SavedPrefabReferencesAndNestedButtonsValidate#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.CoreTests.TruncatedStageCatalogIsRejected#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.CoreTests.UnsuccessfulRewardCanRetryWithoutGrant(Unavailable)#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.CoreTests.UnsuccessfulRewardCanRetryWithoutGrant(Failed)#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.CoreTests.UnsuccessfulRewardCanRetryWithoutGrant(Cancelled)#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.HostLayoutTests.BrowserFallbackAndExplicitControlsUseCssCoordinates#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.HostLayoutTests.InvalidInsetsFallBackToZeroWithoutRemovingHostAllowance#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem(1)#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem(2)#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.HostLayoutTests.OsInsetsAreMergedOnceAndHostBandIsBelowThem(3)#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.HostLayoutTests.SavedGraphicsAndSecondaryLicenseMenuKeepPrefabReferences#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.HostLayoutTests.SideInsetsMergePerEdgeAndOversizedInsetsStayInsideScreen#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.LocalizationTests.EverySavedUiTextHasAKeyOrExplicitDynamicOwnerAndButtonsHaveTouchArea#1": {
+    "result": "Passed",
+    "source": "unity-retest.xml"
+  },
+  "StageGame.Tests.LocalizationTests.LanguageLookupFormattingAndUnknownLocaleFollowContract#1": {
+    "result": "Passed",
+    "source": "unity-retest.xml"
+  },
+  "StageGame.Tests.LocalizationTests.LegacyAndInvalidSavedLocalesPreserveProgressAndDefaultToKorean#1": {
+    "result": "Passed",
+    "source": "unity-retest.xml"
+  },
+  "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"\",\"Text\")#1": {
+    "result": "Passed",
+    "source": "unity-retest.xml"
+  },
+  "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"문구\",\"\")#1": {
+    "result": "Passed",
+    "source": "unity-retest.xml"
+  },
+  "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"{0}\",\"{1}\")#1": {
+    "result": "Passed",
+    "source": "unity-retest.xml"
+  },
+  "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"{0:00}\",\"{0:00}\")#1": {
+    "result": "Passed",
+    "source": "unity-retest.xml"
+  },
+  "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"{broken}\",\"{broken}\")#1": {
+    "result": "Passed",
+    "source": "unity-retest.xml"
+  },
+  "StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(\"{1}\",\"{1}\")#1": {
+    "result": "Passed",
+    "source": "unity-retest.xml"
+  },
+  "StageGame.Tests.OpeningSearchTests.GuardedOpeningAvoidsTheObservedEarlyDoubleThreat#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.OpeningSearchTests.GuardedOpeningUsesCenterWithoutRandomMistakesAndKeepsStepBudget(1)#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.OpeningSearchTests.GuardedOpeningUsesCenterWithoutRandomMistakesAndKeepsStepBudget(-1)#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankDataTests.InvalidOrDecreasingStarsAreRejected(0.0f)#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankDataTests.InvalidOrDecreasingStarsAreRejected(8.5f)#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankDataTests.InvalidOrDecreasingStarsAreRejected(1.25f)#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankDataTests.InvalidOrDecreasingStarsAreRejected(2.0f)#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankDataTests.MissingAndUnknownCharacterIdsAreRejected#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankDataTests.MissingBlankAndUnknownRankReferencesAreRejected(\"rankKey\")#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankDataTests.MissingBlankAndUnknownRankReferencesAreRejected(\"descriptionKey\")#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankDataTests.MissingBlankAndUnknownRankReferencesAreRejected(\"aiIntroKey\")#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankDataTests.MissingBlankAndUnknownRankReferencesAreRejected(\"aiWinKey\")#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankDataTests.MissingBlankAndUnknownRankReferencesAreRejected(\"aiLoseKey\")#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.Actual1080DesignFitsAllActionsBelowSharedTopGap#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.ActualAiStarterPlacesOnceAndUndoRestoresOpeningPhase#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.AiWaitingCancelsOnUndoRestartLeaveAndHintsHaveNoOneSecondDelay#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.AiWaitOverlapsSearchAndExcludesPauseAndConfirmationTime#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.BothWinnersAnimatePauseRestoreThenAdsAndCorrectResultActions#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.CancelledHintCannotChangeConfirmationOrRestoredNotice#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.CaptureAllSelectedPixelPortraits#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.CaptureCorrectedPixelPortraitStates#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.CapturePixelArtAndLocalizedLayouts#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.CrossingWinsChooseOneContinuousLineThroughFinalStone#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.DedicatedTypingIsStrongerAndAudibleWithMusicWithoutClipping#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.DestroyedAppRejectsLateResultAndRewardCallbacksWithoutSaving#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.DestructiveActionsRequireConfirmationAndCancelPreservesSelectionAndAi#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.FinalStageAndAdTimeoutDoNotExposeNextOrAcceptLateCompletion#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.FreshRunIsConsumedButExistingAndRecoverySavesStayInLobby#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.HalfStarsAndFinalRankRenderWithReservedBannerSpace#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.MusicAndStonePlacementProduceStrongerNonClippingListenerOutput#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.MusicContinuesThroughPauseAndConfirmationButSuspendsInBackground#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.MusicKeepsItsPositionAcrossLobbyMatchAndResultReturn#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.MusicSettingRestoresAfterReloadAndBothLanguagesFitSavedSettings#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.MusicWaitsForInterstitialAndLateCallbacksCannotOverrideMusicPreference#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.MusicWaitsForRewardAdsAndResumesOnFailureCancellationOrTimeout#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.OpeningAndAiStarterAreUndoFloorAndRetryIsFree#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.PendingRewardCancelsOnUndoPauseRetryAndTimeout#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.PixelPortraitsFollowCharacterAndMatchState#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.PixelTournamentInviteAndFinalAreBoundToWins#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.PreviewSavedRankScreens#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.RatedMatchesUseTheirAuthoredStrengthFromTheFirstMove#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.RatingLabelsFollowEveryStageAndLanguageAndFitAllScreens#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.ResultRestartAndLobbyConfirmWhileNextStaysDirect#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.RewardCompletionIsOnceAndUndoKeepsConsumedHint#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.SelectionIsOnlyPreviewAndPlaceCommitsOnce#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.SliderTracksPausedCountdownAndCannotChangeTimeByInput#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.SoundButtonClickPlaysOnceAcrossOpenCloseAndRespectsDisabledAndOff#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.SoundStoneImpactAndUiClickWorkWhileMusicContinuesThroughModal#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.SpeechMuteHidesNoLettersAndScreenChangesCancelTheOldLine#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.SpeechPausesWithDialogsFocusBackgroundAndAdsWhileMusicCanContinue#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.SpeechTypesBothLanguagesWithClicksAndStableWrapping#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.SpeechTypesWinAndLossDialogueAndRestartsForTheNextStage#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.SquareBoardsUniformPixelLinesTopHeadersAndScrollableActionsMeetHostContract#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.ThirtyCardsReachBothEndsAndDetailBlocksLobbyAndPreservesScroll#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.TopRowAnimationAvoidsStatusAndDrawKeepsTwoActions#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.TurnTimerExpiresOnceInSelectedColumnAndResetsAfterAiAndUndo#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.TurnTimerFallbackSkipsFullColumnsAndTimeoutWinUsesNormalResult#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.TurnTimerPausesAcrossModalsBackgroundAndHintsWithoutRefreshingTheTurn#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.TurnTimerUsesRealElapsedTimeAndFitsBothLanguages#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.TurnToastNeverBlocksAndDoesNotOutliveItsTurnOrDuplicateOnLanguageHint#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankFlowTests.UndoRestoresPairsAndCancelsInFlightAiWithoutChangingMatch#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankMusicAssetTests.LegacyMusicPreferenceDefaultsOnAndRoundTripsIndependently#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankMusicAssetTests.SavedMusicReferencesOriginalAudioAndAllLicenseNoticesArePresent#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RankSoundAssetTests.SavedSoundsUseShortPcmClipsAndCoverEveryButtonOnce#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RatingDisplayAssetTests.SavedRatingsSliderAndDedicatedTypingClipHaveValidReferences#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RatingSearchTests.BeginnerProfileMissesTacticsWhileExpertAndHintsRecognizeThem#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.RatingSearchTests.OversightRemainsLegalDeterministicAndRespectsTerminalBoards#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.StageMapTests.FinalClearSurvivesReloadAndReplayWithoutDuplicateCounters#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.StageMapTests.LegacyProgressInfersOnlyStagesBeforeTheUnlock(1)#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.StageMapTests.LegacyProgressInfersOnlyStagesBeforeTheUnlock(12)#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.StageMapTests.LegacyProgressInfersOnlyStagesBeforeTheUnlock(30)#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.StageMapTests.RankMigrationRejectsUnsavedScenesBeforeWritingAssets#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  },
+  "StageGame.Tests.StageMapTests.SavedNodesAndHelpAreNestedAndShowExactlyFourConnectedStones#1": {
+    "result": "Passed",
+    "source": "unity-tests.xml"
+  }
+}
