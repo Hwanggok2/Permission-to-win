@@ -1,0 +1,5 @@
+"Easy Lemon" — Kevin MacLeod (incompetech.com).
+Source: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1200076
+Licensed under Creative Commons Attribution 4.0 International:
+https://creativecommons.org/licenses/by/4.0/
+Original MP3 unchanged; Unity import compression, low-volume loop playback for game use.

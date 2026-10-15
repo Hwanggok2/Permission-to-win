@@ -1,0 +1,19 @@
+StageGame prototype asset sources (2026-10-14)
+
+Font: Noto Sans CJK KR Regular, unmodified OpenType file.
+Official source: https://github.com/notofonts/noto-cjk/blob/main/Sans/OTF/Korean/NotoSansCJKkr-Regular.otf
+Download: https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/OTF/Korean/NotoSansCJKkr-Regular.otf
+SHA256: 6BCB2A0703AA137E874FC2DFFA85F6C21BA9A67FA329E81B8C801663AF7E992A
+License: SIL Open Font License 1.1, copyright Adobe.
+License text: NotoSansCJKkr-OFL.txt in this folder (font metadata copyright plus upstream OFL).
+License source: https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/LICENSE
+NotoSansKR-OFL.txt retains the earlier equivalent Google Fonts OFL notice.
+
+Disc.png: generated from a mathematical circle by Client/Assets/StageGame/Editor/ProjectBuilder.cs.
+Move.wav: generated sine tone with exponential decay by the same project tool.
+UI composition and colors: created for this prototype. No SimpleGame visual/audio assets copied.
+
+Unity-uGUI-LICENSE.txt is copied verbatim from resolved com.unity.ugui 2.0.0.
+Unity-Companion-License-Full.txt preserves the full official Unity Companion License v1.4 text retrieved 2026-10-14.
+Unity-TestFramework-LICENSE.txt, Unity-NUnit-LICENSE.txt and NUnit-ThirdPartyNotices.txt preserve development package notices.
+Unity and packages retain their respective licenses. These notices do not replace the user's engine agreement or establish account eligibility.
