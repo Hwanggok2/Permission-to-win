@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#101b2b">
+  <meta name="theme-color" content="#FFFFFF">
   <title>{{{ PRODUCT_NAME }}}</title>
   <style>
     * { box-sizing: border-box; }
-    html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #080f1b; }
+    html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #FFFFFF; }
     :root { --os-top: env(safe-area-inset-top, 0px); --os-right: env(safe-area-inset-right, 0px); --os-bottom: env(safe-area-inset-bottom, 0px); --os-left: env(safe-area-inset-left, 0px); --content-top: 64px; }
-    #player { position: relative; width: 100%; height: 100%; background: #101b2b; }
+    #player { position: fixed; left: 0; top: 0; width: 100%; height: 100dvh; background: #FFFFFF; }
     #unity-canvas { width: 100%; height: 100%; display: block; outline: none; touch-action: none; }
-    #loading, #error { position: absolute; inset: 0; display: grid; place-content: center; padding: 28px; color: #f1f5f9; font: 16px/1.6 system-ui, sans-serif; text-align: center; background: #101b2b; }
-    #loading strong { color: #6cedc7; font-size: 27px; margin-bottom: 14px; }
-    progress { width: min(65vw, 280px); margin-top: 20px; accent-color: #6cedc7; }
+    #loading, #error { position: absolute; inset: 0; display: grid; place-content: center; padding: 28px; color: #1D1E20; font: 16px/1.6 system-ui, sans-serif; text-align: center; background: #FFFFFF; }
+    #loading strong { color: #1D1E20; font-size: 27px; margin-bottom: 14px; }
+    progress { width: min(65vw, 280px); margin-top: 20px; accent-color: #1D1E20; }
     [hidden] { display: none !important; }
     #host-preview { position: fixed; inset: 0 0 auto; height: var(--content-top); z-index: 10; pointer-events: none; border-bottom: 1px dashed #ffcc88; background: #111827aa; font: 10px system-ui,sans-serif; color: #ffcc88; }
     #host-preview small { position: absolute; bottom: 4px; left: 8px; }

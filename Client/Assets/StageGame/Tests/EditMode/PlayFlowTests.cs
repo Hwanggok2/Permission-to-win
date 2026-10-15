@@ -1,3 +1,5 @@
+#if STAGEGAME_TABLETOP_LEGACY_TESTS
+// Historical UI suite; the active Main scene is covered by RankFlowTests.
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -103,7 +105,7 @@ namespace StageGame.Tests
                     app.confirmResume.onClick.Invoke();
                     var board = new ConnectFourBoard();
                     foreach (int column in new[] { 0, 6, 1, 6, 2, 5 }) board.TryDrop(column);
-                    SetField("board", board); Invoke("RefreshBoard"); app.columns[3].onClick.Invoke(); yield return null;
+                    SetField("board", board); Invoke("RefreshBoard"); app.columns[3].onClick.Invoke(); yield return WaitForResult();
                     Capture(prefix + "-result", app, viewport.x, viewport.y, true);
                 }
             }
@@ -118,13 +120,13 @@ namespace StageGame.Tests
             {
                 app.SetLanguage(language); app.ShowLobby(); SetField("selected", 0); Invoke("RefreshLobby");
                 Assert.IsTrue(app.stageNodeStates[0].text.StartsWith("✓"));
-                Assert.AreEqual("[01]", app.stageNodeNumbers[0].text);
+                Assert.AreEqual("01", app.stageNodeNumbers[0].text);
                 Assert.AreEqual(GetField<StringTable>("strings").Text("stage_replay"), app.playLabel.text);
                 app.following.onClick.Invoke(); yield return null;
-                Assert.AreEqual("[11]", app.stageNodeNumbers[0].text);
+                Assert.AreEqual("11", app.stageNodeNumbers[0].text);
                 Assert.AreEqual(GetField<StringTable>("strings").Text("stage_state_current"), app.stageNodeStates[2].text);
                 app.stageNodes[3].onClick.Invoke(); yield return null;
-                Assert.AreEqual("[14]", app.stageNodeNumbers[3].text); Assert.IsFalse(app.play.interactable);
+                Assert.AreEqual("14", app.stageNodeNumbers[3].text); Assert.IsFalse(app.play.interactable);
                 Assert.AreEqual(GetField<StringTable>("strings").Format("stage_lock_requirement", 13), app.stageDetail.text);
                 app.play.onClick.Invoke(); Assert.IsTrue(app.lobby.activeSelf); Assert.IsFalse(app.match.activeSelf);
                 AssertNoButtonOverlap(app.lobby);
@@ -132,16 +134,15 @@ namespace StageGame.Tests
                 app.stageNodes[2].onClick.Invoke(); Assert.IsTrue(app.play.interactable);
                 Capture("map-" + language + "-390-current", app, 390, 844, true);
                 app.following.onClick.Invoke(); app.stageNodes[9].onClick.Invoke(); yield return null;
-                Assert.AreEqual("[30]", app.stageNodeNumbers[9].text); Assert.IsFalse(app.following.interactable);
+                Assert.AreEqual("30", app.stageNodeNumbers[9].text); Assert.IsFalse(app.following.interactable);
                 Assert.IsFalse(app.play.interactable);
                 app.previous.onClick.Invoke(); app.previous.onClick.Invoke(); Assert.IsFalse(app.previous.interactable);
             }
         }
 
         [UnityTest]
-        public IEnumerator ResultPriorityAndFinalStageClearDriveReplayMap()
+        public IEnumerator TwoResultActionsAndFinalStageClearDriveReplayMap()
         {
-            var mint = new Color32(108, 237, 199, 255);
             // Legal terminal fixtures, including the full-board draw from the independent core harness.
             var fixtures = new[] {
                 new[] { 0, 6, 1, 6, 2, 5, 3 },
@@ -158,10 +159,8 @@ namespace StageGame.Tests
                     foreach (int column in fixtures[outcome]) Assert.IsTrue(board.TryDrop(column));
                     Assert.IsTrue(board.IsFinished);
                     if (outcome == 2) Assert.IsTrue(board.IsDraw);
-                    SetField("board", board); Invoke("RefreshBoard"); Invoke("Finish"); yield return null;
-                    Assert.AreEqual(outcome == 0, app.nextStage.gameObject.activeSelf);
-                    Assert.AreEqual(mint, (Color32)(outcome == 0 ? app.nextStage : app.retry).targetGraphic.color);
-                    Assert.AreNotEqual(mint, (Color32)app.resultLobby.targetGraphic.color);
+                    SetField("board", board); Invoke("RefreshBoard"); Invoke("Finish"); yield return WaitForResult();
+                    AssertTwoResultActions();
                     AssertNoButtonOverlap(app.result);
                     Capture("map-" + language + "-320-result-" + outcome, app, 320, 568, true);
                 }
@@ -169,12 +168,12 @@ namespace StageGame.Tests
                 progress.Data.unlockedStage = 30; progress.Data.highestClearedStage = 29;
                 app.StartStage(29);
                 var final = new ConnectFourBoard(); foreach (int column in fixtures[0]) final.TryDrop(column);
-                SetField("board", final); Invoke("RefreshBoard"); Invoke("Finish"); yield return null;
+                SetField("board", final); Invoke("RefreshBoard"); Invoke("Finish"); yield return WaitForResult();
                 Assert.IsFalse(app.nextStage.gameObject.activeSelf);
-                Assert.AreEqual(mint, (Color32)app.retry.targetGraphic.color);
+                AssertTwoResultActions();
                 Assert.AreEqual(30, new ProgressStore(30).Data.highestClearedStage);
                 app.resultLobby.onClick.Invoke(); yield return null;
-                Assert.AreEqual("[30]", app.stageNodeNumbers[9].text); Assert.IsTrue(app.stageNodeStates[9].text.StartsWith("✓"));
+                Assert.AreEqual("30", app.stageNodeNumbers[9].text); Assert.IsTrue(app.stageNodeStates[9].text.StartsWith("✓"));
                 Assert.AreEqual(GetField<StringTable>("strings").Text("stage_replay"), app.playLabel.text);
                 Capture("map-" + language + "-320-all-cleared", app, 320, 568, true);
                 app.play.onClick.Invoke(); yield return null;
@@ -233,7 +232,7 @@ namespace StageGame.Tests
             var board = new ConnectFourBoard();
             foreach (int column in new[] { 0, 6, 1, 6, 2, 5 }) board.TryDrop(column);
             SetField("board", board); Invoke("RefreshBoard");
-            app.columns[3].onClick.Invoke(); yield return null;
+            app.columns[3].onClick.Invoke(); yield return WaitForResult();
             Assert.AreEqual(table.Text("client_result_win"), app.resultTitle.text);
             Assert.IsFalse(app.resultBanner.activeSelf);
             Capture("en-result", app); AssertNoButtonOverlap(app.result); AssertTextFits(app.result);
@@ -291,11 +290,13 @@ namespace StageGame.Tests
             var board = new ConnectFourBoard();
             foreach (int col in new[] { 0, 6, 1, 6, 2, 5 }) board.TryDrop(col);
             SetField("board", board); Invoke("RefreshBoard");
-            app.columns[3].onClick.Invoke(); yield return null;
+            app.columns[3].onClick.Invoke(); yield return WaitForResult();
             Assert.IsTrue(app.result.activeSelf); Assert.AreEqual("연결 성공!", app.resultTitle.text);
-            Assert.IsTrue(app.nextStage.interactable);
+            AssertTwoResultActions();
             Capture("result", app);
-            app.nextStage.onClick.Invoke(); yield return null;
+            app.resultLobby.onClick.Invoke(); yield return null;
+            Assert.AreEqual(1, GetField<int>("selected"));
+            app.play.onClick.Invoke(); yield return null;
             Assert.IsTrue(app.matchTitle.text.StartsWith("02"));
             app.ShowLobby();
             Assert.AreEqual("1/30 완료", app.progressLabel.text);
@@ -390,6 +391,115 @@ namespace StageGame.Tests
             Debug.Log($"[AI Smoke] top budget completed across {frames} frames in {(Time.realtimeSinceStartup - start) * 1000:F1}ms");
         }
 
+        sealed class SettlementAds : IAdService
+        {
+            public Action<AdResult> Callback;
+            public int Calls;
+            public float CalledAt;
+            public string Status => "ad_unavailable";
+            public void ShowRewarded(Action<AdResult> callback) => callback(AdResult.Unavailable);
+            public void ShowInterstitial(Action<AdResult> callback) { Calls++; CalledAt=Time.realtimeSinceStartup; Callback=callback; }
+            public void CancelPending() { }
+        }
+
+        [UnityTest]
+        public IEnumerator BothWinningMovesAnimateBeforeAdsAndTwoResultActions()
+        {
+            var trace = new List<string> { "side,event,elapsedSeconds,scale,resolving,resultActive,retryEnabled,adCalls,moveCount" };
+            foreach (int starter in new[] { 1, -1 })
+            {
+                app.StartStage(0); yield return null;
+                var progress=GetField<ProgressStore>("progress");
+                progress.Data.completedMatches=4; progress.Data.lastInterstitialMatch=0; progress.Data.lastInterstitialUtc=0;
+                GetField<GameData>("data").Stages[0].aiRandomPermille=0;
+                GetField<GameData>("data").Ads.bannerResult=false;
+                var ads=new SettlementAds(); app.SetAdsForTests(ads);
+                var board=new ConnectFourBoard(starter);
+                foreach(int col in new[] {0,6,1,6,2,5}) board.TryDrop(col);
+                SetField("board",board); Invoke("RefreshBoard");
+                if(starter==1) app.columns[3].onClick.Invoke();
+                else app.StartCoroutine((IEnumerator)typeof(GameApp).GetMethod("Think",BindingFlags.Instance|BindingFlags.NonPublic).Invoke(app,new object[]{false}));
+                float until=Time.realtimeSinceStartup+3;
+                while(!GetField<bool>("resolving") && Time.realtimeSinceStartup<until) yield return null;
+                Assert.IsTrue(GetField<bool>("resolving")); Assert.AreEqual(starter,board.Winner);
+                float start=Time.realtimeSinceStartup;
+                var stone=app.stones[board.LastMove].rectTransform;
+                string side=starter==1?"player":"ai";
+                void Sample(string name) => trace.Add(string.Format(System.Globalization.CultureInfo.InvariantCulture,
+                    "{0},{1},{2:F4},{3:F4},{4},{5},{6},{7},{8}",side,name,Time.realtimeSinceStartup-start,stone.localScale.x,GetField<bool>("resolving"),app.result.activeSelf,app.retry.interactable,ads.Calls,board.MoveCount));
+                Assert.Greater(stone.localScale.x,1.4f);
+                Assert.AreEqual(stone.parent.childCount-1,stone.GetSiblingIndex(),"Enlarged stone must render in front of every hole.");
+                Sample("enlarged");
+                Capture("animation-"+side+"-0",app,390,844,true);
+                Assert.IsFalse(app.pause.interactable); Assert.IsFalse(app.hint.interactable);
+                foreach(var column in app.columns) Assert.IsFalse(column.interactable);
+                app.columns[0].onClick.Invoke(); app.pause.onClick.Invoke(); app.hint.onClick.Invoke(); Invoke("Finish");
+                Assert.AreEqual(7,board.MoveCount); Assert.IsFalse(app.confirm.activeSelf); Assert.AreEqual(5,progress.Data.completedMatches);
+                while(Time.realtimeSinceStartup-start<.18f) yield return null;
+                Assert.Greater(stone.localScale.x,1); Assert.Less(stone.localScale.x,1.45f);
+                Assert.AreEqual(0,ads.Calls); Assert.IsFalse(app.result.activeSelf); Sample("placing");
+                Capture("animation-"+side+"-1",app,390,844,true);
+                while(!GetField<bool>("winningRevealed") && Time.realtimeSinceStartup-start<2) yield return null;
+                Assert.AreEqual(Vector3.one,stone.localScale); Assert.AreEqual(board.LastMove,stone.GetSiblingIndex()); Assert.IsFalse(app.result.activeSelf);
+                Assert.AreEqual(0,ads.Calls); Assert.GreaterOrEqual(Time.realtimeSinceStartup-start,.35f); Sample("landed");
+                foreach(int cell in board.WinningCells) Assert.AreSame(starter==1?app.theme.playerWin:app.theme.opponentWin,app.stones[cell].sprite);
+                while(ads.Calls==0 && Time.realtimeSinceStartup-start<2) yield return null;
+                Assert.AreEqual(1,ads.Calls); Assert.GreaterOrEqual(ads.CalledAt-start,.85f);
+                Assert.IsTrue(app.result.activeSelf); Assert.IsFalse(app.retry.interactable); Assert.IsFalse(app.resultLobby.interactable); Sample("adPending");
+                ads.Callback(AdResult.Completed); ads.Callback(AdResult.Completed);
+                yield return WaitForResult();
+                AssertTwoResultActions(); Assert.AreEqual(5,progress.Data.completedMatches); Assert.AreEqual(5,progress.Data.lastInterstitialMatch);
+                Sample("actionsEnabled"); Capture("animation-"+side+"-2",app,390,844,true);
+                app.resultLobby.onClick.Invoke(); yield return null;
+                Assert.AreEqual(progress.Data.unlockedStage-1,GetField<int>("selected"));
+                app.StartStage(0); ads.Callback(AdResult.Completed); yield return null;
+                Assert.IsFalse(app.result.activeSelf); Assert.AreEqual(0,GetField<ConnectFourBoard>("board").MoveCount);
+            }
+            File.WriteAllLines("Evidence/graphics-refresh-20261014/animation-timeline.csv",trace);
+        }
+
+        [UnityTest]
+        public IEnumerator WinningPresentationCancelsCleanlyAndAdTimeoutRejectsLateCompletion()
+        {
+            app.StartStage(0); yield return null;
+            var board=new ConnectFourBoard(); foreach(int col in new[] {0,6,1,6,2,5}) board.TryDrop(col);
+            SetField("board",board); Invoke("RefreshBoard"); app.columns[3].onClick.Invoke();
+            var stone=app.stones[board.LastMove].rectTransform; Assert.Greater(stone.localScale.x,1);
+            app.StartStage(0); Assert.AreEqual(Vector3.one,stone.localScale); Assert.AreEqual(board.LastMove,stone.GetSiblingIndex());
+            yield return new WaitForSecondsRealtime(1);
+            Assert.IsFalse(app.result.activeSelf); Assert.IsTrue(app.columns[0].interactable);
+            var progress=GetField<ProgressStore>("progress"); progress.Data.completedMatches=4;
+            var ads=new SettlementAds(); app.SetAdsForTests(ads);
+            SetField("board",board); Invoke("RefreshBoard"); Invoke("Finish");
+            yield return WaitForResult();
+            AssertTwoResultActions(); Assert.AreEqual(1,ads.Calls);
+            int before=progress.Data.lastInterstitialMatch;
+            ads.Callback(AdResult.Completed); yield return null;
+            Assert.AreEqual(before,progress.Data.lastInterstitialMatch); Assert.AreEqual(5,progress.Data.completedMatches);
+        }
+
+        IEnumerator WaitForResult()
+        {
+            float until = Time.realtimeSinceStartup + 6;
+            while ((!app.result.activeSelf || !app.retry.interactable) && Time.realtimeSinceStartup < until) yield return null;
+            Assert.IsTrue(app.result.activeSelf); Assert.IsTrue(app.retry.interactable);
+        }
+
+        void AssertTwoResultActions()
+        {
+            var buttons = app.result.GetComponentsInChildren<Button>();
+            Assert.AreEqual(2, buttons.Length);
+            CollectionAssert.AreEquivalent(new[] { app.retry, app.resultLobby }, buttons);
+            Assert.IsFalse(app.nextStage.gameObject.activeSelf); Assert.IsFalse(app.resultClose.gameObject.activeSelf);
+            Assert.AreSame(app.theme.primary, app.retry.GetComponent<Image>().sprite);
+            Assert.AreEqual(((RectTransform)app.retry.transform).anchoredPosition.y, ((RectTransform)app.resultLobby.transform).anchoredPosition.y);
+            Assert.IsTrue(app.match.activeSelf); Assert.IsFalse(app.hint.gameObject.activeSelf); Assert.IsFalse(app.pause.interactable); Assert.IsFalse(app.pause.gameObject.activeSelf);
+            Assert.AreEqual(0, app.result.GetComponent<Image>().color.a);
+            Assert.AreEqual(0, app.result.transform.Find("Frame").GetComponent<Image>().color.a);
+            Assert.IsFalse(app.result.GetComponent<Image>().raycastTarget);
+            AssertNoButtonOverlap(app.result);
+        }
+
         void SetField(string field, object value) => typeof(GameApp).GetField(field, BindingFlags.Instance | BindingFlags.NonPublic).SetValue(app, value);
         T GetField<T>(string field) => (T)typeof(GameApp).GetField(field, BindingFlags.Instance | BindingFlags.NonPublic).GetValue(app);
         void Invoke(string method, params object[] arguments) => typeof(GameApp).GetMethod(method, BindingFlags.Instance | BindingFlags.NonPublic).Invoke(app, arguments);
@@ -397,7 +507,7 @@ namespace StageGame.Tests
         static void Capture(string name, GameApp game, int width = 720, int height = 1280, bool host = false)
         {
             if (SystemInfo.graphicsDeviceType == UnityEngine.Rendering.GraphicsDeviceType.Null) return;
-            Directory.CreateDirectory("Evidence");
+            Directory.CreateDirectory("Evidence/graphics-refresh-20261014");
             var camera = Camera.main;
             var canvas = game.GetComponent<Canvas>();
             var scaler = game.GetComponent<CanvasScaler>();
@@ -460,7 +570,7 @@ namespace StageGame.Tests
             var previous = RenderTexture.active; RenderTexture.active = target;
             var image = new Texture2D(width, height, TextureFormat.RGB24, false);
             image.ReadPixels(new Rect(0, 0, width, height), 0, 0); image.Apply();
-            File.WriteAllBytes("Evidence/" + name + ".png", image.EncodeToPNG());
+            File.WriteAllBytes("Evidence/graphics-refresh-20261014/" + name + ".png", image.EncodeToPNG());
             RenderTexture.active = previous; camera.targetTexture = null;
             canvas.renderMode = RenderMode.ScreenSpaceOverlay; canvas.worldCamera = null;
             fitter.SetEditorHostPreview(false, Vector2.zero, Vector4.zero);
@@ -469,3 +579,5 @@ namespace StageGame.Tests
         }
     }
 }
+
+#endif

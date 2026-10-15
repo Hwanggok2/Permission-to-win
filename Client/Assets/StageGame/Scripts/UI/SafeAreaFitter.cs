@@ -10,20 +10,27 @@ namespace StageGame
     {
         public RectTransform content;
         public Vector2 referenceSize = new Vector2(720, 960);
+        public bool widthFitTopAligned;
+        public float topPaddingCss = 8;
+        public float RenderPixelsPerCssPixel { get; private set; } = 1;
         RectTransform safeRect;
         Rect lastArea;
         Vector2Int lastSize;
         Vector2 lastRectSize;
 #if UNITY_WEBGL && !UNITY_EDITOR
-        [DllImport("__Internal")] static extern void StageGameReadHostInsets(out float left, out float top, out float right, out float bottom, out float width, out float height, out float controlsBottom);
+        [DllImport("__Internal")] static extern void StageGameReadHostInsets(out float left, out float top, out float right, out float bottom, out float width, out float height, out float controlsBottom, out float hostActive);
 #endif
 #if UNITY_EDITOR
-        bool previewHost;
+        bool previewEnabled, previewHost;
         Vector2 previewViewport;
         Vector4 previewInsets;
         public void SetEditorHostPreview(bool enabled, Vector2 viewport, Vector4 insets)
         {
-            previewHost = enabled; previewViewport = viewport; previewInsets = insets; lastArea = default;
+            previewEnabled = previewHost = enabled; previewViewport = viewport; previewInsets = insets; lastArea = default;
+        }
+        public void SetEditorViewportPreview(Vector2 viewport, Vector4 insets, bool hostActive)
+        {
+            previewEnabled=true;previewHost=hostActive;previewViewport=viewport;previewInsets=insets;lastArea=default;
         }
 #endif
 
@@ -41,12 +48,16 @@ namespace StageGame
             if (Screen.width <= 0 || Screen.height <= 0) return;
             Rect safe = Screen.safeArea;
             var size = new Vector2Int(Screen.width, Screen.height);
+            float cssPixelRatio = 1;
 #if UNITY_WEBGL && !UNITY_EDITOR
-            StageGameReadHostInsets(out float left, out float top, out float right, out float bottom, out float width, out float height, out float controlsBottom);
-            safe = HostLayout.ContentArea(safe, size, new Vector2(width, height), new Vector4(left, top, right, bottom), controlsBottom);
+            StageGameReadHostInsets(out float left, out float top, out float right, out float bottom, out float width, out float height, out float controlsBottom, out float hostActive);
+            safe = HostLayout.ContentArea(safe, size, new Vector2(width, height), new Vector4(left, top, right, bottom), controlsBottom, hostActive > .5f);
+            if (width > 0) cssPixelRatio = Screen.width / width;
 #elif UNITY_EDITOR
-            if (previewHost) safe = HostLayout.ContentArea(safe, size, previewViewport, previewInsets);
+            if (previewEnabled) { safe = HostLayout.ContentArea(safe, size, previewViewport, previewInsets, hostActive:previewHost); cssPixelRatio = Screen.width / previewViewport.x; }
 #endif
+            var canvas = GetComponentInParent<Canvas>();
+            RenderPixelsPerCssPixel = cssPixelRatio * canvas.pixelRect.width / Screen.width;
             bool anchorsChanged = safe != lastArea || size != lastSize;
             if (anchorsChanged)
             {
@@ -59,6 +70,19 @@ namespace StageGame
             Vector2 available = safeRect.rect.size;
             if (content == null || available.x <= 0 || available.y <= 0 || (!anchorsChanged && available == lastRectSize)) return;
             lastRectSize = available;
+            if (widthFitTopAligned)
+            {
+                // Expand-mode CanvasScaler can expose >1080 units on short viewports.
+                // Fill that width instead of applying a second height-based downscale.
+                float widthFit = available.x / referenceSize.x;
+                // RenderTexture previews can have a pixel size different from the editor Game view.
+                float padding = topPaddingCss * cssPixelRatio * canvas.pixelRect.width / Screen.width / canvas.scaleFactor;
+                content.anchorMin = content.anchorMax = content.pivot = new Vector2(.5f, 1);
+                content.anchoredPosition = new Vector2(0, -padding);
+                content.sizeDelta = new Vector2(referenceSize.x, Mathf.Max(1, available.y - padding) / widthFit);
+                content.localScale = Vector3.one * widthFit;
+                return;
+            }
             float fit = Mathf.Min(1f, available.x / referenceSize.x, available.y / referenceSize.y);
             content.localScale = Vector3.one * fit;
         }

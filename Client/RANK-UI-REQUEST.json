@@ -1,0 +1,198 @@
+{
+  "status": "SAVED_PREFAB_AND_FULL_UNITY_REGRESSION_PASS__BUILDS_AND_BROWSER_HELD",
+  "dateSeoul": "2026-10-15",
+  "owner": "Client; user-authorized GameData progression exception; root owns browser/build/Git integration",
+  "workingTitle": {
+    "ko": "4목",
+    "en": "Four in a Row",
+    "storeNameRightsConfirmed": false
+  },
+  "supersedes": "Tabletop visual design rejected by user; its historical automated/build/browser evidence retained, not visual acceptance.",
+  "scope": "1080x1920 match and results fit without scrolling below shared216design-unit top gap and above48design-unit bottom gap.",
+  "decisions": [
+    "Canvas and prefab geometry use1080x1920design units.",
+    "Lobby and match retain216design-unit top exclusion area.",
+    "Saved RankMatchFitter scales existing match content to available height;1080 normal/result controls fit without clipping or scrolling.",
+    "44rendered-pixel column input minimum preserved;320x568 can still scroll.",
+    "AI search and1activeSecond delay unchanged.",
+    "Character/dot-art application remains held until separate user instruction."
+  ],
+  "assets": "New Art/RankUI and Prefabs/RankUI; previous art/prefabs preserved. Reference image analyzed only; no copied pixels.",
+  "data": "269 Excel strings,30stages,18ranks; Generated and Client copies byte-identical. See Evidence/progression-verification.json.",
+  "verification": "Saved Match prefab;full Unity regression78/78 PASS,0failed/0skipped;134 Korean/English native captures at1080/390/320.",
+  "implementation": "Saved prefabs and serialized RankMatchFitter references. Runtime adjusts existing content scale/position only;RankUiBuilder persists top/bottom gaps and fit component.",
+  "previewCaptures": [
+    "Evidence/match-fit-1080-20261015/ko-1080-plain-match.png",
+    "Evidence/match-fit-1080-20261015/ko-1080-header-match.png",
+    "Evidence/match-fit-1080-20261015/en-1080-win.png"
+  ],
+  "visualCorrections": "At1080x1920 all normal and result actions are visible without scrolling;top216 and bottom48 design-unit gaps preserved.",
+  "runtimeChangesAfterCandidate": "New RankMatchFitter fits existing saved content;RankGameApp,AI,data and character art unchanged.",
+  "packageManagerSettings": "Pre-existing untracked Unity PackageManager internal UI preferences/default registry; unchanged, not required by this feature. Root Git inclusion decision.",
+  "version": "v10.4",
+  "v9DesignChoice": {
+    "shortScreens": "Width-fit+top8CSS safe-area alignment. Game is a saved vertical ScrollRect; fixed minimum board column44CSS and buttons44CSS preserved. At320x568 scroll to bottom actions; at390x844 standard game fits. Lobby viewport expands between fixed top header and bottom coming-soon. Fullscreen overlays stay in safe viewport.",
+    "geometry": "704logical square exterior,7columns/6rows with dx=dy=720/7; centered6x5grid extra vertical margin;3logical border/grid rendered at common integer physical-pixel thickness. Detail uses equal-spacing square board.",
+    "confirmation": "Separate saved ActionConfirm. Game/resultRetry,resultLobby,pauseLeave queue action; Cancel preserves board/selection/AI coroutine and returns pause if opened there, otherwise resumes; Accept consumes pending action before one execution. Next unchanged.",
+    "turnToast": "Saved non-raycast CanvasGroup center. Once on new player turn/start/AI reply/Undo; no repeat on hint/localization; old coroutine removed on modal/result/newmatch.",
+    "hats": "10original monochrome geometric hat sprites, rank-index mapping; no copied military insignia.",
+    "dataKeysRequested": [
+      "confirm_exit_title",
+      "confirm_exit_body",
+      "confirm_retry_title",
+      "confirm_retry_body",
+      "ui_cancel",
+      "confirm_leave",
+      "retry"
+    ],
+    "retryLabel": "다시하기 / Retry supplied by Data"
+  },
+  "v8Archive": "Archive/RankV8-20261014/source-and-evidence.zip",
+  "v9Data": "Final237keys+stage1storyreferences synced:strings4FA6C54394FD59846131794852EA025D4FA7DCB6725AB2A1DFB7435F1FA50DE4 stages6F76D1575F71FD0240CF7B5774BD2A3FED41FB1828BD0CB85464F34E72122E7E",
+  "QA014": "Client native regression PASS: destroyed instance rejects late result/reward callbacks without save mutation. No independent QA rerun requested.",
+  "v9Preview": "Evidence/rank-v9-20261014/ko-390-first-match.png +ko-320-match-bottom.png +restart-confirm +detail-bottom. Early captures; new8CSS padding retake pending.",
+  "v8AndroidRetained": {
+    "artifact": {
+      "path": "Builds/Android/StageGame-development.apk",
+      "bytes": 35568872,
+      "sha256": "282C16157C42421DA474724B8C750D24992506E9F408898D705EC06B7D6DEAC7"
+    },
+    "buildSummary": "Succeeded\nErrors: 0\nWarnings: 0\nBytes: 207438141\nDuration: 00:00:52.2034441\n",
+    "developmentOnly": true
+  },
+  "v8WebglHistorical": {
+    "completedAtUtc": "2026-10-14T23:21:06.781709+09:00",
+    "entry": "C:/Github/StageGame/Client/Builds/WebGL/index.html",
+    "summary": "Succeeded\nErrors: 0\nWarnings: 0\nBytes: 44164083\nDuration: 00:00:41.0106962\n",
+    "files": [
+      {
+        "path": "Builds/WebGL/Build/WebGL.data",
+        "bytes": 18873658,
+        "sha256": "8A0040A7AB446EF3D8823533A04E85930A2B3AD817AB04CDDD431392F2AC5E98"
+      },
+      {
+        "path": "Builds/WebGL/Build/WebGL.framework.js",
+        "bytes": 761643,
+        "sha256": "F909F29D115947BE5BAB214FE3CD434A6197E6BDC2E24CE9C2933C64B58FAE08"
+      },
+      {
+        "path": "Builds/WebGL/Build/WebGL.loader.js",
+        "bytes": 58348,
+        "sha256": "03AAF3E2319D566DE198A66BE4F5B233F5ABB78E90279739E79ECC977B67A835"
+      },
+      {
+        "path": "Builds/WebGL/Build/WebGL.wasm",
+        "bytes": 24444233,
+        "sha256": "CA66C107F9F6F3283F13971B2FBEA8CAC6860B9048A74D856E4098D381603FBE"
+      },
+      {
+        "path": "Builds/WebGL/host-layout.js",
+        "bytes": 2002,
+        "sha256": "187B6162FE987A784D66FB6F929EC64C4885D8BA2A5B5A7E176AF16DFC9DAC25"
+      },
+      {
+        "path": "Builds/WebGL/index.html",
+        "bytes": 4490,
+        "sha256": "BC0C2978899D9D401ADEAD4393976AC3D9F571291432B3CA5382C5E29934237E"
+      },
+      {
+        "path": "Builds/WebGL/TemplateData/profiler.js",
+        "bytes": 1573,
+        "sha256": "433E40AF9A544D1EF5FEC67B0B52AF25A851928626C3F3EF0D09B35DED610C0D"
+      },
+      {
+        "path": "Builds/WebGL/ui-text.js",
+        "bytes": 446,
+        "sha256": "676DB2313592E37CBDC7F1CBEEA964E688F9CBA051EF8743C6D06E7ADEFFC362"
+      }
+    ]
+  },
+  "v8SourceFreeze": "Evidence/rank-ui-source-freeze.json281assets; repeatApplyPASS; finalRuntime67/67",
+  "v8Evidence": "Evidence/rank-ui-verification.json",
+  "sourceFreeze": "Evidence/match-fit-1080-source-freeze.json",
+  "freezeFileCount": 323,
+  "approvalGate": "Source/prefab edit and editor captures only; no new WebGL/Android build or browser run. Existing builds remain v9/v8.",
+  "webgl": {
+    "completedBeforeInstruction": true,
+    "logLastWriteUtc": "2026-10-14T23:47:20.698684+09:00",
+    "summary": "Succeeded\nErrors: 0\nWarnings: 0\nBytes: 44225172\nDuration: 00:00:28.3487196\n",
+    "files": [
+      {
+        "path": "Builds/WebGL/Build/WebGL.data",
+        "bytes": 18925724,
+        "sha256": "04DEA2A7570BAD089438166A0E40943A6773F1ABD027DD9143B134DF0611C472",
+        "modifiedUtc": "2026-10-14T23:47:17.391723+09:00"
+      },
+      {
+        "path": "Builds/WebGL/Build/WebGL.framework.js",
+        "bytes": 761643,
+        "sha256": "F909F29D115947BE5BAB214FE3CD434A6197E6BDC2E24CE9C2933C64B58FAE08",
+        "modifiedUtc": "2026-10-14T23:47:18.089656+09:00"
+      },
+      {
+        "path": "Builds/WebGL/Build/WebGL.loader.js",
+        "bytes": 58348,
+        "sha256": "1D4C7ED46D41C5D5C44F5B3300BF29DD912799343B1A17623F4B335D7F339F13",
+        "modifiedUtc": "2026-10-14T23:47:18.091169+09:00"
+      },
+      {
+        "path": "Builds/WebGL/Build/WebGL.wasm",
+        "bytes": 24453256,
+        "sha256": "402BF4A39C73B3A712489EDFA76F535AF54B07821C12892BA824D5CA904722B0",
+        "modifiedUtc": "2026-10-14T23:47:17.433738+09:00"
+      },
+      {
+        "path": "Builds/WebGL/host-layout.js",
+        "bytes": 2002,
+        "sha256": "187B6162FE987A784D66FB6F929EC64C4885D8BA2A5B5A7E176AF16DFC9DAC25",
+        "modifiedUtc": "2026-10-14T20:58:33.526339+09:00"
+      },
+      {
+        "path": "Builds/WebGL/index.html",
+        "bytes": 4490,
+        "sha256": "BC0C2978899D9D401ADEAD4393976AC3D9F571291432B3CA5382C5E29934237E",
+        "modifiedUtc": "2026-10-14T23:20:33.319261+09:00"
+      },
+      {
+        "path": "Builds/WebGL/TemplateData/profiler.js",
+        "bytes": 1573,
+        "sha256": "433E40AF9A544D1EF5FEC67B0B52AF25A851928626C3F3EF0D09B35DED610C0D",
+        "modifiedUtc": "2026-04-29T18:07:42+09:00"
+      },
+      {
+        "path": "Builds/WebGL/ui-text.js",
+        "bytes": 446,
+        "sha256": "676DB2313592E37CBDC7F1CBEEA964E688F9CBA051EF8743C6D06E7ADEFFC362",
+        "modifiedUtc": "2026-10-14T23:47:18.142178+09:00"
+      }
+    ]
+  },
+  "evidence": "Evidence/match-fit-1080-verification.json",
+  "timingEvidence": {
+    "unityLogCreatedUtc": "2026-10-14T14:46:41Z",
+    "buildReportLastWriteUtc": "2026-10-14T14:47:18Z",
+    "unityLogLastWriteUtc": "2026-10-14T23:47:20.698684+09:00",
+    "meaning": "Log creation is launch evidence, not a separately captured process-start timestamp. The owned Start-Process handle completed WaitForExit with exit0 before the approval-instruction message arrived.",
+    "processInventory": "A later read-only CIM listing was unavailable in sandbox; no process was killed and no other project was operated."
+  },
+  "v10Scope": "All five requested UI/AI changes completed; title data now4-in-a-row generic label. Client only; no other role restarted or awaited.",
+  "v10Summary": {
+    "tests": "76/76 PASS",
+    "captures": 116,
+    "assets": 317,
+    "idempotence": "PASS",
+    "aiHighestBudgetActiveSeconds": 1.00127458572388,
+    "buildFilesUnchanged": 17,
+    "finishedAtUtc": "2026-10-15T00:19:01.739801+09:00"
+  },
+  "previousSourceFreeze": "Evidence/match-top-gap-source-freeze.json",
+  "lobbyHeaderCorrection": {
+    "designWidth": 1080,
+    "headerCenterYBefore": -82.5,
+    "headerCenterYAfter": -298.5,
+    "listTopBefore": 217.5,
+    "listTopAfter": 433.5,
+    "additionalTopGapAt320": 64
+  },
+  "nextWork": "1080x1920 clipping correction complete. Character implementation remains held pending image confirmation and separate application instruction. No new builds or browser run."
+}

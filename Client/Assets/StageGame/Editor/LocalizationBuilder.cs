@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -136,6 +137,24 @@ namespace StageGame.Editor
             Debug.Log("[Localization] Saved prefab bindings and touch layout updated.");
         }
 
+        public static void ExportLegalNotices()
+        {
+            const string output=Root+"Resources/LegalNotices.txt";
+            string current=File.ReadAllText(output);
+            int firstNotice=current.IndexOf("\n--- ",StringComparison.Ordinal);
+            if(firstNotice<0)throw new InvalidDataException("Expected the existing license notice header.");
+            var parts=new List<string>{current.Substring(0,firstNotice).TrimEnd()+"\n"};
+            foreach(string path in Directory.GetFiles("Assets/StreamingAssets/Notices","*.txt").OrderBy(p=>p,StringComparer.Ordinal))
+            {
+                string name=Path.GetFileName(path);
+                // The CJK notice contains the full OFL; retain the same duplicate exclusions as PrepareNotices.py.
+                if(name=="SOURCES.txt"||name=="NotoSansKR-OFL.txt")continue;
+                parts.Add("\n--- "+name+" ---\n"+File.ReadAllText(path));
+            }
+            File.WriteAllText(output,string.Join("\n",parts));
+            AssetDatabase.ImportAsset(output);
+        }
+
         [Serializable] sealed class WebStrings { public WebLocale[] languages; }
         [Serializable] sealed class WebLocale { public string code, title, loading, error, canvasLabel; }
         public static void ExportWebStrings()
@@ -145,7 +164,7 @@ namespace StageGame.Editor
             foreach (string language in new[] { "ko", "en" })
             {
                 table.SetLanguage(language);
-                locales.Add(new WebLocale { code = language, title = table.Text("client_game_title"), loading = table.Text("web_loading"), error = table.Text("web_error"), canvasLabel = table.Text("web_canvas_label") });
+                locales.Add(new WebLocale { code = language, title = table.Text("game_title"), loading = table.Text("web_loading"), error = table.Text("web_error"), canvasLabel = table.Text("web_canvas_label") });
             }
             File.WriteAllText("Assets/WebGLTemplates/StageGamePortrait/ui-text.js", "// Generated from the Excel-exported string table. Do not edit.\nwindow.stageGameUiText = " + JsonUtility.ToJson(new WebStrings { languages = locales.ToArray() }) + ";\n");
             AssetDatabase.Refresh();

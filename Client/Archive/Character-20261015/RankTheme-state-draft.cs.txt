@@ -1,0 +1,30 @@
+using UnityEngine;
+
+namespace StageGame
+{
+    [System.Serializable]
+    public sealed class RankCharacterArt
+    {
+        public string rankKey;
+        public Sprite intro, playing, defeat;
+        public float introSeconds=3;
+        public bool Complete => intro!=null && playing!=null && defeat!=null;
+    }
+
+    public sealed class RankTheme : ScriptableObject
+    {
+        public Sprite panel, primary, currentCard, lockedCard;
+        public Sprite blackStone, whiteStone, blackWin, whiteWin, preview;
+        public Sprite aiAvatar, playerAvatar;
+        public Sprite close, pause, help, settings, left, right, check, locked, star, undo, retry;
+        public Sprite roundPrimary;
+        public Sprite[] rankHats;
+        public RankCharacterArt[] characters=System.Array.Empty<RankCharacterArt>();
+        public RankCharacterArt Character(string rankKey)
+        {
+            if(characters!=null)foreach(var character in characters)
+                if(character!=null && character.rankKey==rankKey && character.Complete)return character;
+            return null;
+        }
+    }
+}

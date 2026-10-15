@@ -1,0 +1,27 @@
+{
+  "title": "GoStoneSounds.ogg",
+  "author": "billhails2",
+  "sourcePage": "https://freesound.org/people/billhails2/sounds/588317/",
+  "downloadUrl": "https://cdn.freesound.org/previews/588/588317_12616419-hq.mp3",
+  "downloadKind": "Public HQ MP3 preview, not the login-required original OGG",
+  "license": "CC0 1.0 Universal",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "verifiedDate": "2026-10-15",
+  "recording": "Author describes five real Yunzi stone placements, recorded with a Marantz Professional Umpire microphone. Placements 1-3 use a wooden tabletop board with legs; 4-5 use a thin shin-kaya board.",
+  "selection": "Third placement, wooden tabletop board",
+  "sourceSha256": "b79a29c861d62f14a63551df9c615b075eeb9b51d2f2cf3f9cbe086b14ff2015",
+  "decodedSha256": "75ec3908800a06d6091b35619fb1e1736975bd74f4e0244557ca09ebdfadf926",
+  "processing": {
+    "startFrame": 122245,
+    "frames": 12348,
+    "sampleRate": 44100,
+    "gain": 0.9588326655562058,
+    "tailFadeFrames": 441,
+    "syntheticLayers": false
+  },
+  "asset": "Assets/StageGame/Audio/GoStonePlace.wav",
+  "assetSha256": "be3a2720691bff2ceb4f688356b1362d9c0a7bdca3d6dfe7a671b6523dea747c",
+  "durationSeconds": 0.28,
+  "peak": 0.649993896484375,
+  "rms": 0.07460684009183519
+}

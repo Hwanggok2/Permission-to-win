@@ -1,0 +1,204 @@
+{
+  "portraits": [
+    {
+      "characterId": "C01",
+      "file": "C01-uniform-v4.png",
+      "x": 2,
+      "y": 141,
+      "width": 510,
+      "height": 676,
+      "source": "Docs/Design/assets/characters-uniform-20261015-v4/C01-uniform-v4.png",
+      "sha256": "6f5e403375e158310f8d6f29c78ebf1e5fd5f9ea8015747385dfe4b62cac58b6"
+    },
+    {
+      "characterId": "C02",
+      "file": "C02-pixel-v6.png",
+      "x": 0,
+      "y": 163,
+      "width": 512,
+      "height": 651,
+      "source": "Docs/Design/assets/characters-pixel-20261015-v6/C02-pixel-v6.png",
+      "sha256": "0f6c78e8340bf0195479127e44474eda2f95c48e7c3e3c06d94b4a86aeed05a2"
+    },
+    {
+      "characterId": "C03",
+      "file": "C03-pixel-v6.png",
+      "x": 0,
+      "y": 143,
+      "width": 512,
+      "height": 656,
+      "source": "Docs/Design/assets/characters-pixel-20261015-v6/C03-pixel-v6.png",
+      "sha256": "66e8a5d7a748a14b786b2e7ab3eb33e3c804780ae3ee1c97e060037f06eede3c"
+    },
+    {
+      "characterId": "C04",
+      "file": "C04-pixel-v6.png",
+      "x": 0,
+      "y": 158,
+      "width": 512,
+      "height": 692,
+      "source": "Docs/Design/assets/characters-pixel-20261015-v6/C04-pixel-v6.png",
+      "sha256": "2720cdfb65bc9f407b8cf8693e35325178d76cda336aa9a87879f8a171ad439d"
+    },
+    {
+      "characterId": "C05",
+      "file": "C05-pixel-v5.png",
+      "x": 1,
+      "y": 167,
+      "width": 511,
+      "height": 658,
+      "source": "Docs/Design/assets/characters-pixel-20261015-v5/C05-pixel-v5.png",
+      "sha256": "ff40c3440d2dee55ead508f6720f423d679f899ed4596de1b8fd85155b2b73db"
+    },
+    {
+      "characterId": "C06",
+      "file": "C06-pixel-v5.png",
+      "x": 0,
+      "y": 142,
+      "width": 512,
+      "height": 662,
+      "source": "Docs/Design/assets/characters-pixel-20261015-v5/C06-pixel-v5.png",
+      "sha256": "2ad2bb94659169ef81808426a455f6cb2412c7709a9d180365f60b0308c7e498"
+    },
+    {
+      "characterId": "C07",
+      "file": "C07-pixel-v5.png",
+      "x": 0,
+      "y": 123,
+      "width": 512,
+      "height": 707,
+      "source": "Docs/Design/assets/characters-pixel-20261015-v5/C07-pixel-v5.png",
+      "sha256": "72cf000eb5900918b52fd42f28dddf384c7b86538b33cdea3c2dcbfbb361189d"
+    },
+    {
+      "characterId": "C08",
+      "file": "C08-pixel-v5.png",
+      "x": 0,
+      "y": 180,
+      "width": 512,
+      "height": 625,
+      "source": "Docs/Design/assets/characters-pixel-20261015-v5/C08-pixel-v5.png",
+      "sha256": "aff2d97cec193ecf09b49dc5b258e01d687e138df3222e9cef7aeb43a05cb196"
+    },
+    {
+      "characterId": "C09",
+      "file": "C09-pixel-v5.png",
+      "x": 0,
+      "y": 84,
+      "width": 512,
+      "height": 762,
+      "source": "Docs/Design/assets/characters-pixel-20261015-v5/C09-pixel-v5.png",
+      "sha256": "76e4753608cb25078abd7344157b0b7c4ba4acd0c9115216e09428f986b1785a"
+    },
+    {
+      "characterId": "C10",
+      "file": "C10-pixel-v5.png",
+      "x": 2,
+      "y": 169,
+      "width": 509,
+      "height": 685,
+      "source": "Docs/Design/assets/characters-pixel-20261015-v5/C10-pixel-v5.png",
+      "sha256": "d8c457097758f970e9f5994658e07a80f975863db44a9a137e985472839bba5d"
+    },
+    {
+      "characterId": "C11",
+      "file": "C11-pixel-v5.png",
+      "x": 0,
+      "y": 139,
+      "width": 512,
+      "height": 691,
+      "source": "Docs/Design/assets/characters-pixel-20261015-v5/C11-pixel-v5.png",
+      "sha256": "7f47268fd1bd4a3f0f60f96b384f47cab52b86258075bde36fdf1cccd06ec9f5"
+    },
+    {
+      "characterId": "C12",
+      "file": "C12-pixel-v5.png",
+      "x": 0,
+      "y": 134,
+      "width": 512,
+      "height": 700,
+      "source": "Docs/Design/assets/characters-pixel-20261015-v5/C12-pixel-v5.png",
+      "sha256": "268322da6fc0171b7671b03367deeabc64029aa248919f818c8738c2f8a42fe3"
+    },
+    {
+      "characterId": "C13",
+      "file": "C13-pixel-v5.png",
+      "x": 0,
+      "y": 133,
+      "width": 512,
+      "height": 694,
+      "source": "Docs/Design/assets/characters-pixel-20261015-v5/C13-pixel-v5.png",
+      "sha256": "8b90c8d90ad750893a167a7d52bc3615e03f36d28f482a3d47e63f5d0ee6c0d4"
+    },
+    {
+      "characterId": "C14",
+      "file": "C14-pixel-v5.png",
+      "x": 0,
+      "y": 120,
+      "width": 512,
+      "height": 741,
+      "source": "Docs/Design/assets/characters-pixel-20261015-v5/C14-pixel-v5.png",
+      "sha256": "b082bd16fe54c350a2e063efb25b0b1be73ac285796552b15d9897250dcf177a"
+    },
+    {
+      "characterId": "C15",
+      "file": "C15-pixel-v5.png",
+      "x": 0,
+      "y": 174,
+      "width": 512,
+      "height": 684,
+      "source": "Docs/Design/assets/characters-pixel-20261015-v5/C15-pixel-v5.png",
+      "sha256": "997434a9cee8ffbac42e8e75a41b84734410a778e2f30f37472c018c49ed332e"
+    },
+    {
+      "characterId": "C16",
+      "file": "C16-pixel-v5.png",
+      "x": 0,
+      "y": 133,
+      "width": 512,
+      "height": 704,
+      "source": "Docs/Design/assets/characters-pixel-20261015-v5/C16-pixel-v5.png",
+      "sha256": "aa396ec3dcae5f17c9a8c28438e46006252315536c616e7e3013012fd9614f97"
+    },
+    {
+      "characterId": "C17",
+      "file": "C17-pixel-v5.png",
+      "x": 2,
+      "y": 143,
+      "width": 510,
+      "height": 671,
+      "source": "Docs/Design/assets/characters-pixel-20261015-v5/C17-pixel-v5.png",
+      "sha256": "dffe573b2c0ba0f5d1390a309fcd7892659999be2e78e763adaf4989661e45e3"
+    },
+    {
+      "characterId": "C18",
+      "file": "C18-pixel-v5.png",
+      "x": 0,
+      "y": 135,
+      "width": 512,
+      "height": 699,
+      "source": "Docs/Design/assets/characters-pixel-20261015-v5/C18-pixel-v5.png",
+      "sha256": "84ad0a77859553f70277dde1ffc6afd44cd4be0829043ece283f9e0f8db453c6"
+    },
+    {
+      "characterId": "C19",
+      "file": "C19-pixel-v5.png",
+      "x": 0,
+      "y": 135,
+      "width": 512,
+      "height": 645,
+      "source": "Docs/Design/assets/characters-pixel-20261015-v5/C19-pixel-v5.png",
+      "sha256": "1ba2b1c0cf5f5e8e09bc2ed5afd48cf70c6ac2918abf005e6dbbd0b650686af6"
+    }
+  ],
+  "finalRecruit": {
+    "characterId": "C01",
+    "file": "C01Final-uniform-v4.png",
+    "x": 2,
+    "y": 140,
+    "width": 510,
+    "height": 673,
+    "source": "Docs/Design/assets/characters-uniform-20261015-v4/C01Final-uniform-v4.png",
+    "sha256": "291cd6ca2490e25cb0b253b62100d564e57d0dca820c2d74a288e97aa3f5eedc"
+  }
+}

@@ -280,6 +280,7 @@ namespace StageGame.Editor
         public static void Validate()
         {
             AssertTarget();
+            if (File.Exists(RankUiBuilder.AppRootPath)) { RankUiBuilder.Validate(); return; }
             var data = GameData.Load();
             var root = AssetDatabase.LoadAssetAtPath<GameObject>(Root + "Prefabs/AppRoot.prefab");
             if (root == null || !File.Exists(ScenePath)) throw new InvalidOperationException("Missing AppRoot or scene.");

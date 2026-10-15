@@ -34,5 +34,6 @@
   "webglDataSha256": "72BBB0E061B59AD7EE3F72EF8C34A76F60B7B4CAEDA67184A2EFEB8B51D53407",
   "finalEvidence": "Evidence/host-ui-verification.json; Evidence/verification.json; Evidence/soft-ui-assets.json",
   "rootBrowserReport": "Docs/Management/Evidence/host-ui-browser-20261014/README.md",
-  "subsequentWork": "Current chapter-map task is tracked in STAGE-MAP-REQUEST.json; this record describes the completed earlier host-only baseline."
+  "subsequentWork": "Current chapter-map task is tracked in STAGE-MAP-REQUEST.json; this record describes the completed earlier host-only baseline.",
+  "supersededByGraphicsRefresh": "Current graphics/result contract and evidence: GRAPHICS-REFRESH-REQUEST.json / Evidence/graphics-refresh-verification.json. Existing document is historical baseline."
 }

@@ -14,9 +14,9 @@ namespace StageGame.Tests
         public void LanguageLookupFormattingAndUnknownLocaleFollowContract()
         {
             var table = StringTable.Load();
-            Assert.AreEqual("네 개의 수", table.Text("client_game_title"));
+            Assert.AreEqual("4목", table.Text("game_title"));
             table.SetLanguage("en");
-            Assert.AreEqual("Four in a Row", table.Text("client_game_title"));
+            Assert.AreEqual("Four in a Row", table.Text("game_title"));
             Assert.AreEqual("CHAPTER 01 · STAGE 02", table.Format("stage_number", "01", "02"));
             Assert.AreEqual("한국어", table.Text("language_ko"));
             table.SetLanguage("unknown");
@@ -61,14 +61,15 @@ namespace StageGame.Tests
         [Test]
         public void EverySavedUiTextHasAKeyOrExplicitDynamicOwnerAndButtonsHaveTouchArea()
         {
-            var root = AssetDatabase.LoadAssetAtPath<GameObject>(Editor.ProjectBuilder.Root + "Prefabs/AppRoot.prefab");
-            var app = root.GetComponent<GameApp>();
+            var root = AssetDatabase.LoadAssetAtPath<GameObject>(Editor.RankUiBuilder.AppRootPath);
+            var app = root.GetComponent<RankGameApp>();
             var owned = new HashSet<Text>(app.localizedLabels.Select(item => item.target));
-            foreach (var field in typeof(GameApp).GetFields())
+            foreach (var field in typeof(RankGameApp).GetFields())
             {
                 if (field.FieldType == typeof(Text)) owned.Add((Text)field.GetValue(app));
                 if (field.FieldType == typeof(Text[])) owned.UnionWith((Text[])field.GetValue(app));
             }
+            foreach(var card in app.cards) { owned.Add(card.rank); owned.Add(card.number); owned.Add(card.stars); owned.Add(card.rating); }
             foreach (var text in root.GetComponentsInChildren<Text>(true))
             {
                 if (!text.gameObject.activeSelf || text.transform.parent.name == "CloseButton") continue;

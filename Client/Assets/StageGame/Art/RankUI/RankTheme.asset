@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc5dd5b1c522b649b72e5e173d49b19, type: 3}
+  m_Name: RankTheme
+  m_EditorClassIdentifier: StageGame.Runtime::StageGame.RankTheme
+  panel: {fileID: 21300000, guid: 2fff5071625e9874286aca790fefd313, type: 3}
+  primary: {fileID: 21300000, guid: 7be2a83a69ee3e143aa607d27f21c575, type: 3}
+  currentCard: {fileID: 21300000, guid: 8df29e70ad7a4ab47be9ff5a0d8349f2, type: 3}
+  lockedCard: {fileID: 21300000, guid: 15798a0e17076474f9567ef31b81b970, type: 3}
+  blackStone: {fileID: 21300000, guid: 8b939b7bdd05e2d42a0d68f2c6cdb253, type: 3}
+  whiteStone: {fileID: 21300000, guid: 518667c4aaf82e0479682c9d43f3e576, type: 3}
+  blackWin: {fileID: 21300000, guid: c87de265ffc02d643a3fcd2b6e453a99, type: 3}
+  whiteWin: {fileID: 21300000, guid: 256c84c0b3fca7d4c850bc6f97d81bde, type: 3}
+  preview: {fileID: 21300000, guid: eb30a7f5b20b7b8429bf1168f3c2da3b, type: 3}
+  aiAvatar: {fileID: 21300000, guid: a19ef5c8284bd994385da58531a989c1, type: 3}
+  playerAvatar: {fileID: 21300000, guid: 558e70361c6764a4c9cc45a509f7ddbe, type: 3}
+  close: {fileID: 21300000, guid: 5c6e2dda808ec7743843634ee7c609ef, type: 3}
+  pause: {fileID: 21300000, guid: 0d61344a6bd381e45b7a40bc6d6bc24b, type: 3}
+  help: {fileID: 21300000, guid: 84c6d98fd99564c469f086dfdba77e2b, type: 3}
+  settings: {fileID: 21300000, guid: cd2828f363b0f4140988b04d71b8b87d, type: 3}
+  left: {fileID: 21300000, guid: 6dd7d78c92b6ad6488ff28e17332b22b, type: 3}
+  right: {fileID: 21300000, guid: a54124d0c4180a34db81df681b593d94, type: 3}
+  check: {fileID: 21300000, guid: d1948a962549e824f8347f03dc835547, type: 3}
+  locked: {fileID: 21300000, guid: 41a74abf03e75b44b9f5503011d9cfbe, type: 3}
+  star: {fileID: 21300000, guid: 6245ef83712fb7b49b40d88af014661a, type: 3}
+  undo: {fileID: 21300000, guid: 01aaf0e010c822b42b8d223ec0f1d1e3, type: 3}
+  retry: {fileID: 21300000, guid: 01aaf0e010c822b42b8d223ec0f1d1e3, type: 3}
+  roundPrimary: {fileID: 21300000, guid: 762250d77ceb148498764be3324cc436, type: 3}
+  rankHats:
+  - {fileID: 21300000, guid: 77cfa71d52e731f4995cb9dda13b806d, type: 3}
+  - {fileID: 21300000, guid: 8c186b4178deec74db7b2e03bee650d8, type: 3}
+  - {fileID: 21300000, guid: da12e50a1e796aa4f915ca631af135d6, type: 3}
+  - {fileID: 21300000, guid: 368480fee0c2e8e42ad06c655cdea880, type: 3}
+  - {fileID: 21300000, guid: 575e3a6fe5eb1864b9fb2e8875cbda06, type: 3}
+  - {fileID: 21300000, guid: 3b2f85ebe6f9d174ea3d676edca80ecd, type: 3}
+  - {fileID: 21300000, guid: 7bd9793862b6dcc4484b835f0484e1f6, type: 3}
+  - {fileID: 21300000, guid: b180498517bc9644288299ef13c6ed04, type: 3}
+  - {fileID: 21300000, guid: 4fa62d61a293607439d8f54c68a99675, type: 3}
+  - {fileID: 21300000, guid: 06da7f546f30c2b4e8c2d03f9d6d7e40, type: 3}
+  barracks: {fileID: 21300000, guid: 0a7d95bdd48e93b40a1aa018a47fd82f, type: 3}
+  woodenBoard: {fileID: 21300000, guid: 75f906a286c370a448b71f218934bbf4, type: 3}
+  portraits:
+  - characterId: C01
+    intro: {fileID: -7822748177990576227, guid: fc70fa4b5437f354bab70d87a1c25a90, type: 3}
+    thinking: {fileID: 305961503722060012, guid: fc70fa4b5437f354bab70d87a1c25a90, type: 3}
+    defeat: {fileID: 100804651445603311, guid: fc70fa4b5437f354bab70d87a1c25a90, type: 3}
+  - characterId: C02
+    intro: {fileID: -8734148299612444479, guid: df923e1a1b2f409419e3d8500345347a, type: 3}
+    thinking: {fileID: -6223279633776069422, guid: df923e1a1b2f409419e3d8500345347a, type: 3}
+    defeat: {fileID: -7439943408336102376, guid: df923e1a1b2f409419e3d8500345347a, type: 3}
+  - characterId: C03
+    intro: {fileID: 2789846115468732091, guid: 893de3c89c9d152408953c1aa8eab9e1, type: 3}
+    thinking: {fileID: -8323729618934179103, guid: 893de3c89c9d152408953c1aa8eab9e1, type: 3}
+    defeat: {fileID: -3694768132547918690, guid: 893de3c89c9d152408953c1aa8eab9e1, type: 3}
+  - characterId: C04
+    intro: {fileID: -6285588269605269090, guid: 6b15483fcc48c0047868d75aa81222e5, type: 3}
+    thinking: {fileID: -1950845493800334766, guid: 6b15483fcc48c0047868d75aa81222e5, type: 3}
+    defeat: {fileID: 3123251067065155909, guid: 6b15483fcc48c0047868d75aa81222e5, type: 3}
+  - characterId: C05
+    intro: {fileID: 8970494274485399101, guid: 5b493cdab39c7d24eb0143095e0dcf5f, type: 3}
+    thinking: {fileID: 3500990205964971593, guid: 5b493cdab39c7d24eb0143095e0dcf5f, type: 3}
+    defeat: {fileID: -6361491295316333348, guid: 5b493cdab39c7d24eb0143095e0dcf5f, type: 3}
+  - characterId: C06
+    intro: {fileID: 8515958293800088682, guid: b7a65bfbe7804d245953853ca6b8d44d, type: 3}
+    thinking: {fileID: -7680357991829127454, guid: b7a65bfbe7804d245953853ca6b8d44d, type: 3}
+    defeat: {fileID: -9118169926987633428, guid: b7a65bfbe7804d245953853ca6b8d44d, type: 3}
+  - characterId: C07
+    intro: {fileID: -5482189933337439761, guid: 5a3d1732045520744b406e8e74912c8c, type: 3}
+    thinking: {fileID: 7359900526528934228, guid: 5a3d1732045520744b406e8e74912c8c, type: 3}
+    defeat: {fileID: -453716048729196447, guid: 5a3d1732045520744b406e8e74912c8c, type: 3}
+  - characterId: C08
+    intro: {fileID: 7134745059691417745, guid: 744d1d3a8f8fdfb47854e145d276780d, type: 3}
+    thinking: {fileID: 3365423449415337977, guid: 744d1d3a8f8fdfb47854e145d276780d, type: 3}
+    defeat: {fileID: 367422446528644433, guid: 744d1d3a8f8fdfb47854e145d276780d, type: 3}
+  - characterId: C09
+    intro: {fileID: -2256941328536126181, guid: bcd39acca2219d84db6350343f0ea867, type: 3}
+    thinking: {fileID: 3437910678834409194, guid: bcd39acca2219d84db6350343f0ea867, type: 3}
+    defeat: {fileID: -8399659736113425821, guid: bcd39acca2219d84db6350343f0ea867, type: 3}
+  - characterId: C10
+    intro: {fileID: -2651144201470020120, guid: 99b9ab5b9b3c0004295efab575eb7634, type: 3}
+    thinking: {fileID: -7962699141557980466, guid: 99b9ab5b9b3c0004295efab575eb7634, type: 3}
+    defeat: {fileID: 3715700231184435998, guid: 99b9ab5b9b3c0004295efab575eb7634, type: 3}
+  - characterId: C11
+    intro: {fileID: 4535374299878132138, guid: 7626bcef72f19a446ac4153f20309f30, type: 3}
+    thinking: {fileID: 552666783910760265, guid: 7626bcef72f19a446ac4153f20309f30, type: 3}
+    defeat: {fileID: 528161403399245108, guid: 7626bcef72f19a446ac4153f20309f30, type: 3}
+  - characterId: C12
+    intro: {fileID: -1299047935375585700, guid: 08eb5d4e50e7e1641bd183e883d5f06a, type: 3}
+    thinking: {fileID: 7120466355039061193, guid: 08eb5d4e50e7e1641bd183e883d5f06a, type: 3}
+    defeat: {fileID: 2050436401168682753, guid: 08eb5d4e50e7e1641bd183e883d5f06a, type: 3}
+  - characterId: C13
+    intro: {fileID: 6108689220333141341, guid: 68b2af5566567234c981fad345d9988e, type: 3}
+    thinking: {fileID: -5238196837225530641, guid: 68b2af5566567234c981fad345d9988e, type: 3}
+    defeat: {fileID: 6056035637851378198, guid: 68b2af5566567234c981fad345d9988e, type: 3}
+  - characterId: C14
+    intro: {fileID: -7688132900994157004, guid: fc37cff9aa2a2574e88bce2fadb56147, type: 3}
+    thinking: {fileID: -5816720624972631467, guid: fc37cff9aa2a2574e88bce2fadb56147, type: 3}
+    defeat: {fileID: -9089371035263313388, guid: fc37cff9aa2a2574e88bce2fadb56147, type: 3}
+  - characterId: C15
+    intro: {fileID: 8643232940150198014, guid: 78d45a5d8117d004c87a52db8307cb3d, type: 3}
+    thinking: {fileID: 1521913797417655046, guid: 78d45a5d8117d004c87a52db8307cb3d, type: 3}
+    defeat: {fileID: -7380052216032920726, guid: 78d45a5d8117d004c87a52db8307cb3d, type: 3}
+  - characterId: C16
+    intro: {fileID: -3530383986157784619, guid: 7ab713e77b38bcd448866f5162c6e584, type: 3}
+    thinking: {fileID: 4648415391211877289, guid: 7ab713e77b38bcd448866f5162c6e584, type: 3}
+    defeat: {fileID: -7592452111219345276, guid: 7ab713e77b38bcd448866f5162c6e584, type: 3}
+  - characterId: C17
+    intro: {fileID: 4368115968801899630, guid: f6aa7b1975b5ae8479e8b04d73643779, type: 3}
+    thinking: {fileID: -2580629948046691912, guid: f6aa7b1975b5ae8479e8b04d73643779, type: 3}
+    defeat: {fileID: 7383370354363124756, guid: f6aa7b1975b5ae8479e8b04d73643779, type: 3}
+  - characterId: C18
+    intro: {fileID: -8587223875906227884, guid: 017c2558c94dbcf45a124b4f9f7f372a, type: 3}
+    thinking: {fileID: -6475336213088374650, guid: 017c2558c94dbcf45a124b4f9f7f372a, type: 3}
+    defeat: {fileID: -6094219038350367551, guid: 017c2558c94dbcf45a124b4f9f7f372a, type: 3}
+  - characterId: C19
+    intro: {fileID: -7381129692931946000, guid: fa005637b620e62429417f92ea0bd86a, type: 3}
+    thinking: {fileID: 5072260763709650604, guid: fa005637b620e62429417f92ea0bd86a, type: 3}
+    defeat: {fileID: -1770653385917006942, guid: fa005637b620e62429417f92ea0bd86a, type: 3}
+  finalRecruit:
+    characterId: C01
+    intro: {fileID: -7822748177990576227, guid: e056b9bd65304cf44b66be8621a4cdec, type: 3}
+    thinking: {fileID: 305961503722060012, guid: e056b9bd65304cf44b66be8621a4cdec, type: 3}
+    defeat: {fileID: 100804651445603311, guid: e056b9bd65304cf44b66be8621a4cdec, type: 3}

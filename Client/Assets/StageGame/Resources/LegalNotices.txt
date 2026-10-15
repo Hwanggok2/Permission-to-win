@@ -6,6 +6,60 @@ Unity uGUI: Unity Companion License.
 Test tooling notices are retained for development distribution; they do not imply test assemblies ship in the player.
 
 
+--- Easy-Lemon-Attribution.txt ---
+"Easy Lemon" — Kevin MacLeod (incompetech.com).
+Source: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1200076
+Licensed under Creative Commons Attribution 4.0 International:
+https://creativecommons.org/licenses/by/4.0/
+Original MP3 unchanged; Unity import compression, low-volume loop playback for game use.
+
+
+--- Go-Stone-Recording.txt ---
+Go stone placement recording
+
+Source: GoStoneSounds.ogg by billhails2 (2021-09-26)
+https://freesound.org/people/billhails2/sounds/588317/
+License: CC0 1.0 Universal
+https://creativecommons.org/publicdomain/zero/1.0/
+
+The author recorded Yunzi Go stones being placed on wooden boards.
+StageGame uses the fifth placement on a shin-kaya board from the public HQ
+MP3 preview, trimmed to 0.300 seconds, with gain adjustment and a short tail fade. No synthesized
+sound, pitch shift, equalization or reverb was added to the stone recording.
+
+
+
+--- NUnit-ThirdPartyNotices.txt ---
+This package contains third-party software components governed by the license(s) indicated below:
+---------
+
+Component Name: Nunit 3.5
+\
+License Type: "MIT"
+\
+Copyright © 2018 Charlie Poole, Rob Prouse
+\
+https://nunit.org/
+\
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
 --- NotoSansCJKkr-OFL.txt ---
 Noto Sans CJK KR Regular — Version 2.004
 © 2014-2021 Adobe (http://www.adobe.com/).
@@ -108,37 +162,6 @@ INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
 DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
-
-
---- NUnit-ThirdPartyNotices.txt ---
-This package contains third-party software components governed by the license(s) indicated below:
----------
-
-Component Name: Nunit 3.5
-\
-License Type: "MIT"
-\
-Copyright © 2018 Charlie Poole, Rob Prouse
-\
-https://nunit.org/
-\
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
 
 
 --- Unity-Companion-License-Full.txt ---

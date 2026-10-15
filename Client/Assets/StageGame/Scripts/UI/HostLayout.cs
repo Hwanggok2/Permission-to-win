@@ -7,15 +7,15 @@ namespace StageGame
         // StageGame product safety allowance, NOT an official Toss navigation-bar height.
         public const float ReservedTopCss = 64;
         // Insets use CSS pixels, in left/top/right/bottom order. Screen.safeArea uses Unity pixels.
-        public static Rect ContentArea(Rect osSafe, Vector2Int screen, Vector2 cssViewport, Vector4 cssInsets, float controlsBottomCss = -1)
+        public static Rect ContentArea(Rect osSafe, Vector2Int screen, Vector2 cssViewport, Vector4 cssInsets, float controlsBottomCss = -1, bool hostActive = false)
         {
             if (screen.x <= 0 || screen.y <= 0 || !Finite(cssViewport.x) || !Finite(cssViewport.y) || cssViewport.x <= 0 || cssViewport.y <= 0) return osSafe;
             float sx = screen.x / cssViewport.x, sy = screen.y / cssViewport.y;
-            // Merge the two OS inset sources using max, then add the host allowance exactly once.
+            // Merge OS sources; only an explicit host/preview gets the extra controls allowance.
             float left = Mathf.Max(osSafe.xMin, Inset(cssInsets.x) * sx);
             float right = Mathf.Max(screen.x - osSafe.xMax, Inset(cssInsets.z) * sx);
             float bottom = Mathf.Max(osSafe.yMin, Inset(cssInsets.w) * sy);
-            float top = Mathf.Max(screen.y - osSafe.yMax, Inset(cssInsets.y) * sy) + ReservedTopCss * sy;
+            float top = Mathf.Max(screen.y - osSafe.yMax, Inset(cssInsets.y) * sy) + (hostActive ? ReservedTopCss * sy : 0);
             if (Finite(controlsBottomCss) && controlsBottomCss >= 0) top = Mathf.Max(top, (controlsBottomCss + 8) * sy);
             left = Mathf.Clamp(left, 0, screen.x); right = Mathf.Clamp(right, 0, screen.x - left);
             bottom = Mathf.Clamp(bottom, 0, screen.y); top = Mathf.Clamp(top, 0, screen.y - bottom);

@@ -13,6 +13,7 @@ namespace StageGame
         public int lastInterstitialMatch;
         public long lastInterstitialUtc;
         public bool soundEnabled = true;
+        public bool musicMuted; // Additive v1 setting: older saves default to music on.
         public string language = "ko";
         public List<string> processedMatchIds = new List<string>();
     }

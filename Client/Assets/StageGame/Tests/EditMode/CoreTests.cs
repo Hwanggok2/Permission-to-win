@@ -74,7 +74,7 @@ namespace StageGame.Tests
             foreach (var stage in data.Stages)
             {
                 var board = GameData.CreateBoard(stage); Assert.IsFalse(board.IsFinished);
-                using (var search = new AiSearch(board, stage.aiDepth, stage.aiNodeBudget, stage.aiRandomPermille, stage.id))
+                using (var search = new AiSearch(board, stage.aiDepth, stage.aiNodeBudget, stage.aiRandomPermille, stage.id, oversightPermille: stage.aiOversightPermille))
                 {
                     while (!search.Complete) search.Step(256);
                     Assert.IsTrue(board.CanDrop(search.ChosenColumn), "Stage " + stage.id);

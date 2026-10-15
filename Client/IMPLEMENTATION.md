@@ -1,8 +1,307 @@
+# WebGL 짧은 효과음·모바일 여백 수정 — 2026-10-16
+
+카카오톡 아이폰 웹뷰의 짧은 AAC 디코드 오류와 화면이 작고 아래로 밀리는 현상을 수정했다. 원본 TypingKey/ButtonClick을 보존하고 앞 2048샘플 보호 무음을 포함하는 0.2초 사본을 RankAppRoot에 직렬화했다. 실제 Unity WebGL AAC 결과에서 원본 대비 peak는 타이핑 99.06%, 버튼 99.83%, 에너지는 각각 99.58/99.66%다. 약 46ms의 소리 시작 지연을 수반한다. 돌 소리와 BGM은 유지했다.
+
+일반 웹뷰의 불필요한 호스트 64 CSS px를 제거하고 명시적 Toss inset은 유지했다. visualViewport 크기/offset을 컨테이너에 반영하며, CanvasScaler 이후 폭을 다시 제한하던 축소와 DPR별 터치 크기 계산을 고쳤다. 저장된 1080×1920 UI·아트·상하 여백 배치는 유지했다. 390×664 대국 제목 중심은 위에서110.92px, 판 폭337.36px, 최소 버튼49.29 CSS px이며 하단 버튼이 들어온다.
+
+최종 고유 Unity **23/23**, Node 어댑터 **10/10**, 한영 네 화면 크기와 DPR 1/1.5/2를 포함한 **27캡처**를 확인했다. 초기 PCM 동일성 검사 2실패와 수정 후 5/5 재검사는 증거에서 구분한다. 원본 음원/메타·아트·데이터·Core·씬·다른 프리팹·기존 빌드19파일은 그대로다. **Client 소스 동결·Unity 종료**, 새 WebGL 재빌드·배포·실제 아이폰 카카오톡 재검증은 총괄 후속 단계다. 자세한 인계와 한계: [HANDOFF.md](Evidence/web-audio-fsb-20261016/HANDOFF.md), `verification.json`, `source-freeze.json`, `codec-report.json`.
+
+---
+
+# 전 레이팅 공격·방어 곡선 조정 — 2026-10-16
+
+사용자의 전체 레이팅 점검 요청에 따라 200~1600의 15개 프로필을 같은 조건에서 비교했다. 200~400(첫 6단계)은 유지하고 500은 안전 후보 무작위 선택 75→70%로 조금 보강했다. 600~1100은 깊이 4·예산 4,000~16,000·무작위 60→16%, 1200~1600은 깊이 6·예산 30,000·무작위 10→0%다. 700 이상의 전술 누락 0%와 양쪽 위협 방어를 유지한다. 생산 AiSearch 코드·시간 제한·숨은 첫 수 보정은 변경하지 않았다. Excel E/F/G의 70개 셀을 수정하고 Generated/Resources에 반영했다. 자세한 15개 프로필과 수치는 `../GameData/DIFFICULTY-CONTRACT.md`에 있다.
+
+검증은 실제 생산 AI를 사용했다. 독립적인 승/패 탐색으로 생성한 48개 전술 문제와 96개 추가 문제에서 조정한 뒤, 최종 프로필에 새 48개 문제를 적용했다. 마지막 문제 집합의 공격/방어 평균 정답률은 Rating 200 **37.8/59.9%**, 800 **70.3/94.3%**, 1600 **100/100%**이며 전 레이팅에서 두 평균이 감소하지 않았다. 범위는 1/3/5수 공격과 2/4/6수 방어, 판마다 16개 seed(확률 0인 1600은 1회)다. 제한 깊이 문제의 정답률이며 실제 Elo·사람 승률·모든 판의 완벽한 판단을 뜻하지 않는다.
+
+고정 상대와 같은 시작판/seed/선후공 교대로 최종 15구간×128판 = **1,920판**을 검사했다. 대국 점수(무승부 0.5)는 200 0%, 700 23.8%, 800 35.9%, 1200 74.6%, 1600 81.6%였다. 1500의 82.8%보다 1600 표본이 약간 낮으므로 모든 100점 증가가 매번 승률 증가를 보장한다고 기록하지 않는다. 700~1600 모두에서 양쪽 선공·각 2개 seed·사람의 네 번째 착수까지 열거한 **101,374분기/15,980응수에 7/8수 조기 패배 0회**였다.
+
+최종 Unity **44/44**, 데이터 **46/46**, exporter `--check`, JSON 동기화·원본 Excel의 다른 값/서식/시트 기능 보존을 확인했다. Unity 검사는 모든 15구간의 즉시 공격/방어, 700~1600의 무작위 선택 시 양쪽 위협 방어, 최상위의 5수 공격과 6수 패배 회피를 다룬다. 실제 코루틴의 0.65초 기한에서도 두 강제 공격을 찾았으며 1초 응수 연출·일시정지·중단·힌트·턴 타이머를 확인했다. 중간 설정 검사 `unity-tests.xml`과 최종 `unity-final-tests.xml`을 구분한다.
+
+최종 인계: `Evidence/rating-curve-20261016/verification.json`, `source-freeze.json`, `unity-final-tests.xml`, `validation-tactics.json`, `final-secondary-comparison.json`, `final-matches.json`, `final-short-games.json`, `workbook-changes.json`. 기존 프리팹·아트·음원·씬·빌드를 유지하고 Unity 배치 종료 후 인계한다. 새 WebGL/Android 빌드·배포·기기/사람 플레이·커밋·푸시는 이 클라이언트 세션에서 하지 않았다. 총괄은 이 동결본을 기준으로 후속 빌드/테스트 배포와 공용 요약을 진행할 수 있다.
+
+---
+
+# 작은 일시정지 배경·7수 패배 원인 수정 (이하 이전 프로필의 기록)
+
+큰 `||`가 배경과 섞여 보인다는 요청에 따라 일시정지 버튼 안에 96×96 설계 단위의 밝은 정사각형 Backdrop을 저장했다. 기존 픽셀 패널 자산을 재사용하고 아이콘 크기 120×120, 버튼 전체 터치 영역, 아이콘의 누름/비활성 피드백은 유지했다. 픽셀 자산 자체는 수정하지 않았다. 변경 도구는 기존 `RankUiBuilder.ApplyMatchPauseIcon`이며 Match 프리팹에 반영된다.
+
+Rating 800의 7수 패배 원인은 1수 안전 후보 중 무작위 선택이 상대의 열린 3연속/양쪽 승리 위협을 허용하는 것이었다. `AiSearch`에서 깊이 2 이상 후보를 추가 검사해, 다음 상대 착수로 막을 수 없는 두 승리 열을 허용하는 수를 제외한다. 즉시 이길 수 있는 반격은 허용하고 모든 후보가 나쁘면 기존 합법 후보를 쓴다. 검사도 노드/Step 할당량과 중단을 지킨다. Excel에서 Rating 700 이상 전술 누락을 0으로 하고 Rating 700 평가 깊이를 1→2로 조정했다. Rating 200~600·나머지 깊이·노드 예산·안전 후보 무작위 비율·표시 Rating·시작판은 유지했다.
+
+정확히 보관한 직전 AI 코드로 7수 패배가 재현됐다. Rating 700/800, 플레이어/AI 선공, 각각 32개 seed에서 플레이어의 네 번째 착수까지 모든 합법 선택을 검사했다. Rating 800 플레이어 선공은 이전 조기 패배 경로 166개→0개(현재 89,599개 플레이어 분기), AI 선공은 2개→0개였다. Rating 700은 각각 207→0, 24→0이었다. 현재 합계 329,051개 플레이어 분기·51,136회 AI 응수에서 같은 범위의 7/8수 패배가 없었고 최대 탐색 노드는 112, 측정된 최장 탐색은 약 2.8ms였다. 이것은 빈 시작판의 제한된 초반 경로 검사이며 사람 승률이나 중후반 무패 보장이 아니다.
+
+관련 Unity **40/40**, 데이터 **46/46**, exporter `--check`, Generated/Resources 세 JSON 일치를 확인했다. 새 회귀 검사는 사진과 좌우 대칭 위협을 Rating 700/800/900 및 무작위 선택 100%에서 반복하고, 기본 승리/방어·노드/프레임 예산·첫 AI 응수·턴 타이머·음악/클릭·한영 1080/390/320 폭을 기존 검사로 확인했다. 1080×1920·390×844 화면에서 작은 배경이 `||`를 감싸고 전체 버튼 중앙/양옆 여백 클릭이 유지된다. Excel 변경은 16개 셀뿐이며 다른 값·서식·시트 기능은 보존했다.
+
+근거: `Evidence/pause-square-20261015/unity-apply.log`, `Evidence/fork-defense-20261015/verification.json`, `unity-tests.xml`, `short-game-comparison.json`, `workbook-changes.json`, `source-freeze.json`, `screens/`. 재현 도구: `Tools/ShortGameAudit.cs`, `Evidence/fork-defense-20261015/CompareShortGames.ps1`. 아트·음원·씬 및 기존 빌드 17파일은 유지했다. 새 빌드·사람 플레이·기기 검증·커밋·푸시는 하지 않았다. 총괄은 현재 방어 프로필과 양쪽 위협 검사 정책을 공용 요약에 반영해야 한다.
+
+---
+
+# 승리 문구·일시정지 아이콘·기본 방어 보강 — 2026-10-15 (아래 방어 수치는 이전 상태)
+
+일반 승리 결과를 기존 Excel `result_win` 키의 `승리!` / `You win!`로 연결했다. 최종 대회 우승 문구는 유지한다. 인게임 일시정지 아이콘은 60×60→120×120 설계 단위로 키우고 배경 이미지를 투명하게 저장했다. 버튼 전체의 터치 영역은 유지하며 누름/비활성 피드백은 아이콘에 적용한다. `RankUiBuilder.ApplyMatchPauseIcon`으로 Match 프리팹을 저장했고 전체 UI/픽셀 헤더 재생성에도 같은 구성을 반영한다. 공통 버튼·다른 화면은 변경하지 않았다.
+
+사용자가 Rating 700에서도 방어 없이 세로 연결로 끝나고 앞 단계에서도 비슷한 일이 잦다고 알려, Excel의 전술 검사 생략 확률을 낮췄다. Rating 200은 65%→40%, Rating 700은 25%→5%이며 이후 단계도 점차 낮춘다. 탐색 깊이·예산·안전 후보 선택 비율·표시 Rating·시작판은 유지한다. 변경 셀은 Stages T5:T32의 28개이고 원본의 다른 데이터·서식·시트 기능을 보존했다. 현재 전체 표는 `../GameData/DIFFICULTY-CONTRACT.md`를 따른다.
+
+검증: 관련 Unity **7/7**, 그중 실제 UI 레이캐스트 검증을 보강한 화면 검사 **1/1 재실행 통과**, 데이터 **46/46**, exporter `--check`와 Generated/Resources 세 JSON 일치. 한영 1080×1920·390×844·320×568에서 일시정지 버튼 중앙과 양옆 투명 여백의 클릭 대상을 검사하고 화면 캡처를 확인했다. 1080×1920에서는 전체 동작 버튼이 화면 안에 들어온다. Unity 첫 실행은 샌드박스의 라이선스 IPC에 막혀 종료했고 정상 사용자 권한의 재실행으로 저장·검증했다.
+
+기존 고정 반응형 봇으로 전후 30단계×128판씩 총 **7,680판** 비교했다. 가로/세로 단일 위협의 256개 seed 검사에서 Rating 700의 방어는 각각 204→245회, Rating 200은 117→170회·118→171회로 증가했다. 2단계 봇 플레이어 승리는 113/128→91/128이었다. 전체 봇 대국의 AI 승수는 26단계 증가·3단계 동일·25단계에서 115→111로 소폭 감소했다. 표본 결과를 사람 승률이나 실측 Elo로 해석하지 않는다.
+
+근거: `Evidence/turn-timer-rating-20261015/defense-ui/verification.json`, `unity-tests.xml`, `unity-pointer-tests.xml`, `defense-comparison.json`, `workbook-changes.json`, `source-freeze.json`, `screens/`. 기존 아트·음원·씬 및 빌드 17파일은 보존했다. 사람 플레이·새 Android/WebGL 빌드·기기 검증·커밋·푸시는 하지 않았다. 총괄은 최신 방어 프로필을 공용 요약에 반영해야 한다.
+
+---
+
+# 레이팅 문구 후속 수정 — 2026-10-15
+
+사용자 요청에 따라 Excel Strings `ai_rating`의 한국어·영어를 모두 `Rating {0}`으로 통일했다. 로비 카드·선택 상세창·인게임은 동일 키를 사용하므로 함께 반영된다. 원본 C427/E427 두 셀만 수정하고 Generated/Resources 문자열을 동기화했다. 나머지 값·서식·시트 기능과 단계/광고 JSON은 유지했다.
+
+검증: 데이터 검사 46/46, exporter `--check`, Generated/Resources 세 JSON 바이트 일치 확인. 문구만 변경해 Unity 검사는 재실행하지 않았다. 근거: `Evidence/rating-display-speech-20261015/rating-label/workbook-changes.json`, `verification.json`. 아래 Unity 검증은 이 문구 수정 이전의 기능 검증 기록이다.
+
+---
+
+# 레이팅 표시·판 상단 시간 바·타이핑음 보강 — 2026-10-15
+
+로비의 30개 스테이지 카드, 선택 상세창 제목, 인게임 상대 패널에 Excel `ai_rating` 키로 AI 레이팅을 표시한다. 현재 선택한 단계의 `aiRating`을 사용하며 한국어/영어 전환 시 함께 갱신한다. AI 밸런스 수치는 바꾸지 않았다. 레이팅 표시만 Strings에 추가해 현재 423개이며, Excel 기존 값·서식·행/열 크기·고정창·유효성은 보존했다.
+
+사용자가 지정한 판 상단의 나무 여백으로 제한 시간 표시를 옮겼다. 작은 남은 초를 가운데 위에 놓고, 그 아래에 남은 시간/30 비율의 가로 슬라이더를 저장했다. 슬라이더는 읽기 전용이며 5초 이하에서는 숫자와 채움이 붉게 변한다. 기존 상단의 시간 박스는 이동했고, 판의 선/돌/열 입력 위치와 1080×1920 하단 버튼 배치는 보존했다. 30초 자동 착수와 일시정지·확인창·힌트·백그라운드의 시간 정지 규칙은 유지한다.
+
+타이핑음은 버튼 클릭을 0.18로 재생하던 방식에서 전용 `TypingKey.wav`를 0.75로 재생하는 방식으로 바꿨다. 35ms의 짧은 키 타격음을 프로젝트 도구로 생성했고 다음 40ms 글자 출력 전에 끝나게 했다. BGM과 실제 돌 녹음, 기존 버튼 클릭 파일은 변경하지 않았다. 글자별 효과음 ON/OFF, 대사 정지/재개, 화면 이동 취소도 유지한다. 파일: `Assets/StageGame/Audio/TypingKey.wav`, SHA-256 `948CA89DDAD1278D61F9D2897BB009B669EF8F5685D4D8C6478A9C42E5EF3DC0`.
+
+검증: 최초 Unity 전체 **114개 중 113개 통과**. 새 카드 레이팅의 명시적 동적 텍스트 소유자를 기존 번역 검사 목록에 추가한 뒤 번역 검사 **9/9**를 통과했다. 최신 합산 커버리지는 **114/114**, 최종 실패·건너뜀 0이다. 데이터 검사 **46/46**, exporter `--check`, Generated/Resources 세 JSON 해시 일치도 통과했다. 한영 1080×1920·390×844·320×568의 로비/선택창/인게임 렌더링을 확인했고 긴 상대 이름과 레이팅이 겹치지 않는다. 자동 검사는 시간 바가 판 내부·격자 위에 머무르고 텍스트가 바 위에 있는 것도 확인한다.
+
+Unity AudioListener 측정에서 타이핑 RMS는 0.00521→0.03358(약 6.44배), peak는 0.02888→0.26326이었다. 음악+타이핑 RMS 0.04307, 음악만 0.02755이며 음악/타이핑/착수 동시 출력 peak는 0.49294로 클리핑 범위 아래다. 이는 엔진 출력 측정이며 사람의 청취 평가를 의미하지 않는다. 기존 아트·음원·씬·빌드 17파일은 보존했고 새 빌드·브라우저/기기 검증·커밋·푸시는 수행하지 않았다.
+
+근거: `Evidence/rating-display-speech-20261015/verification.json`, `typing-listener-output.json`, `test-coverage.json`, `source-freeze.json`. 저장 적용: `RankUiBuilder.ApplyRatingsAndTypingSound`. 도구: `Tools/SynthesizeGameAudio.py`, `Tools/VerifyRatingLabelWorkbook.py`, `Tools/VerifyRatingDisplaySpeech.py`. 총괄은 공용 요약에서 타이머 위치와 표시 레이팅을 갱신해야 한다.
+
+---
+
+# 30초 턴 제한·AI 레이팅 완화 — 2026-10-15 (타이머 위치는 위 후속 기록 적용)
+
+사용자 선택에 따라 매 플레이어 턴에 30초를 주고, 시간이 끝나면 선택한 합법 열에 자동 착수한다. 선택이 없거나 만열이면 중앙부터 빈 열을 고른다. 기존 착수 함수로 연결해 돌 소리·승리 판정·AI 응수·되돌리기·진행 저장을 공유한다. 일시정지·확인창·설정/도움말·힌트/광고·앱 포커스 이탈/백그라운드에서는 시간이 멈춘다. 선택·언어 전환·확인 취소·힌트는 남은 시간을 유지하고, 새 턴·되돌리기·재시작은 30초로 시작한다. `RankUiBuilder.ApplyTurnTimer`가 Match와 RankAppRoot에 타이머 및 직렬화 참조를 저장한다. 1080×1920에서 기존 상단 여백과 전체 버튼 배치는 유지한다.
+
+AI는 Excel의 **내부 레이팅 200~1600, 15구간**으로 나눴다. 같은 레이팅은 같은 깊이·예산·안전 후보 무작위 비율·전술 누락 확률을 사용한다. 1~2단계는 200으로 승리/방어를 놓치기도 하는 입문 설정이다. 처음 5번의 AI 응수에 깊이 4 이상을 강제하던 보정은 게임 경로에서 제거했다. 재도전마다 seed를 바꾸며 힌트에는 실수 확률을 적용하지 않는다. 사람 대전에서 측정한 Elo나 사용자 성적에 따라 바뀌는 보정은 아니다. 전체 표와 신규 JSON `aiRating`/`aiOversightPermille` 계약은 `../GameData/DIFFICULTY-CONTRACT.md`를 따른다.
+
+검증: Unity 전체 110개 중 최초 108개 통과, 이전 AI의 필승 착수/고정 재시작을 전제한 2개 검사 조건을 새 정책에 맞게 수정한 뒤 관련 4개 재검사를 모두 통과했다. 최신 결과를 합친 커버리지는 **110/110**, 최종 실패·건너뜀 0이다. 자동 착수 경계/만열/승리, 턴 초기화, 모달/힌트/포커스 정지, 실시간 타이머, 음악 유지, 레이팅별 전술 정확도, 저장 프리팹과 한영 1080/390/320 폭을 검사했다. 실제 Unity Play 렌더링을 눈으로 확인했고 1080×1920에서 하단 버튼이 잘리지 않는다. 데이터 검사 **46/46**, exporter `--check`, 세 JSON 원본/Resources 해시 일치, 기존 Excel 서식·행/열 크기·고정창·유효성 보존 검사를 통과했다.
+
+고정 반응형 봇으로 실제 이전 초반 보정까지 포함해 **15,360판**을 비교했으며 30개 단계 모두 플레이어 측 승리가 증가했다. 2단계는 전후 256판씩 **43승→216승**이다. 이 결과는 사람 승률이나 실측 Elo를 의미하지 않는다. 인간 플레이·새 Android/WebGL 빌드·기기/브라우저 검사는 하지 않았다. 기존 빌드 파일 17개와 모든 아트/오디오/씬 바이트를 보존했고 커밋·푸시는 하지 않았다.
+
+근거: `Evidence/turn-timer-rating-20261015/verification.json`, `test-coverage.json`, `bot-comparison.json`, `source-freeze.json`. 재현 도구: `Tools/CompareRatedDifficulty.ps1`, `Tools/VerifyRatingWorkbook.py`, `Tools/VerifyTurnTimerRating.py`. 이전 결과와 최종 재검사 XML을 함께 보관한다. 총괄은 Overview/Docs Management의 게임 규칙·JSON 계약을 갱신해야 한다.
+
+---
+
+# 묵직한 실제 착수음·대사 타이핑 — 2026-10-15
+
+실제 운자 바둑돌 녹음의 다섯 번째 착수(신카야 판)를 0.300초로 추출해 `GoStonePlaceHeavy.wav`로 저장하고 RankAppRoot의 moveSound에 연결했다. 이전 착수음과 최대 진폭은 동일한 약 0.65다. 저중음(100~1500Hz) 에너지 비중은 4.74%에서 39.24%, 에너지 중심 주파수는 3213Hz에서 2258Hz로 달라져 더 낮은 판 울림이 있는 샘플을 선택했다. 이는 신호 분석이며 사람 청취 평가가 아니다. 피치 변경·EQ·합성음을 추가하지 않았으며 이전 착수음도 보존했다. CC0 원본·편집 구간·해시는 `Archive/Audio/RecordedStone/heavy-provenance.json`, 비교 근거는 `Evidence/heavy-stone-comparison.json`에 있다.
+
+대국 시작과 승리·패배 시 상대 대사는 기존 Excel 문자열을 한 글자씩 표시한다. 한 글자 간격은 최소 0.04초이며 공백을 제외한 글자마다 기존 UI 클릭음을 배율 0.18로 재생한다. 보이지 않는 뒷부분도 투명 텍스트로 배치해 줄바꿈과 자동 글자 크기가 출력 중 바뀌지 않는다. 한글 완성형, 결합 문자, 서로게이트 문자를 텍스트 요소 단위로 처리한다. 동일 대사를 새로고침하면 진행 위치를 유지하고 언어 변경·재시작·다음 단계·결과 대사에서는 새 문장으로 시작한다. 로비 이동·루트 비활성화 때 이전 대사를 취소한다.
+
+일시정지·재시작/나가기 확인창·앱 백그라운드·포커스 이탈·광고 대기 중에는 타이핑 진행과 새 타이핑 소리를 멈춘다. 음악은 기존 정책대로 게임 내 확인창에서도 계속 재생한다. 효과음 OFF에서는 글자 표시가 계속되며 소리만 나지 않는다. 런타임 UI 트리 생성이나 데이터 원문 변경은 없다.
+
+검증: Unity 전체 104개 중 최초 101개 통과·3개 실패 후, 배치 검사에서 대사 완료를 기다릴 때 앱 포커스를 명시하도록 검사 도우미를 보정했다. 실패 3개와 신규 대사 4개를 재실행해 7/7이 통과했다. 총 104개 검사 케이스 모두 마지막 실행 결과가 통과이며, 전체를 다시 한 번 실행한 결과로 표기하지 않는다. 최초 캡처의 일회성 NullReferenceException은 해당 검사 코드를 바꾸지 않은 재실행에서 해소됐다. 한·영 부분/완료 캡처 4개를 생성하고 대표 2개를 직접 확인했다. 결과: `Evidence/heavy-stone-speech-tests.xml`, `Evidence/heavy-stone-speech-retest.xml`, `Evidence/heavy-stone-speech-verification.json`. 기존 빌드 17개는 해시가 같다. 사람 청취·새 빌드·브라우저·실기기 확인과 커밋·푸시는 수행하지 않았다.
+
+---
+
+# 실제 바둑돌 녹음·버튼 효과음·확인창 음악 유지 — 2026-10-15
+
+사용자가 합성 착수음을 거부해 billhails2의 [GoStoneSounds.ogg](https://freesound.org/people/billhails2/sounds/588317/) 실제 녹음(CC0 1.0)으로 교체했다. 운자 바둑돌을 나무 바둑판에 놓은 세 번째 착수를 공개 HQ MP3에서 추출했다. 0.280초 자르기, 일정한 음량 조정, 끝 10ms 페이드만 적용했으며 합성음·피치 변경·EQ·리버브는 추가하지 않았다. 최종 파일은 `Assets/StageGame/Audio/GoStonePlace.wav`이며 저장된 RankAppRoot의 moveSound가 직접 참조한다. 거부된 합성 착수음은 Assets 밖 Archive로 옮겼고 기존 Move.wav와 사용자 음원은 보존했다. 출처·CC0·가공 내역은 게임 내 라이선스 고지에도 포함했다.
+
+로비↔대국뿐 아니라 일시정지·다시하기·로비 나가기 확인창에서도 같은 배경음악이 끊김 없이 이어진다. 게임 조작/AI 일시정지와 음악 일시정지를 분리했고 앱 백그라운드·포커스 이탈·광고 대기·사용자 음악 OFF 동작은 유지한다. 저장 프리팹의 모든 버튼에 직렬화된 참조로 짧은 클릭음을 연결했다. 효과음 OFF와 비활성 버튼에서는 소리가 나지 않으며, 설정을 다시 켤 때에도 클릭음은 한 번만 나온다.
+
+음악·버튼 변경 후 전체 Unity 검사 100/100이 통과했다. 이는 실제 녹음 교체 전 결과다. 실제 녹음으로 교체한 최종 상태에서는 음악·효과음 관련 **11/11 통과, 실패·건너뜀 0**이다. 최종 AudioListener 출력으로 착수/버튼 재생, OFF 무음, 중복 클릭 방지, 확인창의 음악 시간 증가와 게임 조작 정지, 광고/앱 전환, 저장 참조를 확인했다. 준비 도구를 두 번 실행해 최종 WAV가 같은 바이트로 재생성됨도 확인했다. 기존 빌드 파일 17개는 그대로이며 사람 청취·새 빌드·브라우저·실기기 검증은 수행하지 않았다.
+
+근거: `Evidence/stone-ui-sounds-verification.json`, `Evidence/recorded-stone-tests.xml`, `Evidence/recorded-stone-listener-output.json`. 원음·해시·정확한 편집 구간: `Archive/Audio/RecordedStone/provenance.json`. 재현: Unity `RecordedStoneAudioBuilder.DecodeSource` → `Tools/PrepareRecordedStone.py` → `RankUiBuilder.ApplySoundEffects`. 커밋·푸시는 하지 않았다.
+
+---
+
+# 로비·대국 배경음악 연속 재생 — 2026-10-15 (이전 기록, 확인창 정지는 위 기록에서 해제됨)
+
+로비에서도 Easy Lemon이 재생되도록 변경했다. 로비↔대국 이동과 결과 화면에서 로비 복귀 시 같은 저장 AudioSource와 현재 재생 위치를 유지한다. 음악 음량 0.30과 착수음 1.00은 유지하고, OFF 설정·일시정지/확인창·앱 백그라운드/포커스 이탈·광고 대기 동작도 유지한다. 설정·도움말·스테이지 상세를 보는 동안 로비 음악이 이어진다.
+
+Unity 음악 관련 검사 **8/8 통과, 실패·건너뜀 0**. 곡의 12초 지점부터 로비/대국을 3회 왕복하며 재생 위치가 초기화되지 않고 계속 증가함을 검사했고, 결과→확인→로비 복귀, 양쪽 화면의 OFF 유지와 로비에서의 백그라운드 복귀도 검증했다. 프리팹·음원·데이터·기존 빌드 파일은 변경하지 않았다. 사람 청취와 새 빌드/브라우저/실기기 검증은 하지 않았다. 근거: `Evidence/continuous-music-verification.json`, `Evidence/continuous-music-tests.xml`.
+
+---
+
+# Unity Play 음악·착수음 음량 보정 — 2026-10-15 (이전 기록, 로비 정지는 위 연속 재생으로 대체)
+
+사용자가 Unity Play에서 음악·착수음이 잘 들리지 않는다고 알려 음량을 보정했다. 음악 AudioSource는 0.12→0.30, 착수음 PlayOneShot 배율은 0.30→1.00으로 변경했다. 원본 MP3/WAV와 사용자 ON/OFF 저장 설정은 그대로다. `RankUiBuilder.ApplyAudioLevels`가 현재 RankAppRoot 프리팹에 음량만 저장하며 전체 생성의 음악 기본값도 0.30으로 맞췄다.
+
+검사 시점 Unity 배치에서 에디터 전체 음소거는 false, AudioListener 음량은 1이었다. 실제 사람이 듣던 순간의 OS 출력 장치·음량을 확인한 것은 아니다. 최종 AudioListener 출력 샘플을 측정한 음악 RMS는 0.01005→0.02540(약 2.53배), 착수음 peak는 0.03794→0.12645(약 3.33배)였다. 두 설정 OFF 시 출력은 0이었다. 관련 Unity 검사 **7/7 통과**이며 아래의 전체 95개 결과는 음량 보정 이전 기록이다. 음악은 기존 요청대로 대국 중에 재생하고 로비에서는 멈춘다.
+
+음원·픽셀 자산·다른 프리팹·데이터와 기존 빌드 17개를 보존했다. 사람 청취, 웹/Android 빌드와 실기기 검증은 수행하지 않았다. 근거: `Evidence/audio-levels-20261015/verification.json`, 출력 측정: `Evidence/audio-levels-20261015/listener-output.json`.
+
+---
+
+# Easy Lemon 배경음악 연결 — 2026-10-15 (최초 연결 기록, 현재 음량은 위 보정 적용)
+
+확정된 Easy Lemon 원본 MP3를 `Assets/StageGame/Audio/EasyLemon.mp3`로 바이트 변경 없이 복사했다. 저장된 RankAppRoot의 별도 AudioSource가 음량 0.12·2D·반복 재생을 담당한다. 대국에서 재생하고 로비에서는 정지한다. 일시정지/재시작·나가기 확인창, 앱 백그라운드·포커스 이탈, 보상형·전면 광고 대기 중에는 일시 중지하며 해제 시 같은 위치에서 재개한다. 광고 실패·미충전·취소·시간 초과 뒤에도 정상 복귀하고 사용자의 OFF 설정은 유지한다.
+
+저장된 Settings 프리팹에 효과음과 독립적인 배경음악 버튼을 추가했다. `ProgressData.musicMuted`는 기존 v1 저장에서 기본 false이므로 기본 켜짐이며, OFF 설정은 재실행 후에도 복원된다. 표시 문구는 총괄이 추가·export한 Excel `settings_music_on`/`settings_music_off` 두 키를 사용한다. 이 작업에서는 GameData 원본이나 Resources/GameData JSON을 수정하지 않았다. 현재 문자열은 420개다.
+
+`StreamingAssets/Notices/Easy-Lemon-Attribution.txt`에 제공된 저작자·원본 URL·CC BY 4.0·가공 안내를 추가하고 `LocalizationBuilder.ExportLegalNotices`로 기존 라이선스 화면용 텍스트를 재생성했다. 기존 고지 파일은 그대로 유지했다. `RankUiBuilder.ApplyBackgroundMusic`는 Settings/RankAppRoot만 좁게 저장하며 픽셀 그림과 대국 화면 프리팹은 기존 해시를 유지한다. 런타임 UI 생성은 없다.
+
+Unity 에디터 전체 **95/95 통과, 실패·건너뜀 0**. 그중 신규 음악 검사 6개가 실제 AudioSource의 재생 상태·정지된 시간·재개 후 시간 증가, 설정/언어 복원, 광고 전후 동작, 저장 참조, 원본 MP3 해시와 전체 라이선스 포함을 검증했다. 설정 ON/OFF 한영 1080/390/320 및 고지 화면의 네이티브 캡처 13개를 생성하고 대표 화면을 직접 확인했다.
+
+**사람 청취, 웹·실기기 검증, WebGL/Android 빌드, 커밋·푸시는 실행하지 않았다.** 기존 빌드 파일 17개는 동일하다. 실제 기기의 체감 음량·루프 경계와 브라우저 오디오 시작 조건은 별도 확인 대상이다. 근거: `Evidence/easy-lemon-verification.json`, `Evidence/easy-lemon-tests.xml`, `Evidence/easy-lemon-source-freeze.json`. 변경 목록과 인계: `BGM-IMPLEMENTATION.json`.
+
+---
+
+# 초반 난이도 완화 — 2026-10-15
+
+2단계부터 너무 어렵다는 피드백을 반영했다. 2·3·5·6·7·8단계는 빈 판·플레이어 선공으로 바꿨고 유리한 연습 국면 4·9·10단계는 유지했다. 초반 10단계 AI는 깊이 1, 무작위 안전 수 선택 비율 85%→45%로 조정했다. 중반은 깊이 상승을 늦췄으며 25~30단계 대회에서 깊이 5~6으로 올라간다. 즉시 승리·방어 처리와 게임 규칙은 그대로다.
+
+Excel 원본에서 exporter를 거쳐 Resources에 적용했다. 데이터 45/45, Unity 코어 25/25, exporter `--check` 및 3개 JSON 일치 검사가 통과했다. 실제 AI를 사용한 5,120판의 이전/이후 비교에서 초반 모든 단계의 단순 봇 승리가 유지 또는 증가했다. 사람 플레이 밸런스 확정이나 새 빌드 검증을 뜻하지 않는다. [수치 계약](../GameData/DIFFICULTY-CONTRACT.md), [검증 기록](Evidence/difficulty-20261015/verification.json)을 따른다.
+
+---
+
+# 대국 제목·일시정지·상대 정보 배치 수정 — 2026-10-15
+
+사용자 화면 피드백을 반영했다. 대국 제목 배경을 숨기고 글자를 60→78로 키웠으며 중심을 4.5단위 위로 옮겼다. 제목과 일시정지 버튼은 높이 156, 같은 상하단 좌표로 맞췄다. 이름·계급·난이도 패널은 630×270→600×216으로 줄여 제목 행과 말풍선 사이에 각각 7.5단위 여백을 확보했다. 수치는 저장 프리팹의 1080 기준이며 화면에 맞춰 함께 축소된다. 기존 상단 제외 영역과 하단 조작은 유지한다.
+
+`PixelArtBuilder.ApplyMatchHeader`로 저장 프리팹에 적용했다. Unity 레이아웃 검사 **4/4 통과** 및 320/390/1080 한영 캡처를 확인했다. 전체 82개 검사를 이번에 다시 실행한 것은 아니다. 그림 원본·런타임 게임 코드·GameData는 직전 통합 해시와 동일하다. 새 빌드·브라우저·실기기 검증은 수행하지 않았다.
+
+근거: [검증 기록](Evidence/pixel-header-20261015/verification.json), [검사 XML](Evidence/pixel-header-20261015/layout-tests.xml), [1080 적용 화면](Evidence/pixel-header-20261015/screens/ko-1080-plain-match.png). 아래는 이전 통합 검증 기록이다.
+
+---
+
+# 픽셀 캐릭터·목재 게임판·24+6 서사 적용 — 2026-10-15
+
+사용자가 이 기획 세션의 Client/GameData 수정과 Unity 적용·검증을 승인했다. 기존 저장 프리팹에 19명·57상태, 내무반 배경, 목재 보드, 픽셀 흑백 돌과 올리브/크림 버튼을 연결했다. 하사는 세 자세 모두 아래 방향 V인 cap-v2를 사용한다. 원본 이미지와 기존 C06 복사본은 보존했다. 런타임 UI 트리 조립은 추가하지 않았다.
+
+부대 대국 24단계 뒤 병사 대회 64강~결승 6단계를 배치했다. 인물별 이름·보직·군종·대사는 Excel ko/en 418개 문자열과 characterId로 연결한다. 24승리에서 사단장이 대회를 알리고 30승리에서 우승을 표시한다. 기존 269문구·시작판·AI·별점·저장 의미를 유지한다.
+
+최종 Unity 전체 **82/82**, 데이터 **45/45**, exporter `--check`와 세 JSON 일치 검사가 통과했다. 320/390/1080 한영 렌더, 44px 입력 영역과 1080 전체 화면 맞춤을 확인했다. 말풍선을 인물 오른쪽에 배치하고 차례 안내는 게임판 안의 글자로 유지했다. 320은 기존 스크롤을 사용한다. 새 WebGL/Android 빌드·브라우저·실기기 검증은 수행하지 않았다.
+
+검증: [verification.json](Evidence/pixel-art-20261015/verification.json), [Unity XML](Evidence/pixel-art-20261015/unity-tests-verified.xml), [현재 소스 해시](Evidence/pixel-art-20261015/source-freeze.json), [하사 화면](Evidence/pixel-art-20261015/screens/ko-stage-6.png). 현재 제작 원본과 총괄 문서 인계는 [PIXEL-INTEGRATION.md](../Docs/Design/PIXEL-INTEGRATION.md)를 따른다. 아래는 이전 이력이다.
+
+---
+
+# 1080×1920 인게임 높이 수정 — 2026-10-15
+
+사용자가 지적한 하단 잘림을 수정했다. 상단 216단위 여백을 유지하고 하단 48단위를 확보한 뒤, 저장된 대국 화면 전체를 남은 높이에 맞게 비례 조정한다. 일반 화면의 되돌리기·놓기·다시하기와 결과 화면의 다음 단계·다시하기·로비가 1080×1920에서 스크롤 없이 모두 보인다. 일반 안전 영역과 호스트 상하단 여백을 넣은 조건을 확인했다.
+
+`Match.prefab`에 `RankMatchFitter`와 직렬화된 Scroll/보드 열 참조를 저장했다. 런타임에는 기존 콘텐츠의 크기와 위치만 조정하며 UI 트리를 만들지 않는다. `RankUiBuilder.ApplyMatchScreenFit`과 전체 생성에 같은 설정을 반영했다. 보드는 정사각형을 유지한다. 320×568처럼 작은 화면은 보드 열의 44 렌더 픽셀 입력 영역을 유지하기 위해 스크롤을 허용한다.
+
+전체 Unity EditMode **78/78 통과, 실패·건너뜀 0**. 134개 네이티브 캡처를 생성했고, 1080 일반 대국/호스트 여백 대국/영문 승리 결과와 390 대국/320 하단 접근 캡처를 직접 확인했다. 로비 프리팹·GameData·기존 그림·게임 로직은 이전 해시와 동일하다. 기존 빌드 파일 17개도 동일하며 새 빌드·브라우저·실기기 검증은 하지 않았다. 캐릭터 적용은 계속 보류한다. 현재 근거: `Evidence/match-fit-1080-verification.json`, 소스 해시: `Evidence/match-fit-1080-source-freeze.json`.
+
+---
+
+# 인게임 상단 여백 — 2026-10-15 (이전 기록, 아래의 1080 스크롤 방식은 위 수정으로 대체)
+
+사용자 요청에 따라 인게임에도 로비와 같은 216단위(1080 기준) 상단 여백을 적용했다. `Match.prefab`의 Scroll 상단 offset만 변경했으므로 제목·일시정지·AI 헤더·대사·보드·결과 화면이 함께 내려가고, 스크롤 중에도 상단 제외 영역은 유지된다. `RankUiBuilder`의 전체 생성과 별도 `ApplyMatchTopGap` 메뉴가 같은 값을 저장한다. 보드·버튼 크기와 런타임 게임 로직은 바꾸지 않았다.
+
+확보한 여백만큼 표시 높이가 줄어들므로 1080×1920 호스트 화면 및 작은 화면에서 하단 조작 버튼은 스크롤로 접근한다. 한국어·영어 1080/390/320 네이티브 캡처와 기존 레이아웃 테스트 3/3이 통과했다. 로비/인게임 헤더 높이 일치, 정사각 보드, 44px 입력 영역, 스크롤 후 하단 버튼 접근, 결과·모달 화면을 확인했다. 이번에 전체 78개를 재실행한 것은 아니며 아래 진행 개편 결과는 이전 기록이다.
+
+저장 프리팹 변경이 Scroll 상단 offset 하나뿐임을 이전 해시와 역대조했다. 로비·GameData·기존 그림·런타임 C#은 유지했다. 캐릭터 적용은 계속 중단 상태이며, 새 빌드·브라우저·실기기 실행은 하지 않았다. 근거와 현재 소스 해시: `Evidence/match-top-gap-verification.json`, `Evidence/match-top-gap-source-freeze.json`.
+
+---
+
+# 로비 여백·난이도·계급 진행 수정 — 2026-10-15 (이전 기록)
+
+사용자 승인으로 Client와 GameData를 함께 수정했다. 로비의 4목 제목·도움말·설정과 목록 상단을 216단위(1080 기준) 내리고, 하단 대국 시작 영역과 목록 하단을 같은 216단위 올려 배너용 빈 공간을 확보했다. 실제 배너 SDK 연결은 포함하지 않는다.
+
+Excel 원본의 30단계는 별 1→8을 0.5씩 올리며 각 난이도를 두 단계에 배정한다. AI 깊이·노드 예산은 감소하지 않고 무작위 선택 비율은 증가하지 않는다. 계급 표시 18종은 처음 6종에 1단계, 나머지 12종에 2단계씩 배정하며 29·30단계는 사단장이다. 30개 ID·시작판·starter·chapter·저장 진행은 보존했다. 한영 문자열은 269개이며 세 JSON은 Generated와 Client에서 바이트가 일치한다.
+
+로비·상세·대국 헤더의 별은 8개의 저장된 이미지 쌍과 직렬화된 참조로 표현한다. 반 별은 왼쪽 50%를 채우고 빈 부분은 연하게 표시한다. 런타임 UI 생성은 없다. 긴 영문 계급명은 작은 화면에서 두 줄을 허용한다. 기존 모자 그림은 유지하며 별도 검토 중인 픽셀 캐릭터는 적용하지 않았다.
+
+전체 Unity EditMode 78/78, 데이터 자동 검사 45/45와 Excel/Generated/Client 대조가 통과했다. 최종 화면 검증과 소스 해시는 `Evidence/progression-verification.json`을 따른다. 기존 WebGL/Android 산출물은 이전 버전이며 이번 변경을 새로 빌드하거나 브라우저·실기기에서 실행하지 않았다. 체감 난이도는 사람 플레이 검증 전이다. 총괄은 통합 시 `Docs/Management/CONTRACT.md`와 Overview의 기존 10계급·정수 별 계약을 18계급·float 반 별로 조정해야 한다.
+
+---
+
+# 로비 상단 위치 수정 — 2026-10-15 (이전 중간 기록)
+
+사용자가 토스 닫기 버튼과의 겹침을 지적해 로비 제목·도움말·설정을 저장 프리팹에서 216단위(1080 기준) 내렸다. 제목/버튼 중심 Y는 -82.5에서 -298.5, 목록 상단 여백은 217.5에서 433.5로 바뀐다. 경고 문구도 함께 내리고 하단 버튼은 유지했다. 이전의 로비/게임 헤더 Y 일치 요구는 이번 요청으로 대체된다.
+
+Unity Apply와 프리팹 검증은 성공했다. 1080·390 화면의 일반/호스트 여백 캡처에서 배치를 확인했다. 320 일반 캡처 검사에서 상단 여백 68px을 측정했고, 검사 기대값을 고정 추가 여백 64px에 맞게 바로잡았다. 재실행은 새로 열린 Client 에디터의 프로젝트 잠금 때문에 시작하지 못했으며 통과로 기록하지 않는다. 아래 76/76은 수정 전 v10 결과다. 근거: `Evidence/lobby-header-verification.json`, 캡처: `Evidence/lobby-header-20261015/`. 새 빌드·브라우저 실행은 하지 않았다.
+
+---
+
+# v10 최종 상태 — 2026-10-15, 소스·에디터 검증 완료
+
+요청된 다섯 변경을 Client 안에서 완료했다. `내 차례`는 배경·테두리 없는 글자만 표시하고 기존 페이드와 입력 비차단 동작을 유지한다. AI 탐색은 턴 시작부터 약 1초의 응수 대기와 겹쳐 실행되며 일시정지·확인창 시간은 제외한다. 최고 예산 단계의 측정값은 1.001275초다. Undo·Restart·Leave 취소와 힌트의 강제 대기 없음도 검사했다.
+
+Canvas 기준, 저장 프리팹 좌표·크기·폰트는 실제 1080×1920 단위다. 보드 1056×1056, 놓기 버튼 165×165, 제목 60단위이며 1080 원본 렌더에서 하단 세 버튼까지 안전 영역 안에 들어온다. 390 화면은 한 화면, 320 화면은 저장된 스크롤로 접근하고 44CSS 입력 영역을 유지한다. 로비와 게임의 제목·아이콘 Y 좌표 및 한영 제목의 실제 픽셀 표시를 확인했다. 첫 계급 모자는 새 `RecruitCapV10.png`를 사용하며 기존 모자 PNG 10개는 원본 해시 그대로다.
+
+표시명은 Excel의 **4목 / Four in a Row**다. 237문구·30단계의 세 JSON이 Generated와 일치한다. 최종 Unity **76/76 통과, 실패·건너뜀 0**, 원본 해상도 캡처 **116개**, Assets **317개 동결 및 재적용 동일**이다. 근거는 `Evidence/rank-v10-tests.xml`, `Evidence/rank-v10-source-freeze.json`, `Evidence/rank-v10-verification.json`, `Evidence/rank-v10-20261015/`에 있다.
+
+**v10 WebGL·Android 빌드, 브라우저 실행, 물리 기기 시험은 하지 않았다.** 기존 WebGL v9 / Android v8 파일 17개의 해시가 그대로이며 이 파일들은 v10 결과물이 아니다. 새 빌드·브라우저 실행은 사용자 승인 전까지 보류한다. 다른 역할을 재개하거나 외부 QA 결과를 기다리지 않았다. 아래는 이전 버전의 기록이다.
+
+---
+
+# v9 최종 상태 — 승인 지시 수신 뒤 추가 실행 보류
+
+최종 Unity73/73,한영 캡처87개,311 Assets 동결·재적용 동일을 확보했다. 소스 manifest는 `Evidence/rank-v9-source-freeze.json`, 검사 `Evidence/rank-v9-tests.xml`, UI/모자/두줄 대사는 `Evidence/rank-v9-ui-audit.json`이다. QA-014의 실제 Unity 파괴 후 지연 결과 callback 회귀가 통과했고 독립 QA 판정은 별도로 이어진다.
+
+**이번 웹 빌드를 승인 후 실행하라는 최신 지시는 이 Client 세션이 소유한 WebGL 프로세스의 성공 종료 결과를 이미 받은 뒤 도착했다.** Unity 로그 생성23:46:41 KST,BuildReport 갱신23:47:18,종료 로그23:47:20이다. 로그 생성 시각은 실행 근거이며 별도 프로세스 시작 시각을 측정한 값은 아니다. WaitForExit/exit0와 Succeeded를 확인했으므로 그 프로세스에서 중지할 작업은 남아 있지 않았다. 이후 새 WebGL/Android 빌드나 브라우저 검증을 시작하지 않았다. 총괄이 최종 Unity 화면/검사 결과를 보여주고 승인을 받는 절차를 기다린다.
+
+완료된 개발 WebGL은 오류/경고0이며 `Builds/WebGL`의 data/wasm/loader3개가 v8 대비 바뀌었다. data SHA256 `04DEA2A7570BAD089438166A0E40943A6773F1ABD027DD9143B134DF0611C472`,wasm `402BF4A39C73B3A712489EDFA76F535AF54B07821C12892BA824D5CA904722B0`. index/framework/ui-text/host-layout는 이전과 같다.311동결 자산은 빌드 후 그대로,237문구/Stage1서사의3JSON은 Generated와 일치,8고지의 WebGL 원문 일치를 확인했다. 전체 산출물 해시·시각·제한은 `Evidence/rank-v9-verification.json`.
+
+새 Android APK나 물리 기기 시험은 하지 않았다. 기존 v8 APK와 검증 기록을 보존한다. 로컬 개발 산출물의 존재가 승인·브라우저 검증·출시 완료를 뜻하지 않는다.
+
+---
+
+v9 QA 연결 필드: `confirm`은 기존 Pause, 새 `actionConfirm/actionCancel/actionAccept/actionQuestion/actionBody/actionAcceptLabel`이 파괴 행동 확인창이다. private `pendingAction`=None/Retry/Lobby, `QueueAction/CancelAction/AcceptAction`가 전이한다. `matchScroll/detailScroll`은 저장된 스크롤이며 `turnToast/turnToastLabel`, private `toastRoutine`, `ShowTurnToast/CancelToast`가 알림을 제어한다. 수명 가드는 private `destroyed/adGeneration/rewardGeneration/matchId`, 결과 경계 `ResultAdBoundary`, 힌트는 `RequestHint/CancelPendingReward`다. `OnDestroy`는 광고 취소·identity 무효화·모든 코루틴 정리를 수행한다. `SafeAreaFitter.widthFitTopAligned`는 새 RankRoot만 true, 기존 UI는 기존 경로를 유지한다.
+
+# v9 진행 중 — 최신 사용자 수정 반영
+
+v8 소스·프리팹·검사 자료는 `Archive/RankV8-20261014/source-and-evidence.zip`에 보존했다. 아래 v8 67/67·APK/WebGL 수치는 v9 통과를 뜻하지 않는다. 현재 v9는 별도 `Evidence/rank-v9-*`에서 검증 중이다. 사용자의 이번 검증 범위는 브라우저이며 실제 폰 시험과 새 Android APK는 진행하지 않는다.
+
+- 공통 ActionConfirm 저장 프리팹: 게임/결과 Restart,결과 Lobby,Pause Leave를 대기 동작으로 전환한다. 취소는 같은 보드·선택·AI 코루틴을 유지하며 Pause에서 연 경우 Pause로 돌아간다. 확인은 pendingAction을 먼저 소비해1회만 실행한다. Next는 바로 진행한다.
+- 폭 기준 크기+상단8CSS 정렬,짧은 화면은 저장된 Match/Detail ScrollRect로 접근한다. 일반 버튼/보드열44CSS이상.704×704외곽,dx=dy=720/7인7×6교차점,여유세로여백. UniformBoardLines는 실제 Canvas pixel비율로 모든 검정선의 얇은 변을 같은 정수 픽셀 두께로 맞춘다.
+- AI 얼굴/계급/별 그룹은 전체 폭을 재서 중앙 정렬,10개자체도형 모자. 플레이어 얼굴/상시Turn숨김,원형Place와텍스트형Undo/Restart. 저장된 비차단 TurnToast는 새 플레이어 턴에만0.85초 표시하며 착수·모달·새판·결과·파괴에서취소한다.
+- 최종237문구와Stage1전용intro/win/lose참조를동기화했다. 첫 지정 대사는줄임없이그대로,AI승리/플레이어패배역할유지. 확인문구는V9-UI-CONTRACT의ui_cancel/confirm_exit*/confirm_retry*/confirm_leave/retry키다.
+- QA-014수정: destroyed플래그,matchId무효화,adGeneration,OnDestroy광고취소로파괴후전면광고callback의저장을차단한다. rewardGeneration은취소/새요청의오래된힌트callback이문구까지변경하지못하게한다.최종소스동결후독립QA재실행이필요하다.
+
+# Rank UI 현재 구현 — 2026-10-14
+
+새 활성 대상은 `Assets/StageGame/Scenes/Main.unity`의 `Prefabs/RankUI/RankAppRoot.prefab`와 `RankGameApp`이다. 이전 `GameApp` 프리팹 인스턴스는 비활성 보존한다. 이전 Tabletop 디자인은 사용자 시안 반려 상태이며 아래 과거 통과 기록을 새 UI 승인으로 해석하지 않는다.
+
+- 한 수 진급 / Rank by Rank: 흰 교차점7×6판, 흑백 돌, 원형 얼굴, 중앙 제목,30개2열 저장 카드. 카드 top anchor,328×236 크기,710높이 세로 ScrollRect. 상단 도움말/설정 아이콘, 하단 멀티 준비중 버튼은 비활성이다.
+- 상세는 저장된 `DetailBlocker` 위의 `Detail`이0.22초 우측 슬라이드한다. `RankDetailBlocker`가 열기/열림/닫기 전체에서 아래 로비를 차단한다. 닫은 뒤 목록 스크롤 유지, 좌우 단계 탐색, 실제 openingMoves 흑백 미리보기, 잠금 Start 차단을 검증했다.
+- 선택은 `selectedColumn`/`movePreview`만 변경하고 Place가 실제1수를 둔다. 가득 찬 열은 선택/preview를 지우고 Place를 끈다. `undoHistory`는 플레이어 착수 직전 `ConnectFourBoard.Clone()` 목록이다. Undo는 AI 완료 후2수 또는 탐색 중1수를 복원하고 `searchGeneration`을 증가시켜 이전 코루틴을 취소한다. opening 이전으로 가지 않으며 같은 matchId·RewardGate.Granted·통계를 유지한다. AI seed는 기존 stage×997+MoveCount×31이다.
+- 최초 판정은 기존 키 `stagegame.progress.v1` 부재다. fresh 진행 저장 후1단계 자동 시작, 새 판의 `select_column` 한줄 안내. 기존1단계/진행 저장은 로비이며 새 flag를 강제하지 않는다. 손상 저장은 recovery 보존 후 로비/오류 안내이며 새 이용자 자동판으로 처리하지 않는다. 실제 저장 실패 환경 주입 검사는 하지 않았다.
+- 마지막 돌은400ms1.45→1배/34상승 복귀,500ms 관찰 후 결과/광고 경계. 확대 동안 최상위 sibling, 종료·취소 시 좌표/크기/순서 복원. 최상단 돌과 겹치는 Turn 문구는 종료 시작에 숨긴다. 승리는 Next+Retry+Lobby,30단계/패배/무승부는 Retry+Lobby. 동시2방향 승리선은 같은 승자의 연속 직선 중 유효한 하나를 선택한다.
+- Hint는 일시정지 메뉴에 남아 있다. NoFill은 진행을 막지 않으며 완료1회만 소비한다. Undo는 사용한 힌트 권한을 복구하지 않고 추천/대기 callback만 지운다. 실제 광고 SDK/IAP/서버는 미연결이다.
+- 최종228개 Excel 문구/30단계 복사본은 Generated3JSON과 일치한다. `GameData.ValidateRankData()`가 새 참조5개와 계급/별 구간을 거부 검증한다. 초기 안내, 결과/AI 대사, WebGL 제목은 이 문자열 표에서 나온다.
+
+검증: `Evidence/rank-ui-tests.xml` **67/67 PASS,0실패/0skipped**. 처음64/66 실행의2하네스 오류는 `rank-ui-tests-initial.xml`에 별도 보존했다. 실제 Main 씬 PlayMode 진입을 포함하며 저장/광고/AI 코루틴·스냅샷·raycast·한영320/390 host영역 검사다. 전체67 검사 후 Editor Apply에 Web문구 export 호출만 추가했으며 runtime은 동일하다. 재적용281 Assets 바이트 동일(`rank-ui-idempotence.json`), 동결 manifest `rank-ui-source-freeze.json`.
+
+최신 캡처는 `Evidence/rank-ui-20261014/`의 `*-lobby-end.png`를 포함한다. `*-lobby-middle.png`4개는 초기 잘못된 카드 anchor의 역사 자료로 최종 manifest에서 제외한다. 회색 Place/Next 초기 캡처는 Selectable0.1초 색 전환 전 촬영 문제였고, 갱신/색 전환을 기다린 최종 캡처에서는 검정 활성 스타일이다. 브라우저/실기기 판정은 이 Unity 검사와 별개다.
+
+`ProjectSettings/PackageManagerSettings.asset`는 작업 시작 전부터 untracked였고 현재 Unity PackageManager UI 내부 클래스/기본 packages.unity.com registry/펼침 상태를 담는다. 생성 주체를 확정할 이력은 없으며 이번 기능이나 빌드 재현에 새로 요구된 파일이 아니다. 수정/삭제하지 않았고 Git 포함은 총괄이 별도 판단하도록 권한다. 패키지 재현 기준은 기존 manifest.json/packages-lock.json이다.
+
+두 개발 빌드가 오류/경고0으로 완료됐다. APK 35568872bytes, SHA256 `282C16157C42421DA474724B8C750D24992506E9F408898D705EC06B7D6DEAC7`. WebGL wasm SHA256 `CA66C107F9F6F3283F13971B2FBEA8CAC6860B9048A74D856E4098D381603FBE`.281동결 자산은 두 빌드 후에도 그대로이고,8개 고지 파일이 APK/WebGL에서 원문과 바이트 일치한다.3개 데이터 JSON도 Generated와 일치한다. 전체 경로/해시/빌드 요약은 `RANK-UI-REQUEST.json` 및 `Evidence/rank-ui-verification.json`. 총괄 브라우저·독립 QA는 별도 진행 중이다. 릴리스 서명·스토어 제출·앱인토스 실제 SDK·물리 기기 검사는 미완료다.
+
+---
+
+Rank runtime 후속: 최상단 마지막 돌의 1.45배/34높이 연출이 Turn 상태 문구와 겹치지 않도록 Finish 시작 시 해당 상태 문구를 숨긴다. 양측 row5 캡처/일시정지 검사를 추가했다.
+
+2026-10-14 Rank UI runtime 후속 변경: `RankGameApp.cs`는 새 경기의 짧은 `select_column` 안내를 표시하도록 변경했다. 숨겨진 화면의 직접 이벤트/중복 Next가 새 경기나 힌트를 시작하지 않도록 match/result 활성 가드를 추가했다. QA 후보 snapshot 이후 변경이므로 최종 snapshot에서 영향 검증이 필요하다. `RankUiBuilder.cs`는 카드 top anchor·3logical 격자·중앙 모달 제목을 수정했고, 로비 도움말/설정은 상단 아이콘·준비중 멀티는 하단 고정으로 이동 중이다.
+
 # StageGame 클라이언트 구현 기록
 
-최종 체크포인트: **2026-10-14, 챕터 지도·그림 도움말·결과 행동 강조·완료 기록 개선. 초기 전체 Unity57/57 및 최종 문구 영향11/11 통과(서로 별도 실행). 총괄 지도 기능시험 통과, 패배 문구3개 수정 후 양 플랫폼 재빌드 성공(오류/경고0), 총괄 최종 문구 브라우저 재시험 통과. 코드·프리팹 동결 및 완료**. Unity **6000.3.15f1**. 프로젝트 루트는 `C:\Github\StageGame\Client`.
+최신 작업: **한 수 진급 / Rank by Rank 재설계 진행 중**, `RANK-UI-REQUEST.json` 기준. 이전 Tabletop의 자동 검사·빌드·브라우저 기능 검증은 보존하되 최종 디자인 수용/완료로 주장하지 않는다.
 
-## 완료 결과
+이전 Tabletop 기술 검증 기준선(사용자 시각 불수용으로 대체됨): **2026-10-14, 보드게임 그래픽 리모델링·마지막 승리 착수·가로 결과2버튼 구현 완료, 최종 Unity59/59 통과. 코드/프리팹/에셋 동결. Android/WebGL 개발 빌드 모두 오류/경고0이며 총괄의 최종 실제 포인터 브라우저 검사도 통과했다. 실기기는 연결0대로 미실행이며 아래 최신 절/GRAPHICS-REFRESH-REQUEST.json 기준.** Unity **6000.3.15f1**, 프로젝트 `C:\Github\StageGame\Client`.
+
+## 보드게임 그래픽과 보드를 유지하는 결과 (계약 v7, 최신)
+
+- 새 `Art/TabletopUI/`의21개 PNG와 `TabletopTheme.asset`을 저장 프리팹에서 참조한다. 크림 `#F5F2E9`, 청록 `#173E43`, 민트 `#67D6B0`, 산호 `#F18C78`, 금색 `#E4B65C`를 사용하며, 9-slice 패널·버튼·보드 테두리/짧은 그림자, 홈, 고리/마름모 말,8개 아이콘을 코드에서 직접 작성했다. 예전 자산은 보존했고 외부 그림 복사나 신규 고지 대상은 없다. 출처·파일 해시: `Evidence/tabletop-ui-assets.json`.
+- 네 말 엠블럼과 큰 제목,5×2 단계 지도,선택 카드,큰 시작 CTA를 정돈했다. 노드는 선택 금색·현재 민트·완료 옅은 민트·잠금 회색과 play/check/lock 아이콘으로 구분한다. 돌마다 나/AI 글자를 반복하지 않고 대국 범례를 한 번 표시한다. 일시정지는 저장된 아이콘 버튼이며110단위 hit target을 유지한다.
+- 승리를 결정한 플레이어/AI의 마지막 말은 같은 실제 coroutine에서1.45배·위34단위로 시작해400ms 동안 제자리/1배로 복귀한다. 이후500ms 동안 원색/고리·마름모를 보존한 금색 테두리 승리 줄을 보여준다. 그 뒤 광고 기회를 처리하며 완료·실패·NoFill·4초 타임아웃을 거쳐 결과 행동을 활성화한다. resolving 동안 열/힌트/일시정지/Escape를 차단하고 판 ID·결과 가드로 저장·광고 콜백 중복을 막는다. 화면 전환 시 coroutine을 취소하고 말 위치/배율을 복구한다.
+- **모든 승리/패배/무승부/최종 완료는 보드를 남기고 하단에 ‘다시 도전’과 ‘로비로’ 두 버튼만 가로 배치한다.** 큰 결과 배경과 프레임은 투명/비 raycast로 저장하고 Next/Close는 비활성 보존한다. 위 상태 영역에 결과 제목, 보드 아래 별도72단위 영역에 기존 Excel 결과 문구를 표시한다. 진행 해금은 유지하며 로비 복귀 시 최고 해금 단계를 선택한다. 이전 v5의 ‘다음 단계 주요 버튼’은 사용자 최신 지시로 폐기했다.
+- 720×960 기준과 SafeArea/64CSS 호스트 여유, 최소44CSS 열 입력을 유지한다. 결과 본문 공간을 위해 보드 높이는514, 행 간격82로 정돈했다. 결과 버튼은각308×110, 단계 노드는120×120이며 추가 게임 루프/문자열 없이137개 Excel 키를 그대로 사용한다. WebGL 로딩 배경도 새 팔레트로 맞췄다.
+- 첫 전체59개 실행은55통과/4실패였으며 네 실패는 큰 로비 제목의 사각형 높이80 대비 preferredHeight84였다. 높이90으로 수정한 전체59/59가 통과했다. 이후 총괄 시각 검토의 확대 말 가림/결과 Pause 보임을 수정하고 최종 전체59/59를 다시 통과했다. 연출 말은 기존 sibling index를 저장해 맨 앞에 그린 뒤 완료/취소 때 원래 순서로 복구하며, 결과에서 Pause를 숨기고 새 대국에서 복원한다. 초기2개 preview 실패의 AdStatus 높이24도36으로 수정했다. 실패 실행을 통과로 기록하지 않는다.
+- 프리팹/아트/씬60개 파일은 두 번 적용 전후 SHA-256이 전부 동일하다(`Evidence/graphics-refresh-idempotence.json`). 동결 소스 전체 Assets 해시는 `Evidence/graphics-refresh-source-freeze.json`이며 빌드 전후 일치를 확인한다. 원본3개 데이터 JSON과137키는 그대로다.
+- `Evidence/graphics-refresh-20261014/animation-timeline.csv`와 `animation-{player,ai}-{0,1,2}.png`는 실제 저장 씬의 플레이 검사다. 중간/완료 프레임 및 timestamp, 크기/입력 잠금/광고 호출/버튼 활성 순서를 기록했다. 테스트용 합법 국면을 주입하며 사람의 전체 대국이나 실기기 증거는 아니다.
+- 최신 자산 적용 순서는 필요한 기존 마이그레이션 뒤 **`TabletopUiBuilder.Apply`를 마지막으로** 실행한다. 이전 SoftUiBuilder/StageMapBuilder만 재실행하면 과거 색·구성으로 돌아가므로 최신 에셋 제작의 단독 진입점은 TabletopUiBuilder다. 이미 존재하는 PNG를 덮어쓰지 않는다.
+
+- 최종 WebGL/Android 개발 빌드가 모두 오류/경고0으로 성공했다. APK 36461106bytes이며 파일별 해시와62개 캡처는 `Evidence/graphics-refresh-verification.json`에 있다.193개 동결 Assets는 두 빌드 후에도 동일하고,137개 키/3개 데이터 원본과 복사본이 일치한다. APK와WebGL의8개 고지 파일 모두 원문 바이트와 일치한다. 총괄의 현재 빌드 실제 포인터 브라우저 검사도 PASS이며 이전 그래픽 기준선의 PASS와 구분한다.
+
+- 미저장 씬 보호를 위해 마지막으로 에디터 제작 도구에 Play/프리팹 편집/dirty scene 사전 중단 조건을 추가했다. 별도1/1 검사와 깨끗한 배치 Apply가 통과했으며, 전체59 런타임 검사와 합산해 한 번의60 검사로 표현하지 않는다. 최초 안전 검사의 additive 임시씬 생성 제한을 테스트 준비 방식에서 수정했다. 동결 이후 바뀐 파일은 Editor builder/test2개뿐이고 게임 코드·프리팹·그림·양 플랫폼 빌드는 동일하다. 구/신 동결 해시는 source-freeze 기록에 남겼다.
+
+- 총괄의 최종 실제 WebGL 포인터 검사가 통과했다([보고서](../Docs/Management/Evidence/graphics-refresh-browser-20261014/README.md)).390 한국어에서1단계 실제9수 승리·같은 단계 재도전·로비의 최고 해금2단계 선택,2단계 실제10수 AI 세로 승리,잠금 진입 차단을 확인했다.320 영어에서 로비/대국/설정/규칙/라이선스 중간 스크롤·닫기,같은 열 반복 입력,NoFill 뒤 착수,재로드 언어·진행 복원을 확인한 뒤390 한국어로 복원했다. 결과는 보드와 원래 말 색·모양/금색 테두리를 보존하며 다음/닫기/일시정지 없이 두 가로 버튼을 표시한다. 조회 콘솔 경고/오류는0건이다.
+- Client는 보고서·대표 캡처·빈 콘솔을 읽고 총괄 WebGL6개 파일과 자체7개 산출물,수정된 동결 Assets193개 해시의 일치를 재확인했다. 이 마감은 문서만 수정했고 재빌드/테스트/브라우저 조작을 하지 않았다.400ms 연속 프레임·양측 입력 잠금·광고 순서의 근거는 별도 Unity 타임라인이며 브라우저 정지 캡처로 전 프레임을 확인했다고 주장하지 않는다. 이번 브라우저는1단계 재승리와2단계 세로 패배이며 전체30단계 사람 플레이나 실제 신규 해금 획득 시험으로 확대하지 않는다. 라이선스 원문 전체 포함은8개 배포 파일 대조 근거이며,휴대폰은 연결0대로 미실행이다.
+
+## 이전 완료 기준선 (v5/v6, 아래 빌드·브라우저 수치는 새 그래픽 검증 아님)
 
 7×6 중력식 4목의 오프라인 AI 스테이지 초기 버전이다. **30개 스테이지, 한국어/영어 설정과 즉시 전환·저장·복원, 저장된 씬·프리팹, Unity 전체57/57 검사, Android 개발 APK, 일반 WebGL 개발 빌드**를 확보했다. IAP와 서버는 계획 상태다.
 

@@ -42,10 +42,10 @@ namespace StageGame
         public Text retryLabel, nextStageLabel, resultLobbyLabel;
         public RectTransform resultPrimarySlot, resultSecondarySlot;
 
-        static readonly Color Empty = new Color32(15, 27, 43, 255);
-        static readonly Color Player = new Color32(108, 237, 199, 255);
-        static readonly Color Opponent = new Color32(255, 137, 121, 255);
-        static readonly Color Highlight = new Color32(255, 217, 134, 255);
+        public TabletopTheme theme;
+        public Image[] stageNodeIcons;
+        static readonly Color Ink = new Color32(23, 62, 67, 255);
+        static readonly Color Highlight = new Color32(228, 182, 92, 255);
         GameData data;
         StringTable strings;
         ProgressStore progress;
@@ -54,8 +54,11 @@ namespace StageGame
         RewardGate rewardGate;
         int selected, activeStage, hintColumn = -1;
         string matchId;
-        bool busy, applicationPaused, resultRecorded, leaving;
-        Coroutine aiRoutine;
+        bool busy, applicationPaused, resultRecorded, leaving, resolving, winningRevealed;
+        Coroutine aiRoutine, resultRoutine;
+        RectTransform animatedStone;
+        Vector2 animatedPosition;
+        int animatedSibling;
         string matchNoticeKey = "match_instruction";
         object[] matchNoticeArgs = Array.Empty<object>();
 #if UNITY_WEBGL && !UNITY_EDITOR
@@ -79,15 +82,13 @@ namespace StageGame
             english.onClick.AddListener(() => SetLanguage("en"));
             noticesOpen.onClick.AddListener(() => notices.SetActive(true));
             noticesClose.onClick.AddListener(() => notices.SetActive(false));
-            pause.onClick.AddListener(() => { CancelPendingReward(); confirm.SetActive(true); RefreshBoard(); });
+            pause.onClick.AddListener(() => { if (resolving || board == null || board.IsFinished) return; CancelPendingReward(); confirm.SetActive(true); RefreshBoard(); });
             confirmClose.onClick.AddListener(Resume);
             confirmResume.onClick.AddListener(Resume);
             confirmLeave.onClick.AddListener(ShowLobby);
             hint.onClick.AddListener(RequestHint);
-            retry.onClick.AddListener(() => StartStage(activeStage));
-            nextStage.onClick.AddListener(() => StartStage(activeStage + 1));
-            resultLobby.onClick.AddListener(ShowLobby);
-            resultClose.onClick.AddListener(ShowLobby);
+            retry.onClick.AddListener(() => { if (retry.interactable) StartStage(activeStage); });
+            resultLobby.onClick.AddListener(() => { if (resultLobby.interactable) ShowLobby(); });
             for (int i = 0; i < columns.Length; i++) { int col = i; columns[i].onClick.AddListener(() => Drop(col)); }
             for (int i = 0; i < stageNodes.Length; i++)
             {
@@ -122,7 +123,7 @@ namespace StageGame
 
         void Update()
         {
-            if (!Input.GetKeyDown(KeyCode.Escape)) return;
+            if (!Input.GetKeyDown(KeyCode.Escape) || resolving || (result.activeSelf && !resultLobby.interactable)) return;
             if (notices.activeSelf) notices.SetActive(false);
             else if (help.activeSelf) help.SetActive(false);
             else if (settings.activeSelf) settings.SetActive(false);
@@ -161,10 +162,13 @@ namespace StageGame
                 bool isLocked = index + 1 > progress.Data.unlockedStage;
                 bool isSelected = index == selected;
                 string number = (index + 1).ToString("00");
-                stageNodeNumbers[i].text = isSelected ? "[" + number + "]" : number;
+                stageNodeNumbers[i].text = number;
                 stageNodeStates[i].text = (isCleared ? "✓ " : "") + T(isCleared ? "stage_state_cleared" : isLocked ? "stage_state_locked" : "stage_state_current");
-                stageNodes[i].targetGraphic.color = isSelected ? Player : new Color32(27, 42, 64, 255);
-                stageNodeNumbers[i].color = stageNodeStates[i].color = isSelected ? Empty : isLocked ? new Color32(155, 171, 191, 255) : new Color32(241, 245, 249, 255);
+                ((Image)stageNodes[i].targetGraphic).sprite = isSelected ? theme.nodeSelected : isLocked ? theme.nodeLocked : isCleared ? theme.nodeCleared : theme.nodeCurrent;
+                stageNodes[i].targetGraphic.color = Color.white;
+                stageNodeNumbers[i].color = stageNodeStates[i].color = Ink;
+                stageNodeIcons[i].sprite = isLocked ? theme.locked : isCleared ? theme.check : theme.play;
+                stageNodeIcons[i].color = Ink;
             }
             lobbyBanner.SetActive(data.Ads.bannerLobby && !(ads is NoFillAds));
             string warning = progress.SaveWarning ?? progress.LoadWarning;
@@ -174,13 +178,14 @@ namespace StageGame
 
         public void ShowLobby()
         {
+            CancelResultSequence();
             CancelSearch();
             CancelPendingReward();
             ads.CancelPending();
             matchId = null;
             busy = false;
             match.SetActive(false); lobby.SetActive(true); CloseModals();
-            if (data != null) RefreshLobby();
+            if (data != null) { selected = progress.Data.unlockedStage - 1; RefreshLobby(); }
         }
 
         void CloseModals()
@@ -192,6 +197,7 @@ namespace StageGame
         public void StartStage(int index)
         {
             if (data == null || index < 0 || index >= data.Stages.Length || index + 1 > progress.Data.unlockedStage) return;
+            CancelResultSequence();
             CancelSearch();
             CancelPendingReward();
             ads.CancelPending();
@@ -200,7 +206,9 @@ namespace StageGame
             activeStage = selected = index;
             matchId = Guid.NewGuid().ToString("N");
             rewardGate = new RewardGate();
-            resultRecorded = false; busy = false; hintColumn = -1;
+            resultRecorded = false; winningRevealed = false; busy = false; hintColumn = -1;
+            turnLabel.gameObject.SetActive(true); matchNotice.gameObject.SetActive(true); hint.gameObject.SetActive(true); pause.gameObject.SetActive(true);
+            foreach(var marker in columnMarkers) marker.gameObject.SetActive(true);
             lobby.SetActive(false); match.SetActive(true); CloseModals();
             matchTitle.text = F("match_title", (index + 1).ToString("00"), data.Text(data.Stages[index].titleKey));
             SetMatchNotice("match_instruction");
@@ -226,7 +234,8 @@ namespace StageGame
             if (!isHint) yield return new WaitForSecondsRealtime(0.25f);
             var stage = data.Stages[activeStage];
             using (var search = new AiSearch(board, isHint ? Math.Max(3, stage.aiDepth) : stage.aiDepth,
-                stage.aiNodeBudget, isHint ? 0 : stage.aiRandomPermille, activeStage * 997 + board.MoveCount * 31))
+                stage.aiNodeBudget, isHint ? 0 : stage.aiRandomPermille, activeStage * 997 + board.MoveCount * 31,
+                oversightPermille: isHint ? 0 : stage.aiOversightPermille))
             {
                 double activeSeconds = 0;
                 float lastActiveTick = Time.realtimeSinceStartup;
@@ -266,15 +275,17 @@ namespace StageGame
                 int player = board[i % 7, i / 7];
                 bool winning = false;
                 foreach (int cell in board.WinningCells) if (cell == i) winning = true;
-                stones[i].color = winning ? Highlight : player == 1 ? Player : player == -1 ? Opponent : Empty;
-                stoneLabels[i].text = player == 1 ? T("player_stone") : player == -1 ? T("ai_stone") : "";
+                stones[i].sprite = player == 1 ? winning && winningRevealed ? theme.playerWin : theme.player : player == -1 ? winning && winningRevealed ? theme.opponentWin : theme.opponent : theme.hole;
+                stones[i].color = Color.white;
+                stoneLabels[i].text = "";
             }
             bool canInput = !busy && !rewardGate.Pending && !applicationPaused && !confirm.activeSelf && !board.IsFinished && board.CurrentPlayer == 1;
             for (int col = 0; col < columns.Length; col++)
             {
                 columns[col].interactable = canInput && board.CanDrop(col);
-                columnMarkers[col].color = col == hintColumn ? Highlight : new Color(1, 1, 1, 0.08f);
+                columnMarkers[col].color = col == hintColumn ? Highlight : new Color(23 / 255f, 62 / 255f, 67 / 255f, .09f);
             }
+            pause.interactable = !resolving && !board.IsFinished;
             hint.interactable = canInput && !rewardGate.Granted && !rewardGate.Pending;
             hintLabel.text = T(rewardGate.Granted ? "client_hint_used" : "client_hint_request");
             turnLabel.text = T(board.IsFinished ? "turn_finished" : busy ? "turn_thinking" : board.CurrentPlayer == 1 ? "client_ui_player_turn" : "client_ui_ai_turn");
@@ -283,15 +294,71 @@ namespace StageGame
 
         void Finish()
         {
-            if (resultRecorded) return;
-            resultRecorded = true;
+            if (resultRecorded || board == null || !board.IsFinished) return;
+            resultRecorded = true; resolving = true;
+            CancelPendingReward();
             progress.RecordResult(matchId, activeStage + 1, board.Winner == 1, data.Stages.Length);
+            SetResultActions(false);
+            RefreshBoard();
+            resultRoutine = StartCoroutine(FinishSequence(matchId));
+        }
+
+        IEnumerator FinishSequence(string id)
+        {
+            if (board.Winner != 0 && board.LastMove >= 0)
+            {
+                animatedStone = stones[board.LastMove].rectTransform;
+                animatedPosition = animatedStone.anchoredPosition;
+                animatedSibling = animatedStone.GetSiblingIndex();
+                animatedStone.SetAsLastSibling();
+                float elapsed = 0;
+                while (elapsed < .4f && matchId == id)
+                {
+                    float t = Mathf.Clamp01(elapsed / .4f);
+                    float ease = 1 - Mathf.Pow(1 - t, 3);
+                    animatedStone.localScale = Vector3.one * Mathf.Lerp(1.45f, 1, ease);
+                    animatedStone.anchoredPosition = animatedPosition + Vector2.up * Mathf.Lerp(34, 0, ease);
+                    yield return null;
+                    if (!applicationPaused) elapsed += Time.unscaledDeltaTime;
+                }
+                RestoreAnimatedStone();
+                winningRevealed = true;
+                RefreshBoard();
+                elapsed = 0;
+                while (elapsed < .5f && matchId == id)
+                {
+                    yield return null;
+                    if (!applicationPaused) elapsed += Time.unscaledDeltaTime;
+                }
+            }
+            if (matchId != id) yield break;
             RefreshResultText();
-            nextStage.gameObject.SetActive(board.Winner == 1 && activeStage + 1 < data.Stages.Length);
+            nextStage.gameObject.SetActive(false); resultClose.gameObject.SetActive(false);
+            hint.gameObject.SetActive(false); pause.gameObject.SetActive(false);
+            foreach(var marker in columnMarkers) marker.gameObject.SetActive(false);
+            turnLabel.gameObject.SetActive(false); matchNotice.gameObject.SetActive(false);
             resultBanner.SetActive(data.Ads.bannerResult && !(ads is NoFillAds));
             result.SetActive(true);
-            SetResultActions(false);
-            StartCoroutine(ResultAdBoundary(matchId));
+            // Presentation/settlement happens after the winning move and line observation.
+            yield return ResultAdBoundary(id);
+            resolving = false;
+            resultRoutine = null;
+        }
+
+        void RestoreAnimatedStone()
+        {
+            if (animatedStone == null) return;
+            animatedStone.localScale = Vector3.one;
+            animatedStone.anchoredPosition = animatedPosition;
+            animatedStone.SetSiblingIndex(animatedSibling);
+            animatedStone = null;
+        }
+
+        void CancelResultSequence()
+        {
+            if (resultRoutine != null) StopCoroutine(resultRoutine);
+            resultRoutine = null; resolving = false;
+            RestoreAnimatedStone();
         }
 
         void RefreshResultText()
@@ -301,17 +368,9 @@ namespace StageGame
             resultDetail.text = T(board.Winner == 1 ? activeStage + 1 == data.Stages.Length ? "client_result_all_clear" : "result_win_detail" :
                 board.IsDraw ? "result_draw_detail" : LossExplanationKey());
             resultAdStatus.text = !string.IsNullOrEmpty(progress.SaveWarning) ? T(progress.SaveWarning) : ads is NoFillAds ? "" : T(ads.Status);
-            bool hasNext = board.Winner == 1 && activeStage + 1 < data.Stages.Length;
-            SetPrimary(nextStage, nextStageLabel, hasNext);
-            SetPrimary(retry, retryLabel, !hasNext);
-            SetPrimary(resultLobby, resultLobbyLabel, false);
-            ((RectTransform)retry.transform).anchoredPosition = (hasNext ? resultSecondarySlot : resultPrimarySlot).anchoredPosition;
-        }
-
-        static void SetPrimary(Button button, Text label, bool primary)
-        {
-            button.targetGraphic.color = primary ? Player : new Color32(41, 61, 87, 255);
-            label.color = primary ? Empty : new Color32(241, 245, 249, 255);
+            retry.GetComponent<Image>().sprite = theme.primary;
+            resultLobby.GetComponent<Image>().sprite = theme.secondary;
+            retryLabel.color = resultLobbyLabel.color = Ink;
         }
 
         string LossExplanationKey()
@@ -350,7 +409,8 @@ namespace StageGame
 
         void SetResultActions(bool enabled)
         {
-            retry.interactable = nextStage.interactable = resultLobby.interactable = resultClose.interactable = enabled;
+            retry.interactable = resultLobby.interactable = enabled;
+            nextStage.interactable = resultClose.interactable = false;
         }
 
         void RequestHint()
@@ -455,7 +515,7 @@ namespace StageGame
         void CancelSearch() { if (aiRoutine != null) StopCoroutine(aiRoutine); aiRoutine = null; }
         void OnApplicationPause(bool paused) { applicationPaused = paused; if (paused) { CancelPendingReward(); ads.CancelPending(); progress?.Save(); } RefreshBoard(); }
         void OnApplicationQuit() { leaving = true; progress?.Save(); }
-        void OnDestroy() { if (!leaving) CancelSearch(); rewardGate?.Cancel(); }
+        void OnDestroy() { CancelResultSequence(); if (!leaving) CancelSearch(); rewardGate?.Cancel(); }
 
 #if UNITY_EDITOR
         public void SetEditorAds(AdResult value, bool duplicate)

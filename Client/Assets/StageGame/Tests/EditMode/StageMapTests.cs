@@ -8,6 +8,24 @@ namespace StageGame.Tests
     public sealed class StageMapTests
     {
         const string Key = "stagegame.progress.v1";
+        [Test]
+        public void RankMigrationRejectsUnsavedScenesBeforeWritingAssets()
+        {
+            if (!Application.isBatchMode) Assert.Ignore("This scene-safety regression runs in the owned batch editor only.");
+            var scene = UnityEditor.SceneManagement.EditorSceneManager.NewScene(UnityEditor.SceneManagement.NewSceneSetup.EmptyScene, UnityEditor.SceneManagement.NewSceneMode.Single);
+            string path = Editor.RankUiBuilder.AppRootPath;
+            var before = System.IO.File.ReadAllBytes(path);
+            try
+            {
+                UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty(scene);
+                var error = Assert.Throws<System.InvalidOperationException>(() => Editor.RankUiBuilder.Apply());
+                StringAssert.Contains("Save scene changes", error.Message);
+                CollectionAssert.AreEqual(before, System.IO.File.ReadAllBytes(path));
+                Assert.IsTrue(scene.isDirty, "The migration must not save or discard the user's scene.");
+            }
+            finally { UnityEditor.SceneManagement.EditorSceneManager.CloseScene(scene, true); }
+        }
+
         [TestCase(1)]
         [TestCase(12)]
         [TestCase(30)]
@@ -55,29 +73,30 @@ namespace StageGame.Tests
         [Test]
         public void SavedNodesAndHelpAreNestedAndShowExactlyFourConnectedStones()
         {
-            var root = AssetDatabase.LoadAssetAtPath<GameObject>(Editor.ProjectBuilder.Root + "Prefabs/AppRoot.prefab");
-            var app = root.GetComponent<GameApp>();
-            Assert.AreEqual(10, app.stageNodes.Length);
-            Assert.AreEqual(10, app.stageNodeNumbers.Length); Assert.AreEqual(10, app.stageNodeStates.Length);
-            foreach (var node in app.stageNodes)
-                Assert.AreEqual(Editor.ProjectBuilder.Root + "Prefabs/UI/Common/StageNode.prefab", PrefabUtility.GetPrefabAssetPathOfNearestInstanceRoot(node));
-            foreach (var state in app.stageNodeStates) Assert.GreaterOrEqual(state.fontSize, 28);
+            var root = AssetDatabase.LoadAssetAtPath<GameObject>(Editor.RankUiBuilder.AppRootPath);
+            var app = root.GetComponent<RankGameApp>();
+            Assert.AreEqual(30, app.cards.Length);
+            foreach (var card in app.cards)
+            {
+                Assert.AreEqual(Editor.RankUiBuilder.Prefabs + "StageCard.prefab", PrefabUtility.GetPrefabAssetPathOfNearestInstanceRoot(card));
+                Assert.AreEqual(new Vector2(.5f,1), ((RectTransform)card.transform).anchorMin);
+            }
             for (int example = 0; example < 3; example++)
             {
-                var pattern = app.help.transform.Find("Frame/ConnectExample_" + example);
+                var pattern = app.help.transform.Find("Frame/Connection_" + example);
                 Assert.AreEqual(4, pattern.childCount, "Four-stone direction pattern must not look like a floating grid.");
                 for (int i = 0; i < 4; i++)
                 {
                     var stone = (RectTransform)pattern.Find("Stone_" + i);
                     Assert.NotNull(stone.GetComponent<Image>().sprite);
-                    var expected = new Vector2(example == 1 ? 0 : (i - 1.5f) * 36, example == 0 ? 0 : (i - 1.5f) * 36);
-                    Assert.AreEqual(expected, stone.anchoredPosition);
+                    var expected = new Vector2(example == 1 ? 0 : (i - 1.5f) * 42, example == 0 ? 0 : (i - 1.5f) * 42);
+                    Assert.AreEqual(expected*RankUiMetrics.Unit, stone.anchoredPosition);
                 }
             }
-            var gravity = app.help.transform.Find("Frame/GravityExample");
-            Assert.AreEqual(new Color32(255, 137, 121, 255), (Color32)gravity.Find("Cell_0_1").GetComponent<Image>().color);
-            Assert.AreEqual(new Color32(108, 237, 199, 255), (Color32)gravity.Find("Cell_1_1").GetComponent<Image>().color);
-            Assert.IsFalse(app.helpBody.gameObject.activeSelf);
+            var gravity = app.help.transform.Find("Frame/Gravity");
+            Assert.AreSame(app.theme.whiteStone, gravity.Find("Support").GetComponent<Image>().sprite);
+            Assert.AreSame(app.theme.preview, gravity.Find("Preview").GetComponent<Image>().sprite);
+            Assert.IsFalse(app.help.transform.Find("Frame/Body").gameObject.activeSelf);
         }
     }
 }

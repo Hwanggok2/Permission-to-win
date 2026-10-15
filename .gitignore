@@ -139,8 +139,14 @@ bin/
 tmp/
 *.log
 *.inspect.ndjson
+# Reproducible audio import/codec output; keep reports and source audio.
+/Client/Evidence/web-audio-fsb-20261016/cache/
+/Client/Evidence/web-audio-fsb-20261016/codec/
+/Client/Evidence/web-audio-fsb-20261016/unity-import/*
+!/Client/Evidence/web-audio-fsb-20261016/unity-import/import-settings.json
 GameData/.inspection/
 !Tests/IndependentHarness/IndependentHarness.csproj
+!Tests/RankHarness/RankHarness.csproj
 ~$*
 .DS_Store
 Thumbs.db

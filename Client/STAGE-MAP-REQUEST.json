@@ -30,5 +30,6 @@
   },
   "androidApkSha256": "865DAD68BA5A648829F83428C53F7BC343C4AB60595F54BE9080D402B932EC95",
   "evidence": "Evidence/stage-map-verification.json; Evidence/stage-map-tests.xml; Evidence/stage-map-idempotence.json",
-  "rootBrowserReport": "Docs/Management/Evidence/reference-ux-browser-20261014/README.md"
+  "rootBrowserReport": "Docs/Management/Evidence/reference-ux-browser-20261014/README.md",
+  "supersededByGraphicsRefresh": "Current graphics/result contract and evidence: GRAPHICS-REFRESH-REQUEST.json / Evidence/graphics-refresh-verification.json. Existing document is historical baseline."
 }
