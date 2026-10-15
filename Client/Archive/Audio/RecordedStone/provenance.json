@@ -23,5 +23,10 @@
   "assetSha256": "be3a2720691bff2ceb4f688356b1362d9c0a7bdca3d6dfe7a671b6523dea747c",
   "durationSeconds": 0.28,
   "peak": 0.649993896484375,
-  "rms": 0.07460684009183519
+  "rms": 0.07460684009183519,
+  "archivedSourceHtmlSanitization": {
+    "date": "2026-10-16",
+    "file": "freesound-source.html",
+    "change": "Removed the third-party Freesound public Mapbox token from the archived map script. Audio, author, source URL and CC0 license evidence unchanged."
+  }
 }

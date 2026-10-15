@@ -2,7 +2,7 @@
 
 **Pages 배포 분리 2026-10-16:** 사용자는 현재 개발 작업을 기능별 한국어 커밋으로 보존하고 Pages 전용 워크트리를 만들도록 지시했다. 전용 브랜치에는 검증된 웹 빌드 결과물·최소 Pages Actions 설정만 담는다. 개발 소스·Excel·내부 문서·Library·인증정보는 배포 브랜치에 포함하지 않는다. 개발 브랜치에는 계속 빌드 산출물을 넣지 않는다. 외부 테스트용이며 실광고·결제·출시 상태는 바꾸지 않는다. 로그인 미완료 상태에서 실제 Pages 배포 완료로 기록하지 않는다.
 
-**Pages 준비 결과:** 개발 기능별 4개 커밋과 별도 독립 브랜치 `codex/github-pages`의 배포 커밋 `348b441`을 완료했다. 배포 브랜치는 `public/` 검증본 18파일·`.nojekyll`과 `.github/workflows/pages.yml`만 추적한다. Actions는 해당 브랜치 push 시 `public/`만 업로드·배포하며 개발 소스를 병합하지 않는다. 기존 빌드와 Git 저장 파일의 SHA-256 18/18 일치, 신규 Unity 빌드 미실행. GitHub 인증이 없어 원격 푸시·Pages 설정·Actions 실행·공개 URL 검증은 미실행이다. [커밋과 워크트리 기록](../../Overview/WORK-SUMMARY-20261016.md)을 따른다.
+**Pages 준비 결과:** 개발 기능별 4개 커밋과 별도 독립 브랜치 `codex/github-pages`의 배포 커밋 `348b441`을 완료했다. 배포 브랜치는 `public/` 검증본 18파일·`.nojekyll`과 `.github/workflows/pages.yml`만 추적한다. Actions는 해당 브랜치 push 시 `public/`만 업로드·배포하며 개발 소스를 병합하지 않는다. 기존 빌드와 Git 저장 파일의 SHA-256 18/18 일치, 신규 Unity 빌드 미실행. 이후 원격 `348b441`과 Actions 실행을 확인했으나 Configure GitHub Pages 단계에서 실패했다. 사용자 화면의 Source를 GitHub Actions로 변경하고 재실행해야 하며, 공개 URL 성공 검증은 아직 없다. [커밋과 워크트리 기록](../../Overview/WORK-SUMMARY-20261016.md)을 따른다.
 
 **외부 테스트 결함 수정 2026-10-16:** 승인된 친구 테스트의 iPhone 카카오톡 오디오 디코딩 오류·모바일 UI 대응을 재빌드하고 같은 임시 주소에 반영했다. 1080×1920 디자인 기준은 유지하되 visualViewport의 표시 크기를 따르고, 일반 브라우저에는 Toss 호스트 여백 64px를 예약하지 않는다. 명시적 호스트에서는 기존 안전 여백을 유지한다. TypingKey/ButtonClick 원본을 보존하고 앞 2,048샘플 무음을 포함한 0.2초 보호 복사본을 프리팹에 연결했다. 변환 후 신호·Unity 검사와 공개 주소의 390×664/390×844 입력 검증 완료. **실제 iPhone 재시험은 대기**이며 [증거](Evidence/ios-playtest-fix-20261016/README.md)에 구분해 기록한다. 신규 기능·상용 출시·실광고/결제 활성화는 포함하지 않는다.
 

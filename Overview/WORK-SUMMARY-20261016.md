@@ -1,6 +1,6 @@
 # 4목 작업 정리 — 2026-10-16
 
-현재 상태를 기능별로 보존하는 커밋 기준 문서다. 기존 임시 웹 주소에는 모바일 수정본이 배포돼 있다. GitHub Pages는 전용 워크트리와 배포 커밋까지 준비했으며 **원격 푸시·Pages 배포는 아직 하지 않았다**.
+현재 상태를 기능별로 보존하는 커밋 기준 문서다. 기존 임시 웹 주소에는 모바일 수정본이 배포돼 있다. GitHub Pages 전용 워크트리와 배포 커밋을 준비했고 **원격 브랜치의 `348b441`까지 확인했다. 의도한 Actions 배포는 아직 성공하지 않았다**.
 
 | 기능 | 반영한 내용 | 상태·검증 범위 |
 | --- | --- | --- |
@@ -31,4 +31,6 @@ GitHub Pages는 노트북 전원과 독립적으로 친구가 접속하는 무�
 
 Pages 워크트리 위치: `C:/Users/JW/.codex/worktrees/github-pages/StageGame`. 개발 이력을 상속하지 않는 독립 브랜치다. 최상위에는 `public/`과 `.github/`만 있으며, `public/`의 검증본 18개 파일(88,619,877바이트)·`.nojekyll`, `.github/workflows/pages.yml` 총 20개만 추적한다. Git에 저장된 빌드 18개 파일의 SHA-256이 기존 검증본과 모두 일치한다. 새 Unity 빌드는 실행하지 않았다.
 
-인증이 완료되면 저장소 Settings → Pages → Source를 **GitHub Actions**로 설정하고 `codex/github-pages`를 푸시한다. 해당 브랜치의 push가 `public/`을 Pages 아티팩트로 올려 배포한다. 환경에 배포 브랜치 제한이 설정돼 있다면 `github-pages` 환경에 이 브랜치를 허용해야 한다. Actions 성공과 실제 URL 접속을 확인한 뒤에만 공개 주소를 확정한다. 개발 소스 브랜치를 배포 브랜치에 병합하지 않는다.
+원격 `codex/github-pages`에 `348b441`이 올라간 것을 확인했다. 준비한 [Actions 실행](https://github.com/Hwanggok2/StageGame/actions/runs/38773821716)은 Configure GitHub Pages 단계에서 실패했다. 사용자 화면에는 Source가 `Deploy from a branch`, 폴더가 `/(root)`로 설정돼 있다. 저장소 Settings → Pages → Source를 **GitHub Actions**로 변경한 뒤 위 실행을 다시 실행한다. Actions가 `public/`을 사이트 최상위로 배포하므로 현재 구성에서 `/(root)`나 `/docs`를 배포 폴더로 고르지 않는다. 환경에 배포 브랜치 제한이 설정돼 있다면 `github-pages` 환경에 이 브랜치를 허용해야 한다. Actions 성공과 실제 URL 접속을 확인한 뒤에만 공개 주소를 확정한다. 개발 소스 브랜치를 배포 브랜치에 병합하지 않는다.
+
+효과음 출처 보관 HTML의 Freesound 공개용 Mapbox 토큰 경고는 [확인·제거 기록](../Docs/Management/SECURITY-20261016.md)을 따른다. Pages 빌드에는 해당 값이 없으며, 과거 커밋 정리와 GitHub 경고 닫힘은 별도 상태다.
