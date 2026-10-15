@@ -70,20 +70,115 @@ class ExportTests(unittest.TestCase):
         payloads = data.validate(self.tables)
         stages = payloads["stages.json"]["stages"]
         self.assertEqual(30, len(stages))
-        self.assertEqual(137, len(payloads["strings.json"]["strings"]))
+        self.assertEqual(423, len(payloads["strings.json"]["strings"]))
         for entry in payloads["strings.json"]["strings"]:
             self.assertEqual({"key", "ko", "en"}, set(entry))
-        expected = {"id", "chapter", "titleKey", "aiDepth", "aiNodeBudget", "aiRandomPermille", "starter", "openingMoves"}
+        expected = {"id", "chapter", "titleKey", "aiDepth", "aiNodeBudget", "aiRandomPermille", "starter", "openingMoves",
+                    "rankKey", "descriptionKey", "difficultyStars", "aiIntroKey", "aiWinKey", "aiLoseKey", "characterId", "aiRating", "aiOversightPermille"}
         for stage in stages:
             self.assertEqual(expected, set(stage))
         self.assertEqual([10, 10, 10], [sum(s["chapter"] == c for s in stages) for c in (1, 2, 3)])
+
+    def test_rank_and_star_boundaries(self):
+        stages = data.validate(self.tables)['stages.json']['stages']
+        self.assertEqual([f'C{n:02}' for n in list(range(1,13))+[n for n in range(13,19) for _ in range(2)]+[2,3,4,5,19,1]], [s['characterId'] for s in stages])
+        self.assertEqual([2] * 15, [sum(s['difficultyStars'] == 1+n*.5 for s in stages) for n in range(15)])
+        for index, field, value, message in ((2, 'RankKey', 'rank_02', 'RankKey must'),
+                                             (3, 'RankKey', 'rank_01', 'RankKey must'),
+                                             (5, 'DifficultyStars', 1, 'once per two'),
+                                             (6, 'DifficultyStars', 1, 'once per two')):
+            with self.subTest(index=index, field=field):
+                self.tables = copy.deepcopy(self.original)
+                self.assert_invalid('Stages', index, field, value, message)
+
+    def test_missing_presentation_references(self):
+        for field in ('RankKey', 'DescriptionKey', 'AiIntroKey', 'AiWinKey', 'AiLoseKey'):
+            with self.subTest(field=field):
+                self.tables = copy.deepcopy(self.original)
+                self.assert_invalid('Stages', 0, field, 'missing', 'missing from active Strings')
+
+    def test_ai_dialogue_roles_and_stage_descriptions(self):
+        for field, value in (('AiWinKey', 'ai_rank_01_lose'), ('AiLoseKey', 'ai_rank_01_win'),
+                             ('AiIntroKey', 'ai_rank_02_intro'), ('DescriptionKey', 'stage_desc_002')):
+            with self.subTest(field=field):
+                self.tables = copy.deepcopy(self.original)
+                self.assert_invalid('Stages', 0, field, value, f'{field} must')
+
+    def test_stars_require_bounded_half_steps(self):
+        for value in (0, 8.5, 1.25, float('nan'), float('inf'), True, '1', None):
+            with self.subTest(value=value):
+                self.assert_invalid('Stages', 0, 'DifficultyStars', value, 'half-step')
+
+    def test_ai_settings_cannot_reverse_the_difficulty_curve(self):
+        for field,value in (('AiDepth',3),('AiNodeBudget',5000),('AiRandomPermille',300)):
+            with self.subTest(field=field):
+                self.tables=copy.deepcopy(self.original)
+                self.assert_invalid('Stages',29,field,value,'same AI profile|must not decrease')
+
+    def test_rating_profiles_and_oversight_are_validated(self):
+        stages=data.validate(self.tables)['stages.json']['stages']
+        self.assertEqual([200+100*(n//2) for n in range(30)],[s['aiRating'] for s in stages])
+        self.assertGreater(stages[0]['aiOversightPermille'],0)
+        self.assertLessEqual(stages[0]['aiOversightPermille'],400)
+        self.assertTrue(all(s['aiOversightPermille']==0 and s['aiDepth']>=2 for s in stages if s['aiRating']>=700))
+        self.assertEqual(0,stages[-1]['aiOversightPermille'])
+        for field,value in (('AiRating',199),('AiRating',1601),('AiRating',250),('AiOversightPermille',-1),('AiOversightPermille',1001)):
+            with self.subTest(field=field,value=value):
+                self.tables=copy.deepcopy(self.original)
+                self.assert_invalid('Stages',0,field,value,'AiRating|AiOversightPermille')
+        self.tables=copy.deepcopy(self.original)
+        self.assert_invalid('Stages',1,'AiOversightPermille',0,'same AI profile')
+
+    def test_presentation_copy_is_one_line_without_arguments(self):
+        for key in ('story_opponent_001', 'story_stage_desc_001', 'story_002_intro', 'story_002_win', 'story_002_lose'):
+            for value in ('First\nSecond', 'Line {0}'):
+                with self.subTest(key=key, value=value):
+                    self.tables = copy.deepcopy(self.original)
+                    row = next(r for r in self.tables['Strings'] if r['SearchKey'] == key)
+                    row.update(Content_Kor=value, Content_Eng=value)
+                    with self.assertRaisesRegex(data.ValidationError, 'one line without format arguments'):
+                        data.validate(self.tables)
+
+    def test_balance_preserves_stage_identity_with_empty_boards_and_ai_starts(self):
+        record = json.loads((data.ROOT / 'Validation/rank-ui-changes.json').read_text(encoding='utf-8'))
+        stages = data.validate(self.tables)['stages.json']['stages']
+        for previous, current in zip(record['previousStageFields'], stages):
+            for key in ('id','chapter','titleKey'):
+                self.assertEqual(previous[key],current[key])
+        self.assertEqual(24, sum(not stage['openingMoves'] for stage in stages))
+        self.assertEqual([5,8,11,14,18,22,26,30], [s['id'] for s in stages if s['starter'] == -1])
+        self.assertGreaterEqual(sum(not s['openingMoves'] for s in stages[10:24]), 10)
+        for stage in stages:
+            self.assertLessEqual(len(stage['openingMoves'].split(',')) if stage['openingMoves'] else 0, 4)
+        for index in (3,10):
+            self.assertEqual('', stages[index]['openingMoves'], 'Stages 4/11 must no longer be one-turn puzzles')
+
+    def test_first_stage_story_roles_and_exact_user_copy(self):
+        payloads = data.validate(self.tables)
+        stages = payloads['stages.json']['stages']
+        strings = {row['key']: row for row in payloads['strings.json']['strings']}
+        for field, suffix in (('aiIntroKey', 'intro'), ('aiWinKey', 'win'), ('aiLoseKey', 'lose')):
+            self.assertEqual(f'story_first_{suffix}', stages[0][field])
+            self.assertEqual(f'story_002_{suffix}', stages[1][field])
+            self.assertEqual(f'story_003_{suffix}', stages[2][field])
+        self.assertEqual('이 게임의 프로라고 했지? 그런데 내가 이길 것 같아.', strings['story_first_intro']['ko'])
+        self.assertEqual('프로라는 말, 거짓말이었나?', strings['story_first_win']['ko'])
+        self.assertEqual('프로는 역시 다르네. 다음엔 내가 이긴다.', strings['story_first_lose']['ko'])
+
+    def test_first_story_exception_is_limited_to_stage_one_and_correct_role(self):
+        for field, suffix in (('AiIntroKey', 'intro'), ('AiWinKey', 'win'), ('AiLoseKey', 'lose')):
+            with self.subTest(field=field):
+                self.tables = copy.deepcopy(self.original)
+                self.assert_invalid('Stages', 1, field, f'story_first_{suffix}', f'{field} must')
+        self.tables = copy.deepcopy(self.original)
+        self.assert_invalid('Stages', 0, 'AiWinKey', 'story_first_lose', 'AiWinKey must')
 
     def test_all_openings_have_independent_legal_nonterminal_prefixes(self):
         for stage in self.tables["Stages"]:
             with self.subTest(stage=stage["Id"]):
                 sequence = [int(x) for x in (stage["OpeningMoves"] or "").split(",") if x]
                 stacks, side = independent_board(sequence, stage["Starter"])
-                self.assertEqual(1, side, "MVP authored openings leave the player to move")
+                self.assertIn(side, (1,-1))
                 actual, next_side = data.replay_opening(stage["OpeningMoves"] or "", stage["Starter"])
                 self.assertEqual(side, next_side)
                 self.assertEqual(sum(map(len, stacks)), sum(v != 0 for r in actual for v in r))
@@ -92,27 +187,17 @@ class ExportTests(unittest.TestCase):
         themes = {row["LearningGoal"] for row in self.tables["Stages"]}
         self.assertGreaterEqual(len(themes), 4)
         depths = [row["AiDepth"] for row in self.tables["Stages"]]
-        self.assertTrue(any(b < a for a, b in zip(depths, depths[1:])))
+        self.assertTrue(all(b >= a for a, b in zip(depths, depths[1:])))
+        budgets=[row['AiNodeBudget'] for row in self.tables['Stages']]
+        rates=[row['AiRandomPermille'] for row in self.tables['Stages']]
+        self.assertTrue(all(b>=a for a,b in zip(budgets,budgets[1:])))
+        self.assertTrue(all(b<=a for a,b in zip(rates,rates[1:])))
         for stage in self.tables["Stages"]:
             with self.subTest(stage=stage["Id"]):
                 sequence = [int(x) for x in (stage["OpeningMoves"] or "").split(",") if x]
                 stacks, side = independent_board(sequence, stage["Starter"])
-                goal = stage["LearningGoal"]
-                if "차단" in goal:
-                    self.assertEqual([], immediate_wins(stacks, side))
-                    self.assertEqual(1, len(immediate_wins(stacks, -side)))
-                if "즉시 연결" in goal or "대각 연결 찾기" in goal:
-                    self.assertTrue(immediate_wins(stacks, side))
-                if "두 위협" in goal:
-                    choices = []
-                    for col in range(7):
-                        if len(stacks[col]) == 6:
-                            continue
-                        candidate = copy.deepcopy(stacks)
-                        candidate[col].append(side)
-                        if not immediate_wins(candidate, -side) and len(immediate_wins(candidate, side)) >= 2:
-                            choices.append(col)
-                    self.assertTrue(choices)
+                self.assertEqual([], immediate_wins(stacks, side))
+                self.assertEqual([], immediate_wins(stacks, -side))
 
     def test_opening_grammar(self):
         for value in ("7", "-1", "1,", ",1", "1,,2", "1, 2", "0.0", "０", None):
@@ -334,15 +419,12 @@ class ExportTests(unittest.TestCase):
             self.assertEqual(oracle(stacks, side, 3), audit.solve(*audit.position(stage), 3))
         audit.solve.cache_clear()
 
-    def test_six_repaired_openings_have_bounded_winning_strategy(self):
-        records = json.loads((data.ROOT / "Validation/opening-repairs.json").read_text(encoding="utf-8"))
-        by_id = {stage["Id"]: stage for stage in self.tables["Stages"]}
-        for repair in records:
-            with self.subTest(stage=repair["id"]):
-                stage = by_id[repair["id"]]
-                self.assertEqual(repair["new"], stage["OpeningMoves"])
-                self.assertEqual(1, audit.solve(*audit.position(stage), 8))
-                audit.solve.cache_clear()
+    def test_one_move_wins_for_either_side_are_rejected(self):
+        # Both positions are legal and unfinished, but already contain a winning next move.
+        for moves in ('4,2,5,1,6,2', '6,0,6,1,5,2'):
+            with self.subTest(moves=moves):
+                self.tables = copy.deepcopy(self.original)
+                self.assert_invalid('Stages', 0, 'OpeningMoves', moves, 'one-move win')
 
     def test_replace_failure_rolls_back_complete_bundle(self):
         old = data.validate(self.tables)

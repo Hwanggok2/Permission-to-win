@@ -9,7 +9,7 @@ namespace StageGame
         static readonly int[] Order = { 3, 2, 4, 1, 5, 0, 6 };
         const int Win = 100000;
         readonly ConnectFourBoard root;
-        readonly int maxDepth, budget, randomPermille;
+        readonly int maxDepth, budget, randomPermille, oversightPermille;
         readonly Random random;
         readonly IEnumerator<int> iterator;
         bool exhausted;
@@ -18,14 +18,17 @@ namespace StageGame
         public int CompletedDepth { get; private set; }
         public bool Complete { get; private set; }
 
-        public AiSearch(ConnectFourBoard board, int depth, int nodeBudget, int mistakePermille, int seed)
+        public AiSearch(ConnectFourBoard board, int depth, int nodeBudget, int mistakePermille, int seed, bool protectOpening = false, int oversightPermille = 0)
         {
             if (depth < 1 || depth > 6 || nodeBudget < 1 || mistakePermille < 0 || mistakePermille > 1000)
                 throw new ArgumentOutOfRangeException(nameof(depth));
+            if (oversightPermille < 0 || oversightPermille > 1000) throw new ArgumentOutOfRangeException(nameof(oversightPermille));
             root = board.Clone();
-            maxDepth = depth;
-            budget = nodeBudget;
-            randomPermille = mistakePermille;
+            // Retained for historical balance comparisons; live matches use the authored rating profile throughout.
+            maxDepth = protectOpening ? Math.Max(4, depth) : depth;
+            budget = protectOpening ? Math.Max(3500, nodeBudget) : nodeBudget;
+            randomPermille = protectOpening ? 0 : mistakePermille;
+            this.oversightPermille = protectOpening ? 0 : oversightPermille;
             random = new Random(seed);
             iterator = Search().GetEnumerator();
         }
@@ -43,11 +46,19 @@ namespace StageGame
         {
             if (root.IsFinished) yield break;
             var legal = new List<int>();
+            foreach (int column in Order) if (root.CanDrop(column)) legal.Add(column);
+            if (legal.Count == 0) yield break;
+            // Beginner profiles sometimes overlook tactics, including an immediate win or block.
+            // This choice depends only on the profile/seed, never the player's results.
+            if (oversightPermille > 0 && random.Next(1000) < oversightPermille)
+            {
+                ChosenColumn = legal[random.Next(legal.Count)];
+                yield break;
+            }
             var safe = new List<int>();
             foreach (int column in Order)
             {
                 if (!root.CanDrop(column)) continue;
-                legal.Add(column);
                 var after = root.Clone();
                 after.TryDrop(column);
                 if (after.Winner == root.CurrentPlayer) { ChosenColumn = column; yield break; }
@@ -64,6 +75,34 @@ namespace StageGame
             var candidates = safe.Count > 0 ? safe : legal;
             if (candidates.Count == 0) yield break;
             ChosenColumn = candidates[0];
+            if (maxDepth >= 2 && safe.Count > 1)
+            {
+                // Random choices must also avoid giving the opponent two winning columns.
+                // An immediate AI win answers a fork, so check that counter before rejecting it.
+                var forkSafe = new List<int>();
+                foreach (int column in safe)
+                {
+                    var after = root.Clone(); after.TryDrop(column);
+                    bool allowsFork = false;
+                    foreach (int reply in Order)
+                    {
+                        if (!after.CanDrop(reply)) continue;
+                        if (NodesVisited >= budget) yield break;
+                        NodesVisited++;
+                        var response = after.Clone(); response.TryDrop(reply);
+                        allowsFork = WinningDrops(response, -root.CurrentPlayer, 2) >= 2 &&
+                            WinningDrops(response, root.CurrentPlayer, 1) == 0;
+                        yield return 0;
+                        if (allowsFork) break;
+                    }
+                    if (!allowsFork)
+                    {
+                        forkSafe.Add(column);
+                        if (forkSafe.Count == 1) ChosenColumn = column;
+                    }
+                }
+                if (forkSafe.Count > 0) candidates = forkSafe;
+            }
             // Random mistakes cannot ignore an immediate win or an avoidable immediate loss.
             if (random.Next(1000) < randomPermille)
             {
@@ -86,6 +125,32 @@ namespace StageGame
                 ChosenColumn = bestMove;
                 CompletedDepth = depth;
             }
+        }
+
+        static int WinningDrops(ConnectFourBoard board, int player, int limit)
+        {
+            int count = 0;
+            foreach (int column in Order)
+            {
+                int row = board.LandingRow(column);
+                if (row < 0) continue;
+                if (WinningLine(board, column, row, 1, 0, player) || WinningLine(board, column, row, 0, 1, player) ||
+                    WinningLine(board, column, row, 1, 1, player) || WinningLine(board, column, row, 1, -1, player))
+                    if (++count >= limit) break;
+            }
+            return count;
+        }
+        static bool WinningLine(ConnectFourBoard board, int x, int y, int dx, int dy, int player)
+        {
+            int count = 1;
+            for (int sign = -1; sign <= 1; sign += 2)
+                for (int n = 1; n < 4; n++)
+                {
+                    int cx = x + dx * n * sign, cy = y + dy * n * sign;
+                    if (cx < 0 || cx >= ConnectFourBoard.Width || cy < 0 || cy >= ConnectFourBoard.Height || board[cx, cy] != player) break;
+                    count++;
+                }
+            return count >= 4;
         }
 
         sealed class Score { public int Value; }

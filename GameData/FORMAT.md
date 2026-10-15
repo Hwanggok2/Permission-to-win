@@ -1,8 +1,10 @@
 # StageGame GameData 형식
 
+2026-10-15 추가 적용: AI 전체가 어렵다는 피드백에 따라 200~1600 내부 레이팅 프로필과 전술 누락 확률을 추가했다. Stages S/T열과 JSON의 `aiRating`/`aiOversightPermille`가 추가되며 wrapper는 v1을 유지한다. 현재 밸런스·검증은 [DIFFICULTY-CONTRACT.md](DIFFICULTY-CONTRACT.md)를 따른다.
+
 확인일: 2026-10-14 (Asia/Seoul). 상태: 형식 조사 및 MVP Excel·Python exporter/validator·JSON v1 작성 완료.
 
-Excel을 수치와 문자열의 원본으로 삼고, 개발 시 검증·변환한 데이터를 클라이언트에 포함한다. 확정 MVP는 7×6 중력식 4목의 로컬 AI 싱글플레이, 3챕터×10스테이지다.
+Excel을 수치와 문자열의 원본으로 삼고, 개발 시 검증·변환한 데이터를 클라이언트에 포함한다. 2026-10-15 사용자 승인으로 부대 대국 24단계와 병사 대회 6단계, 19명의 인물을 배치했다. [대회 계약](TOURNAMENT-CONTRACT.md)이 현재 배치 기준이다. 별은 1~8이며 2단계마다 0.5씩 높아진다. 기존 저장 호환용 chapter 필드의 3×10 값은 유지한다.
 
 이 문서의 **관찰**은 SimpleGame 파일에서 확인한 내용이고, **StageGame 기준안**은 적용할 원칙이다. 참조 구현을 복사하거나 모든 예외의 호환성이 검증되었다는 뜻은 아니다. 현재 구현 범위는 아래 9절과 [실행 결과](C:/Github/StageGame/GameData/README.md)에 명시한다. 런타임 타입·출력은 총괄의 [JSON v1 계약](C:/Github/StageGame/Docs/Management/CONTRACT.md)을 따른다.
 
@@ -129,7 +131,7 @@ Excel을 수치와 문자열의 원본으로 삼고, 개발 시 검증·변환�
 | 잘못된 Unity 카탈로그 참조 또는 반영 실패 | 기존 데이터 보존 확인 |
 | 모든 제작 시트 렌더와 최종 XLSX 재열기 | 한글·메타행·숫자 가독성, 잘림·의도치 않은 변형 없음 |
 
-위 목록은 일반 형식의 검증 기준이다. MVP는 한국어·영어를 지원하며 Unity 에셋 importer는 없다. 실제 실행한 36개 Python 테스트와 렌더 검증은 README에 구분하여 기록했다. 참조 테스트의 존재는 [파서 테스트](C:/Github/SimpleGame/Assets/Game/Tests/EditMode/GameDataExcelImporterTests.cs:2698)와 [참조 실패 보존 테스트](C:/Github/SimpleGame/Assets/Game/Tests/EditMode/GameDataImportTransactionTests.cs:14)에서 확인했으나 SimpleGame 테스트는 실행하지 않았다.
+위 목록은 일반 형식의 검증 기준이다. MVP는 한국어·영어를 지원하며 Unity 에셋 importer는 없다. 실제 실행한 45개 Python 테스트와 렌더 검증은 README에 구분하여 기록했다. 참조 테스트의 존재는 [파서 테스트](C:/Github/SimpleGame/Assets/Game/Tests/EditMode/GameDataExcelImporterTests.cs:2698)와 [참조 실패 보존 테스트](C:/Github/SimpleGame/Assets/Game/Tests/EditMode/GameDataImportTransactionTests.cs:14)에서 확인했으나 SimpleGame 테스트는 실행하지 않았다.
 
 ## 8. 문서와 코드의 차이 및 남은 결정
 
@@ -158,8 +160,21 @@ Excel을 수치와 문자열의 원본으로 삼고, 개발 시 검증·변환�
 | `OpeningMoves` | `openingMoves` | 빈 셀은 빈 문자열. 그 외 `0,3,2`처럼 열 0~6을 쉼표로 연결 |
 | `LearningGoal` | 출력 안 함 | 필수 학습 의도, `none/None` |
 | `VerificationNote` | 출력 안 함 | 현재 `강제승리 미검증`, `none/None` |
+| `RankKey` | `rankKey` | `story_opponent_001`–`story_opponent_030`, 계급/보직·이름·대회 라운드 |
+| `DescriptionKey` | `descriptionKey` | `story_stage_desc_001`–`story_stage_desc_030`, 해당 단계 설명 |
+| `DifficultyStars` | `difficultyStars` | float 1–8, 반 개 단위. 1–2는 1, 3–4는 1.5, …, 29–30은 8 |
+| `AiIntroKey` | `aiIntroKey` | 해당 단계의 `story_NNN_intro`, 1단계 예외 아래 참조 |
+| `AiWinKey` | `aiWinKey` | 해당 단계의 `story_NNN_win`, AI 승리/플레이어 패배 |
+| `AiLoseKey` | `aiLoseKey` | 해당 단계의 `story_NNN_lose`, 플레이어 승리/AI 패배 |
+| `CharacterId` | `characterId` | `C01`–`C19`, 24+6 배치에 맞는 캐릭터 ID |
+| `AiRating` | `aiRating` | int/All, S열. 내부 실력 구간 200~1600, 100 단위. 실제 사람 Elo가 아님 |
+| `AiOversightPermille` | `aiOversightPermille` | int/All, T열. 전술 검사 전 합법 수를 무작위로 고를 확률 0~1000‰ |
 
-중간 국면은 시작측부터 교대로 매 수 재생한다. 만열, 범위 밖 열, 잘못된 구분 문법, 재생 도중의 승리, 42수 무승부를 모두 거부한다. 매 합법 수가 상대의 다음 즉승을 허용하는 국면도 거부한다. 깊은 수읽기의 패배는 별도 `audit_openings.py`와 QA에서 검사한다. 현재 작성된 30개는 모두 재생 후 플레이어 차례다. 이는 콘텐츠 선택이며 일반 계약상 AI 차례 시작을 금지한 것은 아니다.
+사용자 지정 서사 예외: **ID 1만** `AiIntroKey=story_first_intro`, `AiWinKey=story_first_win`, `AiLoseKey=story_first_lose`다. 다른 단계에 이 키를 넣거나 역할을 뒤바꾸면 exporter가 거부한다. 문자열 값에는 강제 개행이나 인자를 넣지 않으며 대사 UI의 자연 줄바꿈은 허용한다. 계급·보직은 도전자 표시이며 승리로 플레이어가 진급하지 않는다.
+
+계급 UI 6개 필드는 L:Q, 캐릭터 ID는 R열이다. 숫자 별은 `float/Client`, 나머지는 `string/Client`다. 문자열 참조 5개는 활성 Strings에 존재하고 해당 단계/대사 역할과 일치해야 한다. 값에 개행·포맷 인자를 넣지 않는다. 기존 titleKey와 수순은 보존하며 AI 수치는 레이팅 계약을 따른다. 현재 상대 표시는 rankKey를 쓴다. 계급/별은 사람 난이도 검증 결과가 아니다. [필드·키·인계 계약](TOURNAMENT-CONTRACT.md).
+
+중간 국면은 시작측부터 교대로 매 수 재생한다. 만열, 범위 밖 열, 잘못된 구분 문법, 재생 도중의 승리, 42수 무승부를 모두 거부한다. 매 합법 수가 상대의 다음 즉승을 허용하는 국면도 거부한다. 깊은 수읽기의 패배는 별도 `audit_openings.py`와 QA에서 검사한다. 현재 5·8·11·14·18·22·26·30단계는 AI 선공이다. 시작 수순과 선공은 레이팅 변경에서 보존했다.
 
 `AdConfig`는 USE 한 행이며 계약 v1 시험값을 엄격히 검사한다. 필드는 `InterstitialGraceMatches=3`, `InterstitialEveryMatches=2`, `InterstitialCooldownSeconds=90`, `BannerLobby=TRUE`, `BannerResult=TRUE`, `RewardedHintsPerMatch=1`이다. JSON은 첫 글자만 소문자로 바꾼 동명 필드를 사용한다. 시험값을 바꾸려면 총괄 계약과 validator를 함께 갱신한다.
 
@@ -167,6 +182,6 @@ Excel을 수치와 문자열의 원본으로 삼고, 개발 시 검증·변환�
 
 포맷은 C# `string.Format`의 제한된 부분집합 `{0}`, `{1}` 등만 허용한다. 두 언어의 인자 인덱스 집합이 같고 0부터 연속이어야 한다. 인자 순서 변경·반복은 허용하고 `{{`/`}}`는 리터럴 중괄호다. 이름 인자, 정렬/형식 지정자, 불완전 중괄호를 거부한다. 숫자 자릿수 등은 호출자가 미리 형식화한다. 예: `챕터 {0} · 스테이지 {1}` / `CHAPTER {0} · STAGE {1}`.
 
-2026-10-14 총괄 승인과 Client 요청 합의로 wrapper/schemaVersion 1을 유지하고 en을 추가했다. 기존 58개 한국어를 보존·번역하고 신규 UI 키 65개, 후속 단계 선택/그림 도움말 14개를 더해 현재 137개다. `stage_tier_1/2/3`은 1–10/11–20/21–30의 챕터 표시명이며 검증된 사람 난이도 등급을 뜻하지 않는다. 언어 코드는 `ko/en`, 최초·잘못된 저장값의 기본은 ko다. 언어 선택/저장·UI 갱신은 클라이언트가 구현한다. [소비자 합의 및 생성 상태](C:/Github/StageGame/GameData/LOCALIZATION-CONTRACT.md).
+wrapper/schemaVersion 1과 ko/en을 유지한다. 대회·인물별 문구까지 418개에 음악 설정 2개, 턴 제한 시간 2개, AI 레이팅 표시 1개를 더해 현재 423개다. 기존 `stage_tier_1/2/3`과 챕터용 문구는 구버전 호환을 위해 보존하며 새 화면은 `rankKey`와 계급 UI 키를 사용한다. 언어 코드는 `ko/en`, 최초·잘못된 저장값의 기본은 ko다. 언어 선택/저장·UI 갱신은 클라이언트가 구현한다. [현재 연결 계약](TOURNAMENT-CONTRACT.md).
 
-생성물은 `Generated/stages.json`, `ads.json`, `strings.json`이며 각 최상위는 `schemaVersion:1`을 갖는 객체다. stages/strings는 객체 배열이다. 스키마 밖의 열·시트·타입·범위는 오류로 보고한다. `float`, `long`, enum, 목록 메타는 현재 세 시트에서 사용하지 않는다. 범용 형식에서 허용될 수 있는 타입과 이번 MVP exporter의 지원 범위를 구분한다.
+생성물은 `Generated/stages.json`, `ads.json`, `strings.json`이며 각 최상위는 `schemaVersion:1`을 갖는 객체다. stages/strings는 객체 배열이다. 스키마 밖의 열·시트·타입·범위는 오류로 보고한다. `float`는 DifficultyStars에 사용하고 `long`, enum, 목록 메타는 사용하지 않는다. 범용 형식에서 허용될 수 있는 타입과 이번 MVP exporter의 지원 범위를 구분한다.

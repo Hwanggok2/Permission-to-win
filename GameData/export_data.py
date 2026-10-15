@@ -27,6 +27,11 @@ SCHEMAS = {
         ("AiRandomPermille", "int", "All"), ("Starter", "int", "All"),
         ("OpeningMoves", "string", "All"),
         ("LearningGoal", "none", "None"), ("VerificationNote", "none", "None"),
+        ("RankKey", "string", "Client"), ("DescriptionKey", "string", "Client"),
+        ("DifficultyStars", "float", "Client"), ("AiIntroKey", "string", "Client"),
+        ("AiWinKey", "string", "Client"), ("AiLoseKey", "string", "Client"),
+        ("CharacterId", "string", "Client"),
+        ("AiRating", "int", "All"), ("AiOversightPermille", "int", "All"),
     ],
     "AdConfig": [
         ("ExportType", "string", "All"),
@@ -69,6 +74,10 @@ def typed_value(value, kind: str, location: str):
         if value != int(value) or not -(2**31) <= value <= 2**31 - 1:
             fail(location, "expected an Int32 integer")
         return int(value)
+    if kind == "float":
+        if type(value) not in (int, float) or not math.isfinite(value):
+            fail(location, "expected a finite numeric cell")
+        return float(value)
     fail(location, f"unsupported type {kind!r}")
 
 
@@ -205,6 +214,18 @@ def can_survive_next_reply(board, side):
     return False
 
 
+def has_immediate_win(board, side):
+    for col in range(7):
+        row = next((y for y in range(6) if board[y][col] == 0), 6)
+        if row == 6:
+            continue
+        after = [line[:] for line in board]
+        after[row][col] = side
+        if has_four(after, col, row, side):
+            return True
+    return False
+
+
 def validate(tables):
     strings, keys = [], set()
     for row in tables["Strings"]:
@@ -225,6 +246,7 @@ def validate(tables):
     if not strings:
         fail("Strings", "at least one active string is required")
 
+    strings_by_key = {entry['key']: entry for entry in strings}
     stages, ids = [], set()
     for row in tables["Stages"]:
         location = f"Stages row {row['_row']}"
@@ -238,18 +260,55 @@ def validate(tables):
         key = required_text(row, "TitleKey", location)
         if key not in keys:
             fail(location, f"TitleKey {key!r} is missing from active Strings")
+        character_order = list(range(1, 13)) + [n for n in range(13, 19) for _ in range(2)] + [2, 3, 4, 5, 19, 1]
+        character_id = required_text(row, 'CharacterId', location)
+        if character_id != f'C{character_order[stage_id - 1]:02}':
+            fail(location, 'CharacterId must follow the 24 unit matches and 6 enlisted tournament rounds')
+        references = {
+            'RankKey': f'story_opponent_{stage_id:03}',
+            'DescriptionKey': f'story_stage_desc_{stage_id:03}',
+            'AiIntroKey': f'story_{stage_id:03}_intro',
+            'AiWinKey': f'story_{stage_id:03}_win',
+            'AiLoseKey': f'story_{stage_id:03}_lose',
+        }
+        if stage_id == 1:
+            references.update(AiIntroKey='story_first_intro', AiWinKey='story_first_win',
+                              AiLoseKey='story_first_lose')
+        presentation = {'characterId': character_id}
+        for field, expected_key in references.items():
+            reference = required_text(row, field, location)
+            if reference not in keys:
+                fail(location, f"{field} {reference!r} is missing from active Strings")
+            if reference != expected_key:
+                fail(location, f"{field} must be {expected_key!r} for stage {stage_id}")
+            for locale in ('ko', 'en'):
+                value = strings_by_key[reference][locale]
+                if '\n' in value or '\r' in value or format_indices(value, reference):
+                    fail(location, f"{field} {locale} must be one line without format arguments")
+            presentation[field[0].lower() + field[1:]] = reference
+        stars = row.get('DifficultyStars')
+        if type(stars) not in (int, float) or not math.isfinite(stars) or not 1 <= stars <= 8 or stars * 2 != int(stars * 2):
+            fail(location, 'DifficultyStars must be a half-step number from 1 to 8')
+        if stars != 1 + ((stage_id - 1) // 2) * .5:
+            fail(location, 'DifficultyStars must increase by 0.5 once per two consecutive stage IDs')
+        presentation['difficultyStars'] = stars
         starter = integer(row, "Starter", -1, 1, location)
         moves = row.get("OpeningMoves")
         moves = "" if moves is None else moves
         board, side = replay_opening(moves, starter, location + " OpeningMoves")
         if not can_survive_next_reply(board, side):
             fail(location, "every legal move loses on the opponent's next reply")
+        if has_immediate_win(board, 1) or has_immediate_win(board, -1):
+            fail(location, "opening must not contain a one-move win for either player")
         stages.append({
             "id": stage_id, "chapter": chapter, "titleKey": key,
             "aiDepth": integer(row, "AiDepth", 1, 6, location),
             "aiNodeBudget": integer(row, "AiNodeBudget", 100, 30000, location),
             "aiRandomPermille": integer(row, "AiRandomPermille", 0, 1000, location),
+            "aiRating": integer(row, "AiRating", 200, 1600, location),
+            "aiOversightPermille": integer(row, "AiOversightPermille", 0, 1000, location),
             "starter": starter, "openingMoves": moves,
+            **presentation,
         })
         required_text(row, "LearningGoal", location)
         note = required_text(row, "VerificationNote", location)
@@ -257,6 +316,22 @@ def validate(tables):
             fail(location, "VerificationNote must remain '강제승리 미검증' until separately proven")
     if ids != set(range(1, 31)):
         fail("Stages", "active IDs must be exactly 1..30 (three chapters of ten)")
+    ordered = sorted(stages, key=lambda stage: stage['id'])
+    profiles = {}
+    for stage in ordered:
+        rating = stage['aiRating']
+        if rating % 100 != 0:
+            fail('Stages', 'AiRating must use steps of 100')
+        profile = tuple(stage[key] for key in ('aiDepth', 'aiNodeBudget', 'aiRandomPermille', 'aiOversightPermille'))
+        if rating in profiles and profiles[rating] != profile:
+            fail('Stages', 'the same AiRating must use the same AI profile')
+        profiles[rating] = profile
+    for previous, current in zip(ordered, ordered[1:]):
+        if (current['aiDepth'] < previous['aiDepth'] or current['aiNodeBudget'] < previous['aiNodeBudget'] or
+                current['aiRandomPermille'] > previous['aiRandomPermille']):
+            fail('Stages', 'AI depth/budget must not decrease and random rate must not increase')
+        if current['aiRating'] < previous['aiRating'] or current['aiOversightPermille'] > previous['aiOversightPermille']:
+            fail('Stages', 'AI rating must not decrease and oversight rate must not increase')
 
     if len(tables["AdConfig"]) != 1:
         fail("AdConfig", "exactly one active configuration is required")
@@ -360,7 +435,7 @@ def main(argv=None):
     except (ValidationError, OSError, ValueError, KeyError, BadZipFile, InvalidFileException) as error:
         print(f"GameData validation failed: {args.source}: {error}", file=sys.stderr)
         return 1
-    print(f"Validated 30 stages / 3 chapters, {len(payloads['strings.json']['strings'])} strings, ads v1; "
+    print(f"Validated 30 stages / 19 characters / 24 unit matches + 6 tournament rounds, {len(payloads['strings.json']['strings'])} strings, ads v1; "
           + ("generated files match." if args.check else "exported to GameData/Generated."))
     return 0
 

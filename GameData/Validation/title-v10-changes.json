@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-15",
+  "reason": "총괄 지시에 따른 개발 화면 임시 표기 4목 / Four in a Row. 최종 상점 브랜드 확정이나 권리 확보 선언이 아님. 콘텐츠 원본은 Excel.",
+  "revisions": [
+    {
+      "key": "game_title",
+      "before": {
+        "ko": "한 수 진급",
+        "en": "Rank by Rank"
+      },
+      "after": {
+        "ko": "4목",
+        "en": "Four in a Row"
+      },
+      "row": 35
+    },
+    {
+      "key": "game_brand",
+      "before": {
+        "ko": "한 수 진급",
+        "en": "Rank by Rank"
+      },
+      "after": {
+        "ko": "4목",
+        "en": "Four in a Row"
+      },
+      "row": 64
+    },
+    {
+      "key": "client_game_title",
+      "before": {
+        "ko": "네 개의 수",
+        "en": "Four in a Row"
+      },
+      "after": {
+        "ko": "4목",
+        "en": "Four in a Row"
+      },
+      "row": 63
+    },
+    {
+      "key": "web_canvas_label",
+      "before": {
+        "ko": "한 수 진급 게임",
+        "en": "Rank by Rank game"
+      },
+      "after": {
+        "ko": "4목 게임",
+        "en": "Four in a Row game"
+      },
+      "row": 127
+    }
+  ],
+  "additions": [],
+  "visualRanges": [
+    "Strings!B35:E35",
+    "Strings!B63:E64",
+    "Strings!B127:E127"
+  ]
+}

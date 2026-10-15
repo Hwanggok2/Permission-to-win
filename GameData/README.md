@@ -1,6 +1,14 @@
 # StageGame MVP 데이터
 
-2026-10-14 기준 Excel 원본과 JSON v1 생성물을 작성하고 검증했다. 7×6 중력식 4목, 3챕터×10스테이지, 광고 설정 1행, 한국어·영어 문자열 137개다. 대국/AI/진행은 로컬이며 구매 서버 계획은 Server/README.md를 따른다.
+현재 기준(2026-10-15): **부대 24단계 + 병사 대회 6단계, 캐릭터 19명, ko/en 문자열 418개**다. 사용자가 이 기획 세션의 Client/GameData 수정과 Unity 적용·검증을 승인했다. [TOURNAMENT-CONTRACT.md](TOURNAMENT-CONTRACT.md)가 단계 배치와 CharacterId·인물별 대사 계약이다. 추가 피드백으로 초반 시작판 6개와 AI 수치를 완화했고 [DIFFICULTY-CONTRACT.md](DIFFICULTY-CONTRACT.md)에 현재 수치를 기록했다. 문자열·별점·진행 저장 의미는 보존한다. exporter `--check`, Python 45개, Unity 코어 25개 검사 통과. UI와 그림의 직전 검증은 [적용 기록](../Docs/Design/PIXEL-INTEGRATION.md)에 구분한다.
+
+## 직전 계급·난이도 개편 기록
+
+2026-10-15 사용자 승인으로 Excel 원본을 30단계·18개 계급 표시·별 1~8의 반 개 단위 난이도로 변경했다. 처음 6계급은 1단계씩, 나머지는 2단계씩이며 마지막 두 단계는 사단장이다. 별은 같은 값으로 두 단계씩 진행한다. AI 깊이·노드 예산은 점차 높이고 무작위 선택 비율은 줄였다. 7×6 중력식 4목과 기존 30개 시작판·ID·chapter·starter를 유지하며, 한국어·영어 문자열은 269개다. 별은 기획된 단계이며 사람 플레이로 검증된 난이도 등급은 아니다. 표시명은 4목 / Four in a Row, 상점명은 미확정이다.
+
+현재 규격은 `RANK-UI-CONTRACT.md`와 `FORMAT.md`, 검증 자료는 `Validation/progression-20261015/`를 따른다. 아래 제목·서사 변경 기록은 이전 v10 상태이며 이번에는 AI 설정과 계급별 참조도 변경했다. 새 빌드·실광고 활성화는 하지 않았다.
+
+이전 v10 표시명 변경 당시의 해시는 [TITLE-V10-CONTRACT.md](C:/Github/StageGame/GameData/TITLE-V10-CONTRACT.md)를 따른다. v9의 237개 키 중 제목 관련 4키의 7셀만 수정하고 나머지 233개 문자열·Stage·광고를 보존했다. 웹·Android 빌드는 실행하지 않았다. v9 확인 패널·대결 서사는 [STORY-CONTRACT.md](C:/Github/StageGame/GameData/STORY-CONTRACT.md)를 따른다. 프로 출신 플레이어는 훈련병으로 유지하며 계급 표시는 도전자 계급이다. 계급별 대사 30개와 첫 대국 지정 문구 3개를 보존했다. Stage 1의 대사 참조 3개만 전용 키이며 30개 시작판·AI·ID·titleKey·chapter·설명은 그대로다. 일반 대사 최대 ko 23자/en 54자, 첫 시작 대사 ko 30자/en 61자이며 말풍선은 1–2줄을 허용한다. 최종 UI는 Client/총괄 검증 범위이며 실물 폰 시험은 보류한다.
 
 ## 파일과 편집 흐름
 
@@ -10,16 +18,16 @@
 | [FORMAT.md](C:/Github/StageGame/GameData/FORMAT.md) | SimpleGame 관례 조사, 차이점, 실제 v1 필드 매핑과 검증 규칙 |
 | [export_data.py](C:/Github/StageGame/GameData/export_data.py) | Excel 읽기, 전체 검사, 재현 가능한 JSON 생성, `--check` |
 | [requirements.txt](C:/Github/StageGame/GameData/requirements.txt) | 기존 설치를 사용한 읽기 라이브러리 `openpyxl==3.1.5` |
-| [test_export_data.py](C:/Github/StageGame/GameData/test_export_data.py) | Python 자동 검증 36개 |
+| [test_export_data.py](C:/Github/StageGame/GameData/test_export_data.py) | Python 자동 검증 45개 |
 | [audit_openings.py](C:/Github/StageGame/GameData/audit_openings.py) | 휴리스틱 없이 제한 깊이 승패를 분석하는 독립 bitboard 검사 |
 | [Validation](C:/Github/StageGame/GameData/Validation/README.md) | QA 지적 6개 국면 수정 전후 수순·보존 검사·화면·재현 스크립트 |
-| [Generated/stages.json](C:/Github/StageGame/GameData/Generated/stages.json) | 30개 국면과 AI 시험값 |
+| [Generated/stages.json](C:/Github/StageGame/GameData/Generated/stages.json) | 기존 30개 국면·점진적 AI 설정과 계급 UI 참조 |
 | [Generated/ads.json](C:/Github/StageGame/GameData/Generated/ads.json) | 최초 3판 제외, 이후 2판 AND 90초, 힌트 1회/판 |
-| [Generated/strings.json](C:/Github/StageGame/GameData/Generated/strings.json) | 제목 30개와 UI/안내 문구 107개, 각각 ko/en |
+| [Generated/strings.json](C:/Github/StageGame/GameData/Generated/strings.json) | 제목 30개와 계급·설명·대사·UI 문구 239개, 각각 ko/en |
 
 소량의 데이터이며 제목 참조와 광고 설정을 한 번에 검증해야 하므로 원본 파일은 하나로 묶었다. 4행 메타 구조는 SimpleGame을 참고했지만 콘텐츠·코드는 새로 작성했다. Excel에는 enum이나 텍스트로 변환한 숫자를 넣지 않았으며, `OpeningMoves`는 열 수순을 표현하는 텍스트다.
 
-Excel을 수정한 뒤 exporter를 실행한다. JSON을 직접 고치지 않는다. export 성공 뒤 클라이언트 담당이 **세 JSON을 함께** `Client/Assets/StageGame/Resources/GameData/`에 복사하고 런타임 검증을 실행한다. 이 세션은 `Client/`에 쓰지 않았다.
+Excel을 수정한 뒤 exporter를 실행한다. JSON을 직접 고치지 않는다. export 성공 뒤 클라이언트 담당이 **세 JSON을 함께** `Client/Assets/StageGame/Resources/GameData/`에 복사하고 런타임 검증을 실행한다. 이번 변경은 사용자 승인으로 Client 세션이 원본과 소비자를 함께 수정했다.
 
 ## 실행
 
@@ -49,19 +57,23 @@ $stagePython = 'C:\Users\JW\.cache\codex-runtimes\codex-primary-runtime\dependen
 
 국면은 결정적 난수 후보 탐색과 전술 특징 필터로 새로 작성한 다음 합법 수순으로 확정했다. 최초 빈 보드는 1개, 중간 국면은 29개이며 모든 재생 후 플레이어가 착수한다. `starter=-1`인 스테이지는 8, 15, 22, 27이고, AI 선공 수순을 재생한 뒤 시작한다. `starter`를 첫 대화면 착수자와 혼동하지 않는다.
 
-깊이는 1~6, 노드 예산은 500~26000, 실수 비율은 0~250‰의 초기 시험값이다. 챕터 사이와 복습 단계에서 낮추기도 하므로 매 단계 숫자만 증가하는 구조가 아니다. 생성된 AI 파라미터가 실제 클라이언트에서 어느 정도의 응답 속도·난이도를 만드는지는 측정하지 않았다.
+현재 깊이는 1~6, 노드 예산은 500~30000, 무작위 선택 비율은 300→0‰다. 같은 별 두 단계는 같은 설정을 사용하며, 단계가 높아질수록 깊이·예산은 유지 또는 증가하고 무작위 선택은 유지 또는 감소한다. 체감 난이도와 전체 퍼즐 밸런스는 사람 플레이 검증이 필요하다.
 
 **30개 전체의 퍼즐·밸런스 인증은 완료되지 않았다.** QA 지적 후 교체한 10/12/20/22/24/26은 독립 제한 깊이 8 분석에서 승리 전략 존재를 확인했다. 전체 30개의 최적 플레이 결과·유일 해답·사람 학습 효과·재미·45~120초 목표는 검증하지 않았다. Excel의 보수적인 `강제승리 미검증` 문구는 다른 필드와 함께 보존했고, 추가 계산 증거는 아래 수정 기록에 분리했다. 실제 기기와 클라이언트 AI를 통한 검증이 필요하다.
 
-## 2026-10-14 실행 결과
+## 2026-10-15 난이도·계급 변경 검증
+
+Python 자동 검사 45/45, exporter `--check`, 원본 서식·기존 시작판 보존, Generated와 Client 세 JSON 바이트 대조가 통과했다. 현재 해시와 변경 셀은 [verification.json](C:/Github/StageGame/GameData/Validation/progression-20261015/verification.json), Excel 전후 렌더는 같은 디렉터리에 보관한다. 반 별과 사단장 표시는 Client Unity 검사에서 확인하며 실제 기기 체감 난이도 평가는 별도다.
+
+## 2026-10-14 실행 결과 (이전 기록)
 
 | 검사 | 결과 |
 | --- | --- |
-| Artifact Tool로 Excel 작성·언어 확장 및 재계산 | 완료. 3개 시트, 30스테이지, ko/en 137개, 수식 오류 검색 0건 |
+| Artifact Tool로 Excel 작성·언어 확장 및 재계산 | 완료. 3개 시트, 30스테이지, 10계급, ko/en 237개, 수식 오류 검색 0건 |
 | Excel 화면 렌더 | 3개 시트 모두 직접 확인. Stages 좌/우·후반, 광고 전 필드, Strings 메타·제목·긴 도움말/UI 문구 확인. 한글/메타/긴 수순 잘림 없음 |
 | 저장된 Excel 재열기 | openpyxl로 원본을 읽어 타입·메타·키·참조·합법 수순 검사 통과 |
 | 실제 exporter | 성공. 3개 wrapper 객체, UTF-8, schemaVersion 1 |
-| 자동 테스트 | 36개 통과. 아래 주요 경계와 불변성 포함 |
+| 자동 테스트 | 44개 통과. 기존 경계 검사와 신규 참조·계급/별 경계·AI 대사 역할·Stage 필드 보존 포함 |
 | 반복 생성 및 행 순서 변경 | 동일 JSON 바이트. 문자열 키/스테이지 ID 정렬 확인 |
 | 잘못된 데이터 입력 | 생성 실패 및 기존 정상 JSON 보존 확인 |
 | `--check` | 현재 원본과 생성물 일치. 누락/변경 JSON 거부도 테스트 |
@@ -74,10 +86,10 @@ $stagePython = 'C:\Users\JW\.cache\codex-runtimes\codex-primary-runtime\dependen
 
 | 파일 | SHA-256 |
 | --- | --- |
-| `GameData_MVP.xlsx` | `b58027ecdbabf5c01992fd51c764cf58391550f2b783467e9b1ad753be4006cb` |
-| `stages.json` | `2d04b124a42f0f3798ad942e9aacab97ee34a25f05b380144cd70f75c3904992` |
+| `GameData_MVP.xlsx` | `f2def3d974982b9361040c3b3e242e9fe3cfcbe72737212b782355b2b56401a1` |
+| `stages.json` | `6f76d1575f71fd0240cf7b5774bd2a3fed41fb1828bd0cb85464f34e72122e7e` |
 | `ads.json` | `d19f181faf52db28287bbed1b42291770dc3bf83d35e5cca8af4a6dcce9e194a` |
-| `strings.json` | `57e392cf68464898829946f17030e4ae3008aab86370452bacf6dbe56d68a291` |
+| `strings.json` | `9519b8ea2dfa94e45ac1273226ffb0a95634779d3de9d02d6817f17c9e6f74f1` |
 
 이 해시는 해당 검증 시점의 기록이다. 원본 변경 후에는 exporter, 테스트, `--check`를 다시 실행하고 갱신한다.
 
@@ -122,9 +134,9 @@ QA core-v2는 10/12/20/22/24/26에서 실제 C# AI 상대 승리 예시를 12시
 
 이번 결과에 Unity 실행/컴파일, Android/WebGL 빌드, 실제 광고, 스토어 제출, 기기 또는 사람 플레이테스트 통과를 포함하지 않는다.
 
-## 한국어·영어 전환 데이터
+## 한국어·영어 전환 데이터 (이전 137개 시점)
 
-Strings의 기존 A:D 뒤에 Content_Eng(E)를 추가했다. 기존 한국어 58개를 보존·번역하고 Client 요청 신규 65개를 추가한 뒤, 단계 선택/그림 도움말 14개를 더해 현재 총 137개다. `strings.json`은 schemaVersion 1의 `key/ko/en`이며 stages/ads JSON은 바이트가 동일하다. 총괄과 클라이언트의 [합의 계약](C:/Github/StageGame/GameData/LOCALIZATION-CONTRACT.md)을 따른다.
+Strings의 기존 A:D 뒤에 Content_Eng(E)를 추가했다. 기존 한국어 58개를 보존·번역하고 Client 요청 신규 65개를 추가한 뒤, 단계 선택/그림 도움말 14개를 더해 당시 총 137개였다. `strings.json`은 schemaVersion 1의 `key/ko/en`이며 stages/ads JSON은 바이트가 동일하다. 총괄과 클라이언트의 [합의 계약](C:/Github/StageGame/GameData/LOCALIZATION-CONTRACT.md)을 따른다.
 
 누락 번역·중복 키·양 언어 포맷 인자 불일치·불완전 중괄호·지원하지 않는 포맷을 거부한다. 허용 범위는 `{0}`, `{1}` 등과 `{{`/`}}`다. 순서 변경·반복을 허용하며 인덱스는 0부터 연속이다. 검증 실패 시 이전 JSON 묶음을 보존한다.
 

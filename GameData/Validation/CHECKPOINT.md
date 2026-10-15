@@ -1,6 +1,24 @@
 # 데이터 재동기화 준비 완료
 
-## 최신: 단계 선택·그림 도움말 14개 추가 및 패배 안내 3개 수정
+## 최신: v9 확인 패널+프로 출신 훈련병 서사 통합 완료
+
+2026-10-14. **228개 중 191개 보존·37개 수정 + 신규 9개 = 237개 ko/en**. 확인 패널·다시하기·차례 토스트를 유지하고 계급별 대사 30개, 도전자 계급 표시를 변경했다. 첫 대국 지정 대사 3개와 요약을 추가하고 Stage 1의 대사 참조 3개만 전용 키로 변경했다. [최종 필드·키·대사·해시](C:/Github/StageGame/GameData/STORY-CONTRACT.md), [통합 검증](C:/Github/StageGame/GameData/Validation/story-results.json).
+
+사용자 지정 첫 한국어 대사 원문 검사, 1단계 예외 범위/대사 역할 검사 포함 **44개 테스트 통과**, 반복 export 동일, `--check` 및 변경 범위 렌더 완료. 기존 30개 설명·시작판·AI·규칙·ID·광고·Excel 서식은 보존했다. **Client 재동기화 가능**. 플레이어는 훈련병으로 유지하며 더 높은 계급의 도전자가 등장하는 서사다. 실제 UI는 브라우저 검증 대상으로 인계하며 실물 폰 시험은 보류한다.
+
+## 이전: v9 확인 패널·다시하기 문구 완료
+
+2026-10-14. **기존 224개 보존·4개 라벨 수정 + 신규 5개 = 233개 ko/en**. 나가기/다시하기 제목·본문, 취소 키를 추가하고 `confirm_leave` 및 다시하기 라벨을 맞췄다. 차례 토스트는 기존 `ui_player_turn`(내 차례 / Your turn) 재사용이다. [Client 연결용 키·문구·해시](C:/Github/StageGame/GameData/V9-UI-CONTRACT.md), [검증 결과](C:/Github/StageGame/GameData/Validation/v9-ui-results.json).
+
+시작판·AI·대사·규칙·계급/별·전체 stages/ads JSON 바이트와 기존 Excel 서식을 보존했다. 반복 export 동일, `--check`, **42개 테스트 통과**, 변경 범위 렌더 확인 완료. 문자열 SHA-256 `1259006d809a1b66d3d585a68ad070f94789bcc4b2a51022bb92096a292809c9`. **Client 재동기화 가능**. 실제 패널/토스트 동작은 Client/총괄 브라우저 검증 범위이며 실물 폰 시험은 사용자 요청으로 보류한다.
+
+## 이전: 한 수 진급 계급 UI 데이터 완료
+
+2026-10-14. **10계급×3단계, 별 1–5, 228개 ko/en**. 기존 137개 중 90개 보존·47개 승인 수정 + 신규 91개다. 기존 30개의 ID/titleKey/chapter/openingMoves/AI 값과 Stages A1:K34를 그대로 유지하고 L:Q에 표시용 6개 필드를 추가했다. 광고 전체, 기존 셀 서식·크기·고정창·입력 유효성을 보존했다. 설명·AI 대사 60개를 한 문장으로 간결화해 최대 ko 22자 / en 41자다. 민트/산호 및 열 클릭 즉시 착수 문구는 생성 문자열에 없다.
+
+최종 반복 export 바이트 동일, `--check`, **42개 Python 테스트**와 변경 범위 렌더 검증 완료. [필드·키·전체 해시 및 인계](C:/Github/StageGame/GameData/RANK-UI-CONTRACT.md), [검증 결과](C:/Github/StageGame/GameData/Validation/rank-ui-results.json). stages SHA-256 `6e66c8b0abe2dcc3b5297bf08a98953929b7e17b31e740569910255f7601fc26`, strings SHA-256 `e191ce6773c2e608831f4f38bbb1b995bdd2caec3c156693cdbe71e50645828c`. **Client 재동기화 가능**. QA 스냅샷에는 새 테스트 의존성 `GameData/Validation/rank-ui-changes.json`을 포함한다. UI 실행·저장 복원·사람 난이도 검증은 이 데이터 완료 범위에 포함하지 않는다.
+
+## 이전: 단계 선택·그림 도움말 14개 추가 및 패배 안내 3개 수정
 
 2026-10-14. **기존 120개 보존 + 방향별 패배 안내 3개 승인 수정 + 신규 14개 = 총 137개**, schemaVersion 1이다. 총괄의 실제 브라우저 검사로 승인된 `result_loss_horizontal/vertical/diagonal`의 둘째 줄(금색 줄 안내)만 ko/en에서 삭제했다. Excel 변경 셀은 C101:C103·E101:E103이며, 나머지 기존 값과 전체 서식·행/열 크기·고정창·입력 유효성을 보존했다. 스테이지/광고 시트와 JSON 바이트도 그대로다. 반복 export 동일, `--check` 및 Python **36개 테스트 통과**. 추가 범위 B128:E141 및 수정 범위 B101:E103의 렌더를 확인했다. Client 재동기화 가능.
 

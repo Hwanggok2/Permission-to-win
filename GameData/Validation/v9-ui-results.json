@@ -1,0 +1,141 @@
+{
+  "sourceSha256": "e44e73aef15cbc5ae2e65ec74e9c63c42549ca020be2ca6e633e68205ffa1c6c",
+  "clientRequestSha256": "211be733df62298c87ede4d8ee7b4b9742980aaa3410c375bed2d588c94c225f",
+  "approvedRevisionsSha256": "d70e801b1e4edc979642a83f60182cdabd0a9a7328914d872607f3f4c3a1daf2",
+  "approvedRevisedKeys": [
+    "client_help_rules",
+    "client_ui_player_turn",
+    "client_ui_start",
+    "confirm_leave",
+    "game_brand",
+    "game_subtitle",
+    "game_title",
+    "help_drop_caption",
+    "help_drop_title",
+    "help_rules",
+    "match_instruction",
+    "match_legend",
+    "result_loss_diagonal",
+    "result_loss_horizontal",
+    "result_loss_vertical",
+    "retry",
+    "stage_001",
+    "stage_002",
+    "stage_003",
+    "stage_004",
+    "stage_005",
+    "stage_006",
+    "stage_007",
+    "stage_008",
+    "stage_009",
+    "stage_010",
+    "stage_011",
+    "stage_012",
+    "stage_013",
+    "stage_014",
+    "stage_015",
+    "stage_016",
+    "stage_017",
+    "stage_018",
+    "stage_019",
+    "stage_020",
+    "stage_021",
+    "stage_022",
+    "stage_023",
+    "stage_024",
+    "stage_025",
+    "stage_026",
+    "stage_027",
+    "stage_028",
+    "stage_029",
+    "stage_030",
+    "stage_lock_requirement",
+    "stage_locked_detail",
+    "stage_replay",
+    "ui_next",
+    "ui_retry",
+    "web_canvas_label"
+  ],
+  "rankChangeSha256": "429bd9fb562b2888e45ea02df67e05c802c493ac5cf856e7af67cf055782bbb9",
+  "legacyStageFieldsUnchanged": true,
+  "stagesSha256": "6e66c8b0abe2dcc3b5297bf08a98953929b7e17b31e740569910255f7601fc26",
+  "rankUiAddedStrings": 91,
+  "rankUiRevisedStrings": 47,
+  "v9ChangeSha256": "6c1b755a8ebecfb447762652bbfe77c64f1661852367b2cc53bc94882f219f8e",
+  "v9AddedStrings": 5,
+  "v9RevisedStrings": 4,
+  "strings": 233,
+  "clientRequestedKeys": 70,
+  "locales": [
+    "ko",
+    "en"
+  ],
+  "clientCopyAndFormatArgs": "passed",
+  "stableRuntimeHashes": {
+    "stages.json": "6e66c8b0abe2dcc3b5297bf08a98953929b7e17b31e740569910255f7601fc26",
+    "ads.json": "d19f181faf52db28287bbed1b42291770dc3bf83d35e5cca8af4a6dcce9e194a"
+  },
+  "stringsSha256": "1259006d809a1b66d3d585a68ad070f94789bcc4b2a51022bb92096a292809c9",
+  "preservation": {
+    "beforeSha256": "b60229d2fbb81b4cd17b14805d45861d23168cd640b85b1a2d3e5c55f520cd15",
+    "unchangedSheets": [
+      "Stages",
+      "AdConfig"
+    ],
+    "preservedStagesRange": "A1:Q34",
+    "comparedStringsRange": "A1:E232",
+    "approvedChangedCells": [
+      "Strings!C41",
+      "Strings!E41",
+      "Strings!C108",
+      "Strings!E108",
+      "Strings!C136",
+      "Strings!E136",
+      "Strings!C214",
+      "Strings!E214"
+    ],
+    "otherValuesStylesDimensionsPanesValidation": "passed"
+  },
+  "date": "2026-10-14",
+  "schemaVersion": 1,
+  "previousStrings": 228,
+  "preservedPreviousStrings": 224,
+  "currentEditRevisedStrings": 4,
+  "addedStrings": 5,
+  "exportCheck": "passed",
+  "repeatExportIdenticalBytes": true,
+  "pythonTests": {
+    "passed": 42,
+    "failed": 0
+  },
+  "toastKey": "ui_player_turn",
+  "toastCopyUnchanged": true,
+  "addedAndRevisedFormatArgumentCount": 0,
+  "visualReview": {
+    "ranges": [
+      [
+        "B108:E108",
+        "confirm_leave"
+      ],
+      [
+        "B214:E214",
+        "retry"
+      ],
+      [
+        "B41:E41",
+        "ui_retry"
+      ],
+      [
+        "B136:E136",
+        "stage_replay"
+      ],
+      [
+        "B233:E237",
+        "new"
+      ]
+    ],
+    "result": "passed"
+  },
+  "runtimeBrowserVerification": "Client/root responsibility; data role did not run",
+  "physicalPhoneVerification": "deferred by user request"
+}
