@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-15",
+  "version": 20,
+  "mode": "Built-in image_gen",
+  "status": "사용자 피드백 대기 / 실제 게임 미연결 / 빌드 없음",
+  "reference": "user-barracks-baseline-v20.png",
+  "background": "barracks-open-left-v20.png",
+  "display": "barracks-open-left-v20-preview.webp",
+  "preview": "preview-v20.html",
+  "changes": [
+    "사용자가 이번에 재첨부한 이미지만 기준으로 편집",
+    "왼쪽 관물대·평상·슬리퍼 제거",
+    "왼쪽 옆벽 제거, 뒷벽과 바닥이 화면 왼쪽 끝까지 이어지도록 확장",
+    "오른쪽 평상 확대, 관물대 4개와 슬리퍼 4켤레 유지",
+    "TV 확대 및 수납장·창문 왼쪽 이동"
+  ],
+  "validation": [
+    "생성 이미지에서 왼쪽 옆벽이 없는 구도, TV 확대와 네 관물대/슬리퍼 쌍을 시각 확인.",
+    "독립 HTML 708217 bytes. 내장 이미지 디코딩·JS 구문·고유 루트·3장면·최상단 배경·상위 보드 소스 확인.",
+    "브라우저 렌더링/상호작용·실제 Unity/토스 호스트·기기 검증 미실행."
+  ],
+  "encoding": "941×1672 PNG 원본 보존. 동일 해상도 WebP q85 화면용 인코딩.",
+  "prompt": "Use case: precise-object-edit. Edit ONLY the attached user's image as the baseline. Produce a clean portrait 9:16 pixel-art GAME BACKGROUND, removing all screenshot controls, bottom comment bar and Windows activation overlay. Preserve the ORIGINAL camera orientation, perspective and the RIGHT row of four lockers exactly as in this reference: same tall nearest locker at right, same three receding lockers, same steep diagonal direction. No camera rotation, no zoom or frontal re-composition.\nThe user's key instruction is to make the ROOM extend farther LEFT, beyond the image, so the LEFT SIDE WALL IS NO LONGER VISIBLE. This is not a narrow corridor. Completely REMOVE the left lockers, left wooden platform, bedding and left slippers. Also REMOVE the visible left side-wall plane and its vertical corner line. Expand the room physically toward the LEFT outside the frame. The BACK WALL must continue uninterrupted to the extreme left image edge, and the FLOOR must continue uninterrupted to the extreme left edge below it. Do NOT draw any new wall running along the left edge, no diagonal left-wall/floor line, no visible left wall corner. Open room space continues offscreen left. Keep the existing BACK/RIGHT wall corner near the upper center as in the reference, and keep the original right-wall perspective.\nEnlarge the RIGHT sleeping platform's USABLE WOODEN TOP SURFACE horizontally toward the LEFT: widen the platform's wall-to-front depth to about twice the original so it looks like a real broad sleeping deck, not a narrow bench. Its back edge and all FOUR locker bases remain in the same positions. Shift only the platform front edge toward the left, keeping its ORIGINAL diagonal direction and vanishing point. The expanded room beyond the left frame leaves plenty of open floor to the left of the widened deck; do not squeeze it between two walls. Keep one pair of rubber slippers aligned beneath each of the four right locker positions, repositioned along the widened platform edge. Exactly FOUR pairs, no left slippers. Retain folded bedding beside the lockers.\nMove the TV and its two-drawer storage cabinet LEFT along the BACK WALL, close to the left image edge but fully visible. Make the TV clearly LARGER, about 1.4 times its current width and height, and size the cabinet to support it. Keep the CRT design and dark screen. Move the small half-open framed WINDOW left as well, so it stays above the TV/cabinet. One casement open, other closed. Do not enlarge the window. Keep the window and TV on the BACK WALL, not a newly invented left side wall.\nPreserve the coarse low-resolution blocky pixel style, muted tan/olive/brown colors, opaque room background filling the top edge, and tall portrait canvas. Do not add people, furniture, text, gameboard, HUD, logos or UI. Primary checklist: original attached camera; NO LEFT SIDE WALL visible; left furniture gone; broad right sleeping platform; larger TV shifted left; room extends OFFSCREEN LEFT."
+}

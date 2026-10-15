@@ -1,0 +1,56 @@
+{
+  "checkedAt": "2026-10-15T16:39:37.158Z",
+  "url": "https://shares-country-steel-fridge.trycloudflare.com/",
+  "environment": "Windows Codex in-app Chromium; CSS viewport emulation, not iPhone or iOS",
+  "shortViewport": {
+    "canvas": {
+      "height": 664,
+      "width": 390
+    },
+    "dpr": 1.0000000298023224,
+    "height": 664,
+    "player": {
+      "bottom": 664,
+      "height": 664,
+      "left": 0,
+      "right": 390,
+      "top": 0,
+      "width": 390,
+      "x": 0,
+      "y": 0
+    },
+    "visual": {
+      "height": 664,
+      "top": 0,
+      "width": 390
+    },
+    "width": 390
+  },
+  "tallViewport": {
+    "canvas": {
+      "bottom": 844,
+      "height": 844,
+      "left": 0,
+      "right": 390,
+      "top": 0,
+      "width": 390,
+      "x": 0,
+      "y": 0
+    },
+    "dpr": 1.0000000298023224,
+    "height": 844,
+    "width": 390
+  },
+  "observed": [
+    "Lobby two-column cards and fixed multiplayer button visible",
+    "Stage detail slide completes with visible start and close buttons",
+    "Intro dialogue completes",
+    "Column preview then Place creates black stone; AI responds with white stone",
+    "Retry confirmation shown before reset",
+    "Retry resets board and replays dialogue",
+    "390x664 and 390x844 gameplay controls stay visible after viewport settles"
+  ],
+  "pageWarningsAndErrors": [],
+  "iphoneKakaoRetest": "pending",
+  "audibleListening": "not performed"
+}

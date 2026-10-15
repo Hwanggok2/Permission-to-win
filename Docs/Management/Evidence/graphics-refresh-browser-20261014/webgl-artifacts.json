@@ -1,0 +1,32 @@
+[
+  {
+    "path": "Client\\Builds\\WebGL\\index.html",
+    "bytes": 4490,
+    "sha256": "78D3D17A9163944E340C2EEF2B215C8FCDEBDF4C7F0F4F9A07E184104533C9D5"
+  },
+  {
+    "path": "Client\\Builds\\WebGL\\host-layout.js",
+    "bytes": 2002,
+    "sha256": "187B6162FE987A784D66FB6F929EC64C4885D8BA2A5B5A7E176AF16DFC9DAC25"
+  },
+  {
+    "path": "Client\\Builds\\WebGL\\Build\\WebGL.loader.js",
+    "bytes": 58348,
+    "sha256": "1C4F5D405B6FEEEEDF677702A03622539D250F1DE2EAAB172A45CD268100D454"
+  },
+  {
+    "path": "Client\\Builds\\WebGL\\Build\\WebGL.framework.js",
+    "bytes": 761643,
+    "sha256": "F909F29D115947BE5BAB214FE3CD434A6197E6BDC2E24CE9C2933C64B58FAE08"
+  },
+  {
+    "path": "Client\\Builds\\WebGL\\Build\\WebGL.data",
+    "bytes": 18819794,
+    "sha256": "4B2EA54CD67DA41A41C02F5F1A41DEE15C8FAA669735333F9603D1AB09693330"
+  },
+  {
+    "path": "Client\\Builds\\WebGL\\Build\\WebGL.wasm",
+    "bytes": 24395357,
+    "sha256": "FA25842E683D0C66795191799362F6045F2A91021F9C0FD12E65C0813445A590"
+  }
+]

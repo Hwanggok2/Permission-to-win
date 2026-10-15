@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-15",
+  "version": 21,
+  "mode": "Built-in image_gen",
+  "status": "나무판 디자인 검토 / 배경 v20 사용자 수용 / 실제 게임 연결 없음",
+  "assets": {
+    "wood_top": "wood-board-top-v21.png",
+    "display": "wood-board-top-v21-preview.webp",
+    "background": "barracks-open-left-v20.png",
+    "preview": "preview-v21.html"
+  },
+  "rendering": "생성한 목재 상판 위에 7×6 격자와 흑백 말을 배치. 미리보기의 하단 단면은 동일 목재 이미지와 짙은 색/그림자로 표시. 실제 게임용 프리팹·단면 자산 연결은 아직 없음.",
+  "geometry": {
+    "square_face": "83cqw × 83cqw",
+    "grid_width_fraction": 0.84,
+    "grid_height_fraction": 0.72,
+    "columns": 7,
+    "rows": 6,
+    "cell_width_fraction": 0.12,
+    "cell_height_fraction": 0.12,
+    "front_depth": "4cqw"
+  },
+  "validation": [
+    "원본 목재 이미지 시각 확인, 표시 사본 WebP q85 인코딩(원본 1254×1254 보존).",
+    "HTML 741286 bytes(<1 MB), 내장 이미지 3개 디코딩, JS 구문·고유 루트·3장면 검사 통과.",
+    "배경·캐릭터 내장 이미지가 이전 v20과 동일함을 확인. 격자 셀 가로/세로 비율 계산 확인.",
+    "브라우저 렌더링·상호작용·Unity·기기 테스트 미실행."
+  ],
+  "prompt": "Use case: stylized-concept. Asset: square WOODEN BOARD TOP-SURFACE SPRITE for a low-resolution pixel-art military barracks four-in-a-row game. Draw only a single SQUARE wooden playing board, viewed exactly straight from above, perfectly axis-aligned with horizontal and vertical sides, no perspective convergence, no isometric tilt. The board FILLS the entire square canvas edge to edge, no surrounding environment and no margins. Opaque background is the wood itself. This is the wood board art layer; the game will draw a precise grid and stones over it separately.\nMaterial and composition: warm medium honey-brown wood center, subtle broad horizontal wood grain bands made from very coarse blocky pixel clusters, a sturdy darker walnut-brown wooden rim around all four edges about 5 percent of the canvas width. Stepped dark outer contour, one lighter top/left bevel highlight and one darker bottom/right bevel, reading as a substantial solid wooden board rather than a thin sheet. The CENTRAL 85 PERCENT of the top is calm and even in value so black grid lines and black/ivory stones are readable. Only a few short simple horizontal grain marks near the edges. No boards/plank seam lines crossing the playing area, no busy knots or scratches, no grunge. The actual visible front side thickness will be added below this square top face by UI placement; do not distort the square playing face to draw perspective depth.\nStyle: coarse 8-bit/early 16-bit videogame sprite, designed on roughly a 64x64 logical pixel grid, very large consistent square pixel clusters enlarged nearest-neighbor. Limited 6-color brown palette, crisp stepped edges, flat shading, no photographic wood texture, gradients, noise, fine detail, antialiasing, glossy realism or decorative carving. NO grid lines, NO game pieces, holes, numbers, text, symbols, logos, UI or other objects. Square 1024x1024 output preferred."
+}

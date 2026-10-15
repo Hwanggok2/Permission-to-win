@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-10-15T16:05:55.373225+00:00",
+  "url": "https://shares-country-steel-fridge.trycloudflare.com/",
+  "build": {
+    "result": "Succeeded",
+    "errors": 0,
+    "warnings": 0,
+    "bytes": 88609027,
+    "durationSeconds": 61.461084,
+    "developmentBuild": true
+  },
+  "preBuildFreeze": {
+    "reference": "Client/Evidence/rating-curve-20261016/source-freeze.json",
+    "filesCompared": 524,
+    "mismatches": 0
+  },
+  "inheritedClientChecks": {
+    "unityPassed": 44,
+    "unityTotal": 44,
+    "dataPassed": 46,
+    "dataTotal": 46,
+    "managerReranTheseTests": false
+  },
+  "serverTest": {
+    "passed": 1,
+    "total": 1
+  },
+  "browser": {
+    "type": "Codex in-app Chromium",
+    "urlType": "public HTTPS",
+    "viewportChecks": [
+      "801x871",
+      "390x844"
+    ],
+    "observed": [
+      "Game loaded and first stage active",
+      "Player/AI stones and timed progression",
+      "Pause menu",
+      "Exit confirmation then lobby",
+      "Music setting on to off to on"
+    ],
+    "pageErrorWarnLogEntries": 0,
+    "viewportOverrideReset": true
+  },
+  "notVerified": [
+    "Physical phone",
+    "Toss host",
+    "Human difficulty or retention",
+    "Audio listening and loop seam",
+    "Real ads or payments"
+  ],
+  "temporaryHosting": true,
+  "requiresPcServerAndTunnel": true,
+  "snapshots": [
+    "lobby-390.png",
+    "settings-music-off.png",
+    "settings-music-on.png"
+  ]
+}

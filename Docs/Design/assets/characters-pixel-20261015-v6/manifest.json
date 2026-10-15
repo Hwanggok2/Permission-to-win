@@ -1,0 +1,250 @@
+{
+  "date": "2026-10-15",
+  "tool": "built-in image_gen.imagegen",
+  "status": "UNITY_APPLIED_EDITOR_VERIFIED",
+  "states": 60,
+  "originalAssetsPreserved": true,
+  "images": [
+    {
+      "id": "C01",
+      "key": "uniform-C01",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-6797b14c-75a4-4163-89c1-c88684018cc5.png",
+      "path": "Docs/Design/assets/characters-uniform-20261015-v4/C01-uniform-v4.png",
+      "sha256": "6f5e403375e158310f8d6f29c78ebf1e5fd5f9ea8015747385dfe4b62cac58b6"
+    },
+    {
+      "id": "C01Final",
+      "key": "uniform-C01Final",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-0bfdaeb3-02b1-4e51-bb12-b97a46a5ca28.png",
+      "path": "Docs/Design/assets/characters-uniform-20261015-v4/C01Final-uniform-v4.png",
+      "sha256": "291cd6ca2490e25cb0b253b62100d564e57d0dca820c2d74a288e97aa3f5eedc"
+    },
+    {
+      "id": "C02",
+      "key": "pixel-v6-C02",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-63669127-b46c-4206-bd98-9753f3a7ca0e.png",
+      "path": "Docs/Design/assets/characters-pixel-20261015-v6/C02-pixel-v6.png",
+      "sha256": "0f6c78e8340bf0195479127e44474eda2f95c48e7c3e3c06d94b4a86aeed05a2",
+      "previousVersion": "Docs/Design/assets/characters-uniform-20261015-v4/C02-uniform-v4.png",
+      "rawGeneratedCopy": "Docs/Design/assets/characters-pixel-20261015-v6/generated/C02-pixel-generated.png",
+      "rawGeneratedSha256": "f745841ee7f5200e1409d39efbd05d007ac2343ed30b515e439339f523ea1ea4",
+      "manualRankCorrection": true
+    },
+    {
+      "id": "C03",
+      "key": "pixel-v6-C03",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-6d6184bf-5859-4b12-aa3a-031118bb8930.png",
+      "path": "Docs/Design/assets/characters-pixel-20261015-v6/C03-pixel-v6.png",
+      "sha256": "66e8a5d7a748a14b786b2e7ab3eb33e3c804780ae3ee1c97e060037f06eede3c",
+      "previousVersion": "Docs/Design/assets/characters-uniform-20261015-v4/C03-uniform-v4.png",
+      "rawGeneratedCopy": "Docs/Design/assets/characters-pixel-20261015-v6/generated/C03-pixel-generated.png",
+      "rawGeneratedSha256": "66e8a5d7a748a14b786b2e7ab3eb33e3c804780ae3ee1c97e060037f06eede3c",
+      "manualRankCorrection": false
+    },
+    {
+      "id": "C04",
+      "key": "pixel-v6-C04",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-cac606fd-375d-4aed-985d-5831cd3f0639.png",
+      "path": "Docs/Design/assets/characters-pixel-20261015-v6/C04-pixel-v6.png",
+      "sha256": "2720cdfb65bc9f407b8cf8693e35325178d76cda336aa9a87879f8a171ad439d",
+      "previousVersion": "Docs/Design/assets/characters-uniform-20261015-v4/C04-uniform-v4.png",
+      "rawGeneratedCopy": "Docs/Design/assets/characters-pixel-20261015-v6/generated/C04-pixel-generated.png",
+      "rawGeneratedSha256": "2720cdfb65bc9f407b8cf8693e35325178d76cda336aa9a87879f8a171ad439d",
+      "manualRankCorrection": false
+    },
+    {
+      "id": "C05",
+      "key": "pixel-v5-C05",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-e3c5dbb6-14fd-421a-abf7-8a078bd86209.png",
+      "path": "Docs/Design/assets/characters-pixel-20261015-v5/C05-pixel-v5.png",
+      "sha256": "ff40c3440d2dee55ead508f6720f423d679f899ed4596de1b8fd85155b2b73db",
+      "previousVersion": "Docs/Design/assets/characters-uniform-20261015-v4/C05-uniform-v4.png",
+      "rawGeneratedCopy": "Docs/Design/assets/characters-pixel-20261015-v5/generated/C05-pixel-generated.png",
+      "rawGeneratedSha256": "ff40c3440d2dee55ead508f6720f423d679f899ed4596de1b8fd85155b2b73db",
+      "manualRankCorrection": false
+    },
+    {
+      "id": "C06",
+      "key": "pixel-v5-C06",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-fd85a2e2-570b-44fd-a0c1-f240db112e42.png",
+      "path": "Docs/Design/assets/characters-pixel-20261015-v5/C06-pixel-v5.png",
+      "sha256": "2ad2bb94659169ef81808426a455f6cb2412c7709a9d180365f60b0308c7e498",
+      "previousVersion": "Docs/Design/assets/characters-uniform-20261015-v4/C06-uniform-v4.png",
+      "rawGeneratedCopy": "Docs/Design/assets/characters-pixel-20261015-v5/generated/C06-pixel-generated.png",
+      "rawGeneratedSha256": "2ad2bb94659169ef81808426a455f6cb2412c7709a9d180365f60b0308c7e498",
+      "manualRankCorrection": false
+    },
+    {
+      "id": "C07",
+      "key": "pixel-v5-C07",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-73b98a4e-94fc-46db-ae72-79c16dc86abe.png",
+      "path": "Docs/Design/assets/characters-pixel-20261015-v5/C07-pixel-v5.png",
+      "sha256": "72cf000eb5900918b52fd42f28dddf384c7b86538b33cdea3c2dcbfbb361189d",
+      "previousVersion": "Docs/Design/assets/characters-uniform-20261015-v4/C07-uniform-v4.png",
+      "rawGeneratedCopy": "Docs/Design/assets/characters-pixel-20261015-v5/generated/C07-pixel-generated.png",
+      "rawGeneratedSha256": "72cf000eb5900918b52fd42f28dddf384c7b86538b33cdea3c2dcbfbb361189d",
+      "manualRankCorrection": false
+    },
+    {
+      "id": "C08",
+      "key": "pixel-v5-C08",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-df8aa963-9568-4484-b298-c3675a18c5f2.png",
+      "path": "Docs/Design/assets/characters-pixel-20261015-v5/C08-pixel-v5.png",
+      "sha256": "aff2d97cec193ecf09b49dc5b258e01d687e138df3222e9cef7aeb43a05cb196",
+      "previousVersion": "Docs/Design/assets/characters-uniform-20261015-v4/C08-uniform-v4.png",
+      "rawGeneratedCopy": "Docs/Design/assets/characters-pixel-20261015-v5/generated/C08-pixel-generated.png",
+      "rawGeneratedSha256": "fb8c5cddad0b047cd0d7401fb86f2fbf14f64f2a4761c050a2466229f0ec05a8",
+      "manualRankCorrection": true
+    },
+    {
+      "id": "C09",
+      "key": "pixel-v5-C09",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-dfa24366-22be-415c-bef4-2bef9e695d26.png",
+      "path": "Docs/Design/assets/characters-pixel-20261015-v5/C09-pixel-v5.png",
+      "sha256": "76e4753608cb25078abd7344157b0b7c4ba4acd0c9115216e09428f986b1785a",
+      "previousVersion": "Docs/Design/assets/characters-uniform-20261015-v4/C09-uniform-v4.png",
+      "rawGeneratedCopy": "Docs/Design/assets/characters-pixel-20261015-v5/generated/C09-pixel-generated.png",
+      "rawGeneratedSha256": "76e4753608cb25078abd7344157b0b7c4ba4acd0c9115216e09428f986b1785a",
+      "manualRankCorrection": false
+    },
+    {
+      "id": "C10",
+      "key": "pixel-v5-C10",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-c19f9ac5-e324-42a2-a9ba-896327e77d67.png",
+      "path": "Docs/Design/assets/characters-pixel-20261015-v5/C10-pixel-v5.png",
+      "sha256": "d8c457097758f970e9f5994658e07a80f975863db44a9a137e985472839bba5d",
+      "previousVersion": "Docs/Design/assets/characters-uniform-20261015-v4/C10-uniform-v4.png",
+      "rawGeneratedCopy": "Docs/Design/assets/characters-pixel-20261015-v5/generated/C10-pixel-generated.png",
+      "rawGeneratedSha256": "d8c457097758f970e9f5994658e07a80f975863db44a9a137e985472839bba5d",
+      "manualRankCorrection": false
+    },
+    {
+      "id": "C11",
+      "key": "pixel-v5-C11",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-8edfc892-d5ac-4723-9938-9783113d4824.png",
+      "path": "Docs/Design/assets/characters-pixel-20261015-v5/C11-pixel-v5.png",
+      "sha256": "7f47268fd1bd4a3f0f60f96b384f47cab52b86258075bde36fdf1cccd06ec9f5",
+      "previousVersion": "Docs/Design/assets/characters-uniform-20261015-v4/C11-uniform-v4.png",
+      "rawGeneratedCopy": "Docs/Design/assets/characters-pixel-20261015-v5/generated/C11-pixel-generated.png",
+      "rawGeneratedSha256": "7f47268fd1bd4a3f0f60f96b384f47cab52b86258075bde36fdf1cccd06ec9f5",
+      "manualRankCorrection": false
+    },
+    {
+      "id": "C12",
+      "key": "pixel-v5-C12",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-e40e79a2-6e19-4dfb-8d5a-59f6145b7915.png",
+      "path": "Docs/Design/assets/characters-pixel-20261015-v5/C12-pixel-v5.png",
+      "sha256": "268322da6fc0171b7671b03367deeabc64029aa248919f818c8738c2f8a42fe3",
+      "previousVersion": "Docs/Design/assets/characters-uniform-20261015-v4/C12-uniform-v4.png",
+      "rawGeneratedCopy": "Docs/Design/assets/characters-pixel-20261015-v5/generated/C12-pixel-generated.png",
+      "rawGeneratedSha256": "268322da6fc0171b7671b03367deeabc64029aa248919f818c8738c2f8a42fe3",
+      "manualRankCorrection": false
+    },
+    {
+      "id": "C13",
+      "key": "pixel-v5-C13",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-827b190d-aebd-461f-8d94-75a2d29cad20.png",
+      "path": "Docs/Design/assets/characters-pixel-20261015-v5/C13-pixel-v5.png",
+      "sha256": "8b90c8d90ad750893a167a7d52bc3615e03f36d28f482a3d47e63f5d0ee6c0d4",
+      "previousVersion": "Docs/Design/assets/characters-uniform-20261015-v4/C13-uniform-v4.png",
+      "rawGeneratedCopy": "Docs/Design/assets/characters-pixel-20261015-v5/generated/C13-pixel-generated.png",
+      "rawGeneratedSha256": "c5e504b18ff94d14b50f2c424a8fd622202e05d06be1db446cc90825113f91ef",
+      "manualRankCorrection": true
+    },
+    {
+      "id": "C14",
+      "key": "pixel-v5-C14",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-9213326e-60ce-47ac-b058-4e0e586a1679.png",
+      "path": "Docs/Design/assets/characters-pixel-20261015-v5/C14-pixel-v5.png",
+      "sha256": "b082bd16fe54c350a2e063efb25b0b1be73ac285796552b15d9897250dcf177a",
+      "previousVersion": "Docs/Design/assets/characters-uniform-20261015-v4/C14-uniform-v4.png",
+      "rawGeneratedCopy": "Docs/Design/assets/characters-pixel-20261015-v5/generated/C14-pixel-generated.png",
+      "rawGeneratedSha256": "b082bd16fe54c350a2e063efb25b0b1be73ac285796552b15d9897250dcf177a",
+      "manualRankCorrection": false
+    },
+    {
+      "id": "C15",
+      "key": "pixel-v5-C15",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-0033bdb2-03ea-4f1e-8d96-9850534dbf24.png",
+      "path": "Docs/Design/assets/characters-pixel-20261015-v5/C15-pixel-v5.png",
+      "sha256": "997434a9cee8ffbac42e8e75a41b84734410a778e2f30f37472c018c49ed332e",
+      "previousVersion": "Docs/Design/assets/characters-uniform-20261015-v4/C15-uniform-v4.png",
+      "rawGeneratedCopy": "Docs/Design/assets/characters-pixel-20261015-v5/generated/C15-pixel-generated.png",
+      "rawGeneratedSha256": "997434a9cee8ffbac42e8e75a41b84734410a778e2f30f37472c018c49ed332e",
+      "manualRankCorrection": false
+    },
+    {
+      "id": "C16",
+      "key": "pixel-v5-C16",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-12e16cf8-5026-47be-bd48-e701218c29b3.png",
+      "path": "Docs/Design/assets/characters-pixel-20261015-v5/C16-pixel-v5.png",
+      "sha256": "aa396ec3dcae5f17c9a8c28438e46006252315536c616e7e3013012fd9614f97",
+      "previousVersion": "Docs/Design/assets/characters-uniform-20261015-v4/C16-uniform-v4.png",
+      "rawGeneratedCopy": "Docs/Design/assets/characters-pixel-20261015-v5/generated/C16-pixel-generated.png",
+      "rawGeneratedSha256": "260343cace89d59f1d8939a4e882d0d346bd7829ed22cebb9999338ca232afcc",
+      "manualRankCorrection": true
+    },
+    {
+      "id": "C17",
+      "key": "pixel-v5-C17",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-d1fe8ea6-0372-4943-ba04-8d48beb6cea9.png",
+      "path": "Docs/Design/assets/characters-pixel-20261015-v5/C17-pixel-v5.png",
+      "sha256": "dffe573b2c0ba0f5d1390a309fcd7892659999be2e78e763adaf4989661e45e3",
+      "previousVersion": "Docs/Design/assets/characters-uniform-20261015-v4/C17-uniform-v4.png",
+      "rawGeneratedCopy": "Docs/Design/assets/characters-pixel-20261015-v5/generated/C17-pixel-generated.png",
+      "rawGeneratedSha256": "dffe573b2c0ba0f5d1390a309fcd7892659999be2e78e763adaf4989661e45e3",
+      "manualRankCorrection": false
+    },
+    {
+      "id": "C18",
+      "key": "pixel-v5-C18",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-c183dfa7-f050-4b17-9360-1cf422871ec3.png",
+      "path": "Docs/Design/assets/characters-pixel-20261015-v5/C18-pixel-v5.png",
+      "sha256": "84ad0a77859553f70277dde1ffc6afd44cd4be0829043ece283f9e0f8db453c6",
+      "previousVersion": "Docs/Design/assets/characters-uniform-20261015-v4/C18-uniform-v4.png",
+      "rawGeneratedCopy": "Docs/Design/assets/characters-pixel-20261015-v5/generated/C18-pixel-generated.png",
+      "rawGeneratedSha256": "84ad0a77859553f70277dde1ffc6afd44cd4be0829043ece283f9e0f8db453c6",
+      "manualRankCorrection": false
+    },
+    {
+      "id": "C19",
+      "key": "pixel-v5-C19",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-a92e0ae9-4fb8-4c6b-a619-ce10830a044e.png",
+      "path": "Docs/Design/assets/characters-pixel-20261015-v5/C19-pixel-v5.png",
+      "sha256": "1ba2b1c0cf5f5e8e09bc2ed5afd48cf70c6ac2918abf005e6dbbd0b650686af6",
+      "previousVersion": "Docs/Design/assets/characters-uniform-20261015-v4/C19-uniform-v4.png",
+      "rawGeneratedCopy": "Docs/Design/assets/characters-pixel-20261015-v5/generated/C19-pixel-generated.png",
+      "rawGeneratedSha256": "1ba2b1c0cf5f5e8e09bc2ed5afd48cf70c6ac2918abf005e6dbbd0b650686af6",
+      "manualRankCorrection": false
+    }
+  ],
+  "promptSets": [
+    "Docs/Design/assets/characters-personality-20261015-v2/prompts.json",
+    "Docs/Design/assets/characters-uniform-20261015-v3/prompts-part1.json",
+    "Docs/Design/assets/characters-uniform-20261015-v3/prompts-part2.json",
+    "Docs/Design/assets/characters-uniform-20261015-v3/shoulder-pilot-prompt.json",
+    "Docs/Design/assets/characters-uniform-20261015-v4/alpha-correction-prompts.json",
+    "Docs/Design/assets/characters-uniform-20261015-v4/badge-reference-prompts.json",
+    "Docs/Design/assets/characters-uniform-20261015-v4/count-corrections.json",
+    "Docs/Design/assets/characters-uniform-20261015-v4/insignia-composite-prompts.json",
+    "Docs/Design/assets/characters-uniform-20261015-v4/local-corrections.json",
+    "Docs/Design/assets/characters-uniform-20261015-v4/prompts.json",
+    "Docs/Design/assets/characters-pixel-20261015-v5/prompts.json",
+    "Docs/Design/assets/characters-pixel-20261015-v6/prompts.json"
+  ],
+  "research": [
+    "https://www.law.go.kr/LSW/flDownload.do?bylClsCd=110204&flSeq=162126721&gubun=",
+    "https://www.korea.kr/news/interviewView.do?newsId=148797200",
+    "https://www.newsis.com/view/NISX20240415_0002699494"
+  ],
+  "referenceUse": "User-provided clothing photographs guide placement only; no photographed people or background pixels used as runtime assets. Green command bands follow the user reference as a stylized game costume, not a claim of current standard uniform.",
+  "scope": "Generation and provenance record, not exclusive-rights certification.",
+  "runtimeIntegrated": true,
+  "verification": "Client/Evidence/pixel-complete-20261015/verification.json",
+  "pendingArtDetails": [],
+  "styleRevision": "C02-C04 refreshed after early-stage omissions were identified; C01 trainee/final variant retained as style anchor; C05-C19 retain v5.",
+  "manualEditAuthorization": "2026-10-15 user: 픽셀 단위로 직접 수정해",
+  "manualEditTool": "Pillow; Client/Tools/FinalizePixelPortraits.py and Client/Tools/FinalizeEarlyPixelPortraits.py",
+  "manualEdits": "Docs/Design/assets/characters-pixel-20261015-v5/manual-corrections.json",
+  "earlyManualEdits": "Docs/Design/assets/characters-pixel-20261015-v6/manual-corrections.json"
+}

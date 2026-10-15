@@ -1,0 +1,1254 @@
+{
+  "checkedAt": "2026-10-14T23:52:04.754704+09:00",
+  "status": "V9_SOURCE_FREEZE_MATCH_UNITY73_PASS_WEB_APPROVAL_PENDING",
+  "sourceFrozen": true,
+  "browserApproved": false,
+  "designAcceptedByUser": false,
+  "physicalDevicesTested": 0,
+  "scope": "Final frozen source/assets and provided Unity evidence checked read-only. This role did not modify Client, build, run Unity, or execute/reload a browser. User approval for the web build and design remains pending.",
+  "previousEvidence": {
+    "path": "Licence/RANK-ASSETS.json",
+    "sha256": "0FC24995CEBE4586FFE3B9F5A1A63898888EBB1BC478C8AF9754739550089CC4",
+    "unaltered": true
+  },
+  "sprites": [
+    {
+      "name": "WhitePanel",
+      "path": "Client/Assets/StageGame/Art/RankUI/WhitePanel.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 1550,
+      "sha256": "093C35D3A548B34F16B08C598272531B143FC0CBA2ED9981A80ADB661FE4F770",
+      "guid": "af51b56c9662dc34fb61169d6c9d9b36",
+      "border": 24,
+      "maxChannelErrorBytes": 0.4999847412109375
+    },
+    {
+      "name": "BlackButton",
+      "path": "Client/Assets/StageGame/Art/RankUI/BlackButton.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 1016,
+      "sha256": "4874AEB14BF8022DBF566558ACA72926EB4306F7124977F52566128C46BBCCD2",
+      "guid": "f77dffc772f3d434cb594355ccfd687b",
+      "border": 24,
+      "maxChannelErrorBytes": 0.4509124755859375
+    },
+    {
+      "name": "CurrentCard",
+      "path": "Client/Assets/StageGame/Art/RankUI/CurrentCard.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 1492,
+      "sha256": "4B0FDFEC1B7CC072847B1EEADDEDAB40364F02CCECDD2684AE246CFD0FD49DDF",
+      "guid": "d5d49d9d75064ac4182697f42e4ae2e6",
+      "border": 24,
+      "maxChannelErrorBytes": 0.48001861572265625
+    },
+    {
+      "name": "LockedCard",
+      "path": "Client/Assets/StageGame/Art/RankUI/LockedCard.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 1565,
+      "sha256": "104837994649D5A782F69E453D39A5BA1F5FBBFE8CE75B070B548F7610EC8921",
+      "guid": "a3307187ddaa802459656e929d1b4db9",
+      "border": 24,
+      "maxChannelErrorBytes": 0.499267578125
+    },
+    {
+      "name": "BlackStone",
+      "path": "Client/Assets/StageGame/Art/RankUI/BlackStone.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 2445,
+      "sha256": "656F67817CD03255CD1C13831420441FBA67D517964FCDEF412C5FA6B949B813",
+      "guid": "b45c9a7d3806b8b4ebad56e38f6f6c29",
+      "border": 0,
+      "maxChannelErrorBytes": 0.4878997802734375
+    },
+    {
+      "name": "WhiteStone",
+      "path": "Client/Assets/StageGame/Art/RankUI/WhiteStone.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 4349,
+      "sha256": "CC55CCC335129F83ACA35FCFCAD3B616D4C54800C8B732CF9A97F72CFDBFDA03",
+      "guid": "5795dc5401c02544cbec16781e2e5f94",
+      "border": 0,
+      "maxChannelErrorBytes": 0.4966888427734375
+    },
+    {
+      "name": "BlackWin",
+      "path": "Client/Assets/StageGame/Art/RankUI/BlackWin.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 5483,
+      "sha256": "011F22FD8B0FB8E74DA795D00E697D8A4E5AD405D13BA0C5FCC5E6D922F52368",
+      "guid": "5f29bc4f7f2d0264087926787cc3762f",
+      "border": 0,
+      "maxChannelErrorBytes": 0.497039794921875
+    },
+    {
+      "name": "WhiteWin",
+      "path": "Client/Assets/StageGame/Art/RankUI/WhiteWin.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 7015,
+      "sha256": "0096DFB10F4041E1BC941A646BD501C7539C2F0FF12F6FF4BD6C2FB5F62179F3",
+      "guid": "0cf585edc6a48f34b9122a7e9a17a649",
+      "border": 0,
+      "maxChannelErrorBytes": 0.4970550537109375
+    },
+    {
+      "name": "Preview",
+      "path": "Client/Assets/StageGame/Art/RankUI/Preview.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 3649,
+      "sha256": "6327EF0B37F5BA34D2B23BFBAF43E7AEA6407DA14EFCB078DA0C7ACE2B01C704",
+      "guid": "6c85ec336845b6b46945fa027b43a450",
+      "border": 0,
+      "maxChannelErrorBytes": 0.49462890625
+    },
+    {
+      "name": "AiFace",
+      "path": "Client/Assets/StageGame/Art/RankUI/AiFace.png",
+      "width": 96,
+      "height": 96,
+      "bytes": 3562,
+      "sha256": "4E15182C47A709AF8D2B7B47D136CFFC7B5098A14D3EC864F4D7263E98C55059",
+      "guid": "a19ef5c8284bd994385da58531a989c1",
+      "border": 0,
+      "maxChannelErrorBytes": 0.498046875
+    },
+    {
+      "name": "PlayerFace",
+      "path": "Client/Assets/StageGame/Art/RankUI/PlayerFace.png",
+      "width": 96,
+      "height": 96,
+      "bytes": 2578,
+      "sha256": "FFC506BCDDAD2C8C6E4C83D83CCE160F502D41EE899FDFD3E92FDFC15CA21C9B",
+      "guid": "558e70361c6764a4c9cc45a509f7ddbe",
+      "border": 0,
+      "maxChannelErrorBytes": 0.4980621337890625
+    },
+    {
+      "name": "IconClose",
+      "path": "Client/Assets/StageGame/Art/RankUI/IconClose.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 586,
+      "sha256": "1368C45CA8D23C9799C6B5413548F55F46634CEE611449ECB510A21BFF3E4B0A",
+      "guid": "5c6e2dda808ec7743843634ee7c609ef",
+      "border": 0,
+      "maxChannelErrorBytes": 0.4366912841796875
+    },
+    {
+      "name": "IconPause",
+      "path": "Client/Assets/StageGame/Art/RankUI/IconPause.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 290,
+      "sha256": "C6F2BF80104617BE3392154911EBA9D46041553AD748D48C752ACAC760CDFC24",
+      "guid": "0d61344a6bd381e45b7a40bc6d6bc24b",
+      "border": 0,
+      "maxChannelErrorBytes": 0.187774658203125
+    },
+    {
+      "name": "IconLeft",
+      "path": "Client/Assets/StageGame/Art/RankUI/IconLeft.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 472,
+      "sha256": "5EB6EE1A4D6ADAC79B25ACEBF97EA5CD96736C317DEFDD4A65DBF5B96A5914B1",
+      "guid": "6dd7d78c92b6ad6488ff28e17332b22b",
+      "border": 0,
+      "maxChannelErrorBytes": 0.0002899169921875
+    },
+    {
+      "name": "IconRight",
+      "path": "Client/Assets/StageGame/Art/RankUI/IconRight.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 478,
+      "sha256": "C3A25DBC76CC9CC142BA6751E9C5D9E735B6C545251E88F731C73EBD641EC99C",
+      "guid": "a54124d0c4180a34db81df681b593d94",
+      "border": 0,
+      "maxChannelErrorBytes": 0.0002899169921875
+    },
+    {
+      "name": "IconCheck",
+      "path": "Client/Assets/StageGame/Art/RankUI/IconCheck.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 784,
+      "sha256": "42C1843437BFEDB18C81F2AAC7C8A6372B403F8A9EC28B9AB796BBAA36B381C6",
+      "guid": "d1948a962549e824f8347f03dc835547",
+      "border": 0,
+      "maxChannelErrorBytes": 0.4968414306640625
+    },
+    {
+      "name": "IconLock",
+      "path": "Client/Assets/StageGame/Art/RankUI/IconLock.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 733,
+      "sha256": "44C85D60F794595CFD48B5FBBF00E27234FCF16D277A9BCC58BD98AE8D0D21DF",
+      "guid": "41a74abf03e75b44b9f5503011d9cfbe",
+      "border": 0,
+      "maxChannelErrorBytes": 0.488922119140625
+    },
+    {
+      "name": "IconHelp",
+      "path": "Client/Assets/StageGame/Art/RankUI/IconHelp.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 1801,
+      "sha256": "7C85C8342C457509275DA7AB1DA1809F43E91EAC6F4BE699D702D203EB4E4A16",
+      "guid": "84c6d98fd99564c469f086dfdba77e2b",
+      "border": 0,
+      "maxChannelErrorBytes": 0.4912261962890625
+    },
+    {
+      "name": "IconSettings",
+      "path": "Client/Assets/StageGame/Art/RankUI/IconSettings.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 1415,
+      "sha256": "CDB178E9CFF3F2848E80821F75C98518B50BF77C29B236604E9DAAEA799D29C6",
+      "guid": "cd2828f363b0f4140988b04d71b8b87d",
+      "border": 0,
+      "maxChannelErrorBytes": 0.469635009765625
+    },
+    {
+      "name": "IconStar",
+      "path": "Client/Assets/StageGame/Art/RankUI/IconStar.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 1004,
+      "sha256": "3EB74D683DBE609C512F67B11D789B3F00659732AB45637BA013CDD0E45447C6",
+      "guid": "6245ef83712fb7b49b40d88af014661a",
+      "border": 0,
+      "maxChannelErrorBytes": 0.49725341796875
+    },
+    {
+      "name": "IconUndo",
+      "path": "Client/Assets/StageGame/Art/RankUI/IconUndo.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 1192,
+      "sha256": "40F43F55D8D6979662977B268C4C8F41910039B907D2DE7116C6BC5C18E9D1AE",
+      "guid": "01aaf0e010c822b42b8d223ec0f1d1e3",
+      "border": 0,
+      "maxChannelErrorBytes": 0.4812774658203125
+    },
+    {
+      "name": "RankHat01",
+      "path": "Client/Assets/StageGame/Art/RankUI/RankHat01.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 1224,
+      "sha256": "B37963391AE0B7F60B5DCA42250F282BF0F5BCF16C530AD38179B3C05F81B07A",
+      "guid": "744d8c5f6a69e7040a9b07f8c2ea90e5",
+      "border": 0,
+      "maxChannelErrorBytes": 0.4936065673828125
+    },
+    {
+      "name": "RankHat02",
+      "path": "Client/Assets/StageGame/Art/RankUI/RankHat02.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 1061,
+      "sha256": "FCAA5C5FAA21B4C65772733B8B8993DB4F7020E506D1231F066D563867E66E9B",
+      "guid": "8c186b4178deec74db7b2e03bee650d8",
+      "border": 0,
+      "maxChannelErrorBytes": 0.487274169921875
+    },
+    {
+      "name": "RankHat03",
+      "path": "Client/Assets/StageGame/Art/RankUI/RankHat03.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 716,
+      "sha256": "740BE1F783E5BFC15724FF2CD8F32D3B84E92C243F24919AEB074472D0392411",
+      "guid": "da12e50a1e796aa4f915ca631af135d6",
+      "border": 0,
+      "maxChannelErrorBytes": 0.445587158203125
+    },
+    {
+      "name": "RankHat04",
+      "path": "Client/Assets/StageGame/Art/RankUI/RankHat04.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 1250,
+      "sha256": "3906BA93479D8E9494D5E280971412D399E66D4000DB573C229591676E9AAF56",
+      "guid": "368480fee0c2e8e42ad06c655cdea880",
+      "border": 0,
+      "maxChannelErrorBytes": 0.4947662353515625
+    },
+    {
+      "name": "RankHat05",
+      "path": "Client/Assets/StageGame/Art/RankUI/RankHat05.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 743,
+      "sha256": "3AF2E97D4825F4272BE132FAB15A91C83017CB0B088A7C2D2AF635ACA27B23C9",
+      "guid": "575e3a6fe5eb1864b9fb2e8875cbda06",
+      "border": 0,
+      "maxChannelErrorBytes": 0.445587158203125
+    },
+    {
+      "name": "RankHat06",
+      "path": "Client/Assets/StageGame/Art/RankUI/RankHat06.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 1296,
+      "sha256": "0311039A6F5D982ECD0F9F3F7F25E9D410B3D9C40D3A03FADC3A3FEE58DEE056",
+      "guid": "3b2f85ebe6f9d174ea3d676edca80ecd",
+      "border": 0,
+      "maxChannelErrorBytes": 0.4956207275390625
+    },
+    {
+      "name": "RankHat07",
+      "path": "Client/Assets/StageGame/Art/RankUI/RankHat07.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 1333,
+      "sha256": "96664885963B8A9DC10AD824B3E27C01C398BB3FB1B8CB40C9932A1E414496AA",
+      "guid": "7bd9793862b6dcc4484b835f0484e1f6",
+      "border": 0,
+      "maxChannelErrorBytes": 0.4936065673828125
+    },
+    {
+      "name": "RankHat08",
+      "path": "Client/Assets/StageGame/Art/RankUI/RankHat08.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 1528,
+      "sha256": "AA469CC21028C11E75E23C4B03D7824F51E6CA2391F393328A5156777A6FCCC9",
+      "guid": "b180498517bc9644288299ef13c6ed04",
+      "border": 0,
+      "maxChannelErrorBytes": 0.487274169921875
+    },
+    {
+      "name": "RankHat09",
+      "path": "Client/Assets/StageGame/Art/RankUI/RankHat09.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 781,
+      "sha256": "81884E4A5ED731B6ECF2961BE05FEF45C5A5CF50002EFED872F5C2FA0BC5D4E8",
+      "guid": "4fa62d61a293607439d8f54c68a99675",
+      "border": 0,
+      "maxChannelErrorBytes": 0.445587158203125
+    },
+    {
+      "name": "RankHat10",
+      "path": "Client/Assets/StageGame/Art/RankUI/RankHat10.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 1705,
+      "sha256": "07B96F75ADC1794E0A7388204D6EBCD421C877D450CFB5467915D389C1A6A946",
+      "guid": "06da7f546f30c2b4e8c2d03f9d6d7e40",
+      "border": 0,
+      "maxChannelErrorBytes": 0.497772216796875
+    },
+    {
+      "name": "RoundPrimary",
+      "path": "Client/Assets/StageGame/Art/RankUI/RoundPrimary.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 2600,
+      "sha256": "987A744AD15CF4B79927B7455E47EEDD0DC7E90ED89C98C075431068F206DF87",
+      "guid": "f088e256680000e4d8d7363150a083f3",
+      "border": 0,
+      "maxChannelErrorBytes": 0.4818878173828125
+    }
+  ],
+  "newPixelAudit": {
+    "count": 11,
+    "method": "Independent float32 distance/alpha-over calculation; allowed1 byte; no PNG modifications.",
+    "maxChannelErrorBytes": 0.497772216796875
+  },
+  "theme": {
+    "path": "Client/Assets/StageGame/Art/RankUI/RankTheme.asset",
+    "sha256": "E165EE818AF790EF9699FB5C3A38BBBC1839954EF4E78D30E8391790543E41D5",
+    "bytes": 2987,
+    "guid": "093af76421eb2b942a944eaf0bec5c00",
+    "scalarBindings": {
+      "panel": "af51b56c9662dc34fb61169d6c9d9b36",
+      "primary": "f77dffc772f3d434cb594355ccfd687b",
+      "currentCard": "d5d49d9d75064ac4182697f42e4ae2e6",
+      "lockedCard": "a3307187ddaa802459656e929d1b4db9",
+      "blackStone": "b45c9a7d3806b8b4ebad56e38f6f6c29",
+      "whiteStone": "5795dc5401c02544cbec16781e2e5f94",
+      "blackWin": "5f29bc4f7f2d0264087926787cc3762f",
+      "whiteWin": "0cf585edc6a48f34b9122a7e9a17a649",
+      "preview": "6c85ec336845b6b46945fa027b43a450",
+      "aiAvatar": "a19ef5c8284bd994385da58531a989c1",
+      "playerAvatar": "558e70361c6764a4c9cc45a509f7ddbe",
+      "close": "5c6e2dda808ec7743843634ee7c609ef",
+      "pause": "0d61344a6bd381e45b7a40bc6d6bc24b",
+      "help": "84c6d98fd99564c469f086dfdba77e2b",
+      "settings": "cd2828f363b0f4140988b04d71b8b87d",
+      "left": "6dd7d78c92b6ad6488ff28e17332b22b",
+      "right": "a54124d0c4180a34db81df681b593d94",
+      "check": "d1948a962549e824f8347f03dc835547",
+      "locked": "41a74abf03e75b44b9f5503011d9cfbe",
+      "star": "6245ef83712fb7b49b40d88af014661a",
+      "undo": "01aaf0e010c822b42b8d223ec0f1d1e3",
+      "retry": "01aaf0e010c822b42b8d223ec0f1d1e3",
+      "roundPrimary": "f088e256680000e4d8d7363150a083f3"
+    },
+    "rankHatsInOrder": [
+      "744d8c5f6a69e7040a9b07f8c2ea90e5",
+      "8c186b4178deec74db7b2e03bee650d8",
+      "da12e50a1e796aa4f915ca631af135d6",
+      "368480fee0c2e8e42ad06c655cdea880",
+      "575e3a6fe5eb1864b9fb2e8875cbda06",
+      "3b2f85ebe6f9d174ea3d676edca80ecd",
+      "7bd9793862b6dcc4484b835f0484e1f6",
+      "b180498517bc9644288299ef13c6ed04",
+      "4fa62d61a293607439d8f54c68a99675",
+      "06da7f546f30c2b4e8c2d03f9d6d7e40"
+    ],
+    "totalSpriteReferences": 33,
+    "uniqueSprites": 32,
+    "appRootReferenceVerified": true
+  },
+  "prefabs": [
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/ActionConfirm.prefab",
+      "sha256": "C28FA8780FC9411EBADE19FB0591D19E2EC94C16EF1F326438C4B10209604A08",
+      "bytes": 24307,
+      "guid": "942dc716749c6fe4b8f372ff4f256bef"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/Board.prefab",
+      "sha256": "72EF8F3CDEE1FCB893715EF076FCDB4BEDF64C469071690A84747EBA57310998",
+      "bytes": 167328,
+      "guid": "f3df0838f881d024d8e9da356d4cf6ae"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/Button.prefab",
+      "sha256": "7CA284E2720AE55EAAEDC32DD89F26FF42DD75EADE4607CF5A78062C28086F5E",
+      "bytes": 6144,
+      "guid": "59c6e212074fcc74cbbc9444c3df037c"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/CloseButton.prefab",
+      "sha256": "0F53F1C8B1B14667FDB96B4B77B932E3AA9F2AC297318F721E049BA2AFC9CA11",
+      "bytes": 6050,
+      "guid": "84cb32a004552f647881c84f928a21d1"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/Confirm.prefab",
+      "sha256": "99EA13C44A9311B7545A3E537F6177413F01CB3EC83F941074199CADF303E1A3",
+      "bytes": 35949,
+      "guid": "0a1a6a56537ffe0409f18d1c2c4c4cce"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/Detail.prefab",
+      "sha256": "7DFFA07365F6AA4FF4FBFA3F6C0B2899BFF84B042CF1221D2DC43597F86B1F89",
+      "bytes": 56215,
+      "guid": "484353e686292fa459e94466bbae9546"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/Help.prefab",
+      "sha256": "C1DFB9ABE3BF59F3C7A1D20C865600F818B9C24652988B87D4AE472CA19B6FF8",
+      "bytes": 81898,
+      "guid": "8e267d69d2a6b974e92fac193dee379d"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/Lobby.prefab",
+      "sha256": "EDF1952B16E996E10305DA79AFBFE13ADE5E6F20C643A96F882203C9BDC677B9",
+      "bytes": 172965,
+      "guid": "df64228afe3eed54cb4a72919971dab6"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/Match.prefab",
+      "sha256": "F3B451DB8EAA2089B555878DE43EB32E5152CD4AED7565F8A0C6EE415B2DC193",
+      "bytes": 73936,
+      "guid": "424203637e7ea474cb3667003423db5e"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/Notices.prefab",
+      "sha256": "859B4FBF261F13E46C86CB8800922D52A2AB9C16AF8D76648DD1424CA8D9587F",
+      "bytes": 18993,
+      "guid": "588f4fa0446a4dd4db446cce4c90f52e"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/OpeningBoard.prefab",
+      "sha256": "CD6AD4AE1D7644761554B0A2B1A567F266F5782F4E5215A8A84625E81917701F",
+      "bytes": 135876,
+      "guid": "9422bfab28873b44eb1f6fc4f6797ea4"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/RankAppRoot.prefab",
+      "sha256": "96D100FF980CFA66BAB8C5BBD7E05BCE2EBA51D8162130F8C21AA89DBAD78BD4",
+      "bytes": 174909,
+      "guid": "8ec8c4972c4704946b16c8b223381222"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/Result.prefab",
+      "sha256": "6D086FA4509DEA86619CCBD0B704F9A78CF10AABEF87EC3EBE858EC0F3F1E03D",
+      "bytes": 27660,
+      "guid": "393554a03bbc51041a1414c7de849c7c"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/Settings.prefab",
+      "sha256": "339831240ADAA6DF269714B24BFB192479BC3F75A242AEEE6CF9EE062EE46460",
+      "bytes": 45439,
+      "guid": "78e756c4b1f74e94da787554e7f9cb2a"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/StageCard.prefab",
+      "sha256": "9E0732A452396DEAD0CEE1F94FB397F43B1B1EF99A11AC898D8A86065DE1654F",
+      "bytes": 13824,
+      "guid": "8e33f60bed9a6744e8d678da0b3fa447"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/TurnToast.prefab",
+      "sha256": "9A0D1FA7F5E72BF329FB41626ED97C4212DBE3BABA0FEDBFC288B8B86152FCC8",
+      "bytes": 4994,
+      "guid": "6c821251d34d8a64493923030937b61f"
+    }
+  ],
+  "sources": [
+    {
+      "path": "Client/Assets/StageGame/Editor/RankUiBuilder.cs",
+      "sha256": "5F45947E0A9E683E100111DE3C637D214A9F74C7B3E71FB77D58140385E7D1A5",
+      "bytes": 39130
+    },
+    {
+      "path": "Client/Assets/StageGame/Scripts/UI/RankDetailBlocker.cs",
+      "sha256": "DE10A00BC6339CCC491AE40FE7AFBCD0F695017C5C6A06B3A3B00CF8080AA68D",
+      "bytes": 409
+    },
+    {
+      "path": "Client/Assets/StageGame/Scripts/UI/RankGameApp.cs",
+      "sha256": "3FDF28A138D2F931C63BCC95B8904B0E42A101E0F26DD545EE986AA19F7393F9",
+      "bytes": 32336
+    },
+    {
+      "path": "Client/Assets/StageGame/Scripts/UI/RankStageCard.cs",
+      "sha256": "D15B3BC33E25F3A878A879D74C37E7C505FE1BCB0E3627573AEFACFE706A8EC7",
+      "bytes": 231
+    },
+    {
+      "path": "Client/Assets/StageGame/Scripts/UI/RankTheme.cs",
+      "sha256": "ADB10A22A8DCA1507A43A5F2DC2042E099A9FEBCA7013D7145FC80FBE60FA930",
+      "bytes": 462
+    },
+    {
+      "path": "Client/Assets/StageGame/Scripts/UI/UniformBoardLines.cs",
+      "sha256": "F13F61E040368817F4CE640583558211EDDF5537E1E4F7E9567A8A08F1EDE035",
+      "bytes": 1416
+    }
+  ],
+  "sharedRuntimeDependencies": [
+    {
+      "path": "Client/Assets/StageGame/Scripts/UI/SafeAreaFitter.cs",
+      "sha256": "C39F52DBA525C7BF9EB871375DC6B076C5E8C7F0DD48690130A608A21EB0D9B9",
+      "bytes": 4028
+    },
+    {
+      "path": "Client/Assets/StageGame/Scripts/UI/HostLayout.cs",
+      "sha256": "3F35560AE219719C7A4ECAA265D6E7F48B517123DC210E02D5649DDB8B30E165",
+      "bytes": 1762
+    }
+  ],
+  "savedReferences": {
+    "appArrays": {
+      "cards": 30,
+      "stones": 42,
+      "detailStones": 42,
+      "columns": 7
+    },
+    "lineArrays": {
+      "Board": {
+        "vertical": 9,
+        "horizontal": 8
+      },
+      "OpeningBoard": {
+        "vertical": 9,
+        "horizontal": 8
+      }
+    },
+    "fontGuids": [
+      "b0a7a1ce995fc8b43bea67577baf03e2"
+    ],
+    "spriteGuids": [
+      "0d61344a6bd381e45b7a40bc6d6bc24b",
+      "41a74abf03e75b44b9f5503011d9cfbe",
+      "558e70361c6764a4c9cc45a509f7ddbe",
+      "5795dc5401c02544cbec16781e2e5f94",
+      "5c6e2dda808ec7743843634ee7c609ef",
+      "6c85ec336845b6b46945fa027b43a450",
+      "6dd7d78c92b6ad6488ff28e17332b22b",
+      "744d8c5f6a69e7040a9b07f8c2ea90e5",
+      "84c6d98fd99564c469f086dfdba77e2b",
+      "a19ef5c8284bd994385da58531a989c1",
+      "a54124d0c4180a34db81df681b593d94",
+      "af51b56c9662dc34fb61169d6c9d9b36",
+      "b45c9a7d3806b8b4ebad56e38f6f6c29",
+      "cd2828f363b0f4140988b04d71b8b87d",
+      "f77dffc772f3d434cb594355ccfd687b"
+    ],
+    "playerFaceInactiveInSavedMatch": true
+  },
+  "scene": {
+    "path": "Client/Assets/StageGame/Scenes/Main.unity",
+    "sha256": "F3916A3440CEB41BDA96E3DAB8D111BC8E7380991D7F68DE6939B8B859721B21",
+    "bytes": 16423,
+    "rankRootReferenced": true,
+    "legacyRootDisabled": true
+  },
+  "preserved": [
+    {
+      "path": "Client/Assets/StageGame/Art/TabletopUI/PanelCream.png",
+      "sha256": "4B00B916B9843E872EC588F80E3C76D23502FA882882A4AA5DD2D3BE5840A0AE"
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/TabletopUI/ButtonMint.png",
+      "sha256": "2C0B24D833303298657F0FEDB0905EA1EF0A48DD87FA0AE77596ADADB1DA2874"
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/TabletopUI/ButtonCream.png",
+      "sha256": "535022DEBE2A02FD8848007E1FF5D5ABAD0B10B8F8CAC55FF48A182AEBD47EE2"
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/TabletopUI/BoardTeal.png",
+      "sha256": "32B1C2CBE5D6C6D98ED628232E86310DF60764F7DD5FAAC7EF13615D1377E88E"
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/TabletopUI/NodeCurrent.png",
+      "sha256": "2C0B24D833303298657F0FEDB0905EA1EF0A48DD87FA0AE77596ADADB1DA2874"
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/TabletopUI/NodeCleared.png",
+      "sha256": "D683330841B65AB50BBA28BE0834FC6E167E9E75AF2E073F837754C0D1C153F1"
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/TabletopUI/NodeLocked.png",
+      "sha256": "23B72457F445D4BFE8C12C9EE96FC6B09DD1A5C3D53F6F250E9EBF3AEAE59D27"
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/TabletopUI/NodeSelected.png",
+      "sha256": "C70FBEFC1AB513E0129CE985A1DE644FCF1FFBA615C817585FB738CDC7BE60C1"
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/TabletopUI/RecessedHole.png",
+      "sha256": "F9A29B80A485681E54714770842E77728DA2950D97B59CEF9520B69B653FA84E"
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/TabletopUI/PlayerRing.png",
+      "sha256": "F3394293C20604476BB19857E1E5A3CB17DE75FDEC06579D458584ADE12D0AC8"
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/TabletopUI/AiDiamond.png",
+      "sha256": "A63227B29042047EAEF9527D969784714BA3DECDDA6EE0E47F59789141BAD93E"
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/TabletopUI/PlayerRingWin.png",
+      "sha256": "90A86977BF2FD88A44202760B52AEDBE0BE33D9C2EA2B280E8044D937A9763D1"
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/TabletopUI/AiDiamondWin.png",
+      "sha256": "EDA28E10EEF62FF8604E61B23D8A532190D17F2EA2F4E832F30B8A85C74C3D07"
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/TabletopUI/IconPause.png",
+      "sha256": "A6B028170C3B2C911C96011E2A627E1A425172DDA13CABF7F8E41E4CAE0459D4"
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/TabletopUI/IconHelp.png",
+      "sha256": "A39FFAF6592313F679910C11731996A7D1D5ED0669A9BC40421364948D558856"
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/TabletopUI/IconSettings.png",
+      "sha256": "C1B6041D44CB7982E197FEC8C74E03F4C2FD100B487F422116287C95DAB56A94"
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/TabletopUI/IconChevron.png",
+      "sha256": "1F7046FDEC3ACB6D3CB36A576238E969625968A82596107E3C41370ED1C533DC"
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/TabletopUI/IconLock.png",
+      "sha256": "639826292E82CDB7AF251450826452F9F7B09BB20811A9091B7F3040A1D0743E"
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/TabletopUI/IconCheck.png",
+      "sha256": "D33537BE844C868521BA4BD985A00891894C83BEC1AD899C16A93AAA5E45B09A"
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/TabletopUI/IconPlay.png",
+      "sha256": "219592D280D87C753EC87C28AA051E042730943DBA37C76A400E565038321178"
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/TabletopUI/IconClose.png",
+      "sha256": "4551D1766432A11F611C96172D280252603474C3D5663765E80E0D67EEA76E55"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/AppRoot.prefab",
+      "sha256": "3E33C5741AE3B58EEF8C1445B87815CF03F996E28A3B29A16D8F0EDEDB1F647A"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/Board/Board.prefab",
+      "sha256": "849EFCE16EF1F7795E35CD8508BFBB9D3EDBFB4A2E9558CC428DC42969444561"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/Board/Cell.prefab",
+      "sha256": "3783EF3F99E72A249425AFE1A199AA8422AF95BC189E26B973FACFAB912B5C00"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Common/CloseButton.prefab",
+      "sha256": "74A3CA05E8081E04FA76B1774E09BEA1A2A965B7BBA3B8E4AC5CB70552D90899"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Common/ModalFrame.prefab",
+      "sha256": "55451456438ABFF504EFD6EF94B2E52FF112830CE833E4EA75B57978CDC02FA3"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Common/PrimaryButton.prefab",
+      "sha256": "BB9656194318FE45DA0257187D57A458C381C396C836301D613C3E4DB209A719"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Common/StageCard.prefab",
+      "sha256": "99685C6E6A6A4C033FA63BF45DFB0A27DD1E4D48E784C24D2CD1BCDDA93E6FEC"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Screens/ConfirmModal.prefab",
+      "sha256": "93A8DC126C166533920A5E313E614E13B4763E618922519FBCB9DCE45D37E82C"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Screens/GameScreen.prefab",
+      "sha256": "EEB5A128B1D152DB5BC14183798572514D21F71E314345369031847E5308F8AF"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Screens/HelpModal.prefab",
+      "sha256": "645E084999A089227FE108C265AA1CE60CDF4DF955625C9D4BEE661BA5FA5C60"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Screens/LobbyScreen.prefab",
+      "sha256": "3A51812B2BDEE3AEB81C2F6441BB169599B9552950D50AE8D41A4AA4D935F92C"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Screens/ResultModal.prefab",
+      "sha256": "D24BC8F792EE00273C5B0FB070A4C749A5A2E766D0632C5B84A1A17526CCE910"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Screens/SettingsModal.prefab",
+      "sha256": "607563B05641D410457530354EF3DDC1231438620E00AD58681045417711C850"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Screens/NoticesModal.prefab",
+      "sha256": "81A35EB443004CC5C170B1CEE8F31657449AFA61A391D0916159CB0BC1F971AE"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Common/StageNode.prefab",
+      "sha256": "DAC8D4C690D0C95EA80D7BAA36900295A1B2CBD9883ADE59D017316C899254A6"
+    },
+    {
+      "path": "Client/Assets/StageGame/Fonts/NotoSansCJKkr-Regular.otf",
+      "sha256": "6BCB2A0703AA137E874FC2DFFA85F6C21BA9A67FA329E81B8C801663AF7E992A"
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/Disc.png",
+      "sha256": "C4E0B1DB15621A5204822BFF94B80FCA8DDAA8BF53947BF576CAE4439A2D6018"
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/SoftUI/RoundRect96.png",
+      "sha256": "D6015AB3B77C2DA03898A7F7DB366751EEDB356B289D46F3796B152EA4DC4BD5"
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/SoftUI/SoftDisc128.png",
+      "sha256": "2F5F2CDC96F4AD8F3BFD05692693BB9AB904E400BFBEE001F5FCFAD65804FAD3"
+    },
+    {
+      "path": "Client/Assets/StageGame/Resources/LegalNotices.txt",
+      "sha256": "EFCF09F54BC2A14E8DC526144D1785431F3C649BA8B9BEEE196D8264082D6404"
+    },
+    {
+      "path": "Client/Assets/StageGame/Audio/Move.wav",
+      "bytes": 4454,
+      "sha256": "2037A0BB2F565A34BB91B9F3BDA80D3CBE317936D90F92A366EBAD28BE4F7ECF"
+    }
+  ],
+  "notices": [
+    {
+      "path": "Client/Assets/StreamingAssets/Notices/NotoSansCJKkr-OFL.txt",
+      "sha256": "6587D53488CE62E197942A708671B5F11F99D105034795C23A41380275D69C1F",
+      "fullTextIncluded": true
+    },
+    {
+      "path": "Client/Assets/StreamingAssets/Notices/Unity-uGUI-LICENSE.txt",
+      "sha256": "A8E0CAE87B2EDB8C205AE6C308F20B89A09F32D62BD4A3FF0343BB4724A4201E",
+      "fullTextIncluded": true
+    },
+    {
+      "path": "Client/Assets/StreamingAssets/Notices/Unity-Companion-License-Full.txt",
+      "sha256": "7A177190B6C4E511E096D7F0211E34C241E9D54954C87B61BF610BF0BCCB719E",
+      "fullTextIncluded": true
+    }
+  ],
+  "newThirdPartyArtOrFontInputsObserved": false,
+  "story": {
+    "contract": {
+      "path": "GameData/STORY-CONTRACT.md",
+      "sha256": "73086909293B8850FB36BB4E5375A658D64A86001C654D4B69DF393E1FEFD041",
+      "bytes": 4706
+    },
+    "report": {
+      "path": "GameData/Validation/story-results.json",
+      "sha256": "6E10AD7DC6C03D8053C81D54354EA4E8AD4846AF51065DD3F0A91C0C831FA331",
+      "bytes": 6838
+    },
+    "strings": 237,
+    "providedDataTests": {
+      "passed": 44,
+      "failed": 0,
+      "executedByThisRole": false
+    },
+    "firstIntroExact": true,
+    "stage1KeysVerified": true,
+    "files": [
+      {
+        "source": "GameData/Generated/stages.json",
+        "sourceSha256": "6F76D1575F71FD0240CF7B5774BD2A3FED41FB1828BD0CB85464F34E72122E7E",
+        "client": "Client/Assets/StageGame/Resources/GameData/stages.json",
+        "clientSha256": "6F76D1575F71FD0240CF7B5774BD2A3FED41FB1828BD0CB85464F34E72122E7E",
+        "identical": true
+      },
+      {
+        "source": "GameData/Generated/strings.json",
+        "sourceSha256": "4FA6C54394FD59846131794852EA025D4FA7DCB6725AB2A1DFB7435F1FA50DE4",
+        "client": "Client/Assets/StageGame/Resources/GameData/strings.json",
+        "clientSha256": "4FA6C54394FD59846131794852EA025D4FA7DCB6725AB2A1DFB7435F1FA50DE4",
+        "identical": true
+      },
+      {
+        "source": "GameData/Generated/ads.json",
+        "sourceSha256": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A",
+        "client": "Client/Assets/StageGame/Resources/GameData/ads.json",
+        "clientSha256": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A",
+        "identical": true
+      }
+    ]
+  },
+  "followUp": "Stop at this freeze/evidence reconciliation. No Client edits, further builds, or browser execution before the pending user approval. Provided Unity73 and data44 are separate runs; physical devices0 and design approval pending.",
+  "clientNativeTestsPassed": true,
+  "browserExecutedForCurrentBuild": false,
+  "sourceFreeze": {
+    "path": "Client/Evidence/rank-v9-source-freeze.json",
+    "sha256": "484BB34C8CB76B603ADB583813FC25A42DFB8502E7F64BB4B12D362927326C4F",
+    "frozenAtUtc": "2026-10-14T14:46:33.313630+00:00",
+    "fileCount": 311,
+    "allHashesAndSizesMatch": true,
+    "comparisonPasses": 1
+  },
+  "changedSinceIntermediate": [
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/Match.prefab",
+      "previous": "768B51390A5057DC91D11AE027C0C1192B8A845D5BF88C24E53AA4DC8AF7962A",
+      "frozen": "F3B451DB8EAA2089B555878DE43EB32E5152CD4AED7565F8A0C6EE415B2DC193"
+    },
+    {
+      "path": "Client/Assets/StageGame/Editor/RankUiBuilder.cs",
+      "previous": "9B5A385A2EF1850D465755E16B4CC21A462A4BC6C562C87928A1E77D969331AA",
+      "frozen": "5F45947E0A9E683E100111DE3C637D214A9F74C7B3E71FB77D58140385E7D1A5"
+    },
+    {
+      "path": "Client/Assets/StageGame/Scripts/UI/RankGameApp.cs",
+      "previous": "3CACF9C930473A27ECF59462E2B26E3FEA9F5E348DB1D09AEB2A15FF6C979810",
+      "frozen": "3FDF28A138D2F931C63BCC95B8904B0E42A101E0F26DD545EE986AA19F7393F9"
+    }
+  ],
+  "providedUnityVerification": {
+    "path": "Client/Evidence/rank-v9-tests.xml",
+    "sha256": "41310AE982AD187AD4558BA1EE970459DD28212C51DFABCAF8B7F7FD48994239",
+    "total": 73,
+    "passed": 73,
+    "failed": 0,
+    "skipped": 0,
+    "startTimeUtc": "2026-10-14 14:45:44Z",
+    "endTimeUtc": "2026-10-14 14:45:46Z",
+    "executedByThisRole": false,
+    "physicalDeviceTest": false
+  },
+  "providedIdempotence": {
+    "path": "Client/Evidence/rank-v9-idempotence.json",
+    "sha256": "DF2870CDB5057133B06874A2C8F2E2CA35DEB0861F455F913CD2E44173105A99",
+    "fileCount": 311,
+    "changed": [],
+    "executedByThisRole": false
+  },
+  "providedCaptureEvidence": {
+    "path": "Client/Evidence/rank-v9-ui-audit.json",
+    "sha256": "01519DA4E87636BDCE375D66D86BE02D5CD35E0974FCB81E2DE9AD597146AB8C",
+    "captureCount": 87,
+    "allHashesMatch": true,
+    "captures": [
+      {
+        "path": "Client/Evidence/rank-v9-20261014/crossing--1-False.png",
+        "sha256": "DA1CFF43ED79AA8F1E123093DB76F467A4E5D093E61E11A7550964151A770944"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/crossing--1-True.png",
+        "sha256": "E42C6E1E1B5E413DADE834470EAEC43DDA18C9D56BC97D6D22FEE7D574A9038C"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/crossing-1-False.png",
+        "sha256": "5D786933B22D21100FC4AAE2B506ED5171D70359A9A3956F0ACAEAA4EF0EC3EC"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/crossing-1-True.png",
+        "sha256": "FC386153A30A610D8C42C63ECB1A9F4CF08940C1571F1D78EBAB0C1C5E9C9D79"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-320-detail-bottom.png",
+        "sha256": "43B6DA0A6189DD49DCCBE14B42D65EC751993AB4817F5C51CAE995D64275F840"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-320-detail.png",
+        "sha256": "C74BE1CE6180216C5C4420DE2808C08E8D6B55BE3AF73CC2C5F61C8EE5E44824"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-320-draw.png",
+        "sha256": "84740054EFCA4BE77D1B437F85355C813D5DD9A4711621D6F7BD82590B348CB1"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-320-first-match.png",
+        "sha256": "7408E480C46DBD87F37A07E373E26C21B038FDF938E13039CEB5950A0BB146FA"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-320-help.png",
+        "sha256": "FE1DF83095C878B47A98F03137CEA4EAC33D6039B7469A837A4810816CA3896C"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-320-lobby-end.png",
+        "sha256": "1E35C570C2A5E769561CF2A2C92B55B55C159836E5B92DD98765F2C5CE57F2F5"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-320-lobby.png",
+        "sha256": "4C6D232BA1BF004A9965E4CA53218DCC83F1C21BA7B2550BD4C5BFC21C5BAFAC"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-320-match-bottom.png",
+        "sha256": "3C438B92982A4469523C6054A8218AD05F8CACDDB4BF8AEC76F8801C0E76F2D4"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-320-notices.png",
+        "sha256": "F618DC14B534CBDBE5DEAEC244F96471F0A4DA47FE8E43C86E9F9C5235218992"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-320-pause.png",
+        "sha256": "6C7EF1B46D11C9A56A4879D6C78E85611B2820DEAFABA9057D9785413E09CE10"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-320-preview.png",
+        "sha256": "7408E480C46DBD87F37A07E373E26C21B038FDF938E13039CEB5950A0BB146FA"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-320-rank-hat-01.png",
+        "sha256": "7408E480C46DBD87F37A07E373E26C21B038FDF938E13039CEB5950A0BB146FA"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-320-rank-hat-02.png",
+        "sha256": "2EC44F7B8F1845A68C0DAB1CF55202A223AAAFE292F507F2B964921A1B4149F9"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-320-rank-hat-03.png",
+        "sha256": "5A47FE141703C9B28FF7ECA4D28C66EDDD28AADEF3E379509E1DBA6D8DE9A2A8"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-320-rank-hat-04.png",
+        "sha256": "D8B11D83ABD943A9CA7CCA69580DEE4B5F7A10E2C45EEB1E624742E105194540"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-320-rank-hat-05.png",
+        "sha256": "FEB1E5BE8EF83B54D3CC5AB410E8D637D622469C5E0E72BC7F94772969880163"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-320-rank-hat-06.png",
+        "sha256": "04460345549838B9589DF9400A889A148C0D0A0299F32D75089AD59AB355A68A"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-320-rank-hat-07.png",
+        "sha256": "B4AE47F1135191CA882843562CA8F06E6FEB4DBD6C2F8CA4E78CECD2532A91A7"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-320-rank-hat-08.png",
+        "sha256": "7D2FD50547577CDEFD951E55EE8AF20E93651342E8B2F0E1B26B9722D91985FE"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-320-rank-hat-09.png",
+        "sha256": "FA5223B30C0F518E6243101460D400984623E1546B033C8B58643B6FFFC29BF2"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-320-rank-hat-10.png",
+        "sha256": "BBB8E55DC6F1EF764DB4D825FDBCF3BCCD9E14BF5A8629B716F9A1AF2CB07F7D"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-320-restart-confirm.png",
+        "sha256": "6510DD56CAB35C33BEB920A00FFF478DEFCB9B46FBD97E02138A6807FBE53140"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-320-settings.png",
+        "sha256": "CEC3113905ED069190EDD003B6537F82E914BE76BDF8719DA1BB84BF35829803"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-320-story-exact.png",
+        "sha256": "7408E480C46DBD87F37A07E373E26C21B038FDF938E13039CEB5950A0BB146FA"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-320-win.png",
+        "sha256": "D90A5AF1D2C0C8A0557F177CCA519C7A70E083D9E4342838EB90635CC366FA8C"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-390-detail-bottom.png",
+        "sha256": "12C6872DB22BD928B3E565E0FEEAD50034F78F67DD9D12E51D6DFB0AA1FE4C0E"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-390-detail.png",
+        "sha256": "12C6872DB22BD928B3E565E0FEEAD50034F78F67DD9D12E51D6DFB0AA1FE4C0E"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-390-first-match.png",
+        "sha256": "5D0850A41854A6D37D06B9B582DC00D58F6FCA343F122ABDECBF6728745CEC1B"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-390-help.png",
+        "sha256": "B00BC461F526117491A295A0662D43D20158F7EAB79A3A9A29EA1A0BEAF3BE18"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-390-lobby-end.png",
+        "sha256": "EDA996F8F0C8B4CD0668315D57BDC28102E0247704D17A06390CBE28B4367CDB"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-390-lobby.png",
+        "sha256": "50B0ABFC23492B22615714F975BD3D2029B8CE2D3DBA2064A3AED360A86E735D"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-390-match-bottom.png",
+        "sha256": "7FC8E619924021062EF2203B270300B33C2BDB1346B08E46C3E46DE92F2BABF0"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-390-notices.png",
+        "sha256": "B3E1EEF234745BCDAE54EFFE891B51B441A5790DD28FB29244EBE71B290A6F4A"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-390-pause.png",
+        "sha256": "FE38C153820D4192F16FE083B15182017196A8616B428A26A054A262AF31363F"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-390-preview.png",
+        "sha256": "7FC8E619924021062EF2203B270300B33C2BDB1346B08E46C3E46DE92F2BABF0"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-390-restart-confirm.png",
+        "sha256": "1FE832B91B6DCBB0BE33885A9DDAB714239C52A40AC1F9393F2FDDEADB8966FB"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-390-settings.png",
+        "sha256": "85DBDEE97BA4DCD1BF78F5580621B84C2C4B3553E6D2CF997F4533F6BE210748"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-390-turn-toast.png",
+        "sha256": "37087DF71F0877F0AE5F4DB1AA435A00181387DD9FF9D1BBDE4CC31B378D85DB"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/en-390-win.png",
+        "sha256": "EE62BBABCEB8EE50143C6E2F7D27120B219B2084C424732369206104E871648D"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/geometry-bottom-320.png",
+        "sha256": "B5537D9D33BCE73923D38EE23471C0CD2B35308E0EEA4B91857CDF086722403E"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/geometry-bottom-390.png",
+        "sha256": "914771DDF2656B8021B42DCF5C556E56BB1286A8DE8E59AB3DA11AF0F2F45FDB"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/geometry-top-320.png",
+        "sha256": "B231C1055378ED367375296C847305555910B7D958DF1EF182D0ACC9C149A16B"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/geometry-top-390.png",
+        "sha256": "914771DDF2656B8021B42DCF5C556E56BB1286A8DE8E59AB3DA11AF0F2F45FDB"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-320-detail-bottom.png",
+        "sha256": "A61CB32703B0226BB1291339D8883377D2F1883498CF7F331478E38D1A4540E5"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-320-detail.png",
+        "sha256": "BFB5D90C900EE0B191791072CB8E20D94F59100CB435D85DCD3A722AB5F15CD1"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-320-draw.png",
+        "sha256": "99B93D2E1F93FD2C2F9D6B47E4BE48E4611E6FB6C8A05B54E4ED5E1EAB4D06FF"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-320-first-match.png",
+        "sha256": "B231C1055378ED367375296C847305555910B7D958DF1EF182D0ACC9C149A16B"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-320-help.png",
+        "sha256": "8070F56A92E299BFA2278D9760EDE8FD9B64EBD0DE32E909D2F2E97F8C72DE22"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-320-lobby-end.png",
+        "sha256": "CBA702A0EF7C840CEE2A83347CC135389BE96E6D6298EECFE23B10EEC1E0AD63"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-320-lobby.png",
+        "sha256": "4405D6DD595D3502ECC51419EDEE9A1ACD292D5AF323E1E90ACE6AFFD7E359E2"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-320-match-bottom.png",
+        "sha256": "37D6D7F146B5AFD0819CABF61330EF75AEF1325A5DFF67424D2FB5F42170BE38"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-320-notices.png",
+        "sha256": "D2BB424177B4ADCC2E4723794E92AFD912190922A364E19614426F1399D0A2B9"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-320-pause.png",
+        "sha256": "16784DE393597A1B7950054077B9F5234235F7444AB63E03A8C8599F6A6BF97A"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-320-preview.png",
+        "sha256": "B231C1055378ED367375296C847305555910B7D958DF1EF182D0ACC9C149A16B"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-320-rank-hat-01.png",
+        "sha256": "B231C1055378ED367375296C847305555910B7D958DF1EF182D0ACC9C149A16B"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-320-rank-hat-02.png",
+        "sha256": "35EA86F7296C9A03A903953ADEE020AD13199DA75D032562148A99E18832D003"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-320-rank-hat-03.png",
+        "sha256": "7E5DCAB2A123F448D9A3BB748208800AF6B57A4CB055C63B4BBE700DCE4FDF29"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-320-rank-hat-04.png",
+        "sha256": "5E86ED8F634AC1CFB2D41D3CF6C1F9B7C58EE03E8FEE496A8ED62C92A7E89930"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-320-rank-hat-05.png",
+        "sha256": "49DF6C9B8F099FAA47CB5B966954E8F0FA141361FE14F1DF89C71452DAB24B11"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-320-rank-hat-06.png",
+        "sha256": "4EA0A6A68992BCE58AB4C96B7C2D67EB1763689556100014A211AB03E0BEE0AE"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-320-rank-hat-07.png",
+        "sha256": "91660E0ACEE631E51866B6A821AC5BC7F8B8BE9BD9E757DE868A1D0ABA04A766"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-320-rank-hat-08.png",
+        "sha256": "D72621C15E6DEAB87B01DB2AF2DABE02DFA583C3A5452D1221927C3BB6CD3994"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-320-rank-hat-09.png",
+        "sha256": "F019AD2812F2828E90EEB7640786BBCAE41C83E64FE95E39BD815EEF078E6351"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-320-rank-hat-10.png",
+        "sha256": "32A73B778EB39DD79FF2C91AB8B5916749E7A145466E5170DC390ED0AF2B6C25"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-320-restart-confirm.png",
+        "sha256": "4EBEA36F2E56A849D86A58402CD6D2FC593EBD7C5346046D61E36C4FDCE0CBBD"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-320-settings.png",
+        "sha256": "C12AC1F00B2D6C62CEE1AE0437FEE2A0795012AAC6EE9953DCCAA25CAF0AD365"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-320-story-exact.png",
+        "sha256": "B231C1055378ED367375296C847305555910B7D958DF1EF182D0ACC9C149A16B"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-320-win.png",
+        "sha256": "E8A5D047594C3581F39D6BAD509F5B608426CF436B46F7666D9668AE0D4F64C4"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-390-detail-bottom.png",
+        "sha256": "D78DADB0B52AF3952FBE1E7F0A8D6C1487292D1F86DB0084BEE7D61F0BF5E673"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-390-detail.png",
+        "sha256": "D78DADB0B52AF3952FBE1E7F0A8D6C1487292D1F86DB0084BEE7D61F0BF5E673"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-390-first-match.png",
+        "sha256": "914771DDF2656B8021B42DCF5C556E56BB1286A8DE8E59AB3DA11AF0F2F45FDB"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-390-help.png",
+        "sha256": "631CAF944F8D2016432AE790489748721A4D5EDBF56A12659FFDA4DDEB55B65E"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-390-lobby-end.png",
+        "sha256": "59CC929B705E0288037BFF3B86713353E647FF1784F12F66A2227BDB1D9AEDB2"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-390-lobby.png",
+        "sha256": "FC5EEBA9CD59CABCF6B96B14C9B1007D01A6AE352A7B0462C613A0F88CFE0E71"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-390-match-bottom.png",
+        "sha256": "DA89D3DF3207ACC2959129C1C225C79EB200AB3EF35A4520C77D990CEBAF074E"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-390-notices.png",
+        "sha256": "DBB6E07FE14CF0FBF8C5E5C22ED5A176271755188CD04AA3576D88CF9BD70942"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-390-pause.png",
+        "sha256": "FD9898EC01EC2D03C2672540F2B3AAEE558A43DED0B7887803CBFCC9942D82C4"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-390-preview.png",
+        "sha256": "DA89D3DF3207ACC2959129C1C225C79EB200AB3EF35A4520C77D990CEBAF074E"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-390-restart-confirm.png",
+        "sha256": "8B8158ABDBC3026CCA93C3C13C35FE3A3F96208386D9557FDC95C6A1A6829576"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-390-settings.png",
+        "sha256": "2DDE813E0C86641A33D86A9FBA2C29218C047A99A32A562AA3982A872E752DFB"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/ko-390-win.png",
+        "sha256": "C5C16C3C2900A0EF4FADA7B08F83DA0DB0892907381873967338022CEECE37DB"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/top-row-animation--1.png",
+        "sha256": "3E9583F0F1ABA9B38ABD506E49688BA27CA52835CCDAE09E1C1ACF537FB8E986"
+      },
+      {
+        "path": "Client/Evidence/rank-v9-20261014/top-row-animation-1.png",
+        "sha256": "6516BA0632154D8B7FC754752D8C5C4821646301E7A46356B0EBD146C1D494C9"
+      }
+    ],
+    "directStillSamplesViewed": [
+      "ko-320-rank-hat-01.png",
+      "ko-320-rank-hat-10.png"
+    ],
+    "scope": "Unity captures, not browser execution or user design acceptance."
+  },
+  "approvalState": {
+    "webBuild": "PENDING_USER_APPROVAL",
+    "furtherBuilds": "ON_HOLD_UNTIL_APPROVAL",
+    "browserReloadAndExecution": "ON_HOLD_UNTIL_APPROVAL",
+    "design": "NOT_APPROVED",
+    "reportedExistingBuild": "Root/Client report a previously started WebGL build completed; this role did not build or run it."
+  }
+}

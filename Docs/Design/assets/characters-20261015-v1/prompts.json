@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-15",
+  "tool": "built-in image_gen",
+  "styleReference": "C:/Github/StageGame/Overview/assets/military-pixel-20261015/recruit-buzz-cut-atlas-v12.png",
+  "states": [
+    "intro",
+    "thinking",
+    "ai_defeat"
+  ],
+  "basePrompt": "Use case: stylized-concept. Asset: a game-ready transparent three-state character sprite sheet for a fictional Korean military four-in-a-row story game.\nInput Image 1 is a STYLE AND LAYOUT REFERENCE ONLY. Make a NEW distinct adult character, not another version of the recruit. Match the reference's coarse, deliberately low-resolution pixel art: large square clusters, bold stair-step near-black outlines, very sparse flat shading, chunky hands, olive/khaki long-sleeve field uniform with collar and two simple chest pockets, and seated upper body behind the same plain olive rectangular desk. No hats, no real unit badges, rank insignia, national flags, logos, names, writing, numbers or watermarks. No equipment or props beyond glasses when specified and the desk.\nOutput composition: exactly THREE full upper-body sprites of the SAME NEW character, left to right INTRO / THINKING / AI DEFEAT, in one horizontal row, equal 512-wide cells on a preferred 1536x1024 canvas. Each pose has its own identical desk, baseline y around 895, head top around 275, and transparent margins and gutters. Desk and body must fit within their own cell without clipping or touching neighboring sprites. Keep the same character scale, face identity, haircut and uniform across all three. Art should look constructed on approximately a 48x64 logical pixel grid per person, then enlarged nearest-neighbor. Do not add fine smooth detail, realistic fingers, gradients, airbrush, texture noise, cinematic lighting or glow. No flames unless explicitly specified.\nTRUE transparent alpha background, including between sprites and around the desks. Absolutely no black/white/colored backdrop, checkerboard baked into the image, vignette, haze, shadows floating outside the sprite, labels, panels or border.\n",
+  "characters": [
+    {
+      "id": "C02",
+      "name": "문시온",
+      "slug": "moon-sion",
+      "rank": "이병",
+      "spec": "A cautious young adult male private with a round face, large ROUND black glasses, high worried eyebrows, short dark buzzed hair, modest narrow shoulders. INTRO: leans slightly forward, hands gently clasped above the desk, nervous half smile and small open speaking mouth. THINKING: studies the board below the frame, fingertips together, eyebrows raised in concentration. DEFEAT: pushes glasses up with one chunky hand, eyes wide as he notices the missed move, other hand on desk; embarrassed but good-natured."
+    },
+    {
+      "id": "C03",
+      "name": "오준호",
+      "slug": "oh-junho",
+      "rank": "일병",
+      "spec": "An outgoing young adult male soldier with a small SQUARE chin, wide mischievous grin, one distinctly raised eyebrow, short dark cropped hair, average build. INTRO: open palm toward viewer, speaking with a lively grin. THINKING: chin rests near a loose fist, one eyebrow raised, focused cheeky expression. DEFEAT: surprised open mouth and widened eyes, then a sheepish smile in the same readable expression; one hand lifts loosely, no rage."
+    },
+    {
+      "id": "C04",
+      "name": "정한결",
+      "slug": "jung-hangyeol",
+      "rank": "상병",
+      "spec": "A meticulous young adult male corporal with a NARROW angular face, straight eyebrows, thin RECTANGULAR black glasses and close-cropped neat dark hair, slim shoulders. INTRO: fingers loosely steepled above desk, confident small speaking mouth. THINKING: fingertips touching, intent narrow eyes looking down at the board. DEFEAT: one eyebrow tilts and shoulders drop slightly as he peers harder at the board, one hand adjusts glasses, other hand on desk. Analytical rather than explosive."
+    },
+    {
+      "id": "C05",
+      "name": "남기석",
+      "slug": "nam-giseok",
+      "rank": "병장",
+      "spec": "A relaxed young adult male senior enlisted soldier with BROAD rounded shoulders, a broad soft jaw, half-lidded eyes, short dark cropped hair, easy asymmetrical smile. INTRO: leans back slightly with one forearm laid across desk, casually speaking. THINKING: lowers his head and opens eyes more, forearms on desk, unexpectedly serious. DEFEAT: eyes suddenly ROUND and wide, eyebrows up, lips open into a surprised amused grin, one palm raised conceding. No glasses."
+    },
+    {
+      "id": "C06",
+      "name": "최건우",
+      "slug": "choi-geonwoo",
+      "rank": "하사",
+      "spec": "An adult male junior NCO in his late twenties with a SQUARE face, thick straight eyebrows, short military crew cut, upright athletic shoulders, calm teaching manner. INTRO: upright, both hands parallel on desk, one palm opens as if asking a question, mouth speaking. THINKING: steady focused gaze, one hand near chin and other flat on desk. DEFEAT: slight respectful nod, eyebrows soften, small conceding smile, both hands relaxed. No glasses."
+    },
+    {
+      "id": "C07",
+      "name": "한유진",
+      "slug": "han-yujin",
+      "rank": "공군 중사",
+      "spec": "An adult male air-force NCO guest in his thirties, precise puzzle lover, with a lean angular face, thin ANGULAR RECTANGULAR glasses, short neat side-parted cropped hair, small mouth. Distinct muted BLUE-GRAY and olive field-uniform palette in the same coarse pixel style; long sleeves and collar. NO pilot helmet, flight suit, goggles, headset or wings. INTRO: one open hand describing a calculation, speaking. THINKING: lightly touches glasses temple, brow intent, other forearm on desk. DEFEAT: lowers glasses slightly and widens eyes, surprised recalculation, mouth a small puzzled shape."
+    },
+    {
+      "id": "C08",
+      "name": "박정민",
+      "slug": "park-jeongmin",
+      "rank": "상사",
+      "spec": "A warm adult male senior NCO in his late thirties, CHUBBY cheeks, rounded nose, smiling crescent eyes, stocky shoulders, close-cropped dark hair. INTRO: relaxed open palm and friendly speaking smile. THINKING: gently furrowed brow, round cheeks, one hand beneath chin, other forearm on desk. DEFEAT: cheerful broad laugh, eyes nearly closed and shoulders lifted in an amused shrug, open hands. No glasses."
+    },
+    {
+      "id": "C09",
+      "name": "한태식",
+      "slug": "han-taesik",
+      "rank": "원사",
+      "spec": "A quiet mature male veteran NCO with a LONG RECTANGULAR face, narrow eyes, gray at the temples of a short dark haircut, lean broad-shouldered build. INTRO: hands clasped low on desk, reserved small speaking mouth. THINKING: still posture, fingers interlaced, narrowed focused eyes. DEFEAT: eyes briefly closed, chin gently lowered in a calm nod, modest conceding expression. He is restrained rather than angry. No glasses."
+    },
+    {
+      "id": "C10",
+      "name": "배성훈",
+      "slug": "bae-seonghun",
+      "rank": "준위",
+      "spec": "An adult male technical warrant officer in his forties with a rounded SQUARE jaw, downturned eyebrows, thick lower lip, short slightly receding dark hair, compact build. Curious puzzle enthusiast. INTRO: head tilts toward one shoulder, one chunky finger gestures to the board below the image, mouth explaining. THINKING: maintains the tilted head, hand near cheek, intensely curious eyes. DEFEAT: head tilts noticeably toward the OPPOSITE shoulder, eyes widen and lips form an aha expression, one hand lifted loosely. No glasses."
+    },
+    {
+      "id": "C11",
+      "name": "김준서",
+      "slug": "kim-junseo",
+      "rank": "소위",
+      "spec": "A young adult male newly commissioned officer, SMALL face, large bright alert eyes, neat short dark cropped hair, slim frame, slightly raised tense shoulders. INTRO: earnest upright posture, both hands at desk, nervous determined speaking smile. THINKING: lips pursed, large eyes focused down, hand under chin, shoulders tense. DEFEAT: shoulders relax, small shy smile, brows soften, one hand rubs the side of his short hair. No glasses."
+    },
+    {
+      "id": "C12",
+      "name": "서지훈",
+      "slug": "seo-jihoon",
+      "rank": "소대장",
+      "spec": "An adult male platoon leader in his late twenties, SOFT OVAL face, thick curved eyebrows, one simple pixel dimple, short neat cropped hair, approachable athletic build. INTRO: leans forward slightly, friendly speaking expression and small welcoming palm. THINKING: eyebrows gently focused, chin near relaxed hand, other forearm on desk. DEFEAT: open palm acknowledging a good move, warm conceding smile and slight nod. No glasses."
+    },
+    {
+      "id": "C13",
+      "name": "장태오",
+      "slug": "jang-taeo",
+      "rank": "중대장",
+      "spec": "An adult male company commander in his thirties, strong ANGULAR jaw, high outer eyebrows, BROAD forehead, short cropped military hair, broad confident shoulders. INTRO: forearms set widely on desk, assertive speaking grin. THINKING: brow lowers, hand under chin, powerful upright posture. DEFEAT: hearty open-mouth laugh, BOTH hands raised lightly in friendly surrender at chest height, not above head, conceding enthusiastically. No glasses."
+    },
+    {
+      "id": "C14",
+      "name": "서강현",
+      "slug": "seo-ganghyeon",
+      "rank": "작전참모",
+      "spec": "An adult male operations officer in his late thirties, VERY NARROW LONG face, SMALL square glasses distinct from the private's large round frames, short tidy side-parted hair, slight asymmetrical mouth. Analytical build and manner. INTRO: one hand gestures a possible option above desk, small speaking mouth. THINKING: one hand firmly below chin, narrowed calculating eyes. DEFEAT: hand falls away from chin toward chest, eyebrows rise and he stares at the overlooked option, tiny surprised open mouth."
+    },
+    {
+      "id": "C15",
+      "name": "이도현",
+      "slug": "lee-dohyeon",
+      "rank": "대대장",
+      "spec": "A mature male battalion commander in his forties with a BROAD RECTANGULAR face, very thick horizontal eyebrows, short gray at the sides of a dark haircut, sturdy shoulders. INTRO: both elbows placed symmetrically on desk, firm clear speaking face. THINKING: stern concentrated eyes, symmetric solid posture, hands loosely joined. DEFEAT: surprised stern expression softens into respect, hands come together once as if giving one appreciative clap, no anger. No glasses."
+    },
+    {
+      "id": "C16",
+      "name": "백승우",
+      "slug": "baek-seungwoo",
+      "rank": "연대장",
+      "spec": "A mature male regiment commander in his late forties with a NARROW chin, HIGH cheekbones, slightly upward outer eye corners, neat side-parted short dark-and-gray hair, lean elegant shoulders. INTRO: one open hand as he speaks a short metaphor, subtle smile. THINKING: fingers near chin, evaluating narrowed eyes, upright posture. DEFEAT: pulls gesturing hand back toward chest, one corner of mouth rises in impressed admiration, eyebrows relaxed. No glasses."
+    },
+    {
+      "id": "C17",
+      "name": "임재훈",
+      "slug": "lim-jaehoon",
+      "rank": "부사단장",
+      "spec": "A mature male deputy division commander in his fifties, ROUND forehead, heavy eyelids, simple blocky smile lines beside cheeks, short salt-and-pepper cropped hair, rounded medium build. INTRO: hands loosely layered on desk, friendly joking speaking grin. THINKING: slight smile remains but eyes become sharp, fingertips together. DEFEAT: eyes open wide in surprise then his shoulders rise in warm laughter, one palm lifted amiably. No glasses."
+    },
+    {
+      "id": "C18",
+      "name": "윤정호",
+      "slug": "yoon-jeongho",
+      "rank": "사단장",
+      "spec": "A mature male division commander and friendly tournament host in his fifties, very BROAD forehead, SHORT GRAY hair at the sides, soft thick eyebrows, LARGE rounded nose, solid upright shoulders, kindly but capable expression. INTRO: back straight, hands relaxed on desk, welcoming speaking mouth. THINKING: calm measured brow, one hand at chin and other relaxed on desk. DEFEAT: gracious nod and OPEN PALM inviting the player toward the next challenge, warm respectful smile. No glasses."
+    },
+    {
+      "id": "C19",
+      "name": "조은찬",
+      "slug": "jo-eunchan",
+      "rank": "일병",
+      "spec": "A quiet young adult male enlisted tournament challenger, short dark forward-cropped FRINGE, long narrow eyes, SMALL POINTED chin, slim shoulders, reserved natural expression. INTRO: still posture with hands near each other on desk, eyes meet viewer and a tiny speaking mouth. THINKING: perfectly quiet centered posture, sharp gaze down toward board, one hand lightly under chin. DEFEAT: a restrained faint smile appears for the first time, eyebrows soften, one hand opens modestly in acknowledgment. No glasses."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "bars4",
+    "prompt": "A precise flat pixel-art military insignia reference. ONE olive-green square cloth patch on transparent background, large and centered. Inside the patch EXACTLY FOUR separate thin black HORIZONTAL straight bars, stacked vertically with equal olive gaps. FOUR bars, like four minus signs on four rows. All four fully visible, not three. Black1 / olive gap / black2 / olive gap / black3 / olive gap / black4. No border lines, no pocket, no text, no other shapes. 1024x1024 PNG with true alpha."
+  },
+  {
+    "id": "diamonds3",
+    "prompt": "A precise flat pixel-art Korean military CAPTAIN shoulder insignia reference. ONE long olive-green HORIZONTAL cloth strap on transparent background. EXACTLY THREE separate solid BLACK elongated diamonds arranged in a single horizontal row: ◆ ◆ ◆. Each diamond long axis HORIZONTAL, so they lie sideways. All three pointed diamonds equal size and fully visible. No fourth button, no border, no greenband, no text, no other shapes. 1536x1024 PNG true alpha."
+  },
+  {
+    "id": "flowers3",
+    "prompt": "A precise flat pixel-art Korean military COLONEL shoulder insignia reference. ONE long olive-green horizontal cloth strap on transparent background. EXACTLY THREE separate BLACK FIVE-PETAL mugunghwa flower rosettes in a single horizontal row, evenly spaced. Three flowers total, each exactly5roundedpetals around central small olive dot. All three flowers equal size and fully visible. No stars, no diamonds, no border, no buttons, no text, no extra symbols.1536x1024 PNG true alpha."
+  }
+]

@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-15",
+  "status": "AI_GENERATED_ASSET_DRAFTS_USER_DESIGN_REVIEW_PENDING",
+  "tool": "built-in image_gen",
+  "basis": "User requested remaining fictional characters in the existing project recruit style; character briefs from Docs/Design/CHARACTERS.md. No third-party stock images, fonts, logos, actual unit insignia or real-person references were supplied to these calls.",
+  "notAClaim": "Generation and provenance records do not establish legal clearance or exclusive copyright.",
+  "reference": {
+    "path": "Overview/assets/military-pixel-20261015/recruit-buzz-cut-atlas-v12.png",
+    "sha256": "58c7cd7ca5fbdbea5730ba6eb70ccf6f408472914f3581a2cfec619f1f1b9070",
+    "role": "Existing project style/layout reference, preserved unchanged"
+  },
+  "promptSet": "Docs/Design/assets/characters-20261015-v1/prompts.json",
+  "manifest": "Docs/Design/assets/characters-20261015-v1/manifest.json",
+  "newImages": 18,
+  "newStates": 54,
+  "runtimeIntegrated": false,
+  "images": [
+    {
+      "id": "C02",
+      "name": "문시온",
+      "path": "Docs/Design/assets/characters-20261015-v1/C02-moon-sion-v1.png",
+      "sha256": "91eedcc23f14ac5a7774821f7b98915dddb4da28f532db7972c8d016fc78e46a",
+      "bytes": 1241103
+    },
+    {
+      "id": "C03",
+      "name": "오준호",
+      "path": "Docs/Design/assets/characters-20261015-v1/C03-oh-junho-v1.png",
+      "sha256": "7ad13a9500ca49306b83e80ecf91dedac132bb293286348c8e43a4ff7dcd79b3",
+      "bytes": 1242254
+    },
+    {
+      "id": "C04",
+      "name": "정한결",
+      "path": "Docs/Design/assets/characters-20261015-v1/C04-jung-hangyeol-v1.png",
+      "sha256": "4099faf6ccb08cbcf24f518a8feb4ee73b6b84589c6ab42b6ddc685c8aa0f14a",
+      "bytes": 1188167
+    },
+    {
+      "id": "C05",
+      "name": "남기석",
+      "path": "Docs/Design/assets/characters-20261015-v1/C05-nam-giseok-v1.png",
+      "sha256": "5f8f7d214018bfde9f355d8525ef70a24d859ffc103e8a594e59d204a69addf6",
+      "bytes": 1232470
+    },
+    {
+      "id": "C06",
+      "name": "최건우",
+      "path": "Docs/Design/assets/characters-20261015-v1/C06-choi-geonwoo-v1.png",
+      "sha256": "158704dae0d82414ebe8ee4ffd24cd7fef6247fa597016214d7a2764d4e51c1b",
+      "bytes": 1252618
+    },
+    {
+      "id": "C07",
+      "name": "한유진",
+      "path": "Docs/Design/assets/characters-20261015-v1/C07-han-yujin-v1.png",
+      "sha256": "07a4a17270891a9e5509469054ca8f5972f43ee85ae894cefdcc7511e9652875",
+      "bytes": 1261449
+    },
+    {
+      "id": "C08",
+      "name": "박정민",
+      "path": "Docs/Design/assets/characters-20261015-v1/C08-park-jeongmin-v1.png",
+      "sha256": "a6080b177acf6d5ff5ad80073f49a018293155225fc7845a663668d62bb538b5",
+      "bytes": 1218304
+    },
+    {
+      "id": "C09",
+      "name": "한태식",
+      "path": "Docs/Design/assets/characters-20261015-v1/C09-han-taesik-v1.png",
+      "sha256": "537565a6f73ccf32b2ae4b32a0ec35d689784cd58934c36ed8f801499b819442",
+      "bytes": 1211373
+    },
+    {
+      "id": "C10",
+      "name": "배성훈",
+      "path": "Docs/Design/assets/characters-20261015-v1/C10-bae-seonghun-v1.png",
+      "sha256": "417073385d0c3fe2fd19a81a5b1985b4276ccf2d8e6e368b44d8a3c40e9b1417",
+      "bytes": 1246717
+    },
+    {
+      "id": "C11",
+      "name": "김준서",
+      "path": "Docs/Design/assets/characters-20261015-v1/C11-kim-junseo-v1.png",
+      "sha256": "c4e87731c510e793468d9ccfaad04fab65217ce736fdfba80ca5afdf5b7c36e7",
+      "bytes": 1207501
+    },
+    {
+      "id": "C12",
+      "name": "서지훈",
+      "path": "Docs/Design/assets/characters-20261015-v1/C12-seo-jihoon-v1.png",
+      "sha256": "3497121f901689052d8714a239ab86f456958e55cb45e1ea1a76f566b72a67d6",
+      "bytes": 1224274
+    },
+    {
+      "id": "C13",
+      "name": "장태오",
+      "path": "Docs/Design/assets/characters-20261015-v1/C13-jang-taeo-v1.png",
+      "sha256": "07f6968293cb647f138a73ab43abe4e37e13f204cd1b5c5f6d07eb7ef95068cc",
+      "bytes": 1251856
+    },
+    {
+      "id": "C14",
+      "name": "서강현",
+      "path": "Docs/Design/assets/characters-20261015-v1/C14-seo-ganghyeon-v1.png",
+      "sha256": "1fa71ddc7dc735c4f944ed938a3799afe405afdd907d7042dac38c11c7fd2c4a",
+      "bytes": 1224934
+    },
+    {
+      "id": "C15",
+      "name": "이도현",
+      "path": "Docs/Design/assets/characters-20261015-v1/C15-lee-dohyeon-v1.png",
+      "sha256": "9f9f74b0b1a56ba1b98dc42ea002b3df238ccf4e8699d44122930f3a131a4bf0",
+      "bytes": 1237222
+    },
+    {
+      "id": "C16",
+      "name": "백승우",
+      "path": "Docs/Design/assets/characters-20261015-v1/C16-baek-seungwoo-v1.png",
+      "sha256": "6c07c57417b4146bfe2ad06656f4238b054a4f7681e144c0ceecdbc19031209f",
+      "bytes": 1246603
+    },
+    {
+      "id": "C17",
+      "name": "임재훈",
+      "path": "Docs/Design/assets/characters-20261015-v1/C17-lim-jaehoon-v1.png",
+      "sha256": "a7095325b1ba0aa7879b8be0ea8fa3470a82379a5ebf07e08a68f2d7699f2e95",
+      "bytes": 1225209
+    },
+    {
+      "id": "C18",
+      "name": "윤정호",
+      "path": "Docs/Design/assets/characters-20261015-v1/C18-yoon-jeongho-v1.png",
+      "sha256": "c069ea7bfa849a6159f06f0b11dc79982276dec87e3f795d2145b705b37acfd0",
+      "bytes": 1283394
+    },
+    {
+      "id": "C19",
+      "name": "조은찬",
+      "path": "Docs/Design/assets/characters-20261015-v1/C19-jo-eunchan-v1.png",
+      "sha256": "b10a8a5dbaa76fbea1031fb5eaad443b3267651e96b052f93182b05d27dcc6d9",
+      "bytes": 1214110
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-15",
+  "status": "AI_GENERATED_CAP_VARIANTS_USER_DESIGN_REVIEW_PENDING",
+  "tool": "built-in image_gen.imagegen",
+  "basis": "User requested military caps with front decorations. Each existing project character sheet C06-C18 was supplied as an edit target, preserving identity and three poses. No external reference images were supplied.",
+  "notAClaim": "This records generation provenance, not legal clearance or exclusive copyright. Geometric cap decorations are stylized game art.",
+  "promptSet": "Docs/Design/assets/characters-caps-20261015-v1/prompts.json",
+  "manifest": "Docs/Design/assets/characters-caps-20261015-v1/manifest.json",
+  "newImages": 13,
+  "newStates": 39,
+  "runtimeIntegrated": false,
+  "images": [
+    {
+      "id": "C06",
+      "name": "최건우",
+      "path": "Docs/Design/assets/characters-caps-20261015-v1/C06-choi-geonwoo-cap-v1.png",
+      "sha256": "ee999b970e1850a8a618e2b832096f1bdd41536f636e59b74df92f194a18b197",
+      "bytes": 1259045,
+      "reference": "Docs/Design/assets/characters-20261015-v1/C06-choi-geonwoo-v1.png",
+      "referenceSha256": "158704dae0d82414ebe8ee4ffd24cd7fef6247fa597016214d7a2764d4e51c1b"
+    },
+    {
+      "id": "C07",
+      "name": "한유진",
+      "path": "Docs/Design/assets/characters-caps-20261015-v1/C07-han-yujin-cap-v1.png",
+      "sha256": "1bd47fdaf347a2816f0d8ea0bb46caa75d5e89e5fb2db020e3cec3e0247027f3",
+      "bytes": 1303457,
+      "reference": "Docs/Design/assets/characters-20261015-v1/C07-han-yujin-v1.png",
+      "referenceSha256": "07a4a17270891a9e5509469054ca8f5972f43ee85ae894cefdcc7511e9652875"
+    },
+    {
+      "id": "C08",
+      "name": "박정민",
+      "path": "Docs/Design/assets/characters-caps-20261015-v1/C08-park-jeongmin-cap-v1.png",
+      "sha256": "9cdd5f492377e54532294de971ce1a50f26618437570e3209007f7e76028741f",
+      "bytes": 1303029,
+      "reference": "Docs/Design/assets/characters-20261015-v1/C08-park-jeongmin-v1.png",
+      "referenceSha256": "a6080b177acf6d5ff5ad80073f49a018293155225fc7845a663668d62bb538b5"
+    },
+    {
+      "id": "C09",
+      "name": "한태식",
+      "path": "Docs/Design/assets/characters-caps-20261015-v1/C09-han-taesik-cap-v1.png",
+      "sha256": "c1321ff9f3340b18c93c628a08869502edffe6186021b93db1d89b1b7532d530",
+      "bytes": 1299903,
+      "reference": "Docs/Design/assets/characters-20261015-v1/C09-han-taesik-v1.png",
+      "referenceSha256": "537565a6f73ccf32b2ae4b32a0ec35d689784cd58934c36ed8f801499b819442"
+    },
+    {
+      "id": "C10",
+      "name": "배성훈",
+      "path": "Docs/Design/assets/characters-caps-20261015-v1/C10-bae-seonghun-cap-v1.png",
+      "sha256": "c8583c1b50e36d24b2a7f8289a93cd75e430c0412e16a744c0346e7b32230f03",
+      "bytes": 1322109,
+      "reference": "Docs/Design/assets/characters-20261015-v1/C10-bae-seonghun-v1.png",
+      "referenceSha256": "417073385d0c3fe2fd19a81a5b1985b4276ccf2d8e6e368b44d8a3c40e9b1417"
+    },
+    {
+      "id": "C11",
+      "name": "김준서",
+      "path": "Docs/Design/assets/characters-caps-20261015-v1/C11-kim-junseo-cap-v1.png",
+      "sha256": "0468c842980ce1ef0e7e121fe7f4dd9b0dd7137959b7154f43f3dd8257990819",
+      "bytes": 1288467,
+      "reference": "Docs/Design/assets/characters-20261015-v1/C11-kim-junseo-v1.png",
+      "referenceSha256": "c4e87731c510e793468d9ccfaad04fab65217ce736fdfba80ca5afdf5b7c36e7"
+    },
+    {
+      "id": "C12",
+      "name": "서지훈",
+      "path": "Docs/Design/assets/characters-caps-20261015-v1/C12-seo-jihoon-cap-v1.png",
+      "sha256": "f6d20806fce63ddf4675aa22ddf386a434c7918872e08661bebc13659d8dee5f",
+      "bytes": 1333738,
+      "reference": "Docs/Design/assets/characters-20261015-v1/C12-seo-jihoon-v1.png",
+      "referenceSha256": "3497121f901689052d8714a239ab86f456958e55cb45e1ea1a76f566b72a67d6"
+    },
+    {
+      "id": "C13",
+      "name": "장태오",
+      "path": "Docs/Design/assets/characters-caps-20261015-v1/C13-jang-taeo-cap-v1.png",
+      "sha256": "bb19bac12737257ca747ebfdca3b990ecd043193d5d719bb90f41250364333fa",
+      "bytes": 1330903,
+      "reference": "Docs/Design/assets/characters-20261015-v1/C13-jang-taeo-v1.png",
+      "referenceSha256": "07f6968293cb647f138a73ab43abe4e37e13f204cd1b5c5f6d07eb7ef95068cc"
+    },
+    {
+      "id": "C14",
+      "name": "서강현",
+      "path": "Docs/Design/assets/characters-caps-20261015-v1/C14-seo-ganghyeon-cap-v1.png",
+      "sha256": "7b43f09853b8e5131a6c9d329cff5ba38a2c2cce1033e133a4b6c713a7c2f929",
+      "bytes": 1298967,
+      "reference": "Docs/Design/assets/characters-20261015-v1/C14-seo-ganghyeon-v1.png",
+      "referenceSha256": "1fa71ddc7dc735c4f944ed938a3799afe405afdd907d7042dac38c11c7fd2c4a"
+    },
+    {
+      "id": "C15",
+      "name": "이도현",
+      "path": "Docs/Design/assets/characters-caps-20261015-v1/C15-lee-dohyeon-cap-v1.png",
+      "sha256": "acc9d6849281864f98df3310f36b22da3ff8837ee015d3e9d3f8a08be6b95931",
+      "bytes": 1303694,
+      "reference": "Docs/Design/assets/characters-20261015-v1/C15-lee-dohyeon-v1.png",
+      "referenceSha256": "9f9f74b0b1a56ba1b98dc42ea002b3df238ccf4e8699d44122930f3a131a4bf0"
+    },
+    {
+      "id": "C16",
+      "name": "백승우",
+      "path": "Docs/Design/assets/characters-caps-20261015-v1/C16-baek-seungwoo-cap-v1.png",
+      "sha256": "dd9323340be5e03246e7c25cc9d8feabc01591e5e6a980b504e669b7b79df364",
+      "bytes": 1309911,
+      "reference": "Docs/Design/assets/characters-20261015-v1/C16-baek-seungwoo-v1.png",
+      "referenceSha256": "6c07c57417b4146bfe2ad06656f4238b054a4f7681e144c0ceecdbc19031209f"
+    },
+    {
+      "id": "C17",
+      "name": "임재훈",
+      "path": "Docs/Design/assets/characters-caps-20261015-v1/C17-lim-jaehoon-cap-v1.png",
+      "sha256": "9372a2194b135fc961bd4a54abe51b515e237502c9eb655346bfca416fcd0487",
+      "bytes": 1326293,
+      "reference": "Docs/Design/assets/characters-20261015-v1/C17-lim-jaehoon-v1.png",
+      "referenceSha256": "a7095325b1ba0aa7879b8be0ea8fa3470a82379a5ebf07e08a68f2d7699f2e95"
+    },
+    {
+      "id": "C18",
+      "name": "윤정호",
+      "path": "Docs/Design/assets/characters-caps-20261015-v1/C18-yoon-jeongho-cap-v1.png",
+      "sha256": "94aa879d7065df959af7441c59ea6cf195323a2d70bd7368cae53519bf219ad6",
+      "bytes": 1368503,
+      "reference": "Docs/Design/assets/characters-20261015-v1/C18-yoon-jeongho-v1.png",
+      "referenceSha256": "c069ea7bfa849a6159f06f0b11dc79982276dec87e3f795d2145b705b37acfd0"
+    }
+  ]
+}

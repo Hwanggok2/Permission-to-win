@@ -1,0 +1,126 @@
+{
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+  "sampleRate": 44100,
+  "clips": [
+    {
+      "name": "ButtonClick-guarded.m4a",
+      "ok": true,
+      "frames": 9215,
+      "seconds": 0.20895691609977324,
+      "peak": 0.2795141637325287,
+      "rms": 0.020632877189642202,
+      "firstAudibleMs": 46.48526077097505,
+      "lastAudibleMs": 65.46485260770974
+    },
+    {
+      "name": "ButtonClick-original.m4a",
+      "ok": true,
+      "frames": 3071,
+      "seconds": 0.06963718820861678,
+      "peak": 0.038075778633356094,
+      "rms": 0.0056730601583836505,
+      "firstAudibleMs": 10.90702947845805,
+      "lastAudibleMs": 19.024943310657594
+    },
+    {
+      "name": "ButtonClick-tail.m4a",
+      "ok": true,
+      "frames": 9215,
+      "seconds": 0.20895691609977324,
+      "peak": 0.038075778633356094,
+      "rms": 0.0032749873543400465,
+      "firstAudibleMs": 10.90702947845805,
+      "lastAudibleMs": 19.024943310657594
+    },
+    {
+      "name": "GoStonePlaceHeavy-guarded.m4a",
+      "ok": true,
+      "frames": 17407,
+      "seconds": 0.3947165532879819,
+      "peak": 0.6524211764335632,
+      "rms": 0.07897153683782257,
+      "firstAudibleMs": 55.30612244897959,
+      "lastAudibleMs": 332.4036281179138
+    },
+    {
+      "name": "GoStonePlaceHeavy-original.m4a",
+      "ok": true,
+      "frames": 13311,
+      "seconds": 0.30183673469387756,
+      "peak": 0.6504164338111877,
+      "rms": 0.0897530989207901,
+      "firstAudibleMs": 10.226757369614512,
+      "lastAudibleMs": 285.9637188208617
+    },
+    {
+      "name": "GoStonePlaceHeavy-tail.m4a",
+      "ok": true,
+      "frames": 15359,
+      "seconds": 0.3482766439909297,
+      "peak": 0.6504164338111877,
+      "rms": 0.0835551694187138,
+      "firstAudibleMs": 10.226757369614512,
+      "lastAudibleMs": 285.9637188208617
+    },
+    {
+      "name": "TypingKey-guarded.m4a",
+      "ok": true,
+      "frames": 9215,
+      "seconds": 0.20895691609977324,
+      "peak": 0.5447978377342224,
+      "rms": 0.03651529429577254,
+      "firstAudibleMs": 46.46258503401361,
+      "lastAudibleMs": 73.33333333333333
+    },
+    {
+      "name": "TypingKey-original.m4a",
+      "ok": true,
+      "frames": 2047,
+      "seconds": 0.046417233560090705,
+      "peak": 0.09862696379423141,
+      "rms": 0.01438664925267277,
+      "firstAudibleMs": 10.612244897959183,
+      "lastAudibleMs": 26.870748299319725
+    },
+    {
+      "name": "TypingKey-tail.m4a",
+      "ok": true,
+      "frames": 9215,
+      "seconds": 0.20895691609977324,
+      "peak": 0.09862696379423141,
+      "rms": 0.006780643446408435,
+      "firstAudibleMs": 10.612244897959183,
+      "lastAudibleMs": 26.870748299319725
+    },
+    {
+      "name": "TypingKey-source.wav",
+      "ok": true,
+      "frames": 1544,
+      "seconds": 0.03501133786848073,
+      "peak": 0.54998779296875,
+      "rms": 0.08939788738843109,
+      "firstAudibleMs": 0.022675736961451247,
+      "lastAudibleMs": 26.870748299319725
+    },
+    {
+      "name": "ButtonClick-source.wav",
+      "ok": true,
+      "frames": 2426,
+      "seconds": 0.055011337868480725,
+      "peak": 0.28000733256340027,
+      "rms": 0.04028145488266027,
+      "firstAudibleMs": 0.045351473922902494,
+      "lastAudibleMs": 19.024943310657594
+    },
+    {
+      "name": "GoStonePlaceHeavy-source.wav",
+      "ok": true,
+      "frames": 13230,
+      "seconds": 0.3,
+      "peak": 0.649993896484375,
+      "rms": 0.09074381473731141,
+      "firstAudibleMs": 8.866213151927438,
+      "lastAudibleMs": 285.9637188208617
+    }
+  ]
+}

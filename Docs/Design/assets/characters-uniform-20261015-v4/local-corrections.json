@@ -1,0 +1,20 @@
+{
+  "tool": "built-in image_gen",
+  "jobs": [
+    {
+      "id": "C05",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-23bdf13d-b2ec-4af0-ab45-066a19881a6b.png",
+      "prompt": "Precise localized pixel-art edit. Keep EVERYTHING unchanged except the first and second character's rank patch at viewer-right chest. The RIGHTMOST third character already has FOUR horizontal black stripes (correct): use that exact rank pattern as reference. LEFT character currently has THREE stripes at x314..362 around y638,654,670; add a FOURTH stripe at y686 under them, extend olive patch bottom to y700. MIDDLE character has THREE stripes x837..884 around y638,654,670; add FOURTH stripe at y686, extend patch bottom to y700. All three chest patches must read as FOUR thin black stripes INSIDE patch, not counting the flap border. Do not change rightmost patch, hair, face, hands, green bands, or flag. Same1536x1024 transparent atlas3cells. 왼쪽과 가운데 캐릭터의 가슴 계급장에 검정 가로줄을 아래로 한 줄씩만 추가해서 네 줄로 만들어라. 오른쪽 캐릭터의 네 줄과 같은 형태."
+    },
+    {
+      "id": "C13",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-6e9eec1f-1608-4869-9d41-382d32ca1877.png",
+      "prompt": "Precise localized pixel-art edit. Keep EVERYTHING unchanged except MIDDLE CHARACTER'S VIEWER-LEFT SHOULDER strap. It wrongly has TWO black diamonds at approx x628,y496 and x652,y487. Replace this pair with THREE SMALLER black diamonds in a row along same strap, between green outer band and inner neck button. Suggested centers x619,y503; x641,y495; x661,y485. The other visible straps already show3diamonds, preserve them. Do not change hat, face, hands, collar, greenbands, flag or table. Same1536x1024 transparent atlas3cells. 가운데 캐릭터의 화면 왼쪽 어깨 견장만 수정. 검정 마름모가 두 개뿐이라 세 개로 고쳐라."
+    },
+    {
+      "id": "C16",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-809e889f-7795-43ad-b19d-ad33e8184a82.png",
+      "prompt": "Precise localized pixel-art edit. Keep EVERYTHING unchanged except RIGHTMOST CHARACTER'S VIEWER-RIGHT SHOULDER strap, at x1395..1460,y521..550. This one strap wrongly shows TWO black flowers; replace that pair with THREE SMALLER black FIVE-PETAL flowers in a row along the strap, centers approx x1413,y529; x1431,y536; x1449,y542, before green endband. Match the count3on all other straps (already correct), preserve all five other straps and ALLfaces/hands/caps/greenbands/flag/table. Same1536x1024 transparent atlas3cells. 오른쪽 캐릭터의 화면 오른쪽 어깨 견장만 수정. 무궁화가 두 개뿐이니 세 개로 고쳐라."
+    }
+  ]
+}

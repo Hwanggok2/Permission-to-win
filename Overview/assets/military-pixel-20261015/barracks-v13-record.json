@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-15",
+  "version": 13,
+  "mode": "Built-in image_gen: generate then style-transfer",
+  "status": "내무반 배경과 독립 화면 시안 검토 / 실제 게임 연결 없음 / 빌드 없음",
+  "assets": {
+    "initial": "barracks-background-v13.png",
+    "simplified": "barracks-background-v13-simple.png",
+    "preview_encoding": "barracks-background-v13-preview.webp",
+    "character": "recruit-buzz-cut-atlas-v12-display.webp",
+    "preview": "preview-v13.html"
+  },
+  "requested_elements": [
+    "관물대",
+    "평상",
+    "창문"
+  ],
+  "layout": "캐릭터 뒤 상대 영역에 내무반을 배치. 흰 보드 유지. 훈련병/난이도 표시는 불투명 바탕으로 구분.",
+  "image_processing": "이미지 생성 및 단순화는 image_gen. 원본 PNG 보존. 화면용 WebP q85 인코딩만 별도 수행; 해상도 1774×887 유지, 리사이즈·수작업 리터칭 없음. 캐릭터는 기존 v12 그대로 사용.",
+  "validation": [
+    "원본과 화면용 이미지 파일 읽기 확인.",
+    "독립 HTML 691609 bytes(<1 MB), JavaScript 구문, 고유 루트, 3장면 버튼, 내장 WebP 2개 디코딩 확인 통과. 실제 화면 동작 검증과 구분.",
+    "브라우저 렌더링 및 상호작용 검증 미실행. 게임/실기기 실행 아님."
+  ],
+  "prompts": [
+    "Create a BACKGROUND-ONLY pixel-art environment for a humorous Korean military barracks board game. Wide horizontal composition, approximately 2:1, preferably 1536 by 768. Absolutely NO people, characters, game board, front desk, text, logos, flags, real unit insignia, UI or title. The room must clearly show all three elements: (1) a row of simple olive-green military personal lockers with rectangular doors and small upper cubbies along the LEFT rear wall, (2) a traditional broad low raised WOODEN SLEEPING PLATFORM ('pyeongsang') along the rear/right wall, with two small neatly folded dark olive bedding stacks, NOT individual Western bunk beds, (3) two simple large rectangular WINDOWS on the RIGHT rear wall, pale blue daylight and a little blocky green outdoors. View straight into this modest old barracks room at eye level with very gentle perspective. Leave the central lower foreground spacious and empty for a separate seated soldier and desk sprite to be overlaid later; lockers stay readable on the left, window and sleeping platform stay readable on the right. Simple pale warm gray/cream walls, faded sage/khaki lockers, desaturated warm brown timber platform, muted blue windows. Calm soft daylight but drawn as FLAT blocks of color, not realistic light rendering. Coherent old 8-bit/early 16-bit video game environment: the ENTIRE wide image should visibly appear to originate from about a 128 by 64 logical pixel grid enlarged with nearest-neighbor, very large crisp square pixels and stepped edges, only 12 to 16 flat colors, sparse details, one shadow tone per material, no thin subpixel lines, NO gradients, smooth shading, antialiasing, painterly brushwork, noisy texture, photorealism, dithering or high-resolution surface detail. Readable silhouettes and subdued contrast so a darker outlined character remains the focal point. Fill the whole canvas with the room, no margins, no transparency. Original independent environment design.",
+    "Use case: style-transfer. Edit this barracks background ONLY in rendering style. Keep the SAME room composition: olive military lockers on left, wooden raised sleeping platform on right with folded bedding, two windows above it, central foreground empty, no people or text. Make it RADICALLY coarser, like a genuinely tiny 128x64 pixel videogame tile scene shown at 8x nearest-neighbor magnification. Target output 1024x512 if possible. Everything is constructed from a strict regular grid of large solid square blocks. Use EXACTLY 12 flat solid colors in the entire image. Each single-color shape must have uniform RGB, absolutely no gradients, grain, texture, lighting noise, soft edges, atmospheric effects, antialiasing, or subtle color variation within a block. Simplify the floor to ONE solid beige color with only five large dark beige tile marks; simplify ceiling to one solid color. Remove both ceiling lights. Windows are one pale blue color and two chunky light cloud shapes. Lockers have only broad rectangular doors, handles and large plain top cubbies. No fine detailing, no vents. Wooden platform has only two flat wood shades. Keep each locker and the platform obvious at tiny mobile size. Muted olive, tan, pale blue and cream palette, low background contrast, bold stepped pixel silhouettes. The result must look much LOWER resolution than the input, with much LESS detail, not a higher-resolution painting of pixel art. Opaque background."
+  ],
+  "notes": "외부 에셋 다운로드 없음. 시안은 최종 게임 자산/권리 검토 완료를 의미하지 않음. Client/GameData/Server 변경 없음."
+}

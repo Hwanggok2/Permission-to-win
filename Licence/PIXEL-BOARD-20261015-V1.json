@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-15",
+  "status": "APPLIED_EDITOR_VERIFIED",
+  "tool": "built-in image_gen.imagegen",
+  "asset": "Docs/Design/assets/board-pixel-20261015-v1/WoodenBoard.png",
+  "generationRecord": "Docs/Design/assets/board-pixel-20261015-v1/generation.json",
+  "hashRecord": "Docs/Design/assets/board-pixel-20261015-v1/prepared-files.json",
+  "references": [
+    "Overview/assets/military-pixel-20261015/wood-board-top-v21.png",
+    "Docs/Design/assets/characters-caps-20261015-v1/C18-yoon-jeongho-cap-v1.png"
+  ],
+  "basis": "User requested a board redesign matching existing project character art and game integration. Existing project art was provided as material/style reference. Original assets preserved.",
+  "runtimeApplied": true,
+  "unityVerified": true,
+  "verification": "Client/Evidence/pixel-art-20261015/verification.json"
+}

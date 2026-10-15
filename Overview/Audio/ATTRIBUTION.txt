@@ -1,0 +1,26 @@
+StageGame audition page credits. Easy Lemon selected for game integration on 2026-10-15; the other tracks remain audition-only candidates. Runtime credits are maintained separately in Client/Assets/StreamingAssets/Notices/Easy-Lemon-Attribution.txt.
+
+"Easy Lemon" Kevin MacLeod (incompetech.com)
+Source: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1200076
+Licensed under Creative Commons: By Attribution 4.0 License
+https://creativecommons.org/licenses/by/4.0/
+
+"Carefree" Kevin MacLeod (incompetech.com)
+Source: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1400037
+Licensed under Creative Commons: By Attribution 4.0 License
+https://creativecommons.org/licenses/by/4.0/
+
+"Bit Quest" Kevin MacLeod (incompetech.com)
+Source: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1500073
+Licensed under Creative Commons: By Attribution 4.0 License
+https://creativecommons.org/licenses/by/4.0/
+
+"Dreams Become Real" Kevin MacLeod (incompetech.com)
+Source: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1500027
+Licensed under Creative Commons: By Attribution 4.0 License
+https://creativecommons.org/licenses/by/4.0/
+
+Audio files are unmodified artist downloads. The audition player reduces playback volume only.
+If excerpts, compression, loop edits, fades or other changes are made later, record those changes here and in the game's credits.
+The music remains licensed under CC BY 4.0; the game's proprietary terms do not replace or restrict this license.
+License text: evidence/cc-by-4.0-legalcode.html

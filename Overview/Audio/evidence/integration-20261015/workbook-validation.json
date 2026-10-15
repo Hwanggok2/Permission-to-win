@@ -1,0 +1,14 @@
+{
+  "authoring": "Artifact Tool, two new Strings rows; original OOXML parts preserved during publication because full export changed unrelated styles",
+  "added_range": "Strings!A423:E424",
+  "added_keys": [
+    "settings_music_on",
+    "settings_music_off"
+  ],
+  "unchanged_existing_cells": true,
+  "unchanged_existing_cell_styles": true,
+  "changed_zip_parts": [
+    "xl/worksheets/sheet3.xml"
+  ],
+  "sha256": "db498129a5c4c1a2d7295f0e1a3dfc6b2d97995de728a21854eecb28cfadc72b"
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "Path": "C:\\Github\\StageGame\\Docs\\Design\\assets\\board-pixel-20261015-v1\\WoodenBoard.png",
+    "Hash": "AB5DA3D55D373ADAE4852C8AA94A88D9732EF2803382A0B5F73D8585309046AE"
+  },
+  {
+    "Path": "C:\\Github\\StageGame\\Client\\Assets\\StageGame\\Editor\\PixelArtBuilder.cs",
+    "Hash": "15D018414BD1E7448CB0145E7534E3972B51ED72A5DE871EA9C04A331AAE227A"
+  },
+  {
+    "Path": "C:\\Github\\StageGame\\Client\\Assets\\StageGame\\Scripts\\UI\\RankTheme.cs",
+    "Hash": "1105A2628D1F3A6A50D0A7615F8785F1513B15B058A179CBC6A44255C72AE54B"
+  },
+  {
+    "Path": "C:\\Github\\StageGame\\Client\\Assets\\StageGame\\Scripts\\UI\\RankGameApp.cs",
+    "Hash": "98AC96EF998560D3FBFBB93DD4CB9CA24E55B02FBC5FAE7058E2C40D6C3D66ED"
+  },
+  {
+    "Path": "C:\\Github\\StageGame\\Client\\Assets\\StageGame\\Scripts\\Core\\GameData.cs",
+    "Hash": "85D655D353A1FCC9BB9AB1151317ACB24CD3B3E4856A14930346EB5282233548"
+  },
+  {
+    "Path": "C:\\Github\\StageGame\\GameData\\GameData_MVP.xlsx",
+    "Hash": "A5E173B4C2177D351C12B5C76E3DF97EF1A95842DB06831EDA2D24A1F2372D64"
+  },
+  {
+    "Path": "C:\\Github\\StageGame\\GameData\\Generated\\stages.json",
+    "Hash": "8962D99FE9F8BDEDD44506489476A51A6E003C15A72BB7CE8B2F514A96FC0C7E"
+  },
+  {
+    "Path": "C:\\Github\\StageGame\\GameData\\Generated\\strings.json",
+    "Hash": "F19A42944125D25DA034E5ADEE2E4B1BB449F9177D807495F9A3B99E878604D7"
+  }
+]

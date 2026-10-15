@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-15",
+  "version": 12,
+  "tool": "Built-in image_gen",
+  "status": "이미지·화면 시안 검토 / 게임 연결 중단 / 빌드 없음",
+  "image": "recruit-buzz-cut-atlas-v12.png",
+  "display_encoding": "recruit-buzz-cut-atlas-v12-display.webp",
+  "preview": "preview-v12.html",
+  "inline_fragment": "C:/Users/JW/.codex/visualizations/2026/10/14/01a138d9-7ede-70d0-ba36-e84a05e6b105/recruit-game-preview.html",
+  "changes": [
+    "훈련병 군모 제거·짧게 민 머리",
+    "긴소매 군복 상의·깃·앞섶·주머니",
+    "가리키는 손의 도트 단순화",
+    "시작·대국 중·AI 패배 3장면 독립 비교"
+  ],
+  "validation": [
+    "PNG→WebP 무손실 형식 인코딩. alpha 동일, 보이는 RGBA 픽셀 동일 검사 통과. 완전 투명 픽셀의 보이지 않는 RGB만 인코더가 생략.",
+    "미리보기 JS 구문 및 내장 이미지 검사. 로컬 file URL 열기는 브라우저 정책상 차단되어 브라우저 렌더·상호작용 검증은 미실행.",
+    "실제 Unity Assets 321개가 캐릭터 작업 전 상태와 일치한다는 클라이언트 보고 확인. 프리팹 연결·Unity 실행·빌드 없음."
+  ],
+  "notes": "미리보기의 보드/버튼은 배치 비교용 모형이며 실제 게임 실행 아님. 최종 문자열은 Excel·UI 프리팹으로 별도 적용 예정. 이 파일을 자동으로 Client에 동기화하지 않음.",
+  "prompt": "Revise this three-frame transparent sprite sheet. Keep EXACTLY THREE frames in a single row with equal column widths, same desk size and baseline, matching body scale, true transparent background, and no text. Preserve the gaunt, sour, comically distinctive adult recruit's face and the approved three poses.\n\nCHANGE ALL THREE FRAMES:\n1. REMOVE THE CAP COMPLETELY. This recruit has a very short BUZZ CUT: nearly shaved dark stubble indicated by ONE flat dark olive-black scalp shape and just a few large sparse pixels. No hat, no brim, no helmet, no fashionable hair. Preserve the long narrow skull and angular hollow-cheeked face. Scalp should look freshly buzzed, not smooth shiny bald and not furry.\n2. Replace the short-sleeve T-shirt with a PROPERLY WORN LONG-SLEEVE MILITARY FIELD UNIFORM TOP: clear folded collar, closed central button placket, two simple squared chest pocket flaps, long sleeves reaching the wrists with closed cuffs. Neat, fitted, no rolled sleeves, no exposed forearms. Simple invented olive/khaki digital camouflage, no real unit insignia, national flags, rank patches or names. Only a few LARGE blocky camouflage patches; no detailed fabric.\n3. The pointing hand in the FIRST frame is currently too detailed. REDRAW IT WITH MUCH FEWER LOGICAL PIXELS, like an old 8-bit sprite: the whole pointing hand is about 7×8 coarse logical pixels, index fingertip is a simple 2×2 block facing toward the viewer, curled fingers are one stepped mass with at most ONE dividing line, thumb one block. NO nails, knuckles, individual finger shading or realistic foreshortening detail. Same huge logical pixel size as his face and shirt. Keep the direct-to-viewer pointing gesture unmistakable.\n\nPOSES TO KEEP:\nLEFT = Intro: anatomical right hand points straight AT THE VIEWER, not sideways; other forearm on desk; he challenges the player with a small talking mouth.\nCENTER = Playing: anatomical right elbow on desk, right hand slightly OPEN and relaxed near chin; anatomical left forearm and relaxed hand lie across tabletop. Sour thoughtful face.\nRIGHT = AI defeat: both elbows OFF desk, arms raised IN FRONT of the torso and fists turned toward his body, head tipped BACK to SHOUT AT THE SKY, compact chunky orange/yellow flames from both eyes. No cap in this pose either.\n\nSTYLE: significantly low-resolution coarse 8-bit-style sprites. Each whole upper-body character and desk should appear designed on roughly a 48×64 logical-pixel grid. Big consistent square clusters, bold stepped dark outline, sparse flat colors (two skin shades plus shadow, olive/khaki uniform, black outline, orange/yellow flames). Do not raise resolution or add detail. No gradients, realistic lighting, glow haze, fine texture, dithering or airbrushing. All three match in face identity, buzz cut, uniform, pixel size and desk baseline. Preferred 1536×1024 output with sprites centered in equal 512-wide columns and generous clear gutters. TRUE TRANSPARENT alpha background and transparent gaps. Keep only the opaque sprites and desk; remove all background glow and shadows."
+}

@@ -1,0 +1,655 @@
+- link "주메뉴 바로가기":
+  - /url: "#gnb"
+- link "본문 바로가기":
+  - /url: "#content"
+- banner:
+  - heading "KIPRIS" [level=1]:
+    - link "KIPRIS":
+      - /url: /khome/main.do
+      - img "KIPRIS"
+  - navigation:
+    - list:
+      - link "지식재산정보 검색":
+        - /url: /khome/search/searchResult.do?tab=patent
+        - generic: 지식재산정보 검색
+      - link "KIPRIS 정보":
+        - /url: /khome/info/archive/timeline.do
+        - generic: KIPRIS 정보
+      - link "고객지원":
+        - /url: /khome/board/notice/list.do
+        - generic: 고객지원
+  - list:
+    - button "알림열기":
+      - generic: 알림열기
+    - button "로그인":
+      - generic: 로그인
+    - link "회원가입":
+      - /url: /khome/member/join/agreement.do
+      - generic: 회원가입
+    - link "MY KIPRIS":
+      - /url: /khome/myKipris/mainFrame.do?service=myInterest&page=frame2
+      - generic: MY KIPRIS
+    - button "영문으로 번역하기":
+      - generic: 영문으로 번역하기
+    - button "전체메뉴 열기":
+      - generic: 전체메뉴 열기
+- main:
+  - list:
+    - tab "특허ㆍ실용신안":
+      - emphasis: 특허ㆍ실용신안
+    - tab "디자인":
+      - emphasis: 디자인
+    - tab "상표 2" [selected]:
+      - emphasis: 상표
+      - generic: "2"
+    - tab "심판":
+      - emphasis: 심판
+    - tab "기타문헌":
+      - emphasis: 기타문헌
+  - generic "상표":
+    - list:
+      - link "국내 2":
+        - /url: "#"
+        - emphasis: 국내
+        - generic: "2"
+      - link "해외":
+        - /url: "#"
+        - emphasis: 해외
+  - button "검색창 열기":
+    - generic: 검색창 열기
+  - button "상세검색"
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "마드리드 시스템 도움말":
+    - generic: ⓘ
+  - button "KIPRIS 서비스 설정":
+    - generic: KIPRIS 서비스 설정
+  - generic: KIPRIS 서비스 설정
+  - generic: 사용자가 원하는 방식으로 서비스 제공 기준을 설정하여 이용해보세요.
+  - button "설정 화면 열기":
+    - generic: 설정 화면 열기
+  - button "숨기기":
+    - generic: 숨기기
+  - button "검색필터 열기":
+    - generic: 검색필터 열기
+  - heading "TN=[사목]*TC=[09+28+41]에 대해 총 2건이 검색되었습니다." [level=3]:
+    - emphasis: TN=[사목]*TC=[09+28+41]
+    - text: 에 대해 총
+    - emphasis: "2"
+    - text: 건이 검색되었습니다.
+  - button "지리적표시 보기"
+  - list:
+    - button "결과 분류통계":
+      - generic: 결과 분류통계
+    - button "다운로드":
+      - generic: 다운로드
+    - button "인쇄":
+      - generic: 인쇄
+    - button "마이폴더":
+      - generic: 마이폴더
+    - link "특허로 새창열기":
+      - /url: https://www.patent.go.kr/
+      - generic: 특허로 새창열기
+  - text: ✓ ✓
+  - checkbox "전체선택"
+  - generic: 전체선택
+  - button "결과 목록 스타일":
+    - generic: 결과 목록 스타일
+  - list:
+    - combobox "정렬":
+      - option "기본정렬" [selected]
+      - option "출원번호"
+      - option "출원일자"
+      - option "출원공고번호"
+      - option "출원공고일자"
+      - option "등록번호"
+      - option "등록일자"
+      - option "등록공고번호"
+      - option "등록공고일자"
+      - option "우선권주장번호"
+      - option "우선권주장일자"
+      - option "국제등록번호"
+      - option "국제등록일자"
+      - option "행정상태"
+      - option "상품분류"
+      - option "도형코드"
+      - option "출원인"
+      - option "대리인"
+      - option "최종권리자"
+      - option "상표명칭"
+    - generic: 정렬
+    - button "내림차순":
+      - generic: 내림차순
+  - button "적용":
+    - generic: 적용
+  - article:
+    - link "사목 (SHENMUE)의 도면":
+      - /url: "#none"
+      - img "사목 (SHENMUE)의 도면"
+    - checkbox "사목 (SHENMUE)"
+    - generic: 사목 (SHENMUE)
+    - generic: 등록
+    - generic: "[1]"
+    - button "4120030017779"
+    - heading "사목 (SHENMUE)" [level=1]:
+      - button "사목 (SHENMUE)"
+    - list:
+      - emphasis: "상품분류:"
+      - button "41"
+      - emphasis: "출원인:"
+      - button "가부시키가이샤 세가"
+      - emphasis: "최종권리자:"
+      - button "가부시키가이샤 세가"
+  - article:
+    - link "쌓기나무사목놀이의 도면":
+      - /url: "#none"
+      - img "쌓기나무사목놀이의 도면"
+    - checkbox "쌓기나무사목놀이"
+    - generic: 쌓기나무사목놀이
+    - generic: 등록
+    - generic: "[2]"
+    - button "4020190057920"
+    - heading "쌓기나무사목놀이" [level=1]:
+      - button "쌓기나무사목놀이"
+    - list:
+      - emphasis: "상품분류:"
+      - button "28"
+      - emphasis: "출원인:"
+      - button "장미경"
+      - emphasis: "최종권리자:"
+      - button "장미경"
+  - generic: 이전
+  - generic: 다음
+  - textbox "이동할 페이지 번호": "1"
+  - generic: 이동할 페이지 번호
+  - generic: /
+  - generic: 마지막 페이지 번호
+  - text: "1"
+  - button "이동"
+  - generic "페이지 만족도 조사":
+    - heading "현재 페이지의 구성과 내용에 만족하시나요?" [level=4]
+    - group "만족도 점수 선택(5점 만점)":
+      - generic: 만족도 점수 선택(5점 만점)
+      - radio "매우 만족"
+      - generic: 😊
+      - generic: 매우 만족
+      - radio "만족"
+      - generic: 🙂
+      - generic: 만족
+      - radio "보통"
+      - generic: 😐
+      - generic: 보통
+      - radio "불만족"
+      - generic: 🙁
+      - generic: 불만족
+      - radio "매우 불만족"
+      - generic: 😫
+      - generic: 매우 불만족
+    - generic: 추가 의견 입력
+    - textbox:
+      - /placeholder: 추가적인 의견이 있으시면 남겨주세요 (선택사항)
+    - generic: 0 / 300
+    - button: 의견 보내기
+  - button "상세보기 크기 확장":
+    - generic: 상세보기 크기 확장
+  - list:
+    - link "새창열기":
+      - /url: "#"
+      - generic: 새창열기
+    - link "오류신고":
+      - /url: "#"
+      - generic: 오류신고
+    - link "인쇄하기":
+      - /url: "#"
+      - generic: 인쇄하기
+  - heading "쌓기나무사목놀이" [level=2]
+  - paragraph
+  - list:
+    - button "상세정보"
+    - button "출원공고"
+    - button "등록공고"
+    - button "등록사항"
+    - button "통합행정정보"
+  - list:
+    - button "DOI 복사":
+      - generic: DOI 복사
+    - button "QR코드":
+      - generic: QR코드
+  - heading "상세정보" [level=3]
+  - heading "· 서지정보" [level=4]
+  - table "서지정보":
+    - caption: 서지정보
+    - rowgroup:
+      - row "상품분류 11판 28":
+        - rowheader "상품분류"
+        - cell "11판 28":
+          - text: 11판
+          - link "28":
+            - /url: javascript:void(0);
+      - row "출원번호(일자) 4020190057920 (2019.04.15)":
+        - rowheader "출원번호(일자)"
+        - cell "4020190057920 (2019.04.15)"
+      - row "출원인 장미경":
+        - rowheader "출원인"
+        - cell "장미경"
+      - row "등록번호(일자) 4015525840000 (2019.12.10)":
+        - rowheader "등록번호(일자)"
+        - cell "4015525840000 (2019.12.10)":
+          - link "4015525840000 (2019.12.10)":
+            - /url: "#none"
+      - row "출원공고번호(일자) 4020190102756 (2019.09.16) 전문다운":
+        - rowheader "출원공고번호(일자)"
+        - cell "4020190102756 (2019.09.16) 전문다운":
+          - text: 4020190102756 (2019.09.16)
+          - link "전문다운":
+            - /url: "#none"
+      - row "등록공고번호(일자) 4020190122225 (2019.12.17) 전문다운":
+        - rowheader "등록공고번호(일자)"
+        - cell "4020190122225 (2019.12.17) 전문다운":
+          - text: 4020190122225 (2019.12.17)
+          - link "전문다운":
+            - /url: "#none"
+      - row "원출원번호(일자)":
+        - rowheader "원출원번호(일자)"
+        - cell
+      - row "우선권정보":
+        - rowheader "우선권정보"
+        - cell
+      - row "관련출원번호":
+        - rowheader "관련출원번호"
+        - cell
+      - row "공통상태지표 등록 등록 TM5공통상태지표 안내표":
+        - rowheader "공통상태지표"
+        - cell "등록 등록 TM5공통상태지표 안내표":
+          - img "등록"
+          - text: 등록
+          - link "TM5공통상태지표 안내표":
+            - /url: /kdtj/help/help_tm5.jsp
+            - img "TM5공통상태지표 안내표"
+      - row "법적상태 등록":
+        - rowheader "법적상태"
+        - cell "등록"
+      - row "심사진행상태(일자) 등록결정(일반)(2019.12.02)":
+        - rowheader "심사진행상태(일자)"
+        - cell "등록결정(일반)(2019.12.02)"
+      - row "소급구분(일자) (2019.04.15)":
+        - rowheader "소급구분(일자)"
+        - cell "(2019.04.15)"
+      - row "심판사항":
+        - rowheader "심판사항"
+        - cell
+      - row "구분 국내상표 도형복합 일반상표":
+        - rowheader "구분"
+        - cell "국내상표 도형복합 일반상표"
+      - row "이의신청 일자":
+        - rowheader "이의신청 일자"
+        - cell
+      - row "이의신청 상태":
+        - rowheader "이의신청 상태"
+        - cell
+      - row "이의신청 대상":
+        - rowheader "이의신청 대상"
+        - cell
+      - row "공존동의상표 유무 N":
+        - rowheader "공존동의상표 유무"
+        - cell "N"
+  - heading "· 인명정보" [level=4]
+  - heading "출원인" [level=5]
+  - table "출원인목록":
+    - caption: 출원인목록
+    - rowgroup:
+      - row "1 장미경 (420190232702) 경기도 의왕시...":
+        - cell "1"
+        - cell "장미경 (420190232702)":
+          - text: 장미경
+          - text: (420190232702)
+          - list
+        - cell "경기도 의왕시..."
+  - heading "대리인" [level=5]
+  - table "대리인 목록":
+    - caption: 대리인 목록
+    - rowgroup:
+      - row "데이터가 존재하지 않습니다.":
+        - cell "데이터가 존재하지 않습니다."
+  - heading "최종권리자" [level=5]
+  - table "최종권리자":
+    - caption: 최종권리자
+    - rowgroup:
+      - row "장미경 경기도 의왕시...":
+        - cell "장미경":
+          - text: 장미경
+          - list
+        - cell "경기도 의왕시..."
+  - heading "등록 이후 대리인 정보" [level=5]
+  - table "대리인 목록":
+    - caption: 대리인 목록
+    - rowgroup:
+      - row "데이터가 존재하지 않습니다.":
+        - cell "데이터가 존재하지 않습니다."
+  - heading "· 도형분류(비엔나)코드" [level=4]
+  - heading "도형분류(비엔나)코드" [level=5]
+  - table "도형분류(비엔나)코드":
+    - caption: 도형분류(비엔나)코드
+    - rowgroup:
+      - row "번호 1 도형코드 040503 내용 의인화된 기하도형 또는 입체, 사람을 표현하는 기하도형 또는 입체의 조합":
+        - cell "번호 1":
+          - emphasis: 번호
+          - text: "1"
+        - cell "도형코드 040503":
+          - emphasis: 도형코드
+          - text: "040503"
+        - cell "내용 의인화된 기하도형 또는 입체, 사람을 표현하는 기하도형 또는 입체의 조합":
+          - emphasis: 내용
+          - text: 의인화된 기하도형 또는 입체, 사람을 표현하는 기하도형 또는 입체의 조합
+      - row "번호 2 도형코드 260414 내용 사람 또는 사람 신체 일부를 포함하는 사변형":
+        - cell "번호 2":
+          - emphasis: 번호
+          - text: "2"
+        - cell "도형코드 260414":
+          - emphasis: 도형코드
+          - text: "260414"
+        - cell "내용 사람 또는 사람 신체 일부를 포함하는 사변형":
+          - emphasis: 내용
+          - text: 사람 또는 사람 신체 일부를 포함하는 사변형
+      - row "번호 3 도형코드 261509 내용 입방체(정육면체)":
+        - cell "번호 3":
+          - emphasis: 번호
+          - text: "3"
+        - cell "도형코드 261509":
+          - emphasis: 도형코드
+          - text: "261509"
+        - cell "내용 입방체(정육면체)":
+          - emphasis: 내용
+          - text: 입방체(정육면체)
+  - heading "· 상표설명/지정상품" [level=4]
+  - heading "상표설명 정보" [level=5]
+  - table "상표설명 정보":
+    - caption: 상표설명 정보
+    - rowgroup:
+      - row "데이터가 존재하지 않습니다.":
+        - cell "데이터가 존재하지 않습니다."
+  - heading "· 지정상품" [level=4]
+  - emphasis: ※ 상표의 유사군코드는 변경 될 수 있습니다.
+  - table "지정상품":
+    - caption: 지정상품
+    - rowgroup:
+      - row "1 28 G4302 게임기구":
+        - cell "1"
+        - cell "28"
+        - cell "G4302":
+          - link "G4302":
+            - /url: javascript:void(0);
+        - cell "게임기구"
+      - row "2 28 G4302 게임카드":
+        - cell "2"
+        - cell "28"
+        - cell "G4302":
+          - link "G4302":
+            - /url: javascript:void(0);
+        - cell "게임카드"
+      - row "3 28 G4301 교육용 완구":
+        - cell "3"
+        - cell "28"
+        - cell "G4301":
+          - link "G4301":
+            - /url: javascript:void(0);
+        - cell "교육용 완구"
+      - row "4 28 G4302 놀이용 딱지":
+        - cell "4"
+        - cell "28"
+        - cell "G4302":
+          - link "G4302":
+            - /url: javascript:void(0);
+        - cell "놀이용 딱지"
+      - row "5 28 G4301 동작 완구":
+        - cell "5"
+        - cell "28"
+        - cell "G4301":
+          - link "G4301":
+            - /url: javascript:void(0);
+        - cell "동작 완구"
+      - row "6 28 G4301 목제 완구":
+        - cell "6"
+        - cell "28"
+        - cell "G4301":
+          - link "G4301":
+            - /url: javascript:void(0);
+        - cell "목제 완구"
+      - row "7 28 G4302 보드게임":
+        - cell "7"
+        - cell "28"
+        - cell "G4302":
+          - link "G4302":
+            - /url: javascript:void(0);
+        - cell "보드게임"
+      - row "8 28 G4301 블록 완구":
+        - cell "8"
+        - cell "28"
+        - cell "G4301":
+          - link "G4301":
+            - /url: javascript:void(0);
+        - cell "블록 완구"
+      - row "9 28 G4301 블록쌓기":
+        - cell "9"
+        - cell "28"
+        - cell "G4301":
+          - link "G4301":
+            - /url: javascript:void(0);
+        - cell "블록쌓기"
+      - row "10 28 G4301 어린이용 완구":
+        - cell "10"
+        - cell "28"
+        - cell "G4301":
+          - link "G4301":
+            - /url: javascript:void(0);
+        - cell "어린이용 완구"
+      - row "11 28 G4302 오락 및 게임용구":
+        - cell "11"
+        - cell "28"
+        - cell "G4302":
+          - link "G4302":
+            - /url: javascript:void(0);
+        - cell "오락 및 게임용구"
+      - row "12 28 G4301 완구":
+        - cell "12"
+        - cell "28"
+        - cell "G4301":
+          - link "G4301":
+            - /url: javascript:void(0);
+        - cell "완구"
+      - row "13 28 G4301 완구용 블록":
+        - cell "13"
+        - cell "28"
+        - cell "G4301":
+          - link "G4301":
+            - /url: javascript:void(0);
+        - cell "완구용 블록"
+      - row "14 28 G4301 유아교육용 목각 교구":
+        - cell "14"
+        - cell "28"
+        - cell "G4301":
+          - link "G4301":
+            - /url: javascript:void(0);
+        - cell "유아교육용 목각 교구"
+      - row "15 28 G4301 유아용 완구":
+        - cell "15"
+        - cell "28"
+        - cell "G4301":
+          - link "G4301":
+            - /url: javascript:void(0);
+        - cell "유아용 완구"
+      - row "16 28 G4302 육면체형 퍼즐":
+        - cell "16"
+        - cell "28"
+        - cell "G4302":
+          - link "G4302":
+            - /url: javascript:void(0);
+        - cell "육면체형 퍼즐"
+      - row "17 28 G4302 퍼즐":
+        - cell "17"
+        - cell "28"
+        - cell "G4302":
+          - link "G4302":
+            - /url: javascript:void(0);
+        - cell "퍼즐"
+      - row "18 28 G4302 퍼즐게임":
+        - cell "18"
+        - cell "28"
+        - cell "G4302":
+          - link "G4302":
+            - /url: javascript:void(0);
+        - cell "퍼즐게임"
+      - row "19 28 G4301 학습교재용 완구":
+        - cell "19"
+        - cell "28"
+        - cell "G4301":
+          - link "G4301":
+            - /url: javascript:void(0);
+        - cell "학습교재용 완구"
+  - heading "· 마드리드 출원정보" [level=4]
+  - heading "마드리드 출원현황" [level=5]
+  - table "마드리드 출원현황":
+    - caption: 마드리드 출원현황
+    - rowgroup:
+      - row "데이터가 존재하지 않습니다.":
+        - cell "데이터가 존재하지 않습니다."
+      - row
+  - heading "지정국가 정보" [level=5]
+  - table "지정상품":
+    - caption: 지정상품
+    - rowgroup:
+      - row "데이터가 존재하지 않습니다.":
+        - cell "데이터가 존재하지 않습니다."
+      - row
+  - heading "· 공존동의상표" [level=4]
+  - heading "공존동의상표" [level=5]
+  - table "공존동의상표":
+    - caption: 공존동의상표
+    - rowgroup:
+      - row "데이터가 존재하지 않습니다.":
+        - cell "데이터가 존재하지 않습니다."
+  - text: ·
+  - button "도면 닫기":
+    - generic: 도면 닫기
+  - img "대표도면"
+  - strong: 상표견본
+  - link "다운로드":
+    - /url: /kdtj/remoteFile.do?method=downloadImgTM&applno=4020190057920&no=4020190057920_tm000001.jpg
+    - generic: 다운로드
+  - button "크게보기":
+    - generic: 크게보기
+  - button "상세정보 닫기":
+    - generic: 상세정보 닫기
+- contentinfo:
+  - list:
+    - button "KIPRIS 서비스 설정":
+      - generic: KIPRIS 서비스 설정
+    - button "고객의소리":
+      - generic: 고객의소리
+  - list:
+    - button "국내 지식재산정보 검색사이트":
+      - generic: 국내 지식재산정보 검색사이트
+    - button "해외 지식재산정보 검색사이트":
+      - generic: 해외 지식재산정보 검색사이트
+    - button "각국 특허청 사이트":
+      - generic: 각국 특허청 사이트
+    - button "유관기관 사이트":
+      - generic: 유관기관 사이트
+  - button "맨 위로":
+    - generic: 맨 위로
+  - list:
+    - link "개인정보 처리방침":
+      - /url: https://www.moip.go.kr/kipo/kipoContentView.do?menuCd=SCD0201406
+      - emphasis: 개인정보 처리방침
+    - link "이용약관":
+      - /url: /khome/member/rules/terms.do
+      - generic: 이용약관
+    - link "저작권정책":
+      - /url: /khome/member/rules/copyright.do
+      - generic: 저작권정책
+    - link "(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크(WA인증마크)":
+      - /url: https://www.wa.or.kr/board/list.asp?BoardID=0006
+      - img "(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크(WA인증마크)"
+  - list:
+    - paragraph:
+      - emphasis: 산업재산권 제도·출원 심사 등록 수수료 등
+      - text: "특허고객상담센터 : 1544-8080(유료)"
+    - paragraph:
+      - emphasis: 검색시스템
+      - text: "헬프데스크 : 042-483-4710(유료)"
+  - paragraph: (우)35208 대전광역시 서구 청사로 189
+  - paragraph: © KIPI. All rights reserved.
+  - list:
+    - link "챗봇상담":
+      - /url: https://chatbot.ips.go.kr/chatbotPop.ndo?bnrId=cuO6jXZLsIFMFrO
+      - generic: 챗봇상담
+    - link "채팅상담":
+      - /url: https://chat.patent.go.kr:10443/#/ttalk_main/KIPO_160635643985448436
+      - generic: 채팅상담
+  - list:
+    - link "지식재산처":
+      - /url: https://www.moip.go.kr
+      - img "지식재산처"
+    - link "한국특허정보원":
+      - /url: https://www.kipi.or.kr
+      - img "한국특허정보원"

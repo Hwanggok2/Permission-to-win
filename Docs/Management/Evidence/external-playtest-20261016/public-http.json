@@ -1,0 +1,61 @@
+{
+  "checkedAt": "2026-10-15T16:03:07.248186+00:00",
+  "url": "https://shares-country-steel-fridge.trycloudflare.com/",
+  "requests": [
+    {
+      "path": "/",
+      "status": 200,
+      "contentType": "text/html",
+      "encoding": "gzip",
+      "bytes": null
+    },
+    {
+      "path": "/Build/WebGL.wasm",
+      "status": 200,
+      "contentType": "application/wasm",
+      "encoding": "gzip",
+      "bytes": "6287904"
+    },
+    {
+      "path": "/Build/WebGL.data",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "encoding": "gzip",
+      "bytes": "53593495"
+    },
+    {
+      "path": "/StreamingAssets/Notices/EasyLemon-LICENSE.txt",
+      "status": 404,
+      "contentType": "text/html;charset=utf-8",
+      "encoding": "gzip",
+      "bytes": null
+    },
+    {
+      "path": "/.env",
+      "status": 404,
+      "contentType": "text/html;charset=utf-8",
+      "encoding": "gzip",
+      "bytes": null
+    },
+    {
+      "path": "/Docs/Management/CONTRACT.md",
+      "status": 404,
+      "contentType": "text/html;charset=utf-8",
+      "encoding": "gzip",
+      "bytes": null
+    },
+    {
+      "path": "/Build/",
+      "status": 404,
+      "contentType": "text/html;charset=utf-8",
+      "encoding": "gzip",
+      "bytes": null
+    },
+    {
+      "path": "/StreamingAssets/Notices/Easy-Lemon-Attribution.txt",
+      "status": 200,
+      "contentType": "text/plain",
+      "attributionContentVerified": true
+    }
+  ]
+}

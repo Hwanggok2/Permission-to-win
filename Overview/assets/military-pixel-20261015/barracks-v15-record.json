@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-15",
+  "version": 15,
+  "mode": "Built-in image_gen",
+  "status": "디자인 검토용 독립 시안 / 사용자 이미지 승인 대기 / 실제 게임 미연결",
+  "assets": {
+    "sketch": "user-barracks-layout-v14.png",
+    "superseded_background": "barracks-fullscreen-v14.png",
+    "background": "barracks-four-lockers-v15.png",
+    "display_encoding": "barracks-four-lockers-v15-preview.webp",
+    "character": "recruit-buzz-cut-atlas-v12-display.webp",
+    "preview": "preview-v15.html"
+  },
+  "requirements": [
+    "내무반을 게임 화면 전체 배경으로 사용",
+    "오른쪽 평상 위 관물대 4개만 간격을 두고 배치",
+    "사용자 스케치 원근 구도와 창문 유지",
+    "불투명 흰 보드와 조작 UI는 배경 위에 표시"
+  ],
+  "preview_layer_order": {
+    "background": 0,
+    "character": 1,
+    "title_and_board": 3,
+    "speech_and_controls": 4,
+    "confirmation": 10,
+    "host_chrome_example": 20
+  },
+  "runtime_plan": "승인 후 저장된 Unity 프리팹에서 sibling order 또는 Canvas sortingOrder로 표시 순서 설정. 배경 Raycast Target 해제. 현 시점 코드/프리팹 변경 없음.",
+  "encoding": "원본 PNG 보존. 동일 941×1672 해상도의 WebP q85 표시용 사본. 수작업 이미지 리터칭 없음.",
+  "validation": [
+    "생성된 배경의 관물대 4개와 평상 위 배치를 시각적으로 확인.",
+    "독립 미리보기 JavaScript 구문 통과, 이미지 2개 내장, 692065 bytes(<1 MB).",
+    "배경은 phone 직속, 보드와 버튼보다 낮은 z-index 및 pointer-events:none을 소스에서 확인.",
+    "브라우저 렌더/상호작용·Unity·빌드·실기기 검증 미실행."
+  ],
+  "prompts": [
+    {
+      "stage": "portrait_composition_v14",
+      "prompt": "Use case: stylized-concept. Asset: FULL-SCREEN PORTRAIT mobile game BACKGROUND, 9:16 composition, intended for a 1080x1920 game screen. Input image 1 is the user's COMPOSITION SKETCH: follow its deep perspective, large right-hand wall of lockers receding toward upper center, a window high on the distant left wall, broad foreground floor. The stick figure is ONLY a placement guide for a separate character sprite; DO NOT draw any person. Input image 2 is a palette and low-detail military room reference, NOT its frontal wide composition.\nCreate an empty old Korean military barracks interior in extremely coarse low-resolution pixel art. RIGHT SIDE: a tall near olive personal locker filling the right edge, with a few simple cubbies and doors, and a row of progressively smaller lockers receding toward the upper middle. LEFT REAR: one broad pale-blue rectangular window, and below it a low long wooden raised communal sleeping platform (pyeongsang) with two folded olive bedding stacks, extending down the left edge slightly. CENTER: open walking space and lots of plain floor continuing to the very bottom of the portrait. Camera faces diagonally into the room from the entrance. Strong readable room depth as in the sketch, not a straight frontal dollhouse view. Put the distant wall and window in the upper quarter, low horizon around 35 percent down, large foreground right locker and floor establish depth. Leave the center empty because a separate soldier sprite and a WHITE BOARD will be layered above this background in the game. This is the room image only: no soldier, desk, gameboard, UI, title, symbols, words, flags, real military insignia or frame.\nRender like an old 8-bit game background with very large square pixel clusters, approximately a 90x160 logical grid enlarged with nearest-neighbor. Only 12-16 subdued flat colors, faded sage and olive, warm beige-gray walls/floor, muted brown platform, pale blue window. Flat fills and one block shadow per surface, stepped diagonal edges. Tiny mobile readability. No beautiful realistic rendering, detailed textures, gradients, grain, haze, antialiasing, fine linework, photographic light or glossy objects. Fill entire portrait canvas edge to edge with the room. Opaque background."
+    },
+    {
+      "stage": "four_lockers_on_platform_v15",
+      "prompt": "Use case: precise-object-edit. Edit this portrait pixel-art Korean barracks background. Preserve its 9:16 portrait framing, coarse pixel rendering, subdued olive/tan palette, far-left back window and broad open center floor. IMPORTANT CORRECTION: remove the current continuous wall of many lockers completely. Replace with EXACTLY FOUR (4) individual olive personal military lockers along the RIGHT wall, with CLEAR WIDE EMPTY GAPS between the four units. Four freestanding single-door cabinets, each with one simple top open cubby and one lower door; not double cabinets, not four banks of many doors. Their sizes grow toward foreground in perspective. Count should be immediately readable as FOUR distinct units, and do not crop any of the four units out of frame.\nCRITICAL ARCHITECTURE: ALL FOUR LOCKERS STAND ON TOP OF ONE BROAD CONTINUOUS RAISED WOODEN SLEEPING PLATFORM (Korean pyeongsang) along the RIGHT side. Locker bottoms sit directly ON THE PLATFORM'S UPPER WOOD SURFACE, not on the room floor, not beside the platform, not behind it. The platform is a wide knee-high wooden sleeping deck/plinth, not a narrow bench or shelf. Show a large clear strip of empty wooden deck IN FRONT OF the lockers so soldiers could sleep there. Show the continuous platform edge and vertical front fascia descending to the room floor as a strong diagonal from distant center-right toward the lower-right corner. Leave visible plank surface between the four spaced lockers. Exactly four standalone cabinets on one raised deck. Move the previously separate left-hand bench/platform to this right-hand layout; left wall beneath the window is mostly clear. A couple of folded bedding stacks may sit in gaps on the SAME right sleeping platform but do not add more furniture.\nKeep central lower floor spacious for a white board overlay later, no gameboard drawn in this asset. Room only, no person or UI or lettering. Strict very coarse 8-bit-style large square pixel clusters, flat muted olive cabinets, warm brown broad deck, beige gray floor, pale blue window. No tiny detailing or added decorative clutter. Opaque full portrait background."
+    }
+  ]
+}

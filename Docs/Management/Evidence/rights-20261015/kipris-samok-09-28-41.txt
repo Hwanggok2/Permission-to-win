@@ -1,0 +1,421 @@
+- link "주메뉴 바로가기":
+  - /url: "#gnb"
+- link "본문 바로가기":
+  - /url: "#content"
+- banner:
+  - heading "KIPRIS" [level=1]:
+    - link "KIPRIS":
+      - /url: /khome/main.do
+      - img "KIPRIS"
+  - navigation:
+    - list:
+      - link "지식재산정보 검색":
+        - /url: /khome/search/searchResult.do?tab=patent
+        - generic: 지식재산정보 검색
+      - link "KIPRIS 정보":
+        - /url: /khome/info/archive/timeline.do
+        - generic: KIPRIS 정보
+      - link "고객지원":
+        - /url: /khome/board/notice/list.do
+        - generic: 고객지원
+  - list:
+    - button "알림열기":
+      - generic: 알림열기
+    - button "로그인":
+      - generic: 로그인
+    - link "회원가입":
+      - /url: /khome/member/join/agreement.do
+      - generic: 회원가입
+    - link "MY KIPRIS":
+      - /url: /khome/myKipris/mainFrame.do?service=myInterest&page=frame2
+      - generic: MY KIPRIS
+    - button "영문으로 번역하기":
+      - generic: 영문으로 번역하기
+    - button "전체메뉴 열기":
+      - generic: 전체메뉴 열기
+- main:
+  - list:
+    - button "내 검색식"
+    - button "추천검색식"
+    - checkbox "결과 내 재검색"
+    - generic: 결과 내 재검색
+  - textbox "검색어 입력": TN=[사목]*TC=[09+28+41]
+  - generic: 지식재산권 검색
+  - button "검색식 저장":
+    - generic: 검색식 저장
+  - button "검색":
+    - generic: 검색
+  - button "상세검색"
+  - list:
+    - button "검색도움말":
+      - generic: 검색도움말
+    - button "Tooltip":
+      - generic: Tooltip
+  - list:
+    - tab "특허ㆍ실용신안":
+      - emphasis: 특허ㆍ실용신안
+    - tab "디자인":
+      - emphasis: 디자인
+    - tab "상표 2" [selected]:
+      - emphasis: 상표
+      - generic: "2"
+    - tab "심판":
+      - emphasis: 심판
+    - tab "기타문헌":
+      - emphasis: 기타문헌
+  - generic "상표":
+    - list:
+      - link "국내 2":
+        - /url: "#"
+        - emphasis: 국내
+        - generic: "2"
+      - link "해외":
+        - /url: "#"
+        - emphasis: 해외
+  - strong: 검색필터
+  - button "닫기":
+    - generic: 닫기
+  - list:
+    - strong: 권리구분
+    - list:
+      - checkbox "전체" [checked]
+      - generic: 전체
+      - checkbox "상표(40)" [checked]
+      - generic: 상표(40)
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "서비스표(41)" [checked]
+      - generic: 서비스표(41)
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "업무표장(42)" [checked]
+      - generic: 업무표장(42)
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "단체표장(43)" [checked]
+      - generic: 단체표장(43)
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "지리적표시단체표장(44)" [checked]
+      - generic: 지리적표시단체표장(44)
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "상표/서비스표(45)" [checked]
+      - generic: 상표/서비스표(45)
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "증명표장(47)" [checked]
+      - generic: 증명표장(47)
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "지리적표시증명표장(48)" [checked]
+      - generic: 지리적표시증명표장(48)
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "국제등록상표(마드리드)" [checked]
+      - generic: 국제등록상표(마드리드)
+      - button "도움말":
+        - generic: ⓘ
+    - strong: 유형
+    - list:
+      - checkbox "전체" [checked]
+      - generic: 전체
+      - checkbox "문자상표" [checked]
+      - generic: 문자상표
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "도형상표" [checked]
+      - generic: 도형상표
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "복합문자" [checked]
+      - generic: 복합문자
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "도형복합" [checked]
+      - generic: 도형복합
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "소리상표" [checked]
+      - generic: 소리상표
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "냄새상표" [checked]
+      - generic: 냄새상표
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "일반상표" [checked]
+      - generic: 일반상표
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "색채상표" [checked]
+      - generic: 색채상표
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "색채만으로된상표" [checked]
+      - generic: 색채만으로된상표
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "입체상표" [checked]
+      - generic: 입체상표
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "색채결합" [checked]
+      - generic: 색채결합
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "입체상표,색채상표" [checked]
+      - generic: 입체상표,색채상표
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "홀로그램" [checked]
+      - generic: 홀로그램
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "동작상표" [checked]
+      - generic: 동작상표
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "기타시각적인식가능" [checked]
+      - generic: 기타시각적인식가능
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "기타시각적인식불가능" [checked]
+      - generic: 기타시각적인식불가능
+      - button "도움말":
+        - generic: ⓘ
+    - strong: 행정상태
+    - list:
+      - checkbox "전체" [checked]
+      - generic: 전체
+      - checkbox "출원" [checked]
+      - generic: 출원
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "공고" [checked]
+      - generic: 공고
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "등록" [checked]
+      - generic: 등록
+      - button "도움말":
+        - generic: ⓘ
+      - button "행정상태 전체보기 ↓":
+        - generic: 행정상태 전체보기
+        - generic: ↓
+    - strong: 사용권정보
+    - list:
+      - checkbox "전체"
+      - generic: 전체
+      - checkbox "전용"
+      - generic: 전용
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "통상"
+      - generic: 통상
+      - button "도움말":
+        - generic: ⓘ
+    - strong: 기타항목
+    - list:
+      - checkbox "공존동의 여부"
+      - generic: 공존동의 여부
+      - button "도움말":
+        - generic: ⓘ
+      - checkbox "마드리드 출원 여부"
+      - generic: 마드리드 출원 여부
+      - button "마드리드 시스템 도움말":
+        - generic: ⓘ
+  - button "초기화":
+    - generic: 초기화
+  - button "적용":
+    - generic: 적용
+  - button "KIPRIS 서비스 설정":
+    - generic: KIPRIS 서비스 설정
+  - generic: KIPRIS 서비스 설정
+  - generic: 사용자가 원하는 방식으로 서비스 제공 기준을 설정하여 이용해보세요.
+  - button "설정 화면 열기":
+    - generic: 설정 화면 열기
+  - button "숨기기":
+    - generic: 숨기기
+  - heading "TN=[사목]*TC=[09+28+41]에 대해 총 2건이 검색되었습니다." [level=3]:
+    - emphasis: TN=[사목]*TC=[09+28+41]
+    - text: 에 대해 총
+    - emphasis: "2"
+    - text: 건이 검색되었습니다.
+  - button "지리적표시 보기"
+  - list:
+    - button "결과 분류통계":
+      - generic: 결과 분류통계
+    - button "다운로드":
+      - generic: 다운로드
+    - button "인쇄":
+      - generic: 인쇄
+    - button "마이폴더":
+      - generic: 마이폴더
+    - link "특허로 새창열기":
+      - /url: https://www.patent.go.kr/
+      - generic: 특허로 새창열기
+  - text: ✓ ✓
+  - checkbox "전체선택"
+  - generic: 전체선택
+  - list:
+    - button "선택됨"
+    - button "선택되지 않음"
+  - list:
+    - combobox "정렬":
+      - option "기본정렬" [selected]
+      - option "출원번호"
+      - option "출원일자"
+      - option "출원공고번호"
+      - option "출원공고일자"
+      - option "등록번호"
+      - option "등록일자"
+      - option "등록공고번호"
+      - option "등록공고일자"
+      - option "우선권주장번호"
+      - option "우선권주장일자"
+      - option "국제등록번호"
+      - option "국제등록일자"
+      - option "행정상태"
+      - option "상품분류"
+      - option "도형코드"
+      - option "출원인"
+      - option "대리인"
+      - option "최종권리자"
+      - option "상표명칭"
+    - generic: 정렬
+    - combobox "정렬 순서":
+      - option "내림차순" [selected]
+      - option "오름차순"
+    - generic: 정렬 순서
+    - combobox "결과 목록 갯수":
+      - option "10개"
+      - option "30개" [selected]
+      - option "60개"
+      - option "90개"
+    - generic: 결과 목록 갯수
+  - button "적용":
+    - generic: 적용
+  - article:
+    - link "사목 (SHENMUE)의 도면":
+      - /url: "#none"
+      - img "사목 (SHENMUE)의 도면"
+    - checkbox "사목 (SHENMUE)"
+    - generic: 사목 (SHENMUE)
+    - generic: 등록
+    - generic: "[1]"
+    - button "4120030017779"
+    - heading "사목 (SHENMUE)" [level=1]:
+      - button "사목 (SHENMUE)"
+    - list:
+      - emphasis: "상품분류:"
+      - button "41"
+      - emphasis: "출원인:"
+      - button "가부시키가이샤 세가"
+      - emphasis: "최종권리자:"
+      - button "가부시키가이샤 세가"
+  - article:
+    - link "쌓기나무사목놀이의 도면":
+      - /url: "#none"
+      - img "쌓기나무사목놀이의 도면"
+    - checkbox "쌓기나무사목놀이"
+    - generic: 쌓기나무사목놀이
+    - generic: 등록
+    - generic: "[2]"
+    - button "4020190057920"
+    - heading "쌓기나무사목놀이" [level=1]:
+      - button "쌓기나무사목놀이"
+    - list:
+      - emphasis: "상품분류:"
+      - button "28"
+      - emphasis: "출원인:"
+      - button "장미경"
+      - emphasis: "최종권리자:"
+      - button "장미경"
+  - generic: 이전
+  - generic "1 페이지 선택됨": "1"
+  - generic: 다음
+  - textbox "이동할 페이지 번호": "1"
+  - generic: 이동할 페이지 번호
+  - generic: /
+  - generic: 마지막 페이지 번호
+  - text: "1"
+  - button "이동"
+  - generic "페이지 만족도 조사":
+    - heading "현재 페이지의 구성과 내용에 만족하시나요?" [level=4]
+    - group "만족도 점수 선택(5점 만점)":
+      - generic: 만족도 점수 선택(5점 만점)
+      - radio "매우 만족"
+      - generic: 😊
+      - generic: 매우 만족
+      - radio "만족"
+      - generic: 🙂
+      - generic: 만족
+      - radio "보통"
+      - generic: 😐
+      - generic: 보통
+      - radio "불만족"
+      - generic: 🙁
+      - generic: 불만족
+      - radio "매우 불만족"
+      - generic: 😫
+      - generic: 매우 불만족
+    - generic: 추가 의견 입력
+    - textbox:
+      - /placeholder: 추가적인 의견이 있으시면 남겨주세요 (선택사항)
+    - generic: 0 / 300
+    - button: 의견 보내기
+  - text: · · · · · ※ · · ·
+- contentinfo:
+  - list:
+    - button "KIPRIS 서비스 설정":
+      - generic: KIPRIS 서비스 설정
+    - button "고객의소리":
+      - generic: 고객의소리
+  - list:
+    - button "국내 지식재산정보 검색사이트":
+      - generic: 국내 지식재산정보 검색사이트
+    - button "해외 지식재산정보 검색사이트":
+      - generic: 해외 지식재산정보 검색사이트
+    - button "각국 특허청 사이트":
+      - generic: 각국 특허청 사이트
+    - button "유관기관 사이트":
+      - generic: 유관기관 사이트
+  - button "맨 위로":
+    - generic: 맨 위로
+  - list:
+    - link "개인정보 처리방침":
+      - /url: https://www.moip.go.kr/kipo/kipoContentView.do?menuCd=SCD0201406
+      - emphasis: 개인정보 처리방침
+    - link "이용약관":
+      - /url: /khome/member/rules/terms.do
+      - generic: 이용약관
+    - link "저작권정책":
+      - /url: /khome/member/rules/copyright.do
+      - generic: 저작권정책
+    - link "(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크(WA인증마크)":
+      - /url: https://www.wa.or.kr/board/list.asp?BoardID=0006
+      - img "(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크(WA인증마크)"
+  - list:
+    - paragraph:
+      - emphasis: 산업재산권 제도·출원 심사 등록 수수료 등
+      - text: "특허고객상담센터 : 1544-8080(유료)"
+    - paragraph:
+      - emphasis: 검색시스템
+      - text: "헬프데스크 : 042-483-4710(유료)"
+  - paragraph: (우)35208 대전광역시 서구 청사로 189
+  - paragraph: © KIPI. All rights reserved.
+  - list:
+    - link "챗봇상담":
+      - /url: https://chatbot.ips.go.kr/chatbotPop.ndo?bnrId=cuO6jXZLsIFMFrO
+      - generic: 챗봇상담
+    - link "채팅상담":
+      - /url: https://chat.patent.go.kr:10443/#/ttalk_main/KIPO_160635643985448436
+      - generic: 채팅상담
+  - list:
+    - link "지식재산처":
+      - /url: https://www.moip.go.kr
+      - img "지식재산처"
+    - link "한국특허정보원":
+      - /url: https://www.kipi.or.kr
+      - img "한국특허정보원"

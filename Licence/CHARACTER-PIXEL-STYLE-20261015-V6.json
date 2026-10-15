@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-15",
+  "status": "UNITY_APPLIED_EDITOR_VERIFIED",
+  "tool": "OpenAI built-in image_gen.imagegen; Pillow for explicitly authorized local insignia correction",
+  "userAuthorization": "픽셀 단위로 직접 수정해; 기존 도트 유지 및 오준호 최신 적용 확인 요청",
+  "manifest": "Docs/Design/assets/characters-pixel-20261015-v6/manifest.json",
+  "manifestSha256": "3671117a46a6cbfa71cfa8fd2494d7079530c60c3e34acc7e3bf017a1fd441b1",
+  "promptSet": "Docs/Design/assets/characters-pixel-20261015-v6/prompts.json",
+  "manualCorrectionRecord": "Docs/Design/assets/characters-pixel-20261015-v6/manual-corrections.json",
+  "reproductionScript": "Client/Tools/FinalizeEarlyPixelPortraits.py",
+  "verification": "Client/Evidence/pixel-complete-20261015/verification.json",
+  "styleReference": "Client/Assets/StageGame/Art/PixelMilitary/C01.png",
+  "changedCharacters": [
+    "C02",
+    "C03",
+    "C04"
+  ],
+  "changedStates": 9,
+  "totalRedrawnCharacters": 18,
+  "originalAssetsPreserved": true,
+  "sourcePhotosUsedAsRuntimePixels": false,
+  "basis": "사용자 요청 기존 프로젝트 아트 편집. 생성·편집 경로와 해시 기록이며 독점권 확정 판단이 아님.",
+  "images": [
+    {
+      "id": "C02",
+      "key": "pixel-v6-C02",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-63669127-b46c-4206-bd98-9753f3a7ca0e.png",
+      "path": "Docs/Design/assets/characters-pixel-20261015-v6/C02-pixel-v6.png",
+      "sha256": "0f6c78e8340bf0195479127e44474eda2f95c48e7c3e3c06d94b4a86aeed05a2",
+      "previousVersion": "Docs/Design/assets/characters-uniform-20261015-v4/C02-uniform-v4.png",
+      "rawGeneratedCopy": "Docs/Design/assets/characters-pixel-20261015-v6/generated/C02-pixel-generated.png",
+      "rawGeneratedSha256": "f745841ee7f5200e1409d39efbd05d007ac2343ed30b515e439339f523ea1ea4",
+      "manualRankCorrection": true
+    },
+    {
+      "id": "C03",
+      "key": "pixel-v6-C03",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-6d6184bf-5859-4b12-aa3a-031118bb8930.png",
+      "path": "Docs/Design/assets/characters-pixel-20261015-v6/C03-pixel-v6.png",
+      "sha256": "66e8a5d7a748a14b786b2e7ab3eb33e3c804780ae3ee1c97e060037f06eede3c",
+      "previousVersion": "Docs/Design/assets/characters-uniform-20261015-v4/C03-uniform-v4.png",
+      "rawGeneratedCopy": "Docs/Design/assets/characters-pixel-20261015-v6/generated/C03-pixel-generated.png",
+      "rawGeneratedSha256": "66e8a5d7a748a14b786b2e7ab3eb33e3c804780ae3ee1c97e060037f06eede3c",
+      "manualRankCorrection": false
+    },
+    {
+      "id": "C04",
+      "key": "pixel-v6-C04",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-cac606fd-375d-4aed-985d-5831cd3f0639.png",
+      "path": "Docs/Design/assets/characters-pixel-20261015-v6/C04-pixel-v6.png",
+      "sha256": "2720cdfb65bc9f407b8cf8693e35325178d76cda336aa9a87879f8a171ad439d",
+      "previousVersion": "Docs/Design/assets/characters-uniform-20261015-v4/C04-uniform-v4.png",
+      "rawGeneratedCopy": "Docs/Design/assets/characters-pixel-20261015-v6/generated/C04-pixel-generated.png",
+      "rawGeneratedSha256": "2720cdfb65bc9f407b8cf8693e35325178d76cda336aa9a87879f8a171ad439d",
+      "manualRankCorrection": false
+    }
+  ]
+}

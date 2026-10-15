@@ -1,0 +1,26 @@
+[
+  {
+    "id": "C12",
+    "key": "shoulder-C12",
+    "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-b4d2bace-90ea-4adf-bb09-1089397cc8f1.png",
+    "prompt": "Use case: background-extraction. This image is a three-pose PIXEL GAME SPRITE ATLAS. Remove EVERY background pixel completely. Change the outer background to actual alpha=0, with perfectly clean fully TRANSPARENT padding and transparent gaps between the three characters. Remove ALL black backdrop, black haze, green/brown glow and residual translucent rectangles outside silhouettes. Keep the black outlines ON characters, hair, eyes, rank insignia, expressions, hands, camouflage and table intact. Preserve every foreground detail, counts, all threeposes and originalpositions. No new shadows or glows. Hard clean pixel silhouette edges. Keep table rectangles as foreground. Exactly1536x1024 PNG, three512pxcells, real alpha. This is background removal ONLY, do not redesign clothing, faces or hairstyles."
+  },
+  {
+    "id": "C13",
+    "key": "localfix-C13",
+    "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-dbc85433-c039-4e07-9119-be7f5bfb97d4.png",
+    "prompt": "Use case: background-extraction. This image is a three-pose PIXEL GAME SPRITE ATLAS. Remove EVERY background pixel completely. Change the outer background to actual alpha=0, with perfectly clean fully TRANSPARENT padding and transparent gaps between the three characters. Remove ALL black backdrop, black haze, green/brown glow and residual translucent rectangles outside silhouettes. Keep the black outlines ON characters, hair, eyes, rank insignia, expressions, hands, camouflage and table intact. Preserve every foreground detail, counts, all threeposes and originalpositions. No new shadows or glows. Hard clean pixel silhouette edges. Keep table rectangles as foreground. Exactly1536x1024 PNG, three512pxcells, real alpha. This is background removal ONLY, do not redesign clothing, faces or hairstyles."
+  },
+  {
+    "id": "C16",
+    "key": "localfix-C16",
+    "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-99f586f0-8f8a-4b80-8c59-cad7ede484ee.png",
+    "prompt": "Use case: background-extraction. This image is a three-pose PIXEL GAME SPRITE ATLAS. Remove EVERY background pixel completely. Change the outer background to actual alpha=0, with perfectly clean fully TRANSPARENT padding and transparent gaps between the three characters. Remove ALL black backdrop, black haze, green/brown glow and residual translucent rectangles outside silhouettes. Keep the black outlines ON characters, hair, eyes, rank insignia, expressions, hands, camouflage and table intact. Preserve every foreground detail, counts, all threeposes and originalpositions. No new shadows or glows. Hard clean pixel silhouette edges. Keep table rectangles as foreground. Exactly1536x1024 PNG, three512pxcells, real alpha. This is background removal ONLY, do not redesign clothing, faces or hairstyles."
+  },
+  {
+    "id": "C19",
+    "key": "final-C19",
+    "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-10ed77e2-e31d-4808-9b51-80b083a522e0.png",
+    "prompt": "Use case: background-extraction. This image is a three-pose PIXEL GAME SPRITE ATLAS. Remove EVERY background pixel completely. Change the outer background to actual alpha=0, with perfectly clean fully TRANSPARENT padding and transparent gaps between the three characters. Remove ALL black backdrop, black haze, green/brown glow and residual translucent rectangles outside silhouettes. Keep the black outlines ON characters, hair, eyes, rank insignia, expressions, hands, camouflage and table intact. Preserve every foreground detail, counts, all threeposes and originalpositions. No new shadows or glows. Hard clean pixel silhouette edges. Keep table rectangles as foreground. Exactly1536x1024 PNG, three512pxcells, real alpha. This is background removal ONLY, do not redesign clothing, faces or hairstyles."
+  }
+]

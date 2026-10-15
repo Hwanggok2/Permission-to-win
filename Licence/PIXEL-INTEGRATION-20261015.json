@@ -1,0 +1,205 @@
+{
+  "date": "2026-10-15",
+  "status": "APPLIED_EDITOR_VERIFIED",
+  "provenance": [
+    "Licence/CHARACTER-ART-20261015-V1.json",
+    "Licence/CHARACTER-CAPS-20261015-V1.json",
+    "Licence/CHARACTER-C06-CAPS-20261015-V2.json",
+    "Licence/PIXEL-BOARD-20261015-V1.json"
+  ],
+  "selectedPortraits": [
+    {
+      "characterId": "C01",
+      "file": "C01.png",
+      "x": 3,
+      "y": 138,
+      "width": 509,
+      "height": 675,
+      "source": "Overview/assets/military-pixel-20261015/recruit-buzz-cut-atlas-v12.png",
+      "sha256": "58c7cd7ca5fbdbea5730ba6eb70ccf6f408472914f3581a2cfec619f1f1b9070"
+    },
+    {
+      "characterId": "C02",
+      "file": "C02.png",
+      "x": 2,
+      "y": 169,
+      "width": 510,
+      "height": 617,
+      "source": "Docs/Design/assets/characters-20261015-v1/C02-moon-sion-v1.png",
+      "sha256": "91eedcc23f14ac5a7774821f7b98915dddb4da28f532db7972c8d016fc78e46a"
+    },
+    {
+      "characterId": "C03",
+      "file": "C03.png",
+      "x": 0,
+      "y": 143,
+      "width": 512,
+      "height": 631,
+      "source": "Docs/Design/assets/characters-20261015-v1/C03-oh-junho-v1.png",
+      "sha256": "7ad13a9500ca49306b83e80ecf91dedac132bb293286348c8e43a4ff7dcd79b3"
+    },
+    {
+      "characterId": "C04",
+      "file": "C04.png",
+      "x": 0,
+      "y": 141,
+      "width": 512,
+      "height": 637,
+      "source": "Docs/Design/assets/characters-20261015-v1/C04-jung-hangyeol-v1.png",
+      "sha256": "4099faf6ccb08cbcf24f518a8feb4ee73b6b84589c6ab42b6ddc685c8aa0f14a"
+    },
+    {
+      "characterId": "C05",
+      "file": "C05.png",
+      "x": 2,
+      "y": 138,
+      "width": 509,
+      "height": 608,
+      "source": "Docs/Design/assets/characters-20261015-v1/C05-nam-giseok-v1.png",
+      "sha256": "5f8f7d214018bfde9f355d8525ef70a24d859ffc103e8a594e59d204a69addf6"
+    },
+    {
+      "characterId": "C06",
+      "file": "C06-cap-v2.png",
+      "x": 2,
+      "y": 147,
+      "width": 510,
+      "height": 652,
+      "source": "Docs/Design/assets/characters-caps-20261015-v2/C06-choi-geonwoo-cap-v2.png",
+      "sha256": "d6bafcb5bcdd9ce3987ea74fd4adebf09263df94787619e74bda8fcbed250dd4"
+    },
+    {
+      "characterId": "C07",
+      "file": "C07.png",
+      "x": 2,
+      "y": 150,
+      "width": 510,
+      "height": 659,
+      "source": "Docs/Design/assets/characters-caps-20261015-v1/C07-han-yujin-cap-v1.png",
+      "sha256": "1bd47fdaf347a2816f0d8ea0bb46caa75d5e89e5fb2db020e3cec3e0247027f3"
+    },
+    {
+      "characterId": "C08",
+      "file": "C08.png",
+      "x": 3,
+      "y": 174,
+      "width": 509,
+      "height": 619,
+      "source": "Docs/Design/assets/characters-caps-20261015-v1/C08-park-jeongmin-cap-v1.png",
+      "sha256": "9cdd5f492377e54532294de971ce1a50f26618437570e3209007f7e76028741f"
+    },
+    {
+      "characterId": "C09",
+      "file": "C09.png",
+      "x": 3,
+      "y": 142,
+      "width": 507,
+      "height": 657,
+      "source": "Docs/Design/assets/characters-caps-20261015-v1/C09-han-taesik-cap-v1.png",
+      "sha256": "c1321ff9f3340b18c93c628a08869502edffe6186021b93db1d89b1b7532d530"
+    },
+    {
+      "characterId": "C10",
+      "file": "C10.png",
+      "x": 2,
+      "y": 172,
+      "width": 510,
+      "height": 637,
+      "source": "Docs/Design/assets/characters-caps-20261015-v1/C10-bae-seonghun-cap-v1.png",
+      "sha256": "c8583c1b50e36d24b2a7f8289a93cd75e430c0412e16a744c0346e7b32230f03"
+    },
+    {
+      "characterId": "C11",
+      "file": "C11.png",
+      "x": 4,
+      "y": 140,
+      "width": 508,
+      "height": 659,
+      "source": "Docs/Design/assets/characters-caps-20261015-v1/C11-kim-junseo-cap-v1.png",
+      "sha256": "0468c842980ce1ef0e7e121fe7f4dd9b0dd7137959b7154f43f3dd8257990819"
+    },
+    {
+      "characterId": "C12",
+      "file": "C12.png",
+      "x": 4,
+      "y": 150,
+      "width": 505,
+      "height": 651,
+      "source": "Docs/Design/assets/characters-caps-20261015-v1/C12-seo-jihoon-cap-v1.png",
+      "sha256": "f6d20806fce63ddf4675aa22ddf386a434c7918872e08661bebc13659d8dee5f"
+    },
+    {
+      "characterId": "C13",
+      "file": "C13.png",
+      "x": 3,
+      "y": 140,
+      "width": 507,
+      "height": 671,
+      "source": "Docs/Design/assets/characters-caps-20261015-v1/C13-jang-taeo-cap-v1.png",
+      "sha256": "bb19bac12737257ca747ebfdca3b990ecd043193d5d719bb90f41250364333fa"
+    },
+    {
+      "characterId": "C14",
+      "file": "C14.png",
+      "x": 2,
+      "y": 168,
+      "width": 510,
+      "height": 659,
+      "source": "Docs/Design/assets/characters-caps-20261015-v1/C14-seo-ganghyeon-cap-v1.png",
+      "sha256": "7b43f09853b8e5131a6c9d329cff5ba38a2c2cce1033e133a4b6c713a7c2f929"
+    },
+    {
+      "characterId": "C15",
+      "file": "C15.png",
+      "x": 0,
+      "y": 175,
+      "width": 512,
+      "height": 655,
+      "source": "Docs/Design/assets/characters-caps-20261015-v1/C15-lee-dohyeon-cap-v1.png",
+      "sha256": "acc9d6849281864f98df3310f36b22da3ff8837ee015d3e9d3f8a08be6b95931"
+    },
+    {
+      "characterId": "C16",
+      "file": "C16.png",
+      "x": 3,
+      "y": 171,
+      "width": 509,
+      "height": 653,
+      "source": "Docs/Design/assets/characters-caps-20261015-v1/C16-baek-seungwoo-cap-v1.png",
+      "sha256": "dd9323340be5e03246e7c25cc9d8feabc01591e5e6a980b504e669b7b79df364"
+    },
+    {
+      "characterId": "C17",
+      "file": "C17.png",
+      "x": 7,
+      "y": 167,
+      "width": 501,
+      "height": 646,
+      "source": "Docs/Design/assets/characters-caps-20261015-v1/C17-lim-jaehoon-cap-v1.png",
+      "sha256": "9372a2194b135fc961bd4a54abe51b515e237502c9eb655346bfca416fcd0487"
+    },
+    {
+      "characterId": "C18",
+      "file": "C18.png",
+      "x": 2,
+      "y": 141,
+      "width": 509,
+      "height": 685,
+      "source": "Docs/Design/assets/characters-caps-20261015-v1/C18-yoon-jeongho-cap-v1.png",
+      "sha256": "94aa879d7065df959af7441c59ea6cf195323a2d70bd7368cae53519bf219ad6"
+    },
+    {
+      "characterId": "C19",
+      "file": "C19.png",
+      "x": 2,
+      "y": 139,
+      "width": 509,
+      "height": 637,
+      "source": "Docs/Design/assets/characters-20261015-v1/C19-jo-eunchan-v1.png",
+      "sha256": "b10a8a5dbaa76fbea1031fb5eaad443b3267651e96b052f93182b05d27dcc6d9"
+    }
+  ],
+  "generatedCodeArt": "PixelArtBuilder: panel sprites, stones and empty star; project-authored procedural geometry, no external art inputs",
+  "verification": "Client/Evidence/pixel-art-20261015/verification.json",
+  "scope": "Generation and integration evidence, not legal clearance or exclusive rights certification."
+}

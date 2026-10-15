@@ -1,0 +1,137 @@
+{
+  "as_of": "2026-10-15",
+  "status": "planning_scenarios_not_measured_forecast",
+  "unit_iap_after_refund_reserve": 2734.077272727272,
+  "scale": [
+    {
+      "average_dau": 100,
+      "monthly_new_users": 500,
+      "first_purchases": 5,
+      "ad_toss_fee": 0.15,
+      "ads_before_toss_fee": 49980,
+      "ads": 42483,
+      "iap": 13670.38636363636,
+      "total": 56153.38636363636
+    },
+    {
+      "average_dau": 1000,
+      "monthly_new_users": 5000,
+      "first_purchases": 50,
+      "ad_toss_fee": 0.15,
+      "ads_before_toss_fee": 499800,
+      "ads": 424830,
+      "iap": 136703.8636363636,
+      "total": 561533.8636363635
+    },
+    {
+      "average_dau": 5000,
+      "monthly_new_users": 25000,
+      "first_purchases": 250,
+      "ad_toss_fee": 0.15,
+      "ads_before_toss_fee": 2499000,
+      "ads": 2124150,
+      "iap": 683519.318181818,
+      "total": 2807669.318181818
+    },
+    {
+      "average_dau": 10000,
+      "monthly_new_users": 50000,
+      "first_purchases": 500,
+      "ad_toss_fee": 0.15,
+      "ads_before_toss_fee": 4998000,
+      "ads": 4248300,
+      "iap": 1367038.636363636,
+      "total": 5615338.636363636
+    }
+  ],
+  "sensitivity": [
+    {
+      "name": "low",
+      "average_dau": 1000,
+      "monthly_new_users": 5000,
+      "first_purchases": 15,
+      "ad_toss_fee": 0.15,
+      "ads_before_toss_fee": 99960,
+      "ads": 84966,
+      "iap": 41011.15909090908,
+      "total": 125977.15909090909
+    },
+    {
+      "name": "base",
+      "average_dau": 1000,
+      "monthly_new_users": 5000,
+      "first_purchases": 50,
+      "ad_toss_fee": 0.15,
+      "ads_before_toss_fee": 499800,
+      "ads": 424830,
+      "iap": 136703.8636363636,
+      "total": 561533.8636363635
+    },
+    {
+      "name": "high",
+      "average_dau": 1000,
+      "monthly_new_users": 5000,
+      "first_purchases": 100,
+      "ad_toss_fee": 0.15,
+      "ads_before_toss_fee": 1305360,
+      "ads": 1109556,
+      "iap": 273407.7272727272,
+      "total": 1382963.727272727
+    }
+  ],
+  "promo": {
+    "average_dau": 1000,
+    "monthly_new_users": 5000,
+    "first_purchases": 50,
+    "ad_toss_fee": 0,
+    "ads_before_toss_fee": 499800,
+    "ads": 499800,
+    "iap": 136703.8636363636,
+    "total": 636503.8636363635
+  },
+  "targets": [
+    {
+      "phase": "first_30_days_after_launch",
+      "monthly_revenue_goal": 100000,
+      "average_dau": 200,
+      "monthly_new_users": 1000,
+      "first_purchases": 10,
+      "ad_toss_fee": 0.15,
+      "ads_before_toss_fee": 99960,
+      "ads": 84966,
+      "iap": 27340.77272727272,
+      "total": 112306.77272727272
+    },
+    {
+      "phase": "months_2_to_3_after_launch",
+      "monthly_revenue_goal": 1000000,
+      "average_dau": 1800,
+      "monthly_new_users": 9000,
+      "first_purchases": 90,
+      "ad_toss_fee": 0.15,
+      "ads_before_toss_fee": 899640,
+      "ads": 764694,
+      "iap": 246066.95454545447,
+      "total": 1010760.9545454545
+    },
+    {
+      "phase": "growth_stretch_no_fixed_deadline",
+      "monthly_revenue_goal": 3000000,
+      "average_dau": 5400,
+      "monthly_new_users": 27000,
+      "first_purchases": 270,
+      "ad_toss_fee": 0.15,
+      "ads_before_toss_fee": 2698920,
+      "ads": 2294082,
+      "iap": 738200.8636363634,
+      "total": 3032282.8636363633
+    }
+  ],
+  "ad_only_dau_for_1000000": 2354,
+  "excluded": [
+    "income_tax",
+    "labor",
+    "user_acquisition_spend",
+    "other_operating_costs"
+  ]
+}

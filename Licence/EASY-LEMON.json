@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-10-15",
+  "selected_by_user": true,
+  "title": "Easy Lemon",
+  "creator": "Kevin MacLeod",
+  "creator_url": "https://incompetech.com/",
+  "isrc": "USUAN1200076",
+  "source_url": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1200076",
+  "download_url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Easy%20Lemon.mp3",
+  "license": "Creative Commons Attribution 4.0 International",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "commercial_use": "Permitted subject to attribution, license link, indication of modifications and no additional restrictions on the licensed music.",
+  "source_file": "Overview/Audio/originals/easy-lemon.mp3",
+  "runtime_source": "Client/Assets/StageGame/Audio/EasyLemon.mp3",
+  "source_bytes": 5057420,
+  "source_sha256": "2486b8ecfe4575f9ab31613a2c03c2ee45e6e5280301d05b4dd7237c9e1c2531",
+  "original_file_modifications": "None",
+  "game_use": "Unity import compression, low-volume loop playback during matches. No cut, remix or seamless loop edit.",
+  "notice_location": "Settings > Licenses",
+  "evidence": [
+    "Overview/Audio/candidates.json",
+    "Overview/Audio/evidence/artist-license-page.html",
+    "Overview/Audio/evidence/artist-faq.html",
+    "Overview/Audio/evidence/track-page-template.html",
+    "Overview/Audio/evidence/cc-by-4.0-legalcode.html"
+  ],
+  "policy_sources": [
+    "https://incompetech.com/music/royalty-free/licenses/",
+    "https://incompetech.com/music/royalty-free/faq.html",
+    "https://creativecommons.org/licenses/by/4.0/legalcode.en"
+  ],
+  "web_build": "Not run; requires user approval"
+}

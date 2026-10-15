@@ -1,0 +1,395 @@
+{
+  "C08": {
+    "source": "Docs/Design/assets/characters-pixel-20261015-v5/generated/C08-pixel-generated.png",
+    "beforeSha256": "fb8c5cddad0b047cd0d7401fb86f2fbf14f64f2a4761c050a2466229f0ec05a8",
+    "afterSha256": "aff2d97cec193ecf09b49dc5b258e01d687e138df3222e9cef7aeb43a05cb196",
+    "regions": [
+      {
+        "eraseBoxes": [
+          [
+            610,
+            515,
+            627,
+            538
+          ],
+          [
+            624,
+            509,
+            641,
+            532
+          ]
+        ],
+        "centers": [
+          [
+            607,
+            534
+          ],
+          [
+            622,
+            528
+          ],
+          [
+            637,
+            522
+          ]
+        ],
+        "kind": "chevron",
+        "count": 3,
+        "angleDegrees": -21.80140948635181
+      }
+    ],
+    "changedPixels": 787,
+    "alphaUnchanged": true,
+    "outsideListedRegionsUnchanged": true
+  },
+  "C13": {
+    "source": "Docs/Design/assets/characters-pixel-20261015-v5/generated/C13-pixel-generated.png",
+    "beforeSha256": "c5e504b18ff94d14b50f2c424a8fd622202e05d06be1db446cc90825113f91ef",
+    "afterSha256": "8b90c8d90ad750893a167a7d52bc3615e03f36d28f482a3d47e63f5d0ee6c0d4",
+    "regions": [
+      {
+        "eraseBoxes": [
+          [
+            98,
+            473,
+            122,
+            498
+          ],
+          [
+            128,
+            464,
+            151,
+            488
+          ]
+        ],
+        "centers": [
+          [
+            104,
+            487
+          ],
+          [
+            126,
+            480
+          ],
+          [
+            148,
+            473
+          ]
+        ],
+        "kind": "diamond",
+        "count": 3,
+        "angleDegrees": -17.650124219930124
+      },
+      {
+        "eraseBoxes": [
+          [
+            393,
+            482,
+            416,
+            506
+          ],
+          [
+            422,
+            494,
+            445,
+            518
+          ]
+        ],
+        "centers": [
+          [
+            398,
+            491
+          ],
+          [
+            420,
+            500
+          ],
+          [
+            442,
+            509
+          ]
+        ],
+        "kind": "diamond",
+        "count": 3,
+        "angleDegrees": 22.249023657212366
+      },
+      {
+        "eraseBoxes": [
+          [
+            609,
+            494,
+            633,
+            518
+          ],
+          [
+            638,
+            484,
+            662,
+            508
+          ]
+        ],
+        "centers": [
+          [
+            614,
+            508
+          ],
+          [
+            636,
+            500
+          ],
+          [
+            658,
+            492
+          ]
+        ],
+        "kind": "diamond",
+        "count": 3,
+        "angleDegrees": -19.98310652189998
+      },
+      {
+        "eraseBoxes": [
+          [
+            896,
+            485,
+            918,
+            509
+          ],
+          [
+            924,
+            498,
+            946,
+            521
+          ]
+        ],
+        "centers": [
+          [
+            900,
+            494
+          ],
+          [
+            922,
+            503
+          ],
+          [
+            944,
+            512
+          ]
+        ],
+        "kind": "diamond",
+        "count": 3,
+        "angleDegrees": 22.249023657212366
+      }
+    ],
+    "changedPixels": 4185,
+    "alphaUnchanged": true,
+    "outsideListedRegionsUnchanged": true
+  },
+  "C16": {
+    "source": "Docs/Design/assets/characters-pixel-20261015-v5/generated/C16-pixel-generated.png",
+    "beforeSha256": "260343cace89d59f1d8939a4e882d0d346bd7829ed22cebb9999338ca232afcc",
+    "afterSha256": "aa396ec3dcae5f17c9a8c28438e46006252315536c616e7e3013012fd9614f97",
+    "regions": [
+      {
+        "eraseBoxes": [
+          [
+            116,
+            513,
+            138,
+            536
+          ],
+          [
+            143,
+            502,
+            165,
+            524
+          ]
+        ],
+        "centers": [
+          [
+            119,
+            528
+          ],
+          [
+            140,
+            520
+          ],
+          [
+            161,
+            512
+          ]
+        ],
+        "kind": "flower",
+        "count": 3,
+        "angleDegrees": -20.854458039578347
+      },
+      {
+        "eraseBoxes": [
+          [
+            380,
+            513,
+            402,
+            535
+          ],
+          [
+            407,
+            523,
+            430,
+            546
+          ]
+        ],
+        "centers": [
+          [
+            383,
+            521
+          ],
+          [
+            404,
+            529
+          ],
+          [
+            425,
+            537
+          ]
+        ],
+        "kind": "flower",
+        "count": 3,
+        "angleDegrees": 20.854458039578347
+      },
+      {
+        "eraseBoxes": [
+          [
+            594,
+            522,
+            616,
+            545
+          ],
+          [
+            620,
+            512,
+            642,
+            534
+          ]
+        ],
+        "centers": [
+          [
+            596,
+            537
+          ],
+          [
+            617,
+            529
+          ],
+          [
+            638,
+            521
+          ]
+        ],
+        "kind": "flower",
+        "count": 3,
+        "angleDegrees": -20.854458039578347
+      },
+      {
+        "eraseBoxes": [
+          [
+            881,
+            513,
+            903,
+            535
+          ],
+          [
+            907,
+            523,
+            930,
+            545
+          ]
+        ],
+        "centers": [
+          [
+            884,
+            521
+          ],
+          [
+            905,
+            529
+          ],
+          [
+            926,
+            537
+          ]
+        ],
+        "kind": "flower",
+        "count": 3,
+        "angleDegrees": 20.854458039578347
+      },
+      {
+        "eraseBoxes": [
+          [
+            1150,
+            520,
+            1173,
+            543
+          ],
+          [
+            1177,
+            509,
+            1199,
+            532
+          ]
+        ],
+        "centers": [
+          [
+            1153,
+            535
+          ],
+          [
+            1174,
+            527
+          ],
+          [
+            1195,
+            519
+          ]
+        ],
+        "kind": "flower",
+        "count": 3,
+        "angleDegrees": -20.854458039578347
+      },
+      {
+        "eraseBoxes": [
+          [
+            1409,
+            515,
+            1431,
+            536
+          ],
+          [
+            1435,
+            526,
+            1457,
+            547
+          ]
+        ],
+        "centers": [
+          [
+            1412,
+            523
+          ],
+          [
+            1433,
+            531
+          ],
+          [
+            1454,
+            539
+          ]
+        ],
+        "kind": "flower",
+        "count": 3,
+        "angleDegrees": 20.854458039578347
+      }
+    ],
+    "changedPixels": 6356,
+    "alphaUnchanged": true,
+    "outsideListedRegionsUnchanged": true
+  }
+}

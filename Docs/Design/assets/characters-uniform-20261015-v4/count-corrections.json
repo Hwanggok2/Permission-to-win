@@ -1,0 +1,20 @@
+{
+  "tool": "built-in image_gen",
+  "jobs": [
+    {
+      "id": "C05",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-e7bffe40-c42c-48ca-aabc-e379b3637f2c.png",
+      "prompt": "Use case: precise-object-edit. CHANGE ONLY THE CHEST RANK PATCH in these THREE poses. Do not change any head/hair/face/pose/green shoulder bands/flag/table. The rank patch BELOW the flap on viewer RIGHT chest pocket currently has THREE black stripes. This is wrong; change to FOUR stripes. Make badge significantly TALLER DOWNWARD: one olive bordered rectangular patch containing FOUR very thin black horizontal bars with CLEAR olive gaps. Draw bar1, gap, bar2, gap, bar3, gap, bar4. Total4bars! The black pocket flap border above is NOT one of the4bars. Shrink each black bar thickness if needed. Four equally spaced thin horizontal black lines fully visible inside each patch. No other modifications. Same transparent1536x1024 three512cells."
+    },
+    {
+      "id": "C13",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-a08d5617-c26f-4620-a0b0-673faecaef7f.png",
+      "prompt": "Use case: precise-object-edit. CHANGE ONLY black SHOULDER INSIGNIA COUNT. This captain has THREE silver diamonds on hat (correct) but only TWO black diamonds per shoulder (wrong). On EACH of SIX shoulder straps across THREE poses, replace two black diamonds with THREE SMALL BLACK POINTED DIAMONDS in a linked row along the long horizontal strap. 3 diamonds on left and3onright, allthreeposes. Make eachdiamond smaller so allTHREEfit between neck button and green outerband. Total rank is3,not2. Keep long sloping epaulette frame/buttons/green cloth/cap/face/poses/hands/flag/table/pixel style exactly. No diamond ranks on collar. Preserve transparent1536x1024 three512cells."
+    },
+    {
+      "id": "C16",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-474466b2-9da7-41ce-89ad-aa392f49ec1b.png",
+      "prompt": "Use case: precise-object-edit. CHANGE ONLY black SHOULDER INSIGNIA COUNT. This colonel has THREE silver flower rosettes on hat (correct) but only TWO black flowers per shoulder (wrong). On EACH long shoulder strap across ALL THREE poses, replace two black flowers with THREE SMALL BLACK FIVE-PETAL MUGUNGHWA FLOWERS in a row along the strap. 3flowers leftand3right, allthreeposes. Make each flower smaller and place THREE between neck button and green outerband. Total3,not2. Preserve long sloping horizontal epaulette frame/buttons/green cloth/cap/face/poses/hands/flag/table/pixel style exactly. No rank on collar. Preserve transparent1536x1024 three512cells."
+    }
+  ]
+}

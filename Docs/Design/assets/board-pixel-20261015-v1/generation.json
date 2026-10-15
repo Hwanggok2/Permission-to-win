@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-15",
+  "tool": "built-in image_gen.imagegen",
+  "prompt": "Use case: style-transfer. Asset type: production 2D Unity UI game-board background texture. Use the first reference image as the wood-board material and edge reference; use the second reference image only for matching chunky pixel art, dark outlined game illustration style and muted olive/brown colors. Create a redesigned SQUARE wooden tabletop playing board viewed perfectly from directly ABOVE, orthographic and axis aligned. It must fill the square canvas edge-to-edge. Thick very dark brown stepped pixel outline, a slim dark walnut beveled frame roughly 6 percent of width on each side, and a lighter warm honey-ochre flat playing surface occupying the central 88 percent. Restrained large rectangular horizontal wood grain strokes and subtle small worn corner highlights. Keep the inner playing area calm and low contrast so black grid lines and white/black stones overlay clearly. Match coarse logical pixels about 6-8 pixels per visible block on a 1024x1024 canvas, limited palette, crisp square stair-step corners, no blur or smooth gradient. Uniform overhead lighting. No perspective, no angle, no legs, no surrounding table, no scene, no cast shadow outside frame. NO grid, NO holes, NO stones, NO pieces, NO emblems, NO text, NO UI: the game adds those precisely. Opaque texture. One square asset only.",
+  "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-5ae5ff6e-8d41-404e-9da6-bf2779103660.png",
+  "references": [
+    "Overview/assets/military-pixel-20261015/wood-board-top-v21.png",
+    "Docs/Design/assets/characters-caps-20261015-v1/C18-yoon-jeongho-cap-v1.png"
+  ]
+}

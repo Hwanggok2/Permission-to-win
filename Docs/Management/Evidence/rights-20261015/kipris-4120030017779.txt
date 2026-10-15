@@ -1,0 +1,1029 @@
+- link "주메뉴 바로가기":
+  - /url: "#gnb"
+- link "본문 바로가기":
+  - /url: "#content"
+- banner:
+  - heading "KIPRIS" [level=1]:
+    - link "KIPRIS":
+      - /url: /khome/main.do
+      - img "KIPRIS"
+  - navigation:
+    - list:
+      - link "지식재산정보 검색":
+        - /url: /khome/search/searchResult.do?tab=patent
+        - generic: 지식재산정보 검색
+      - link "KIPRIS 정보":
+        - /url: /khome/info/archive/timeline.do
+        - generic: KIPRIS 정보
+      - link "고객지원":
+        - /url: /khome/board/notice/list.do
+        - generic: 고객지원
+  - list:
+    - button "알림열기":
+      - generic: 알림열기
+    - button "로그인":
+      - generic: 로그인
+    - link "회원가입":
+      - /url: /khome/member/join/agreement.do
+      - generic: 회원가입
+    - link "MY KIPRIS":
+      - /url: /khome/myKipris/mainFrame.do?service=myInterest&page=frame2
+      - generic: MY KIPRIS
+    - button "영문으로 번역하기":
+      - generic: 영문으로 번역하기
+    - button "전체메뉴 열기":
+      - generic: 전체메뉴 열기
+- main:
+  - list:
+    - tab "특허ㆍ실용신안":
+      - emphasis: 특허ㆍ실용신안
+    - tab "디자인":
+      - emphasis: 디자인
+    - tab "상표 458" [selected]:
+      - emphasis: 상표
+      - generic: "458"
+    - tab "심판":
+      - emphasis: 심판
+    - tab "기타문헌":
+      - emphasis: 기타문헌
+  - generic "상표":
+    - list:
+      - link "국내 458":
+        - /url: "#"
+        - emphasis: 국내
+        - generic: "458"
+      - link "해외 0":
+        - /url: "#"
+        - emphasis: 해외
+        - generic: "0"
+  - button "검색창 열기":
+    - generic: 검색창 열기
+  - button "상세검색"
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "도움말":
+    - generic: ⓘ
+  - button "마드리드 시스템 도움말":
+    - generic: ⓘ
+  - button "KIPRIS 서비스 설정":
+    - generic: KIPRIS 서비스 설정
+  - generic: KIPRIS 서비스 설정
+  - generic: 사용자가 원하는 방식으로 서비스 제공 기준을 설정하여 이용해보세요.
+  - button "설정 화면 열기":
+    - generic: 설정 화면 열기
+  - button "숨기기":
+    - generic: 숨기기
+  - button "검색필터 열기":
+    - generic: 검색필터 열기
+  - heading "사목에 대해 총 458건이 검색되었습니다." [level=3]:
+    - emphasis: 사목
+    - text: 에 대해 총
+    - emphasis: "458"
+    - text: 건이 검색되었습니다.
+  - button "지리적표시 보기"
+  - list:
+    - button "결과 분류통계":
+      - generic: 결과 분류통계
+    - button "다운로드":
+      - generic: 다운로드
+    - button "인쇄":
+      - generic: 인쇄
+    - button "마이폴더":
+      - generic: 마이폴더
+    - link "특허로 새창열기":
+      - /url: https://www.patent.go.kr/
+      - generic: 특허로 새창열기
+  - text: ✓ ✓
+  - checkbox "전체선택"
+  - generic: 전체선택
+  - button "결과 목록 스타일":
+    - generic: 결과 목록 스타일
+  - list:
+    - combobox "정렬":
+      - option "기본정렬" [selected]
+      - option "출원번호"
+      - option "출원일자"
+      - option "출원공고번호"
+      - option "출원공고일자"
+      - option "등록번호"
+      - option "등록일자"
+      - option "등록공고번호"
+      - option "등록공고일자"
+      - option "우선권주장번호"
+      - option "우선권주장일자"
+      - option "국제등록번호"
+      - option "국제등록일자"
+      - option "행정상태"
+      - option "상품분류"
+      - option "도형코드"
+      - option "출원인"
+      - option "대리인"
+      - option "최종권리자"
+      - option "상표명칭"
+    - generic: 정렬
+    - button "내림차순":
+      - generic: 내림차순
+  - button "적용":
+    - generic: 적용
+  - article:
+    - link "사목 (SHENMUE)의 도면":
+      - /url: "#none"
+      - img "사목 (SHENMUE)의 도면"
+    - checkbox "사목 (SHENMUE)"
+    - generic: 사목 (SHENMUE)
+    - generic: 등록
+    - generic: "[1]"
+    - button "4120030017779"
+    - heading "사목 (SHENMUE)" [level=1]:
+      - button "사목 (SHENMUE)"
+    - list:
+      - emphasis: "상품분류:"
+      - button "41"
+      - emphasis: "출원인:"
+      - button "가부시키가이샤 세가"
+      - emphasis: "최종권리자:"
+      - button "가부시키가이샤 세가"
+  - article:
+    - link "사목가의 도면":
+      - /url: "#none"
+      - img "사목가의 도면"
+    - checkbox "사목가"
+    - generic: 사목가
+    - generic: 소멸
+    - generic: "[2]"
+    - button "4120150026506"
+    - heading "사목가" [level=1]:
+      - button "사목가"
+    - list:
+      - emphasis: "상품분류:"
+      - button "43"
+      - emphasis: "출원인:"
+      - button "박원"
+      - emphasis: "최종권리자:"
+      - button "박원"
+  - article:
+    - link "에타사목 (Etasamog)의 도면":
+      - /url: "#none"
+      - img "에타사목 (Etasamog)의 도면"
+    - checkbox "에타사목 (Etasamog)"
+    - generic: 에타사목 (Etasamog)
+    - generic: 포기
+    - generic: "[3]"
+    - button "4020160054770"
+    - heading "에타사목 (Etasamog)" [level=1]:
+      - button "에타사목 (Etasamog)"
+    - list:
+      - emphasis: "상품분류:"
+      - button "05"
+      - emphasis: "출원인:"
+      - button "강대선"
+      - emphasis: "최종권리자:"
+  - article:
+    - link "르네셀 로사목스의 도면":
+      - /url: "#none"
+      - img "르네셀 로사목스의 도면"
+    - checkbox "르네셀 로사목스"
+    - generic: 르네셀 로사목스
+    - generic: 등록
+    - generic: "[4]"
+    - button "4020200068458"
+    - heading "르네셀 로사목스" [level=1]:
+      - button "르네셀 로사목스"
+    - list:
+      - emphasis: "상품분류:"
+      - button "03"
+      - emphasis: "출원인:"
+      - button "주식회사 르네셀생명과학"
+      - emphasis: "최종권리자:"
+      - button "주식회사 르네셀생명과학"
+  - article:
+    - link "천주교 서울대교구 사회사목국 사회교정사목위원회의 도면":
+      - /url: "#none"
+      - img "천주교 서울대교구 사회사목국 사회교정사목위원회의 도면"
+    - checkbox "천주교 서울대교구 사회사목국 사회교정사목위원회"
+    - text: 천주교 서울대교구 사회
+    - generic: 사목
+    - text: 국 사회교정
+    - generic: 사목
+    - text: 위원회
+    - generic: 등록
+    - generic: "[5]"
+    - button "4220230000491"
+    - heading "천주교 서울대교구 사회사목국 사회교정사목위원회" [level=1]:
+      - button "천주교 서울대교구 사회사목국 사회교정사목위원회":
+        - text: 천주교 서울대교구 사회
+        - generic: 사목
+        - text: 국 사회교정
+        - generic: 사목
+        - text: 위원회
+    - list:
+      - emphasis: "상품분류:"
+      - emphasis: "출원인:"
+      - button "(사)천주교사회교정사목위원회"
+      - emphasis: "최종권리자:"
+      - button "(사)천주교사회교정사목위원회"
+  - article:
+    - link "옥사목신 (OXAMOXIN)의 도면":
+      - /url: "#none"
+      - img "옥사목신 (OXAMOXIN)의 도면"
+    - checkbox "옥사목신 (OXAMOXIN)"
+    - generic: 옥사목신 (OXAMOXIN)
+    - generic: 소멸
+    - generic: "[6]"
+    - button "4019800004155"
+    - heading "옥사목신 (OXAMOXIN)" [level=1]:
+      - button "옥사목신 (OXAMOXIN)"
+    - list:
+      - emphasis: "상품분류:"
+      - button "010"
+      - emphasis: "출원인:"
+      - button "시오노기세이야쿠가부시키가이샤"
+      - emphasis: "최종권리자:"
+      - button "시오노기세이야꾸가부시기가이샤"
+  - article:
+    - link "황박사목포쫀디기의 도면":
+      - /url: "#none"
+      - img "황박사목포쫀디기의 도면"
+    - checkbox "황박사목포쫀디기"
+    - generic: 황박사목포쫀디기
+    - generic: 등록
+    - generic: "[7]"
+    - button "4020240118365"
+    - heading "황박사목포쫀디기" [level=1]:
+      - button "황박사목포쫀디기"
+    - list:
+      - emphasis: "상품분류:"
+      - button "30"
+      - emphasis: "출원인:"
+      - button "황해성"
+      - emphasis: "최종권리자:"
+      - button "황해성"
+  - article:
+    - link "황박사목포쫀디기의 도면":
+      - /url: "#none"
+      - img "황박사목포쫀디기의 도면"
+    - checkbox "황박사목포쫀디기"
+    - generic: 황박사목포쫀디기
+    - generic: 등록
+    - generic: "[8]"
+    - button "4020240118366"
+    - heading "황박사목포쫀디기" [level=1]:
+      - button "황박사목포쫀디기"
+    - list:
+      - emphasis: "상품분류:"
+      - button "35"
+      - emphasis: "출원인:"
+      - button "황해성"
+      - emphasis: "최종권리자:"
+      - button "황해성"
+  - article:
+    - link "운사목상의 도면":
+      - /url: "#none"
+      - img "운사목상의 도면"
+    - checkbox "운사목상"
+    - generic: 운사목상
+    - generic: 등록
+    - generic: "[9]"
+    - button "4020170151501"
+    - heading "운사목상" [level=1]:
+      - button "운사목상"
+    - list:
+      - emphasis: "상품분류:"
+      - button "25"
+      - emphasis: "출원인:"
+      - button "광저우 무즈 가먼트 컴퍼니., 리미티드."
+      - emphasis: "최종권리자:"
+      - button "광저우 윈스무시앙 엔터프라이즈 매니지먼트 컴퍼니., 리미티드"
+  - article:
+    - link "쌓기나무사목놀이의 도면":
+      - /url: "#none"
+      - img "쌓기나무사목놀이의 도면"
+    - checkbox "쌓기나무사목놀이"
+    - generic: 쌓기나무사목놀이
+    - generic: 등록
+    - generic: "[10]"
+    - button "4020190057920"
+    - heading "쌓기나무사목놀이" [level=1]:
+      - button "쌓기나무사목놀이"
+    - list:
+      - emphasis: "상품분류:"
+      - button "28"
+      - emphasis: "출원인:"
+      - button "장미경"
+      - emphasis: "최종권리자:"
+      - button "장미경"
+  - article:
+    - link "천주교 서울대교구 사회사목국 사회교정사목위원회의 도면":
+      - /url: "#none"
+      - img "천주교 서울대교구 사회사목국 사회교정사목위원회의 도면"
+    - checkbox "천주교 서울대교구 사회사목국 사회교정사목위원회"
+    - text: 천주교 서울대교구 사회
+    - generic: 사목
+    - text: 국 사회교정
+    - generic: 사목
+    - text: 위원회
+    - generic: 포기
+    - generic: "[11]"
+    - button "4220200000202"
+    - heading "천주교 서울대교구 사회사목국 사회교정사목위원회" [level=1]:
+      - button "천주교 서울대교구 사회사목국 사회교정사목위원회":
+        - text: 천주교 서울대교구 사회
+        - generic: 사목
+        - text: 국 사회교정
+        - generic: 사목
+        - text: 위원회
+    - list:
+      - emphasis: "상품분류:"
+      - emphasis: "출원인:"
+      - button "(사)천주교사회교정사목위원회"
+      - emphasis: "최종권리자:"
+  - article:
+    - link "천주교 서울대교구 사회사목부 사회교정사목위원회의 도면":
+      - /url: "#none"
+      - img "천주교 서울대교구 사회사목부 사회교정사목위원회의 도면"
+    - checkbox "천주교 서울대교구 사회사목부 사회교정사목위원회"
+    - text: 천주교 서울대교구 사회
+    - generic: 사목
+    - text: 부 사회교정
+    - generic: 사목
+    - text: 위원회
+    - generic: 포기
+    - generic: "[12]"
+    - button "4220120000515"
+    - heading "천주교 서울대교구 사회사목부 사회교정사목위원회" [level=1]:
+      - button "천주교 서울대교구 사회사목부 사회교정사목위원회":
+        - text: 천주교 서울대교구 사회
+        - generic: 사목
+        - text: 부 사회교정
+        - generic: 사목
+        - text: 위원회
+    - list:
+      - emphasis: "상품분류:"
+      - emphasis: "출원인:"
+      - button "(사)천주교사회교정사목위원회"
+      - emphasis: "최종권리자:"
+      - button "(사)천주교사회교정사목위원회"
+  - article:
+    - link "유사목의 도면":
+      - /url: "#none"
+      - img "유사목의 도면"
+    - checkbox "유사목"
+    - generic: 유사목
+    - generic: 출원
+    - generic: "[13]"
+    - button "4020260013971"
+    - heading "유사목" [level=1]:
+      - button "유사목"
+    - list:
+      - emphasis: "상품분류:"
+      - button "03"
+      - emphasis: "출원인:"
+      - button "광저우 화투 코스메틱 테크놀로지 컴퍼니 리미티드"
+      - emphasis: "최종권리자:"
+  - article:
+    - link "감사목면의 도면":
+      - /url: "#none"
+      - img "감사목면의 도면"
+    - checkbox "감사목면"
+    - generic: 감사목면
+    - generic: 등록
+    - generic: "[14]"
+    - button "4020150007230"
+    - heading "감사목면" [level=1]:
+      - button "감사목면"
+    - list:
+      - emphasis: "상품분류:"
+      - button "01"
+      - emphasis: "출원인:"
+      - button "주식회사 유일"
+      - emphasis: "최종권리자:"
+      - button "주식회사 유일"
+  - article:
+    - link "주식회사 목산제약의 도면":
+      - /url: "#none"
+      - img "주식회사 목산제약의 도면"
+    - checkbox "주식회사 목산제약"
+    - generic: 주식회사 목산제약
+    - generic: 소멸
+    - generic: "[15]"
+    - button "4120040016769"
+    - heading "주식회사 목산제약" [level=1]:
+      - button "주식회사 목산제약"
+    - list:
+      - emphasis: "상품분류:"
+      - button "35"
+      - emphasis: "출원인:"
+      - button "주식회사 동방제약"
+      - emphasis: "최종권리자:"
+      - button "주식회사 동방제약"
+  - article:
+    - link "주식회사 목산제약의 도면":
+      - /url: "#none"
+      - img "주식회사 목산제약의 도면"
+    - checkbox "주식회사 목산제약"
+    - generic: 주식회사 목산제약
+    - generic: 소멸
+    - generic: "[16]"
+    - button "4120040016770"
+    - heading "주식회사 목산제약" [level=1]:
+      - button "주식회사 목산제약"
+    - list:
+      - emphasis: "상품분류:"
+      - button "35"
+      - emphasis: "출원인:"
+      - button "주식회사 동방제약"
+      - emphasis: "최종권리자:"
+      - button "주식회사 동방제약"
+  - article:
+    - link "황박사 목포쫀디기의 도면":
+      - /url: "#none"
+      - img "황박사 목포쫀디기의 도면"
+    - checkbox "황박사 목포쫀디기"
+    - generic: 황박사 목포쫀디기
+    - generic: 등록
+    - generic: "[17]"
+    - button "4020240025466"
+    - heading "황박사 목포쫀디기" [level=1]:
+      - button "황박사 목포쫀디기"
+    - list:
+      - emphasis: "상품분류:"
+      - button "35"
+      - emphasis: "출원인:"
+      - button "황해성"
+      - emphasis: "최종권리자:"
+      - button "황해성"
+  - article:
+    - link "황박사 목포쫀드기의 도면":
+      - /url: "#none"
+      - img "황박사 목포쫀드기의 도면"
+    - checkbox "황박사 목포쫀드기"
+    - generic: 황박사 목포쫀드기
+    - generic: 거절
+    - generic: "[18]"
+    - button "4020230130626"
+    - heading "황박사 목포쫀드기" [level=1]:
+      - button "황박사 목포쫀드기"
+    - list:
+      - emphasis: "상품분류:"
+      - button "30"
+      - emphasis: "출원인:"
+      - button "박형준"
+      - emphasis: "최종권리자:"
+  - article:
+    - link "이주사 목로청의 도면":
+      - /url: "#none"
+      - img "이주사 목로청의 도면"
+    - checkbox "이주사 목로청"
+    - generic: 이주사 목로청
+    - generic: 등록
+    - generic: "[19]"
+    - button "4020170006140"
+    - heading "이주사 목로청" [level=1]:
+      - button "이주사 목로청"
+    - list:
+      - emphasis: "상품분류:"
+      - button "32"
+      - button "펼치기":
+        - generic: 펼치기
+      - emphasis: "출원인:"
+      - button "이신천"
+      - emphasis: "최종권리자:"
+      - button "이신천"
+  - article:
+    - link "군신좌사 목태음 (Hepatonia & Cholecystotonia)의 도면":
+      - /url: "#none"
+      - img "군신좌사 목태음 (Hepatonia & Cholecystotonia)의 도면"
+    - checkbox "군신좌사 목태음 (Hepatonia & Cholecystotonia)"
+    - generic: 군신좌사 목태음 (Hepatonia & Cholecystotonia)
+    - generic: 소멸
+    - generic: "[20]"
+    - button "4020110048941"
+    - heading "군신좌사 목태음 (Hepatonia & Cholecystotonia)" [level=1]:
+      - button "군신좌사 목태음 (Hepatonia & Cholecystotonia)"
+    - list:
+      - emphasis: "상품분류:"
+      - button "30"
+      - emphasis: "출원인:"
+      - button "김홍기"
+      - emphasis: "최종권리자:"
+      - button "김홍기"
+  - article:
+    - link "주식회사 목단강의 도면":
+      - /url: "#none"
+      - img "주식회사 목단강의 도면"
+    - checkbox "주식회사 목단강"
+    - generic: 주식회사 목단강
+    - generic: 포기
+    - generic: "[21]"
+    - button "4019950008463"
+    - heading "주식회사 목단강" [level=1]:
+      - button "주식회사 목단강"
+    - list:
+      - emphasis: "상품분류:"
+      - button "008"
+      - emphasis: "출원인:"
+      - button "주식회사목단강"
+      - emphasis: "최종권리자:"
+  - article:
+    - link "성박사 목펴난 안 숙면베개의 도면":
+      - /url: "#none"
+      - img "성박사 목펴난 안 숙면베개의 도면"
+    - checkbox "성박사 목펴난 안 숙면베개"
+    - generic: 성박사 목펴난 안 숙면베개
+    - generic: 포기
+    - generic: "[22]"
+    - button "4020140051830"
+    - heading "성박사 목펴난 안 숙면베개" [level=1]:
+      - button "성박사 목펴난 안 숙면베개"
+    - list:
+      - emphasis: "상품분류:"
+      - button "20"
+      - emphasis: "출원인:"
+      - button "김지연"
+      - emphasis: "최종권리자:"
+  - article:
+    - link "주식회사 목림 (MOK LIM CO.,LTD)의 도면":
+      - /url: "#none"
+      - img "주식회사 목림 (MOK LIM CO.,LTD)의 도면"
+    - checkbox "주식회사 목림 (MOK LIM CO.,LTD)"
+    - generic: 주식회사 목림 (MOK LIM CO.,LTD)
+    - generic: 소멸
+    - generic: "[23]"
+    - button "4119930006242"
+    - heading "주식회사 목림 (MOK LIM CO.,LTD)" [level=1]:
+      - button "주식회사 목림 (MOK LIM CO.,LTD)"
+    - list:
+      - emphasis: "상품분류:"
+      - button "104"
+      - emphasis: "출원인:"
+      - button "주식회사목림"
+      - emphasis: "최종권리자:"
+      - button "주식회사목림"
+  - article:
+    - link "주식회사 목림 (MOK LIM CO.,LTD)의 도면":
+      - /url: "#none"
+      - img "주식회사 목림 (MOK LIM CO.,LTD)의 도면"
+    - checkbox "주식회사 목림 (MOK LIM CO.,LTD)"
+    - generic: 주식회사 목림 (MOK LIM CO.,LTD)
+    - generic: 포기
+    - generic: "[24]"
+    - button "5120050000946"
+    - heading "주식회사 목림 (MOK LIM CO.,LTD)" [level=1]:
+      - button "주식회사 목림 (MOK LIM CO.,LTD)"
+    - list:
+      - emphasis: "상품분류:"
+      - button "104"
+      - emphasis: "출원인:"
+      - button "주식회사목림"
+      - emphasis: "최종권리자:"
+  - article:
+    - link "주식회사 목단강의 도면":
+      - /url: "#none"
+      - img "주식회사 목단강의 도면"
+    - checkbox "주식회사 목단강"
+    - generic: 주식회사 목단강
+    - generic: 포기
+    - generic: "[25]"
+    - button "4019950008462"
+    - heading "주식회사 목단강" [level=1]:
+      - button "주식회사 목단강"
+    - list:
+      - emphasis: "상품분류:"
+      - button "005"
+      - emphasis: "출원인:"
+      - button "주식회사목단강"
+      - emphasis: "최종권리자:"
+  - article:
+    - link "주식회사 목화산업의 도면":
+      - /url: "#none"
+      - img "주식회사 목화산업의 도면"
+    - checkbox "주식회사 목화산업"
+    - generic: 주식회사 목화산업
+    - generic: 소멸
+    - generic: "[26]"
+    - button "4019860019765"
+    - heading "주식회사 목화산업" [level=1]:
+      - button "주식회사 목화산업"
+    - list:
+      - emphasis: "상품분류:"
+      - button "018"
+      - emphasis: "출원인:"
+      - button "주식회사목화산업"
+      - emphasis: "최종권리자:"
+      - button "주식회사목화산업"
+  - article:
+    - link "목림산업주식회사 목림산업주식회사의 도면":
+      - /url: "#none"
+      - img "목림산업주식회사 목림산업주식회사의 도면"
+    - checkbox "목림산업주식회사 목림산업주식회사"
+    - generic: 목림산업주식회사 목림산업주식회사
+    - generic: 포기
+    - generic: "[27]"
+    - button "4019840006999"
+    - heading "목림산업주식회사 목림산업주식회사" [level=1]:
+      - button "목림산업주식회사 목림산업주식회사"
+    - list:
+      - emphasis: "상품분류:"
+      - button "020"
+      - emphasis: "출원인:"
+      - button "목림산업주식회사"
+      - emphasis: "최종권리자:"
+  - article:
+    - link "주식회사 목포상호 신용금고의 도면":
+      - /url: "#none"
+      - img "주식회사 목포상호 신용금고의 도면"
+    - checkbox "주식회사 목포상호 신용금고"
+    - generic: 주식회사 목포상호 신용금고
+    - generic: 거절
+    - generic: "[28]"
+    - button "4119990000722"
+    - heading "주식회사 목포상호 신용금고" [level=1]:
+      - button "주식회사 목포상호 신용금고"
+    - list:
+      - emphasis: "상품분류:"
+      - button "36"
+      - emphasis: "출원인:"
+      - button "(주) 홍익상호신용금고"
+      - emphasis: "최종권리자:"
+  - article:
+    - link "주식회사목전건설의 도면":
+      - /url: "#none"
+      - img "주식회사목전건설의 도면"
+    - checkbox "주식회사목전건설"
+    - generic: 주식회사목전건설
+    - generic: 소멸
+    - generic: "[29]"
+    - button "4119890000080"
+    - heading "주식회사목전건설" [level=1]:
+      - button "주식회사목전건설"
+    - list:
+      - emphasis: "상품분류:"
+      - button "104"
+      - emphasis: "출원인:"
+      - button "주식회사목전건설"
+      - emphasis: "최종권리자:"
+      - button "주식회사목전건설"
+  - article:
+    - link "주식회사 목포신용 금고의 도면":
+      - /url: "#none"
+      - img "주식회사 목포신용 금고의 도면"
+    - checkbox "주식회사 목포신용 금고"
+    - generic: 주식회사 목포신용 금고
+    - generic: 거절
+    - generic: "[30]"
+    - button "4119990012860"
+    - heading "주식회사 목포신용 금고" [level=1]:
+      - button "주식회사 목포신용 금고"
+    - list:
+      - emphasis: "상품분류:"
+      - button "36"
+      - emphasis: "출원인:"
+      - button "(주) 홍익상호신용금고"
+      - emphasis: "최종권리자:"
+  - generic: 이전
+  - link "다음":
+    - /url: javascript:goPage(2, 'searchResult');
+  - textbox "이동할 페이지 번호": "1"
+  - generic: 이동할 페이지 번호
+  - generic: /
+  - generic: 마지막 페이지 번호
+  - text: "16"
+  - button "이동"
+  - generic "페이지 만족도 조사":
+    - heading "현재 페이지의 구성과 내용에 만족하시나요?" [level=4]
+    - group "만족도 점수 선택(5점 만점)":
+      - generic: 만족도 점수 선택(5점 만점)
+      - radio "매우 만족"
+      - generic: 😊
+      - generic: 매우 만족
+      - radio "만족"
+      - generic: 🙂
+      - generic: 만족
+      - radio "보통"
+      - generic: 😐
+      - generic: 보통
+      - radio "불만족"
+      - generic: 🙁
+      - generic: 불만족
+      - radio "매우 불만족"
+      - generic: 😫
+      - generic: 매우 불만족
+    - generic: 추가 의견 입력
+    - textbox:
+      - /placeholder: 추가적인 의견이 있으시면 남겨주세요 (선택사항)
+    - generic: 0 / 300
+    - button: 의견 보내기
+  - button "상세보기 크기 확장":
+    - generic: 상세보기 크기 확장
+  - list:
+    - link "새창열기":
+      - /url: "#"
+      - generic: 새창열기
+    - link "오류신고":
+      - /url: "#"
+      - generic: 오류신고
+    - link "인쇄하기":
+      - /url: "#"
+      - generic: 인쇄하기
+  - heading "사목" [level=2]
+  - paragraph: SHENMUE
+  - list:
+    - button "상세정보"
+    - button "출원공고"
+    - button "등록사항"
+    - button "통합행정정보"
+  - list:
+    - button "DOI 복사":
+      - generic: DOI 복사
+    - button "QR코드":
+      - generic: QR코드
+  - heading "상세정보" [level=3]
+  - heading "· 서지정보" [level=4]
+  - table "서지정보":
+    - caption: 서지정보
+    - rowgroup:
+      - row "상품분류 8판 41":
+        - rowheader "상품분류"
+        - cell "8판 41":
+          - text: 8판
+          - link "41":
+            - /url: javascript:void(0);
+      - row "출원번호(일자) 4120030017779 (2003.08.20)":
+        - rowheader "출원번호(일자)"
+        - cell "4120030017779 (2003.08.20)"
+      - row "출원인 가부시키가이샤 세가":
+        - rowheader "출원인"
+        - cell "가부시키가이샤 세가"
+      - row "등록번호(일자) 4101071450000 (2004.10.18)":
+        - rowheader "등록번호(일자)"
+        - cell "4101071450000 (2004.10.18)":
+          - link "4101071450000 (2004.10.18)":
+            - /url: "#none"
+      - row "출원공고번호(일자) 4120040033819 (2004.07.06) 전문다운":
+        - rowheader "출원공고번호(일자)"
+        - cell "4120040033819 (2004.07.06) 전문다운":
+          - text: 4120040033819 (2004.07.06)
+          - link "전문다운":
+            - /url: "#none"
+      - row "등록공고번호(일자)":
+        - rowheader "등록공고번호(일자)"
+        - cell
+      - row "원출원번호(일자)":
+        - rowheader "원출원번호(일자)"
+        - cell
+      - row "우선권정보":
+        - rowheader "우선권정보"
+        - cell
+      - row "관련출원번호":
+        - rowheader "관련출원번호"
+        - cell
+      - row "공통상태지표 등록 등록 TM5공통상태지표 안내표":
+        - rowheader "공통상태지표"
+        - cell "등록 등록 TM5공통상태지표 안내표":
+          - img "등록"
+          - text: 등록
+          - link "TM5공통상태지표 안내표":
+            - /url: /kdtj/help/help_tm5.jsp
+            - img "TM5공통상태지표 안내표"
+      - row "법적상태 등록":
+        - rowheader "법적상태"
+        - cell "등록"
+      - row "심사진행상태(일자) 등록결정(일반)(2004.09.22)":
+        - rowheader "심사진행상태(일자)"
+        - cell "등록결정(일반)(2004.09.22)"
+      - row "소급구분(일자) (2003.08.20)":
+        - rowheader "소급구분(일자)"
+        - cell "(2003.08.20)"
+      - row "심판사항":
+        - rowheader "심판사항"
+        - cell
+      - row "구분 국내상표 복합문자 일반":
+        - rowheader "구분"
+        - cell "국내상표 복합문자 일반"
+      - row "이의신청 일자":
+        - rowheader "이의신청 일자"
+        - cell
+      - row "이의신청 상태":
+        - rowheader "이의신청 상태"
+        - cell
+      - row "이의신청 대상":
+        - rowheader "이의신청 대상"
+        - cell
+      - row "공존동의상표 유무 N":
+        - rowheader "공존동의상표 유무"
+        - cell "N"
+  - heading "· 인명정보" [level=4]
+  - heading "출원인" [level=5]
+  - table "출원인목록":
+    - caption: 출원인목록
+    - rowgroup:
+      - row "1 가부시키가이샤 세가 (519980961394) 일본국 도쿄도 시나가와쿠 니시시나가와 *쵸메 *반 *고 스미토모후도산 오사키가든타워":
+        - cell "1"
+        - cell "가부시키가이샤 세가 (519980961394)":
+          - text: 가부시키가이샤 세가
+          - text: (519980961394)
+          - list
+        - cell "일본국 도쿄도 시나가와쿠 니시시나가와 *쵸메 *반 *고 스미토모후도산 오사키가든타워"
+  - heading "대리인" [level=5]
+  - table "대리인 목록":
+    - caption: 대리인 목록
+    - rowgroup:
+      - row "1 특허법인코리아나 (920011000013) 서울특별시 강남구 강남대로 **길 **(역삼동, 케이피빌딩)":
+        - cell "1"
+        - cell "특허법인코리아나 (920011000013)":
+          - text: 특허법인코리아나
+          - text: (920011000013)
+        - cell "서울특별시 강남구 강남대로 **길 **(역삼동, 케이피빌딩)"
+  - heading "최종권리자" [level=5]
+  - table "최종권리자":
+    - caption: 최종권리자
+    - rowgroup:
+      - row "가부시키가이샤 세가 일본국 도쿄도 시나가와쿠 니시시나가와 *쵸메 *반 *고 스미토모후도산 오사키가든타워":
+        - cell "가부시키가이샤 세가":
+          - text: 가부시키가이샤 세가
+          - list
+        - cell "일본국 도쿄도 시나가와쿠 니시시나가와 *쵸메 *반 *고 스미토모후도산 오사키가든타워"
+  - heading "등록 이후 대리인 정보" [level=5]
+  - table "대리인 목록":
+    - caption: 대리인 목록
+    - rowgroup:
+      - row "1 특허법인코리아나 (920011000013) 서울특별시 강남구 강남대로 **길 **(역삼동, 케이피빌딩)":
+        - cell "1"
+        - cell "특허법인코리아나 (920011000013)":
+          - text: 특허법인코리아나
+          - text: (920011000013)
+        - cell "서울특별시 강남구 강남대로 **길 **(역삼동, 케이피빌딩)"
+  - heading "· 도형분류(비엔나)코드" [level=4]
+  - heading "도형분류(비엔나)코드" [level=5]
+  - table "도형분류(비엔나)코드":
+    - caption: 도형분류(비엔나)코드
+    - rowgroup:
+      - row
+      - row "데이터가 존재하지 않습니다.":
+        - cell "데이터가 존재하지 않습니다."
+  - heading "· 상표설명/지정상품" [level=4]
+  - heading "상표설명 정보" [level=5]
+  - table "상표설명 정보":
+    - caption: 상표설명 정보
+    - rowgroup:
+      - row "데이터가 존재하지 않습니다.":
+        - cell "데이터가 존재하지 않습니다."
+  - heading "· 지정상품" [level=4]
+  - emphasis: ※ 상표의 유사군코드는 변경 될 수 있습니다.
+  - table "지정상품":
+    - caption: 지정상품
+    - rowgroup:
+      - row "1 41 S121002 온라인게임제공업":
+        - cell "1"
+        - cell "41"
+        - cell "S121002":
+          - link "S121002":
+            - /url: javascript:void(0);
+        - cell "온라인게임제공업"
+  - heading "· 마드리드 출원정보" [level=4]
+  - heading "마드리드 출원현황" [level=5]
+  - table "마드리드 출원현황":
+    - caption: 마드리드 출원현황
+    - rowgroup:
+      - row "데이터가 존재하지 않습니다.":
+        - cell "데이터가 존재하지 않습니다."
+      - row
+  - heading "지정국가 정보" [level=5]
+  - table "지정상품":
+    - caption: 지정상품
+    - rowgroup:
+      - row "데이터가 존재하지 않습니다.":
+        - cell "데이터가 존재하지 않습니다."
+      - row
+  - heading "· 공존동의상표" [level=4]
+  - heading "공존동의상표" [level=5]
+  - table "공존동의상표":
+    - caption: 공존동의상표
+    - rowgroup:
+      - row "데이터가 존재하지 않습니다.":
+        - cell "데이터가 존재하지 않습니다."
+  - text: ·
+  - button "도면 닫기":
+    - generic: 도면 닫기
+  - button "견본 전체보기":
+    - generic: 견본 전체보기
+  - img "대표도면"
+  - strong: 상표견본
+  - link "다운로드":
+    - /url: /kdtj/remoteFile.do?method=downloadImgTM&applno=4120030017779&no=4120030017779.jpg
+    - generic: 다운로드
+  - button "크게보기":
+    - generic: 크게보기
+  - button "상세정보 닫기":
+    - generic: 상세정보 닫기
+- contentinfo:
+  - list:
+    - button "KIPRIS 서비스 설정":
+      - generic: KIPRIS 서비스 설정
+    - button "고객의소리":
+      - generic: 고객의소리
+  - list:
+    - button "국내 지식재산정보 검색사이트":
+      - generic: 국내 지식재산정보 검색사이트
+    - button "해외 지식재산정보 검색사이트":
+      - generic: 해외 지식재산정보 검색사이트
+    - button "각국 특허청 사이트":
+      - generic: 각국 특허청 사이트
+    - button "유관기관 사이트":
+      - generic: 유관기관 사이트
+  - button "맨 위로":
+    - generic: 맨 위로
+  - list:
+    - link "개인정보 처리방침":
+      - /url: https://www.moip.go.kr/kipo/kipoContentView.do?menuCd=SCD0201406
+      - emphasis: 개인정보 처리방침
+    - link "이용약관":
+      - /url: /khome/member/rules/terms.do
+      - generic: 이용약관
+    - link "저작권정책":
+      - /url: /khome/member/rules/copyright.do
+      - generic: 저작권정책
+    - link "(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크(WA인증마크)":
+      - /url: https://www.wa.or.kr/board/list.asp?BoardID=0006
+      - img "(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크(WA인증마크)"
+  - list:
+    - paragraph:
+      - emphasis: 산업재산권 제도·출원 심사 등록 수수료 등
+      - text: "특허고객상담센터 : 1544-8080(유료)"
+    - paragraph:
+      - emphasis: 검색시스템
+      - text: "헬프데스크 : 042-483-4710(유료)"
+  - paragraph: (우)35208 대전광역시 서구 청사로 189
+  - paragraph: © KIPI. All rights reserved.
+  - list:
+    - link "챗봇상담":
+      - /url: https://chatbot.ips.go.kr/chatbotPop.ndo?bnrId=cuO6jXZLsIFMFrO
+      - generic: 챗봇상담
+    - link "채팅상담":
+      - /url: https://chat.patent.go.kr:10443/#/ttalk_main/KIPO_160635643985448436
+      - generic: 채팅상담
+  - list:
+    - link "지식재산처":
+      - /url: https://www.moip.go.kr
+      - img "지식재산처"
+    - link "한국특허정보원":
+      - /url: https://www.kipi.or.kr
+      - img "한국특허정보원"

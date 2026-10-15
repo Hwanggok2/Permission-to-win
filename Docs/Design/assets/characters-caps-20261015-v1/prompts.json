@@ -1,0 +1,112 @@
+{
+  "version": "caps-v1",
+  "date": "2026-10-15",
+  "tool": "built-in image_gen.imagegen",
+  "basePrompt": "Use case: identity-preserve. Edit the provided character sheet; it is the exact EDIT TARGET, not merely a style reference.\nUser request: make a military-cap variant with a small rank/ribbon-like badge attached to the FRONT of the cap.\nChange only the headwear: add the specified military cap to the SAME man in ALL THREE poses. Preserve his exact face identity, expression, eyeglasses if any, head tilt, hands, body, uniform, colors, silhouette below the neck, desk, camera, coarse pixel size, layout, three equal columns and transparent alpha background. The front badge must be legible at this pixel scale. Use simple invented geometric rank decoration rather than any real unit logo, flag, coat of arms, lettering or name.\nThe cap must sit naturally on the head and rotate with his head pose, with an unmistakable crown, band and short front brim; keep the eyes, eyebrows and glasses visible. Preserve portions of side hair as appropriate. All three caps must have the SAME badge shape/count. Do not add chest ribbons, medals, extra insignia on the uniform or equipment. Keep the existing 1536x1024 canvas with equal three 512x1024 pose cells; keep each desk in place; no clipping.\nMatch the EXISTING coarse low-resolution pixel art and thick dark stair-step outline. No smooth rendering, fine detailed fabric, gradients, extra glow, title text, labels or watermarks. Exactly three states remain: intro / thinking / AI defeat. Preserve genuine transparent background and gaps.",
+  "characters": [
+    {
+      "id": "C06",
+      "name": "최건우",
+      "rank": "하사",
+      "slug": "choi-geonwoo",
+      "reference": "C:/Github/StageGame/Docs/Design/assets/characters-20261015-v1/C06-choi-geonwoo-v1.png",
+      "capSpecification": "Olive short-brim patrol cap with a clearly visible small dark rectangular front patch containing ONE simple gold chevron."
+    },
+    {
+      "id": "C07",
+      "name": "한유진",
+      "rank": "공군 중사",
+      "slug": "han-yujin",
+      "reference": "C:/Github/StageGame/Docs/Design/assets/characters-20261015-v1/C07-han-yujin-v1.png",
+      "capSpecification": "Muted BLUE-GRAY short-brim patrol cap matching his air-force colored uniform; dark rectangular front patch containing TWO simple gold chevrons. No wings or pilot emblem."
+    },
+    {
+      "id": "C08",
+      "name": "박정민",
+      "rank": "상사",
+      "slug": "park-jeongmin",
+      "reference": "C:/Github/StageGame/Docs/Design/assets/characters-20261015-v1/C08-park-jeongmin-v1.png",
+      "capSpecification": "Olive short-brim patrol cap, dark rectangular front patch with THREE simple gold chevrons."
+    },
+    {
+      "id": "C09",
+      "name": "한태식",
+      "rank": "원사",
+      "slug": "han-taesik",
+      "reference": "C:/Github/StageGame/Docs/Design/assets/characters-20261015-v1/C09-han-taesik-v1.png",
+      "capSpecification": "Olive short-brim patrol cap, dark rectangular front patch with THREE gold chevrons and one small gold dot above them."
+    },
+    {
+      "id": "C10",
+      "name": "배성훈",
+      "rank": "준위",
+      "slug": "bae-seonghun",
+      "reference": "C:/Github/StageGame/Docs/Design/assets/characters-20261015-v1/C10-bae-seonghun-v1.png",
+      "capSpecification": "Olive short-brim patrol cap, dark rectangular front patch with ONE gold diamond lozenge."
+    },
+    {
+      "id": "C11",
+      "name": "김준서",
+      "rank": "소위",
+      "slug": "kim-junseo",
+      "reference": "C:/Github/StageGame/Docs/Design/assets/characters-20261015-v1/C11-kim-junseo-v1.png",
+      "capSpecification": "Neat olive short-brim officer field cap, dark rectangular front patch with ONE simple bright silver vertical bar."
+    },
+    {
+      "id": "C12",
+      "name": "서지훈",
+      "rank": "소대장",
+      "slug": "seo-jihoon",
+      "reference": "C:/Github/StageGame/Docs/Design/assets/characters-20261015-v1/C12-seo-jihoon-v1.png",
+      "capSpecification": "Neat olive short-brim officer field cap, dark rectangular front patch with TWO bright silver vertical bars."
+    },
+    {
+      "id": "C13",
+      "name": "장태오",
+      "rank": "중대장",
+      "slug": "jang-taeo",
+      "reference": "C:/Github/StageGame/Docs/Design/assets/characters-20261015-v1/C13-jang-taeo-v1.png",
+      "capSpecification": "Neat olive short-brim officer field cap, dark rectangular front patch with THREE bright silver vertical bars."
+    },
+    {
+      "id": "C14",
+      "name": "서강현",
+      "rank": "작전참모",
+      "slug": "seo-ganghyeon",
+      "reference": "C:/Github/StageGame/Docs/Design/assets/characters-20261015-v1/C14-seo-ganghyeon-v1.png",
+      "capSpecification": "Olive officer peaked cap with a clearly shaped crown and dark short visor; ONE simple gold diamond on the centered dark rectangular front patch."
+    },
+    {
+      "id": "C15",
+      "name": "이도현",
+      "rank": "대대장",
+      "slug": "lee-dohyeon",
+      "reference": "C:/Github/StageGame/Docs/Design/assets/characters-20261015-v1/C15-lee-dohyeon-v1.png",
+      "capSpecification": "Olive officer peaked cap with a clearly shaped crown and dark short visor; TWO simple gold diamonds side by side on the centered dark rectangular front patch."
+    },
+    {
+      "id": "C16",
+      "name": "백승우",
+      "rank": "연대장",
+      "slug": "baek-seungwoo",
+      "reference": "C:/Github/StageGame/Docs/Design/assets/characters-20261015-v1/C16-baek-seungwoo-v1.png",
+      "capSpecification": "Olive officer peaked cap with a clearly shaped crown and dark short visor; THREE simple gold diamonds side by side on the centered dark rectangular front patch."
+    },
+    {
+      "id": "C17",
+      "name": "임재훈",
+      "rank": "부사단장",
+      "slug": "lim-jaehoon",
+      "reference": "C:/Github/StageGame/Docs/Design/assets/characters-20261015-v1/C17-lim-jaehoon-v1.png",
+      "capSpecification": "Olive senior officer peaked cap, dark short visor, restrained thin gold band, and ONE small bright gold five-point star centered on the front patch. No leaves, coat of arms or elaborate emblem."
+    },
+    {
+      "id": "C18",
+      "name": "윤정호",
+      "rank": "사단장",
+      "slug": "yoon-jeongho",
+      "reference": "C:/Github/StageGame/Docs/Design/assets/characters-20261015-v1/C18-yoon-jeongho-v1.png",
+      "capSpecification": "Olive senior officer peaked cap, dark short visor, restrained thin gold band, and TWO small bright gold five-point stars side by side centered on the front patch. No leaves, coat of arms or elaborate emblem."
+    }
+  ]
+}

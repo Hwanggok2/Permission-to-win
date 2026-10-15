@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-15",
+  "version": 22,
+  "status": "독립 배치 시안 / 실제 게임 미연결",
+  "preview": "preview-v22.html",
+  "base_preview": "preview-v21.html",
+  "art_changed": false,
+  "layout": {
+    "reference_resolution": [1080, 1920],
+    "visible_character_and_board_left_cqw": 8.5,
+    "head_top_and_title_background_bottom_cqw": 22.5,
+    "head_alignment_interpretation": "머리 윗선을 제목 배경의 아래 끝에 정렬. AI 패배 시 불꽃은 머리 위로 올라감.",
+    "rank_left_cqw": 44,
+    "rank_bottom_in_opponent_cqw": 3,
+    "text_background_alpha": 0.68,
+    "speech_board_actions_upward_shift_cqw": 5,
+    "speech_board_actions_upward_shift_at_1080_px": 54,
+    "sprite_visible_left_px_by_pose": [12, 8, 5],
+    "sprite_head_top_px_intro_playing": 273,
+    "sprite_alignment_alpha_threshold": 128
+  },
+  "validation": {
+    "fragment_bytes": 741815,
+    "embedded_images_match_v21": true,
+    "javascript_syntax": "valid",
+    "source_geometry_calculation": "head/title y=22.5cqw; visible left=8.5cqw for all three poses; controls bottom=172.5cqw within 177.7778cqw phone",
+    "browser_render": "not run",
+    "browser_interaction": "not run",
+    "unity_integration": "not run",
+    "build": "not run"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-15",
+  "version": 19,
+  "mode": "Built-in image_gen",
+  "status": "디자인 피드백 대기 / 실제 게임 미연결",
+  "background": "barracks-wide-deck-v19.png",
+  "display": "barracks-wide-deck-v19-preview.webp",
+  "preview": "preview-v19.html",
+  "reference": "barracks-long-v17.png",
+  "supersedes": "카메라가 돌아간 v18",
+  "changes": [
+    "기존 사선 카메라 복원",
+    "평상 앞쪽을 왼쪽으로 확장하여 침상 면적 확대",
+    "TV 수납장과 창문 왼쪽 이동",
+    "관물대 4개·슬리퍼 4켤레 유지",
+    "배경 최상단 표시 및 UI 안전 여백 유지"
+  ],
+  "validation": [
+    "생성 이미지 시각 확인.",
+    "WebP 내장 이미지 디코딩 및 독립 미리보기 JS 구문·고유 루트 검사 통과.",
+    "브라우저 렌더링/상호작용·Unity·실제 토스 SDK·기기 검증 미실행."
+  ],
+  "encoding": "원본 941×1672 PNG 보존. 동일 해상도의 WebP q85 표시 사본.",
+  "prompt": "Use case: precise-object-edit. The attached image is the CORRECT ORIGINAL CAMERA ANGLE. Make a strictly localized architectural edit. LOCK THE CAMERA: absolutely preserve this exact viewpoint, perspective, vanishing point, ceiling edges, wall corner lines, wall-floor junction, portrait 9:16 crop, and the four lockers' current screen positions, heights and relative sizes. DO NOT rotate the camera, do not flatten the diagonal into a frontal side-on view, do not redesign the room.\nONLY TWO CHANGES:\nA) The RIGHT wooden sleeping platform is much too NARROW and bench-like. Enlarge its USABLE TOP SURFACE WIDTH/DEPTH from the locker wall TOWARD THE LEFT / center aisle. Move the platform's FRONT EDGE substantially LEFT, about 2.5 TIMES the current front-to-back deck depth, leaving the rear edge and the four locker bases FIXED. This must become a broad Korean barracks sleeping deck (pyeongsang) wide enough for a full-size adult to lie with their head near a locker and feet toward the aisle, not a seat or shelf. Show a LARGE EMPTY WOODEN SLEEPING AREA in front of the lockers. Expand the near foreground deck to occupy most of the RIGHT HALF to roughly TWO THIRDS of the image, rather than just a narrow strip at the right edge. Farther deck portions expand proportionately toward the SAME original vanishing point. Keep the existing steep diagonal direction: same camera, simply shift its parallel front edge LEFT to widen the sleeping surface. The top face's wooden planks clearly reveal the extra depth. Extend the supporting front fascia/legs under the relocated front edge. Keep FOUR right-side lockers exactly in their old positions on the rear of the now-broader platform, existing bedding beside them. Keep exactly FOUR PAIRS of green slippers, repositioned on the room floor just beneath the NEW front platform edge, one pair per locker. No left platform, no left lockers, no left slippers.\nB) Translate the small one-sided-open WINDOW and TV-on-two-DRAWER-CABINET group to the LEFT on the back wall, as far left as needed to clear the expanded platform, while keeping the same sizes, heights and designs. Move them together only horizontally; no new window or TV, no camera change.\nAll other pixels/geometry should remain as close to the input as possible. Maintain coarse blocky low-resolution pixel style, muted olive/tan/wood colors, ceiling art to top edge, same portrait dimensions. No people/UI/gameboard/text. Primary success: a MUCH BROADER TOP SURFACE of the right sleeping platform at the SAME ORIGINAL DIAGONAL CAMERA ANGLE."
+}

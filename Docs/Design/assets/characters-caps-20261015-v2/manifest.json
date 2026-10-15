@@ -1,0 +1,954 @@
+{
+  "version": "caps-v2",
+  "date": "2026-10-15",
+  "status": "C06_DIRECTION_CORRECTED_USER_REVIEW_PENDING",
+  "tool": "built-in image_gen.imagegen",
+  "userRequest": "야 하사 약장이 반대로 되어있는데",
+  "promptSet": "Docs/Design/assets/characters-caps-20261015-v2/generation.json",
+  "statesPerSheet": [
+    "intro",
+    "thinking",
+    "ai_defeat"
+  ],
+  "runtimeIntegrated": true,
+  "verification": "Client/Evidence/pixel-art-20261015/verification.json",
+  "images": [
+    {
+      "id": "C06",
+      "file": "C06-choi-geonwoo-cap-v2.png",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-c3838e2f-91ed-4f0f-9ac1-fef985ff9090.png",
+      "name": "최건우",
+      "rank": "하사",
+      "path": "Docs/Design/assets/characters-caps-20261015-v2/C06-choi-geonwoo-cap-v2.png",
+      "reference": "Docs/Design/assets/characters-caps-20261015-v1/C06-choi-geonwoo-cap-v1.png",
+      "capSpecification": "One gold downward V chevron on each of the three cap front patches.",
+      "image": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGBA",
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "fullyTransparentPixels": 893839,
+        "partlyTransparentPixels": 679025,
+        "fullyOpaquePixels": 0,
+        "cells": [
+          {
+            "state": "intro",
+            "rect": [
+              0,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              14,
+              227,
+              511,
+              875
+            ]
+          },
+          {
+            "state": "thinking",
+            "rect": [
+              512,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              14,
+              227,
+              501,
+              875
+            ]
+          },
+          {
+            "state": "ai_defeat",
+            "rect": [
+              1024,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              4,
+              240,
+              500,
+              875
+            ]
+          }
+        ]
+      },
+      "sha256": "d6bafcb5bcdd9ce3987ea74fd4adebf09263df94787619e74bda8fcbed250dd4",
+      "bytes": 1267940,
+      "referenceSha256": "ee999b970e1850a8a618e2b832096f1bdd41536f636e59b74df92f194a18b197",
+      "badgeDescriptionKo": "금색 아래 방향 V 표식 1개 · 세 자세 모두 수정",
+      "version": "caps-v2",
+      "visualReview": "All three chevrons point downward; same character, three poses, cap and desk composition retained."
+    },
+    {
+      "id": "C07",
+      "file": "C07-han-yujin-cap-v1.png",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-1e55bc51-6948-4d8d-85df-e44f7bb9d6d2.png",
+      "name": "한유진",
+      "rank": "공군 중사",
+      "path": "Docs/Design/assets/characters-caps-20261015-v1/C07-han-yujin-cap-v1.png",
+      "reference": "Docs/Design/assets/characters-20261015-v1/C07-han-yujin-v1.png",
+      "capSpecification": "Muted BLUE-GRAY short-brim patrol cap matching his air-force colored uniform; dark rectangular front patch containing TWO simple gold chevrons. No wings or pilot emblem.",
+      "image": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGBA",
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "fullyTransparentPixels": 861035,
+        "partlyTransparentPixels": 711829,
+        "fullyOpaquePixels": 0,
+        "cells": [
+          {
+            "state": "intro",
+            "rect": [
+              0,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              10,
+              217,
+              511,
+              872
+            ]
+          },
+          {
+            "state": "thinking",
+            "rect": [
+              512,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              13,
+              227,
+              501,
+              872
+            ]
+          },
+          {
+            "state": "ai_defeat",
+            "rect": [
+              1024,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              4,
+              244,
+              504,
+              872
+            ]
+          }
+        ]
+      },
+      "sha256": "1bd47fdaf347a2816f0d8ea0bb46caa75d5e89e5fb2db020e3cec3e0247027f3",
+      "bytes": 1303457,
+      "referenceSha256": "07a4a17270891a9e5509469054ca8f5972f43ee85ae894cefdcc7511e9652875",
+      "badgeDescriptionKo": "금색 갈매기형 2개 · 회청색 군모"
+    },
+    {
+      "id": "C08",
+      "file": "C08-park-jeongmin-cap-v1.png",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-42c5b962-00e6-434c-8091-acc74c04351e.png",
+      "name": "박정민",
+      "rank": "상사",
+      "path": "Docs/Design/assets/characters-caps-20261015-v1/C08-park-jeongmin-cap-v1.png",
+      "reference": "Docs/Design/assets/characters-20261015-v1/C08-park-jeongmin-v1.png",
+      "capSpecification": "Olive short-brim patrol cap, dark rectangular front patch with THREE simple gold chevrons.",
+      "image": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGBA",
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "fullyTransparentPixels": 900773,
+        "partlyTransparentPixels": 672091,
+        "fullyOpaquePixels": 0,
+        "cells": [
+          {
+            "state": "intro",
+            "rect": [
+              0,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              5,
+              233,
+              510,
+              848
+            ]
+          },
+          {
+            "state": "thinking",
+            "rect": [
+              512,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              9,
+              236,
+              506,
+              848
+            ]
+          },
+          {
+            "state": "ai_defeat",
+            "rect": [
+              1024,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              5,
+              233,
+              507,
+              848
+            ]
+          }
+        ]
+      },
+      "sha256": "9cdd5f492377e54532294de971ce1a50f26618437570e3209007f7e76028741f",
+      "bytes": 1303029,
+      "referenceSha256": "a6080b177acf6d5ff5ad80073f49a018293155225fc7845a663668d62bb538b5",
+      "badgeDescriptionKo": "금색 갈매기형 3개"
+    },
+    {
+      "id": "C09",
+      "file": "C09-han-taesik-cap-v1.png",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-b58915e1-119f-4e6e-bd26-2d429266ecc5.png",
+      "name": "한태식",
+      "rank": "원사",
+      "path": "Docs/Design/assets/characters-caps-20261015-v1/C09-han-taesik-cap-v1.png",
+      "reference": "Docs/Design/assets/characters-20261015-v1/C09-han-taesik-v1.png",
+      "capSpecification": "Olive short-brim patrol cap, dark rectangular front patch with THREE gold chevrons and one small gold dot above them.",
+      "image": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGBA",
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "fullyTransparentPixels": 869990,
+        "partlyTransparentPixels": 702874,
+        "fullyOpaquePixels": 0,
+        "cells": [
+          {
+            "state": "intro",
+            "rect": [
+              0,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              5,
+              227,
+              506,
+              880
+            ]
+          },
+          {
+            "state": "thinking",
+            "rect": [
+              512,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              6,
+              227,
+              507,
+              880
+            ]
+          },
+          {
+            "state": "ai_defeat",
+            "rect": [
+              1024,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              7,
+              240,
+              508,
+              880
+            ]
+          }
+        ]
+      },
+      "sha256": "c1321ff9f3340b18c93c628a08869502edffe6186021b93db1d89b1b7532d530",
+      "bytes": 1299903,
+      "referenceSha256": "537565a6f73ccf32b2ae4b32a0ec35d689784cd58934c36ed8f801499b819442",
+      "badgeDescriptionKo": "금색 갈매기형 3개와 점"
+    },
+    {
+      "id": "C10",
+      "file": "C10-bae-seonghun-cap-v1.png",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-60dff86e-1c34-423c-9ebd-2090514ae360.png",
+      "name": "배성훈",
+      "rank": "준위",
+      "path": "Docs/Design/assets/characters-caps-20261015-v1/C10-bae-seonghun-cap-v1.png",
+      "reference": "Docs/Design/assets/characters-20261015-v1/C10-bae-seonghun-v1.png",
+      "capSpecification": "Olive short-brim patrol cap, dark rectangular front patch with ONE gold diamond lozenge.",
+      "image": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGBA",
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "fullyTransparentPixels": 899641,
+        "partlyTransparentPixels": 673223,
+        "fullyOpaquePixels": 0,
+        "cells": [
+          {
+            "state": "intro",
+            "rect": [
+              0,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              12,
+              217,
+              510,
+              850
+            ]
+          },
+          {
+            "state": "thinking",
+            "rect": [
+              512,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              8,
+              220,
+              506,
+              850
+            ]
+          },
+          {
+            "state": "ai_defeat",
+            "rect": [
+              1024,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              4,
+              218,
+              501,
+              850
+            ]
+          }
+        ]
+      },
+      "sha256": "c8583c1b50e36d24b2a7f8289a93cd75e430c0412e16a744c0346e7b32230f03",
+      "bytes": 1322109,
+      "referenceSha256": "417073385d0c3fe2fd19a81a5b1985b4276ccf2d8e6e368b44d8a3c40e9b1417",
+      "badgeDescriptionKo": "금색 마름모 1개"
+    },
+    {
+      "id": "C11",
+      "file": "C11-kim-junseo-cap-v1.png",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-46d73f03-ddc7-4050-8062-fee0a03851fb.png",
+      "name": "김준서",
+      "rank": "소위",
+      "path": "Docs/Design/assets/characters-caps-20261015-v1/C11-kim-junseo-cap-v1.png",
+      "reference": "Docs/Design/assets/characters-20261015-v1/C11-kim-junseo-v1.png",
+      "capSpecification": "Neat olive short-brim officer field cap, dark rectangular front patch with ONE simple bright silver vertical bar.",
+      "image": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGBA",
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "fullyTransparentPixels": 892479,
+        "partlyTransparentPixels": 680385,
+        "fullyOpaquePixels": 0,
+        "cells": [
+          {
+            "state": "intro",
+            "rect": [
+              0,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              14,
+              227,
+              511,
+              882
+            ]
+          },
+          {
+            "state": "thinking",
+            "rect": [
+              512,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              11,
+              232,
+              507,
+              882
+            ]
+          },
+          {
+            "state": "ai_defeat",
+            "rect": [
+              1024,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              6,
+              240,
+              499,
+              882
+            ]
+          }
+        ]
+      },
+      "sha256": "0468c842980ce1ef0e7e121fe7f4dd9b0dd7137959b7154f43f3dd8257990819",
+      "bytes": 1288467,
+      "referenceSha256": "c4e87731c510e793468d9ccfaad04fab65217ce736fdfba80ca5afdf5b7c36e7",
+      "badgeDescriptionKo": "은색 막대 1개"
+    },
+    {
+      "id": "C12",
+      "file": "C12-seo-jihoon-cap-v1.png",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-16ac57fa-6c39-4d20-967a-aaa12a4d371e.png",
+      "name": "서지훈",
+      "rank": "소대장",
+      "path": "Docs/Design/assets/characters-caps-20261015-v1/C12-seo-jihoon-cap-v1.png",
+      "reference": "Docs/Design/assets/characters-20261015-v1/C12-seo-jihoon-v1.png",
+      "capSpecification": "Neat olive short-brim officer field cap, dark rectangular front patch with TWO bright silver vertical bars.",
+      "image": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGBA",
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "fullyTransparentPixels": 873247,
+        "partlyTransparentPixels": 699617,
+        "fullyOpaquePixels": 0,
+        "cells": [
+          {
+            "state": "intro",
+            "rect": [
+              0,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              14,
+              225,
+              507,
+              872
+            ]
+          },
+          {
+            "state": "thinking",
+            "rect": [
+              512,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              10,
+              225,
+              504,
+              872
+            ]
+          },
+          {
+            "state": "ai_defeat",
+            "rect": [
+              1024,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              6,
+              225,
+              500,
+              872
+            ]
+          }
+        ]
+      },
+      "sha256": "f6d20806fce63ddf4675aa22ddf386a434c7918872e08661bebc13659d8dee5f",
+      "bytes": 1333738,
+      "referenceSha256": "3497121f901689052d8714a239ab86f456958e55cb45e1ea1a76f566b72a67d6",
+      "badgeDescriptionKo": "은색 막대 2개"
+    },
+    {
+      "id": "C13",
+      "file": "C13-jang-taeo-cap-v1.png",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-fa34f312-580f-4f13-9d82-df631fa85778.png",
+      "name": "장태오",
+      "rank": "중대장",
+      "path": "Docs/Design/assets/characters-caps-20261015-v1/C13-jang-taeo-cap-v1.png",
+      "reference": "Docs/Design/assets/characters-20261015-v1/C13-jang-taeo-v1.png",
+      "capSpecification": "Neat olive short-brim officer field cap, dark rectangular front patch with THREE bright silver vertical bars.",
+      "image": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGBA",
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "fullyTransparentPixels": 871553,
+        "partlyTransparentPixels": 701311,
+        "fullyOpaquePixels": 0,
+        "cells": [
+          {
+            "state": "intro",
+            "rect": [
+              0,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              15,
+              224,
+              508,
+              882
+            ]
+          },
+          {
+            "state": "thinking",
+            "rect": [
+              512,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              10,
+              225,
+              503,
+              882
+            ]
+          },
+          {
+            "state": "ai_defeat",
+            "rect": [
+              1024,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              5,
+              215,
+              498,
+              882
+            ]
+          }
+        ]
+      },
+      "sha256": "bb19bac12737257ca747ebfdca3b990ecd043193d5d719bb90f41250364333fa",
+      "bytes": 1330903,
+      "referenceSha256": "07f6968293cb647f138a73ab43abe4e37e13f204cd1b5c5f6d07eb7ef95068cc",
+      "badgeDescriptionKo": "은색 막대 3개"
+    },
+    {
+      "id": "C14",
+      "file": "C14-seo-ganghyeon-cap-v1.png",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-79c4e1b1-b147-4c77-b0c3-74bca7d11753.png",
+      "name": "서강현",
+      "rank": "작전참모",
+      "path": "Docs/Design/assets/characters-caps-20261015-v1/C14-seo-ganghyeon-cap-v1.png",
+      "reference": "Docs/Design/assets/characters-20261015-v1/C14-seo-ganghyeon-v1.png",
+      "capSpecification": "Olive officer peaked cap with a clearly shaped crown and dark short visor; ONE simple gold diamond on the centered dark rectangular front patch.",
+      "image": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGBA",
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "fullyTransparentPixels": 913289,
+        "partlyTransparentPixels": 659575,
+        "fullyOpaquePixels": 0,
+        "cells": [
+          {
+            "state": "intro",
+            "rect": [
+              0,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              15,
+              199,
+              510,
+              854
+            ]
+          },
+          {
+            "state": "thinking",
+            "rect": [
+              512,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              11,
+              199,
+              503,
+              854
+            ]
+          },
+          {
+            "state": "ai_defeat",
+            "rect": [
+              1024,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              4,
+              199,
+              497,
+              854
+            ]
+          }
+        ]
+      },
+      "sha256": "7b43f09853b8e5131a6c9d329cff5ba38a2c2cce1033e133a4b6c713a7c2f929",
+      "bytes": 1298967,
+      "referenceSha256": "1fa71ddc7dc735c4f944ed938a3799afe405afdd907d7042dac38c11c7fd2c4a",
+      "badgeDescriptionKo": "금색 마름모 1개 · 정모"
+    },
+    {
+      "id": "C15",
+      "file": "C15-lee-dohyeon-cap-v1.png",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-1178d059-91ae-44e8-93c7-7581d5074742.png",
+      "name": "이도현",
+      "rank": "대대장",
+      "path": "Docs/Design/assets/characters-caps-20261015-v1/C15-lee-dohyeon-cap-v1.png",
+      "reference": "Docs/Design/assets/characters-20261015-v1/C15-lee-dohyeon-v1.png",
+      "capSpecification": "Olive officer peaked cap with a clearly shaped crown and dark short visor; TWO simple gold diamonds side by side on the centered dark rectangular front patch.",
+      "image": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGBA",
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "fullyTransparentPixels": 850918,
+        "partlyTransparentPixels": 721946,
+        "fullyOpaquePixels": 0,
+        "cells": [
+          {
+            "state": "intro",
+            "rect": [
+              0,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              7,
+              196,
+              512,
+              847
+            ]
+          },
+          {
+            "state": "thinking",
+            "rect": [
+              512,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              0,
+              196,
+              511,
+              847
+            ]
+          },
+          {
+            "state": "ai_defeat",
+            "rect": [
+              1024,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              6,
+              196,
+              505,
+              847
+            ]
+          }
+        ]
+      },
+      "sha256": "acc9d6849281864f98df3310f36b22da3ff8837ee015d3e9d3f8a08be6b95931",
+      "bytes": 1303694,
+      "referenceSha256": "9f9f74b0b1a56ba1b98dc42ea002b3df238ccf4e8699d44122930f3a131a4bf0",
+      "badgeDescriptionKo": "금색 마름모 2개 · 정모"
+    },
+    {
+      "id": "C16",
+      "file": "C16-baek-seungwoo-cap-v1.png",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-f14e5068-cac4-4e16-b62c-cd861f2940bf.png",
+      "name": "백승우",
+      "rank": "연대장",
+      "path": "Docs/Design/assets/characters-caps-20261015-v1/C16-baek-seungwoo-cap-v1.png",
+      "reference": "Docs/Design/assets/characters-20261015-v1/C16-baek-seungwoo-v1.png",
+      "capSpecification": "Olive officer peaked cap with a clearly shaped crown and dark short visor; THREE simple gold diamonds side by side on the centered dark rectangular front patch.",
+      "image": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGBA",
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "fullyTransparentPixels": 900131,
+        "partlyTransparentPixels": 672733,
+        "fullyOpaquePixels": 0,
+        "cells": [
+          {
+            "state": "intro",
+            "rect": [
+              0,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              12,
+              202,
+              511,
+              851
+            ]
+          },
+          {
+            "state": "thinking",
+            "rect": [
+              512,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              10,
+              202,
+              506,
+              851
+            ]
+          },
+          {
+            "state": "ai_defeat",
+            "rect": [
+              1024,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              5,
+              202,
+              501,
+              851
+            ]
+          }
+        ]
+      },
+      "sha256": "dd9323340be5e03246e7c25cc9d8feabc01591e5e6a980b504e669b7b79df364",
+      "bytes": 1309911,
+      "referenceSha256": "6c07c57417b4146bfe2ad06656f4238b054a4f7681e144c0ceecdbc19031209f",
+      "badgeDescriptionKo": "금색 마름모 3개 · 정모"
+    },
+    {
+      "id": "C17",
+      "file": "C17-lim-jaehoon-cap-v1.png",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-1df08c4a-a243-4317-b812-223e48775cd7.png",
+      "name": "임재훈",
+      "rank": "부사단장",
+      "path": "Docs/Design/assets/characters-caps-20261015-v1/C17-lim-jaehoon-cap-v1.png",
+      "reference": "Docs/Design/assets/characters-20261015-v1/C17-lim-jaehoon-v1.png",
+      "capSpecification": "Olive senior officer peaked cap, dark short visor, restrained thin gold band, and ONE small bright gold five-point star centered on the front patch. No leaves, coat of arms or elaborate emblem.",
+      "image": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGBA",
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "fullyTransparentPixels": 893491,
+        "partlyTransparentPixels": 679373,
+        "fullyOpaquePixels": 0,
+        "cells": [
+          {
+            "state": "intro",
+            "rect": [
+              0,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              14,
+              215,
+              506,
+              855
+            ]
+          },
+          {
+            "state": "thinking",
+            "rect": [
+              512,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              12,
+              215,
+              503,
+              855
+            ]
+          },
+          {
+            "state": "ai_defeat",
+            "rect": [
+              1024,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              9,
+              213,
+              499,
+              855
+            ]
+          }
+        ]
+      },
+      "sha256": "9372a2194b135fc961bd4a54abe51b515e237502c9eb655346bfca416fcd0487",
+      "bytes": 1326293,
+      "referenceSha256": "a7095325b1ba0aa7879b8be0ea8fa3470a82379a5ebf07e08a68f2d7699f2e95",
+      "badgeDescriptionKo": "금색 별 1개 · 금색 띠 정모"
+    },
+    {
+      "id": "C18",
+      "file": "C18-yoon-jeongho-cap-v1.png",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-8eb31323-74fa-431e-b919-20a36320508f.png",
+      "name": "윤정호",
+      "rank": "사단장",
+      "path": "Docs/Design/assets/characters-caps-20261015-v1/C18-yoon-jeongho-cap-v1.png",
+      "reference": "Docs/Design/assets/characters-20261015-v1/C18-yoon-jeongho-v1.png",
+      "capSpecification": "Olive senior officer peaked cap, dark short visor, restrained thin gold band, and TWO small bright gold five-point stars side by side centered on the front patch. No leaves, coat of arms or elaborate emblem.",
+      "image": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGBA",
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "fullyTransparentPixels": 851389,
+        "partlyTransparentPixels": 721475,
+        "fullyOpaquePixels": 0,
+        "cells": [
+          {
+            "state": "intro",
+            "rect": [
+              0,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              6,
+              200,
+              509,
+              881
+            ]
+          },
+          {
+            "state": "thinking",
+            "rect": [
+              512,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              7,
+              200,
+              507,
+              881
+            ]
+          },
+          {
+            "state": "ai_defeat",
+            "rect": [
+              1024,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              4,
+              200,
+              507,
+              881
+            ]
+          }
+        ]
+      },
+      "sha256": "94aa879d7065df959af7441c59ea6cf195323a2d70bd7368cae53519bf219ad6",
+      "bytes": 1368503,
+      "referenceSha256": "c069ea7bfa849a6159f06f0b11dc79982276dec87e3f795d2145b705b37acfd0",
+      "badgeDescriptionKo": "금색 별 2개 · 금색 띠 정모"
+    }
+  ],
+  "validation": {
+    "sourceCopyBytesMatch": true,
+    "originalReferencesUnchanged": true,
+    "dimensionsAndAlphaChecked": 13,
+    "populatedStateCells": 39,
+    "visualReview": "All 13 generated sheets inspected in image tool output. Three poses, retained face and gesture identity, visible caps and per-character badge counts reviewed.",
+    "runtimeImportAndPlacementTested": false,
+    "pixelsEditedByScript": false
+  },
+  "artDirection": "Stylized geometric cap-front decorations. These are fictional game art, not a verified depiction of official military insignia.",
+  "previousPromptSet": "Docs/Design/assets/characters-caps-20261015-v1/prompts.json",
+  "change": "C06 only: upward chevron corrected to downward V in all three states. C07-C18 unchanged."
+}

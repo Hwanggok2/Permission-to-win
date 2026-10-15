@@ -1,0 +1,105 @@
+{
+  "status": "C13_C16_SMALL_RANK_COUNTS_PENDING",
+  "images": [
+    {
+      "id": "C01",
+      "key": "uniform-C01",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-6797b14c-75a4-4163-89c1-c88684018cc5.png"
+    },
+    {
+      "id": "C01Final",
+      "key": "uniform-C01Final",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-0bfdaeb3-02b1-4e51-bb12-b97a46a5ca28.png"
+    },
+    {
+      "id": "C02",
+      "key": "uniform-C02",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-63667fca-3273-4bcf-8fe9-80a56ba2a670.png"
+    },
+    {
+      "id": "C03",
+      "key": "uniform-C03",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-9c8a1026-eb70-4b5c-be2e-303668f68d81.png"
+    },
+    {
+      "id": "C04",
+      "key": "uniform-C04",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-44d2c1e2-1979-4383-8631-5b992bf13378.png"
+    },
+    {
+      "id": "C05",
+      "key": "composite-C05",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-e3f499e4-a420-4349-bc4f-4f62157d71e7.png"
+    },
+    {
+      "id": "C06",
+      "key": "final-C06",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-73aca940-6fc5-4295-9599-412a459bca04.png"
+    },
+    {
+      "id": "C07",
+      "key": "final-C07",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-c34af55b-9ebf-448c-b775-58c183e2a158.png"
+    },
+    {
+      "id": "C08",
+      "key": "final-C08",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-b9526397-9017-47ee-b8b8-1459fa14bbb3.png"
+    },
+    {
+      "id": "C09",
+      "key": "final-C09",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-6931fb2c-7574-4c25-b8e6-3c7fb5229071.png"
+    },
+    {
+      "id": "C10",
+      "key": "final-C10",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-c21876d8-6a4c-406a-9c2e-53499bc708ec.png"
+    },
+    {
+      "id": "C11",
+      "key": "final-C11",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-53d4d945-d4db-4b0d-a552-de13d57a9d04.png"
+    },
+    {
+      "id": "C12",
+      "key": "alpha-C12",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-10e5a3e9-711a-400c-aedf-3ce125e4d6f5.png"
+    },
+    {
+      "id": "C13",
+      "key": "alpha-C13",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-433d81cf-44fe-4392-b4ea-4fff0e41b327.png"
+    },
+    {
+      "id": "C14",
+      "key": "final-C14",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-0e58d26a-691d-4448-98f3-9c9f17e3db7d.png"
+    },
+    {
+      "id": "C15",
+      "key": "final-C15",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-02927a5f-157a-4360-bb3b-28b7adaf7b1b.png"
+    },
+    {
+      "id": "C16",
+      "key": "alpha-C16",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-3f69c4f8-315f-4a2d-ab14-f5ef6b156422.png"
+    },
+    {
+      "id": "C17",
+      "key": "final-C17",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-23cbc51e-6ba8-41a3-a55f-da9df5f59497.png"
+    },
+    {
+      "id": "C18",
+      "key": "final-C18",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-b39c505d-4ad8-4e8c-9410-696201469fa2.png"
+    },
+    {
+      "id": "C19",
+      "key": "alpha-C19",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-ff6a8a5f-056a-40b2-a92c-1cee72f209aa.png"
+    }
+  ]
+}

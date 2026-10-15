@@ -1,0 +1,18 @@
+[
+  {
+    "id": "C02",
+    "reason": "Remove second stripe from private defeat pose; retain the single stripe on the pocket patch.",
+    "source": "Docs/Design/assets/characters-pixel-20261015-v6/generated/C02-pixel-generated.png",
+    "target": "Docs/Design/assets/characters-pixel-20261015-v6/C02-pixel-v6.png",
+    "beforeSha256": "f745841ee7f5200e1409d39efbd05d007ac2343ed30b515e439339f523ea1ea4",
+    "afterSha256": "0f6c78e8340bf0195479127e44474eda2f95c48e7c3e3c06d94b4a86aeed05a2",
+    "allowedBox": [
+      1326,
+      679,
+      1372,
+      695
+    ],
+    "expectedStripes": 1,
+    "authorization": "User authorized direct pixel corrections on 2026-10-15."
+  }
+]

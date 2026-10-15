@@ -1,0 +1,62 @@
+{
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "type": "text/html",
+      "encoding": "",
+      "length": ""
+    },
+    {
+      "path": "/host-layout.js",
+      "status": 200,
+      "type": "application/javascript",
+      "encoding": "",
+      "length": ""
+    },
+    {
+      "path": "/Build/WebGL.wasm",
+      "status": 200,
+      "type": "application/wasm",
+      "encoding": "",
+      "length": ""
+    },
+    {
+      "path": "/Build/WebGL.data",
+      "status": 200,
+      "type": "application/octet-stream",
+      "encoding": "",
+      "length": ""
+    },
+    {
+      "path": "/StreamingAssets/Notices/Easy-Lemon-Attribution.txt",
+      "status": 200,
+      "type": "text/plain",
+      "encoding": "",
+      "length": ""
+    },
+    {
+      "path": "/.env",
+      "status": 404,
+      "type": "text/html; charset=utf-8",
+      "encoding": "",
+      "length": ""
+    },
+    {
+      "path": "/Docs/Management/CONTRACT.md",
+      "status": 404,
+      "type": "text/html; charset=utf-8",
+      "encoding": "",
+      "length": ""
+    },
+    {
+      "path": "/Build/",
+      "status": 404,
+      "type": "text/html; charset=utf-8",
+      "encoding": "",
+      "length": ""
+    }
+  ],
+  "publicHostLayoutMatches": true,
+  "atUtc": "2026-10-15T16:35:29.6635671Z"
+}

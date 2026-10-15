@@ -1,0 +1,46 @@
+{
+  "as_of": "2026-10-15",
+  "status": "planning_scenarios_not_measured_forecast",
+  "platform": "Apps in Toss",
+  "currency": "KRW",
+  "month_days": 30,
+  "price_vat_inclusive": 3900,
+  "vat_rate": 0.1,
+  "iap_market_fee_of_supply": 0.15,
+  "iap_toss_fee_of_consumer_price": 0.05,
+  "refund_reserve": 0.03,
+  "average_ad_free_share_of_daily_active_users": 0.02,
+  "planning_ad_toss_fee": 0.15,
+  "promo_ad_toss_fee": 0,
+  "ecpm_basis": "after_mediation_before_toss_fee_excluding_vat_assumed_not_observed",
+  "exposure_basis": "actual_impressions_per_nonpaying_active_user_day_after_eligibility_and_no_fill",
+  "new_users_to_dau_ratio_for_comparison_only": 5,
+  "formats": ["interstitial", "rewarded", "banner"],
+  "scenarios": {
+    "low": {"exposures": [0.8, 0.1, 2], "ecpm": [3000, 6000, 200], "first_purchase_conversion": 0.003},
+    "base": {"exposures": [2, 0.3, 4], "ecpm": [6000, 10000, 500], "first_purchase_conversion": 0.01},
+    "high": {"exposures": [3, 0.6, 6], "ecpm": [10000, 16000, 800], "first_purchase_conversion": 0.02}
+  },
+  "scale_dau": [100, 1000, 5000, 10000],
+  "targets": [
+    {"phase": "first_30_days_after_launch", "monthly_revenue_goal": 100000, "average_dau": 200, "monthly_new_users": 1000},
+    {"phase": "months_2_to_3_after_launch", "monthly_revenue_goal": 1000000, "average_dau": 1800, "monthly_new_users": 9000},
+    {"phase": "growth_stretch_no_fixed_deadline", "monthly_revenue_goal": 3000000, "average_dau": 5400, "monthly_new_users": 27000}
+  ],
+  "excluded": ["income_tax", "labor", "user_acquisition_spend", "other_operating_costs"],
+  "server_cost_assumption": "0_only_within_verified_free_plan_limits",
+  "formulas": {
+    "iap_unit": "(price/(1+vat)*(1-market_fee)-price*toss_iap_fee)*(1-refund_reserve)",
+    "ads": "dau*days*(1-ad_free_share)*sum(exposures[i]*ecpm[i]/1000)*(1-toss_ad_fee)",
+    "iap": "monthly_new_users*first_purchase_conversion*iap_unit",
+    "total": "ads+iap"
+  },
+  "sources": [
+    "https://developers-apps-in-toss.toss.im/guide/monetization/in-app-ad",
+    "https://developers-apps-in-toss.toss.im/guide/monetization/in-app-payment",
+    "https://developers-apps-in-toss.toss.im/guide/settlement",
+    "https://techchat-apps-in-toss.toss.im/t/topic/3985",
+    "https://developers.cloudflare.com/workers/platform/pricing/",
+    "https://developers.cloudflare.com/d1/platform/pricing/"
+  ]
+}

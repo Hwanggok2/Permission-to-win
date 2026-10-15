@@ -1,0 +1,20 @@
+[
+  {
+    "id": "C05",
+    "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-650ed13a-682d-45a4-adc5-708f9a5092d3.png",
+    "reference": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-43f802c8-29b2-4b78-8718-414f85af58ec.png",
+    "prompt": "Use case: compositing. IMAGE1 is character atlas to EDIT. IMAGE2 is CORRECT INSIGNIA PATTERN to insert. Apply image2's complete symbol pattern onto image1's uniform. Replace ALL THREE chest rank patches BELOW viewer-right pocket flap with image2's FOUR horizontal bars. Use the exact FOUR-bar pattern from image2, including all four stripes and all three gaps. Shrink the whole pattern to fit, not remove any stripe. Raise patch slightly or thin bars so all four are above forearm. No shoulder rank. Preserve character identity, hair length, poses, face expressions, cap ranks, sleeve flag, table, all silhouettes and three512pxcells. Render inserted insignia in same chunky pixel style as image1, not realistic texture. Exact1536x1024 transparentPNG. No labels."
+  },
+  {
+    "id": "C13",
+    "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-dbc85433-c039-4e07-9119-be7f5bfb97d4.png",
+    "reference": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-9e706245-0f26-4e97-bb5c-bdff69fcb018.png",
+    "prompt": "Use case: compositing. IMAGE1 is character atlas to EDIT. IMAGE2 is CORRECT INSIGNIA PATTERN to insert. Apply image2's complete symbol pattern onto image1's uniform. Replace ALL SIX shoulder rank patterns with image2's THREE horizontally elongated diamonds. Scale the entire3diamond row to fit the long horizontal shoulder strap; rotate row along slope. Preserve green outerband and neck button. No collar insignia. Preserve character identity, hair length, poses, face expressions, cap ranks, sleeve flag, table, all silhouettes and three512pxcells. Render inserted insignia in same chunky pixel style as image1, not realistic texture. Exact1536x1024 transparentPNG. No labels."
+  },
+  {
+    "id": "C16",
+    "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-99f586f0-8f8a-4b80-8c59-cad7ede484ee.png",
+    "reference": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-62d2d3c0-f2ce-4950-85e8-45d28489ba7a.png",
+    "prompt": "Use case: compositing. IMAGE1 is character atlas to EDIT. IMAGE2 is CORRECT INSIGNIA PATTERN to insert. Apply image2's complete symbol pattern onto image1's uniform. Replace ALL SIX shoulder rank patterns with image2's THREE five-petal flower rosettes. Scale the entire3flower row to fit long horizontal shoulder strap; rotate row along shoulder slope. Preserve green outerband and neckbutton. No collar insignia. Preserve character identity, hair length, poses, face expressions, cap ranks, sleeve flag, table, all silhouettes and three512pxcells. Render inserted insignia in same chunky pixel style as image1, not realistic texture. Exact1536x1024 transparentPNG. No labels."
+  }
+]

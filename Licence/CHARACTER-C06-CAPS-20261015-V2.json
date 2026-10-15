@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-15",
+  "status": "AI_GENERATED_C06_CHEVRON_CORRECTION",
+  "tool": "built-in image_gen.imagegen",
+  "basis": "User requested correction of the reversed C06 cap chevron. Existing project C06 cap sheet was the sole edit target; no external image references.",
+  "promptSet": "Docs/Design/assets/characters-caps-20261015-v2/generation.json",
+  "manifest": "Docs/Design/assets/characters-caps-20261015-v2/manifest.json",
+  "runtimeIntegrated": true,
+  "verification": "Client/Evidence/pixel-art-20261015/verification.json",
+  "images": [
+    {
+      "id": "C06",
+      "file": "C06-choi-geonwoo-cap-v2.png",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-c3838e2f-91ed-4f0f-9ac1-fef985ff9090.png",
+      "name": "최건우",
+      "rank": "하사",
+      "path": "Docs/Design/assets/characters-caps-20261015-v2/C06-choi-geonwoo-cap-v2.png",
+      "reference": "Docs/Design/assets/characters-caps-20261015-v1/C06-choi-geonwoo-cap-v1.png",
+      "capSpecification": "One gold downward V chevron on each of the three cap front patches.",
+      "image": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGBA",
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "fullyTransparentPixels": 893839,
+        "partlyTransparentPixels": 679025,
+        "fullyOpaquePixels": 0,
+        "cells": [
+          {
+            "state": "intro",
+            "rect": [
+              0,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              14,
+              227,
+              511,
+              875
+            ]
+          },
+          {
+            "state": "thinking",
+            "rect": [
+              512,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              14,
+              227,
+              501,
+              875
+            ]
+          },
+          {
+            "state": "ai_defeat",
+            "rect": [
+              1024,
+              0,
+              512,
+              1024
+            ],
+            "alpha128BoundsLocal": [
+              4,
+              240,
+              500,
+              875
+            ]
+          }
+        ]
+      },
+      "sha256": "d6bafcb5bcdd9ce3987ea74fd4adebf09263df94787619e74bda8fcbed250dd4",
+      "bytes": 1267940,
+      "referenceSha256": "ee999b970e1850a8a618e2b832096f1bdd41536f636e59b74df92f194a18b197",
+      "badgeDescriptionKo": "금색 아래 방향 V 표식 1개 · 세 자세 모두 수정",
+      "version": "caps-v2",
+      "visualReview": "All three chevrons point downward; same character, three poses, cap and desk composition retained."
+    }
+  ]
+}

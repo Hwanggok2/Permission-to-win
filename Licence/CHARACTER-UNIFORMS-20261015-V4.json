@@ -1,0 +1,174 @@
+{
+  "date": "2026-10-15",
+  "tool": "built-in image_gen.imagegen",
+  "status": "UNITY_APPLIED_EDITOR_VERIFIED_WITH_ART_DETAIL_FOLLOWUP",
+  "states": 60,
+  "originalAssetsPreserved": true,
+  "images": [
+    {
+      "id": "C01",
+      "key": "uniform-C01",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-6797b14c-75a4-4163-89c1-c88684018cc5.png",
+      "path": "Docs/Design/assets/characters-uniform-20261015-v4/C01-uniform-v4.png",
+      "sha256": "6f5e403375e158310f8d6f29c78ebf1e5fd5f9ea8015747385dfe4b62cac58b6"
+    },
+    {
+      "id": "C01Final",
+      "key": "uniform-C01Final",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-0bfdaeb3-02b1-4e51-bb12-b97a46a5ca28.png",
+      "path": "Docs/Design/assets/characters-uniform-20261015-v4/C01Final-uniform-v4.png",
+      "sha256": "291cd6ca2490e25cb0b253b62100d564e57d0dca820c2d74a288e97aa3f5eedc"
+    },
+    {
+      "id": "C02",
+      "key": "uniform-C02",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-63667fca-3273-4bcf-8fe9-80a56ba2a670.png",
+      "path": "Docs/Design/assets/characters-uniform-20261015-v4/C02-uniform-v4.png",
+      "sha256": "05b4d7544ddcd8b36976f13ec8a63ab478ed79c9b5404256c1c5160168491010"
+    },
+    {
+      "id": "C03",
+      "key": "uniform-C03",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-9c8a1026-eb70-4b5c-be2e-303668f68d81.png",
+      "path": "Docs/Design/assets/characters-uniform-20261015-v4/C03-uniform-v4.png",
+      "sha256": "95d67a9b5d7e68afaf9f4a1e6b7671df9d6b053fc659ac50cfe863a915bd9b7c"
+    },
+    {
+      "id": "C04",
+      "key": "uniform-C04",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-44d2c1e2-1979-4383-8631-5b992bf13378.png",
+      "path": "Docs/Design/assets/characters-uniform-20261015-v4/C04-uniform-v4.png",
+      "sha256": "3e2b3388334104977176814b51bd7c99f814456273eb63dd5e567cbdb5b19f5a"
+    },
+    {
+      "id": "C05",
+      "key": "composite-C05",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-e3f499e4-a420-4349-bc4f-4f62157d71e7.png",
+      "path": "Docs/Design/assets/characters-uniform-20261015-v4/C05-uniform-v4.png",
+      "sha256": "eb62a77a249414a94277eb3970a761a0c62e06479ae45a0c1cc3e7ab7e300ffb"
+    },
+    {
+      "id": "C06",
+      "key": "final-C06",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-73aca940-6fc5-4295-9599-412a459bca04.png",
+      "path": "Docs/Design/assets/characters-uniform-20261015-v4/C06-uniform-v4.png",
+      "sha256": "6eab0cf8c3a890331c024413087c9c6a664e0cb7b537672b33aaf1439eb1b703"
+    },
+    {
+      "id": "C07",
+      "key": "final-C07",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-c34af55b-9ebf-448c-b775-58c183e2a158.png",
+      "path": "Docs/Design/assets/characters-uniform-20261015-v4/C07-uniform-v4.png",
+      "sha256": "49bf6ff5fa9b5f58566abe0fee8d8b9f554b8eb73ad19023619c177eed3b2fd4"
+    },
+    {
+      "id": "C08",
+      "key": "final-C08",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-b9526397-9017-47ee-b8b8-1459fa14bbb3.png",
+      "path": "Docs/Design/assets/characters-uniform-20261015-v4/C08-uniform-v4.png",
+      "sha256": "b6313bd0e980e59af1cbc568c10b6da695594b461af5a9e7fd68bb1933673d4c"
+    },
+    {
+      "id": "C09",
+      "key": "final-C09",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-6931fb2c-7574-4c25-b8e6-3c7fb5229071.png",
+      "path": "Docs/Design/assets/characters-uniform-20261015-v4/C09-uniform-v4.png",
+      "sha256": "aabaf752c3e15a9ee3169e283e992762b57b3fa5b0257e8f3f8531fa0356f155"
+    },
+    {
+      "id": "C10",
+      "key": "final-C10",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-c21876d8-6a4c-406a-9c2e-53499bc708ec.png",
+      "path": "Docs/Design/assets/characters-uniform-20261015-v4/C10-uniform-v4.png",
+      "sha256": "fa239b393e18e678865fe9f28aa448e410d5be45e80b1c7ec739d2ec3435d4d4"
+    },
+    {
+      "id": "C11",
+      "key": "final-C11",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-53d4d945-d4db-4b0d-a552-de13d57a9d04.png",
+      "path": "Docs/Design/assets/characters-uniform-20261015-v4/C11-uniform-v4.png",
+      "sha256": "4892ab7a05f7d2f141cfbd2c32c23f8ef1bb3a4384ad690f17c7ff4b69586992"
+    },
+    {
+      "id": "C12",
+      "key": "alpha-C12",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-10e5a3e9-711a-400c-aedf-3ce125e4d6f5.png",
+      "path": "Docs/Design/assets/characters-uniform-20261015-v4/C12-uniform-v4.png",
+      "sha256": "1bb2a2db834a877175338ff99990c458da1a344cc2207e50399ac5e81e37a3bd"
+    },
+    {
+      "id": "C13",
+      "key": "alpha-C13",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-433d81cf-44fe-4392-b4ea-4fff0e41b327.png",
+      "path": "Docs/Design/assets/characters-uniform-20261015-v4/C13-uniform-v4.png",
+      "sha256": "ef066413511e8eb8cfea9f6bc80c7745b7ae150f37ee9d43244d9d816d8e05ef"
+    },
+    {
+      "id": "C14",
+      "key": "final-C14",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-0e58d26a-691d-4448-98f3-9c9f17e3db7d.png",
+      "path": "Docs/Design/assets/characters-uniform-20261015-v4/C14-uniform-v4.png",
+      "sha256": "5a9a52f1416d4be315e1852a38719a125cd10276ae61560cdc40a12cefd56bca"
+    },
+    {
+      "id": "C15",
+      "key": "final-C15",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-02927a5f-157a-4360-bb3b-28b7adaf7b1b.png",
+      "path": "Docs/Design/assets/characters-uniform-20261015-v4/C15-uniform-v4.png",
+      "sha256": "555cfa15c156f76c8f221f2b20a6392f95c203a333675c6004fc05d14c4080bb"
+    },
+    {
+      "id": "C16",
+      "key": "alpha-C16",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-3f69c4f8-315f-4a2d-ab14-f5ef6b156422.png",
+      "path": "Docs/Design/assets/characters-uniform-20261015-v4/C16-uniform-v4.png",
+      "sha256": "150028f17e53c18056e21f6d972c341bff01197dd916929571a866ab8c8292e5"
+    },
+    {
+      "id": "C17",
+      "key": "final-C17",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-23cbc51e-6ba8-41a3-a55f-da9df5f59497.png",
+      "path": "Docs/Design/assets/characters-uniform-20261015-v4/C17-uniform-v4.png",
+      "sha256": "3dfa0f92a22be1c413378acee470b64d7cb99726a1188a720482c4290d6e312c"
+    },
+    {
+      "id": "C18",
+      "key": "final-C18",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-b39c505d-4ad8-4e8c-9410-696201469fa2.png",
+      "path": "Docs/Design/assets/characters-uniform-20261015-v4/C18-uniform-v4.png",
+      "sha256": "96661a4284ae5070499275287ae6f179eac89be4f0ca1ba2b35d6e69c5c5594a"
+    },
+    {
+      "id": "C19",
+      "key": "alpha-C19",
+      "source": "C:/Users/JW/.codex/generated_images/01a138da-e723-7570-a66d-6592be4575f1/exec-ff6a8a5f-056a-40b2-a92c-1cee72f209aa.png",
+      "path": "Docs/Design/assets/characters-uniform-20261015-v4/C19-uniform-v4.png",
+      "sha256": "1a1e42ef2c3ab2e975099c8368465e7d6618c19fb8743ab48fb11023a8fa9bb2"
+    }
+  ],
+  "promptSets": [
+    "Docs/Design/assets/characters-personality-20261015-v2/prompts.json",
+    "Docs/Design/assets/characters-uniform-20261015-v3/prompts-part1.json",
+    "Docs/Design/assets/characters-uniform-20261015-v3/prompts-part2.json",
+    "Docs/Design/assets/characters-uniform-20261015-v3/shoulder-pilot-prompt.json",
+    "Docs/Design/assets/characters-uniform-20261015-v4/alpha-correction-prompts.json",
+    "Docs/Design/assets/characters-uniform-20261015-v4/badge-reference-prompts.json",
+    "Docs/Design/assets/characters-uniform-20261015-v4/count-corrections.json",
+    "Docs/Design/assets/characters-uniform-20261015-v4/insignia-composite-prompts.json",
+    "Docs/Design/assets/characters-uniform-20261015-v4/local-corrections.json",
+    "Docs/Design/assets/characters-uniform-20261015-v4/prompts.json"
+  ],
+  "research": [
+    "https://www.law.go.kr/LSW/flDownload.do?bylClsCd=110204&flSeq=162126721&gubun=",
+    "https://www.korea.kr/news/interviewView.do?newsId=148797200",
+    "https://www.newsis.com/view/NISX20240415_0002699494"
+  ],
+  "referenceUse": "User-provided clothing photographs guide placement only; no photographed people or background pixels used as runtime assets. Green command bands follow the user reference as a stylized game costume, not a claim of current standard uniform.",
+  "scope": "Generation and provenance record, not exclusive-rights certification.",
+  "runtimeIntegrated": true,
+  "verification": "Client/Evidence/opening-ranks-20261015/verification.json",
+  "pendingArtDetails": [
+    "C13 middle pose: one shoulder has two visible diamonds rather than three",
+    "C16 defeat pose: one shoulder has two flowers rather than three"
+  ]
+}
