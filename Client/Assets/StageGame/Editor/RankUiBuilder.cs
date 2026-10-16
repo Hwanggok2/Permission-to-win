@@ -111,9 +111,75 @@ namespace StageGame.Editor
             var icon=Get<Image>(pause.gameObject,"Icon");
             Size(icon.transform,80,80);icon.preserveAspect=true;icon.raycastTarget=false;
             pause.targetGraphic=icon;
+            ConfigureMatchHelp(go);
+        }
+
+        [MenuItem("StageGame/Apply Match Help")]
+        public static void ApplyMatchHelp()
+        {
+            EnsureEditorReady();
+            Save("Match",ConfigureMatchHelp);
+            Save("RankAppRoot",go=>
+            {
+                var app=go.GetComponent<RankGameApp>();ConfigureMatchHelp(app.match);
+                app.matchHelp=Get<Button>(app.match,"Scroll/Viewport/Content/Help");
+                app.soundButtons=go.GetComponentsInChildren<Button>(true);
+            });
+            AssetDatabase.SaveAssets();Validate();
+            Debug.Log("[Match help] Saved a left help button aligned with pause, plus its app and sound references.");
+        }
+        public static void ConfigureMatchHelp(GameObject go)
+        {
+            var pause=Get<Button>(go,"Scroll/Viewport/Content/Pause");
+            var pauseRect=(RectTransform)pause.transform;
+            var rect=Rect(pauseRect.parent,"Help",0,0,110,104);
+            rect.anchorMin=pauseRect.anchorMin;rect.anchorMax=pauseRect.anchorMax;rect.pivot=pauseRect.pivot;
+            rect.sizeDelta=pauseRect.sizeDelta;rect.anchoredPosition=new Vector2(-pauseRect.anchoredPosition.x,pauseRect.anchoredPosition.y);
+            var hit=Add<Image>(rect.gameObject);hit.color=Color.clear;hit.raycastTarget=true;
+            var theme=AssetDatabase.LoadAssetAtPath<RankTheme>(Art+"RankTheme.asset");
+            var backing=Rect(rect,"Backdrop",0,0,64,64);var image=Add<Image>(backing.gameObject);
+            Paint(image,theme.panel);image.raycastTarget=false;backing.SetAsFirstSibling();
+            var icon=Picture(rect,"Icon",theme.help,0,0,56,56);icon.preserveAspect=true;icon.raycastTarget=false;
+            var button=Add<Button>(rect.gameObject);button.targetGraphic=icon;button.colors=pause.colors;
         }
 
         public const string MusicPath = ProjectBuilder.Root + "Audio/EasyLemon.mp3";
+        [MenuItem("StageGame/Apply First Rules And Compact Controls")]
+        public static void ApplyFirstRulesAndCompactControls()
+        {
+            EnsureEditorReady();
+            font=AssetDatabase.LoadAssetAtPath<Font>(ProjectBuilder.Root+"Fonts/NotoSansCJKkr-Regular.otf");
+            Save("Match",ConfigureCompactMatchControls);
+            Save("TurnToast",BuildTurnToast);
+            Save("RankAppRoot",go=>
+            {
+                var app=go.GetComponent<RankGameApp>();
+                ConfigureCompactMatchControls(app.match);BuildTurnToast(app.turnToast.gameObject);ConfigureMoveGuide(app);
+            });
+            AssetDatabase.SaveAssets();Validate();
+            Debug.Log("[First rules UI] Saved compact backdrops with unchanged hit areas and a centered white placement guide. Existing localized help is reused on first launch.");
+        }
+        public static void ConfigureCompactMatchControls(GameObject go)
+        {
+            var theme=AssetDatabase.LoadAssetAtPath<RankTheme>(Art+"RankTheme.asset");
+            foreach(string name in new[]{"Undo","Retry"})
+            {
+                var button=Get<Button>(go,"Scroll/Viewport/Content/"+name);
+                var hit=button.GetComponent<Image>();hit.color=Color.clear;hit.raycastTarget=true;
+                var backing=Rect(button.transform,"Backdrop",0,0,170,76);backing.SetAsFirstSibling();
+                var image=Add<Image>(backing.gameObject);Paint(image,theme.panel);image.color=new Color(1,1,1,.95f);image.raycastTarget=false;
+                button.targetGraphic=image;
+                Layout(button.transform.Find("Label"),0,0,162,68);
+            }
+        }
+        public static void ConfigureMoveGuide(RankGameApp app)
+        {
+            var toast=(RectTransform)app.turnToast.transform;toast.SetParent(app.match.transform,false);Layout(toast,0,0,660,170);
+            Layout(app.turnToastLabel.transform,0,0,630,145);
+            app.turnToastLabel.fontSize=Mathf.RoundToInt(U(34));app.turnToastLabel.color=Color.white;app.turnToastLabel.fontStyle=FontStyle.Bold;
+            var outline=Add<Outline>(app.turnToastLabel.gameObject);outline.effectColor=new Color(0,0,0,.9f);outline.effectDistance=new Vector2(2,-2);outline.useGraphicAlpha=true;
+            app.turnToast.GetComponent<Image>().enabled=false;app.turnToast.blocksRaycasts=false;app.turnToast.interactable=false;
+        }
         [MenuItem("StageGame/Apply Turn Timer")]
         public static void ApplyTurnTimer()
         {
@@ -333,6 +399,7 @@ namespace StageGame.Editor
             ConfigureMatchFit(go);
             ConfigureTurnTimer(go);
             ConfigureMatchRating(go);
+            ConfigureCompactMatchControls(go);
         }
         static void BuildResult(GameObject go)
         {
@@ -352,9 +419,10 @@ namespace StageGame.Editor
         }
         static void BuildTurnToast(GameObject go)
         {
-            Size(go.transform,520,170);var panel=Add<Image>(go);panel.enabled=false;panel.raycastTarget=false;
+            Size(go.transform,660,170);var panel=Add<Image>(go);panel.enabled=false;panel.raycastTarget=false;
             var group=Add<CanvasGroup>(go);group.alpha=0;group.blocksRaycasts=false;group.interactable=false;
-            Label(go.transform,"Label","",62,0,0,490,145);
+            var label=Label(go.transform,"Label","",34,0,0,630,145);label.color=Color.white;label.fontStyle=FontStyle.Bold;
+            var outline=Add<Outline>(label.gameObject);outline.effectColor=new Color(0,0,0,.9f);outline.effectDistance=new Vector2(2,-2);outline.useGraphicAlpha=true;
         }
         static RectTransform ScrollContent(Transform root,float height,float top)
         {
@@ -462,6 +530,7 @@ namespace StageGame.Editor
             MoveKnown(content,matchContent.transform,new[]{"Result"});app.result=Instance("Result",matchContent.transform,"Result").gameObject;var resultRect=(RectTransform)app.result.transform;Top(resultRect);resultRect.pivot=new Vector2(.5f,1);resultRect.anchoredPosition=Vector2.zero;
             app.actionConfirm=Instance("ActionConfirm",content,"ActionConfirm").gameObject;Stretch((RectTransform)app.actionConfirm.transform);
             app.turnToast=Instance("TurnToast",content,"TurnToast").GetComponent<CanvasGroup>();app.turnToastLabel=app.turnToast.transform.Find("Label").GetComponent<Text>();
+            ConfigureMoveGuide(app);
             app.settings=Instance("Settings",content,"Settings").gameObject; app.help=Instance("Help",content,"Help").gameObject;
             app.confirm=Instance("Confirm",content,"Confirm").gameObject; app.notices=Instance("Notices",content,"Notices").gameObject;
             foreach(var modal in new[]{app.settings,app.help,app.confirm,app.notices})Stretch((RectTransform)modal.transform);app.actionConfirm.transform.SetAsLastSibling();
@@ -480,7 +549,7 @@ namespace StageGame.Editor
             app.turnTimerLabel=Get<Text>(matchContent,"Board/TurnTimer/Label");
             app.turnTimerSlider=Get<Slider>(matchContent,"Board/TurnTimer/Bar");
             app.aiRating=Get<Text>(matchContent,"AiHeader/Rating");
-            app.pause=Get<Button>(matchContent,"Pause"); app.undo=Get<Button>(matchContent,"Undo"); app.place=Get<Button>(matchContent,"Place"); app.matchRetry=Get<Button>(matchContent,"Retry");
+            app.pause=Get<Button>(matchContent,"Pause"); app.matchHelp=Get<Button>(matchContent,"Help"); app.undo=Get<Button>(matchContent,"Undo"); app.place=Get<Button>(matchContent,"Place"); app.matchRetry=Get<Button>(matchContent,"Retry");
             app.retry=Get<Button>(app.result,"Retry"); app.nextStage=Get<Button>(app.result,"Next"); app.resultLobby=Get<Button>(app.result,"Lobby"); app.resultTitle=Get<Text>(app.result,"Title"); app.resultAdStatus=Get<Text>(app.result,"AdStatus");
             app.settingsClose=Get<Button>(app.settings,"Frame/CloseButton"); app.helpClose=Get<Button>(app.help,"Frame/CloseButton"); app.confirmClose=Get<Button>(app.confirm,"Frame/CloseButton"); app.noticesClose=Get<Button>(app.notices,"Frame/CloseButton");
             app.confirmLeave=Get<Button>(app.confirm,"Frame/Leave"); app.confirmResume=Get<Button>(app.confirm,"Frame/Resume"); app.hint=Get<Button>(app.confirm,"Frame/Hint"); app.hintLabel=Get<Text>(app.confirm,"Frame/Hint/Label");

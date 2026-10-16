@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="16" result="Passed" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-16 01:14:28Z" end-time="2026-10-16 01:14:33Z" duration="4.8583848">
+  <test-suite type="TestSuite" id="1000" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="133" result="Passed" start-time="2026-10-16 01:14:28Z" end-time="2026-10-16 01:14:33Z" duration="4.858385" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1159" name="StageGame.Tests.dll" fullname="C:/Github/StageGame/Client/Library/ScriptAssemblies/StageGame.Tests.dll" runstate="Runnable" testcasecount="133" result="Passed" start-time="2026-10-16 01:14:28Z" end-time="2026-10-16 01:14:33Z" duration="4.817455" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="51396" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1160" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="133" result="Passed" start-time="2026-10-16 01:14:28Z" end-time="2026-10-16 01:14:33Z" duration="4.816236" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1161" name="Tests" fullname="StageGame.Tests" runstate="Runnable" testcasecount="133" result="Passed" start-time="2026-10-16 01:14:28Z" end-time="2026-10-16 01:14:33Z" duration="4.812308" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1124" name="RankFirstRulesAssetTests" fullname="StageGame.Tests.RankFirstRulesAssetTests" classname="StageGame.Tests.RankFirstRulesAssetTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-16 01:13:40Z" end-time="2026-10-16 01:13:40Z" duration="0.065790" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1125" name="SavedGuideAndCompactBackgroundsKeepInputSeparateFromDecoration" fullname="StageGame.Tests.RankFirstRulesAssetTests.SavedGuideAndCompactBackgroundsKeepInputSeparateFromDecoration" methodname="SavedGuideAndCompactBackgroundsKeepInputSeparateFromDecoration" classname="StageGame.Tests.RankFirstRulesAssetTests" runstate="Runnable" seed="1546472191" result="Passed" start-time="2026-10-16 01:13:40Z" end-time="2026-10-16 01:13:40Z" duration="0.058131" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1055" name="RankFlowTests" fullname="StageGame.Tests.RankFlowTests" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" testcasecount="55" result="Passed" start-time="2026-10-16 01:14:28Z" end-time="2026-10-16 01:14:33Z" duration="4.788451" total="15" passed="15" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1079" name="AiOpeningDefersSessionGuideUntilHumanTurnButLeavingConsumesFirstMatch" fullname="StageGame.Tests.RankFlowTests.AiOpeningDefersSessionGuideUntilHumanTurnButLeavingConsumesFirstMatch" methodname="AiOpeningDefersSessionGuideUntilHumanTurnButLeavingConsumesFirstMatch" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1148894321" result="Passed" start-time="2026-10-16 01:13:40Z" end-time="2026-10-16 01:13:43Z" duration="3.500862" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1071" name="BothWinnersAnimatePauseRestoreThenAdsAndCorrectResultActions" fullname="StageGame.Tests.RankFlowTests.BothWinnersAnimatePauseRestoreThenAdsAndCorrectResultActions" methodname="BothWinnersAnimatePauseRestoreThenAdsAndCorrectResultActions" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1995462172" result="Passed" start-time="2026-10-16 01:13:43Z" end-time="2026-10-16 01:13:49Z" duration="5.999950" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1105" name="DestructiveActionsRequireConfirmationAndCancelPreservesSelectionAndAi" fullname="StageGame.Tests.RankFlowTests.DestructiveActionsRequireConfirmationAndCancelPreservesSelectionAndAi" methodname="DestructiveActionsRequireConfirmationAndCancelPreservesSelectionAndAi" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="697124533" result="Passed" start-time="2026-10-16 01:13:49Z" end-time="2026-10-16 01:13:52Z" duration="3.195734" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1075" name="FirstLaunchRulesSuspendPlayAndAppearOnlyOnce" fullname="StageGame.Tests.RankFlowTests.FirstLaunchRulesSuspendPlayAndAppearOnlyOnce" methodname="FirstLaunchRulesSuspendPlayAndAppearOnlyOnce" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="75987241" result="Passed" start-time="2026-10-16 01:13:52Z" end-time="2026-10-16 01:13:56Z" duration="3.241890" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] ko-390x664-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] ko-390x844-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-454x768-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:454.00, height:768.00), scale=0.4, ppu=0.4, fontSize=78
+[Capture] ko-1080x1920-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-390x664-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] en-390x844-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-454x768-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:454.00, height:768.00), scale=0.4, ppu=0.4, fontSize=78
+[Capture] en-1080x1920-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1067" name="FreshRunIsConsumedButExistingAndRecoverySavesStayInLobby" fullname="StageGame.Tests.RankFlowTests.FreshRunIsConsumedButExistingAndRecoverySavesStayInLobby" methodname="FreshRunIsConsumedButExistingAndRecoverySavesStayInLobby" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="106646322" result="Passed" start-time="2026-10-16 01:13:56Z" end-time="2026-10-16 01:13:58Z" duration="1.910957" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Save recovery] JSON parse error: Invalid value.
+]]></output>
+            </test-case>
+            <test-case id="1077" name="MatchHelpReopensRulesWithoutChangingSelectionTimerOrAi" fullname="StageGame.Tests.RankFlowTests.MatchHelpReopensRulesWithoutChangingSelectionTimerOrAi" methodname="MatchHelpReopensRulesWithoutChangingSelectionTimerOrAi" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="311761075" result="Passed" start-time="2026-10-16 01:13:58Z" end-time="2026-10-16 01:14:03Z" duration="5.211823" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] ko-390x664-match-help: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] ko-390x844-match-help: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-454x768-match-help: screen=640x480, canvas=(x:0.00, y:0.00, width:454.00, height:768.00), scale=0.4, ppu=0.4, fontSize=78
+[Capture] ko-1080x1920-match-help: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-390x664-match-help: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] en-390x844-match-help: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-454x768-match-help: screen=640x480, canvas=(x:0.00, y:0.00, width:454.00, height:768.00), scale=0.4, ppu=0.4, fontSize=78
+[Capture] en-1080x1920-match-help: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080x1920-reopened-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1084" name="MusicContinuesThroughPauseAndConfirmationButSuspendsInBackground" fullname="StageGame.Tests.RankFlowTests.MusicContinuesThroughPauseAndConfirmationButSuspendsInBackground" methodname="MusicContinuesThroughPauseAndConfirmationButSuspendsInBackground" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="53376066" result="Passed" start-time="2026-10-16 01:14:03Z" end-time="2026-10-16 01:14:05Z" duration="2.411688" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1064" name="SelectionIsOnlyPreviewAndPlaceCommitsOnce" fullname="StageGame.Tests.RankFlowTests.SelectionIsOnlyPreviewAndPlaceCommitsOnce" methodname="SelectionIsOnlyPreviewAndPlaceCommitsOnce" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1947259084" result="Passed" start-time="2026-10-16 01:14:05Z" end-time="2026-10-16 01:14:08Z" duration="2.519888" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1078" name="SessionGuideSurvivesSceneReloadAndReturnsOnlyAfterNewLaunch" fullname="StageGame.Tests.RankFlowTests.SessionGuideSurvivesSceneReloadAndReturnsOnlyAfterNewLaunch" methodname="SessionGuideSurvivesSceneReloadAndReturnsOnlyAfterNewLaunch" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="2023693582" result="Passed" start-time="2026-10-16 01:14:08Z" end-time="2026-10-16 01:14:11Z" duration="2.829581" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] en-390x664-selected-without-notice: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1095" name="SpeechPausesWithDialogsFocusBackgroundAndAdsWhileMusicCanContinue" fullname="StageGame.Tests.RankFlowTests.SpeechPausesWithDialogsFocusBackgroundAndAdsWhileMusicCanContinue" methodname="SpeechPausesWithDialogsFocusBackgroundAndAdsWhileMusicCanContinue" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="592439135" result="Passed" start-time="2026-10-16 01:14:11Z" end-time="2026-10-16 01:14:15Z" duration="4.167325" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1098" name="TurnTimerExpiresOnceInSelectedColumnAndResetsAfterAiAndUndo" fullname="StageGame.Tests.RankFlowTests.TurnTimerExpiresOnceInSelectedColumnAndResetsAfterAiAndUndo" methodname="TurnTimerExpiresOnceInSelectedColumnAndResetsAfterAiAndUndo" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1630342068" result="Passed" start-time="2026-10-16 01:14:15Z" end-time="2026-10-16 01:14:17Z" duration="2.432313" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1099" name="TurnTimerFallbackSkipsFullColumnsAndTimeoutWinUsesNormalResult" fullname="StageGame.Tests.RankFlowTests.TurnTimerFallbackSkipsFullColumnsAndTimeoutWinUsesNormalResult" methodname="TurnTimerFallbackSkipsFullColumnsAndTimeoutWinUsesNormalResult" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1730481341" result="Passed" start-time="2026-10-16 01:14:17Z" end-time="2026-10-16 01:14:20Z" duration="2.405770" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1100" name="TurnTimerPausesAcrossModalsBackgroundAndHintsWithoutRefreshingTheTurn" fullname="StageGame.Tests.RankFlowTests.TurnTimerPausesAcrossModalsBackgroundAndHintsWithoutRefreshingTheTurn" methodname="TurnTimerPausesAcrossModalsBackgroundAndHintsWithoutRefreshingTheTurn" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1766879794" result="Passed" start-time="2026-10-16 01:14:20Z" end-time="2026-10-16 01:14:21Z" duration="1.553698" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1107" name="TurnToastNeverBlocksAndDoesNotOutliveItsTurnOrDuplicateOnLanguageHint" fullname="StageGame.Tests.RankFlowTests.TurnToastNeverBlocksAndDoesNotOutliveItsTurnOrDuplicateOnLanguageHint" methodname="TurnToastNeverBlocksAndDoesNotOutliveItsTurnOrDuplicateOnLanguageHint" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1307055192" result="Passed" start-time="2026-10-16 01:14:21Z" end-time="2026-10-16 01:14:27Z" duration="5.803607" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] en-390-no-repeat-guide: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1076" name="WhitePlacementGuideIsCenteredAndCompactButtonsRetainClickablePadding" fullname="StageGame.Tests.RankFlowTests.WhitePlacementGuideIsCenteredAndCompactButtonsRetainClickablePadding" methodname="WhitePlacementGuideIsCenteredAndCompactButtonsRetainClickablePadding" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1632113661" result="Passed" start-time="2026-10-16 01:14:27Z" end-time="2026-10-16 01:14:33Z" duration="6.183265" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Capture] ko-390x664-white-guide: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] ko-390x844-white-guide: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-454x768-white-guide: screen=640x480, canvas=(x:0.00, y:0.00, width:454.00, height:768.00), scale=0.4, ppu=0.4, fontSize=78
+[Capture] ko-1080x1920-white-guide: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-390x664-white-guide: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] en-390x844-white-guide: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-454x768-white-guide: screen=640x480, canvas=(x:0.00, y:0.00, width:454.00, height:768.00), scale=0.4, ppu=0.4, fontSize=78
+[Capture] en-1080x1920-white-guide: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+Saving results to: C:/Github/StageGame/Client/Evidence/session-guide-help-20261016/unity-tests.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

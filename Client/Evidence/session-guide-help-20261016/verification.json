@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-16",
+  "task": "session guide and match help",
+  "unity": {
+    "total": 16,
+    "passed": 16,
+    "failed": 0,
+    "skipped": 0,
+    "report": "unity-tests.xml"
+  },
+  "captures": 27,
+  "assetChanges": [
+    {
+      "path": "Client/Assets/StageGame/Editor/RankUiBuilder.cs",
+      "status": "modified"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/Match.prefab",
+      "status": "modified"
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/RankAppRoot.prefab",
+      "status": "modified"
+    },
+    {
+      "path": "Client/Assets/StageGame/Scripts/UI/RankGameApp.cs",
+      "status": "modified"
+    },
+    {
+      "path": "Client/Assets/StageGame/Tests/EditMode/RankFirstRulesTests.cs",
+      "status": "modified"
+    },
+    {
+      "path": "Client/Assets/StageGame/Tests/EditMode/RankV9Tests.cs",
+      "status": "modified"
+    }
+  ],
+  "unityLockPresent": false,
+  "newBuild": false,
+  "deployed": false,
+  "deviceTest": false,
+  "sessionResetVerification": "Unity runtime initialization hook simulated in Play-mode tests; scene reload separately verified",
+  "postTestChange": "English reopened-rules screenshot prefix corrected from ko to en in test and filename only"
+}

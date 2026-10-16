@@ -1,0 +1,18 @@
+{
+  "changes": [
+    {
+      "sheet": "Strings",
+      "cell": "C138",
+      "before": "고르고 확인한 뒤 놓기",
+      "after": "돌은 아래에서부터 쌓여요"
+    },
+    {
+      "sheet": "Strings",
+      "cell": "E138",
+      "before": "Choose, preview, then place",
+      "after": "Stones stack from the bottom"
+    }
+  ],
+  "otherValuesAndStylesPreserved": true,
+  "sheetFeaturesPreserved": true
+}

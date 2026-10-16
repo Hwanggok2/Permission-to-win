@@ -1,0 +1,52 @@
+{
+  "status": "PREFABS_SAVED_AND_UNITY_VERIFIED",
+  "timestamp": "2026-10-16T00:52:59.912974+00:00",
+  "unityTests": 16,
+  "unityPassed": 16,
+  "runs": [
+    {
+      "file": "unity-tests.xml",
+      "total": 16,
+      "passed": 16,
+      "failed": 0
+    },
+    {
+      "file": "unity-final-tests.xml",
+      "total": 4,
+      "passed": 4,
+      "failed": 0
+    }
+  ],
+  "gameDataTests": 46,
+  "exportCheck": true,
+  "generatedResourcesMatch": true,
+  "changedExistingClientAssets": [
+    "Assets/StageGame/Editor/PixelArtBuilder.cs",
+    "Assets/StageGame/Editor/RankUiBuilder.cs",
+    "Assets/StageGame/Prefabs/RankUI/Match.prefab",
+    "Assets/StageGame/Prefabs/RankUI/RankAppRoot.prefab",
+    "Assets/StageGame/Prefabs/RankUI/TurnToast.prefab",
+    "Assets/StageGame/Resources/GameData/strings.json",
+    "Assets/StageGame/Scripts/UI/RankGameApp.cs",
+    "Assets/StageGame/Tests/EditMode/PixelArtTests.cs",
+    "Assets/StageGame/Tests/EditMode/RankFlowTests.cs",
+    "Assets/StageGame/Tests/EditMode/RankV9Tests.cs"
+  ],
+  "workbookChange": "Strings C138/E138 only; other values/styles/features preserved",
+  "screens": 63,
+  "firstRun": "No saved progress: show rules over first match once. Existing/recovery saves stay in lobby. Manual help remains available.",
+  "guide": "Existing select_column string, white with dark outline, center of match screen, 2.6 s hold + 0.4 s fade; column selection hides it immediately; no bottom duplicate.",
+  "buttons": "Undo/Retry backgrounds 255x114 design units (from336x165), hit areas336x165 preserved.",
+  "preserved": [
+    "original art and audio/meta",
+    "AI and gameplay data",
+    "scene",
+    "other prefabs",
+    "language/settings/save format"
+  ],
+  "notRun": [
+    "New WebGL/Android player build",
+    "Deployment",
+    "Real device or human play"
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "path": "Client/Assets/StageGame/Editor/RankUiBuilder.cs",
+    "status": "modified"
+  },
+  {
+    "path": "Client/Assets/StageGame/Prefabs/RankUI/Match.prefab",
+    "status": "modified"
+  },
+  {
+    "path": "Client/Assets/StageGame/Prefabs/RankUI/RankAppRoot.prefab",
+    "status": "modified"
+  },
+  {
+    "path": "Client/Assets/StageGame/Scripts/UI/RankGameApp.cs",
+    "status": "modified"
+  },
+  {
+    "path": "Client/Assets/StageGame/Tests/EditMode/RankFirstRulesTests.cs",
+    "status": "modified"
+  },
+  {
+    "path": "Client/Assets/StageGame/Tests/EditMode/RankV9Tests.cs",
+    "status": "modified"
+  }
+]

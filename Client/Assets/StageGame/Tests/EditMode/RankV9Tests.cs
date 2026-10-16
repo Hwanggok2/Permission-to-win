@@ -40,12 +40,12 @@ namespace StageGame.Tests
         {
             Assert.IsTrue(app.turnToast.gameObject.activeSelf);Assert.IsFalse(app.turnToast.blocksRaycasts);Assert.IsFalse(app.turnToast.interactable);
             var initial=Field<Coroutine>("toastRoutine");app.SetLanguage("en");Assert.AreSame(initial,Field<Coroutine>("toastRoutine"));app.hint.onClick.Invoke();Assert.AreSame(initial,Field<Coroutine>("toastRoutine"));
-            yield return new WaitForSecondsRealtime(.95f);Assert.IsFalse(app.turnToast.gameObject.activeSelf);
-            app.StartStage(0);Assert.IsTrue(app.turnToast.gameObject.activeSelf);app.SelectColumn(3);app.PlaceSelected();Assert.IsFalse(app.turnToast.gameObject.activeSelf);
-            yield return AiReady();Assert.IsTrue(app.turnToast.gameObject.activeSelf);app.UndoTurn();Assert.IsTrue(app.turnToast.gameObject.activeSelf);
+            yield return new WaitForSecondsRealtime(3.1f);Assert.IsFalse(app.turnToast.gameObject.activeSelf);
+            app.StartStage(0);Assert.IsFalse(app.turnToast.gameObject.activeSelf);app.SelectColumn(3);app.PlaceSelected();Assert.IsFalse(app.turnToast.gameObject.activeSelf);
+            yield return AiReady();Assert.IsFalse(app.turnToast.gameObject.activeSelf);app.UndoTurn();Assert.IsFalse(app.turnToast.gameObject.activeSelf);
             app.matchRetry.onClick.Invoke();Assert.IsFalse(app.turnToast.gameObject.activeSelf);app.actionCancel.onClick.Invoke();Assert.IsFalse(app.turnToast.gameObject.activeSelf);
             app.StartStage(0);app.pause.onClick.Invoke();Assert.IsFalse(app.turnToast.gameObject.activeSelf);app.confirmResume.onClick.Invoke();Assert.IsFalse(app.turnToast.gameObject.activeSelf);
-            app.StartStage(0);yield return Capture("en-390-turn-toast",app,390,844,true);
+            app.StartStage(0);yield return Capture("en-390-no-repeat-guide",app,390,844,true);
         }
         [UnityTest] public IEnumerator DestroyedAppRejectsLateResultAndRewardCallbacksWithoutSaving()
         {

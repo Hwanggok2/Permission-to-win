@@ -503,8 +503,8 @@
     },
     {
       "key": "help_drop_title",
-      "ko": "고르고 확인한 뒤 놓기",
-      "en": "Choose, preview, then place"
+      "ko": "돌은 아래에서부터 쌓여요",
+      "en": "Stones stack from the bottom"
     },
     {
       "key": "help_full_column",

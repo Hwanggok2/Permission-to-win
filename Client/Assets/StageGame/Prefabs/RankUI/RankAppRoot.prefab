@@ -417,6 +417,7 @@ MonoBehaviour:
   turnTimerSlider: {fileID: 4007141482086875903}
   aiRating: {fileID: 3272998168042116825}
   pause: {fileID: 8842632519288040680}
+  matchHelp: {fileID: 2179538622179052470}
   undo: {fileID: 6734982684168932813}
   place: {fileID: 7577459689545050183}
   matchRetry: {fileID: 3000387713245696016}
@@ -491,6 +492,7 @@ MonoBehaviour:
   - {fileID: 6734982684168932813}
   - {fileID: 7577459689545050183}
   - {fileID: 3000387713245696016}
+  - {fileID: 2179538622179052470}
   - {fileID: 3541758335171491241}
   - {fileID: 7038296941694856651}
   - {fileID: 7183644217602692113}
@@ -1225,12 +1227,12 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1114200801487369154, guid: 424203637e7ea474cb3667003423db5e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3963655293514719356}
     - targetCorrespondingSourceObject: {fileID: 2752255681295720598, guid: 424203637e7ea474cb3667003423db5e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1669777499760077895}
-    - targetCorrespondingSourceObject: {fileID: 8963700958764210936, guid: 424203637e7ea474cb3667003423db5e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3963655293514719356}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 424203637e7ea474cb3667003423db5e, type: 3}
 --- !u!114 &163406138209002868 stripped
@@ -1348,6 +1350,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+--- !u!114 &2179538622179052470 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1805103722106666096, guid: 424203637e7ea474cb3667003423db5e, type: 3}
+  m_PrefabInstance: {fileID: 518550098710181830}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!114 &2255345120872377558 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1765088764287195920, guid: 424203637e7ea474cb3667003423db5e, type: 3}
@@ -4529,7 +4542,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 8887629660882808126}
+    m_TransformParent: {fileID: 595650704748643332}
     m_Modifications:
     - target: {fileID: 348695670676299217, guid: 6c821251d34d8a64493923030937b61f, type: 3}
       propertyPath: m_Color.a
@@ -4541,11 +4554,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1324921306362853599, guid: 6c821251d34d8a64493923030937b61f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 540
+      value: 945
       objectReference: {fileID: 0}
     - target: {fileID: 1324921306362853599, guid: 6c821251d34d8a64493923030937b61f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 120
+      value: 217.5
       objectReference: {fileID: 0}
     - target: {fileID: 1486456121790159817, guid: 6c821251d34d8a64493923030937b61f, type: 3}
       propertyPath: m_Name
@@ -4557,7 +4570,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380550983798929527, guid: 6c821251d34d8a64493923030937b61f, type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 63
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 5634072795252481672, guid: 6c821251d34d8a64493923030937b61f, type: 3}
       propertyPath: m_Pivot.x
@@ -4585,11 +4598,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5634072795252481672, guid: 6c821251d34d8a64493923030937b61f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 600
+      value: 990
       objectReference: {fileID: 0}
     - target: {fileID: 5634072795252481672, guid: 6c821251d34d8a64493923030937b61f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 150
+      value: 255
       objectReference: {fileID: 0}
     - target: {fileID: 5634072795252481672, guid: 6c821251d34d8a64493923030937b61f, type: 3}
       propertyPath: m_LocalPosition.x

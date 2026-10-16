@@ -27,6 +27,8 @@ namespace StageGame.Tests
             EditorSceneManager.OpenScene(Editor.ProjectBuilder.ScenePath);
             yield return new EnterPlayMode(); yield return null;
             app=UnityEngine.Object.FindFirstObjectByType<RankGameApp>(); Assert.NotNull(app);
+            // Gameplay fixtures continue after the first-run rules; dedicated tests cover the panel itself.
+            if(app.help.activeSelf)app.helpClose.onClick.Invoke();
         }
         [UnityTearDown] public IEnumerator Cleanup()
         {

@@ -128,12 +128,7 @@ namespace StageGame.Editor
                         ConfigureMatch(app.match,theme);
                         app.aiFace.sprite=theme.portraits[0].intro;app.aiFace.preserveAspect=true;
                         app.rankHat.gameObject.SetActive(false);
-                        // Keep the turn toast inside the board on narrow scrolling layouts too.
-                        var toast=(RectTransform)app.turnToast.transform;
-                        toast.SetParent(app.boardView,false);Place(toast,0,0,400,100);
-                        // Preserve the user's text-only turn toast.
-                        toast.GetComponent<Image>().enabled=false;
-                        Place(app.turnToastLabel.rectTransform,0,0,360,80);app.turnToastLabel.fontSize=(int)U(42);
+                        RankUiBuilder.ConfigureMoveGuide(app);
                     }
                     PrefabUtility.SaveAsPrefabAsset(root,path);
                 }
@@ -273,10 +268,7 @@ namespace StageGame.Editor
             speech.rectTransform.sizeDelta=RankUiMetrics.Point(394,80);speech.fontSize=(int)U(24);
             speech.resizeTextForBestFit=true;speech.resizeTextMinSize=(int)U(21);speech.resizeTextMaxSize=(int)U(26);
             ConfigureBoard(content.Find("Board").gameObject,theme);
-            foreach(string buttonName in new[]{"Undo","Retry"})
-            {
-                var image=content.Find(buttonName).GetComponent<Image>();image.sprite=theme.panel;image.type=Image.Type.Sliced;image.color=new Color(1,1,1,.9f);
-            }
+            RankUiBuilder.ConfigureCompactMatchControls(go);
             var notice=content.Find("Notice").GetComponent<Text>();notice.color=new Color32(30,30,23,255);
         }
         static void ConfigureMatchHeader(GameObject go,RankTheme theme)

@@ -16,7 +16,7 @@ namespace StageGame.Tests
             Assert.AreEqual(19,app.theme.portraits.Select(p=>p.characterId).Distinct().Count());
             StringAssert.EndsWith("C06-pixel-v5.png",AssetDatabase.GetAssetPath(app.theme.Portrait("C06").intro));
             Assert.AreNotSame(app.theme.Portrait("C01").intro,app.theme.Portrait("C01",true).intro,"Trainee must have no rank; final private has one stripe.");
-            Assert.AreSame(app.boardView,app.turnToast.transform.parent,"Turn toast must follow the board, including narrow layouts.");
+            Assert.AreSame(app.match.transform,app.turnToast.transform.parent,"Placement guide stays at the screen center independently of board scrolling.");
             for(int i=0;i<30;i++)
             {
                 app.StartStage(i);Call("CancelSearch");Set("busy",false);

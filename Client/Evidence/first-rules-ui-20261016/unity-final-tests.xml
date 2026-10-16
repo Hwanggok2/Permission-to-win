@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="4" result="Passed" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-16 00:51:57Z" end-time="2026-10-16 00:52:01Z" duration="4.4560657">
+  <test-suite type="TestSuite" id="1000" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="130" result="Passed" start-time="2026-10-16 00:51:57Z" end-time="2026-10-16 00:52:01Z" duration="4.456066" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1156" name="StageGame.Tests.dll" fullname="C:/Github/StageGame/Client/Library/ScriptAssemblies/StageGame.Tests.dll" runstate="Runnable" testcasecount="130" result="Passed" start-time="2026-10-16 00:51:57Z" end-time="2026-10-16 00:52:01Z" duration="4.417418" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="23736" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1157" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="130" result="Passed" start-time="2026-10-16 00:51:57Z" end-time="2026-10-16 00:52:01Z" duration="4.416504" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1158" name="Tests" fullname="StageGame.Tests" runstate="Runnable" testcasecount="130" result="Passed" start-time="2026-10-16 00:51:57Z" end-time="2026-10-16 00:52:01Z" duration="4.415729" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1055" name="RankFlowTests" fullname="StageGame.Tests.RankFlowTests" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" testcasecount="52" result="Passed" start-time="2026-10-16 00:51:57Z" end-time="2026-10-16 00:52:01Z" duration="4.407148" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1075" name="FirstLaunchRulesSuspendPlayAndAppearOnlyOnce" fullname="StageGame.Tests.RankFlowTests.FirstLaunchRulesSuspendPlayAndAppearOnlyOnce" methodname="FirstLaunchRulesSuspendPlayAndAppearOnlyOnce" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="636934251" result="Passed" start-time="2026-10-16 00:51:48Z" end-time="2026-10-16 00:51:52Z" duration="3.532221" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] ko-390x664-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] ko-390x844-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-454x768-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:454.00, height:768.00), scale=0.4, ppu=0.4, fontSize=78
+[Capture] ko-1080x1920-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-390x664-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] en-390x844-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-454x768-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:454.00, height:768.00), scale=0.4, ppu=0.4, fontSize=78
+[Capture] en-1080x1920-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1081" name="MusicContinuesThroughPauseAndConfirmationButSuspendsInBackground" fullname="StageGame.Tests.RankFlowTests.MusicContinuesThroughPauseAndConfirmationButSuspendsInBackground" methodname="MusicContinuesThroughPauseAndConfirmationButSuspendsInBackground" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1184563242" result="Passed" start-time="2026-10-16 00:51:52Z" end-time="2026-10-16 00:51:54Z" duration="2.364581" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1097" name="TurnTimerPausesAcrossModalsBackgroundAndHintsWithoutRefreshingTheTurn" fullname="StageGame.Tests.RankFlowTests.TurnTimerPausesAcrossModalsBackgroundAndHintsWithoutRefreshingTheTurn" methodname="TurnTimerPausesAcrossModalsBackgroundAndHintsWithoutRefreshingTheTurn" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1695700315" result="Passed" start-time="2026-10-16 00:51:54Z" end-time="2026-10-16 00:51:56Z" duration="1.410570" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1104" name="TurnToastNeverBlocksAndDoesNotOutliveItsTurnOrDuplicateOnLanguageHint" fullname="StageGame.Tests.RankFlowTests.TurnToastNeverBlocksAndDoesNotOutliveItsTurnOrDuplicateOnLanguageHint" methodname="TurnToastNeverBlocksAndDoesNotOutliveItsTurnOrDuplicateOnLanguageHint" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="634448856" result="Passed" start-time="2026-10-16 00:51:56Z" end-time="2026-10-16 00:52:01Z" duration="5.591855" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Capture] en-390-turn-toast: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+Saving results to: C:/Github/StageGame/Client/Evidence/first-rules-ui-20261016/unity-final-tests.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

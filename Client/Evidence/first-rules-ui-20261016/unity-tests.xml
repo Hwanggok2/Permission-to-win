@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="16" result="Passed" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-16 00:50:34Z" end-time="2026-10-16 00:50:39Z" duration="4.6952848">
+  <test-suite type="TestSuite" id="1000" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="130" result="Passed" start-time="2026-10-16 00:50:34Z" end-time="2026-10-16 00:50:39Z" duration="4.695285" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1156" name="StageGame.Tests.dll" fullname="C:/Github/StageGame/Client/Library/ScriptAssemblies/StageGame.Tests.dll" runstate="Runnable" testcasecount="130" result="Passed" start-time="2026-10-16 00:50:34Z" end-time="2026-10-16 00:50:39Z" duration="4.654943" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="46276" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1157" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="130" result="Passed" start-time="2026-10-16 00:50:34Z" end-time="2026-10-16 00:50:39Z" duration="4.653927" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1158" name="Tests" fullname="StageGame.Tests" runstate="Runnable" testcasecount="130" result="Passed" start-time="2026-10-16 00:50:34Z" end-time="2026-10-16 00:50:39Z" duration="4.653149" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1121" name="RankFirstRulesAssetTests" fullname="StageGame.Tests.RankFirstRulesAssetTests" classname="StageGame.Tests.RankFirstRulesAssetTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-16 00:49:20Z" end-time="2026-10-16 00:49:20Z" duration="0.067968" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1122" name="SavedGuideAndCompactBackgroundsKeepInputSeparateFromDecoration" fullname="StageGame.Tests.RankFirstRulesAssetTests.SavedGuideAndCompactBackgroundsKeepInputSeparateFromDecoration" methodname="SavedGuideAndCompactBackgroundsKeepInputSeparateFromDecoration" classname="StageGame.Tests.RankFirstRulesAssetTests" runstate="Runnable" seed="115772591" result="Passed" start-time="2026-10-16 00:49:20Z" end-time="2026-10-16 00:49:20Z" duration="0.060685" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1055" name="RankFlowTests" fullname="StageGame.Tests.RankFlowTests" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" testcasecount="52" result="Passed" start-time="2026-10-16 00:50:34Z" end-time="2026-10-16 00:50:39Z" duration="4.631333" total="15" passed="15" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1075" name="FirstLaunchRulesSuspendPlayAndAppearOnlyOnce" fullname="StageGame.Tests.RankFlowTests.FirstLaunchRulesSuspendPlayAndAppearOnlyOnce" methodname="FirstLaunchRulesSuspendPlayAndAppearOnlyOnce" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="2133410003" result="Passed" start-time="2026-10-16 00:49:20Z" end-time="2026-10-16 00:49:24Z" duration="3.743319" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] ko-390x664-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] ko-390x844-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-454x768-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:454.00, height:768.00), scale=0.4, ppu=0.4, fontSize=78
+[Capture] ko-1080x1920-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-390x664-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] en-390x844-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-454x768-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:454.00, height:768.00), scale=0.4, ppu=0.4, fontSize=78
+[Capture] en-1080x1920-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1067" name="FreshRunIsConsumedButExistingAndRecoverySavesStayInLobby" fullname="StageGame.Tests.RankFlowTests.FreshRunIsConsumedButExistingAndRecoverySavesStayInLobby" methodname="FreshRunIsConsumedButExistingAndRecoverySavesStayInLobby" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1475289111" result="Passed" start-time="2026-10-16 00:49:24Z" end-time="2026-10-16 00:49:26Z" duration="1.869512" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Save recovery] JSON parse error: Invalid value.
+]]></output>
+            </test-case>
+            <test-case id="1078" name="MobileVisualViewportKeepsWidthAndCssTouchSizeAcrossPixelRatios" fullname="StageGame.Tests.RankFlowTests.MobileVisualViewportKeepsWidthAndCssTouchSizeAcrossPixelRatios" methodname="MobileVisualViewportKeepsWidthAndCssTouchSizeAcrossPixelRatios" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="2048826549" result="Passed" start-time="2026-10-16 00:49:26Z" end-time="2026-10-16 00:50:00Z" duration="34.886292" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[MobileViewport] {"name":"ko-390x664-dpr1-match","titleTopCss":110.91851806640625,"boardWidthCss":337.3583984375,"contentWidthCss":389.9999084472656,"minimumTapCss":49.28935241699219,"bottomCss":19.729415893554689}
+[Capture] ko-390x664-dpr1-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[MobileViewport] {"name":"ko-390x664-dpr1-lobby","titleTopCss":115.79168701171875,"boardWidthCss":0.0,"contentWidthCss":390.0,"minimumTapCss":0.0,"bottomCss":0.0}
+[Capture] ko-390x664-dpr1-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[MobileViewport] {"name":"ko-390x664-dpr1.5-match","titleTopCss":110.91845703125,"boardWidthCss":337.3583984375,"contentWidthCss":390.0,"minimumTapCss":49.289337158203128,"bottomCss":19.7293758392334}
+[Capture] ko-390x664-dpr1.5-match: screen=640x480, canvas=(x:0.00, y:0.00, width:585.00, height:996.00), scale=0.51875, ppu=0.51875, fontSize=78
+[MobileViewport] {"name":"ko-390x664-dpr1.5-lobby","titleTopCss":115.7916259765625,"boardWidthCss":0.0,"contentWidthCss":390.0,"minimumTapCss":0.0,"bottomCss":0.0}
+[Capture] ko-390x664-dpr1.5-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:585.00, height:996.00), scale=0.51875, ppu=0.51875, fontSize=78
+[MobileViewport] {"name":"ko-390x664-dpr2-match","titleTopCss":110.9185791015625,"boardWidthCss":337.3583984375,"contentWidthCss":390.0,"minimumTapCss":49.28935241699219,"bottomCss":19.7293758392334}
+[Capture] ko-390x664-dpr2-match: screen=640x480, canvas=(x:0.00, y:0.00, width:780.00, height:1328.00), scale=0.6916667, ppu=0.6916667, fontSize=78
+[MobileViewport] {"name":"ko-390x664-dpr2-lobby","titleTopCss":115.79168701171875,"boardWidthCss":0.0,"contentWidthCss":390.0,"minimumTapCss":0.0,"bottomCss":0.0}
+[Capture] ko-390x664-dpr2-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:780.00, height:1328.00), scale=0.6916667, ppu=0.6916667, fontSize=78
+[MobileViewport] {"name":"ko-390x844-dpr1-match","titleTopCss":114.16668701171875,"boardWidthCss":381.3333740234375,"contentWidthCss":390.0000305175781,"minimumTapCss":55.714263916015628,"bottomCss":126.95823669433594}
+[Capture] ko-390x844-dpr1-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[MobileViewport] {"name":"ko-390x844-dpr1-lobby","titleTopCss":115.7916259765625,"boardWidthCss":0.0,"contentWidthCss":390.0000305175781,"minimumTapCss":0.0,"bottomCss":0.0}
+[Capture] ko-390x844-dpr1-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[MobileViewport] {"name":"ko-454x768-dpr1-match","titleTopCss":127.6453857421875,"boardWidthCss":390.5228271484375,"contentWidthCss":454.0,"minimumTapCss":57.056884765625,"bottomCss":22.951332092285158}
+[Capture] ko-454x768-dpr1-match: screen=640x480, canvas=(x:0.00, y:0.00, width:454.00, height:768.00), scale=0.4, ppu=0.4, fontSize=78
+[MobileViewport] {"name":"ko-454x768-dpr1-lobby","titleTopCss":133.4805908203125,"boardWidthCss":0.0,"contentWidthCss":454.0,"minimumTapCss":0.0,"bottomCss":0.0}
+[Capture] ko-454x768-dpr1-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:454.00, height:768.00), scale=0.4, ppu=0.4, fontSize=78
+[MobileViewport] {"name":"ko-1080x1920-dpr1-match","titleTopCss":297.244384765625,"boardWidthCss":991.6171264648438,"contentWidthCss":1080.0,"minimumTapCss":144.8790283203125,"bottomCss":55.042762756347659}
+[Capture] ko-1080x1920-dpr1-match: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[MobileViewport] {"name":"ko-1080x1920-dpr1-lobby","titleTopCss":306.5,"boardWidthCss":0.0,"contentWidthCss":1080.0,"minimumTapCss":0.0,"bottomCss":0.0}
+[Capture] ko-1080x1920-dpr1-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[MobileViewport] {"name":"en-390x664-dpr1-match","titleTopCss":110.91851806640625,"boardWidthCss":337.3583984375,"contentWidthCss":390.0,"minimumTapCss":49.28935241699219,"bottomCss":19.7293758392334}
+[Capture] en-390x664-dpr1-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[MobileViewport] {"name":"en-390x664-dpr1-lobby","titleTopCss":115.79168701171875,"boardWidthCss":0.0,"contentWidthCss":390.0,"minimumTapCss":0.0,"bottomCss":0.0}
+[Capture] en-390x664-dpr1-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[MobileViewport] {"name":"en-390x664-dpr1.5-match","titleTopCss":110.91845703125,"boardWidthCss":337.3583984375,"contentWidthCss":390.0,"minimumTapCss":49.289337158203128,"bottomCss":19.7293758392334}
+[Capture] en-390x664-dpr1.5-match: screen=640x480, canvas=(x:0.00, y:0.00, width:585.00, height:996.00), scale=0.51875, ppu=0.51875, fontSize=78
+[MobileViewport] {"name":"en-390x664-dpr1.5-lobby","titleTopCss":115.7916259765625,"boardWidthCss":0.0,"contentWidthCss":390.0,"minimumTapCss":0.0,"bottomCss":0.0}
+[Capture] en-390x664-dpr1.5-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:585.00, height:996.00), scale=0.51875, ppu=0.51875, fontSize=78
+[MobileViewport] {"name":"en-390x664-dpr2-match","titleTopCss":110.91851806640625,"boardWidthCss":337.3583984375,"contentWidthCss":390.0,"minimumTapCss":49.28935241699219,"bottomCss":19.7293758392334}
+[Capture] en-390x664-dpr2-match: screen=640x480, canvas=(x:0.00, y:0.00, width:780.00, height:1328.00), scale=0.6916667, ppu=0.6916667, fontSize=78
+[MobileViewport] {"name":"en-390x664-dpr2-lobby","titleTopCss":115.79168701171875,"boardWidthCss":0.0,"contentWidthCss":390.0,"minimumTapCss":0.0,"bottomCss":0.0}
+[Capture] en-390x664-dpr2-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:780.00, height:1328.00), scale=0.6916667, ppu=0.6916667, fontSize=78
+[MobileViewport] {"name":"en-390x844-dpr1-match","titleTopCss":114.16668701171875,"boardWidthCss":381.3333740234375,"contentWidthCss":390.0000305175781,"minimumTapCss":55.714263916015628,"bottomCss":126.95823669433594}
+[Capture] en-390x844-dpr1-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[MobileViewport] {"name":"en-390x844-dpr1-lobby","titleTopCss":115.7916259765625,"boardWidthCss":0.0,"contentWidthCss":390.0000305175781,"minimumTapCss":0.0,"bottomCss":0.0}
+[Capture] en-390x844-dpr1-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[MobileViewport] {"name":"en-454x768-dpr1-match","titleTopCss":127.6453857421875,"boardWidthCss":390.5228271484375,"contentWidthCss":454.0,"minimumTapCss":57.056884765625,"bottomCss":22.951332092285158}
+[Capture] en-454x768-dpr1-match: screen=640x480, canvas=(x:0.00, y:0.00, width:454.00, height:768.00), scale=0.4, ppu=0.4, fontSize=78
+[MobileViewport] {"name":"en-454x768-dpr1-lobby","titleTopCss":133.4805908203125,"boardWidthCss":0.0,"contentWidthCss":454.0,"minimumTapCss":0.0,"bottomCss":0.0}
+[Capture] en-454x768-dpr1-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:454.00, height:768.00), scale=0.4, ppu=0.4, fontSize=78
+[MobileViewport] {"name":"en-1080x1920-dpr1-match","titleTopCss":297.244384765625,"boardWidthCss":991.6171264648438,"contentWidthCss":1080.0,"minimumTapCss":144.8790283203125,"bottomCss":55.042762756347659}
+[Capture] en-1080x1920-dpr1-match: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[MobileViewport] {"name":"en-1080x1920-dpr1-lobby","titleTopCss":306.5,"boardWidthCss":0.0,"contentWidthCss":1080.0,"minimumTapCss":0.0,"bottomCss":0.0}
+[Capture] en-1080x1920-dpr1-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] toss-390x844-dpr1-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] toss-390x844-dpr1.5-match: screen=640x480, canvas=(x:0.00, y:0.00, width:585.00, height:1266.00), scale=0.5416667, ppu=0.5416667, fontSize=78
+[Capture] toss-390x844-dpr2-match: screen=640x480, canvas=(x:0.00, y:0.00, width:780.00, height:1688.00), scale=0.7222222, ppu=0.7222222, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1081" name="MusicContinuesThroughPauseAndConfirmationButSuspendsInBackground" fullname="StageGame.Tests.RankFlowTests.MusicContinuesThroughPauseAndConfirmationButSuspendsInBackground" methodname="MusicContinuesThroughPauseAndConfirmationButSuspendsInBackground" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1660915087" result="Passed" start-time="2026-10-16 00:50:00Z" end-time="2026-10-16 00:50:03Z" duration="2.322204" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1059" name="PixelPortraitsFollowCharacterAndMatchState" fullname="StageGame.Tests.RankFlowTests.PixelPortraitsFollowCharacterAndMatchState" methodname="PixelPortraitsFollowCharacterAndMatchState" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="859700946" result="Passed" start-time="2026-10-16 00:50:03Z" end-time="2026-10-16 00:50:04Z" duration="1.523029" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1064" name="SelectionIsOnlyPreviewAndPlaceCommitsOnce" fullname="StageGame.Tests.RankFlowTests.SelectionIsOnlyPreviewAndPlaceCommitsOnce" methodname="SelectionIsOnlyPreviewAndPlaceCommitsOnce" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="264466703" result="Passed" start-time="2026-10-16 00:50:04Z" end-time="2026-10-16 00:50:07Z" duration="2.381640" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1089" name="SoundButtonClickPlaysOnceAcrossOpenCloseAndRespectsDisabledAndOff" fullname="StageGame.Tests.RankFlowTests.SoundButtonClickPlaysOnceAcrossOpenCloseAndRespectsDisabledAndOff" methodname="SoundButtonClickPlaysOnceAcrossOpenCloseAndRespectsDisabledAndOff" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1332109833" result="Passed" start-time="2026-10-16 00:50:07Z" end-time="2026-10-16 00:50:09Z" duration="2.753026" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1090" name="SoundStoneImpactAndUiClickWorkWhileMusicContinuesThroughModal" fullname="StageGame.Tests.RankFlowTests.SoundStoneImpactAndUiClickWorkWhileMusicContinuesThroughModal" methodname="SoundStoneImpactAndUiClickWorkWhileMusicContinuesThroughModal" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="570406597" result="Passed" start-time="2026-10-16 00:50:09Z" end-time="2026-10-16 00:50:13Z" duration="3.552070" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1092" name="SpeechPausesWithDialogsFocusBackgroundAndAdsWhileMusicCanContinue" fullname="StageGame.Tests.RankFlowTests.SpeechPausesWithDialogsFocusBackgroundAndAdsWhileMusicCanContinue" methodname="SpeechPausesWithDialogsFocusBackgroundAndAdsWhileMusicCanContinue" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="720020369" result="Passed" start-time="2026-10-16 00:50:13Z" end-time="2026-10-16 00:50:17Z" duration="4.130895" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1095" name="TurnTimerExpiresOnceInSelectedColumnAndResetsAfterAiAndUndo" fullname="StageGame.Tests.RankFlowTests.TurnTimerExpiresOnceInSelectedColumnAndResetsAfterAiAndUndo" methodname="TurnTimerExpiresOnceInSelectedColumnAndResetsAfterAiAndUndo" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="71148552" result="Passed" start-time="2026-10-16 00:50:17Z" end-time="2026-10-16 00:50:19Z" duration="2.369236" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1096" name="TurnTimerFallbackSkipsFullColumnsAndTimeoutWinUsesNormalResult" fullname="StageGame.Tests.RankFlowTests.TurnTimerFallbackSkipsFullColumnsAndTimeoutWinUsesNormalResult" methodname="TurnTimerFallbackSkipsFullColumnsAndTimeoutWinUsesNormalResult" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1339145255" result="Passed" start-time="2026-10-16 00:50:19Z" end-time="2026-10-16 00:50:22Z" duration="2.279013" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1097" name="TurnTimerPausesAcrossModalsBackgroundAndHintsWithoutRefreshingTheTurn" fullname="StageGame.Tests.RankFlowTests.TurnTimerPausesAcrossModalsBackgroundAndHintsWithoutRefreshingTheTurn" methodname="TurnTimerPausesAcrossModalsBackgroundAndHintsWithoutRefreshingTheTurn" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="284910860" result="Passed" start-time="2026-10-16 00:50:22Z" end-time="2026-10-16 00:50:23Z" duration="1.414932" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1098" name="TurnTimerUsesRealElapsedTimeAndFitsBothLanguages" fullname="StageGame.Tests.RankFlowTests.TurnTimerUsesRealElapsedTimeAndFitsBothLanguages" methodname="TurnTimerUsesRealElapsedTimeAndFitsBothLanguages" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="752374952" result="Passed" start-time="2026-10-16 00:50:23Z" end-time="2026-10-16 00:50:27Z" duration="3.777973" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] ko-1080-timer: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-390-timer: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-320-timer: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-timer-warning: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-390-timer-help: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] en-1080-timer: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-390-timer: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] en-320-timer: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] en-1080-timer-warning: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-390-timer-help: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1104" name="TurnToastNeverBlocksAndDoesNotOutliveItsTurnOrDuplicateOnLanguageHint" fullname="StageGame.Tests.RankFlowTests.TurnToastNeverBlocksAndDoesNotOutliveItsTurnOrDuplicateOnLanguageHint" methodname="TurnToastNeverBlocksAndDoesNotOutliveItsTurnOrDuplicateOnLanguageHint" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="2015680628" result="Passed" start-time="2026-10-16 00:50:27Z" end-time="2026-10-16 00:50:33Z" duration="5.699294" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] en-390-turn-toast: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1076" name="WhitePlacementGuideIsCenteredAndCompactButtonsRetainClickablePadding" fullname="StageGame.Tests.RankFlowTests.WhitePlacementGuideIsCenteredAndCompactButtonsRetainClickablePadding" methodname="WhitePlacementGuideIsCenteredAndCompactButtonsRetainClickablePadding" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1786711754" result="Passed" start-time="2026-10-16 00:50:33Z" end-time="2026-10-16 00:50:39Z" duration="5.834055" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Capture] ko-390x664-white-guide: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] ko-390x844-white-guide: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-454x768-white-guide: screen=640x480, canvas=(x:0.00, y:0.00, width:454.00, height:768.00), scale=0.4, ppu=0.4, fontSize=78
+[Capture] ko-1080x1920-white-guide: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-390x664-white-guide: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] en-390x844-white-guide: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-454x768-white-guide: screen=640x480, canvas=(x:0.00, y:0.00, width:454.00, height:768.00), scale=0.4, ppu=0.4, fontSize=78
+[Capture] en-1080x1920-white-guide: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+Saving results to: C:/Github/StageGame/Client/Evidence/first-rules-ui-20261016/unity-tests.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
