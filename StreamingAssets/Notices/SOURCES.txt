@@ -17,3 +17,28 @@ Unity-uGUI-LICENSE.txt is copied verbatim from resolved com.unity.ugui 2.0.0.
 Unity-Companion-License-Full.txt preserves the full official Unity Companion License v1.4 text retrieved 2026-10-14.
 Unity-TestFramework-LICENSE.txt, Unity-NUnit-LICENSE.txt and NUnit-ThirdPartyNotices.txt preserve development package notices.
 Unity and packages retain their respective licenses. These notices do not replace the user's engine agreement or establish account eligibility.
+
+Fonts added 2026-10-16 for Permission to Win:
+
+Pretendard Regular (v1.3.9 (font Version 1.309))
+Source: https://github.com/orioncactus/pretendard/releases/download/v1.3.9/Pretendard-1.3.9.zip
+SHA256: 6d0af5258997aec7354a6e340fc2325ba321c410ca48b3af858c8c3d6e92a324
+Use: All saved Unity UI labels; existing bold styling retained
+
+NeoDunggeunmo Pro Regular (v1.020)
+Source: https://github.com/neodgm/neodgm-pro/releases/download/v1.020/NeoDunggeunmoPro-Regular.ttf
+SHA256: e4b974b1a378ef1962e3c72dfbcb7b7bba09f54dd53bf57889af300b2531b155
+Use: Imported for optional pixel typography; no current UI references
+
+Pretendard Regular WOFF2 (v1.3.9)
+Source: https://github.com/orioncactus/pretendard/releases/download/v1.3.9/Pretendard-1.3.9.zip
+SHA256: fad853f7f47c6c8b103171e7193fa095708cdcd70850a71d93aa5379e8a61d63
+Use: Self-hosted WebGL loading/error text
+
+Pretendard Bold WOFF2 (v1.3.9)
+Source: https://github.com/orioncactus/pretendard/releases/download/v1.3.9/Pretendard-1.3.9.zip
+SHA256: 4609c3356e536fafe38f4add0daeceb3d8595d3057bce13c428c33ddbd43d362
+Use: Self-hosted WebGL loading title
+
+All four font files retain official release bytes. SIL OFL 1.1. See Pretendard-OFL.txt and NeoDunggeunmoPro-OFL.txt for full copyright/license notices.
+SimpleGame was inspected read-only for font families and notices; its TMP SDF assets were not copied.
