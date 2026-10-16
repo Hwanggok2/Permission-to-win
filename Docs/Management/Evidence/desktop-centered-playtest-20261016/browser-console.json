@@ -1,0 +1,8 @@
+{
+  "scope": "local IAB tab during QA",
+  "levels": [
+    "warn",
+    "error"
+  ],
+  "entries": []
+}

@@ -1,0 +1,60 @@
+{
+  "reviewer": "server session",
+  "files": [
+    {
+      "source": "Server/Evidence/public-layout-20261016/browser-warnings.json",
+      "copy": "public-browser/browser-warnings.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "source": "Server/Evidence/public-layout-20261016/mobile-320x568-scrolled.jpg",
+      "copy": "public-browser/mobile-320x568-scrolled.jpg",
+      "sha256": "85d414bdb730708a093083374f80bab165969309ab260c3849406d1c1c77259f"
+    },
+    {
+      "source": "Server/Evidence/public-layout-20261016/mobile-320x568.jpg",
+      "copy": "public-browser/mobile-320x568.jpg",
+      "sha256": "3d380df41a0850e67d939fe6523fd98e1b6e64529135020ccbb1e6c4f1ee1421"
+    },
+    {
+      "source": "Server/Evidence/public-layout-20261016/mobile-390x664-match.jpg",
+      "copy": "public-browser/mobile-390x664-match.jpg",
+      "sha256": "b6f4a6c371da9eae5de21cecae0bc2acffd6d4319b8b310540294a63f065d925"
+    },
+    {
+      "source": "Server/Evidence/public-layout-20261016/mobile-390x664-stone-placed.jpg",
+      "copy": "public-browser/mobile-390x664-stone-placed.jpg",
+      "sha256": "5ae990dfe0b40c4573b1b7e3313297e7a146a8f823f6352accc4470518221c35"
+    },
+    {
+      "source": "Server/Evidence/public-layout-20261016/mobile-390x664.jpg",
+      "copy": "public-browser/mobile-390x664.jpg",
+      "sha256": "8420755488f1510f77b343543f4ddea73870a0ece1d31d1df33f4c075de9a8fe"
+    },
+    {
+      "source": "Server/Evidence/public-layout-20261016/mobile-390x844-settings.jpg",
+      "copy": "public-browser/mobile-390x844-settings.jpg",
+      "sha256": "2c93d2a5142bc743428d772f201236c18463248586458c04686732aed63d5c55"
+    },
+    {
+      "source": "Server/Evidence/public-layout-20261016/mobile-390x844.jpg",
+      "copy": "public-browser/mobile-390x844.jpg",
+      "sha256": "b84d6ec27a0099eede8174b6d4bfa1aa9609870444e6a878c52686f6d5c23ee8"
+    },
+    {
+      "source": "Server/Evidence/public-layout-20261016/pc-1280x720.jpg",
+      "copy": "public-browser/pc-1280x720.jpg",
+      "sha256": "0d60b892177cd3f46d3003e531152129505be569b1c8b89edafb219804513f59"
+    },
+    {
+      "source": "Server/Evidence/public-layout-20261016/pc-1920x1080.jpg",
+      "copy": "public-browser/pc-1920x1080.jpg",
+      "sha256": "2195d77177359e65a0024d18249f43d30991cecf92b98893df4a7b05f2ac5255"
+    },
+    {
+      "source": "Server/Evidence/public-layout-20261016/viewport-checks.json",
+      "copy": "public-browser/viewport-checks.json",
+      "sha256": "2fa3e16726c31cda7e2be7ad9783ff07603cceda2dd3a02281cba0d61619e10b"
+    }
+  ]
+}

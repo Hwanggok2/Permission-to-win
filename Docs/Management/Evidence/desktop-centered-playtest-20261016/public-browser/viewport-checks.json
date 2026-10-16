@@ -1,0 +1,173 @@
+[
+  {
+    "label": "pc-1280x720",
+    "canvas": {
+      "bottom": 720,
+      "height": 720,
+      "left": 437.5,
+      "right": 842.5,
+      "top": 0,
+      "width": 405,
+      "x": 437.5,
+      "y": 0
+    },
+    "errorHidden": true,
+    "loadingHidden": true,
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "label": "pc-1920x1080",
+    "canvas": {
+      "bottom": 1080,
+      "height": 1080,
+      "left": 720,
+      "right": 1200,
+      "top": 0,
+      "width": 480,
+      "x": 720,
+      "y": 0
+    },
+    "errorHidden": true,
+    "loadingHidden": true,
+    "viewport": {
+      "height": 1080,
+      "width": 1920
+    }
+  },
+  {
+    "label": "mobile-390x844",
+    "canvas": {
+      "bottom": 844,
+      "height": 844,
+      "left": 0,
+      "right": 390,
+      "top": 0,
+      "width": 390,
+      "x": 0,
+      "y": 0
+    },
+    "errorHidden": true,
+    "loadingHidden": true,
+    "viewport": {
+      "height": 844,
+      "width": 390
+    }
+  },
+  {
+    "label": "mobile-390x844-settings",
+    "canvas": {
+      "bottom": 844,
+      "height": 844,
+      "left": 0,
+      "right": 390,
+      "top": 0,
+      "width": 390,
+      "x": 0,
+      "y": 0
+    },
+    "errorHidden": true,
+    "loadingHidden": true,
+    "viewport": {
+      "height": 844,
+      "width": 390
+    }
+  },
+  {
+    "label": "mobile-320x568",
+    "canvas": {
+      "bottom": 568,
+      "height": 568,
+      "left": 0,
+      "right": 320,
+      "top": 0,
+      "width": 320,
+      "x": 0,
+      "y": 0
+    },
+    "errorHidden": true,
+    "loadingHidden": true,
+    "viewport": {
+      "height": 568,
+      "width": 320
+    }
+  },
+  {
+    "label": "mobile-320x568-scrolled",
+    "canvas": {
+      "bottom": 568,
+      "height": 568,
+      "left": 0,
+      "right": 320,
+      "top": 0,
+      "width": 320,
+      "x": 0,
+      "y": 0
+    },
+    "errorHidden": true,
+    "loadingHidden": true,
+    "viewport": {
+      "height": 568,
+      "width": 320
+    }
+  },
+  {
+    "label": "mobile-390x664",
+    "canvas": {
+      "bottom": 664,
+      "height": 664,
+      "left": 0,
+      "right": 390,
+      "top": 0,
+      "width": 390,
+      "x": 0,
+      "y": 0
+    },
+    "errorHidden": true,
+    "loadingHidden": true,
+    "viewport": {
+      "height": 664,
+      "width": 390
+    }
+  },
+  {
+    "label": "mobile-390x664-match",
+    "canvas": {
+      "bottom": 664,
+      "height": 664,
+      "left": 0,
+      "right": 390,
+      "top": 0,
+      "width": 390,
+      "x": 0,
+      "y": 0
+    },
+    "errorHidden": true,
+    "loadingHidden": true,
+    "viewport": {
+      "height": 664,
+      "width": 390
+    }
+  },
+  {
+    "label": "mobile-390x664-stone-placed",
+    "canvas": {
+      "bottom": 664,
+      "height": 664,
+      "left": 0,
+      "right": 390,
+      "top": 0,
+      "width": 390,
+      "x": 0,
+      "y": 0
+    },
+    "errorHidden": true,
+    "loadingHidden": true,
+    "viewport": {
+      "height": 664,
+      "width": 390
+    }
+  }
+]

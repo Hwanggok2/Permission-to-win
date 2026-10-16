@@ -1,6 +1,6 @@
 # 4목 작업 정리 — 2026-10-16
 
-현재 상태를 기능별로 보존하는 커밋 기준 문서다. 기존 임시 웹 주소에는 모바일 수정본이 배포돼 있다. GitHub Pages 전용 워크트리와 배포 커밋을 준비했고 **원격 브랜치의 `348b441`까지 확인했다. 의도한 Actions 배포는 아직 성공하지 않았다**.
+현재 공유 주소는 [GitHub Pages](https://hwanggok2.github.io/StageGame/)다. 사용자 업로드 `7cda687`의 Actions 성공과 공개 파일 일치를 확인했다. PC 중앙 세로 화면 수정 및 첫 안내·도움말을 포함한다. 새 소스/관리 문서 main 커밋은 로컬에만 있고 원격 main은 확인 당시 `d77e122`다.
 
 | 기능 | 반영한 내용 | 상태·검증 범위 |
 | --- | --- | --- |
@@ -17,7 +17,7 @@
 
 커밋은 ① AI·데이터 ② 클라이언트 화면·조작·오디오 ③ 테스트·검증 자료 ④ 기획·권리·운영 문서로 나눈다. Unity Library/Builds, 임시 서버·도구, 인증정보, 재생성 가능한 오디오 임포트/코덱 캐시는 Git에서 제외한다. 로컬 원본 파일은 삭제하지 않는다.
 
-GitHub Pages는 노트북 전원과 독립적으로 친구가 접속하는 무료 테스트 배포용이다. 사용자 추가 지시에 따라 전용 워크트리/브랜치는 **웹 빌드 결과물과 Pages Actions 설정만** 담고 개발 소스를 담지 않는다. 개발 브랜치의 빌드 산출물 제외 원칙은 유지하되, 배포 전용 브랜치에만 검증한 WebGL 결과물을 커밋한다. 실제 업로드·Pages 활성화에는 저장소 로그인이 필요하다. 이 문서는 Pages 개통 완료나 상용 운영 승인으로 해석하지 않는다.
+GitHub Pages는 노트북 전원과 독립적으로 친구가 접속하는 무료 테스트 배포용이다. 사용자 추가 지시에 따라 전용 워크트리/브랜치는 **웹 빌드 결과물과 Pages Actions 설정만** 담고 개발 소스를 담지 않는다. 개발 브랜치의 빌드 산출물 제외 원칙은 유지하되, 배포 전용 브랜치에만 검증한 WebGL 결과물을 커밋한다. 사용자가 Pages 브랜치를 업로드해 공개 테스트를 열었다. 상용 출시·실광고·결제 승인은 별도다.
 
 ## 완료한 커밋
 
@@ -27,10 +27,14 @@ GitHub Pages는 노트북 전원과 독립적으로 친구가 접속하는 무�
 | main | `9671f94` | 군대 도트 UI·대국 조작·음악과 모바일 표시 개선 |
 | main | `8cc0701` | AI·UI·오디오·모바일 회귀 검사와 검증 기록 보존 |
 | main | `d77e122` | 게임 기획·권리·수익과 외부 테스트 현황 정리 |
-| codex/github-pages | `348b441` | 검증된 4목 WebGL 빌드와 Pages Actions 구성 |
+| main | `7aa1c6e` | 출처 HTML의 외부 공개 토큰 제거 |
+| main | `5fdb63a` | 첫 규칙·대국 도움말·착수 안내 개선 |
+| main | `022c09a` | PC 중앙 세로 화면·모바일 입력 좌표 유지 |
+| codex/github-pages | `c6d45bf` | 빌드 파일을 최상위로 옮겨 Pages 경로 수정 |
+| codex/github-pages | `7cda687` | PC 중앙 화면·모바일 안내 최신 빌드 |
 
-Pages 워크트리 위치: `C:/Users/JW/.codex/worktrees/github-pages/StageGame`. 개발 이력을 상속하지 않는 독립 브랜치다. 최상위에는 `public/`과 `.github/`만 있으며, `public/`의 검증본 18개 파일(88,619,877바이트)·`.nojekyll`, `.github/workflows/pages.yml` 총 20개만 추적한다. Git에 저장된 빌드 18개 파일의 SHA-256이 기존 검증본과 모두 일치한다. 새 Unity 빌드는 실행하지 않았다.
+Pages 워크트리: `C:/Users/JW/.codex/worktrees/github-pages/StageGame`. 개발 이력과 분리한 독립 브랜치다. **최상위 index.html·Build/·StreamingAssets/·TemplateData/·JS**의18개 빌드 파일(88,621,572바이트), `.nojekyll`, 최소 Pages workflow의20개만 추적한다. **public/ 폴더와 개발 소스는 없다.** Actions 업로드 경로는 `.`이다.
 
-원격 `codex/github-pages`에 `348b441`이 올라간 것을 확인했다. 준비한 [Actions 실행](https://github.com/Hwanggok2/StageGame/actions/runs/38773821716)은 Configure GitHub Pages 단계에서 실패했다. 사용자 화면에는 Source가 `Deploy from a branch`, 폴더가 `/(root)`로 설정돼 있다. 저장소 Settings → Pages → Source를 **GitHub Actions**로 변경한 뒤 위 실행을 다시 실행한다. Actions가 `public/`을 사이트 최상위로 배포하므로 현재 구성에서 `/(root)`나 `/docs`를 배포 폴더로 고르지 않는다. 환경에 배포 브랜치 제한이 설정돼 있다면 `github-pages` 환경에 이 브랜치를 허용해야 한다. Actions 성공과 실제 URL 접속을 확인한 뒤에만 공개 주소를 확정한다. 개발 소스 브랜치를 배포 브랜치에 병합하지 않는다.
+이번 WebGL 빌드는10:35 KST 완료했다. 사용자가 푸시한 새 커밋의 [Actions](https://github.com/Hwanggok2/StageGame/actions/runs/38837758172)가 성공했고, 공개 파일18개의 SHA-256이 빌드와 일치한다. [PC/모바일 검증과 상세 배포 기록](../Docs/Management/Evidence/desktop-centered-playtest-20261016/README.md)을 따른다. 초기348b441의 public/ 구성은 폐기한 과거 이력이다.
 
 효과음 출처 보관 HTML의 Freesound 공개용 Mapbox 토큰 경고는 [확인·제거 기록](../Docs/Management/SECURITY-20261016.md)을 따른다. Pages 빌드에는 해당 값이 없으며, 과거 커밋 정리와 GitHub 경고 닫힘은 별도 상태다.

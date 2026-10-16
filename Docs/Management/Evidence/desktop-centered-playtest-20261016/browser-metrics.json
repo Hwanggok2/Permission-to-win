@@ -1,0 +1,191 @@
+[
+  {
+    "label": "local-1280x720-first-rules",
+    "canvas": {
+      "height": 720,
+      "width": 405,
+      "x": 437.5,
+      "y": 0
+    },
+    "errorHidden": true,
+    "loadingHidden": true,
+    "player": {
+      "height": 720,
+      "width": 405,
+      "x": 437.5,
+      "y": 0
+    },
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "label": "local-1280x720-lobby",
+    "canvas": {
+      "height": 720,
+      "width": 405,
+      "x": 437.5,
+      "y": 0
+    },
+    "errorHidden": true,
+    "loadingHidden": true,
+    "player": {
+      "height": 720,
+      "width": 405,
+      "x": 437.5,
+      "y": 0
+    },
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "label": "local-1920x1080-lobby",
+    "canvas": {
+      "height": 1080,
+      "width": 480,
+      "x": 720,
+      "y": 0
+    },
+    "errorHidden": true,
+    "loadingHidden": true,
+    "player": {
+      "height": 1080,
+      "width": 480,
+      "x": 720,
+      "y": 0
+    },
+    "viewport": {
+      "height": 1080,
+      "width": 1920
+    }
+  },
+  {
+    "label": "local-800x1200-lobby",
+    "canvas": {
+      "height": 1200,
+      "width": 480,
+      "x": 160,
+      "y": 0
+    },
+    "errorHidden": true,
+    "loadingHidden": true,
+    "player": {
+      "height": 1200,
+      "width": 480,
+      "x": 160,
+      "y": 0
+    },
+    "viewport": {
+      "height": 1200,
+      "width": 800
+    }
+  },
+  {
+    "label": "local-390x844-lobby",
+    "canvas": {
+      "height": 844,
+      "width": 390,
+      "x": 0,
+      "y": 0
+    },
+    "errorHidden": true,
+    "loadingHidden": true,
+    "player": {
+      "height": 844,
+      "width": 390,
+      "x": 0,
+      "y": 0
+    },
+    "viewport": {
+      "height": 844,
+      "width": 390
+    }
+  },
+  {
+    "label": "390x664-lobby-en",
+    "canvas": {
+      "height": 664,
+      "width": 390,
+      "x": 0,
+      "y": 0
+    },
+    "errorHidden": true,
+    "loadingHidden": true,
+    "player": {
+      "height": 664,
+      "width": 390,
+      "x": 0,
+      "y": 0
+    },
+    "viewport": {
+      "height": 664,
+      "width": 390
+    }
+  },
+  {
+    "label": "320x568-match-en",
+    "canvas": {
+      "height": 568,
+      "width": 320,
+      "x": 0,
+      "y": 0
+    },
+    "errorHidden": true,
+    "loadingHidden": true,
+    "player": {
+      "height": 568,
+      "width": 320,
+      "x": 0,
+      "y": 0
+    },
+    "viewport": {
+      "height": 568,
+      "width": 320
+    }
+  },
+  {
+    "label": "844x390-match-en",
+    "canvas": {
+      "height": 390,
+      "width": 320,
+      "x": 262,
+      "y": 0
+    },
+    "errorHidden": true,
+    "loadingHidden": true,
+    "player": {
+      "height": 390,
+      "width": 320,
+      "x": 262,
+      "y": 0
+    },
+    "viewport": {
+      "height": 390,
+      "width": 844
+    }
+  },
+  {
+    "label": "800x1200-match-confirm",
+    "canvas": {
+      "height": 1200,
+      "width": 480,
+      "x": 160,
+      "y": 0
+    },
+    "errorHidden": true,
+    "loadingHidden": true,
+    "player": {
+      "height": 1200,
+      "width": 480,
+      "x": 160,
+      "y": 0
+    },
+    "viewport": {
+      "height": 1200,
+      "width": 800
+    }
+  }
+]

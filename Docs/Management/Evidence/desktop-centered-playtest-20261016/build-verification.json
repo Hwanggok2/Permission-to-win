@@ -1,0 +1,24 @@
+{
+  "builtAtKst": "2026-10-16T10:35:16.579140+09:00",
+  "result": [
+    "Succeeded",
+    "Errors: 0",
+    "Warnings: 0",
+    "Bytes: 88619999",
+    "Duration: 00:00:57.3076070"
+  ],
+  "sourceFiles": 536,
+  "clientFrozenFiles": 571,
+  "sourceMismatches": [],
+  "files": 18,
+  "bytes": 88621572,
+  "siteRoot": "C:\\Github\\StageGame\\.work\\desktop-centered-20261016\\site",
+  "browserVerified": true,
+  "deployed": true,
+  "browserScope": "local IAB viewport/input/scroll/settings; physical device unverified",
+  "sourceCommit": "022c09a32715d6c13ee8c1702377916eb9b1b2ce",
+  "deploymentCommit": "7cda6874e0cb6c1dacc1824d66195a9939a789ee",
+  "publicBrowserVerified": true,
+  "publicBrowserEvidence": "public-browser/",
+  "publicBrowserScope": "IAB 1280x720/1920x1080/390x844/320x568/390x664; input, scroll, saved progress/settings; no physical device"
+}
