@@ -1,5 +1,7 @@
 # 이겨도 됩니까? — 전체 계획
 
+**웹 빌드·커밋 완료 2026-10-16 17:24:** 소스 `ddf43b0`, Pages `d6bc14b`. 로비 목록 조정을 포함한 최신 WebGL 빌드 오류·경고 0, 로컬 PC/모바일 크기 실행 확인 완료. **사용자 직접 배포 예정이며 이번 작업에서 푸시하지 않았다.** [커밋·검증 기록](../Docs/Management/Evidence/web-commit-20261016/README.md).
+
 **로비 목록 축소 2026-10-16:** 2열 카드를 약 2.5줄만 보이도록 목록 윗부분을 내려 줄이고 도움말·설정 버튼도 함께 내렸다. 작은 화면의 스크롤과 입력을 유지하며 Unity 3/3·80캡처로 확인했다. 저장 프리팹 반영 완료이며 **공개 웹에는 아직 미반영**이다. [화면·검증](../Client/Evidence/lobby-compact-20261016/README.md).
 
 **최신 공개 버전 2026-10-16:** [이겨도 됩니까? 플레이](https://hwanggok2.github.io/Permission-to-win/). 새 제목·Pretendard·폰트 고지를 적용한 WebGL을 빌드했다. 사용자가 `3d6c2a9`를 푸시했고 Pages 성공·공개 파일23/23 일치·PC/모바일 브라우저 입력 검증을 확인했다. [배포 기록](../Docs/Management/Evidence/title-font-web-20261016/README.md).

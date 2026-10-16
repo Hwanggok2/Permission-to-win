@@ -1,0 +1,15 @@
+{
+  "status": "BUILD_SUCCEEDED_LOCAL_ONLY",
+  "sourceFilesUnchanged": 561,
+  "outputFiles": 23,
+  "outputBytes": 91556025,
+  "dataTestsPassed": 46,
+  "excelExportCheck": "passed",
+  "generatedCopiesMatch": true,
+  "noticesMatch": true,
+  "unityErrors": 0,
+  "unityWarnings": 0,
+  "pushed": false,
+  "deployed": false,
+  "snapshot": "C:\\Github\\StageGame\\.work\\web-commit-20261016\\site\\Permission-to-win"
+}

@@ -1,0 +1,14 @@
+{
+  "branch": "codex/github-pages",
+  "commit": "d6bc14b5dfbd8a0c4a728e1bcc1c54810e95a260",
+  "rootIndexExists": true,
+  "buildFileHashesMatched": 23,
+  "infrastructureFiles": [
+    ".github/workflows/pages.yml",
+    ".nojekyll"
+  ],
+  "onlyBuildAndPagesInfrastructure": true,
+  "worktreeClean": true,
+  "pushed": false,
+  "deployed": false
+}

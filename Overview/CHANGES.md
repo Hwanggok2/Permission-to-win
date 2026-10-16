@@ -2,6 +2,7 @@
 
 | 날짜 | 결정 | 이유와 상태 |
 | --- | --- | --- |
+| 2026-10-16 | 최신 WebGL 빌드와 로컬 커밋, 배포는 사용자 담당 | 소스 ddf43b0 / Pages d6bc14b. 빌드 오류·경고 0, 결과물 23개 해시 일치, 로컬 PC/모바일 실행 확인. Pages 루트에는 빌드 파일과 최소 Actions만 유지. 푸시·배포 미실행. [증거](../Docs/Management/Evidence/web-commit-20261016/README.md) |
 | 2026-10-16 | 스테이지 상세 패널을 안전영역 중앙에 배치 | 번호·닫기·본문 상하 여백 일치, 작은 화면 스크롤, 영문 설명 두 줄. 저장 프리팹/소스 완료, Unity7/7. 사용자 요청으로 소스 수정까지만 유지·공개 미반영. [증거](../Docs/Management/Evidence/detail-centered-20261016/README.md) |
 | 2026-10-16 | PC 중앙 세로 게임·모바일 유지와 Pages 재배포 | 최대480px와 좌우 여백, 실제 canvas 기준 bridge. 첫 규칙·앱당 안내·대국 도움말 포함. 소스022c09a/Pages7cda687, 사용자 푸시·Actions 성공·공개18파일 해시 일치. 로컬 PC/모바일 검사 완료, 실기기 별도. [증거](../Docs/Management/Evidence/desktop-centered-playtest-20261016/README.md) |
 | 2026-10-16 | 출처 HTML의 외부 공개용 Mapbox 토큰 제거 | Freesound 효과음 출처 보관 페이지에 포함된 공개용 `pk` 값 1건. 추적 파일·ZIP·Pages 검사에서 배포 빌드에는 없음. 음원·CC0 증거 유지, 과거 이력과 경고 상태는 별도. [확인 기록](../Docs/Management/SECURITY-20261016.md) |

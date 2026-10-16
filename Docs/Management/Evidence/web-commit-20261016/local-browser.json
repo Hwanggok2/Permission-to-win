@@ -1,0 +1,25 @@
+{
+  "url": "http://127.0.0.1:8774/Permission-to-win/",
+  "desktopViewport": [
+    1280,
+    720
+  ],
+  "desktopCanvasWidth": 405,
+  "mobileViewport": [
+    390,
+    844
+  ],
+  "checks": [
+    "first_rules",
+    "column_preview_and_place",
+    "ai_reply",
+    "pause",
+    "exit_confirmation",
+    "mobile_lobby_two_and_half_rows",
+    "centered_detail",
+    "desktop_centered_lobby"
+  ],
+  "warningsAndErrors": [],
+  "physicalDeviceTested": false,
+  "publicDeploymentTested": false
+}
