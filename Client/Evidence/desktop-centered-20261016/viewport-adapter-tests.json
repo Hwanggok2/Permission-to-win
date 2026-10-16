@@ -1,0 +1,143 @@
+{
+  "kind": "Node VM unit checks; no browser execution",
+  "checks": [
+    {
+      "name": "Plain viewport 320x568 has no fictional host inset",
+      "passed": true
+    },
+    {
+      "name": "Plain viewport 390x664 has no fictional host inset",
+      "passed": true
+    },
+    {
+      "name": "Plain viewport 390x844 has no fictional host inset",
+      "passed": true
+    },
+    {
+      "name": "Plain viewport 454x768 has no fictional host inset",
+      "passed": true
+    },
+    {
+      "name": "Visual viewport overrides layout viewport, including toolbar resize and offsets",
+      "passed": true
+    },
+    {
+      "name": "Inner dimensions remain a fallback without visualViewport",
+      "passed": true
+    },
+    {
+      "name": "Explicit SDK host retains its controls allowance and actual controls bounds",
+      "passed": true
+    },
+    {
+      "name": "Host preview is explicit",
+      "passed": true
+    },
+    {
+      "name": "Invalid inputs cannot inject nonfinite numbers into Unity",
+      "passed": true
+    },
+    {
+      "name": "Eight-float WebGL ABI preserves viewport and host activation",
+      "passed": true
+    },
+    {
+      "name": "Desktop 1280x720 uses a centered portrait canvas",
+      "passed": true
+    },
+    {
+      "name": "Desktop 1920x1080 uses a centered portrait canvas",
+      "passed": true
+    },
+    {
+      "name": "Desktop 2556x1338 uses a centered portrait canvas",
+      "passed": true
+    },
+    {
+      "name": "Desktop 800x1200 uses a centered portrait canvas",
+      "passed": true
+    },
+    {
+      "name": "Desktop 1080x1920 uses a centered portrait canvas",
+      "passed": true
+    },
+    {
+      "name": "Resize from desktop to mobile and back keeps the same adapter and viewport-local coordinates",
+      "passed": true
+    },
+    {
+      "name": "Desktop side insets are intersected with the canvas; host top/bottom remain local",
+      "passed": true
+    },
+    {
+      "name": "Desktop bridge sends actual canvas dimensions rather than outer window dimensions",
+      "passed": true
+    },
+    {
+      "name": "Rotated mobile preserves a 320px play area and restores full portrait width",
+      "passed": true
+    }
+  ],
+  "desktop": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "player": {
+        "width": 405,
+        "height": 720,
+        "x": 437.5,
+        "y": 0
+      }
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "player": {
+        "width": 480,
+        "height": 1080,
+        "x": 720,
+        "y": 0
+      }
+    },
+    {
+      "viewport": {
+        "width": 2556,
+        "height": 1338
+      },
+      "player": {
+        "width": 480,
+        "height": 1338,
+        "x": 1038,
+        "y": 0
+      }
+    },
+    {
+      "viewport": {
+        "width": 800,
+        "height": 1200
+      },
+      "player": {
+        "width": 480,
+        "height": 1200,
+        "x": 160,
+        "y": 0
+      }
+    },
+    {
+      "viewport": {
+        "width": 1080,
+        "height": 1920
+      },
+      "player": {
+        "width": 480,
+        "height": 1920,
+        "x": 300,
+        "y": 0
+      }
+    }
+  ]
+}

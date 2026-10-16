@@ -72,9 +72,15 @@ namespace StageGame
             lastRectSize = available;
             if (widthFitTopAligned)
             {
-                // Expand-mode CanvasScaler can expose >1080 units on short viewports.
-                // Fill that width instead of applying a second height-based downscale.
-                float widthFit = available.x / referenceSize.x;
+                // Web uses a centered portrait canvas. Also protect editor/native wide windows
+                // without reducing the width of an ordinary portrait mobile viewport.
+                float contentWidth = available.x;
+                if (available.x > available.y)
+                {
+                    float cssToLocal = RenderPixelsPerCssPixel / canvas.scaleFactor;
+                    contentWidth = Mathf.Min(contentWidth, Mathf.Clamp(available.y * referenceSize.x / referenceSize.y, 320 * cssToLocal, 480 * cssToLocal));
+                }
+                float widthFit = contentWidth / referenceSize.x;
                 // RenderTexture previews can have a pixel size different from the editor Game view.
                 float padding = topPaddingCss * cssPixelRatio * canvas.pixelRect.width / Screen.width / canvas.scaleFactor;
                 content.anchorMin = content.anchorMax = content.pivot = new Vector2(.5f, 1);

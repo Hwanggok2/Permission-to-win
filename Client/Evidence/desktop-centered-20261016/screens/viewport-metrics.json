@@ -1,0 +1,196 @@
+{
+    "screens": [
+        {
+            "name": "ko-390x664-dpr1-match",
+            "titleTopCss": 110.91851806640625,
+            "boardWidthCss": 337.3583984375,
+            "contentWidthCss": 389.9999084472656,
+            "minimumTapCss": 49.28935241699219,
+            "bottomCss": 19.729415893554689
+        },
+        {
+            "name": "ko-390x664-dpr1-lobby",
+            "titleTopCss": 115.79168701171875,
+            "boardWidthCss": 0.0,
+            "contentWidthCss": 390.0,
+            "minimumTapCss": 0.0,
+            "bottomCss": 0.0
+        },
+        {
+            "name": "ko-390x664-dpr1.5-match",
+            "titleTopCss": 110.91845703125,
+            "boardWidthCss": 337.3583984375,
+            "contentWidthCss": 390.0,
+            "minimumTapCss": 49.289337158203128,
+            "bottomCss": 19.7293758392334
+        },
+        {
+            "name": "ko-390x664-dpr1.5-lobby",
+            "titleTopCss": 115.7916259765625,
+            "boardWidthCss": 0.0,
+            "contentWidthCss": 390.0,
+            "minimumTapCss": 0.0,
+            "bottomCss": 0.0
+        },
+        {
+            "name": "ko-390x664-dpr2-match",
+            "titleTopCss": 110.9185791015625,
+            "boardWidthCss": 337.3583984375,
+            "contentWidthCss": 390.0,
+            "minimumTapCss": 49.28935241699219,
+            "bottomCss": 19.7293758392334
+        },
+        {
+            "name": "ko-390x664-dpr2-lobby",
+            "titleTopCss": 115.79168701171875,
+            "boardWidthCss": 0.0,
+            "contentWidthCss": 390.0,
+            "minimumTapCss": 0.0,
+            "bottomCss": 0.0
+        },
+        {
+            "name": "ko-390x844-dpr1-match",
+            "titleTopCss": 114.16668701171875,
+            "boardWidthCss": 381.3333740234375,
+            "contentWidthCss": 390.0000305175781,
+            "minimumTapCss": 55.714263916015628,
+            "bottomCss": 126.95823669433594
+        },
+        {
+            "name": "ko-390x844-dpr1-lobby",
+            "titleTopCss": 115.7916259765625,
+            "boardWidthCss": 0.0,
+            "contentWidthCss": 390.0000305175781,
+            "minimumTapCss": 0.0,
+            "bottomCss": 0.0
+        },
+        {
+            "name": "ko-454x768-dpr1-match",
+            "titleTopCss": 127.6453857421875,
+            "boardWidthCss": 390.5228271484375,
+            "contentWidthCss": 454.0,
+            "minimumTapCss": 57.056884765625,
+            "bottomCss": 22.951332092285158
+        },
+        {
+            "name": "ko-454x768-dpr1-lobby",
+            "titleTopCss": 133.4805908203125,
+            "boardWidthCss": 0.0,
+            "contentWidthCss": 454.0,
+            "minimumTapCss": 0.0,
+            "bottomCss": 0.0
+        },
+        {
+            "name": "ko-1080x1920-dpr1-match",
+            "titleTopCss": 297.244384765625,
+            "boardWidthCss": 991.6171264648438,
+            "contentWidthCss": 1080.0,
+            "minimumTapCss": 144.8790283203125,
+            "bottomCss": 55.042762756347659
+        },
+        {
+            "name": "ko-1080x1920-dpr1-lobby",
+            "titleTopCss": 306.5,
+            "boardWidthCss": 0.0,
+            "contentWidthCss": 1080.0,
+            "minimumTapCss": 0.0,
+            "bottomCss": 0.0
+        },
+        {
+            "name": "en-390x664-dpr1-match",
+            "titleTopCss": 110.91851806640625,
+            "boardWidthCss": 337.3583984375,
+            "contentWidthCss": 390.0,
+            "minimumTapCss": 49.28935241699219,
+            "bottomCss": 19.7293758392334
+        },
+        {
+            "name": "en-390x664-dpr1-lobby",
+            "titleTopCss": 115.79168701171875,
+            "boardWidthCss": 0.0,
+            "contentWidthCss": 390.0,
+            "minimumTapCss": 0.0,
+            "bottomCss": 0.0
+        },
+        {
+            "name": "en-390x664-dpr1.5-match",
+            "titleTopCss": 110.91845703125,
+            "boardWidthCss": 337.3583984375,
+            "contentWidthCss": 390.0,
+            "minimumTapCss": 49.289337158203128,
+            "bottomCss": 19.7293758392334
+        },
+        {
+            "name": "en-390x664-dpr1.5-lobby",
+            "titleTopCss": 115.7916259765625,
+            "boardWidthCss": 0.0,
+            "contentWidthCss": 390.0,
+            "minimumTapCss": 0.0,
+            "bottomCss": 0.0
+        },
+        {
+            "name": "en-390x664-dpr2-match",
+            "titleTopCss": 110.91851806640625,
+            "boardWidthCss": 337.3583984375,
+            "contentWidthCss": 390.0,
+            "minimumTapCss": 49.28935241699219,
+            "bottomCss": 19.7293758392334
+        },
+        {
+            "name": "en-390x664-dpr2-lobby",
+            "titleTopCss": 115.79168701171875,
+            "boardWidthCss": 0.0,
+            "contentWidthCss": 390.0,
+            "minimumTapCss": 0.0,
+            "bottomCss": 0.0
+        },
+        {
+            "name": "en-390x844-dpr1-match",
+            "titleTopCss": 114.16668701171875,
+            "boardWidthCss": 381.3333740234375,
+            "contentWidthCss": 390.0000305175781,
+            "minimumTapCss": 55.714263916015628,
+            "bottomCss": 126.95823669433594
+        },
+        {
+            "name": "en-390x844-dpr1-lobby",
+            "titleTopCss": 115.7916259765625,
+            "boardWidthCss": 0.0,
+            "contentWidthCss": 390.0000305175781,
+            "minimumTapCss": 0.0,
+            "bottomCss": 0.0
+        },
+        {
+            "name": "en-454x768-dpr1-match",
+            "titleTopCss": 127.6453857421875,
+            "boardWidthCss": 390.5228271484375,
+            "contentWidthCss": 454.0,
+            "minimumTapCss": 57.056884765625,
+            "bottomCss": 22.951332092285158
+        },
+        {
+            "name": "en-454x768-dpr1-lobby",
+            "titleTopCss": 133.4805908203125,
+            "boardWidthCss": 0.0,
+            "contentWidthCss": 454.0,
+            "minimumTapCss": 0.0,
+            "bottomCss": 0.0
+        },
+        {
+            "name": "en-1080x1920-dpr1-match",
+            "titleTopCss": 297.244384765625,
+            "boardWidthCss": 991.6171264648438,
+            "contentWidthCss": 1080.0,
+            "minimumTapCss": 144.8790283203125,
+            "bottomCss": 55.042762756347659
+        },
+        {
+            "name": "en-1080x1920-dpr1-lobby",
+            "titleTopCss": 306.5,
+            "boardWidthCss": 0.0,
+            "contentWidthCss": 1080.0,
+            "minimumTapCss": 0.0,
+            "bottomCss": 0.0
+        }
+    ]
+}

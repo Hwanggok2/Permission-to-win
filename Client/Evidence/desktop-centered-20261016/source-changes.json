@@ -1,0 +1,18 @@
+[
+  {
+    "path": "Client/Assets/StageGame/Scripts/UI/SafeAreaFitter.cs",
+    "status": "modified"
+  },
+  {
+    "path": "Client/Assets/WebGLTemplates/StageGamePortrait/host-layout.js",
+    "status": "modified"
+  },
+  {
+    "path": "Client/Assets/WebGLTemplates/StageGamePortrait/index.html",
+    "status": "modified"
+  },
+  {
+    "path": "Client/Tools/VerifyWebViewport.cjs",
+    "status": "modified"
+  }
+]

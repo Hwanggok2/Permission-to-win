@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-16",
+  "status": "client ready for coordinator build; not deployed",
+  "unity": {
+    "total": 12,
+    "passed": 12,
+    "failed": 0,
+    "skipped": 0
+  },
+  "nodeVm": {
+    "passed": 19,
+    "browserExecution": false
+  },
+  "captureCount": 100,
+  "mobilePreviousMetricMaxDeltaCss": 0,
+  "desktop": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "player": {
+        "width": 405,
+        "height": 720,
+        "x": 437.5,
+        "y": 0
+      }
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "player": {
+        "width": 480,
+        "height": 1080,
+        "x": 720,
+        "y": 0
+      }
+    },
+    {
+      "viewport": {
+        "width": 2556,
+        "height": 1338
+      },
+      "player": {
+        "width": 480,
+        "height": 1338,
+        "x": 1038,
+        "y": 0
+      }
+    },
+    {
+      "viewport": {
+        "width": 800,
+        "height": 1200
+      },
+      "player": {
+        "width": 480,
+        "height": 1200,
+        "x": 160,
+        "y": 0
+      }
+    },
+    {
+      "viewport": {
+        "width": 1080,
+        "height": 1920
+      },
+      "player": {
+        "width": 480,
+        "height": 1920,
+        "x": 300,
+        "y": 0
+      }
+    }
+  ],
+  "newFiles": [
+    "Client/Assets/StageGame/Tests/EditMode/RankDesktopViewportTests.cs",
+    "Client/Assets/StageGame/Tests/EditMode/RankDesktopViewportTests.cs.meta"
+  ],
+  "unityLockPresent": false,
+  "browserVerification": "incomplete: local connection timeout followed by tool data URL policy block; no bypass",
+  "newBuild": false,
+  "deployed": false,
+  "deviceTest": false,
+  "diffCheck": "passed"
+}

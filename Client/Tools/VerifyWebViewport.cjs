@@ -21,7 +21,7 @@ function context(width, height, query = '', viewport = true) {
   return {sandbox, styles, player, visible, events, visibleEvents, layout:sandbox.stageGameHostLayout};
 }
 function check(name, test) { test(); checks.push({name, passed:true}); }
-for (const [width, height] of [[390,664],[390,844],[454,768],[1080,1920]]) {
+for (const [width, height] of [[320,568],[390,664],[390,844],[454,768]]) {
   check(`Plain viewport ${width}x${height} has no fictional host inset`, () => {
     const c = context(width,height); const m = c.layout.read();
     assert.equal(m.width,width);assert.equal(m.height,height);assert.equal(m.hostActive,false);
@@ -65,6 +65,47 @@ check('Eight-float WebGL ABI preserves viewport and host activation', () => {
   vm.runInContext('window.stageGameHostLayout = null',c.sandbox);
   assert.deepEqual(read(),[0,0,0,0,390,664,-1,0]);
 });
-const output=path.join(root,'Evidence/web-audio-fsb-20261016/viewport-adapter-tests.json');
-fs.writeFileSync(output,JSON.stringify({kind:'Node VM unit checks; no browser execution',checks},null,2));
+const desktop = [];
+for (const [width,height,expectedWidth] of [[1280,720,405],[1920,1080,480],[2556,1338,480],[800,1200,480],[1080,1920,480]]) {
+  check(`Desktop ${width}x${height} uses a centered portrait canvas`, () => {
+    const c=context(width,height),m=c.layout.read();
+    assert.equal(m.width,expectedWidth);assert.equal(m.height,height);
+    assert.equal(m.x,(width-expectedWidth)/2);assert.equal(m.y,0);
+    assert.equal(c.player.style.width,expectedWidth+'px');assert.equal(c.player.style.left,m.x+'px');
+    assert.equal(c.layout.read(),m,'Unchanged reads must not trigger another layout');
+    desktop.push({viewport:{width,height},player:{width:m.width,height:m.height,x:m.x,y:m.y}});
+  });
+}
+check('Resize from desktop to mobile and back keeps the same adapter and viewport-local coordinates', () => {
+  const c=context(1280,720);
+  Object.assign(c.visible,{width:390,height:844});c.visibleEvents.resize();
+  assert.equal(c.layout.read().width,390);assert.equal(c.player.style.left,'0px');
+  Object.assign(c.visible,{width:1920,height:1080,offsetLeft:3,offsetTop:20});c.visibleEvents.resize();
+  assert.equal(c.layout.read().width,480);assert.equal(c.player.style.left,'723px');assert.equal(c.player.style.top,'20px');
+});
+check('Desktop side insets are intersected with the canvas; host top/bottom remain local', () => {
+  const c=context(1280,720);c.layout.setInsets({left:450,right:440,top:59,bottom:34},160);
+  const m=c.layout.read();assert.equal(m.left,12.5);assert.equal(m.right,2.5);
+  assert.equal(m.top,59);assert.equal(m.bottom,34);assert.equal(m.controlsBottom,160);
+  assert.equal(c.styles['--content-top'],'168px');
+  c.layout.setInsets({left:20,right:20,top:59,bottom:34});
+  assert.equal(c.layout.read().left,0);assert.equal(c.layout.read().right,0);
+});
+check('Desktop bridge sends actual canvas dimensions rather than outer window dimensions', () => {
+  const c=context(1280,720);c.sandbox.HEAPF32=new Float32Array(8);
+  c.sandbox.LibraryManager={library:{}};c.sandbox.mergeInto=Object.assign;vm.runInContext(bridge,c.sandbox);
+  c.layout.setInsets({left:450,right:440,top:59,bottom:34},160);
+  c.sandbox.LibraryManager.library.StageGameReadHostInsets(0,4,8,12,16,20,24,28);
+  assert.deepEqual(Array.from(c.sandbox.HEAPF32),[12.5,59,2.5,34,405,720,160,1]);
+});
+check('Rotated mobile preserves a 320px play area and restores full portrait width', () => {
+  const c=context(390,844,'?hostPreview=1&hostTop=59&hostBottom=34');
+  Object.assign(c.visible,{width:844,height:390});c.visibleEvents.resize();
+  assert.equal(c.layout.read().width,320);assert.equal(c.layout.read().height,390);
+  assert.equal(c.layout.read().x,262);assert.equal(c.layout.read().top,59);assert.equal(c.layout.read().bottom,34);
+  Object.assign(c.visible,{width:390,height:844});c.visibleEvents.resize();
+  assert.equal(c.layout.read().width,390);assert.equal(c.layout.read().x,0);
+});
+const output=path.resolve(process.argv[2]||path.join(root,'Evidence/desktop-centered-20261016/viewport-adapter-tests.json'));
+fs.writeFileSync(output,JSON.stringify({kind:'Node VM unit checks; no browser execution',checks,desktop},null,2));
 console.log(`${checks.length}/${checks.length} adapter checks passed`);
