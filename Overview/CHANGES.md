@@ -2,6 +2,7 @@
 
 | 날짜 | 결정 | 이유와 상태 |
 | --- | --- | --- |
+| 2026-10-16 | 스테이지 상세 패널을 안전영역 중앙에 배치 | 번호·닫기·본문 상하 여백 일치, 작은 화면 스크롤, 영문 설명 두 줄. 저장 프리팹/소스 완료, Unity7/7. 새 WebGL 빌드 승인 대기·공개 미반영. [증거](../Docs/Management/Evidence/detail-centered-20261016/README.md) |
 | 2026-10-16 | PC 중앙 세로 게임·모바일 유지와 Pages 재배포 | 최대480px와 좌우 여백, 실제 canvas 기준 bridge. 첫 규칙·앱당 안내·대국 도움말 포함. 소스022c09a/Pages7cda687, 사용자 푸시·Actions 성공·공개18파일 해시 일치. 로컬 PC/모바일 검사 완료, 실기기 별도. [증거](../Docs/Management/Evidence/desktop-centered-playtest-20261016/README.md) |
 | 2026-10-16 | 출처 HTML의 외부 공개용 Mapbox 토큰 제거 | Freesound 효과음 출처 보관 페이지에 포함된 공개용 `pk` 값 1건. 추적 파일·ZIP·Pages 검사에서 배포 빌드에는 없음. 음원·CC0 증거 유지, 과거 이력과 경고 상태는 별도. [확인 기록](../Docs/Management/SECURITY-20261016.md) |
 | 2026-10-16 | 기능별 한국어 커밋과 빌드 전용 Pages 워크트리 분리 | 개발 작업 4개 커밋 완료. 독립 브랜치 `codex/github-pages`의 `348b441`에는 검증본 18파일·`.nojekyll`·Pages Actions만 포함하며 빌드 해시 일치 확인. 원격 브랜치 확인, Pages Source 변경·Actions 재실행 필요. [커밋·워크트리 정리](WORK-SUMMARY-20261016.md) |

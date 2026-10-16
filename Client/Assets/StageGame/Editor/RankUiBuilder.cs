@@ -357,6 +357,28 @@ namespace StageGame.Editor
             IconButton(go.transform,"Help",theme.help,-290,-55-headerOffset);Top(Get<RectTransform>(go,"Help"));IconButton(go.transform,"Settings",theme.settings,290,-55-headerOffset);Top(Get<RectTransform>(go,"Settings"));
             Top(Label(go.transform,"Notice","",20,0,-128-headerOffset,680,28).rectTransform);
         }
+        [MenuItem("StageGame/Apply Centered Detail")]
+        public static void ApplyCenteredDetail()
+        {
+            EnsureEditorReady();
+            Save("Detail",ConfigureDetailLayout);
+            Save("RankAppRoot",go=>ConfigureDetailLayout(go.GetComponent<RankGameApp>().detail.gameObject));
+            AssetDatabase.SaveAssets();Validate();
+            Debug.Log("[Detail layout] Saved centered header/body and a two-line description area; slide root and other screens preserved.");
+        }
+        static void ConfigureDetailLayout(GameObject go)
+        {
+            var fit=Add<RankDetailFitter>(go);fit.scroll=Get<ScrollRect>(go,"Scroll");
+            fit.number=Get<RectTransform>(go,"Number");fit.close=Get<RectTransform>(go,"CloseButton");
+            fit.headerHeight=U(120);fit.headerCenter=U(55);fit.minimumVerticalGap=U(32);
+            fit.scroll.content.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,U(1005));
+            var description=Get<Text>(go,"Scroll/Viewport/Content/Description");
+            Layout(description.transform,0,-745,680,100);Top(description.rectTransform);
+            description.horizontalOverflow=HorizontalWrapMode.Wrap;description.resizeTextForBestFit=false;
+            var state=Get<RectTransform>(go,"Scroll/Viewport/Content/State");state.anchoredPosition=RankUiMetrics.Point(0,-830);
+            var play=Get<RectTransform>(go,"Scroll/Viewport/Content/Play");play.anchoredPosition=RankUiMetrics.Point(0,-930);
+            fit.Fit();
+        }
         static void BuildDetail(GameObject go)
         {
             Size(go.transform,720,1280);var background=Add<Image>(go);background.color=Color.white;background.raycastTarget=true;
@@ -371,6 +393,7 @@ namespace StageGame.Editor
             Top(Label(content,"Description","",26,0,-735,680,70).rectTransform);
             Top(Label(content,"State","",24,0,-810,650,50).rectTransform);
             Top((RectTransform)Button(content,"Play",0,-910,680,110,true).transform);
+            ConfigureDetailLayout(go);
         }
         static void BuildMatch(GameObject go)
         {
@@ -524,6 +547,7 @@ namespace StageGame.Editor
             // Detail's stationary blocker covers the lobby while its saved content slides.
             var detailBlocker=Rect(content,"DetailBlocker",0,0,720,1280);Stretch(detailBlocker); var blocker=Add<Image>(detailBlocker.gameObject); blocker.color=new Color(1,1,1,.005f); blocker.raycastTarget=true;
             app.detail=Instance("Detail",detailBlocker,"Detail");Stretch(app.detail);
+            ConfigureDetailLayout(app.detail.gameObject);
             var detailContent=Get<RectTransform>(app.detail.gameObject,"Scroll/Viewport/Content").gameObject;app.detailScroll=Get<ScrollRect>(app.detail.gameObject,"Scroll");
             // Blocker is parented to the sliding content's activation with a tiny saved relay.
             var guard=Add<RankDetailBlocker>(app.detail.gameObject); guard.blocker=blocker;

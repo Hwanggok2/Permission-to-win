@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="7" result="Passed" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-16 02:20:15Z" end-time="2026-10-16 02:20:16Z" duration="0.9226261">
+  <test-suite type="TestSuite" id="1000" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="138" result="Passed" start-time="2026-10-16 02:20:15Z" end-time="2026-10-16 02:20:16Z" duration="0.922626" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1165" name="StageGame.Tests.dll" fullname="C:/Github/StageGame/Client/Library/ScriptAssemblies/StageGame.Tests.dll" runstate="Runnable" testcasecount="138" result="Passed" start-time="2026-10-16 02:20:16Z" end-time="2026-10-16 02:20:16Z" duration="0.885630" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="24928" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1166" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="138" result="Passed" start-time="2026-10-16 02:20:16Z" end-time="2026-10-16 02:20:16Z" duration="0.884867" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1167" name="Tests" fullname="StageGame.Tests" runstate="Runnable" testcasecount="138" result="Passed" start-time="2026-10-16 02:20:16Z" end-time="2026-10-16 02:20:16Z" duration="0.884153" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1030" name="HostLayoutTests" fullname="StageGame.Tests.HostLayoutTests" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-16 02:19:40Z" end-time="2026-10-16 02:19:40Z" duration="0.078982" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1038" name="SavedGraphicsAndSecondaryLicenseMenuKeepPrefabReferences" fullname="StageGame.Tests.HostLayoutTests.SavedGraphicsAndSecondaryLicenseMenuKeepPrefabReferences" methodname="SavedGraphicsAndSecondaryLicenseMenuKeepPrefabReferences" classname="StageGame.Tests.HostLayoutTests" runstate="Runnable" seed="1090047131" result="Passed" start-time="2026-10-16 02:19:40Z" end-time="2026-10-16 02:19:40Z" duration="0.068656" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1128" name="RankDetailLayoutAssetTests" fullname="StageGame.Tests.RankDetailLayoutAssetTests" classname="StageGame.Tests.RankDetailLayoutAssetTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-16 02:19:40Z" end-time="2026-10-16 02:19:40Z" duration="0.002219" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1129" name="DetailFitterAndTextSpaceAreSavedInBothPrefabs" fullname="StageGame.Tests.RankDetailLayoutAssetTests.DetailFitterAndTextSpaceAreSavedInBothPrefabs" methodname="DetailFitterAndTextSpaceAreSavedInBothPrefabs" classname="StageGame.Tests.RankDetailLayoutAssetTests" runstate="Runnable" seed="166070784" result="Passed" start-time="2026-10-16 02:19:40Z" end-time="2026-10-16 02:19:40Z" duration="0.001019" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1055" name="RankFlowTests" fullname="StageGame.Tests.RankFlowTests" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" testcasecount="59" result="Passed" start-time="2026-10-16 02:20:16Z" end-time="2026-10-16 02:20:16Z" duration="0.857872" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1077" name="DetailCentersAfterSlideNavigationAndResizeWhileSmallScreensScroll" fullname="StageGame.Tests.RankFlowTests.DetailCentersAfterSlideNavigationAndResizeWhileSmallScreensScroll" methodname="DetailCentersAfterSlideNavigationAndResizeWhileSmallScreensScroll" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1081114208" result="Passed" start-time="2026-10-16 02:19:40Z" end-time="2026-10-16 02:20:07Z" duration="27.417170" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] ko-1080x1920-plain-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080x1920-plain-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-320x568-plain-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-320x568-plain-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-390x664-plain-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] ko-390x664-plain-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] ko-390x844-plain-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-390x844-plain-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-405x720-plain-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:405.00, height:720.00), scale=0.375, ppu=0.375, fontSize=78
+[Capture] ko-405x720-plain-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:405.00, height:720.00), scale=0.375, ppu=0.375, fontSize=78
+[Capture] ko-480x1080-plain-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1080.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-480x1080-plain-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1080.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-1080x1920-host-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080x1920-host-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-320x568-host-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-320x568-host-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-390x664-host-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] ko-390x664-host-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] ko-390x844-host-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-390x844-host-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-405x720-host-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:405.00, height:720.00), scale=0.375, ppu=0.375, fontSize=78
+[Capture] ko-405x720-host-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:405.00, height:720.00), scale=0.375, ppu=0.375, fontSize=78
+[Capture] ko-480x1080-host-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1080.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-480x1080-host-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1080.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-1080x1920-plain-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-1080x1920-plain-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-320x568-plain-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-320x568-plain-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-390x664-plain-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] en-390x664-plain-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] en-390x844-plain-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-390x844-plain-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-405x720-plain-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:405.00, height:720.00), scale=0.375, ppu=0.375, fontSize=78
+[Capture] en-405x720-plain-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:405.00, height:720.00), scale=0.375, ppu=0.375, fontSize=78
+[Capture] en-480x1080-plain-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1080.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-480x1080-plain-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1080.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-1080x1920-host-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-1080x1920-host-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-320x568-host-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-320x568-host-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-390x664-host-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] en-390x664-host-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] en-390x844-host-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-390x844-host-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-405x720-host-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:405.00, height:720.00), scale=0.375, ppu=0.375, fontSize=78
+[Capture] en-405x720-host-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:405.00, height:720.00), scale=0.375, ppu=0.375, fontSize=78
+[Capture] en-480x1080-host-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1080.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-480x1080-host-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1080.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1078" name="EveryDetailDescriptionFitsWithoutReducingFontSize" fullname="StageGame.Tests.RankFlowTests.EveryDetailDescriptionFitsWithoutReducingFontSize" methodname="EveryDetailDescriptionFitsWithoutReducingFontSize" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="652025142" result="Passed" start-time="2026-10-16 02:20:07Z" end-time="2026-10-16 02:20:09Z" duration="1.876021" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] en-390x664-longest-description: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1079" name="FirstLaunchRulesSuspendPlayAndAppearOnlyOnce" fullname="StageGame.Tests.RankFlowTests.FirstLaunchRulesSuspendPlayAndAppearOnlyOnce" methodname="FirstLaunchRulesSuspendPlayAndAppearOnlyOnce" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1179443228" result="Passed" start-time="2026-10-16 02:20:09Z" end-time="2026-10-16 02:20:12Z" duration="3.164093" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] ko-390x664-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] ko-390x844-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-454x768-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:454.00, height:768.00), scale=0.4, ppu=0.4, fontSize=78
+[Capture] ko-1080x1920-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-390x664-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] en-390x844-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-454x768-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:454.00, height:768.00), scale=0.4, ppu=0.4, fontSize=78
+[Capture] en-1080x1920-first-rules: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1067" name="FreshRunIsConsumedButExistingAndRecoverySavesStayInLobby" fullname="StageGame.Tests.RankFlowTests.FreshRunIsConsumedButExistingAndRecoverySavesStayInLobby" methodname="FreshRunIsConsumedButExistingAndRecoverySavesStayInLobby" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1693375676" result="Passed" start-time="2026-10-16 02:20:12Z" end-time="2026-10-16 02:20:14Z" duration="1.917336" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Save recovery] JSON parse error: Invalid value.
+]]></output>
+            </test-case>
+            <test-case id="1068" name="ThirtyCardsReachBothEndsAndDetailBlocksLobbyAndPreservesScroll" fullname="StageGame.Tests.RankFlowTests.ThirtyCardsReachBothEndsAndDetailBlocksLobbyAndPreservesScroll" methodname="ThirtyCardsReachBothEndsAndDetailBlocksLobbyAndPreservesScroll" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1325586689" result="Passed" start-time="2026-10-16 02:20:14Z" end-time="2026-10-16 02:20:16Z" duration="2.103037" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Capture] lobby-scroll-reachability: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+Saving results to: C:/Github/StageGame/Client/Evidence/detail-centered-20261016/unity-tests.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

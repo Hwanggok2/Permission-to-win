@@ -1,5 +1,7 @@
 # StageGame 전체 계획
 
+**상세 패널 중앙 배치 2026-10-16:** 단계 번호·닫기·판·설명·시작하기를 안전영역 중앙에 배치했다. 작은 화면은 기존 스크롤을 유지하며 영어 설명은 두 줄까지 표시한다. Unity7/7·24조합 검사 완료. **새 WebGL 빌드 승인 대기이며 아래 공개 버전에는 아직 미반영**이다. [수정 화면·검증](../Docs/Management/Evidence/detail-centered-20261016/README.md).
+
 **PC 중앙 화면 재배포 2026-10-16:** [4목 플레이](https://hwanggok2.github.io/StageGame/). PC는 중앙 최대480px의 세로 게임과 좌우 여백, 모바일은 기존 화면 폭을 유지한다. 첫 규칙 안내·앱 실행당1회 착수 안내·대국 도움말도 포함했다. 소스 `022c09a`, Pages `7cda687`. 사용자가 Pages 커밋을 업로드했고 [Actions 성공](https://github.com/Hwanggok2/StageGame/actions/runs/38837758172) 및 공개 파일18/18 해시 일치를 확인했다. 노트북 종료와 무관하게 접속 가능하다. 로컬 실제 브라우저의 PC·모바일 크기 검증 완료, 공개 화면 독립 검사 완료, 실제 휴대폰 검사는 별도다. [검증·배포 기록](../Docs/Management/Evidence/desktop-centered-playtest-20261016/README.md). 새 main 소스·문서 커밋은 아직 로컬에만 있다.
 
 **이전 외부 테스트 이력:** 01:34 모바일 오디오·여백 수정본은 Cloudflare 임시 주소로 시험했다. 현재 공유 주소는 위 GitHub Pages이며, 아래 날짜별 시안·빌드 보류 문구는 당시 이력이다.

@@ -1,0 +1,196 @@
+{
+    "screens": [
+        {
+            "name": "ko-1080x1920-plain",
+            "topGap": 112.2498779296875,
+            "bottomGap": 112.25006103515625,
+            "viewportHeight": 1507.4998779296875,
+            "contentHeight": 1507.5,
+            "minimumTap": 164.99998474121095
+        },
+        {
+            "name": "ko-320x568-plain",
+            "topGap": 30.0,
+            "bottomGap": 30.000049591064454,
+            "viewportHeight": 446.66668701171877,
+            "contentHeight": 446.66668701171877,
+            "minimumTap": 48.88888168334961
+        },
+        {
+            "name": "ko-390x664-plain",
+            "topGap": 23.3123779296875,
+            "bottomGap": 23.312503814697267,
+            "viewportHeight": 544.375,
+            "contentHeight": 544.3750610351563,
+            "minimumTap": 59.58332443237305
+        },
+        {
+            "name": "ko-390x844-plain",
+            "topGap": 113.3125,
+            "bottomGap": 113.31246948242188,
+            "viewportHeight": 544.375,
+            "contentHeight": 544.375,
+            "minimumTap": 59.58331298828125
+        },
+        {
+            "name": "ko-405x720-plain",
+            "topGap": 39.59375,
+            "bottomGap": 39.5937385559082,
+            "viewportHeight": 565.3124389648438,
+            "contentHeight": 565.3125,
+            "minimumTap": 61.87499237060547
+        },
+        {
+            "name": "ko-480x1080-plain",
+            "topGap": 161.0,
+            "bottomGap": 161.0,
+            "viewportHeight": 670.0,
+            "contentHeight": 670.0,
+            "minimumTap": 73.33331298828125
+        },
+        {
+            "name": "ko-1080x1920-host",
+            "topGap": 48.0,
+            "bottomGap": 48.0000114440918,
+            "viewportHeight": 1479.0,
+            "contentHeight": 1507.4998779296875,
+            "minimumTap": 164.99998474121095
+        },
+        {
+            "name": "ko-320x568-host",
+            "topGap": 14.2222900390625,
+            "bottomGap": 14.222213745117188,
+            "viewportHeight": 321.2222595214844,
+            "contentHeight": 446.6666564941406,
+            "minimumTap": 48.888877868652347
+        },
+        {
+            "name": "ko-390x664-host",
+            "topGap": 17.3333740234375,
+            "bottomGap": 17.333316802978517,
+            "viewportHeight": 399.3332824707031,
+            "contentHeight": 544.3750610351563,
+            "minimumTap": 59.58331298828125
+        },
+        {
+            "name": "ko-390x844-host",
+            "topGap": 34.81243896484375,
+            "bottomGap": 34.81245040893555,
+            "viewportHeight": 544.3750610351563,
+            "contentHeight": 544.3750610351563,
+            "minimumTap": 59.583335876464847
+        },
+        {
+            "name": "ko-405x720-host",
+            "topGap": 17.99993896484375,
+            "bottomGap": 18.000045776367189,
+            "viewportHeight": 451.4999694824219,
+            "contentHeight": 565.3125,
+            "minimumTap": 61.87499237060547
+        },
+        {
+            "name": "ko-480x1080-host",
+            "topGap": 82.5,
+            "bottomGap": 82.4999771118164,
+            "viewportHeight": 670.0,
+            "contentHeight": 670.0,
+            "minimumTap": 73.33332061767578
+        },
+        {
+            "name": "en-1080x1920-plain",
+            "topGap": 112.25,
+            "bottomGap": 112.25006103515625,
+            "viewportHeight": 1507.4998779296875,
+            "contentHeight": 1507.4998779296875,
+            "minimumTap": 164.99993896484376
+        },
+        {
+            "name": "en-320x568-plain",
+            "topGap": 30.0,
+            "bottomGap": 30.000049591064454,
+            "viewportHeight": 446.66668701171877,
+            "contentHeight": 446.66668701171877,
+            "minimumTap": 48.88888168334961
+        },
+        {
+            "name": "en-390x664-plain",
+            "topGap": 23.3123779296875,
+            "bottomGap": 23.312503814697267,
+            "viewportHeight": 544.375,
+            "contentHeight": 544.3750610351563,
+            "minimumTap": 59.58332443237305
+        },
+        {
+            "name": "en-390x844-plain",
+            "topGap": 113.3125,
+            "bottomGap": 113.31246948242188,
+            "viewportHeight": 544.375,
+            "contentHeight": 544.375,
+            "minimumTap": 59.58331298828125
+        },
+        {
+            "name": "en-405x720-plain",
+            "topGap": 39.59375,
+            "bottomGap": 39.5937385559082,
+            "viewportHeight": 565.3124389648438,
+            "contentHeight": 565.3125,
+            "minimumTap": 61.87499237060547
+        },
+        {
+            "name": "en-480x1080-plain",
+            "topGap": 161.0,
+            "bottomGap": 161.0,
+            "viewportHeight": 670.0,
+            "contentHeight": 670.0,
+            "minimumTap": 73.33331298828125
+        },
+        {
+            "name": "en-1080x1920-host",
+            "topGap": 48.0,
+            "bottomGap": 48.0000114440918,
+            "viewportHeight": 1479.0,
+            "contentHeight": 1507.4998779296875,
+            "minimumTap": 164.99998474121095
+        },
+        {
+            "name": "en-320x568-host",
+            "topGap": 14.2222900390625,
+            "bottomGap": 14.222213745117188,
+            "viewportHeight": 321.2222595214844,
+            "contentHeight": 446.6666564941406,
+            "minimumTap": 48.888877868652347
+        },
+        {
+            "name": "en-390x664-host",
+            "topGap": 17.3333740234375,
+            "bottomGap": 17.333316802978517,
+            "viewportHeight": 399.3332824707031,
+            "contentHeight": 544.3750610351563,
+            "minimumTap": 59.58331298828125
+        },
+        {
+            "name": "en-390x844-host",
+            "topGap": 34.81243896484375,
+            "bottomGap": 34.81245040893555,
+            "viewportHeight": 544.3750610351563,
+            "contentHeight": 544.3750610351563,
+            "minimumTap": 59.583335876464847
+        },
+        {
+            "name": "en-405x720-host",
+            "topGap": 17.99993896484375,
+            "bottomGap": 18.000045776367189,
+            "viewportHeight": 451.4999694824219,
+            "contentHeight": 565.3125,
+            "minimumTap": 61.87499237060547
+        },
+        {
+            "name": "en-480x1080-host",
+            "topGap": 82.5,
+            "bottomGap": 82.4999771118164,
+            "viewportHeight": 670.0,
+            "contentHeight": 670.0,
+            "minimumTap": 73.33332061767578
+        }
+    ]
+}

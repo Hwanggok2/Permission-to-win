@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-16",
+  "status": "client ready for coordinator build; source frozen; Unity ended",
+  "unity": {
+    "total": 7,
+    "passed": 7,
+    "failed": 0
+  },
+  "captureCount": 58,
+  "detailVariants": 24,
+  "maxGapDifferencePixels": 0.00018310546875,
+  "minimumTapPixels": 48.888877868652344,
+  "sourceFileCount": 540,
+  "modified": [
+    "Client/Assets/StageGame/Editor/RankUiBuilder.cs",
+    "Client/Assets/StageGame/Prefabs/RankUI/Detail.prefab"
+  ],
+  "added": [
+    "Client/Assets/StageGame/Scripts/UI/RankDetailFitter.cs",
+    "Client/Assets/StageGame/Scripts/UI/RankDetailFitter.cs.meta",
+    "Client/Assets/StageGame/Tests/EditMode/RankDetailLayoutTests.cs",
+    "Client/Assets/StageGame/Tests/EditMode/RankDetailLayoutTests.cs.meta"
+  ],
+  "deleted": [],
+  "unityLockPresent": false,
+  "firstLaunchRegression": "Stage 1 with rules open; existing and recovery saves start in lobby",
+  "newBuild": false,
+  "deployed": false,
+  "browserTest": false,
+  "deviceTest": false,
+  "diffCheck": "passed"
+}

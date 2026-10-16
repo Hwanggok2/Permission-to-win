@@ -1,0 +1,13 @@
+{
+  "modified": [
+    "Client/Assets/StageGame/Editor/RankUiBuilder.cs",
+    "Client/Assets/StageGame/Prefabs/RankUI/Detail.prefab"
+  ],
+  "added": [
+    "Client/Assets/StageGame/Scripts/UI/RankDetailFitter.cs",
+    "Client/Assets/StageGame/Scripts/UI/RankDetailFitter.cs.meta",
+    "Client/Assets/StageGame/Tests/EditMode/RankDetailLayoutTests.cs",
+    "Client/Assets/StageGame/Tests/EditMode/RankDetailLayoutTests.cs.meta"
+  ],
+  "deleted": []
+}
