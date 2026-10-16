@@ -1,5 +1,7 @@
 # 참고 화면 분석의 권리 범위
 
+**폰트 추가 2026-10-16:** 사용자 요청으로 Pretendard·NeoDunggeunmo Pro를 도입했다. SimpleGame은 읽기 전용으로 조사했으며 TMP SDF 변환본 대신 동일 글꼴의 공식 TTF/WOFF2 배포본을 사용했다. 글꼴 원본과 개별 고지 전문은 수정하지 않았다. [현재 폰트 대장](FONTS-20261016.json), [적용·검증](../Docs/Design/TYPOGRAPHY.md). 아래 내용은 각 날짜의 기존 자산 검토 이력이다.
+
 **최신 변경(2026-10-14): Tabletop 크림/청록은 사용자가 거부한 이전 시안이다.** 기존 파일·해시·고지·검사 결과를 보존하지만 최종 디자인 수용으로 기록하지 않는다. 현재 방향과 새 참고 이미지 분석은 [계급 UI 계약](../Docs/Design/RANK-UI-DIRECTION.md)이며 작업명은 [권리 미확정](WORKING-TITLE-CHECK.md)이다.
 
 2026-10-14 (KST). [REFERENCE-UX.md](../Docs/Design/REFERENCE-UX.md)의 **9장 시각 분석 및 이후 Client 생성 도구·저장 프리팹 참조 점검** 기록이다. 원본은 해당 문서에 식별한 사용자 지정 OneDrive 경로에서 읽기만 했다. 열람 요청은 제3자 화면 자산의 배포 허가로 해석하지 않는다.

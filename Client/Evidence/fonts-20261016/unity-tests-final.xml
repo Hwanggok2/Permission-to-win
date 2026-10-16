@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="12" result="Passed" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-16 03:43:39Z" end-time="2026-10-16 03:44:07Z" duration="27.6882683">
+  <test-suite type="TestSuite" id="1000" name="이겨도 됩니까_" fullname="이겨도 됩니까_" runstate="Runnable" testcasecount="138" result="Passed" start-time="2026-10-16 03:43:39Z" end-time="2026-10-16 03:44:07Z" duration="27.688268" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1165" name="StageGame.Tests.dll" fullname="C:/Github/StageGame/Client/Library/ScriptAssemblies/StageGame.Tests.dll" runstate="Runnable" testcasecount="138" result="Passed" start-time="2026-10-16 03:43:39Z" end-time="2026-10-16 03:44:07Z" duration="27.650409" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="15820" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1166" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="138" result="Passed" start-time="2026-10-16 03:43:39Z" end-time="2026-10-16 03:44:07Z" duration="27.649838" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1167" name="Tests" fullname="StageGame.Tests" runstate="Runnable" testcasecount="138" result="Passed" start-time="2026-10-16 03:43:39Z" end-time="2026-10-16 03:44:07Z" duration="27.648891" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1001" name="CoreTests" fullname="StageGame.Tests.CoreTests" classname="StageGame.Tests.CoreTests" runstate="Runnable" testcasecount="25" result="Passed" start-time="2026-10-16 03:43:38Z" end-time="2026-10-16 03:43:38Z" duration="0.068547" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1027" name="SavedPrefabReferencesAndNestedButtonsValidate" fullname="StageGame.Tests.CoreTests.SavedPrefabReferencesAndNestedButtonsValidate" methodname="SavedPrefabReferencesAndNestedButtonsValidate" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="518595153" result="Passed" start-time="2026-10-16 03:43:38Z" end-time="2026-10-16 03:43:38Z" duration="0.057943" asserts="0">
+              <properties />
+              <output><![CDATA[[Rank UI] Saved references,30 cards and42 board/preview intersections validated.
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1039" name="LocalizationTests" fullname="StageGame.Tests.LocalizationTests" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-10-16 03:43:38Z" end-time="2026-10-16 03:43:38Z" duration="0.015862" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1049" name="EverySavedUiTextHasAKeyOrExplicitDynamicOwnerAndButtonsHaveTouchArea" fullname="StageGame.Tests.LocalizationTests.EverySavedUiTextHasAKeyOrExplicitDynamicOwnerAndButtonsHaveTouchArea" methodname="EverySavedUiTextHasAKeyOrExplicitDynamicOwnerAndButtonsHaveTouchArea" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="1589950188" result="Passed" start-time="2026-10-16 03:43:38Z" end-time="2026-10-16 03:43:38Z" duration="0.005698" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1040" name="LanguageLookupFormattingAndUnknownLocaleFollowContract" fullname="StageGame.Tests.LocalizationTests.LanguageLookupFormattingAndUnknownLocaleFollowContract" methodname="LanguageLookupFormattingAndUnknownLocaleFollowContract" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="1080935361" result="Passed" start-time="2026-10-16 03:43:38Z" end-time="2026-10-16 03:43:38Z" duration="0.004100" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1048" name="LegacyAndInvalidSavedLocalesPreserveProgressAndDefaultToKorean" fullname="StageGame.Tests.LocalizationTests.LegacyAndInvalidSavedLocalesPreserveProgressAndDefaultToKorean" methodname="LegacyAndInvalidSavedLocalesPreserveProgressAndDefaultToKorean" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="142627638" result="Passed" start-time="2026-10-16 03:43:38Z" end-time="2026-10-16 03:43:38Z" duration="0.003644" asserts="0">
+              <properties />
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1047" name="MissingTranslationsAndInvalidArgumentsAreRejected" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-16 03:43:38Z" end-time="2026-10-16 03:43:38Z" duration="0.001343" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1041" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;&quot;,&quot;Text&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;&quot;,&quot;Text&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="616349979" result="Passed" start-time="2026-10-16 03:43:38Z" end-time="2026-10-16 03:43:38Z" duration="0.000313" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1042" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;문구&quot;,&quot;&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;문구&quot;,&quot;&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="1483610448" result="Passed" start-time="2026-10-16 03:43:38Z" end-time="2026-10-16 03:43:38Z" duration="0.000061" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1043" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{0}&quot;,&quot;{1}&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{0}&quot;,&quot;{1}&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="1523123661" result="Passed" start-time="2026-10-16 03:43:38Z" end-time="2026-10-16 03:43:38Z" duration="0.000053" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1044" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{0:00}&quot;,&quot;{0:00}&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{0:00}&quot;,&quot;{0:00}&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="398928165" result="Passed" start-time="2026-10-16 03:43:38Z" end-time="2026-10-16 03:43:38Z" duration="0.000131" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1045" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{broken}&quot;,&quot;{broken}&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{broken}&quot;,&quot;{broken}&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="644274692" result="Passed" start-time="2026-10-16 03:43:38Z" end-time="2026-10-16 03:43:38Z" duration="0.000054" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1046" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{1}&quot;,&quot;{1}&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{1}&quot;,&quot;{1}&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="1297776281" result="Passed" start-time="2026-10-16 03:43:38Z" end-time="2026-10-16 03:43:38Z" duration="0.000045" asserts="0">
+                <properties />
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestFixture" id="1055" name="RankFlowTests" fullname="StageGame.Tests.RankFlowTests" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" testcasecount="59" result="Passed" start-time="2026-10-16 03:43:39Z" end-time="2026-10-16 03:44:07Z" duration="27.513966" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1084" name="PreviewSavedRankScreens" fullname="StageGame.Tests.RankFlowTests.PreviewSavedRankScreens" methodname="PreviewSavedRankScreens" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="2091787153" result="Passed" start-time="2026-10-16 03:43:38Z" end-time="2026-10-16 03:44:07Z" duration="28.855528" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Capture] ko-1080-first-match: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-preview: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-restart-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-help: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-settings: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-notices: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-pause: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-win: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-390-first-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-390-preview: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-390-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-390-restart-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-390-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-390-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-390-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-390-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-390-help: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-390-settings: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-390-notices: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-390-pause: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-390-win: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-320-first-match: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-320-preview: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-320-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-320-restart-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-320-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-320-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-320-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-320-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-320-help: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-320-settings: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-320-notices: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-320-pause: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-320-win: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] en-1080-first-match: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-1080-preview: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-1080-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-1080-restart-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-1080-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-1080-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-1080-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-1080-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-1080-help: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-1080-settings: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-1080-notices: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-1080-pause: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-1080-win: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-390-first-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] en-390-preview: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] en-390-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] en-390-restart-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] en-390-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] en-390-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] en-390-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] en-390-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] en-390-help: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] en-390-settings: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] en-390-notices: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] en-390-pause: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] en-390-win: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] en-320-first-match: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] en-320-preview: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] en-320-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] en-320-restart-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] en-320-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] en-320-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] en-320-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] en-320-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] en-320-help: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] en-320-settings: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] en-320-notices: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] en-320-pause: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] en-320-win: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1132" name="RankMusicAssetTests" fullname="StageGame.Tests.RankMusicAssetTests" classname="StageGame.Tests.RankMusicAssetTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-16 03:44:07Z" end-time="2026-10-16 03:44:07Z" duration="0.118478" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1134" name="SavedMusicReferencesOriginalAudioAndAllLicenseNoticesArePresent" fullname="StageGame.Tests.RankMusicAssetTests.SavedMusicReferencesOriginalAudioAndAllLicenseNoticesArePresent" methodname="SavedMusicReferencesOriginalAudioAndAllLicenseNoticesArePresent" classname="StageGame.Tests.RankMusicAssetTests" runstate="Runnable" seed="582740250" result="Passed" start-time="2026-10-16 03:44:07Z" end-time="2026-10-16 03:44:07Z" duration="0.117802" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Github/StageGame/Client/Evidence/fonts-20261016/unity-tests-final.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -408}
+  m_AnchoredPosition: {x: 0, y: -558}
   m_SizeDelta: {x: 1020, y: 42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6943148370868938466
@@ -66,7 +66,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: b0a7a1ce995fc8b43bea67577baf03e2, type: 3}
+    m_Font: {fileID: 12800000, guid: a2dce39f143c40fea0d30101143f367f, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -210,7 +210,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: b0a7a1ce995fc8b43bea67577baf03e2, type: 3}
+    m_Font: {fileID: 12800000, guid: a2dce39f143c40fea0d30101143f367f, type: 3}
     m_FontSize: 60
     m_FontStyle: 1
     m_BestFit: 0
@@ -222,7 +222,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "4\uBAA9"
+  m_Text: "\uC774\uACA8\uB3C4 \uB429\uB2C8\uAE4C?"
 --- !u!1 &3211288527437050018
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,8 +332,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -15}
-  m_SizeDelta: {x: -36, y: -837}
+  m_AnchoredPosition: {x: 0, y: -90}
+  m_SizeDelta: {x: -36, y: -987}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1258545262157111669
 MonoBehaviour:
@@ -540,6 +540,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1051380363883694202}
+  - component: {fileID: 7064150594455232880}
   m_Layer: 0
   m_Name: Lobby
   m_TagString: Untagged
@@ -572,6 +573,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1080, y: 1920}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7064150594455232880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8774971549914600690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f90f3492dfd487db69be4fb4266d561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: StageGame.Runtime::StageGame.RankLobbyFitter
+  stages: {fileID: 6001705347243808589}
+  help: {fileID: 2380088215811847412}
+  settings: {fileID: 4097167399454479545}
+  notice: {fileID: 42513470762483531}
+  maximumListHeight: 933
+  minimumTopInset: 433.5
+  buttonAboveList: 135
+  noticeAboveList: 25.5
 --- !u!1001 &219231798098752943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3584,7 +3605,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8873681889850484092, guid: 59c6e212074fcc74cbbc9444c3df037c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -298.5
+      value: -448.5
       objectReference: {fileID: 0}
     - target: {fileID: 8873681889850484092, guid: 59c6e212074fcc74cbbc9444c3df037c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5769,7 +5790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8873681889850484092, guid: 59c6e212074fcc74cbbc9444c3df037c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -298.5
+      value: -448.5
       objectReference: {fileID: 0}
     - target: {fileID: 8873681889850484092, guid: 59c6e212074fcc74cbbc9444c3df037c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -24,7 +24,7 @@ namespace StageGame.Editor
         {
             if (!string.Equals(Path.GetFullPath(Application.dataPath), Path.GetFullPath("C:/Github/StageGame/Client/Assets"), StringComparison.OrdinalIgnoreCase))
                 throw new InvalidOperationException("Only the StageGame Client project is allowed.");
-            font = AssetDatabase.LoadAssetAtPath<Font>(Root + "Fonts/NotoSansCJKkr-Regular.otf");
+            font = AssetDatabase.LoadAssetAtPath<Font>(Root + "Fonts/Pretendard-Regular.ttf");
             rounded = AssetDatabase.LoadAssetAtPath<Sprite>(SoftUiBuilder.Art + "RoundRect96.png");
             disc = AssetDatabase.LoadAssetAtPath<Sprite>(SoftUiBuilder.Art + "SoftDisc128.png");
             if (font == null || rounded == null || disc == null) throw new InvalidOperationException("Existing licensed font/soft sprites are required.");

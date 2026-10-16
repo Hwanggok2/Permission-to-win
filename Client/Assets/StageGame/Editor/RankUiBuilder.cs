@@ -16,7 +16,7 @@ namespace StageGame.Editor
         public const string Prefabs = ProjectBuilder.Root + "Prefabs/RankUI/";
         public const string AppRootPath = Prefabs + "RankAppRoot.prefab";
         static readonly Color Black = new Color32(29, 30, 32, 255);
-        const float HeaderOffset=144; // 216 saved design units, shared by the lobby and match.
+        const float HeaderOffset=144; // Minimum top spacing in 720-wide layout units.
         static float U(float value)=>RankUiMetrics.U(value);
         static Font font;
         static RankTheme theme;
@@ -27,7 +27,7 @@ namespace StageGame.Editor
         {
             EnsureEditorReady();
             Directory.CreateDirectory(Art); Directory.CreateDirectory(Prefabs);
-            font = AssetDatabase.LoadAssetAtPath<Font>(ProjectBuilder.Root + "Fonts/NotoSansCJKkr-Regular.otf");
+            font = AssetDatabase.LoadAssetAtPath<Font>(ProjectBuilder.Root + "Fonts/Pretendard-Regular.ttf");
             table = StringTable.Load(); GenerateArt();
             Save("Button", go => { Size(go.transform, 328, 110); Paint(Add<Image>(go), theme.panel); Add<Button>(go).targetGraphic = go.GetComponent<Image>(); Label(go.transform, "Label", "", 28, 0, 0, 304, 90); });
             Save("CloseButton", go => { Size(go.transform, 110, 110); Paint(Add<Image>(go), theme.panel); Add<Button>(go).targetGraphic = go.GetComponent<Image>(); Picture(go.transform, "Icon", theme.close, 0, 0, 40, 40); });
@@ -148,7 +148,7 @@ namespace StageGame.Editor
         public static void ApplyFirstRulesAndCompactControls()
         {
             EnsureEditorReady();
-            font=AssetDatabase.LoadAssetAtPath<Font>(ProjectBuilder.Root+"Fonts/NotoSansCJKkr-Regular.otf");
+            font=AssetDatabase.LoadAssetAtPath<Font>(ProjectBuilder.Root+"Fonts/Pretendard-Regular.ttf");
             Save("Match",ConfigureCompactMatchControls);
             Save("TurnToast",BuildTurnToast);
             Save("RankAppRoot",go=>
@@ -184,7 +184,7 @@ namespace StageGame.Editor
         public static void ApplyTurnTimer()
         {
             EnsureEditorReady();
-            font=AssetDatabase.LoadAssetAtPath<Font>(ProjectBuilder.Root+"Fonts/NotoSansCJKkr-Regular.otf");
+            font=AssetDatabase.LoadAssetAtPath<Font>(ProjectBuilder.Root+"Fonts/Pretendard-Regular.ttf");
             theme=AssetDatabase.LoadAssetAtPath<GameObject>(AppRootPath).GetComponent<RankGameApp>().theme;
             table=StringTable.Load();table.Text("turn_timer_seconds");table.Text("turn_timeout_placed");
             Save("Match",ConfigureTurnTimer);
@@ -224,7 +224,7 @@ namespace StageGame.Editor
         public static void ApplyRatingsAndTypingSound()
         {
             EnsureEditorReady();
-            font=AssetDatabase.LoadAssetAtPath<Font>(ProjectBuilder.Root+"Fonts/NotoSansCJKkr-Regular.otf");
+            font=AssetDatabase.LoadAssetAtPath<Font>(ProjectBuilder.Root+"Fonts/Pretendard-Regular.ttf");
             theme=AssetDatabase.LoadAssetAtPath<GameObject>(AppRootPath).GetComponent<RankGameApp>().theme;
             table=StringTable.Load();table.Text("ai_rating");
             var importer=(AudioImporter)AssetImporter.GetAtPath(TypingSoundPath);
@@ -356,6 +356,25 @@ namespace StageGame.Editor
             var list=Add<ScrollRect>(scroll.gameObject);list.viewport=viewport;list.content=content;list.horizontal=false;list.vertical=true;list.movementType=ScrollRect.MovementType.Clamped;list.scrollSensitivity=U(44);list.inertia=true;
             IconButton(go.transform,"Help",theme.help,-290,-55-headerOffset);Top(Get<RectTransform>(go,"Help"));IconButton(go.transform,"Settings",theme.settings,290,-55-headerOffset);Top(Get<RectTransform>(go,"Settings"));
             Top(Label(go.transform,"Notice","",20,0,-128-headerOffset,680,28).rectTransform);
+            ConfigureLobbyLayout(go);
+        }
+        [MenuItem("StageGame/Apply Compact Lobby")]
+        public static void ApplyCompactLobby()
+        {
+            EnsureEditorReady();
+            Save("Lobby",ConfigureLobbyLayout);
+            Save("RankAppRoot",go=>ConfigureLobbyLayout(go.GetComponent<RankGameApp>().lobby));
+            AssetDatabase.SaveAssets();Validate();
+            Debug.Log("[Lobby layout] Saved two-and-a-half-row list with help/settings above it; short viewports retain scrolling.");
+        }
+        static void ConfigureLobbyLayout(GameObject go)
+        {
+            var fit=Add<RankLobbyFitter>(go);
+            fit.stages=Get<RectTransform>(go,"Stages");fit.help=Get<RectTransform>(go,"Help");
+            fit.settings=Get<RectTransform>(go,"Settings");fit.notice=Get<RectTransform>(go,"Notice");
+            fit.maximumListHeight=U(2*252+236*.5f);fit.minimumTopInset=U(145+HeaderOffset);
+            fit.buttonAboveList=U(90);fit.noticeAboveList=U(17);
+            fit.Fit();
         }
         [MenuItem("StageGame/Apply Centered Detail")]
         public static void ApplyCenteredDetail()

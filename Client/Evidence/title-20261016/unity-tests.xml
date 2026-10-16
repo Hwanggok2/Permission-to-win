@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="11" result="Passed" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-16 02:56:48Z" end-time="2026-10-16 02:56:58Z" duration="9.9521707">
+  <test-suite type="TestSuite" id="1000" name="이겨도 됩니까_" fullname="이겨도 됩니까_" runstate="Runnable" testcasecount="138" result="Passed" start-time="2026-10-16 02:56:48Z" end-time="2026-10-16 02:56:58Z" duration="9.952171" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1165" name="StageGame.Tests.dll" fullname="C:/Github/StageGame/Client/Library/ScriptAssemblies/StageGame.Tests.dll" runstate="Runnable" testcasecount="138" result="Passed" start-time="2026-10-16 02:56:48Z" end-time="2026-10-16 02:56:58Z" duration="9.915795" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="24656" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1166" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="138" result="Passed" start-time="2026-10-16 02:56:48Z" end-time="2026-10-16 02:56:58Z" duration="9.915210" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1167" name="Tests" fullname="StageGame.Tests" runstate="Runnable" testcasecount="138" result="Passed" start-time="2026-10-16 02:56:48Z" end-time="2026-10-16 02:56:58Z" duration="9.914569" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1001" name="CoreTests" fullname="StageGame.Tests.CoreTests" classname="StageGame.Tests.CoreTests" runstate="Runnable" testcasecount="25" result="Passed" start-time="2026-10-16 02:56:45Z" end-time="2026-10-16 02:56:45Z" duration="0.075343" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1027" name="SavedPrefabReferencesAndNestedButtonsValidate" fullname="StageGame.Tests.CoreTests.SavedPrefabReferencesAndNestedButtonsValidate" methodname="SavedPrefabReferencesAndNestedButtonsValidate" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="900438008" result="Passed" start-time="2026-10-16 02:56:45Z" end-time="2026-10-16 02:56:45Z" duration="0.064985" asserts="0">
+              <properties />
+              <output><![CDATA[[Rank UI] Saved references,30 cards and42 board/preview intersections validated.
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1039" name="LocalizationTests" fullname="StageGame.Tests.LocalizationTests" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-10-16 02:56:45Z" end-time="2026-10-16 02:56:45Z" duration="0.016282" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1049" name="EverySavedUiTextHasAKeyOrExplicitDynamicOwnerAndButtonsHaveTouchArea" fullname="StageGame.Tests.LocalizationTests.EverySavedUiTextHasAKeyOrExplicitDynamicOwnerAndButtonsHaveTouchArea" methodname="EverySavedUiTextHasAKeyOrExplicitDynamicOwnerAndButtonsHaveTouchArea" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="1558252387" result="Passed" start-time="2026-10-16 02:56:45Z" end-time="2026-10-16 02:56:45Z" duration="0.006232" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1040" name="LanguageLookupFormattingAndUnknownLocaleFollowContract" fullname="StageGame.Tests.LocalizationTests.LanguageLookupFormattingAndUnknownLocaleFollowContract" methodname="LanguageLookupFormattingAndUnknownLocaleFollowContract" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="1424665401" result="Passed" start-time="2026-10-16 02:56:45Z" end-time="2026-10-16 02:56:45Z" duration="0.004045" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1048" name="LegacyAndInvalidSavedLocalesPreserveProgressAndDefaultToKorean" fullname="StageGame.Tests.LocalizationTests.LegacyAndInvalidSavedLocalesPreserveProgressAndDefaultToKorean" methodname="LegacyAndInvalidSavedLocalesPreserveProgressAndDefaultToKorean" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="238724967" result="Passed" start-time="2026-10-16 02:56:45Z" end-time="2026-10-16 02:56:45Z" duration="0.003441" asserts="0">
+              <properties />
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1047" name="MissingTranslationsAndInvalidArgumentsAreRejected" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-16 02:56:45Z" end-time="2026-10-16 02:56:45Z" duration="0.001362" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1041" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;&quot;,&quot;Text&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;&quot;,&quot;Text&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="1861881154" result="Passed" start-time="2026-10-16 02:56:45Z" end-time="2026-10-16 02:56:45Z" duration="0.000415" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1042" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;문구&quot;,&quot;&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;문구&quot;,&quot;&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="174488935" result="Passed" start-time="2026-10-16 02:56:45Z" end-time="2026-10-16 02:56:45Z" duration="0.000064" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1043" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{0}&quot;,&quot;{1}&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{0}&quot;,&quot;{1}&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="987571405" result="Passed" start-time="2026-10-16 02:56:45Z" end-time="2026-10-16 02:56:45Z" duration="0.000055" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1044" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{0:00}&quot;,&quot;{0:00}&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{0:00}&quot;,&quot;{0:00}&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="850910340" result="Passed" start-time="2026-10-16 02:56:45Z" end-time="2026-10-16 02:56:45Z" duration="0.000148" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1045" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{broken}&quot;,&quot;{broken}&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{broken}&quot;,&quot;{broken}&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="1402134586" result="Passed" start-time="2026-10-16 02:56:45Z" end-time="2026-10-16 02:56:45Z" duration="0.000056" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1046" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{1}&quot;,&quot;{1}&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{1}&quot;,&quot;{1}&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="505327035" result="Passed" start-time="2026-10-16 02:56:45Z" end-time="2026-10-16 02:56:45Z" duration="0.000043" asserts="0">
+                <properties />
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestFixture" id="1055" name="RankFlowTests" fullname="StageGame.Tests.RankFlowTests" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" testcasecount="59" result="Passed" start-time="2026-10-16 02:56:48Z" end-time="2026-10-16 02:56:58Z" duration="9.902089" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1075" name="DesktopAndMobileCanvasSizesKeepListsInputAndScrollingUsable" fullname="StageGame.Tests.RankFlowTests.DesktopAndMobileCanvasSizesKeepListsInputAndScrollingUsable" methodname="DesktopAndMobileCanvasSizesKeepListsInputAndScrollingUsable" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1958207924" result="Passed" start-time="2026-10-16 02:56:45Z" end-time="2026-10-16 02:56:58Z" duration="12.922949" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Capture] ko-desktop-1280x720-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:405.00, height:720.00), scale=0.375, ppu=0.375, fontSize=78
+[Capture] ko-desktop-1280x720-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:405.00, height:720.00), scale=0.375, ppu=0.375, fontSize=78
+[Capture] ko-desktop-1280x720-match: screen=640x480, canvas=(x:0.00, y:0.00, width:405.00, height:720.00), scale=0.375, ppu=0.375, fontSize=78
+[Capture] ko-desktop-1280x720-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:405.00, height:720.00), scale=0.375, ppu=0.375, fontSize=78
+[Capture] ko-desktop-1920x1080-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1080.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-desktop-1920x1080-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1080.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-desktop-1920x1080-match: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1080.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-desktop-1920x1080-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1080.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-desktop-2556x1338-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1338.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-desktop-2556x1338-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1338.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-desktop-2556x1338-match: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1338.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-desktop-2556x1338-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1338.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-desktop-800x1200-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1200.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-desktop-800x1200-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1200.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-desktop-800x1200-match: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1200.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-desktop-800x1200-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1200.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-mobile-320x568-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-mobile-320x568-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-mobile-320x568-match: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-mobile-320x568-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-mobile-390x844-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-mobile-390x844-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-mobile-390x844-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-mobile-390x844-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-mobile-390x664-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] ko-mobile-390x664-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] ko-mobile-390x664-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] ko-mobile-390x664-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] ko-rotated-844x390-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:390.00), scale=0.203125, ppu=0.203125, fontSize=78
+[Capture] ko-rotated-844x390-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:390.00), scale=0.203125, ppu=0.203125, fontSize=78
+[Capture] ko-rotated-844x390-match: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:390.00), scale=0.203125, ppu=0.203125, fontSize=78
+[Capture] ko-rotated-844x390-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:390.00), scale=0.203125, ppu=0.203125, fontSize=78
+[Capture] en-desktop-1280x720-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:405.00, height:720.00), scale=0.375, ppu=0.375, fontSize=78
+[Capture] en-desktop-1280x720-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:405.00, height:720.00), scale=0.375, ppu=0.375, fontSize=78
+[Capture] en-desktop-1280x720-match: screen=640x480, canvas=(x:0.00, y:0.00, width:405.00, height:720.00), scale=0.375, ppu=0.375, fontSize=78
+[Capture] en-desktop-1280x720-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:405.00, height:720.00), scale=0.375, ppu=0.375, fontSize=78
+[Capture] en-desktop-1920x1080-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1080.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-desktop-1920x1080-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1080.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-desktop-1920x1080-match: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1080.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-desktop-1920x1080-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1080.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-desktop-2556x1338-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1338.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-desktop-2556x1338-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1338.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-desktop-2556x1338-match: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1338.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-desktop-2556x1338-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1338.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-desktop-800x1200-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1200.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-desktop-800x1200-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1200.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-desktop-800x1200-match: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1200.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-desktop-800x1200-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1200.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-mobile-320x568-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-mobile-320x568-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-mobile-320x568-match: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-mobile-320x568-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-mobile-390x844-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-mobile-390x844-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-mobile-390x844-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-mobile-390x844-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-mobile-390x664-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] en-mobile-390x664-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] en-mobile-390x664-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] en-mobile-390x664-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] en-rotated-844x390-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:390.00), scale=0.203125, ppu=0.203125, fontSize=78
+[Capture] en-rotated-844x390-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:390.00), scale=0.203125, ppu=0.203125, fontSize=78
+[Capture] en-rotated-844x390-match: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:390.00), scale=0.203125, ppu=0.203125, fontSize=78
+[Capture] en-rotated-844x390-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:390.00), scale=0.203125, ppu=0.203125, fontSize=78
+Saving results to: C:/Github/StageGame/Client/Evidence/title-20261016/unity-tests.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

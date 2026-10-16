@@ -1,0 +1,237 @@
+{
+  "date": "2026-10-16",
+  "status": "ready; source frozen; Unity ended",
+  "unity": {
+    "total": 37,
+    "passed": 37,
+    "failed": 0
+  },
+  "dataTestsPassed": 46,
+  "exportCheck": "passed",
+  "workbookChanges": {
+    "changedCells": [
+      {
+        "sheet": "Stages",
+        "cell": "E9",
+        "before": 1,
+        "after": 2
+      },
+      {
+        "sheet": "Stages",
+        "cell": "T9",
+        "before": 200,
+        "after": 0
+      },
+      {
+        "sheet": "Stages",
+        "cell": "E10",
+        "before": 1,
+        "after": 2
+      },
+      {
+        "sheet": "Stages",
+        "cell": "T10",
+        "before": 200,
+        "after": 0
+      },
+      {
+        "sheet": "Stages",
+        "cell": "E11",
+        "before": 1,
+        "after": 2
+      },
+      {
+        "sheet": "Stages",
+        "cell": "T11",
+        "before": 120,
+        "after": 0
+      },
+      {
+        "sheet": "Stages",
+        "cell": "E12",
+        "before": 1,
+        "after": 2
+      },
+      {
+        "sheet": "Stages",
+        "cell": "T12",
+        "before": 120,
+        "after": 0
+      },
+      {
+        "sheet": "Stages",
+        "cell": "T13",
+        "before": 80,
+        "after": 0
+      },
+      {
+        "sheet": "Stages",
+        "cell": "T14",
+        "before": 80,
+        "after": 0
+      }
+    ],
+    "otherValuesAndStylesPreserved": true,
+    "sheetFeaturesPreserved": true
+  },
+  "stageChanges": [
+    {
+      "stage": 5,
+      "field": "aiDepth",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "stage": 5,
+      "field": "aiOversightPermille",
+      "before": 200,
+      "after": 0
+    },
+    {
+      "stage": 6,
+      "field": "aiDepth",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "stage": 6,
+      "field": "aiOversightPermille",
+      "before": 200,
+      "after": 0
+    },
+    {
+      "stage": 7,
+      "field": "aiDepth",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "stage": 7,
+      "field": "aiOversightPermille",
+      "before": 120,
+      "after": 0
+    },
+    {
+      "stage": 8,
+      "field": "aiDepth",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "stage": 8,
+      "field": "aiOversightPermille",
+      "before": 120,
+      "after": 0
+    },
+    {
+      "stage": 9,
+      "field": "aiOversightPermille",
+      "before": 80,
+      "after": 0
+    },
+    {
+      "stage": 10,
+      "field": "aiOversightPermille",
+      "before": 80,
+      "after": 0
+    }
+  ],
+  "resourcesMatch": true,
+  "productionAiCodeUnchanged": true,
+  "tacticalAverages": [
+    {
+      "rating": 200,
+      "attack": 34.895833333333336,
+      "defense": 73.95833333333333
+    },
+    {
+      "rating": 300,
+      "attack": 41.145833333333336,
+      "defense": 76.30208333333333
+    },
+    {
+      "rating": 400,
+      "attack": 51.041666666666664,
+      "defense": 91.66666666666667
+    },
+    {
+      "rating": 500,
+      "attack": 54.6875,
+      "defense": 93.22916666666667
+    },
+    {
+      "rating": 600,
+      "attack": 58.59375,
+      "defense": 94.79166666666667
+    },
+    {
+      "rating": 700,
+      "attack": 62.239583333333336,
+      "defense": 95.83333333333333
+    },
+    {
+      "rating": 800,
+      "attack": 65.36458333333333,
+      "defense": 97.39583333333333
+    },
+    {
+      "rating": 900,
+      "attack": 69.53125,
+      "defense": 97.91666666666667
+    },
+    {
+      "rating": 1000,
+      "attack": 72.65625,
+      "defense": 98.69791666666667
+    },
+    {
+      "rating": 1100,
+      "attack": 74.47916666666667,
+      "defense": 98.69791666666667
+    },
+    {
+      "rating": 1200,
+      "attack": 95.3125,
+      "defense": 98.95833333333333
+    },
+    {
+      "rating": 1300,
+      "attack": 95.83333333333333,
+      "defense": 99.21875
+    },
+    {
+      "rating": 1400,
+      "attack": 96.875,
+      "defense": 99.73958333333333
+    },
+    {
+      "rating": 1500,
+      "attack": 98.4375,
+      "defense": 100.0
+    },
+    {
+      "rating": 1600,
+      "attack": 100.0,
+      "defense": 100.0
+    }
+  ],
+  "shortGameAudit": {
+    "baseline": {
+      "playerBranches": 247872,
+      "aiMoves": 38352,
+      "earlyLossPaths": 297
+    },
+    "candidate": {
+      "playerBranches": 253301,
+      "aiMoves": 38352,
+      "earlyLossPaths": 0
+    }
+  },
+  "fixedOpponentGames": 1792,
+  "unityLockPresent": false,
+  "newBuild": false,
+  "deployed": false,
+  "deviceTest": false,
+  "humanPlaytest": false,
+  "diffCheck": "passed"
+}

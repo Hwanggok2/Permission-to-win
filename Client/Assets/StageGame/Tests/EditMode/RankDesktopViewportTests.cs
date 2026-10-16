@@ -49,6 +49,10 @@ namespace StageGame.Tests
                 var list=ScreenBounds(app.stageScroll.viewport);var title=ScreenBounds(app.lobbyTitle.rectTransform);
                 var bottom=ScreenBounds((RectTransform)app.multiplayer.transform);
                 Assert.Less(list.yMax,title.yMin);Assert.Greater(list.yMin,bottom.yMax);
+                var help=ScreenBounds((RectTransform)app.lobbyHelp.transform);
+                var settings=ScreenBounds((RectTransform)app.lobbySettings.transform);
+                Assert.Greater(help.yMin,list.yMax);Assert.Greater(settings.yMin,list.yMax);
+                Assert.AreEqual(help.center.y,settings.center.y,.1f);
                 AssertClickable(app.lobbyHelp);AssertClickable(app.lobbySettings);
             }
             return record;
@@ -69,11 +73,20 @@ namespace StageGame.Tests
                 yield return Capture(prefix+"-lobby",app,size.x,size.y,scaledCanvas:true,validate:()=>
                 {
                     report.screens.Add(MeasureDesktop(prefix+"-lobby",size));
+                    if(size.y>=568)
+                    {
+                        var view=ScreenBounds(app.stageScroll.viewport);
+                        var secondRow=ScreenBounds((RectTransform)app.cards[2].transform);
+                        var thirdRow=ScreenBounds((RectTransform)app.cards[4].transform);
+                        Assert.GreaterOrEqual(secondRow.yMin,view.yMin,"Second row remains fully visible");
+                        Assert.AreEqual(thirdRow.center.y,view.yMin,1,"Third row is half visible as a scroll cue");
+                    }
                     AssertClickable(app.cards[0].button);
                 });
                 app.stageScroll.verticalNormalizedPosition=0;
                 yield return Capture(prefix+"-lobby-end",app,size.x,size.y,scaledCanvas:true,validate:()=>
                 {
+                    MeasureDesktop(prefix+"-lobby-end",size);
                     var last=ScreenBounds((RectTransform)app.cards[29].transform);var view=ScreenBounds(app.stageScroll.viewport);
                     Assert.GreaterOrEqual(last.yMin,view.yMin-1);Assert.Less(last.yMin,view.yMax);
                 });

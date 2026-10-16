@@ -48,7 +48,20 @@ namespace StageGame.Tests
                 CollectionAssert.AreEqual(sha.ComputeHash(File.ReadAllBytes("../Overview/Audio/originals/easy-lemon.mp3")),sha.ComputeHash(File.ReadAllBytes(Editor.RankUiBuilder.MusicPath)));
             string combined=Resources.Load<TextAsset>("LegalNotices").text;
             foreach(string path in Directory.GetFiles("Assets/StreamingAssets/Notices","*.txt"))
-                if(!new[]{"SOURCES.txt","NotoSansKR-OFL.txt"}.Contains(Path.GetFileName(path)))StringAssert.Contains(File.ReadAllText(path),combined,path);
+            {
+                string name=Path.GetFileName(path);
+                if(new[]{"SOURCES.txt","NotoSansKR-OFL.txt"}.Contains(name))continue;
+                string notice=File.ReadAllText(path);
+                if(name.EndsWith("-OFL.txt",StringComparison.Ordinal))
+                {
+                    int preamble=notice.IndexOf("PREAMBLE",StringComparison.Ordinal);
+                    Assert.Greater(preamble,0,path);
+                    StringAssert.Contains(notice.Substring(0,preamble),combined,path+" copyright and RFN");
+                    StringAssert.Contains(new string(notice.Substring(preamble).Where(c=>!char.IsWhiteSpace(c)).ToArray()),
+                        new string(combined.Where(c=>!char.IsWhiteSpace(c)).ToArray()),path+" complete shared OFL terms");
+                }
+                else StringAssert.Contains(notice,combined,path);
+            }
             StringAssert.Contains("Kevin MacLeod",combined);StringAssert.Contains("USUAN1200076",combined);
             StringAssert.Contains("https://creativecommons.org/licenses/by/4.0/",combined);
             StringAssert.Contains("Original MP3 unchanged",combined);

@@ -1,0 +1,103 @@
+{
+  "checked_at": "2026-10-16",
+  "game": "Permission to Win",
+  "license": "SIL Open Font License 1.1",
+  "font_file_modifications": "None; release bytes retained. Unity uses dynamic font import.",
+  "simplegame": {
+    "access": "Read-only",
+    "found": "TMP SDF assets and legal texts; original Pretendard/NeoDunggeunmo TTF or OTF files absent in Assets",
+    "resolution": "Use the same font families from their official releases for UnityEngine.UI.Text; no SDF assets copied",
+    "inspected_files": [
+      {
+        "path": "C:/Github/SimpleGame/Assets/Font/Pretendard-Regular SDF.asset",
+        "sha256": "844772e7bf89161da4bb00feef4239ac41974af8e683fc42b94e4c832d5c1115"
+      },
+      {
+        "path": "C:/Github/SimpleGame/Assets/Font/NeoDunggeunmoPro-Regular (1) SDF.asset",
+        "sha256": "7c7873a2b233e5e84ecc8415b530de4477a1c8a7cab051d984d74eeae2e7cfd7"
+      },
+      {
+        "path": "C:/Github/SimpleGame/Assets/Game/Resources/Legal/Pretendard.txt",
+        "sha256": "82e9c8a4b203261f10ddba1296422d64914ff3d4b7bd8a12896d03f0f088d70a"
+      },
+      {
+        "path": "C:/Github/SimpleGame/Assets/Game/Resources/Legal/NeoDunggeunmoPro.txt",
+        "sha256": "e3e0fdfb8349c52d3e7075c008d5c1456922ab1b0d80180b4b1b77377da34b4a"
+      }
+    ]
+  },
+  "assets": [
+    {
+      "asset_id": "FONT-003",
+      "name": "Pretendard Regular",
+      "path": "Client/Assets/StageGame/Fonts/Pretendard-Regular.ttf",
+      "version": "v1.3.9 (font Version 1.309)",
+      "download": "https://github.com/orioncactus/pretendard/releases/download/v1.3.9/Pretendard-1.3.9.zip",
+      "archive_entry": "public/static/alternative/Pretendard-Regular.ttf",
+      "bytes": 2725828,
+      "sha256": "6d0af5258997aec7354a6e340fc2325ba321c410ca48b3af858c8c3d6e92a324",
+      "usage": "All saved Unity UI labels; existing bold styling retained",
+      "notice": "Licence/ThirdParty/Pretendard-OFL.txt"
+    },
+    {
+      "asset_id": "FONT-004",
+      "name": "NeoDunggeunmo Pro Regular",
+      "path": "Client/Assets/StageGame/Fonts/NeoDunggeunmoPro-Regular.ttf",
+      "version": "v1.020",
+      "download": "https://github.com/neodgm/neodgm-pro/releases/download/v1.020/NeoDunggeunmoPro-Regular.ttf",
+      "archive_entry": null,
+      "bytes": 666984,
+      "sha256": "e4b974b1a378ef1962e3c72dfbcb7b7bba09f54dd53bf57889af300b2531b155",
+      "usage": "Imported for optional pixel typography; no current UI references",
+      "notice": "Licence/ThirdParty/NeoDunggeunmoPro-OFL.txt"
+    },
+    {
+      "asset_id": "FONT-005",
+      "name": "Pretendard Regular WOFF2",
+      "path": "Client/Assets/WebGLTemplates/StageGamePortrait/Fonts/Pretendard-Regular.woff2",
+      "version": "v1.3.9",
+      "download": "https://github.com/orioncactus/pretendard/releases/download/v1.3.9/Pretendard-1.3.9.zip",
+      "archive_entry": "web/static/woff2/Pretendard-Regular.woff2",
+      "bytes": 765892,
+      "sha256": "fad853f7f47c6c8b103171e7193fa095708cdcd70850a71d93aa5379e8a61d63",
+      "usage": "Self-hosted WebGL loading/error text",
+      "notice": "Licence/ThirdParty/Pretendard-OFL.txt"
+    },
+    {
+      "asset_id": "FONT-006",
+      "name": "Pretendard Bold WOFF2",
+      "path": "Client/Assets/WebGLTemplates/StageGamePortrait/Fonts/Pretendard-Bold.woff2",
+      "version": "v1.3.9",
+      "download": "https://github.com/orioncactus/pretendard/releases/download/v1.3.9/Pretendard-1.3.9.zip",
+      "archive_entry": "web/static/woff2/Pretendard-Bold.woff2",
+      "bytes": 791156,
+      "sha256": "4609c3356e536fafe38f4add0daeceb3d8595d3057bce13c428c33ddbd43d362",
+      "usage": "Self-hosted WebGL loading title",
+      "notice": "Licence/ThirdParty/Pretendard-OFL.txt"
+    }
+  ],
+  "notices": [
+    {
+      "path": "Licence/ThirdParty/Pretendard-OFL.txt",
+      "runtime_copy": "Client/Assets/StreamingAssets/Notices/Pretendard-OFL.txt",
+      "source": "https://github.com/orioncactus/pretendard/blob/v1.3.9/LICENSE",
+      "sha256": "b04538c9abec39a3db75108cf0af0fd9c77032fe8aa2cf38345b4d250e98e38e",
+      "unchanged_copies_match": true
+    },
+    {
+      "path": "Licence/ThirdParty/NeoDunggeunmoPro-OFL.txt",
+      "runtime_copy": "Client/Assets/StreamingAssets/Notices/NeoDunggeunmoPro-OFL.txt",
+      "source": "https://github.com/neodgm/neodgm-pro/blob/v1.020/LICENSE.txt",
+      "sha256": "e3e0fdfb8349c52d3e7075c008d5c1456922ab1b0d80180b4b1b77377da34b4a",
+      "unchanged_copies_match": true
+    }
+  ],
+  "display": "Settings > Licenses contains every font-specific copyright/RFN header followed by one complete shared OFL text. Whitespace-normalized terms must be identical before consolidation; full unmodified notices also ship separately in StreamingAssets.",
+  "existing_noto": "Retained as serialized fallback, with original font bytes and notice intact. Current game string characters are all directly supported by Pretendard.",
+  "verification": "Client/Evidence/fonts-20261016/verification.json",
+  "new_player_build": true,
+  "published": true,
+  "published_target": "WebGL / GitHub Pages",
+  "deployment_commit": "3d6c2a990616453974c871682c1f749c25f49b33",
+  "published_files_verification": "Docs/Management/Evidence/title-font-web-20261016/public-deployment-verification.json"
+}

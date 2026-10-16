@@ -53,7 +53,9 @@ namespace StageGame.Tests
             },directory:evidence);
             app.ShowLobby();yield return Capture("ko-1080-header-lobby",app,1080,1920,true,false,()=>
             {
-                Assert.AreEqual(pauseTop,Top(app.lobbyHelp.GetComponent<RectTransform>()),.1f);Assert.AreEqual(pauseTop,Top(app.lobbySettings.GetComponent<RectTransform>()),.1f);
+                float helpTop=Top(app.lobbyHelp.GetComponent<RectTransform>());
+                Assert.LessOrEqual(helpTop,pauseTop+.1f,"Compact lobby buttons may move down from the minimum top gap.");
+                Assert.AreEqual(helpTop,Top(app.lobbySettings.GetComponent<RectTransform>()),.1f);
             },directory:evidence);
             foreach(var size in new[]{new Vector2Int(1080,1920),new Vector2Int(390,844),new Vector2Int(320,568)})
                 foreach(bool host in new[]{false,true})
@@ -73,7 +75,7 @@ namespace StageGame.Tests
                     yield return Capture("ko-"+size.x+(host?"-host":"-plain")+"-lobby-end",app,size.x,size.y,host,directory:evidence);
                 }
             app.StartStage(0);Assert.AreSame(app.theme.Portrait("C01").intro,app.aiFace.sprite);Assert.IsFalse(app.rankHat.gameObject.activeSelf);
-            Debug.Log("[1080 fit] Shared216design-unit top gap retained; all normal/result actions fit1080x1920 without scrolling.");
+            Debug.Log("[1080 fit] Minimum top gap retained; compact lobby buttons follow the list and match actions fit1080x1920.");
         }
     }
 }

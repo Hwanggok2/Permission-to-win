@@ -1,0 +1,66 @@
+{
+  "changedCells": [
+    {
+      "sheet": "Stages",
+      "cell": "E9",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "sheet": "Stages",
+      "cell": "T9",
+      "before": 200,
+      "after": 0
+    },
+    {
+      "sheet": "Stages",
+      "cell": "E10",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "sheet": "Stages",
+      "cell": "T10",
+      "before": 200,
+      "after": 0
+    },
+    {
+      "sheet": "Stages",
+      "cell": "E11",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "sheet": "Stages",
+      "cell": "T11",
+      "before": 120,
+      "after": 0
+    },
+    {
+      "sheet": "Stages",
+      "cell": "E12",
+      "before": 1,
+      "after": 2
+    },
+    {
+      "sheet": "Stages",
+      "cell": "T12",
+      "before": 120,
+      "after": 0
+    },
+    {
+      "sheet": "Stages",
+      "cell": "T13",
+      "before": 80,
+      "after": 0
+    },
+    {
+      "sheet": "Stages",
+      "cell": "T14",
+      "before": 80,
+      "after": 0
+    }
+  ],
+  "otherValuesAndStylesPreserved": true,
+  "sheetFeaturesPreserved": true
+}

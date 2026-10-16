@@ -26,7 +26,7 @@ namespace StageGame.Editor
             AssertTarget();
             foreach (string directory in new[] { Common, Screens, Root + "Prefabs/Board", Root + "Scenes", Root + "Art", Root + "Audio" }) Directory.CreateDirectory(directory);
             AssetDatabase.Refresh();
-            font = AssetDatabase.LoadAssetAtPath<Font>(Root + "Fonts/NotoSansCJKkr-Regular.otf");
+            font = AssetDatabase.LoadAssetAtPath<Font>(Root + "Fonts/Pretendard-Regular.ttf");
             if (font == null) throw new InvalidOperationException("The licensed Korean font is missing.");
             circle = CreateCircle();
             CreateSound();
@@ -250,7 +250,7 @@ namespace StageGame.Editor
         public static void AddNotices()
         {
             AssertTarget();
-            font = AssetDatabase.LoadAssetAtPath<Font>(Root + "Fonts/NotoSansCJKkr-Regular.otf");
+            font = AssetDatabase.LoadAssetAtPath<Font>(Root + "Fonts/Pretendard-Regular.ttf");
             Ensure(Screens + "NoticesModal.prefab", CreateNotices);
             var settings = PrefabUtility.LoadPrefabContents(Screens + "SettingsModal.prefab");
             try
@@ -307,7 +307,7 @@ namespace StageGame.Editor
         static void Configure()
         {
             EnsurePlayerShaders();
-            PlayerSettings.companyName = "StageGamePrototype"; PlayerSettings.productName = "StageGame";
+            PlayerSettings.companyName = "StageGamePrototype"; PlayerSettings.productName = StringTable.Load().Text("game_title");
             PlayerSettings.SetApplicationIdentifier(UnityEditor.Build.NamedBuildTarget.Android, "com.stagegame.prototype");
             PlayerSettings.defaultInterfaceOrientation = UIOrientation.Portrait;
             PlayerSettings.defaultScreenWidth = 720; PlayerSettings.defaultScreenHeight = 1280;

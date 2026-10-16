@@ -1,0 +1,126 @@
+{
+  "mode": "short",
+  "label": "candidate",
+  "results": [
+    {
+      "profile": {
+        "aiRating": 400,
+        "aiDepth": 2,
+        "aiNodeBudget": 700,
+        "aiRandomPermille": 800,
+        "aiOversightPermille": 0
+      },
+      "result": {
+        "starter": 1,
+        "seeds": 16,
+        "playerBranches": 44800,
+        "aiMoves": 6384,
+        "earlyPlayerWins": 0,
+        "aiWins": 0,
+        "maxNodes": 112,
+        "firstLoss": null,
+        "maxSearchMilliseconds": 1.3036
+      }
+    },
+    {
+      "profile": {
+        "aiRating": 400,
+        "aiDepth": 2,
+        "aiNodeBudget": 700,
+        "aiRandomPermille": 800,
+        "aiOversightPermille": 0
+      },
+      "result": {
+        "starter": -1,
+        "seeds": 16,
+        "playerBranches": 39872,
+        "aiMoves": 6400,
+        "earlyPlayerWins": 0,
+        "aiWins": 704,
+        "maxNodes": 112,
+        "firstLoss": null,
+        "maxSearchMilliseconds": 0.7668
+      }
+    },
+    {
+      "profile": {
+        "aiRating": 500,
+        "aiDepth": 2,
+        "aiNodeBudget": 1000,
+        "aiRandomPermille": 700,
+        "aiOversightPermille": 0
+      },
+      "result": {
+        "starter": 1,
+        "seeds": 16,
+        "playerBranches": 44799,
+        "aiMoves": 6384,
+        "earlyPlayerWins": 0,
+        "aiWins": 0,
+        "maxNodes": 112,
+        "firstLoss": null,
+        "maxSearchMilliseconds": 0.8854
+      }
+    },
+    {
+      "profile": {
+        "aiRating": 500,
+        "aiDepth": 2,
+        "aiNodeBudget": 1000,
+        "aiRandomPermille": 700,
+        "aiOversightPermille": 0
+      },
+      "result": {
+        "starter": -1,
+        "seeds": 16,
+        "playerBranches": 39872,
+        "aiMoves": 6400,
+        "earlyPlayerWins": 0,
+        "aiWins": 704,
+        "maxNodes": 112,
+        "firstLoss": null,
+        "maxSearchMilliseconds": 0.7852
+      }
+    },
+    {
+      "profile": {
+        "aiRating": 600,
+        "aiDepth": 4,
+        "aiNodeBudget": 4000,
+        "aiRandomPermille": 600,
+        "aiOversightPermille": 0
+      },
+      "result": {
+        "starter": 1,
+        "seeds": 16,
+        "playerBranches": 44800,
+        "aiMoves": 6384,
+        "earlyPlayerWins": 0,
+        "aiWins": 0,
+        "maxNodes": 2302,
+        "firstLoss": null,
+        "maxSearchMilliseconds": 4.8285
+      }
+    },
+    {
+      "profile": {
+        "aiRating": 600,
+        "aiDepth": 4,
+        "aiNodeBudget": 4000,
+        "aiRandomPermille": 600,
+        "aiOversightPermille": 0
+      },
+      "result": {
+        "starter": -1,
+        "seeds": 16,
+        "playerBranches": 39158,
+        "aiMoves": 6400,
+        "earlyPlayerWins": 0,
+        "aiWins": 806,
+        "maxNodes": 2126,
+        "firstLoss": null,
+        "maxSearchMilliseconds": 7.0334
+      }
+    }
+  ]
+}

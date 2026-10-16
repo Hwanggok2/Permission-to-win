@@ -1,6 +1,8 @@
-# StageGame
+# 이겨도 됩니까?
 
-짧은 AI 대전 스테이지와 광고 수익화를 목표로 하는 Unity 게임 프로젝트.
+사부작대작전의 군대 배경 사목 게임. 영문 제목은 **Permission to Win**, 저장소 이름은 **Permission-to-win**이다.
+
+프로 출신 신병이 동기·선임과 대국하고 사단 대회에 도전하는 Unity 게임 프로젝트다. 로컬 폴더와 내부 코드 식별자 `StageGame`은 기존 경로·저장 호환을 위해 유지한다.
 
 **전체 계획은 [Overview/index.html](Overview/index.html)에서 확인한다.** 게임 주제, 광고·광고 제거 구매, 서버, 일정, 역할과 출시 상태를 총괄이 관리한다. 텍스트 요약은 [Overview/README.md](Overview/README.md).
 

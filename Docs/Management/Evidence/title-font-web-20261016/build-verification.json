@@ -1,0 +1,20 @@
+{
+  "status": "BUILD_SUCCEEDED",
+  "sourceFilesVerified": 559,
+  "sourceChangesDuringBuild": [],
+  "files": 23,
+  "bytes": 91553486,
+  "errors": 0,
+  "warnings": 0,
+  "fontsAndLicensesMatch": true,
+  "dataTestsPassed": 46,
+  "priorUnityTestsPassed": 12,
+  "htmlTitleNote": "Unity sanitizes PRODUCT_NAME punctuation; generated ui-text.js immediately sets the exact Excel title including question mark, verified in actual browser.",
+  "publicDeployment": "PUBLISHED_AND_BROWSER_VERIFIED",
+  "deploymentCommit": "3d6c2a990616453974c871682c1f749c25f49b33",
+  "localBrowserVerified": true,
+  "pushedBy": "user",
+  "publicFilesMatched": 23,
+  "publicBrowserVerified": true,
+  "actionUrl": "https://github.com/Hwanggok2/Permission-to-win/actions/runs/38852414250"
+}

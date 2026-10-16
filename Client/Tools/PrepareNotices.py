@@ -40,9 +40,22 @@ assert "v1.4" in license_text and "10. Governing Law and Venue" in license_text
 parts = ["StageGame prototype - Third-party notices\nMade with Unity. Unity is a trademark of Unity Technologies.\n\n"
          "Noto Sans CJK KR: Adobe copyright and SIL OFL 1.1.\nUnity uGUI: Unity Companion License.\n"
          "Test tooling notices are retained for development distribution; they do not imply test assemblies ship in the player.\n"]
+font_terms = None
+for path in sorted(NOTICES.glob("*-OFL.txt")):
+    if path.name == "NotoSansKR-OFL.txt":
+        continue
+    notice = path.read_text(encoding="utf-8")
+    preamble = notice.index("PREAMBLE")
+    terms = notice[preamble:]
+    if font_terms is not None and "".join(font_terms.split()) != "".join(terms.split()):
+        raise ValueError(f"Font license terms differ; do not consolidate: {path}")
+    font_terms = terms
+    parts.append("\n--- " + path.name + " ---\n" + notice[:preamble])
+if font_terms is not None:
+    parts.append("\n--- Shared SIL Open Font License 1.1 terms for the fonts above ---\n" + font_terms)
 for path in sorted(NOTICES.glob("*.txt")):
-    # The upstream CJK notice already contains the full OFL; avoid showing the older duplicate twice.
-    if path.name not in ("SOURCES.txt", "NotoSansKR-OFL.txt"):
+    # Font copyright/RFN headers and their identical shared terms are already included above.
+    if path.name != "SOURCES.txt" and not path.name.endswith("-OFL.txt"):
         parts.append("\n--- " + path.name + " ---\n" + path.read_text(encoding="utf-8"))
 (ROOT / "Assets/StageGame/Resources/LegalNotices.txt").write_text("\n".join(parts), encoding="utf-8")
 print("Prepared notice text:", len("\n".join(parts)), "characters")

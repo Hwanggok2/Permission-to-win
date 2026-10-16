@@ -1,0 +1,101 @@
+{
+  "changed": [
+    {
+      "path": "Client/Assets/StageGame/Prefabs/Board/Cell.prefab",
+      "changedFontReferences": 1
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/ActionConfirm.prefab",
+      "changedFontReferences": 2
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/Button.prefab",
+      "changedFontReferences": 1
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/Confirm.prefab",
+      "changedFontReferences": 2
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/Detail.prefab",
+      "changedFontReferences": 5
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/Help.prefab",
+      "changedFontReferences": 7
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/Lobby.prefab",
+      "changedFontReferences": 2
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/Match.prefab",
+      "changedFontReferences": 9
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/Notices.prefab",
+      "changedFontReferences": 2
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/Result.prefab",
+      "changedFontReferences": 2
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/Settings.prefab",
+      "changedFontReferences": 4
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/StageCard.prefab",
+      "changedFontReferences": 4
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/RankUI/TurnToast.prefab",
+      "changedFontReferences": 1
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Common/CloseButton.prefab",
+      "changedFontReferences": 1
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Common/ModalFrame.prefab",
+      "changedFontReferences": 3
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Common/PrimaryButton.prefab",
+      "changedFontReferences": 1
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Common/StageCard.prefab",
+      "changedFontReferences": 3
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Common/StageNode.prefab",
+      "changedFontReferences": 2
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Screens/GameScreen.prefab",
+      "changedFontReferences": 13
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Screens/HelpModal.prefab",
+      "changedFontReferences": 4
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Screens/LobbyScreen.prefab",
+      "changedFontReferences": 8
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Screens/NoticesModal.prefab",
+      "changedFontReferences": 1
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Screens/ResultModal.prefab",
+      "changedFontReferences": 2
+    },
+    {
+      "path": "Client/Assets/StageGame/Prefabs/UI/Screens/SettingsModal.prefab",
+      "changedFontReferences": 1
+    }
+  ],
+  "unexpectedChanges": []
+}

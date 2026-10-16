@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="3" result="Passed" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-16 05:22:45Z" end-time="2026-10-16 05:22:55Z" duration="9.8669211">
+  <test-suite type="TestSuite" id="1000" name="이겨도 됩니까_" fullname="이겨도 됩니까_" runstate="Runnable" testcasecount="138" result="Passed" start-time="2026-10-16 05:22:45Z" end-time="2026-10-16 05:22:55Z" duration="9.866921" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1165" name="StageGame.Tests.dll" fullname="C:/Github/StageGame/Client/Library/ScriptAssemblies/StageGame.Tests.dll" runstate="Runnable" testcasecount="138" result="Passed" start-time="2026-10-16 05:22:45Z" end-time="2026-10-16 05:22:55Z" duration="9.821365" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="14180" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1166" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="138" result="Passed" start-time="2026-10-16 05:22:45Z" end-time="2026-10-16 05:22:55Z" duration="9.818614" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1167" name="Tests" fullname="StageGame.Tests" runstate="Runnable" testcasecount="138" result="Passed" start-time="2026-10-16 05:22:45Z" end-time="2026-10-16 05:22:55Z" duration="9.818141" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1001" name="CoreTests" fullname="StageGame.Tests.CoreTests" classname="StageGame.Tests.CoreTests" runstate="Runnable" testcasecount="25" result="Passed" start-time="2026-10-16 05:22:38Z" end-time="2026-10-16 05:22:39Z" duration="0.065278" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1027" name="SavedPrefabReferencesAndNestedButtonsValidate" fullname="StageGame.Tests.CoreTests.SavedPrefabReferencesAndNestedButtonsValidate" methodname="SavedPrefabReferencesAndNestedButtonsValidate" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1276808838" result="Passed" start-time="2026-10-16 05:22:38Z" end-time="2026-10-16 05:22:39Z" duration="0.056403" asserts="0">
+              <properties />
+              <output><![CDATA[[Rank UI] Saved references,30 cards and42 board/preview intersections validated.
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1055" name="RankFlowTests" fullname="StageGame.Tests.RankFlowTests" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" testcasecount="59" result="Passed" start-time="2026-10-16 05:22:45Z" end-time="2026-10-16 05:22:55Z" duration="9.806404" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1108" name="Actual1080DesignFitsAllActionsBelowSharedTopGap" fullname="StageGame.Tests.RankFlowTests.Actual1080DesignFitsAllActionsBelowSharedTopGap" methodname="Actual1080DesignFitsAllActionsBelowSharedTopGap" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1752534141" result="Passed" start-time="2026-10-16 05:22:39Z" end-time="2026-10-16 05:22:44Z" duration="5.165531" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] ko-1080-text-only-toast: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-header-match: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-plain-match: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-header-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-plain-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-plain-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-host-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-host-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-390-plain-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-390-plain-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-390-host-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-390-host-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-320-plain-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-320-plain-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-320-host-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-320-host-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=1, ppu=1, fontSize=78
+[1080 fit] Minimum top gap retained; compact lobby buttons follow the list and match actions fit1080x1920.
+]]></output>
+            </test-case>
+            <test-case id="1075" name="DesktopAndMobileCanvasSizesKeepListsInputAndScrollingUsable" fullname="StageGame.Tests.RankFlowTests.DesktopAndMobileCanvasSizesKeepListsInputAndScrollingUsable" methodname="DesktopAndMobileCanvasSizesKeepListsInputAndScrollingUsable" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="204566466" result="Passed" start-time="2026-10-16 05:22:44Z" end-time="2026-10-16 05:22:55Z" duration="10.967110" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Capture] ko-desktop-1280x720-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:405.00, height:720.00), scale=0.375, ppu=0.375, fontSize=78
+[Capture] ko-desktop-1280x720-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:405.00, height:720.00), scale=0.375, ppu=0.375, fontSize=78
+[Capture] ko-desktop-1280x720-match: screen=640x480, canvas=(x:0.00, y:0.00, width:405.00, height:720.00), scale=0.375, ppu=0.375, fontSize=78
+[Capture] ko-desktop-1280x720-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:405.00, height:720.00), scale=0.375, ppu=0.375, fontSize=78
+[Capture] ko-desktop-1920x1080-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1080.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-desktop-1920x1080-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1080.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-desktop-1920x1080-match: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1080.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-desktop-1920x1080-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1080.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-desktop-2556x1338-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1338.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-desktop-2556x1338-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1338.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-desktop-2556x1338-match: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1338.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-desktop-2556x1338-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1338.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-desktop-800x1200-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1200.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-desktop-800x1200-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1200.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-desktop-800x1200-match: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1200.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-desktop-800x1200-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1200.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] ko-mobile-320x568-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-mobile-320x568-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-mobile-320x568-match: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-mobile-320x568-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-mobile-390x844-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-mobile-390x844-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-mobile-390x844-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-mobile-390x844-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-mobile-390x664-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] ko-mobile-390x664-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] ko-mobile-390x664-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] ko-mobile-390x664-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] ko-rotated-844x390-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:390.00), scale=0.203125, ppu=0.203125, fontSize=78
+[Capture] ko-rotated-844x390-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:390.00), scale=0.203125, ppu=0.203125, fontSize=78
+[Capture] ko-rotated-844x390-match: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:390.00), scale=0.203125, ppu=0.203125, fontSize=78
+[Capture] ko-rotated-844x390-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:390.00), scale=0.203125, ppu=0.203125, fontSize=78
+[Capture] en-desktop-1280x720-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:405.00, height:720.00), scale=0.375, ppu=0.375, fontSize=78
+[Capture] en-desktop-1280x720-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:405.00, height:720.00), scale=0.375, ppu=0.375, fontSize=78
+[Capture] en-desktop-1280x720-match: screen=640x480, canvas=(x:0.00, y:0.00, width:405.00, height:720.00), scale=0.375, ppu=0.375, fontSize=78
+[Capture] en-desktop-1280x720-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:405.00, height:720.00), scale=0.375, ppu=0.375, fontSize=78
+[Capture] en-desktop-1920x1080-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1080.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-desktop-1920x1080-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1080.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-desktop-1920x1080-match: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1080.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-desktop-1920x1080-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1080.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-desktop-2556x1338-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1338.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-desktop-2556x1338-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1338.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-desktop-2556x1338-match: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1338.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-desktop-2556x1338-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1338.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-desktop-800x1200-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1200.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-desktop-800x1200-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1200.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-desktop-800x1200-match: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1200.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-desktop-800x1200-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:480.00, height:1200.00), scale=0.4444444, ppu=0.4444444, fontSize=78
+[Capture] en-mobile-320x568-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-mobile-320x568-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-mobile-320x568-match: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-mobile-320x568-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-mobile-390x844-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-mobile-390x844-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-mobile-390x844-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-mobile-390x844-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-mobile-390x664-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] en-mobile-390x664-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] en-mobile-390x664-match: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] en-mobile-390x664-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:664.00), scale=0.3458333, ppu=0.3458333, fontSize=78
+[Capture] en-rotated-844x390-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:390.00), scale=0.203125, ppu=0.203125, fontSize=78
+[Capture] en-rotated-844x390-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:390.00), scale=0.203125, ppu=0.203125, fontSize=78
+[Capture] en-rotated-844x390-match: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:390.00), scale=0.203125, ppu=0.203125, fontSize=78
+[Capture] en-rotated-844x390-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:390.00), scale=0.203125, ppu=0.203125, fontSize=78
+Saving results to: C:/Github/StageGame/Client/Evidence/lobby-compact-20261016/unity-tests.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

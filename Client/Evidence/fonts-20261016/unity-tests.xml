@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="11" result="Failed(Child)" total="11" passed="10" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-16 03:38:14Z" end-time="2026-10-16 03:38:19Z" duration="5.5320363">
+  <test-suite type="TestSuite" id="1000" name="이겨도 됩니까_" fullname="이겨도 됩니까_" runstate="Runnable" testcasecount="138" result="Failed" site="Child" start-time="2026-10-16 03:38:14Z" end-time="2026-10-16 03:38:19Z" duration="5.532036" total="11" passed="10" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1165" name="StageGame.Tests.dll" fullname="C:/Github/StageGame/Client/Library/ScriptAssemblies/StageGame.Tests.dll" runstate="Runnable" testcasecount="138" result="Failed" site="Child" start-time="2026-10-16 03:38:14Z" end-time="2026-10-16 03:38:19Z" duration="5.489850" total="11" passed="10" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="27496" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1166" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="138" result="Failed" site="Child" start-time="2026-10-16 03:38:14Z" end-time="2026-10-16 03:38:19Z" duration="5.486508" total="11" passed="10" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1167" name="Tests" fullname="StageGame.Tests" runstate="Runnable" testcasecount="138" result="Failed" site="Child" start-time="2026-10-16 03:38:14Z" end-time="2026-10-16 03:38:19Z" duration="5.485702" total="11" passed="10" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1001" name="CoreTests" fullname="StageGame.Tests.CoreTests" classname="StageGame.Tests.CoreTests" runstate="Runnable" testcasecount="25" result="Passed" start-time="2026-10-16 03:38:11Z" end-time="2026-10-16 03:38:11Z" duration="0.096243" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1027" name="SavedPrefabReferencesAndNestedButtonsValidate" fullname="StageGame.Tests.CoreTests.SavedPrefabReferencesAndNestedButtonsValidate" methodname="SavedPrefabReferencesAndNestedButtonsValidate" classname="StageGame.Tests.CoreTests" runstate="Runnable" seed="1535165326" result="Passed" start-time="2026-10-16 03:38:11Z" end-time="2026-10-16 03:38:11Z" duration="0.078398" asserts="0">
+              <properties />
+              <output><![CDATA[[Rank UI] Saved references,30 cards and42 board/preview intersections validated.
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1039" name="LocalizationTests" fullname="StageGame.Tests.LocalizationTests" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-10-16 03:38:11Z" end-time="2026-10-16 03:38:11Z" duration="0.017259" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1049" name="EverySavedUiTextHasAKeyOrExplicitDynamicOwnerAndButtonsHaveTouchArea" fullname="StageGame.Tests.LocalizationTests.EverySavedUiTextHasAKeyOrExplicitDynamicOwnerAndButtonsHaveTouchArea" methodname="EverySavedUiTextHasAKeyOrExplicitDynamicOwnerAndButtonsHaveTouchArea" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="1749721304" result="Passed" start-time="2026-10-16 03:38:11Z" end-time="2026-10-16 03:38:11Z" duration="0.007161" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1040" name="LanguageLookupFormattingAndUnknownLocaleFollowContract" fullname="StageGame.Tests.LocalizationTests.LanguageLookupFormattingAndUnknownLocaleFollowContract" methodname="LanguageLookupFormattingAndUnknownLocaleFollowContract" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="1000643619" result="Passed" start-time="2026-10-16 03:38:11Z" end-time="2026-10-16 03:38:11Z" duration="0.004382" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1048" name="LegacyAndInvalidSavedLocalesPreserveProgressAndDefaultToKorean" fullname="StageGame.Tests.LocalizationTests.LegacyAndInvalidSavedLocalesPreserveProgressAndDefaultToKorean" methodname="LegacyAndInvalidSavedLocalesPreserveProgressAndDefaultToKorean" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="1908961155" result="Passed" start-time="2026-10-16 03:38:11Z" end-time="2026-10-16 03:38:11Z" duration="0.002599" asserts="0">
+              <properties />
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1047" name="MissingTranslationsAndInvalidArgumentsAreRejected" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-16 03:38:11Z" end-time="2026-10-16 03:38:11Z" duration="0.001437" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1041" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;&quot;,&quot;Text&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;&quot;,&quot;Text&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="1520223066" result="Passed" start-time="2026-10-16 03:38:11Z" end-time="2026-10-16 03:38:11Z" duration="0.000346" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1042" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;문구&quot;,&quot;&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;문구&quot;,&quot;&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="686119989" result="Passed" start-time="2026-10-16 03:38:11Z" end-time="2026-10-16 03:38:11Z" duration="0.000060" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1043" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{0}&quot;,&quot;{1}&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{0}&quot;,&quot;{1}&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="1782406512" result="Passed" start-time="2026-10-16 03:38:11Z" end-time="2026-10-16 03:38:11Z" duration="0.000056" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1044" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{0:00}&quot;,&quot;{0:00}&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{0:00}&quot;,&quot;{0:00}&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="954967356" result="Passed" start-time="2026-10-16 03:38:11Z" end-time="2026-10-16 03:38:11Z" duration="0.000142" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1045" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{broken}&quot;,&quot;{broken}&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{broken}&quot;,&quot;{broken}&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="1097203665" result="Passed" start-time="2026-10-16 03:38:11Z" end-time="2026-10-16 03:38:11Z" duration="0.000056" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1046" name="MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{1}&quot;,&quot;{1}&quot;)" fullname="StageGame.Tests.LocalizationTests.MissingTranslationsAndInvalidArgumentsAreRejected(&quot;{1}&quot;,&quot;{1}&quot;)" methodname="MissingTranslationsAndInvalidArgumentsAreRejected" classname="StageGame.Tests.LocalizationTests" runstate="Runnable" seed="1230362586" result="Passed" start-time="2026-10-16 03:38:11Z" end-time="2026-10-16 03:38:11Z" duration="0.000055" asserts="0">
+                <properties />
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestFixture" id="1055" name="RankFlowTests" fullname="StageGame.Tests.RankFlowTests" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" testcasecount="59" result="Failed" site="Child" start-time="2026-10-16 03:38:14Z" end-time="2026-10-16 03:38:19Z" duration="5.467964" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1084" name="PreviewSavedRankScreens" fullname="StageGame.Tests.RankFlowTests.PreviewSavedRankScreens" methodname="PreviewSavedRankScreens" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1461631272" result="Failed" start-time="2026-10-16 03:38:11Z" end-time="2026-10-16 03:38:19Z" duration="7.746059" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] ArgumentException: Mesh can not have more than 65000 vertices'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.UI.VertexHelper.FillMesh (UnityEngine.Mesh mesh) (at ./Library/PackageCache/com.unity.ugui@23e8d17bfaf9/Runtime/UGUI/UI/Core/Utility/VertexHelper.cs:226)
+UnityEngine.UI.Graphic.DoMeshGeneration () (at ./Library/PackageCache/com.unity.ugui@23e8d17bfaf9/Runtime/UGUI/UI/Core/Graphic.cs:715)
+UnityEngine.UI.Graphic.UpdateGeometry () (at ./Library/PackageCache/com.unity.ugui@23e8d17bfaf9/Runtime/UGUI/UI/Core/Graphic.cs:696)
+UnityEngine.UI.Text.UpdateGeometry () (at ./Library/PackageCache/com.unity.ugui@23e8d17bfaf9/Runtime/UGUI/UI/Core/Text.cs:580)
+UnityEngine.UI.Graphic.Rebuild (UnityEngine.UI.CanvasUpdate update) (at ./Library/PackageCache/com.unity.ugui@23e8d17bfaf9/Runtime/UGUI/UI/Core/Graphic.cs:654)
+UnityEngine.UI.CanvasUpdateRegistry.PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@23e8d17bfaf9/Runtime/UGUI/UI/Core/CanvasUpdateRegistry.cs:215)
+UnityEngine.UI.ScrollRect:LateUpdate() (at ./Library/PackageCache/com.unity.ugui@23e8d17bfaf9/Runtime/UGUI/UI/Core/ScrollRect.cs:834)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[Capture] ko-1080-first-match: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-preview: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-match-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-restart-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-lobby-end: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-detail: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-detail-bottom: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-help: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1080-settings: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+ArgumentException: Mesh can not have more than 65000 vertices
+UnityEngine.UI.VertexHelper.FillMesh (UnityEngine.Mesh mesh) (at ./Library/PackageCache/com.unity.ugui@23e8d17bfaf9/Runtime/UGUI/UI/Core/Utility/VertexHelper.cs:226)
+UnityEngine.UI.Graphic.DoMeshGeneration () (at ./Library/PackageCache/com.unity.ugui@23e8d17bfaf9/Runtime/UGUI/UI/Core/Graphic.cs:715)
+UnityEngine.UI.Graphic.UpdateGeometry () (at ./Library/PackageCache/com.unity.ugui@23e8d17bfaf9/Runtime/UGUI/UI/Core/Graphic.cs:696)
+UnityEngine.UI.Text.UpdateGeometry () (at ./Library/PackageCache/com.unity.ugui@23e8d17bfaf9/Runtime/UGUI/UI/Core/Text.cs:580)
+UnityEngine.UI.Graphic.Rebuild (UnityEngine.UI.CanvasUpdate update) (at ./Library/PackageCache/com.unity.ugui@23e8d17bfaf9/Runtime/UGUI/UI/Core/Graphic.cs:654)
+UnityEngine.UI.CanvasUpdateRegistry.PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@23e8d17bfaf9/Runtime/UGUI/UI/Core/CanvasUpdateRegistry.cs:215)
+UnityEngine.UI.ScrollRect:LateUpdate() (at ./Library/PackageCache/com.unity.ugui@23e8d17bfaf9/Runtime/UGUI/UI/Core/ScrollRect.cs:834)
+
+ArgumentException: Mesh can not have more than 65000 vertices
+UnityEngine.UI.VertexHelper.FillMesh (UnityEngine.Mesh mesh) (at ./Library/PackageCache/com.unity.ugui@23e8d17bfaf9/Runtime/UGUI/UI/Core/Utility/VertexHelper.cs:226)
+UnityEngine.UI.Graphic.DoMeshGeneration () (at ./Library/PackageCache/com.unity.ugui@23e8d17bfaf9/Runtime/UGUI/UI/Core/Graphic.cs:715)
+UnityEngine.UI.Graphic.UpdateGeometry () (at ./Library/PackageCache/com.unity.ugui@23e8d17bfaf9/Runtime/UGUI/UI/Core/Graphic.cs:696)
+UnityEngine.UI.Text.UpdateGeometry () (at ./Library/PackageCache/com.unity.ugui@23e8d17bfaf9/Runtime/UGUI/UI/Core/Text.cs:580)
+UnityEngine.UI.Graphic.Rebuild (UnityEngine.UI.CanvasUpdate update) (at ./Library/PackageCache/com.unity.ugui@23e8d17bfaf9/Runtime/UGUI/UI/Core/Graphic.cs:654)
+UnityEngine.UI.CanvasUpdateRegistry.PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@23e8d17bfaf9/Runtime/UGUI/UI/Core/CanvasUpdateRegistry.cs:215)
+UnityEngine.Canvas:ForceUpdateCanvases()
+StageGame.Tests.<Capture>d__64:MoveNext() (at Assets/StageGame/Tests/EditMode/RankFlowTests.cs:127)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions()
+
+[Capture] ko-1080-notices: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+Saving results to: C:/Github/StageGame/Client/Evidence/fonts-20261016/unity-tests.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

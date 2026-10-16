@@ -1,0 +1,60 @@
+{
+  "changedCells": [
+    {
+      "sheet": "Strings",
+      "cell": "C35",
+      "before": "4목",
+      "after": "이겨도 됩니까?"
+    },
+    {
+      "sheet": "Strings",
+      "cell": "D35",
+      "before": "내부 작업명, 상점명 미확정",
+      "after": "2026-10-16 사용자 확정 제목"
+    },
+    {
+      "sheet": "Strings",
+      "cell": "E35",
+      "before": "Four in a Row",
+      "after": "Permission to Win"
+    },
+    {
+      "sheet": "Strings",
+      "cell": "C63",
+      "before": "4목",
+      "after": "이겨도 됩니까?"
+    },
+    {
+      "sheet": "Strings",
+      "cell": "E63",
+      "before": "Four in a Row",
+      "after": "Permission to Win"
+    },
+    {
+      "sheet": "Strings",
+      "cell": "C64",
+      "before": "4목",
+      "after": "이겨도 됩니까?"
+    },
+    {
+      "sheet": "Strings",
+      "cell": "E64",
+      "before": "Four in a Row",
+      "after": "Permission to Win"
+    },
+    {
+      "sheet": "Strings",
+      "cell": "C127",
+      "before": "4목 게임",
+      "after": "이겨도 됩니까? 사목 게임"
+    },
+    {
+      "sheet": "Strings",
+      "cell": "E127",
+      "before": "Four in a Row game",
+      "after": "Permission to Win — four-in-a-row game"
+    }
+  ],
+  "otherCellsAndStylesPreserved": true,
+  "sheetsPreserved": true
+}

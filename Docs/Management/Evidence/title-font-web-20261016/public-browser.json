@@ -1,0 +1,22 @@
+{
+  "url": "https://hwanggok2.github.io/Permission-to-win/",
+  "metrics": {
+    "canvasHeight": 844,
+    "canvasLabel": "이겨도 됩니까? 사목 게임",
+    "canvasWidth": 390,
+    "errorHidden": true,
+    "loadingFont": "Pretendard, system-ui, sans-serif",
+    "loadingHidden": true,
+    "title": "이겨도 됩니까?"
+  },
+  "logs": [],
+  "checks": [
+    "Korean title with question mark and Pretendard rendering",
+    "Desktop centered layout and loading completion",
+    "First-run help closed",
+    "Column selection, Place and AI response",
+    "390x844 mobile board and buttons",
+    "Pause, exit confirmation and lobby return"
+  ],
+  "physicalDevice": false
+}

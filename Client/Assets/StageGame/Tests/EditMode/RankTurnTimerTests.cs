@@ -31,16 +31,16 @@ namespace StageGame.Tests
                 Assert.That(counts[0],Is.InRange(150,190),"Beginners must keep occasional tactical mistakes.");
                 for(int profile=1;profile<counts.Length;profile++)
                     Assert.GreaterOrEqual(counts[profile],counts[profile-1],"Immediate tactics regressed at rating "+data.Stages[profile*2].aiRating);
-                for(int profile=5;profile<counts.Length;profile++)
-                    Assert.AreEqual(256,counts[profile],"Rating 700 and above must take immediate wins and block a single immediate threat.");
+                for(int profile=2;profile<counts.Length;profile++)
+                    Assert.AreEqual(256,counts[profile],"Rating 400 and above must take immediate wins and block a single immediate threat.");
             }
         }
         [TestCase(3,3,4)] [TestCase(3,3,2)] [TestCase(3,0,4)] [TestCase(3,6,2)]
-        public void MidRatingsAvoidTheObservedSevenMoveForkEvenWhenChoosingRandomly(int first,int reply,int second)
+        public void RatingsFrom400AvoidTheObservedSevenMoveForkEvenWhenChoosingRandomly(int first,int reply,int second)
         {
             var board=new ConnectFourBoard();foreach(int move in new[]{first,reply,second})Assert.IsTrue(board.TryDrop(move));
             var data=GameData.Load();
-            for(int index=10;index<30;index+=2)
+            for(int index=4;index<30;index+=2)
                 for(int seed=0;seed<128;seed++)
                 {
                     var stage=data.Stages[index];

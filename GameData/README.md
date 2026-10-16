@@ -1,4 +1,6 @@
-# StageGame MVP 데이터
+# 이겨도 됩니까? — MVP 데이터
+
+2026-10-16 제목 확정: **이겨도 됩니까? / Permission to Win**. 제목·웹 접근성 문구 4키를 Excel에서 갱신했다. [적용 기록](../Docs/Design/GAME-TITLE.md). 아래 4목 / Four in a Row 표기는 이전 표시명 변경 이력이다.
 
 현재 기준(2026-10-15): **부대 24단계 + 병사 대회 6단계, 캐릭터 19명, ko/en 문자열 418개**다. 사용자가 이 기획 세션의 Client/GameData 수정과 Unity 적용·검증을 승인했다. [TOURNAMENT-CONTRACT.md](TOURNAMENT-CONTRACT.md)가 단계 배치와 CharacterId·인물별 대사 계약이다. 추가 피드백으로 초반 시작판 6개와 AI 수치를 완화했고 [DIFFICULTY-CONTRACT.md](DIFFICULTY-CONTRACT.md)에 현재 수치를 기록했다. 문자열·별점·진행 저장 의미는 보존한다. exporter `--check`, Python 45개, Unity 코어 25개 검사 통과. UI와 그림의 직전 검증은 [적용 기록](../Docs/Design/PIXEL-INTEGRATION.md)에 구분한다.
 

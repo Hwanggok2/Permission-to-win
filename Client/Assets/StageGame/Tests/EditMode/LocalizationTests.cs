@@ -14,9 +14,9 @@ namespace StageGame.Tests
         public void LanguageLookupFormattingAndUnknownLocaleFollowContract()
         {
             var table = StringTable.Load();
-            Assert.AreEqual("4목", table.Text("game_title"));
+            Assert.AreEqual("이겨도 됩니까?", table.Text("game_title"));
             table.SetLanguage("en");
-            Assert.AreEqual("Four in a Row", table.Text("game_title"));
+            Assert.AreEqual("Permission to Win", table.Text("game_title"));
             Assert.AreEqual("CHAPTER 01 · STAGE 02", table.Format("stage_number", "01", "02"));
             Assert.AreEqual("한국어", table.Text("language_ko"));
             table.SetLanguage("unknown");

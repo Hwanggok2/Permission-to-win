@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-16",
+  "titleKo": "이겨도 됩니까?",
+  "titleEn": "Permission to Win",
+  "requestedRepositoryName": "Permission-to-win",
+  "observedRemoteDisplayName": "Permission-to-win",
+  "remoteCaseChange": "KEPT_EXISTING_CASE_BY_USER_REQUEST",
+  "remoteUrl": "https://github.com/Hwanggok2/Permission-to-win.git",
+  "status": "GAME_TITLE_APPLIED_AND_EDITOR_VERIFIED",
+  "dataTests": 46,
+  "unityTests": {
+    "total": "11",
+    "passed": "11",
+    "failed": "0",
+    "skipped": "0"
+  },
+  "captures": 64,
+  "screenCoverage": "Korean/English; eight desktop/mobile canvas sizes; lobby and match including scroll endpoints",
+  "workbookChangedCells": 9,
+  "existingDifficultyAndAdDataPreserved": true,
+  "newAndroidBuild": false,
+  "newWebGLBuild": false,
+  "publishedTitleUpdated": false,
+  "preserved": [
+    "local C:/Github/StageGame folder",
+    "StageGame namespaces and Assets paths",
+    "Android application identifier",
+    "progress and language key names",
+    "companyName storage identifier"
+  ],
+  "sha256": {
+    "GameData/GameData_MVP.xlsx": "17ef429ab8e335ec99d22728ec96b1ffecd617dda1c5c83ce9dbf5714ddf135b",
+    "GameData/Generated/stages.json": "510a5a819a0df0ae58d8af012cf6a5e3c00abe7cfeeb4aee90192a7d971bfbf3",
+    "GameData/Generated/ads.json": "d19f181faf52db28287bbed1b42291770dc3bf83d35e5cca8af4a6dcce9e194a",
+    "GameData/Generated/strings.json": "9054e5b15ce178dbc65cfb9cfc3d0470d42301d28069f863e8689ca527260945",
+    "Client/Assets/StageGame/Resources/GameData/strings.json": "9054e5b15ce178dbc65cfb9cfc3d0470d42301d28069f863e8689ca527260945",
+    "Client/Assets/StageGame/Editor/GameTitleBuilder.cs": "86cdcd858ae1059ef5974ae289dc5b39487233b4e723a0781b77b361b121acb7",
+    "Client/Assets/StageGame/Editor/ProjectBuilder.cs": "d96bb377b1d7816835145fd8b3b39e740f8bd3f2c7b8a9259f3346ef73432552",
+    "Client/Assets/StageGame/Prefabs/RankUI/Lobby.prefab": "52e02ca4295f378fbb25da139cab81dcaaeec6e4ed7981d0a59a82abed7bbfe5",
+    "Client/Assets/StageGame/Prefabs/RankUI/Match.prefab": "3138cb9db94a5dad737b792afbffffb0ba66b27330354976c5d7eae002302699",
+    "Client/Assets/WebGLTemplates/StageGamePortrait/index.html": "94f11d9d4d4360486cbb921427c603a46f8d2a6edd7160c8f652612c94244039",
+    "Client/Assets/WebGLTemplates/StageGamePortrait/ui-text.js": "17eaf84afac97d3d4f297a71db2d0c3aaa35e2ee516762b4866c41a54349e1fe",
+    "Client/ProjectSettings/ProjectSettings.asset": "926f828f61a7e8182436e52cad73ef951997976fa2904baefed3a8e515bb1a92",
+    "Client/Assets/StageGame/Tests/EditMode/LocalizationTests.cs": "d418c21cbf7f624b17a59fc8956ed015e7d7fdfd91b972c7e95f180b7f96946e"
+  },
+  "publicSite": {
+    "url": "https://hwanggok2.github.io/Permission-to-win/",
+    "httpStatus": 200,
+    "oldStageGameUrlStatus": 404,
+    "lowercaseUrlStatus": 404,
+    "titleBuild": "previous published build"
+  }
+}

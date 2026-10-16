@@ -1,0 +1,25 @@
+{
+  "metrics": {
+    "canvas": {
+      "height": 568,
+      "width": 320,
+      "x": 0,
+      "y": 0
+    },
+    "canvasLabel": "Permission to Win — four-in-a-row game",
+    "errorHidden": true,
+    "loadingFont": "Pretendard, system-ui, sans-serif",
+    "loadingHidden": true,
+    "title": "Permission to Win"
+  },
+  "logs": [],
+  "checks": [
+    "Korean title including question mark",
+    "First-run help closed",
+    "Column selection and Place",
+    "AI response and timer automatic turns",
+    "Lobby return",
+    "390px mobile lobby/settings/licenses",
+    "English switch and 320px lobby"
+  ]
+}

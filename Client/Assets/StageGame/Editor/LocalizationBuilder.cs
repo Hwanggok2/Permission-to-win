@@ -144,11 +144,25 @@ namespace StageGame.Editor
             int firstNotice=current.IndexOf("\n--- ",StringComparison.Ordinal);
             if(firstNotice<0)throw new InvalidDataException("Expected the existing license notice header.");
             var parts=new List<string>{current.Substring(0,firstNotice).TrimEnd()+"\n"};
+            string fontTerms=null;
+            foreach(string path in Directory.GetFiles("Assets/StreamingAssets/Notices","*-OFL.txt").OrderBy(p=>p,StringComparer.Ordinal))
+            {
+                if(Path.GetFileName(path)=="NotoSansKR-OFL.txt")continue;
+                string notice=File.ReadAllText(path);int preamble=notice.IndexOf("PREAMBLE",StringComparison.Ordinal);
+                if(preamble<0)throw new InvalidDataException("Missing OFL terms: "+path);
+                string terms=notice.Substring(preamble);
+                if(fontTerms!=null && !fontTerms.Where(c=>!char.IsWhiteSpace(c)).SequenceEqual(terms.Where(c=>!char.IsWhiteSpace(c))))
+                    throw new InvalidDataException("Font license terms differ; do not consolidate: "+path);
+                fontTerms=terms;
+                parts.Add("\n--- "+Path.GetFileName(path)+" ---\n"+notice.Substring(0,preamble));
+            }
+            // Preserve each copyright/RFN header and show the identical OFL terms once.
+            // Complete, unmodified notices also remain individually available in StreamingAssets.
+            if(fontTerms!=null)parts.Add("\n--- Shared SIL Open Font License 1.1 terms for the fonts above ---\n"+fontTerms);
             foreach(string path in Directory.GetFiles("Assets/StreamingAssets/Notices","*.txt").OrderBy(p=>p,StringComparer.Ordinal))
             {
                 string name=Path.GetFileName(path);
-                // The CJK notice contains the full OFL; retain the same duplicate exclusions as PrepareNotices.py.
-                if(name=="SOURCES.txt"||name=="NotoSansKR-OFL.txt")continue;
+                if(name=="SOURCES.txt"||name.EndsWith("-OFL.txt",StringComparison.Ordinal))continue;
                 parts.Add("\n--- "+name+" ---\n"+File.ReadAllText(path));
             }
             File.WriteAllText(output,string.Join("\n",parts));

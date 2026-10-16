@@ -1,0 +1,260 @@
+{
+    "screens": [
+        {
+            "name": "ko-desktop-1280x720-lobby",
+            "canvasWidth": 405.0,
+            "canvasHeight": 720.0,
+            "contentWidth": 405.0,
+            "listHeight": 349.875,
+            "minimumTap": 61.875
+        },
+        {
+            "name": "ko-desktop-1280x720-match",
+            "canvasWidth": 405.0,
+            "canvasHeight": 720.0,
+            "contentWidth": 405.0,
+            "listHeight": 0.0,
+            "minimumTap": 53.89007568359375
+        },
+        {
+            "name": "ko-desktop-1920x1080-lobby",
+            "canvasWidth": 480.0,
+            "canvasHeight": 1080.0,
+            "contentWidth": 480.0,
+            "listHeight": 414.6666564941406,
+            "minimumTap": 73.333251953125
+        },
+        {
+            "name": "ko-desktop-1920x1080-match",
+            "canvasWidth": 480.0,
+            "canvasHeight": 1080.0,
+            "contentWidth": 480.0,
+            "listHeight": 0.0,
+            "minimumTap": 68.5714111328125
+        },
+        {
+            "name": "ko-desktop-2556x1338-lobby",
+            "canvasWidth": 480.0,
+            "canvasHeight": 1338.0,
+            "contentWidth": 479.9999084472656,
+            "listHeight": 414.6666259765625,
+            "minimumTap": 73.33331298828125
+        },
+        {
+            "name": "ko-desktop-2556x1338-match",
+            "canvasWidth": 480.0,
+            "canvasHeight": 1338.0,
+            "contentWidth": 479.9999084472656,
+            "listHeight": 0.0,
+            "minimumTap": 68.57138061523438
+        },
+        {
+            "name": "ko-desktop-800x1200-lobby",
+            "canvasWidth": 480.0,
+            "canvasHeight": 1200.0,
+            "contentWidth": 480.0,
+            "listHeight": 414.66668701171877,
+            "minimumTap": 73.33331298828125
+        },
+        {
+            "name": "ko-desktop-800x1200-match",
+            "canvasWidth": 480.0,
+            "canvasHeight": 1200.0,
+            "contentWidth": 480.0,
+            "listHeight": 0.0,
+            "minimumTap": 68.5714111328125
+        },
+        {
+            "name": "ko-mobile-320x568-lobby",
+            "canvasWidth": 320.0,
+            "canvasHeight": 568.0,
+            "contentWidth": 320.0,
+            "listHeight": 276.4444580078125,
+            "minimumTap": 48.88887405395508
+        },
+        {
+            "name": "ko-mobile-320x568-match",
+            "canvasWidth": 320.0,
+            "canvasHeight": 568.0,
+            "contentWidth": 320.0,
+            "listHeight": 0.0,
+            "minimumTap": 43.999969482421878
+        },
+        {
+            "name": "ko-mobile-390x844-lobby",
+            "canvasWidth": 390.0,
+            "canvasHeight": 844.0,
+            "contentWidth": 390.0000305175781,
+            "listHeight": 336.91668701171877,
+            "minimumTap": 59.583282470703128
+        },
+        {
+            "name": "ko-mobile-390x844-match",
+            "canvasWidth": 390.0,
+            "canvasHeight": 844.0,
+            "contentWidth": 390.0000305175781,
+            "listHeight": 0.0,
+            "minimumTap": 55.714263916015628
+        },
+        {
+            "name": "ko-mobile-390x664-lobby",
+            "canvasWidth": 390.0,
+            "canvasHeight": 664.0,
+            "contentWidth": 390.0,
+            "listHeight": 336.91668701171877,
+            "minimumTap": 59.58331298828125
+        },
+        {
+            "name": "ko-mobile-390x664-match",
+            "canvasWidth": 390.0,
+            "canvasHeight": 664.0,
+            "contentWidth": 390.0,
+            "listHeight": 0.0,
+            "minimumTap": 49.28935241699219
+        },
+        {
+            "name": "ko-rotated-844x390-lobby",
+            "canvasWidth": 320.0,
+            "canvasHeight": 390.0,
+            "contentWidth": 320.0,
+            "listHeight": 134.0,
+            "minimumTap": 48.888885498046878
+        },
+        {
+            "name": "ko-rotated-844x390-match",
+            "canvasWidth": 320.0,
+            "canvasHeight": 390.0,
+            "contentWidth": 320.0,
+            "listHeight": 0.0,
+            "minimumTap": 43.999969482421878
+        },
+        {
+            "name": "en-desktop-1280x720-lobby",
+            "canvasWidth": 405.0,
+            "canvasHeight": 720.0,
+            "contentWidth": 405.0,
+            "listHeight": 349.87493896484377,
+            "minimumTap": 61.87499237060547
+        },
+        {
+            "name": "en-desktop-1280x720-match",
+            "canvasWidth": 405.0,
+            "canvasHeight": 720.0,
+            "contentWidth": 405.0,
+            "listHeight": 0.0,
+            "minimumTap": 53.89007568359375
+        },
+        {
+            "name": "en-desktop-1920x1080-lobby",
+            "canvasWidth": 480.0,
+            "canvasHeight": 1080.0,
+            "contentWidth": 480.0,
+            "listHeight": 414.6666564941406,
+            "minimumTap": 73.333251953125
+        },
+        {
+            "name": "en-desktop-1920x1080-match",
+            "canvasWidth": 480.0,
+            "canvasHeight": 1080.0,
+            "contentWidth": 480.0,
+            "listHeight": 0.0,
+            "minimumTap": 68.5714111328125
+        },
+        {
+            "name": "en-desktop-2556x1338-lobby",
+            "canvasWidth": 480.0,
+            "canvasHeight": 1338.0,
+            "contentWidth": 479.9999084472656,
+            "listHeight": 414.6666259765625,
+            "minimumTap": 73.33331298828125
+        },
+        {
+            "name": "en-desktop-2556x1338-match",
+            "canvasWidth": 480.0,
+            "canvasHeight": 1338.0,
+            "contentWidth": 479.9999084472656,
+            "listHeight": 0.0,
+            "minimumTap": 68.57138061523438
+        },
+        {
+            "name": "en-desktop-800x1200-lobby",
+            "canvasWidth": 480.0,
+            "canvasHeight": 1200.0,
+            "contentWidth": 480.0,
+            "listHeight": 414.66668701171877,
+            "minimumTap": 73.33331298828125
+        },
+        {
+            "name": "en-desktop-800x1200-match",
+            "canvasWidth": 480.0,
+            "canvasHeight": 1200.0,
+            "contentWidth": 480.0,
+            "listHeight": 0.0,
+            "minimumTap": 68.5714111328125
+        },
+        {
+            "name": "en-mobile-320x568-lobby",
+            "canvasWidth": 320.0,
+            "canvasHeight": 568.0,
+            "contentWidth": 320.0,
+            "listHeight": 276.4444580078125,
+            "minimumTap": 48.88887405395508
+        },
+        {
+            "name": "en-mobile-320x568-match",
+            "canvasWidth": 320.0,
+            "canvasHeight": 568.0,
+            "contentWidth": 320.0,
+            "listHeight": 0.0,
+            "minimumTap": 43.999969482421878
+        },
+        {
+            "name": "en-mobile-390x844-lobby",
+            "canvasWidth": 390.0,
+            "canvasHeight": 844.0,
+            "contentWidth": 390.0000305175781,
+            "listHeight": 336.91668701171877,
+            "minimumTap": 59.583282470703128
+        },
+        {
+            "name": "en-mobile-390x844-match",
+            "canvasWidth": 390.0,
+            "canvasHeight": 844.0,
+            "contentWidth": 390.0000305175781,
+            "listHeight": 0.0,
+            "minimumTap": 55.714263916015628
+        },
+        {
+            "name": "en-mobile-390x664-lobby",
+            "canvasWidth": 390.0,
+            "canvasHeight": 664.0,
+            "contentWidth": 390.0,
+            "listHeight": 336.91668701171877,
+            "minimumTap": 59.58331298828125
+        },
+        {
+            "name": "en-mobile-390x664-match",
+            "canvasWidth": 390.0,
+            "canvasHeight": 664.0,
+            "contentWidth": 390.0,
+            "listHeight": 0.0,
+            "minimumTap": 49.28935241699219
+        },
+        {
+            "name": "en-rotated-844x390-lobby",
+            "canvasWidth": 320.0,
+            "canvasHeight": 390.0,
+            "contentWidth": 320.0,
+            "listHeight": 134.0,
+            "minimumTap": 48.888885498046878
+        },
+        {
+            "name": "en-rotated-844x390-match",
+            "canvasWidth": 320.0,
+            "canvasHeight": 390.0,
+            "contentWidth": 320.0,
+            "listHeight": 0.0,
+            "minimumTap": 43.999969482421878
+        }
+    ]
+}

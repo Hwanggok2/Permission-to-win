@@ -120,7 +120,7 @@ class ExportTests(unittest.TestCase):
         self.assertEqual([200+100*(n//2) for n in range(30)],[s['aiRating'] for s in stages])
         self.assertGreater(stages[0]['aiOversightPermille'],0)
         self.assertLessEqual(stages[0]['aiOversightPermille'],400)
-        self.assertTrue(all(s['aiOversightPermille']==0 and s['aiDepth']>=2 for s in stages if s['aiRating']>=700))
+        self.assertTrue(all(s['aiOversightPermille']==0 and s['aiDepth']>=2 for s in stages if s['aiRating']>=400))
         self.assertEqual(0,stages[-1]['aiOversightPermille'])
         for field,value in (('AiRating',199),('AiRating',1601),('AiRating',250),('AiOversightPermille',-1),('AiOversightPermille',1001)):
             with self.subTest(field=field,value=value):

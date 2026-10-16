@@ -1,0 +1,50 @@
+[
+  {
+    "key": "game_title",
+    "row": 35,
+    "before": [
+      "4목",
+      "Four in a Row"
+    ],
+    "after": [
+      "이겨도 됩니까?",
+      "Permission to Win"
+    ]
+  },
+  {
+    "key": "client_game_title",
+    "row": 63,
+    "before": [
+      "4목",
+      "Four in a Row"
+    ],
+    "after": [
+      "이겨도 됩니까?",
+      "Permission to Win"
+    ]
+  },
+  {
+    "key": "game_brand",
+    "row": 64,
+    "before": [
+      "4목",
+      "Four in a Row"
+    ],
+    "after": [
+      "이겨도 됩니까?",
+      "Permission to Win"
+    ]
+  },
+  {
+    "key": "web_canvas_label",
+    "row": 127,
+    "before": [
+      "4목 게임",
+      "Four in a Row game"
+    ],
+    "after": [
+      "이겨도 됩니까? 사목 게임",
+      "Permission to Win — four-in-a-row game"
+    ]
+  }
+]
