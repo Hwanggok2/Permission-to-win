@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-18",
+  "tool": "Pillow and NumPy, user-authorized direct pixel correction",
+  "userAuthorization": "픽셀 단위로 직접 수정해; 팔로 가린 계급장의 가림 표현 수정 요청",
+  "manifest": "Docs/Design/assets/characters-occlusion-20261018-v7/manifest.json",
+  "manualCorrectionRecord": "Docs/Design/assets/characters-occlusion-20261018-v7/manual-corrections.json",
+  "reproductionScript": "Client/Tools/CorrectPortraitOcclusion.py",
+  "verification": "Client/Evidence/portrait-occlusion-20261018/pixel-diff.json",
+  "sourceRecord": "Licence/CHARACTER-PIXEL-STYLE-20261015-V6.json",
+  "source": "Docs/Design/assets/characters-pixel-20261015-v6/C02-pixel-v6.png",
+  "sourceSha256": "0f6c78e8340bf0195479127e44474eda2f95c48e7c3e3c06d94b4a86aeed05a2",
+  "target": "Docs/Design/assets/characters-occlusion-20261018-v7/C02-occlusion-v7.png",
+  "targetSha256": "5e0c24ba9cca4614953be6269780114b967b91469d784259b1cfac958fd6c478",
+  "changedCharacters": ["C02"],
+  "changedStates": ["thinking"],
+  "originalAssetsPreserved": true,
+  "sourcePhotosUsedAsRuntimePixels": false,
+  "newExternalAssets": false,
+  "basis": "기존 생성 자산의 소매 일부만 수작업 복원. 원본 생성 경로와 권리 기록은 v6 기록을 유지하며 독점권 판단은 추가하지 않음."
+}

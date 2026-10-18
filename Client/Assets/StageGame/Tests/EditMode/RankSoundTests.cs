@@ -77,8 +77,9 @@ namespace StageGame.Tests
             Assert.AreEqual(reference.peak,opened.peak,.01f,"One button activation must produce exactly one click.");
             var closed=new AudioSignal();ClickWithPointer(app.settingsClose);Assert.IsFalse(app.settings.activeSelf);
             yield return MeasureListenerOutput(closed,.18f);Assert.AreEqual(reference.peak,closed.peak,.01f);
-            var disabled=new AudioSignal();Assert.IsFalse(app.multiplayer.interactable);ClickWithPointer(app.multiplayer);
+            var disabled=new AudioSignal();app.multiplayer.interactable=false;ClickWithPointer(app.multiplayer);
             yield return MeasureListenerOutput(disabled,.18f);Assert.Less(disabled.peak,.001f);
+            app.multiplayer.interactable=true;
             ClickWithPointer(app.lobbySettings);ClickWithPointer(app.soundToggle);Assert.IsFalse(Progress.Data.soundEnabled);
             yield return new WaitForSecondsRealtime(.15f);
             var muted=new AudioSignal();ClickWithPointer(app.settingsClose);ClickWithPointer(app.lobbyHelp);

@@ -1,0 +1,23 @@
+{
+  "name": "stagegame-purchase-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "dev": "wrangler dev --local --ip 127.0.0.1",
+    "check": "tsc --noEmit",
+    "test": "node --experimental-transform-types --test test/*.test.mjs test/multiplayer/*.test.mjs",
+    "dev:multiplayer": "wrangler dev --local --config wrangler.multiplayer.jsonc --ip 127.0.0.1 --port 8788",
+    "test:multiplayer": "node --experimental-transform-types --test test/multiplayer/*.test.mjs",
+    "smoke:multiplayer": "node scripts/multiplayer-smoke.mjs",
+    "build:multiplayer": "wrangler deploy --dry-run --config wrangler.multiplayer.jsonc --outdir dist/multiplayer",
+    "db:local": "wrangler d1 migrations apply stagegame-purchases-dev --local",
+    "build:check": "wrangler deploy --dry-run --outdir dist"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "5.20261015.1",
+    "typescript": "7.0.2",
+    "wrangler": "4.151.0"
+  }
+}

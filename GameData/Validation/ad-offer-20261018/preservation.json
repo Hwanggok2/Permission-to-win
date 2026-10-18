@@ -1,0 +1,42 @@
+{
+  "originalRows": {
+    "Stages": 34,
+    "AdConfig": 5,
+    "Strings": 494,
+    "Multiplayer": 20
+  },
+  "newRows": {
+    "Stages": 34,
+    "AdConfig": 5,
+    "Strings": 506,
+    "Multiplayer": 20
+  },
+  "approvedExistingCellChanges": [
+    {
+      "sheet": "AdConfig",
+      "cell": "B5",
+      "before": 3,
+      "after": 0
+    },
+    {
+      "sheet": "AdConfig",
+      "cell": "C5",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "sheet": "AdConfig",
+      "cell": "D5",
+      "before": 90,
+      "after": 0
+    }
+  ],
+  "unrelatedDifferences": [],
+  "changedZipParts": [
+    "_rels/.rels",
+    "xl/_rels/workbook.xml.rels",
+    "xl/workbook.xml",
+    "xl/worksheets/sheet2.xml",
+    "xl/worksheets/sheet3.xml"
+  ]
+}

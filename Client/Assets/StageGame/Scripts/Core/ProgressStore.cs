@@ -10,10 +10,12 @@ namespace StageGame
         public int unlockedStage = 1;
         public int highestClearedStage;
         public int completedMatches;
+        public int completedOnlineMatches;
         public int lastInterstitialMatch;
         public long lastInterstitialUtc;
         public bool soundEnabled = true;
         public bool musicMuted; // Additive v1 setting: older saves default to music on.
+        public bool rulesAcknowledged; // Saved only after the player explicitly closes the rules.
         public string language = "ko";
         public List<string> processedMatchIds = new List<string>();
     }
@@ -30,7 +32,7 @@ namespace StageGame
             try
             {
                 Data = PlayerPrefs.HasKey(Key) ? JsonUtility.FromJson<ProgressData>(PlayerPrefs.GetString(Key)) : new ProgressData();
-                if (Data == null || Data.saveVersion != 1 || Data.unlockedStage < 1 || Data.highestClearedStage < 0 || Data.highestClearedStage > stageCount || Data.completedMatches < 0 || Data.lastInterstitialMatch < 0 || Data.lastInterstitialMatch > Data.completedMatches || Data.lastInterstitialUtc < 0)
+                if (Data == null || Data.saveVersion != 1 || Data.unlockedStage < 1 || Data.highestClearedStage < 0 || Data.highestClearedStage > stageCount || Data.completedMatches < 0 || Data.completedOnlineMatches < 0 || Data.lastInterstitialMatch < 0 || Data.lastInterstitialMatch > Data.completedMatches || Data.lastInterstitialUtc < 0)
                     throw new FormatException("지원하지 않거나 손상된 저장 형식");
                 Data.unlockedStage = Math.Min(stageCount, Data.unlockedStage);
                 // Missing additive field in v1 saves is zero. Unlock30 proves only clears1..29.
@@ -77,6 +79,14 @@ namespace StageGame
                 SaveWarning = "client_error_save";
                 return false;
             }
+        }
+
+        public bool RecordOnlineResult(string room,int round)
+        {
+            if(string.IsNullOrEmpty(room) || round<1)return false;
+            string id="online:"+room+":"+round;
+            if(!processedMatches.Add(id))return false;
+            Data.processedMatchIds.Add(id);Data.completedOnlineMatches++;Save();return true;
         }
     }
 }

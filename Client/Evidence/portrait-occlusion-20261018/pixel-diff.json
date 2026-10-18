@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-18",
+  "characterId": "C02",
+  "state": "thinking",
+  "reason": "Hide the left chest rank behind the raised left forearm and restore sleeve camouflage.",
+  "source": "Docs/Design/assets/characters-pixel-20261015-v6/C02-pixel-v6.png",
+  "sourceSha256": "0f6c78e8340bf0195479127e44474eda2f95c48e7c3e3c06d94b4a86aeed05a2",
+  "target": "Docs/Design/assets/characters-occlusion-20261018-v7/C02-occlusion-v7.png",
+  "targetSha256": "5e0c24ba9cca4614953be6269780114b967b91469d784259b1cfac958fd6c478",
+  "changedBoundsExclusive": [
+    813,
+    687,
+    880,
+    738
+  ],
+  "changedPixels": 3231,
+  "alphaUnchanged": true,
+  "introUnchanged": true,
+  "defeatUnchanged": true,
+  "originalAssetsPreserved": true,
+  "authorization": "User explicitly authorized direct pixel corrections; requested this occlusion repair on 2026-10-18."
+}

@@ -42,7 +42,7 @@ Excel을 수치와 문자열의 원본으로 삼고, 개발 시 검증·변환�
 **StageGame 기준안**
 
 - 최소한의 주제별 파일과 실제 사용하는 시트만 만든다. 게임 확정 전에 참고 게임의 파일 구성이나 빈 시트를 미리 복제하지 않는다.
-- 파일명은 같은 `GameData_<주제>.xlsx` 규칙을 사용한다. MVP는 `GameData_MVP.xlsx`의 `Stages`, `AdConfig`, `Strings` 세 시트를 허용 목록으로 관리한다.
+- 파일명은 같은 `GameData_<주제>.xlsx` 규칙을 사용한다. MVP는 `GameData_MVP.xlsx`의 `Stages`, `AdConfig`, `Strings`, `Multiplayer` 네 시트를 허용 목록으로 관리한다.
 - 문자열·밸런스 입력·검토용 계산을 구분하되, 용도가 없으면 설명/보고 탭을 추가하지 않는다.
 - 클라이언트의 Excel 경로를 SimpleGame 기준으로 하드코딩하지 않는다. StageGame은 Unity 프로젝트가 `Client/` 아래에 있으므로 프로젝트 루트와 원본 경로의 기준점을 계약에 명시해야 한다.
 - Excel parser는 개발 도구에 둔다. Android/WebGL 런타임은 `.xlsx`나 Excel 라이브러리에 의존하지 않는다. `GameData/Generated/`에 UTF-8 JSON을 만들고 클라이언트 담당이 Resources로 인계한다.
@@ -113,9 +113,9 @@ Excel을 수치와 문자열의 원본으로 삼고, 개발 시 검증·변환�
 
 1. 총괄이 확정한 JSON v1 계약을 구현했다. 구체적인 필드 매핑은 9절을 따른다.
 2. 30개 국면과 한국어 문구를 새로 작성하고 bundled Artifact Tool로 Excel을 제작했다. SimpleGame 콘텐츠나 코드를 복사하지 않았다.
-3. 원본 읽기 → 메타/타입 검사 → 행 필터 → 키·참조·게임 조건 검사 → 세 JSON과 이전 파일 백업 준비 → 파일별 교체 순서다. 검증 실패 시 생성물에 쓰지 않고 교체 예외 시 기존 묶음을 복구한다. 복구 실패는 `.export-incomplete`와 백업을 남겨 `--check`/재export를 거부한다. 디스크 장애/프로세스 강제 중단까지 세 파일 전체의 원자성을 보장하는 트랜잭션은 아니다.
+3. 원본 읽기 → 메타/타입 검사 → 행 필터 → 키·참조·게임 조건 검사 → 네 JSON과 이전 파일 백업 준비 → 파일별 교체 순서다. 검증 실패 시 생성물에 쓰지 않고 교체 예외 시 기존 묶음을 복구한다. 복구 실패는 `.export-incomplete`와 백업을 남겨 `--check`/재export를 거부한다. 디스크 장애/프로세스 강제 중단까지 네 파일 전체의 원자성을 보장하는 트랜잭션은 아니다.
 4. 생성물은 수동 편집하지 않는다. 같은 원본·도구에서 동일 바이트를 생성하며 단계 ID와 문자열 키로 정렬한다. 시간값을 삽입하지 않는다.
-5. `schemaVersion=1`을 세 wrapper에 기록한다. 원본 SHA-256은 README의 검증 기록에 남긴다. 별도 contentVersion 필드는 계약에 없으므로 추가하지 않았다. 로컬 저장 버전은 클라이언트 담당이 별도로 관리한다.
+5. `schemaVersion=1`을 네 wrapper에 기록한다. 원본 SHA-256은 README의 검증 기록에 남긴다. 별도 contentVersion 필드는 계약에 없으므로 추가하지 않았다. 로컬 저장 버전은 클라이언트 담당이 별도로 관리한다.
 6. 클라이언트 담당이 생성 데이터 로드와 플레이 반영을 검증한다. 데이터 담당은 `Client/`를 수정하지 않는다.
 
 제작할 때 적용할 최소 검증 항목:
@@ -145,7 +145,7 @@ Excel을 수치와 문자열의 원본으로 삼고, 개발 시 검증·변환�
 
 ## 9. 현재 MVP 원본과 JSON v1 매핑
 
-원본은 `GameData_MVP.xlsx` 하나다. 함께 검증해야 하는 30스테이지·광고 설정·문자열을 세 시트로 묶어 파일 간 버전 불일치를 줄였다. 한국어·영어를 지원하며 수식과 Excel Table 객체를 사용하지 않는다. 메타행은 위의 4행, 활성값은 대문자 `USE/NONE`, 모든 셀은 고정값이다.
+원본은 `GameData_MVP.xlsx` 하나다. 함께 검증해야 하는 30스테이지·광고 설정·문자열·멀티 설정을 네 시트로 묶어 파일 간 버전 불일치를 줄였다. 한국어·영어를 지원하며 수식과 Excel Table 객체를 사용하지 않는다. 메타행은 위의 4행, 활성값은 대문자 `USE/NONE`, 모든 셀은 고정값이다.
 
 | Stages 열 | JSON 필드 | 필수/제약 |
 | --- | --- | --- |
@@ -176,12 +176,18 @@ Excel을 수치와 문자열의 원본으로 삼고, 개발 시 검증·변환�
 
 중간 국면은 시작측부터 교대로 매 수 재생한다. 만열, 범위 밖 열, 잘못된 구분 문법, 재생 도중의 승리, 42수 무승부를 모두 거부한다. 매 합법 수가 상대의 다음 즉승을 허용하는 국면도 거부한다. 깊은 수읽기의 패배는 별도 `audit_openings.py`와 QA에서 검사한다. 현재 5·8·11·14·18·22·26·30단계는 AI 선공이다. 시작 수순과 선공은 레이팅 변경에서 보존했다.
 
-`AdConfig`는 USE 한 행이며 계약 v1 시험값을 엄격히 검사한다. 필드는 `InterstitialGraceMatches=3`, `InterstitialEveryMatches=2`, `InterstitialCooldownSeconds=90`, `BannerLobby=TRUE`, `BannerResult=TRUE`, `RewardedHintsPerMatch=1`이다. JSON은 첫 글자만 소문자로 바꾼 동명 필드를 사용한다. 시험값을 바꾸려면 총괄 계약과 validator를 함께 갱신한다.
+`AdConfig`는 USE 한 행이며 2026-10-18 사용자 확정값을 엄격히 검사한다. 필드는 `InterstitialGraceMatches=0`, `InterstitialEveryMatches=1`, `InterstitialCooldownSeconds=0`, `BannerLobby=TRUE`, `BannerResult=TRUE`, `RewardedHintsPerMatch=1`이다. JSON은 첫 글자만 소문자로 바꾼 동명 필드를 사용하고 schemaVersion 1을 유지한다. 스토리는 정상 완료 매판이 전면 광고 대상이며, 멀티는 정상 대국 이후 방에서 나가 로비로 돌아가는 경계에서 최대 1회만 대상이다. 멀티의 경기 수 누적·방 퇴장 경계·중복 방지는 런타임에서 판정한다. 6판/180초 제안은 사용하지 않는다. 값 변경은 총괄 계약과 validator를 함께 갱신한다. 이 값은 게임의 노출 기준이며 플랫폼 정책이나 실제 광고 송출 완료를 뜻하지 않는다.
 
 `Strings`는 `ExportType`, `SearchKey`, `Content_Kor`, `/Description`, `Content_Eng` 순서다. 마지막 영어 열을 추가하여 기존 열 위치를 보존했다. `SearchKey→key`, `Content_Kor→ko`, `Content_Eng→en`을 생성하며 두 언어 모두 필수다. 영어 메타는 `string/Client`, 설명행은 `영어 표시 문구`다. 키는 전역 고유 ASCII 식별자다.
 
 포맷은 C# `string.Format`의 제한된 부분집합 `{0}`, `{1}` 등만 허용한다. 두 언어의 인자 인덱스 집합이 같고 0부터 연속이어야 한다. 인자 순서 변경·반복은 허용하고 `{{`/`}}`는 리터럴 중괄호다. 이름 인자, 정렬/형식 지정자, 불완전 중괄호를 거부한다. 숫자 자릿수 등은 호출자가 미리 형식화한다. 예: `챕터 {0} · 스테이지 {1}` / `CHAPTER {0} · STAGE {1}`.
 
-wrapper/schemaVersion 1과 ko/en을 유지한다. 대회·인물별 문구까지 418개에 음악 설정 2개, 턴 제한 시간 2개, AI 레이팅 표시 1개를 더해 현재 423개다. 기존 `stage_tier_1/2/3`과 챕터용 문구는 구버전 호환을 위해 보존하며 새 화면은 `rankKey`와 계급 UI 키를 사용한다. 언어 코드는 `ko/en`, 최초·잘못된 저장값의 기본은 ko다. 언어 선택/저장·UI 갱신은 클라이언트가 구현한다. [현재 연결 계약](TOURNAMENT-CONTRACT.md).
+wrapper/schemaVersion 1과 ko/en을 유지한다. 2026-10-18 현재 멀티 UI·도움말까지의 기존 490개에 광고 제거 구매 안내 `ad_offer_*` 12개를 더해 총 502개다. 구매 가격은 `ad_offer_buy`의 `{0}`에 플랫폼에서 받은 표시 가격을 넣으며 Excel에 가격을 고정하지 않는다. 닫기는 기존 `ui_close`를 재사용하고 구매 취소는 별도 오류 문구 없이 돌아온다. 기존 `stage_tier_1/2/3`과 챕터용 문구는 구버전 호환을 위해 보존하며 새 화면은 `rankKey`와 계급 UI 키를 사용한다. 언어 코드는 `ko/en`, 최초·잘못된 저장값의 기본은 ko다. 언어 선택/저장·UI 갱신은 클라이언트가 구현한다. [현재 연결 계약](TOURNAMENT-CONTRACT.md).
 
 생성물은 `Generated/stages.json`, `ads.json`, `strings.json`이며 각 최상위는 `schemaVersion:1`을 갖는 객체다. stages/strings는 객체 배열이다. 스키마 밖의 열·시트·타입·범위는 오류로 보고한다. `float`는 DifficultyStars에 사용하고 `long`, enum, 목록 메타는 사용하지 않는다. 범용 형식에서 허용될 수 있는 타입과 이번 MVP exporter의 지원 범위를 구분한다.
+
+## 10. 멀티 설정 추가 (2026-10-18)
+
+허용 시트는 `Stages`, `AdConfig`, `Strings`, `Multiplayer` 네 개이며 출력도 stages/ads/strings/multiplayer.json 네 개다. 기존 클라이언트 JSON 세 개는 기존 Resources로 인계하고, multiplayer.json은 별도 Worker가 import한다. 범용 Server 열 필터를 추가한 것이 아니라 시트별 고정 스키마와 소비자를 확장했다.
+
+`Multiplayer` 열은 `ExportType:string:All`, `Key:string:All`, `Value:int:All`, `/Description:none:None`이다. 4행 메타와 USE/NONE 규칙은 동일하다. 16개 필수 키의 중복·누락·알 수 없는 키·정수 범위·검색 초기 범위≤최대 범위·계급 문자열 20개를 검사한다. 시작200/최저0/계급간격100/계급수20은 사용자 계약으로 고정한다. Elo·매칭·시간 제한 값은 [멀티 계약](../Docs/Management/MULTIPLAYER-CONTRACT.md)을 따른다. 레이팅과 점수 반영 여부는 서버가 결정한다. 클라이언트의 보낸 점수나 결과를 신뢰하지 않는다.

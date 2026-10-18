@@ -1,4 +1,12 @@
-# 무료 구매 검증 서버 계획
+# 무료 구매 검증 서버
+
+**2026-10-18 멀티 배틀 추가 준비:** 별도 Worker/SQLite Durable Object와 로컬 매칭·친선전·레이팅을 구현했다. 구매 서버와 원격 배포는 변경하지 않았다. [멀티 서버 실행·검증](MULTIPLAYER.md), [멀티 기능 계약](../Docs/Management/MULTIPLAYER-CONTRACT.md)을 따른다. 공개 멀티 서버는 아직 배포하지 않았다.
+
+**2026-10-16 연결 기반 구현·개발 배포 완료.** Cloudflare 대시보드에서 Workers **Free / $0 / Current plan**을 확인한 뒤 StageGame 전용 개발 Worker와 D1을 생성·연결했다. [개발 서버 상태](https://stagegame-purchase-api-dev.hsj2014528.workers.dev/v1/status)는 D1 조회 성공을 반환하며 `purchases.enabled`는 `false`다. TypeScript 검사, 자동 테스트 10개, 로컬·원격 HTTP 검사 각 5개를 통과했다.
+
+현재 구현은 상태 확인 API와 D1 초기 스키마까지다. 구매자 인증·플랫폼 결제 검증·서명 권한·복구·환불·Client 연결은 아직 구현하지 않았다. 실제 결제나 광고, 게임 빌드, 유료 전환을 실행하지 않았다. [실행 방법·API·검증 범위·다음 작업](CONNECTION.md), [검증 증거](Evidence/connection-20261016/README.md)를 따른다. 아래는 유지 중인 결제 서버 설계다.
+
+**게임 저장 확인(2026-10-16):** [현재 플레이 사이트](https://hwanggok2.github.io/StageGame/)에서 언어·소리 설정 및 1단계 완료/2단계 해금이 새로고침 후 복원되는 것을 직접 확인했다. 이는 브라우저 로컬 저장이며 D1 동기화는 없다. [검사 범위·저장 위치·화면 증거](Evidence/save-load-20261016/README.md).
 
 확인일: 2026-10-14. **Cloudflare Workers Free(TypeScript) + D1 Free + Workers Secrets/mTLS binding**을 선택한다. 무료 한도에서 운영하고 소진 시 구매 기능을 중단한다. 게임 규칙·AI·진행은 로컬이다. 자체 회원가입·진행 동기화·플랫폼 간 구매 공유는 제외한다.
 
@@ -36,4 +44,4 @@
 - 외부 acknowledge/지급 완료는 DB 처리 밖에서 수행하고 미완료 상태로 재시도한다. 토스는 저장 성공 후에만 지급 성공을 반환하고 미결 복구 후 completeProductGrant를 호출한다. [토스 지급·복구](https://developers-apps-in-toss.toss.im/guide/monetization/in-app-payment)
 - 취소 내역/주문 상태를 정기·재접속 시 조회한다. 알림은 재조회 계기로만 사용한다. 확정 환불은 해당 거래 권한을 회수하고 다른 유효 구매를 재계산한다. 재설치는 플랫폼 구매 내역·검증된 소유자·원장을 대조한다.
 - Cloudflare Free 계정, 인증서 등록 권한, 플랫폼 상품·정산 준비가 필요하다. 비밀·토큰은 Git/로그에 남기지 않고 최소 접근 권한을 준다.
-- **현재는 문서 검토만 완료.** 무료 계정의 인증서 등록, 원격 mTLS, SDK 연결, 10ms CPU·한도 소진·중복·환불·재설치·계정 변경 검증 전에는 출시 완료로 표시하지 않는다. 이번에 배포·유료 전환·과금·실결제를 실행하지 않았다.
+- **2026-10-14에는 문서 검토만 완료했고, 2026-10-16에는 개발 서버와 D1 연결을 검증했다.** 무료 계정의 인증서 등록, 원격 mTLS, SDK 연결, 실제 10ms CPU·한도 소진·중복·환불·재설치·계정 변경 검증 전에는 출시 완료로 표시하지 않는다. 개발 상태 확인 서버를 배포했으며 유료 전환·실결제를 실행하지 않았다.

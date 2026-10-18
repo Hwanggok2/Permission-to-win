@@ -12,13 +12,13 @@
     },
     {
       "characterId": "C02",
-      "file": "C02-pixel-v6.png",
+      "file": "C02-occlusion-v7.png",
       "x": 0,
       "y": 163,
       "width": 512,
       "height": 651,
-      "source": "Docs/Design/assets/characters-pixel-20261015-v6/C02-pixel-v6.png",
-      "sha256": "0f6c78e8340bf0195479127e44474eda2f95c48e7c3e3c06d94b4a86aeed05a2"
+      "source": "Docs/Design/assets/characters-occlusion-20261018-v7/C02-occlusion-v7.png",
+      "sha256": "5e0c24ba9cca4614953be6269780114b967b91469d784259b1cfac958fd6c478"
     },
     {
       "characterId": "C03",

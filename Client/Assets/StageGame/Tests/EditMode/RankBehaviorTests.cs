@@ -129,7 +129,7 @@ namespace StageGame.Tests
             app.CloseDetail();Assert.IsTrue(app.detail.gameObject.activeSelf);Assert.IsFalse(Hit(app.lobbyHelp.transform).transform.IsChildOf(app.lobby.transform));
             yield return new WaitForSecondsRealtime(.25f);Assert.IsFalse(app.detail.gameObject.activeSelf);Assert.AreEqual(position,app.stageScroll.verticalNormalizedPosition,.001f);
             Assert.AreEqual(app.lobbyHelp.gameObject,ExecuteEvents.GetEventHandler<IPointerClickHandler>(Hit(app.lobbyHelp.transform)));
-            Assert.IsFalse(app.multiplayer.interactable);
+            Assert.IsTrue(app.multiplayer.interactable);
         }
         sealed class PendingAds:IAdService
         {

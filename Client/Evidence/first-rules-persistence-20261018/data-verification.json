@@ -1,0 +1,13 @@
+{
+  "addedKeys": [
+    "mp_help_drop_caption"
+  ],
+  "changedExistingKeys": [],
+  "removedKeys": [],
+  "otherGeneratedFilesAndClientUnchanged": [
+    "C:\\Github\\StageGame\\GameData\\Generated\\stages.json",
+    "C:\\Github\\StageGame\\GameData\\Generated\\ads.json",
+    "C:\\Github\\StageGame\\GameData\\Generated\\multiplayer.json",
+    "C:\\Github\\StageGame\\Client\\Assets\\StageGame\\Resources\\GameData\\strings.json"
+  ]
+}

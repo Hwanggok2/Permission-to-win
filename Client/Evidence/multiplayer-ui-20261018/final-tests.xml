@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="5" result="Passed" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-18 11:18:59Z" end-time="2026-10-18 11:19:02Z" duration="3.2034513">
+  <test-suite type="TestSuite" id="1000" name="이겨도 됩니까_" fullname="이겨도 됩니까_" runstate="Runnable" testcasecount="144" result="Passed" start-time="2026-10-18 11:18:59Z" end-time="2026-10-18 11:19:02Z" duration="3.203451" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1172" name="StageGame.Tests.dll" fullname="C:/Github/StageGame/Client/Library/ScriptAssemblies/StageGame.Tests.dll" runstate="Runnable" testcasecount="144" result="Passed" start-time="2026-10-18 11:18:59Z" end-time="2026-10-18 11:19:02Z" duration="3.159251" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="17692" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1173" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="144" result="Passed" start-time="2026-10-18 11:18:59Z" end-time="2026-10-18 11:19:02Z" duration="3.154074" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1174" name="Tests" fullname="StageGame.Tests" runstate="Runnable" testcasecount="144" result="Passed" start-time="2026-10-18 11:18:59Z" end-time="2026-10-18 11:19:02Z" duration="3.152754" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1050" name="RankFlowTests" fullname="StageGame.Tests.RankFlowTests" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" testcasecount="64" result="Passed" start-time="2026-10-18 11:18:59Z" end-time="2026-10-18 11:19:02Z" duration="3.149015" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1053" name="LastOpponentHighlightResetsAndFollowsUndo" fullname="StageGame.Tests.RankFlowTests.LastOpponentHighlightResetsAndFollowsUndo" methodname="LastOpponentHighlightResetsAndFollowsUndo" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1461253416" result="Passed" start-time="2026-10-18 11:18:25Z" end-time="2026-10-18 11:18:30Z" duration="4.825540" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] opponent-last-move: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1054" name="MultiplayerHighlightClearsOnPlacementAndReturnsOnReply" fullname="StageGame.Tests.RankFlowTests.MultiplayerHighlightClearsOnPlacementAndReturnsOnReply" methodname="MultiplayerHighlightClearsOnPlacementAndReturnsOnReply" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="889903728" result="Passed" start-time="2026-10-18 11:18:30Z" end-time="2026-10-18 11:18:32Z" duration="1.812068" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1051" name="MultiplayerLayoutsFitWithoutScrollingInBothLanguages" fullname="StageGame.Tests.RankFlowTests.MultiplayerLayoutsFitWithoutScrollingInBothLanguages" methodname="MultiplayerLayoutsFitWithoutScrollingInBothLanguages" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="22173369" result="Passed" start-time="2026-10-18 11:18:32Z" end-time="2026-10-18 11:18:55Z" duration="23.014452" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] ko-0-menu: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-0-queue: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-0-host: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-0-invite: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-0-playing: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-0-reconnecting: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-0-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-0-win: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-0-request: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-0-waiting: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-0-left: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-0-error: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1-menu: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-1-queue: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-1-host: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-1-invite: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-1-playing: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-1-reconnecting: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-1-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-1-win: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-1-request: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-1-waiting: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-1-left: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-1-error: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-2-menu: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-2-queue: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-2-host: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-2-invite: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-2-playing: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-2-reconnecting: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-2-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-2-win: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-2-request: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-2-waiting: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-2-left: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-2-error: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-3-menu: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-3-queue: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-3-host: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-3-invite: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-3-playing: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-3-reconnecting: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-3-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-3-win: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-3-request: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-3-waiting: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-3-left: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-3-error: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-4-menu: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-4-queue: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-4-host: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-4-invite: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-4-playing: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-4-reconnecting: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-4-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-4-win: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-4-request: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-4-waiting: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-4-left: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-4-error: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-0-menu: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-0-queue: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-0-host: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-0-invite: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-0-playing: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-0-reconnecting: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-0-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-0-win: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-0-request: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-0-waiting: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-0-left: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-0-error: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-1-menu: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-1-queue: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-1-host: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-1-invite: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-1-playing: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-1-reconnecting: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-1-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-1-win: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-1-request: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-1-waiting: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-1-left: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-1-error: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-2-menu: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-2-queue: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-2-host: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-2-invite: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-2-playing: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-2-reconnecting: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-2-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-2-win: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-2-request: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-2-waiting: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-2-left: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-2-error: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-3-menu: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-3-queue: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-3-host: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-3-invite: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-3-playing: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-3-reconnecting: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-3-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-3-win: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-3-request: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-3-waiting: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-3-left: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-3-error: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-4-menu: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-4-queue: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-4-host: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-4-invite: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-4-playing: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-4-reconnecting: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-4-confirm: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-4-win: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-4-request: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-4-waiting: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-4-left: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-4-error: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1052" name="MultiplayerNativeTransportPlaysWithASecondClient" fullname="StageGame.Tests.RankFlowTests.MultiplayerNativeTransportPlaysWithASecondClient" methodname="MultiplayerNativeTransportPlaysWithASecondClient" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="2117972899" result="Passed" start-time="2026-10-18 11:18:55Z" end-time="2026-10-18 11:18:57Z" duration="2.190982" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] online-real-connection-result: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1055" name="MultiplayerSavedPanelShowsInviteRatingStarterRematchAndDeparture" fullname="StageGame.Tests.RankFlowTests.MultiplayerSavedPanelShowsInviteRatingStarterRematchAndDeparture" methodname="MultiplayerSavedPanelShowsInviteRatingStarterRematchAndDeparture" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1726250740" result="Passed" start-time="2026-10-18 11:18:57Z" end-time="2026-10-18 11:19:02Z" duration="4.699795" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Capture] ko-390-online-menu: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-390-online-invite: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-390-online-game: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-390-online-rematch: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-390-online-left: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-320-online-menu: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-320-online-invite: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-320-online-game: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-320-online-rematch: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-320-online-left: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-390-online-menu: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-390-online-invite: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-390-online-game: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-390-online-rematch: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-390-online-left: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-320-online-menu: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-320-online-invite: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-320-online-game: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-320-online-rematch: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-320-online-left: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+Saving results to: C:/Github/StageGame/Client/Evidence/multiplayer-ui-20261018/final-tests.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -10,7 +10,7 @@ using UnityEngine.UI;
 namespace StageGame.Editor
 {
     // Saves a separate set of prefabs/art. Older Tabletop assets remain intact.
-    public static class RankUiBuilder
+    public static partial class RankUiBuilder
     {
         public const string Art = ProjectBuilder.Root + "Art/RankUI/";
         public const string Prefabs = ProjectBuilder.Root + "Prefabs/RankUI/";
@@ -46,7 +46,9 @@ namespace StageGame.Editor
             Save("Lobby", BuildLobby); Save("Detail", BuildDetail); Save("Match", BuildMatch); Save("Result", BuildResult);
             foreach(string screen in new[]{"Settings","Help","Confirm","Notices"}) Save(screen, go=>BuildModal(go,screen));
             Save("ActionConfirm", BuildActionConfirm); Save("TurnToast", BuildTurnToast);
-            Save("RankAppRoot", BuildRoot);
+            Save("Board",ConfigureLastMoveHighlight);Save("OnlinePanel",BuildOnlinePanel);
+            Save("AdRemovalOffer",BuildAdRemovalOffer);
+            Save("RankAppRoot",go=>{BuildRoot(go);ConfigureAdRemovalRoot(go);});
             var scene=EditorSceneManager.OpenScene(ProjectBuilder.ScenePath);
             foreach(var legacy in UnityEngine.Object.FindObjectsByType<GameApp>(FindObjectsInactive.Include, FindObjectsSortMode.None)) legacy.gameObject.SetActive(false);
             if(UnityEngine.Object.FindFirstObjectByType<RankGameApp>(FindObjectsInactive.Include)==null) PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>(AppRootPath));
@@ -617,6 +619,7 @@ namespace StageGame.Editor
             app.localizedLabels=labels.ToArray();
             foreach(var screen in new[]{app.match,app.result,app.settings,app.help,app.confirm,app.notices,app.detail.gameObject,app.actionConfirm,app.turnToast.gameObject})screen.SetActive(false);
             blocker.enabled=false; app.lobby.SetActive(true);
+            ConfigureOnlineRoot(go);
         }
         public static void Validate()
         {

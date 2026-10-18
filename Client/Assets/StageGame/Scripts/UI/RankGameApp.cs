@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 
 namespace StageGame
 {
-    public sealed class RankGameApp : MonoBehaviour
+    public sealed partial class RankGameApp : MonoBehaviour
     {
         public RankTheme theme;
         public GameObject lobby, match, result, settings, help, confirm, notices;
@@ -26,6 +26,8 @@ namespace StageGame
         public Button multiplayer, lobbySettings, lobbyHelp, detailClose, previous, following, play;
         public Text lobbyTitle, lobbyNotice, multiplayerLabel, detailRank, detailNumber, detailStars, detailDescription, detailState, playLabel;
         public Image[] detailStones, stones;
+        public LastMoveHighlight lastOpponentMove;
+        public OnlineGameController online;
         public Image movePreview, winLine, playerAvatar;
         public Button[] columns;
         public Text matchTitle, aiName, aiStars, aiSpeech, turnLabel, moveLabel, matchNotice;
@@ -100,6 +102,8 @@ namespace StageGame
         static float U(float value)=>RankUiMetrics.U(value);
         string T(string key) => strings.Text(key);
         string F(string key, params object[] args) => strings.Format(key, args);
+        public string UiText(string key) => T(key);
+        public string UiFormat(string key, params object[] args) => F(key,args);
         bool CanChoose => !destroyed && match.activeSelf && board != null && !board.IsFinished && !busy && !resolving && !Suspended && !rewardGate.Pending && board.CurrentPlayer == 1;
 
         void Start()
@@ -110,6 +114,7 @@ namespace StageGame
             previous.onClick.AddListener(() => SelectDetail(-1)); following.onClick.AddListener(() => SelectDetail(1));
             detailClose.onClick.AddListener(CloseDetail); play.onClick.AddListener(() => { if (play.interactable && !detailSliding) StartStage(selected); });
             lobbySettings.onClick.AddListener(OpenSettings); lobbyHelp.onClick.AddListener(OpenHelp);
+            multiplayer.onClick.AddListener(online.Open);
             settingsClose.onClick.AddListener(() => settings.SetActive(false)); helpClose.onClick.AddListener(CloseHelp);
             noticesOpen.onClick.AddListener(() => notices.SetActive(true)); noticesClose.onClick.AddListener(() => notices.SetActive(false));
             soundToggle.onClick.AddListener(() => { progress.Data.soundEnabled = !progress.Data.soundEnabled; progress.Save(); RefreshSettings(); if(progress.Data.soundEnabled)PlayButtonSound(soundToggle); });
@@ -129,12 +134,15 @@ namespace StageGame
             {
                 bool fresh = !PlayerPrefs.HasKey("stagegame.progress.v1");
                 strings = StringTable.Load(); data = GameData.Load(strings); data.ValidateRankData(); progress = new ProgressStore(data.Stages.Length);
+                bool returning=progress.LoadWarning==null && (progress.Data.completedMatches>0 || progress.Data.completedOnlineMatches>0);
                 strings.SetLanguage(progress.Data.language); selected = progress.Data.unlockedStage - 1;
                 RefreshLanguage(); ShowLobby();
                 if (fresh)
                 {
                     progress.Save(); StartStage(0, true);
                 }
+                else EnsureFirstRules();
+                StartCoroutine(OfferAtLaunch(returning,navigationVersion));
             }
             catch (Exception error)
             {
@@ -151,6 +159,7 @@ namespace StageGame
             RefreshMusic();
             AdvanceSpeech();
             TickTurnTimer();
+            if(Input.GetKeyDown(KeyCode.Escape) && adOffer!=null && adOffer.Visible){adOffer.Dismiss();return;}
             if (!Input.GetKeyDown(KeyCode.Escape) || resolving || detailSliding) return;
             if (actionConfirm.activeSelf) CancelAction();
             else if (notices.activeSelf) notices.SetActive(false);
@@ -164,8 +173,8 @@ namespace StageGame
 
         void RefreshLobby()
         {
-            lobbyTitle.text = T("game_title"); multiplayerLabel.text = T("multiplayer_start") + " · " + T("coming_soon");
-            multiplayer.interactable = false;
+            lobbyTitle.text = T("game_title"); multiplayerLabel.text = T("multiplayer_start");
+            multiplayer.interactable = true;
             for (int i = 0; i < cards.Length; i++)
             {
                 var stage = data.Stages[i]; var card = cards[i]; bool locked = stage.id > progress.Data.unlockedStage, cleared = stage.id <= progress.Data.highestClearedStage;
@@ -213,6 +222,7 @@ namespace StageGame
 
         public void ShowLobby()
         {
+            navigationVersion++;adOffer?.Dismiss();
             CancelSpeech();
             CancelSearch(); CancelResultSequence(); CancelPendingReward(); ads.CancelPending(); matchId = null; busy = false;
             match.SetActive(false); lobby.SetActive(true); CloseOverlays();
@@ -230,6 +240,7 @@ namespace StageGame
         void StartStage(int index, bool showRules)
         {
             if (data == null || index < 0 || index >= data.Stages.Length || index + 1 > progress.Data.unlockedStage) return;
+            navigationVersion++;adOffer?.Dismiss();
             moveGuidePending = !sessionMatchStarted; sessionMatchStarted = true;
             CancelSpeech();
             CancelSearch(); CancelResultSequence(); CancelPendingReward(); ads.CancelPending();
@@ -359,6 +370,7 @@ namespace StageGame
         void RefreshBoard()
         {
             if (board == null) return;
+            lastOpponentMove.Show(stones, board.LastMoveNumberFor(-1) > openingMoveCount && board.LastMoveNumberFor(-1) == board.MoveCount ? board.LastMoveFor(-1) : -1);
             for (int i = 0; i < stones.Length; i++)
             {
                 bool winning = false; foreach (int cell in board.WinningCells) if (cell == i) winning = true;
@@ -523,19 +535,19 @@ namespace StageGame
         IEnumerator ResultAdBoundary(string id)
         {
             bool resolved = false; int generation=adGeneration; long now = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
-            if (AdPolicy.Eligible(data.Ads, progress.Data, now))
+            if (!AdRemovalOwned && AdPolicy.Eligible(data.Ads, progress.Data, now))
             {
                 interstitialPending = true; RefreshMusic();
-                ads.ShowInterstitial(value =>
+                try { ads.ShowInterstitial(value =>
                 {
-                    if (destroyed || generation!=adGeneration || resolved || matchId != id || !result.activeSelf || Suspended) return;
+                    if (destroyed || generation!=adGeneration || resolved || matchId != id || !result.activeSelf || Suspended || AdRemovalOwned) return;
                     resolved = true; interstitialPending = false; RefreshMusic();
                     if (value == AdResult.Completed) { progress.Data.lastInterstitialMatch = progress.Data.completedMatches; progress.Data.lastInterstitialUtc = now; progress.Save(); }
-                });
+                }); } catch(Exception) { resolved=true;interstitialPending=false;RefreshMusic(); }
             }
             else resolved = true;
             float deadline = Time.realtimeSinceStartup + 4;
-            while (!resolved && Time.realtimeSinceStartup < deadline && matchId == id) yield return null;
+            while (!resolved && !applicationPaused && !AdRemovalOwned && Time.realtimeSinceStartup < deadline && matchId == id) yield return null;
             resolved = true; interstitialPending = false; ads.CancelPending(); RefreshMusic(); if (!destroyed && generation==adGeneration && matchId == id && result.activeSelf) { resolving=false;SetResultActions(true); }
         }
         void SetResultActions(bool enabled) { retry.interactable = nextStage.interactable = resultLobby.interactable = enabled; }
@@ -544,7 +556,7 @@ namespace StageGame
             if (animatedStone == null) return;
             animatedStone.localScale = Vector3.one; animatedStone.anchoredPosition = animatedPosition; animatedStone.SetSiblingIndex(animatedSibling); animatedStone = null;
         }
-        void CancelResultSequence() { adGeneration++; interstitialPending = false; if (resultRoutine != null) StopCoroutine(resultRoutine); resultRoutine = null; resolving = false; RestoreAnimatedStone(); }
+        void CancelResultSequence() { adGeneration++; interstitialPending = false; CancelLobbyAd(); if (resultRoutine != null) StopCoroutine(resultRoutine); resultRoutine = null; resolving = false; RestoreAnimatedStone(); }
         void CancelSearch() { searchGeneration++; if (aiRoutine != null) StopCoroutine(aiRoutine); aiRoutine = null; busy = false; }
 
         void QueueAction(PendingAction action)
@@ -611,14 +623,15 @@ namespace StageGame
             if (destroyed || actionConfirm.activeSelf || help.activeSelf || !match.activeSelf || busy || applicationPaused || board == null || board.IsFinished || board.CurrentPlayer != 1 || !rewardGate.TryBegin(out int token)) return;
             confirm.SetActive(false); ActiveTime(); string id = matchId; var gate = rewardGate; int moves = board.MoveCount; int generation=++rewardGeneration; RefreshBoard();
             RefreshMusic();
-            ads.ShowRewarded(value =>
+            Action<AdResult> completion=value =>
             {
                 if (destroyed || generation!=rewardGeneration || id != matchId || gate != rewardGate || !gate.Pending) return;
                 if (!match.activeSelf || Suspended || busy || board.MoveCount != moves || board.CurrentPlayer != 1) { gate.Cancel(); RefreshBoard(); RefreshMusic(); return; }
                 if (gate.Complete(token, value)) BeginThink(true);
                 else if (!gate.Granted) { SetNotice(value == AdResult.Unavailable ? "client_hint_unavailable" : "hint_incomplete"); RefreshBoard(); }
                 RefreshMusic();
-            });
+            };
+            if(AdRemovalOwned)completion(AdResult.Completed);else ads.ShowRewarded(completion);
             if (gate.Pending) StartCoroutine(HintDeadline(id, gate));
         }
         IEnumerator HintDeadline(string id, RewardGate gate)
@@ -634,8 +647,25 @@ namespace StageGame
             // The placement guide is shown centrally; keep other contextual notices in their saved slot.
             matchNotice.gameObject.SetActive(key.Length>0 && key!="select_column");
         }
-        void OpenHelp() { CancelToast();help.SetActive(true);ActiveTime();RefreshBoard(); }
-        void CloseHelp() { help.SetActive(false);ActiveTime();RefreshBoard();ShowMoveGuide(); }
+        public void EnsureFirstRules()
+        {
+            // A settings/visit save does not prove that the rules were read. Preserve
+            // the old returning-player flow when a legacy save already has game results.
+            if(progress!=null && !progress.Data.rulesAcknowledged && progress.Data.completedMatches==0 && progress.Data.completedOnlineMatches==0 && progress.Data.highestClearedStage==0)OpenHelp();
+        }
+        void RefreshHelpText()
+        {
+            foreach(var label in localizedLabels)
+                if(label.key=="help_drop_caption")label.target.text=T(online!=null && online.panel.activeSelf?"mp_help_drop_caption":"help_drop_caption");
+        }
+        void OpenHelp() { CancelToast();RefreshHelpText();help.transform.SetAsLastSibling();help.SetActive(true);ActiveTime();RefreshBoard(); }
+        void CloseHelp()
+        {
+            if(!help.activeSelf)return;
+            help.SetActive(false);
+            if(progress!=null && !progress.Data.rulesAcknowledged){progress.Data.rulesAcknowledged=true;progress.Save();}
+            ActiveTime();RefreshBoard();ShowMoveGuide();
+        }
         void OpenSettings() { settings.SetActive(true); RefreshSettings(); }
         void RefreshSettings()
         {
@@ -648,8 +678,11 @@ namespace StageGame
         void RefreshLanguage()
         {
             foreach (var label in localizedLabels) label.target.text = T(label.key);
+            RefreshHelpText();
             noticesBody.text = Resources.Load<TextAsset>("LegalNotices")?.text ?? T("legal_missing");
             RefreshLobby(); RefreshSettings(); RefreshDetail();
+            online?.Refresh();
+            adOffer?.RefreshText();
             turnToastLabel.text=T("select_column");if(pendingAction!=PendingAction.None)RefreshActionText();
 #if UNITY_WEBGL && !UNITY_EDITOR
             StageGameSetLanguage(strings.Language);
@@ -680,7 +713,7 @@ namespace StageGame
         void StopMusic() { if (musicSource != null && musicStarted) musicSource.Stop(); musicStarted = musicPaused = false; }
         void OnDisable() { CancelSpeech();StopMusic(); }
         void OnApplicationFocus(bool focused) { applicationFocused = focused; turnTimerWasRunning=false; RefreshMusic(); }
-        void OnApplicationPause(bool paused) { applicationPaused = paused; turnTimerWasRunning=false; ActiveTime(); if (paused) { CancelToast(); CancelPendingReward(); ads.CancelPending(); interstitialPending = false; progress?.Save(); } RefreshBoard(); RefreshMusic(); }
+        void OnApplicationPause(bool paused) { applicationPaused = paused; turnTimerWasRunning=false; ActiveTime(); if (paused) { CancelToast(); CancelPendingReward(); ads.CancelPending(); if(interstitialPending){CancelResultSequence();if(result.activeSelf)SetResultActions(true);} interstitialPending = false; progress?.Save(); } RefreshBoard(); RefreshMusic(); }
         void OnApplicationQuit() { progress?.Save(); }
         void OnDestroy() { destroyed=true; matchId=null; pendingAction=PendingAction.None; CancelToast(); CancelSearch(); CancelResultSequence(); rewardGate?.Cancel(); ads.CancelPending(); }
 #if UNITY_EDITOR

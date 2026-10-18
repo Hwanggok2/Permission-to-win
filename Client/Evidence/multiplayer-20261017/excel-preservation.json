@@ -1,0 +1,1068 @@
+{
+  "summary": {
+    "unchangedOriginalCellStyles": 2850,
+    "authorizedChangedCells": 176,
+    "changedExistingKeys": 88,
+    "addedStringKeys": 61,
+    "stagesAndAdsUnchanged": true,
+    "metadataPreserved": true
+  },
+  "changes": [
+    {
+      "cell": "C216",
+      "key": "multiplayer_start",
+      "before": "대국 시작",
+      "after": "멀티 배틀"
+    },
+    {
+      "cell": "E216",
+      "key": "multiplayer_start",
+      "before": "Start game",
+      "after": "Multiplayer"
+    },
+    {
+      "cell": "C225",
+      "key": "multiplayer_title",
+      "before": "함께 대국",
+      "after": "멀티 배틀"
+    },
+    {
+      "cell": "E225",
+      "key": "multiplayer_title",
+      "before": "Play together",
+      "after": "Multiplayer"
+    },
+    {
+      "cell": "C279",
+      "key": "story_002_win",
+      "before": "나도 이런 수를 둘 수 있네!",
+      "after": "내가 이겼어? 야, 나 지금 손 떨려!"
+    },
+    {
+      "cell": "E279",
+      "key": "story_002_win",
+      "before": "I can make moves like that too!",
+      "after": "I won? My hands are still shaking!"
+    },
+    {
+      "cell": "C280",
+      "key": "story_002_lose",
+      "before": "아, 그 한 칸을 놓쳤구나.",
+      "after": "아… 역시 잘하네. 한 판 더 해 줄래?"
+    },
+    {
+      "cell": "E280",
+      "key": "story_002_lose",
+      "before": "Oh, I missed that one space.",
+      "after": "You really are good. Can we play again?"
+    },
+    {
+      "cell": "C283",
+      "key": "story_003_intro",
+      "before": "소문은 들었어. 직접 확인해 보자!",
+      "after": "프로 왔다며? 나랑도 한 판 하자!"
+    },
+    {
+      "cell": "E283",
+      "key": "story_003_intro",
+      "before": "I heard the rumors. Let me see for myself!",
+      "after": "A pro joined us? Come on, play me!"
+    },
+    {
+      "cell": "C284",
+      "key": "story_003_win",
+      "before": "오늘 얘깃거리는 내가 만들었네!",
+      "after": "오늘 생활관에서 이 얘기만 한다."
+    },
+    {
+      "cell": "E284",
+      "key": "story_003_win",
+      "before": "Now I have a story to tell!",
+      "after": "Everyone in the barracks is hearing about this!"
+    },
+    {
+      "cell": "C285",
+      "key": "story_003_lose",
+      "before": "소문보다 잘하네. 인정!",
+      "after": "야, 잘한다! 소문날 만하네."
+    },
+    {
+      "cell": "E285",
+      "key": "story_003_lose",
+      "before": "Better than the rumors. Respect!",
+      "after": "Wow, you can play! No wonder everyone talks."
+    },
+    {
+      "cell": "C288",
+      "key": "story_004_intro",
+      "before": "네 수를 보고 왔어. 이번엔 읽어 볼게.",
+      "after": "어제 네 경기 봤어. 오늘은 나랑 하자."
+    },
+    {
+      "cell": "E288",
+      "key": "story_004_intro",
+      "before": "I studied your moves. This time I can read you.",
+      "after": "I watched you yesterday. My turn today."
+    },
+    {
+      "cell": "C289",
+      "key": "story_004_win",
+      "before": "준비한 수가 통했어.",
+      "after": "어제 지켜본 보람이 있네."
+    },
+    {
+      "cell": "E289",
+      "key": "story_004_win",
+      "before": "My preparation paid off.",
+      "after": "Watching yesterday paid off."
+    },
+    {
+      "cell": "C290",
+      "key": "story_004_lose",
+      "before": "그 수는 기록해 둬야겠네.",
+      "after": "졌네. 끝나고 어떻게 이겼는지 알려 줘."
+    },
+    {
+      "cell": "E290",
+      "key": "story_004_lose",
+      "before": "I need to write that move down.",
+      "after": "You got me. Show me how you did that later."
+    },
+    {
+      "cell": "C293",
+      "key": "story_005_intro",
+      "before": "편하게 둬. 나도 편하게 이겨 볼게.",
+      "after": "쉬는 시간이니까 부담 갖지 말고 해."
+    },
+    {
+      "cell": "E293",
+      "key": "story_005_intro",
+      "before": "Relax. I plan to win at my own pace.",
+      "after": "We are on break. Just enjoy the game."
+    },
+    {
+      "cell": "C294",
+      "key": "story_005_win",
+      "before": "느긋해 보여도 판은 보고 있지.",
+      "after": "졸려 보여도 보고는 있었지."
+    },
+    {
+      "cell": "E294",
+      "key": "story_005_win",
+      "before": "I may look relaxed, but I watch the board.",
+      "after": "I may look sleepy, but I was watching."
+    },
+    {
+      "cell": "C295",
+      "key": "story_005_lose",
+      "before": "오, 잠이 확 깨는 수였어.",
+      "after": "오, 잠 다 깼다. 너 꽤 하는데?"
+    },
+    {
+      "cell": "E295",
+      "key": "story_005_lose",
+      "before": "Now that move woke me up!",
+      "after": "Well, I am awake now. You are good!"
+    },
+    {
+      "cell": "C298",
+      "key": "story_006_intro",
+      "before": "한 수를 고른 이유가 궁금하군.",
+      "after": "프로라고 들었다. 어디 실력 좀 볼까?"
+    },
+    {
+      "cell": "E298",
+      "key": "story_006_intro",
+      "before": "Tell me why you chose that move.",
+      "after": "I hear you were a pro. Let us see you play."
+    },
+    {
+      "cell": "C299",
+      "key": "story_006_win",
+      "before": "놓친 수를 같이 살펴보자.",
+      "after": "이번엔 내가 이겼군. 다시 해 보자."
+    },
+    {
+      "cell": "E299",
+      "key": "story_006_win",
+      "before": "Let us review the move you missed.",
+      "after": "This one is mine. Let us try again."
+    },
+    {
+      "cell": "C300",
+      "key": "story_006_lose",
+      "before": "좋은 판단이었다. 한 수 배웠다.",
+      "after": "잘하네. 소문이 괜히 난 게 아니었어."
+    },
+    {
+      "cell": "E300",
+      "key": "story_006_lose",
+      "before": "Good judgment. I learned something.",
+      "after": "Well played. You earned that reputation."
+    },
+    {
+      "cell": "C303",
+      "key": "story_007_intro",
+      "before": "교류 대국이라니, 계산 좀 해 볼까?",
+      "after": "공군 대표로 왔는데, 그냥 질 순 없지."
+    },
+    {
+      "cell": "E303",
+      "key": "story_007_intro",
+      "before": "An exchange match? Time to calculate.",
+      "after": "I am here for the Air Force. I cannot just lose!"
+    },
+    {
+      "cell": "C304",
+      "key": "story_007_win",
+      "before": "이 경로는 내가 먼저 봤네.",
+      "after": "이겼다! 돌아가서 자랑 좀 해야겠네."
+    },
+    {
+      "cell": "E304",
+      "key": "story_007_win",
+      "before": "I saw that route first.",
+      "after": "I won! I have a story to take back with me."
+    },
+    {
+      "cell": "C305",
+      "key": "story_007_lose",
+      "before": "예상 밖이네. 다시 계산해 봐야겠어.",
+      "after": "아, 육군에선 이렇게 잘하는 거야?"
+    },
+    {
+      "cell": "E305",
+      "key": "story_007_lose",
+      "before": "Unexpected. I need to recalculate.",
+      "after": "Is everyone in the Army this good?"
+    },
+    {
+      "cell": "C308",
+      "key": "story_008_intro",
+      "before": "긴장 풀고, 천천히 봐도 돼.",
+      "after": "표정이 왜 그래? 편하게 해, 편하게."
+    },
+    {
+      "cell": "E308",
+      "key": "story_008_intro",
+      "before": "Relax. Take your time.",
+      "after": "Why so tense? Relax and enjoy it."
+    },
+    {
+      "cell": "C309",
+      "key": "story_008_win",
+      "before": "오늘은 내가 조금 먼저 봤네.",
+      "after": "하하, 오늘은 내가 이겼네."
+    },
+    {
+      "cell": "E309",
+      "key": "story_008_win",
+      "before": "I spotted it a little sooner today.",
+      "after": "Ha! Looks like this one is mine."
+    },
+    {
+      "cell": "C310",
+      "key": "story_008_lose",
+      "before": "하하, 이건 시원하게 졌다!",
+      "after": "하하, 제대로 졌다! 잘하네."
+    },
+    {
+      "cell": "E310",
+      "key": "story_008_lose",
+      "before": "Ha! A fine way to lose!",
+      "after": "Ha! You beat me fair and square."
+    },
+    {
+      "cell": "C313",
+      "key": "story_009_intro",
+      "before": "서두르지 말고, 더 보자.",
+      "after": "서두를 것 없다. 천천히 보고 둬."
+    },
+    {
+      "cell": "E313",
+      "key": "story_009_intro",
+      "before": "No rush. Look a little longer.",
+      "after": "No rush. Think it through."
+    },
+    {
+      "cell": "C314",
+      "key": "story_009_win",
+      "before": "아직 볼 수가 남아 있었다.",
+      "after": "아직은 내가 이길 때도 있군."
+    },
+    {
+      "cell": "E314",
+      "key": "story_009_win",
+      "before": "There was still another move to see.",
+      "after": "Seems I can still win a game or two."
+    },
+    {
+      "cell": "C315",
+      "key": "story_009_lose",
+      "before": "깊이 봤군. 좋은 승부였다.",
+      "after": "잘했다. 끝까지 집중하더군."
+    },
+    {
+      "cell": "E315",
+      "key": "story_009_lose",
+      "before": "You read deeply. Well played.",
+      "after": "Well done. You stayed focused to the end."
+    },
+    {
+      "cell": "C318",
+      "key": "story_010_intro",
+      "before": "여기 한 칸에서 길이 갈릴 것 같은데?",
+      "after": "나도 이거 꽤 오래 했는데. 해 볼까?"
+    },
+    {
+      "cell": "E318",
+      "key": "story_010_intro",
+      "before": "This one space may change everything.",
+      "after": "I have played this for years. Shall we?"
+    },
+    {
+      "cell": "C319",
+      "key": "story_010_win",
+      "before": "작은 차이가 컸지?",
+      "after": "오래 한 보람은 있네."
+    },
+    {
+      "cell": "E319",
+      "key": "story_010_win",
+      "before": "A small difference mattered, right?",
+      "after": "All those years paid off."
+    },
+    {
+      "cell": "C320",
+      "key": "story_010_lose",
+      "before": "아하, 거기로 이어지는구나!",
+      "after": "허, 나보다 잘하는 사람이 있었네."
+    },
+    {
+      "cell": "E320",
+      "key": "story_010_lose",
+      "before": "Aha! So that is how it connects!",
+      "after": "Well! Someone finally outplayed me."
+    },
+    {
+      "cell": "C323",
+      "key": "story_011_intro",
+      "before": "연습은 많이 했어. 잘 부탁해!",
+      "after": "어제 혼자 연습했어. 오늘은 좀 다를걸?"
+    },
+    {
+      "cell": "E323",
+      "key": "story_011_intro",
+      "before": "I practiced a lot. Let us have a good game!",
+      "after": "I practiced yesterday. Today might be different!"
+    },
+    {
+      "cell": "C324",
+      "key": "story_011_win",
+      "before": "연습한 수가 나왔어!",
+      "after": "됐다! 연습하길 잘했네."
+    },
+    {
+      "cell": "E324",
+      "key": "story_011_win",
+      "before": "That was the move I practiced!",
+      "after": "Yes! Glad I practiced."
+    },
+    {
+      "cell": "C325",
+      "key": "story_011_lose",
+      "before": "준비 못 한 수였네. 더 배워야겠어.",
+      "after": "아쉽다. 연습 좀 더 하고 올게."
+    },
+    {
+      "cell": "E325",
+      "key": "story_011_lose",
+      "before": "I was not ready for that. More to learn!",
+      "after": "So close. I need more practice."
+    },
+    {
+      "cell": "C328",
+      "key": "story_012_intro",
+      "before": "우리 소대의 소문난 실력, 보여 줄래?",
+      "after": "우리 소대에 프로가 왔다는데, 그냥 지나칠 수 있나."
+    },
+    {
+      "cell": "E328",
+      "key": "story_012_intro",
+      "before": "Show me the skill everyone talks about.",
+      "after": "A pro in my platoon? I had to play you."
+    },
+    {
+      "cell": "C329",
+      "key": "story_012_win",
+      "before": "좋은 수였어. 다음 수까지 보자.",
+      "after": "오늘은 내가 이겼네. 다음엔 설욕해 봐."
+    },
+    {
+      "cell": "E329",
+      "key": "story_012_win",
+      "before": "Good move. Look one step further.",
+      "after": "My win today. Come back for a rematch."
+    },
+    {
+      "cell": "C330",
+      "key": "story_012_lose",
+      "before": "이 실력, 중대장님도 궁금해하시겠네.",
+      "after": "잘하네! 중대장님한테도 얘기해야겠다."
+    },
+    {
+      "cell": "E330",
+      "key": "story_012_lose",
+      "before": "The company commander should see this.",
+      "after": "Nice! I should tell the company commander."
+    },
+    {
+      "cell": "C333",
+      "key": "story_013_intro",
+      "before": "어디 한번, 소문의 실력을 볼까?",
+      "after": "소대장이 자네 얘기를 하도 해서 와 봤네."
+    },
+    {
+      "cell": "E333",
+      "key": "story_013_intro",
+      "before": "Let us see if the rumors are true.",
+      "after": "Your platoon leader kept talking about you."
+    },
+    {
+      "cell": "C334",
+      "key": "story_013_win",
+      "before": "이번 판은 내가 가져가겠군.",
+      "after": "이번엔 내가 이겼군. 자네랑 두니 재밌어."
+    },
+    {
+      "cell": "E334",
+      "key": "story_013_win",
+      "before": "This round is mine.",
+      "after": "My win this time. Playing you is fun."
+    },
+    {
+      "cell": "C335",
+      "key": "story_013_lose",
+      "before": "좋아, 한 판 더! 이번엔 다른 수를 봐야겠군.",
+      "after": "좋아, 한 판 더 하세. 이대로 끝내기는 아쉽군."
+    },
+    {
+      "cell": "E335",
+      "key": "story_013_lose",
+      "before": "Good! One more. I will try another move.",
+      "after": "Another game! We cannot stop here."
+    },
+    {
+      "cell": "C338",
+      "key": "story_014_intro",
+      "before": "어디 한번, 소문의 실력을 볼까?",
+      "after": "한 판 지고 물러날 순 없지. 다시 해 보자고."
+    },
+    {
+      "cell": "E338",
+      "key": "story_014_intro",
+      "before": "Let us see if the rumors are true.",
+      "after": "I cannot walk away after one loss. Again!"
+    },
+    {
+      "cell": "C339",
+      "key": "story_014_win",
+      "before": "이번 판은 내가 가져가겠군.",
+      "after": "이번 판은 내가 가져갔네. 다음에 또 하자고."
+    },
+    {
+      "cell": "E339",
+      "key": "story_014_win",
+      "before": "This round is mine.",
+      "after": "This one is mine. Let us play again sometime."
+    },
+    {
+      "cell": "C340",
+      "key": "story_014_lose",
+      "before": "좋아! 소문이 괜히 난 게 아니었군.",
+      "after": "두 번 졌으니 인정해야겠군. 잘하네!"
+    },
+    {
+      "cell": "E340",
+      "key": "story_014_lose",
+      "before": "Good! Those rumors were well earned.",
+      "after": "Two losses. I have to admit it: you are good!"
+    },
+    {
+      "cell": "C343",
+      "key": "story_015_intro",
+      "before": "다른 수라면 어떻게 될지 함께 보자.",
+      "after": "작전 회의 끝나자마자 왔네. 한 판 괜찮겠나?"
+    },
+    {
+      "cell": "E343",
+      "key": "story_015_intro",
+      "before": "Let us consider the other possible moves.",
+      "after": "Just finished the briefing. Have time for a game?"
+    },
+    {
+      "cell": "C344",
+      "key": "story_015_win",
+      "before": "비교한 수 중 이쪽이었군.",
+      "after": "오늘은 내가 이겼군. 생각할 게 많은 경기였어."
+    },
+    {
+      "cell": "E344",
+      "key": "story_015_win",
+      "before": "That was the best of the moves I compared.",
+      "after": "My win today. That gave me a lot to think about."
+    },
+    {
+      "cell": "C345",
+      "key": "story_015_lose",
+      "before": "그 선택은 놓쳤군. 다음 판에서 다시 비교해 보자.",
+      "after": "이런, 내가 졌군. 한 판 더 부탁하네."
+    },
+    {
+      "cell": "E345",
+      "key": "story_015_lose",
+      "before": "I missed that choice. Let us compare again.",
+      "after": "You got me. Another game, please."
+    },
+    {
+      "cell": "C348",
+      "key": "story_016_intro",
+      "before": "다른 수라면 어떻게 될지 함께 보자.",
+      "after": "아까는 내가 너무 복잡하게 생각했군. 다시 해 보세."
+    },
+    {
+      "cell": "E348",
+      "key": "story_016_intro",
+      "before": "Let us consider the other possible moves.",
+      "after": "I overthought that one. Let us try again."
+    },
+    {
+      "cell": "C349",
+      "key": "story_016_win",
+      "before": "비교한 수 중 이쪽이었군.",
+      "after": "이번엔 통했군. 덕분에 머리 좀 썼네."
+    },
+    {
+      "cell": "E349",
+      "key": "story_016_win",
+      "before": "That was the best of the moves I compared.",
+      "after": "That worked. You made me think."
+    },
+    {
+      "cell": "C350",
+      "key": "story_016_lose",
+      "before": "그 선택지는 내가 놓쳤어.",
+      "after": "또 졌군. 다음엔 더 준비하고 오겠네."
+    },
+    {
+      "cell": "E350",
+      "key": "story_016_lose",
+      "before": "I overlooked that option.",
+      "after": "Lost again. I will come better prepared next time."
+    },
+    {
+      "cell": "C353",
+      "key": "story_017_intro",
+      "before": "멋진 수라면 정면으로 받아 보겠네.",
+      "after": "훈련병 때부터 이름을 들었네. 드디어 만나보는군."
+    },
+    {
+      "cell": "E353",
+      "key": "story_017_intro",
+      "before": "I will meet your best move head-on.",
+      "after": "I have heard of you since training. At last we meet."
+    },
+    {
+      "cell": "C354",
+      "key": "story_017_win",
+      "before": "이번에는 내 수가 먼저 닿았군.",
+      "after": "이번에는 내가 이겼네. 잘 싸웠어."
+    },
+    {
+      "cell": "E354",
+      "key": "story_017_win",
+      "before": "My move got there first.",
+      "after": "This time I won. Well played."
+    },
+    {
+      "cell": "C355",
+      "key": "story_017_lose",
+      "before": "깔끔했네. 한 판 더 부탁하지.",
+      "after": "실력이 좋군. 한 판 더 해 보겠나?"
+    },
+    {
+      "cell": "E355",
+      "key": "story_017_lose",
+      "before": "Cleanly played. One more game, please.",
+      "after": "You play well. Care for another?"
+    },
+    {
+      "cell": "C358",
+      "key": "story_018_intro",
+      "before": "멋진 수라면 정면으로 받아 보겠네.",
+      "after": "아까는 깔끔하게 졌네. 이번에도 봐주지 말게."
+    },
+    {
+      "cell": "E358",
+      "key": "story_018_intro",
+      "before": "I will meet your best move head-on.",
+      "after": "You beat me cleanly. Do not go easy this time either."
+    },
+    {
+      "cell": "C359",
+      "key": "story_018_win",
+      "before": "이번에는 내 수가 먼저 닿았군.",
+      "after": "이번엔 설욕했군. 다음에도 봐주지 말게."
+    },
+    {
+      "cell": "E359",
+      "key": "story_018_win",
+      "before": "My move got there first.",
+      "after": "Evened the score. Keep giving me your best."
+    },
+    {
+      "cell": "C360",
+      "key": "story_018_lose",
+      "before": "깔끔한 수였다. 인정하지.",
+      "after": "두 판 다 졌군. 소문보다 더 잘하네."
+    },
+    {
+      "cell": "E360",
+      "key": "story_018_lose",
+      "before": "A clean move. Well played.",
+      "after": "Both games lost. Better than the rumors said."
+    },
+    {
+      "cell": "C363",
+      "key": "story_019_intro",
+      "before": "사람마다 기풍이 다르다지. 자네는 어떤가?",
+      "after": "연대까지 소문이 났더군. 직접 보고 싶었네."
+    },
+    {
+      "cell": "E363",
+      "key": "story_019_intro",
+      "before": "Everyone has a style. What is yours?",
+      "after": "The whole regiment has heard. I wanted to see for myself."
+    },
+    {
+      "cell": "C364",
+      "key": "story_019_win",
+      "before": "이번 판은 내 기풍이 통했군.",
+      "after": "내가 이겼군. 그래도 쉽게 끝나진 않았어."
+    },
+    {
+      "cell": "E364",
+      "key": "story_019_win",
+      "before": "My style worked this round.",
+      "after": "My win. You did not make it easy."
+    },
+    {
+      "cell": "C365",
+      "key": "story_019_lose",
+      "before": "흥미로운 기풍이군. 조금 더 두어 보세.",
+      "after": "과연 잘하는군. 한 판만 더 해 보세."
+    },
+    {
+      "cell": "E365",
+      "key": "story_019_lose",
+      "before": "An interesting style. Let us play again.",
+      "after": "You really can play. Just one more."
+    },
+    {
+      "cell": "C368",
+      "key": "story_020_intro",
+      "before": "사람마다 기풍이 다르다지. 자네는 어떤가?",
+      "after": "한 판으로 끝내긴 아쉽군. 조금 더 해 보세."
+    },
+    {
+      "cell": "E368",
+      "key": "story_020_intro",
+      "before": "Everyone has a style. What is yours?",
+      "after": "One game is not enough. Let us play another."
+    },
+    {
+      "cell": "C369",
+      "key": "story_020_win",
+      "before": "이번 판은 내 기풍이 통했군.",
+      "after": "이번엔 내가 이겼네. 다음에 또 찾아오게."
+    },
+    {
+      "cell": "E369",
+      "key": "story_020_win",
+      "before": "My style worked this round.",
+      "after": "My win this time. Come play again."
+    },
+    {
+      "cell": "C370",
+      "key": "story_020_lose",
+      "before": "흥미롭군. 자네만의 수가 있어.",
+      "after": "오늘은 자네 날이군. 잘했네."
+    },
+    {
+      "cell": "E370",
+      "key": "story_020_lose",
+      "before": "Interesting. You have your own style.",
+      "after": "Today belongs to you. Well done."
+    },
+    {
+      "cell": "C373",
+      "key": "story_021_intro",
+      "before": "오늘은 내가 한 수 배워 갈 차례인가?",
+      "after": "내가 졌다고 소문내지는 말게. 아직 시작도 안 했지만!"
+    },
+    {
+      "cell": "E373",
+      "key": "story_021_intro",
+      "before": "Is it my turn to learn something today?",
+      "after": "Keep it quiet if I lose. We have not even started yet!"
+    },
+    {
+      "cell": "C374",
+      "key": "story_021_win",
+      "before": "아직 내 감각도 쓸 만하군!",
+      "after": "허허, 아직은 내가 이길 때도 있군!"
+    },
+    {
+      "cell": "E374",
+      "key": "story_021_win",
+      "before": "My instincts still work!",
+      "after": "Ha! I still win sometimes!"
+    },
+    {
+      "cell": "C375",
+      "key": "story_021_lose",
+      "before": "정말 한 수 배웠네! 한 판 더 괜찮겠나?",
+      "after": "허허, 졌네! 한 판 더 하면 안 되겠나?"
+    },
+    {
+      "cell": "E375",
+      "key": "story_021_lose",
+      "before": "I learned a lot! How about one more?",
+      "after": "Ha! You got me. Could we play another?"
+    },
+    {
+      "cell": "C378",
+      "key": "story_022_intro",
+      "before": "오늘은 내가 한 수 배워 갈 차례인가?",
+      "after": "허허, 정말 졌네. 이번엔 좀 더 버텨 보겠어."
+    },
+    {
+      "cell": "E378",
+      "key": "story_022_intro",
+      "before": "Is it my turn to learn something today?",
+      "after": "Ha, I really did lose. I will last longer this time."
+    },
+    {
+      "cell": "C379",
+      "key": "story_022_win",
+      "before": "아직 내 감각도 쓸 만하군!",
+      "after": "이번엔 내가 이겼군. 덕분에 즐거웠네."
+    },
+    {
+      "cell": "E379",
+      "key": "story_022_win",
+      "before": "My instincts still work!",
+      "after": "This one is mine. That was fun."
+    },
+    {
+      "cell": "C380",
+      "key": "story_022_lose",
+      "before": "한 수 배웠네. 정말 즐거웠어.",
+      "after": "두 번이나 졌군. 이젠 소문내도 되겠어!"
+    },
+    {
+      "cell": "E380",
+      "key": "story_022_lose",
+      "before": "I learned a lot. That was fun.",
+      "after": "Beaten twice! Now you can tell everyone!"
+    },
+    {
+      "cell": "C383",
+      "key": "story_023_intro",
+      "before": "프로와의 대국이라니, 기대가 되는군.",
+      "after": "부대가 자네 덕에 시끌시끌하더군. 나도 끼워 주게."
+    },
+    {
+      "cell": "E383",
+      "key": "story_023_intro",
+      "before": "A match with a pro. I look forward to it.",
+      "after": "You have got the whole unit talking. Let me join in."
+    },
+    {
+      "cell": "C384",
+      "key": "story_023_win",
+      "before": "좋은 승부였다. 다시 도전해 보게.",
+      "after": "이번 판은 내가 이겼네. 수고했어."
+    },
+    {
+      "cell": "E384",
+      "key": "story_023_win",
+      "before": "A good game. Challenge me again.",
+      "after": "I won this one. Well played."
+    },
+    {
+      "cell": "C385",
+      "key": "story_023_lose",
+      "before": "훌륭한 수였네. 한 판 더 두어 보세.",
+      "after": "내가 졌군. 한 판 더 두어 보세."
+    },
+    {
+      "cell": "E385",
+      "key": "story_023_lose",
+      "before": "An excellent move. Let us play again.",
+      "after": "You beat me. Let us play another."
+    },
+    {
+      "cell": "C388",
+      "key": "story_024_intro",
+      "before": "프로와의 대국이라니, 기대가 되는군.",
+      "after": "즐겁군. 마지막으로 한 판 더 부탁하네."
+    },
+    {
+      "cell": "E388",
+      "key": "story_024_intro",
+      "before": "A match with a pro. I look forward to it.",
+      "after": "This is fun. One last game, if you will."
+    },
+    {
+      "cell": "C389",
+      "key": "story_024_win",
+      "before": "좋은 승부였다. 다시 도전해 보게.",
+      "after": "오늘 경기는 여기까지 하세. 다음에 또 오게."
+    },
+    {
+      "cell": "E389",
+      "key": "story_024_win",
+      "before": "A good game. Challenge me again.",
+      "after": "That is enough for today. Come back sometime."
+    },
+    {
+      "cell": "C390",
+      "key": "story_024_lose",
+      "before": "내가 졌군. 사단 병사 대회에서도 실력을 보여 주게.",
+      "after": "잘했네! 사단 병사 대회가 열리니, 자네도 나가 보게."
+    },
+    {
+      "cell": "E390",
+      "key": "story_024_lose",
+      "before": "You beat me. Show your skill in our enlisted tournament.",
+      "after": "Well done! Enter our upcoming division tournament for enlisted soldiers."
+    },
+    {
+      "cell": "C393",
+      "key": "story_025_intro",
+      "before": "잠깐만, 나 이제 긴장 안 해. 연습했거든!",
+      "after": "64강부터 너야? 이번엔 나도 연습 많이 했어!"
+    },
+    {
+      "cell": "E393",
+      "key": "story_025_intro",
+      "before": "I am not nervous now. I practiced!",
+      "after": "You, in the first round? I practiced a lot this time!"
+    },
+    {
+      "cell": "C394",
+      "key": "story_025_win",
+      "before": "이번엔 내 수를 끝까지 봤어!",
+      "after": "이겼다! 나 32강 올라가는 거 맞지?"
+    },
+    {
+      "cell": "E394",
+      "key": "story_025_win",
+      "before": "This time I followed every move!",
+      "after": "I won! That means I made the last 32, right?"
+    },
+    {
+      "cell": "C395",
+      "key": "story_025_lose",
+      "before": "연습한 수는 보여 줬어. 다음 판도 응원할게!",
+      "after": "또 졌네. 그래도 지난번보단 잘했지?"
+    },
+    {
+      "cell": "E395",
+      "key": "story_025_lose",
+      "before": "I showed what I learned. I am cheering for you!",
+      "after": "Lost again. I did better this time though, right?"
+    },
+    {
+      "cell": "C398",
+      "key": "story_026_intro",
+      "before": "오늘은 수다보다 수로 보여 줄게!",
+      "after": "또 만났네! 오늘 지는 사람 응원 담당이다."
+    },
+    {
+      "cell": "E398",
+      "key": "story_026_intro",
+      "before": "Less talk today. Let my moves speak!",
+      "after": "You again! The loser gets cheering duty today."
+    },
+    {
+      "cell": "C399",
+      "key": "story_026_win",
+      "before": "오늘 얘깃거리는 이 판으로 정했어!",
+      "after": "응원 크게 해라! 나 더 올라간다!"
+    },
+    {
+      "cell": "E399",
+      "key": "story_026_win",
+      "before": "This game will be my story today!",
+      "after": "Cheer loud! I am going all the way!"
+    },
+    {
+      "cell": "C400",
+      "key": "story_026_lose",
+      "before": "졌지만 멋진 판이었어. 꼭 올라가!",
+      "after": "알았다, 응원은 내가 할게. 꼭 우승해!"
+    },
+    {
+      "cell": "E400",
+      "key": "story_026_lose",
+      "before": "I lost, but what a game. Keep going!",
+      "after": "All right, I will cheer. Go win the whole thing!"
+    },
+    {
+      "cell": "C403",
+      "key": "story_027_intro",
+      "before": "지난 패배, 전부 복기했어.",
+      "after": "지난번에 지고 계속 생각났어. 오늘은 다를 거야."
+    },
+    {
+      "cell": "E403",
+      "key": "story_027_intro",
+      "before": "I reviewed every move from my last loss.",
+      "after": "I kept thinking about that loss. Today will be different."
+    },
+    {
+      "cell": "C404",
+      "key": "story_027_win",
+      "before": "복기한 보람이 있었네.",
+      "after": "드디어 이겼네. 이제 마음이 좀 놓인다."
+    },
+    {
+      "cell": "E404",
+      "key": "story_027_win",
+      "before": "That review paid off.",
+      "after": "Finally beat you. What a relief."
+    },
+    {
+      "cell": "C405",
+      "key": "story_027_lose",
+      "before": "또 배울 수가 늘었네. 결승까지 가!",
+      "after": "또 졌네. 결승에서 네가 이기는 건 꼭 봐야겠다."
+    },
+    {
+      "cell": "E405",
+      "key": "story_027_lose",
+      "before": "More moves to learn. Reach the final!",
+      "after": "Lost again. Now I have to see you win the final."
+    },
+    {
+      "cell": "C408",
+      "key": "story_028_intro",
+      "before": "여기까지 왔으니, 이번엔 진지하게 둔다.",
+      "after": "8강까지 왔는데, 여기서 졸 수는 없지."
+    },
+    {
+      "cell": "E408",
+      "key": "story_028_intro",
+      "before": "We came this far. Time to get serious.",
+      "after": "Quarterfinals already. Better stay awake for this."
+    },
+    {
+      "cell": "C409",
+      "key": "story_028_win",
+      "before": "나도 끝까지 가 보고 싶거든.",
+      "after": "휴, 이번엔 내가 올라간다."
+    },
+    {
+      "cell": "E409",
+      "key": "story_028_win",
+      "before": "I want to go all the way too.",
+      "after": "Whew. My turn to advance."
+    },
+    {
+      "cell": "C410",
+      "key": "story_028_lose",
+      "before": "인정. 내 몫까지 좋은 판 보여 줘.",
+      "after": "잘하네. 내 몫까지 이기고 와."
+    },
+    {
+      "cell": "E410",
+      "key": "story_028_lose",
+      "before": "Respect. Play a good game for me too.",
+      "after": "Well played. Go win for both of us."
+    },
+    {
+      "cell": "C413",
+      "key": "story_029_intro",
+      "before": "프로라는 소문보다, 지금 이 판이 궁금해.",
+      "after": "처음 붙어 보네. 잘 부탁해."
+    },
+    {
+      "cell": "E413",
+      "key": "story_029_intro",
+      "before": "I care more about this board than your fame.",
+      "after": "Our first game together. Good luck."
+    },
+    {
+      "cell": "C414",
+      "key": "story_029_win",
+      "before": "명성보다 중요한 건 다음 수니까.",
+      "after": "좋은 경기였어. 결승도 잘하고 올게."
+    },
+    {
+      "cell": "E414",
+      "key": "story_029_win",
+      "before": "The next move matters more than fame.",
+      "after": "Good game. I will do my best in the final."
+    },
+    {
+      "cell": "C415",
+      "key": "story_029_lose",
+      "before": "좋은 수였어. 결승에서도 네 수를 둬.",
+      "after": "네가 올라가는구나. 결승에서도 잘해."
+    },
+    {
+      "cell": "E415",
+      "key": "story_029_lose",
+      "before": "Good move. Play your game in the final.",
+      "after": "You are through. Good luck in the final."
+    },
+    {
+      "cell": "C418",
+      "key": "story_030_intro",
+      "before": "처음엔 자신만 있었지. 이번엔 준비했어.",
+      "after": "결승에서 만나네. 이번엔 진짜 안 질 거야!"
+    },
+    {
+      "cell": "E418",
+      "key": "story_030_intro",
+      "before": "I only had confidence before. Now I am ready.",
+      "after": "We meet in the final. I am not losing this time!"
+    },
+    {
+      "cell": "C419",
+      "key": "story_030_win",
+      "before": "이번엔 내가 이겼다! 다시 와, 기다릴게.",
+      "after": "내가 우승이야? 야, 나 진짜 해냈다!"
+    },
+    {
+      "cell": "E419",
+      "key": "story_030_win",
+      "before": "This time I won! Come back for a rematch.",
+      "after": "I won the tournament? I actually did it!"
+    },
+    {
+      "cell": "C420",
+      "key": "story_030_lose",
+      "before": "네가 챔피언이야. 다음에도 나랑 둬 줘.",
+      "after": "졌어. 우승 축하해! 그래도 다음엔 내가 이긴다."
+    },
+    {
+      "cell": "E420",
+      "key": "story_030_lose",
+      "before": "You are the champion. Play me again sometime.",
+      "after": "You won. Congratulations! Next time is mine though."
+    }
+  ]
+}

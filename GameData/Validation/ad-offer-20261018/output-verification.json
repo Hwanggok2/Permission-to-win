@@ -1,0 +1,35 @@
+{
+  "stringCount": 502,
+  "addedKeys": [
+    "ad_offer_ads",
+    "ad_offer_buy",
+    "ad_offer_failed",
+    "ad_offer_hint",
+    "ad_offer_later",
+    "ad_offer_none",
+    "ad_offer_pending",
+    "ad_offer_permanent",
+    "ad_offer_restore",
+    "ad_offer_restored",
+    "ad_offer_subtitle",
+    "ad_offer_title"
+  ],
+  "changedExistingKeys": [],
+  "removedKeys": [],
+  "ads": {
+    "schemaVersion": 1,
+    "interstitialGraceMatches": 0,
+    "interstitialEveryMatches": 1,
+    "interstitialCooldownSeconds": 0,
+    "bannerLobby": true,
+    "bannerResult": true,
+    "rewardedHintsPerMatch": 1
+  },
+  "otherGeneratedFilesAndClientUnchanged": [
+    "C:\\Github\\StageGame\\GameData\\Generated\\stages.json",
+    "C:\\Github\\StageGame\\GameData\\Generated\\multiplayer.json",
+    "C:\\Github\\StageGame\\Client\\Assets\\StageGame\\Resources\\GameData\\stages.json",
+    "C:\\Github\\StageGame\\Client\\Assets\\StageGame\\Resources\\GameData\\strings.json",
+    "C:\\Github\\StageGame\\Client\\Assets\\StageGame\\Resources\\GameData\\ads.json"
+  ]
+}

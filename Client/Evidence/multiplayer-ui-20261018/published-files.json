@@ -1,0 +1,117 @@
+[
+  {
+    "path": "Build/WebGL.data",
+    "bytes": 64678745,
+    "sha256": "2982bffce846689ec7065c0c3577873438e38c2a8f16d6225624a45365742d4e"
+  },
+  {
+    "path": "Build/WebGL.framework.js",
+    "bytes": 764833,
+    "sha256": "44c93e3e2e29b3b0473178a9481ace5d60aa0ff65bbd7569b82ddec3c7a6bb6a"
+  },
+  {
+    "path": "Build/WebGL.loader.js",
+    "bytes": 58348,
+    "sha256": "f72153ba9c0498759ac949d43d9cebac425287869699a65e59abc05f3b87050f"
+  },
+  {
+    "path": "Build/WebGL.wasm",
+    "bytes": 24564484,
+    "sha256": "d722ce1a269fdb23e2999d6601d00e77831d2ca6aa78e4dd17c1353930970519"
+  },
+  {
+    "path": "Fonts/Pretendard-Bold.woff2",
+    "bytes": 791156,
+    "sha256": "4609c3356e536fafe38f4add0daeceb3d8595d3057bce13c428c33ddbd43d362"
+  },
+  {
+    "path": "Fonts/Pretendard-OFL.txt",
+    "bytes": 4419,
+    "sha256": "b04538c9abec39a3db75108cf0af0fd9c77032fe8aa2cf38345b4d250e98e38e"
+  },
+  {
+    "path": "Fonts/Pretendard-Regular.woff2",
+    "bytes": 765892,
+    "sha256": "fad853f7f47c6c8b103171e7193fa095708cdcd70850a71d93aa5379e8a61d63"
+  },
+  {
+    "path": "host-layout.js",
+    "bytes": 3316,
+    "sha256": "0b3604a4fac23a2f1df6a06bfb9664130ae871a15ea6777c7de9083f63bf0c11"
+  },
+  {
+    "path": "index.html",
+    "bytes": 5101,
+    "sha256": "51d328e4c25c33df159fe5037f69207d7e92ca363635504d14fdc9550ff7f0ef"
+  },
+  {
+    "path": "StreamingAssets/Notices/Easy-Lemon-Attribution.txt",
+    "bytes": 327,
+    "sha256": "e81b944b8cdf94b7ba9c79cd2225aba59dde1b314c6a8e4dc190f01b92253188"
+  },
+  {
+    "path": "StreamingAssets/Notices/Go-Stone-Recording.txt",
+    "bytes": 535,
+    "sha256": "2ade022d9b08d0ad164940a91a53316eca3ff6900cd6bf133a4436c442dc7cd6"
+  },
+  {
+    "path": "StreamingAssets/Notices/NeoDunggeunmoPro-OFL.txt",
+    "bytes": 4419,
+    "sha256": "e3e0fdfb8349c52d3e7075c008d5c1456922ab1b0d80180b4b1b77377da34b4a"
+  },
+  {
+    "path": "StreamingAssets/Notices/NotoSansCJKkr-OFL.txt",
+    "bytes": 4808,
+    "sha256": "6587d53488ce62e197942a708671b5f11f99d105034795c23a41380275d69c1f"
+  },
+  {
+    "path": "StreamingAssets/Notices/NotoSansKR-OFL.txt",
+    "bytes": 4388,
+    "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+  },
+  {
+    "path": "StreamingAssets/Notices/NUnit-ThirdPartyNotices.txt",
+    "bytes": 1249,
+    "sha256": "ef37b1ccbae5e9b641482cbd77a74ee96193a39d232cc8d856b9044f37db9244"
+  },
+  {
+    "path": "StreamingAssets/Notices/Pretendard-OFL.txt",
+    "bytes": 4419,
+    "sha256": "b04538c9abec39a3db75108cf0af0fd9c77032fe8aa2cf38345b4d250e98e38e"
+  },
+  {
+    "path": "StreamingAssets/Notices/SOURCES.txt",
+    "bytes": 2841,
+    "sha256": "fe5d919485bde0750e9592b21dd5bd3a7439a139df156325748701b1ce9eb876"
+  },
+  {
+    "path": "StreamingAssets/Notices/Unity-Companion-License-Full.txt",
+    "bytes": 6002,
+    "sha256": "7a177190b6c4e511e096d7f0211e34c241e9d54954c87b61bf610bf0bccb719e"
+  },
+  {
+    "path": "StreamingAssets/Notices/Unity-NUnit-LICENSE.txt",
+    "bytes": 433,
+    "sha256": "ea14f98ba99afcc079ec2a8a6c38461b5bc4ca3d184aa87ad7c60de9134c4d43"
+  },
+  {
+    "path": "StreamingAssets/Notices/Unity-TestFramework-LICENSE.txt",
+    "bytes": 475,
+    "sha256": "d3b09e9683afbc8d468a83000308f18e7133eaf7879af870747000a66e3c0693"
+  },
+  {
+    "path": "StreamingAssets/Notices/Unity-uGUI-LICENSE.txt",
+    "bytes": 457,
+    "sha256": "a8e0cae87b2edb8c205ae6c308f20b89a09f32d62bd4a3ff0343bb4724a4201e"
+  },
+  {
+    "path": "TemplateData/profiler.js",
+    "bytes": 1573,
+    "sha256": "433e40af9a544d1ef5fec67b0b52af25a851928626c3f3ef0d09b35ded610c0d"
+  },
+  {
+    "path": "ui-text.js",
+    "bytes": 493,
+    "sha256": "17eaf84afac97d3d4f297a71db2d0c3aaa35e2ee516762b4866c41a54349e1fe"
+  }
+]

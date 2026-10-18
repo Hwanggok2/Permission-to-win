@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="3" result="Passed" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-17 15:22:38Z" end-time="2026-10-17 15:22:42Z" duration="4.2324842">
+  <test-suite type="TestSuite" id="1000" name="이겨도 됩니까_" fullname="이겨도 됩니까_" runstate="Runnable" testcasecount="142" result="Passed" start-time="2026-10-17 15:22:38Z" end-time="2026-10-17 15:22:42Z" duration="4.232484" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1170" name="StageGame.Tests.dll" fullname="C:/Github/StageGame/Client/Library/ScriptAssemblies/StageGame.Tests.dll" runstate="Runnable" testcasecount="142" result="Passed" start-time="2026-10-17 15:22:38Z" end-time="2026-10-17 15:22:42Z" duration="4.191893" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="52460" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1171" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="142" result="Passed" start-time="2026-10-17 15:22:38Z" end-time="2026-10-17 15:22:42Z" duration="4.190729" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1172" name="Tests" fullname="StageGame.Tests" runstate="Runnable" testcasecount="142" result="Passed" start-time="2026-10-17 15:22:38Z" end-time="2026-10-17 15:22:42Z" duration="4.189766" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1052" name="RankFlowTests" fullname="StageGame.Tests.RankFlowTests" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" testcasecount="62" result="Passed" start-time="2026-10-17 15:22:38Z" end-time="2026-10-17 15:22:42Z" duration="4.183883" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1053" name="MultiplayerNativeTransportPlaysWithASecondClient" fullname="StageGame.Tests.RankFlowTests.MultiplayerNativeTransportPlaysWithASecondClient" methodname="MultiplayerNativeTransportPlaysWithASecondClient" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1441157742" result="Passed" start-time="2026-10-17 15:22:30Z" end-time="2026-10-17 15:22:31Z" duration="1.868374" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] online-real-connection-result: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1098" name="SpeechTypesBothLanguagesWithClicksAndStableWrapping" fullname="StageGame.Tests.RankFlowTests.SpeechTypesBothLanguagesWithClicksAndStableWrapping" methodname="SpeechTypesBothLanguagesWithClicksAndStableWrapping" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="709782701" result="Passed" start-time="2026-10-17 15:22:31Z" end-time="2026-10-17 15:22:37Z" duration="5.477674" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] ko-typing: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-complete: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] en-typing: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] en-complete: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1101" name="SpeechTypesWinAndLossDialogueAndRestartsForTheNextStage" fullname="StageGame.Tests.RankFlowTests.SpeechTypesWinAndLossDialogueAndRestartsForTheNextStage" methodname="SpeechTypesWinAndLossDialogueAndRestartsForTheNextStage" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1317202865" result="Passed" start-time="2026-10-17 15:22:37Z" end-time="2026-10-17 15:22:42Z" duration="5.451314" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Github/StageGame/Client/Evidence/multiplayer-20261017/unity-network-speech.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

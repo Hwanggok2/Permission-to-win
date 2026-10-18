@@ -36,7 +36,7 @@ namespace StageGame
             Ads = JsonUtility.FromJson<AdSettings>(adsJson);
             if (stageFile == null || stageFile.schemaVersion != 1 || stageFile.stages == null || stageFile.stages.Length != 30)
                 throw new FormatException("스테이지 데이터 버전/목록이 올바르지 않습니다.");
-            if (Ads == null || Ads.schemaVersion != 1 || Ads.interstitialGraceMatches < 3 || Ads.interstitialEveryMatches < 2 || Ads.interstitialCooldownSeconds < 90 || Ads.rewardedHintsPerMatch != 1)
+            if (Ads == null || Ads.schemaVersion != 1 || Ads.interstitialGraceMatches != 0 || Ads.interstitialEveryMatches != 1 || Ads.interstitialCooldownSeconds != 0 || Ads.rewardedHintsPerMatch != 1)
                 throw new FormatException("광고 데이터가 계약 범위를 벗어났습니다.");
             Stages = stageFile.stages;
             for (int i = 0; i < Stages.Length; i++)

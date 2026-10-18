@@ -1,4 +1,4 @@
-"""Validate the MVP Excel source and export the three Unity JSON v1 files."""
+"""Validate the MVP Excel source and export client/server JSON v1 files."""
 from __future__ import annotations
 
 import argparse
@@ -20,6 +20,10 @@ GENERATED = ROOT / "Generated"
 INCOMPLETE_MARKER = ".export-incomplete"
 SCHEMA_VERSION = 1
 SCHEMAS = {
+    "Multiplayer": [
+        ("ExportType", "string", "All"), ("Key", "string", "All"),
+        ("Value", "int", "All"), ("/Description", "none", "None"),
+    ],
     "Stages": [
         ("ExportType", "string", "All"), ("Id", "int", "All"),
         ("Chapter", "int", "All"), ("TitleKey", "string", "Client"),
@@ -120,7 +124,7 @@ def read_source(path: Path):
     workbook = load_workbook(path, data_only=False, read_only=False, keep_links=False)
     try:
         if set(workbook.sheetnames) != set(SCHEMAS):
-            fail(path.name, "expected exactly Stages, AdConfig, Strings sheets")
+            fail(path.name, "expected exactly Stages, AdConfig, Strings, Multiplayer sheets")
         return {name: read_table(workbook[name], schema) for name, schema in SCHEMAS.items()}
     finally:
         workbook.close()
@@ -337,10 +341,10 @@ def validate(tables):
         fail("AdConfig", "exactly one active configuration is required")
     row = tables["AdConfig"][0]
     location = f"AdConfig row {row['_row']}"
-    # Contract v1 defines these product trial values, not a platform policy.
+    # User-approved 2026-10-18 cadence; schema v1 is unchanged, not a platform policy.
     expected = {
-        "InterstitialGraceMatches": 3, "InterstitialEveryMatches": 2,
-        "InterstitialCooldownSeconds": 90, "BannerLobby": True,
+        "InterstitialGraceMatches": 0, "InterstitialEveryMatches": 1,
+        "InterstitialCooldownSeconds": 0, "BannerLobby": True,
         "BannerResult": True, "RewardedHintsPerMatch": 1,
     }
     ads = {"schemaVersion": SCHEMA_VERSION}
@@ -348,9 +352,33 @@ def validate(tables):
         if type(row.get(field)) is not type(value) or row[field] != value:
             fail(location, f"{field} must be {value!r} under contract v1")
         ads[field[0].lower() + field[1:]] = value
+    multiplayer = {"schemaVersion": SCHEMA_VERSION}
+    bounds = {
+        "initialRating": (200, 200), "minimumRating": (0, 0), "rankStep": (100, 100), "rankCount": (20, 20),
+        "eloK": (1, 64), "eloScale": (100, 1000), "searchStart": (1, 400), "searchStep": (1, 400),
+        "searchStepSeconds": (5, 120), "searchMaximum": (100, 800), "queueSeconds": (30, 600),
+        "inviteSeconds": (60, 1800), "turnSeconds": (15, 120), "disconnectSeconds": (10, 120),
+        "resultSeconds": (30, 600), "serverPauseSeconds": (60, 600),
+    }
+    for entry in tables["Multiplayer"]:
+        key, value = entry.get("Key"), entry.get("Value")
+        if key not in bounds or key in multiplayer:
+            fail("Multiplayer", "unknown or duplicate configuration key")
+        lo, hi = bounds[key]
+        if type(value) is not int or not lo <= value <= hi:
+            fail("Multiplayer", f"{key} must be an integer in {lo}..{hi}")
+        multiplayer[key] = value
+    if set(multiplayer) != set(bounds) | {"schemaVersion"}:
+        fail("Multiplayer", "missing configuration key")
+    if multiplayer["searchStart"] > multiplayer["searchMaximum"]:
+        fail("Multiplayer", "initial search range exceeds maximum")
+    for rank in range(1, multiplayer["rankCount"] + 1):
+        if f"mp_rank_{rank}" not in keys:
+            fail("Multiplayer", f"missing rank string {rank}")
     return {
         "stages.json": {"schemaVersion": SCHEMA_VERSION, "stages": sorted(stages, key=lambda s: s["id"])},
         "ads.json": ads,
+        "multiplayer.json": multiplayer,
         "strings.json": {"schemaVersion": SCHEMA_VERSION, "strings": sorted(strings, key=lambda s: s["key"])},
     }
 

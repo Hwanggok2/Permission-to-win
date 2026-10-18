@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-18",
+  "webglBuild": "Succeeded",
+  "errors": 0,
+  "warnings": 0,
+  "durationSeconds": 18.10247,
+  "bytes": 91652726,
+  "unityTestsPassed": 2,
+  "unityTestsFailed": 0,
+  "workerDryRun": "passed",
+  "localBrowser": [
+    "load",
+    "title",
+    "help",
+    "place stone",
+    "AI reply",
+    "white last move ring",
+    "pause",
+    "return to lobby"
+  ],
+  "browserErrors": 0,
+  "browserWarnings": 0,
+  "deploymentCommit": "1fdfd83df4c2a5301949c6d8eb002499248741f2",
+  "remoteServerDeployed": true,
+  "pagesPushed": true,
+  "publicVerification": "passed: Actions success and 23/23 file hashes",
+  "authentication": "official Wrangler OAuth; no credential file access; user handles Git push",
+  "workerVersion": "dc7452ca-2df7-46fd-b3b0-8025c2b6870f",
+  "freePlanConfirmed": "2026-10-18 user dashboard: Workers Free Active",
+  "publicServerChecksPassed": 11,
+  "shareFeedbackRegressionPassed": 1,
+  "browserMultiplayer": [
+    "WebGL to deployed WSS",
+    "invite URL preview",
+    "join with rating setting",
+    "starter display",
+    "alternating legal moves",
+    "opponent last move ring",
+    "unrated result both 200 delta 0",
+    "remote rematch request notice",
+    "mutual rematch round 2",
+    "opponent departure notice",
+    "return to lobby"
+  ],
+  "unverified": [
+    "physical mobile Kakao sharing",
+    "OS clipboard content (IAB did not expose the copied value)",
+    "load and actual free-quota exhaustion"
+  ],
+  "pushedBy": "user",
+  "publicBrowser": [
+    "invite preview with OFF setting",
+    "join from published URL",
+    "starter and side",
+    "legal move and remote reply",
+    "last opponent move ring"
+  ],
+  "publicBrowserErrors": 0,
+  "publicBrowserWarnings": 0
+}

@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-18",
+  "status": "local implementation verified; not publicly deployed",
+  "excel": {
+    "unchangedOriginalCellStyles": 2850,
+    "authorizedChangedCells": 176,
+    "changedExistingKeys": 88,
+    "addedStringKeys": 61,
+    "stagesAndAdsUnchanged": true,
+    "metadataPreserved": true
+  },
+  "pythonTests": 47,
+  "serverTests": 37,
+  "multiplayerAndBridgeTests": 27,
+  "purchaseRegressionTests": 10,
+  "localWebSocketChecks": 11,
+  "unity": {
+    "unity-tests-final.xml": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0
+    },
+    "unity-network-speech.xml": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0
+    },
+    "unity-core.xml": {
+      "total": 25,
+      "passed": 25,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "unityInvocationsPassed": 34,
+  "unityUniqueTests": 33,
+  "screenshots": 27,
+  "typescript": "passed",
+  "workerBundleDryRun": "passed",
+  "publicDeployment": false,
+  "webglBuild": false,
+  "physicalDeviceShare": false,
+  "hashes": {
+    "GameData/GameData_MVP.xlsx": "fefdb09f08ebad84fa1b0dccae7c0a95ffcbd365b11baa4cd2d028d75b0574a2",
+    "GameData/Generated/strings.json": "8d6add2e20f0c6f8df03e5d1a96a9d57840be0a8a881c325ce6188c4814df907",
+    "GameData/Generated/multiplayer.json": "b728fe38b216512e69507fbcede9775cc012f0e4d642f85a766b58efc71d4950",
+    "Client/Assets/StageGame/Prefabs/RankUI/OnlinePanel.prefab": "0e5620231a0347fc147cce6018f41ba81ff7c38790be690007fabe8619667922",
+    "Client/Assets/StageGame/Prefabs/RankUI/RankAppRoot.prefab": "8d13ec691421eb031db5e5308d44e9da586dc281fab43f5b347ecc2f35ed751e",
+    "Server/src/multiplayer/arena.ts": "6d398a4d461534ba96d5d03fed1219b039149a4e422fea2e92b8fe2ae2521cb7",
+    "Server/src/multiplayer/worker.ts": "1450a61b5135cf1e5af907105cb381318ab06e1a26d9a9a73da6aab602f1642f"
+  }
+}

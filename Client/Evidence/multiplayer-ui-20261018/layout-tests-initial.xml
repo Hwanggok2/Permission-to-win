@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-18 11:14:57Z" end-time="2026-10-18 11:14:57Z" duration="0.4448075">
+  <test-suite type="TestSuite" id="1000" name="이겨도 됩니까_" fullname="이겨도 됩니까_" runstate="Runnable" testcasecount="144" result="Failed" site="Child" start-time="2026-10-18 11:14:57Z" end-time="2026-10-18 11:14:57Z" duration="0.444808" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1172" name="StageGame.Tests.dll" fullname="C:/Github/StageGame/Client/Library/ScriptAssemblies/StageGame.Tests.dll" runstate="Runnable" testcasecount="144" result="Failed" site="Child" start-time="2026-10-18 11:14:57Z" end-time="2026-10-18 11:14:57Z" duration="0.398511" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="49080" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1173" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="144" result="Failed" site="Child" start-time="2026-10-18 11:14:57Z" end-time="2026-10-18 11:14:57Z" duration="0.394229" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1174" name="Tests" fullname="StageGame.Tests" runstate="Runnable" testcasecount="144" result="Failed" site="Child" start-time="2026-10-18 11:14:57Z" end-time="2026-10-18 11:14:57Z" duration="0.392895" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1050" name="RankFlowTests" fullname="StageGame.Tests.RankFlowTests" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" testcasecount="64" result="Failed" site="Child" start-time="2026-10-18 11:14:57Z" end-time="2026-10-18 11:14:57Z" duration="0.390334" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1051" name="MultiplayerLayoutsFitWithoutScrollingInBothLanguages" fullname="StageGame.Tests.RankFlowTests.MultiplayerLayoutsFitWithoutScrollingInBothLanguages" methodname="MultiplayerLayoutsFitWithoutScrollingInBothLanguages" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="43253280" result="Failed" start-time="2026-10-18 11:14:53Z" end-time="2026-10-18 11:14:57Z" duration="4.410045" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Text clipped: Label 무작위 매치
+  Expected: less than or equal to 32.0f
+  But was:  58.0f
+]]></message>
+                <stack-trace><![CDATA[at StageGame.Tests.RankFlowTests.AssertOnlineFits (System.Single ratio) [0x00169] in C:\Github\StageGame\Client\Assets\StageGame\Tests\EditMode\MultiplayerLayoutTests.cs:34
+at StageGame.Tests.RankFlowTests+<>c__DisplayClass2_0.<MultiplayerLayoutsFitWithoutScrollingInBothLanguages>b__0 () [0x00000] in C:\Github\StageGame\Client\Assets\StageGame\Tests\EditMode\MultiplayerLayoutTests.cs:92
+at StageGame.Tests.RankFlowTests+<Capture>d__72.MoveNext () [0x003a5] in C:\Github\StageGame\Client\Assets\StageGame\Tests\EditMode\RankFlowTests.cs:141
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@aebcb98460c6\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Saving results to: C:/Github/StageGame/Client/Evidence/multiplayer-ui-20261018/layout-tests.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

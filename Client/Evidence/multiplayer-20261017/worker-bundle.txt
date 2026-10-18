@@ -1,0 +1,11 @@
+
+ ⛅️ wrangler 4.151.0 (update available 4.151.1)
+───────────────────────────────────────────────
+Total Upload: 18.26 KiB / gzip: 5.47 KiB
+Your Worker has access to the following bindings:
+Binding                                                                   Resource                  
+env.ARENA (MultiplayerArena)                                              Durable Object            
+env.MULTIPLAYER_ENABLED ("true")                                          Environment Variable      
+env.ALLOWED_ORIGINS ("http://localhost:8080,http://127.0.0....")          Environment Variable      
+
+--dry-run: exiting now.

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-18 11:38:57Z" end-time="2026-10-18 11:38:57Z" duration="0.2701513">
+  <test-suite type="TestSuite" id="1000" name="이겨도 됩니까_" fullname="이겨도 됩니까_" runstate="Runnable" testcasecount="145" result="Passed" start-time="2026-10-18 11:38:57Z" end-time="2026-10-18 11:38:57Z" duration="0.270151" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1173" name="StageGame.Tests.dll" fullname="C:/Github/StageGame/Client/Library/ScriptAssemblies/StageGame.Tests.dll" runstate="Runnable" testcasecount="145" result="Passed" start-time="2026-10-18 11:38:57Z" end-time="2026-10-18 11:38:57Z" duration="0.228991" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="30160" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1174" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="145" result="Passed" start-time="2026-10-18 11:38:57Z" end-time="2026-10-18 11:38:57Z" duration="0.227897" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1175" name="Tests" fullname="StageGame.Tests" runstate="Runnable" testcasecount="145" result="Passed" start-time="2026-10-18 11:38:57Z" end-time="2026-10-18 11:38:57Z" duration="0.226848" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1050" name="RankFlowTests" fullname="StageGame.Tests.RankFlowTests" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" testcasecount="65" result="Passed" start-time="2026-10-18 11:38:57Z" end-time="2026-10-18 11:38:57Z" duration="0.222245" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1060" name="CaptureOccludedChestPortrait" fullname="StageGame.Tests.RankFlowTests.CaptureOccludedChestPortrait" methodname="CaptureOccludedChestPortrait" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="2118759259" result="Passed" start-time="2026-10-18 11:38:50Z" end-time="2026-10-18 11:38:56Z" duration="5.644254" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] stage-02-C02-intro-1080: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] stage-02-C02-intro-390: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] stage-02-C02-thinking-1080: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] stage-02-C02-thinking-390: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] stage-02-C02-defeat-1080: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] stage-02-C02-defeat-390: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] stage-25-C02-intro-1080: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] stage-25-C02-intro-390: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] stage-25-C02-thinking-1080: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] stage-25-C02-thinking-390: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] stage-25-C02-defeat-1080: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] stage-25-C02-defeat-390: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1059" name="PixelPortraitsFollowCharacterAndMatchState" fullname="StageGame.Tests.RankFlowTests.PixelPortraitsFollowCharacterAndMatchState" methodname="PixelPortraitsFollowCharacterAndMatchState" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="547381996" result="Passed" start-time="2026-10-18 11:38:56Z" end-time="2026-10-18 11:38:57Z" duration="1.494182" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Github/StageGame/Client/Evidence/portrait-occlusion-20261018/unity-tests.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

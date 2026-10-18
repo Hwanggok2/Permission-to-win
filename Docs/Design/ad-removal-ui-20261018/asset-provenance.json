@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-18",
+  "purpose": "standalone design preview only",
+  "files": [
+    {
+      "target": "assets/Pretendard-Regular.woff2",
+      "source": "Client/Assets/WebGLTemplates/StageGamePortrait/Fonts/Pretendard-Regular.woff2",
+      "sha256": "fad853f7f47c6c8b103171e7193fa095708cdcd70850a71d93aa5379e8a61d63",
+      "source_sha256": "fad853f7f47c6c8b103171e7193fa095708cdcd70850a71d93aa5379e8a61d63",
+      "identical": true
+    },
+    {
+      "target": "assets/Pretendard-OFL.txt",
+      "source": "Client/Assets/WebGLTemplates/StageGamePortrait/Fonts/Pretendard-OFL.txt",
+      "sha256": "b04538c9abec39a3db75108cf0af0fd9c77032fe8aa2cf38345b4d250e98e38e",
+      "source_sha256": "b04538c9abec39a3db75108cf0af0fd9c77032fe8aa2cf38345b4d250e98e38e",
+      "identical": true
+    },
+    {
+      "target": "assets/Barracks.png",
+      "source": "Client/Assets/StageGame/Art/PixelMilitary/Barracks.png",
+      "sha256": "8f7c6b0ee4e7d97f499e1e03f15fc1db720c7f54bd8ee5aecf2b40255fbb547a",
+      "source_sha256": "8f7c6b0ee4e7d97f499e1e03f15fc1db720c7f54bd8ee5aecf2b40255fbb547a",
+      "identical": true
+    }
+  ]
+}

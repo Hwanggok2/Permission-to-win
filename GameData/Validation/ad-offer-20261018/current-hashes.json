@@ -1,0 +1,17 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "88BFABCF367ABFA20DC6383814AB991FA54CDBD88EACE2DFA835B51B34FD444E",
+    "Path": "C:\\Github\\StageGame\\GameData\\GameData_MVP.xlsx"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "48B6FF9A3FA54DDC57FB748D80E25E63DF2F2C94B8136D8E44C1182418DEC9C8",
+    "Path": "C:\\Github\\StageGame\\GameData\\Generated\\ads.json"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "4B86457E901AC4112E2AAA08522A14D8440F74A803427CBB3B84E0D1C52D86F4",
+    "Path": "C:\\Github\\StageGame\\GameData\\Generated\\strings.json"
+  }
+]

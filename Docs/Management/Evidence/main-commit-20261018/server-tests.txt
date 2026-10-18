@@ -1,0 +1,49 @@
+(node:42876) ExperimentalWarning: Transform Types is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ liveness works during a database outage without querying D1 (28.4774ms)
+✔ connected D1 never enables an unconfigured payment provider (2.6358ms)
+✔ database failure/schema mismatch closes purchase availability (Error: D1 daily read limit exceeded: private detail) (0.928ms)
+✔ database failure/schema mismatch closes purchase availability (Error: Network unavailable) (0.5031ms)
+✔ database failure/schema mismatch closes purchase availability (null) (1.4513ms)
+✔ database failure/schema mismatch closes purchase availability ([object Object]) (0.3916ms)
+✔ allowed browser origin receives exact CORS headers including on failure (0.38ms)
+✔ unlisted origin cannot query the database (0.2914ms)
+✔ read-only preflight is allowed, purchase POST is not (0.5623ms)
+✔ purchase submissions and other writes have no route or database side effects (0.7801ms)
+(node:54136) ExperimentalWarning: Transform Types is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ every new player starts at 200 with the correct rank boundaries (1.2902ms)
+✔ Elo gap changes gains/losses; symmetric rounding and floor for decisive wins (0.1777ms)
+✔ lower-rated player starts, tie uses random choice (0.7086ms)
+✔ closest candidate wins over wider acceptable candidates (1.2088ms)
+✔ search expands using both players waiting time and caps at 400 (0.6089ms)
+✔ cancelled and disconnected queued players cannot be matched (0.2296ms)
+✔ friendly rating setting is visible before joining and checked atomically (1.7423ms)
+✔ only the host may change the setting and invite cannot admit a third player (0.3697ms)
+✔ server validates turn, full column, bounds and stale sequence (1.3385ms)
+✔ rated friendly win changes both scores once; invalid replay does not settle twice (1.7314ms)
+✔ unrated friendly leaves both ratings and rated game counts untouched (0.8019ms)
+✔ rematch requires both requests and starts using updated ratings (1.056ms)
+✔ leaving notifies the other player and prevents a solo rematch (0.9718ms)
+✔ leaving a live match is a server-settled loss (0.3441ms)
+✔ reconnect preserves board, identity, current turn and score (0.4671ms)
+✔ persistent store reload resumes an existing match (0.3457ms)
+✔ disconnect grace ends with departure; clock timeout ends with loss (1.0325ms)
+✔ long server interruption aborts without changing scores (0.2647ms)
+✔ expired invite removes the room; queue times out without a fake opponent (0.3297ms)
+✔ both disconnected players expire without awarding either side points (0.3536ms)
+✔ horizontal and both diagonal wins are settled on the final stone (2.366ms)
+✔ a full board without four ends in a draw with no equal-rating transfer (3.0851ms)
+✔ native web share receives only invite URL and localized title (1.483ms)
+✔ copy button bypasses share and reports successful clipboard copy (1.4849ms)
+✔ share cancellation does not send or copy anything (0.6752ms)
+✔ clipboard denial reports manual-copy fallback instead of false success (0.7463ms)
+✔ replaced or closed sockets cannot deliver stale game messages (1.8105ms)
+ℹ tests 37
+ℹ suites 0
+ℹ pass 37
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 351.9161

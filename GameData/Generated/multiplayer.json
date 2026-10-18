@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "initialRating": 200,
+  "minimumRating": 0,
+  "rankStep": 100,
+  "rankCount": 20,
+  "eloK": 32,
+  "eloScale": 400,
+  "searchStart": 100,
+  "searchStep": 100,
+  "searchStepSeconds": 15,
+  "searchMaximum": 400,
+  "queueSeconds": 180,
+  "inviteSeconds": 600,
+  "turnSeconds": 60,
+  "disconnectSeconds": 45,
+  "resultSeconds": 300,
+  "serverPauseSeconds": 120
+}

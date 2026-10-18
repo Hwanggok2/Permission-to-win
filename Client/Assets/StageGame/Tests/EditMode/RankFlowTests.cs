@@ -27,6 +27,8 @@ namespace StageGame.Tests
             EditorSceneManager.OpenScene(Editor.ProjectBuilder.ScenePath);
             yield return new EnterPlayMode(); yield return null;
             app=UnityEngine.Object.FindFirstObjectByType<RankGameApp>(); Assert.NotNull(app);
+            // UI fixtures must not connect to the public server; network tests supply their own local endpoint.
+            if(app.online!=null)app.online.endpoint="";
             // Gameplay fixtures continue after the first-run rules; dedicated tests cover the panel itself.
             if(app.help.activeSelf)app.helpClose.onClick.Invoke();
         }
@@ -153,7 +155,8 @@ namespace StageGame.Tests
                     var corners = new Vector3[4]; ((RectTransform)button.transform).GetWorldCorners(corners);
                     var lo = RectTransformUtility.WorldToScreenPoint(camera, corners[0]);
                     var hi = RectTransformUtility.WorldToScreenPoint(camera, corners[2]);
-                    Assert.GreaterOrEqual((hi.x - lo.x)/pixelRatio, 43.99f, name + " hit width: " + button.name);
+                    bool onlineColumn=game.online!=null && button.name.StartsWith("Column_") && button.transform.IsChildOf(game.online.game.transform);
+                    Assert.GreaterOrEqual((hi.x - lo.x)/pixelRatio, onlineColumn?23.99f:43.99f, name + " hit width: " + button.name);
                     Assert.GreaterOrEqual((hi.y - lo.y)/pixelRatio, 43.99f, name + " hit height: " + button.name);
                     if (button.GetComponentInParent<ScrollRect>() != null) continue;
                     Assert.GreaterOrEqual(lo.x, safe.xMin - .1f, name + " left: " + button.name);

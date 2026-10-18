@@ -54,9 +54,9 @@ MonoBehaviour:
     thinking: {fileID: 305961503722060012, guid: fc70fa4b5437f354bab70d87a1c25a90, type: 3}
     defeat: {fileID: 100804651445603311, guid: fc70fa4b5437f354bab70d87a1c25a90, type: 3}
   - characterId: C02
-    intro: {fileID: -8734148299612444479, guid: df923e1a1b2f409419e3d8500345347a, type: 3}
-    thinking: {fileID: -6223279633776069422, guid: df923e1a1b2f409419e3d8500345347a, type: 3}
-    defeat: {fileID: -7439943408336102376, guid: df923e1a1b2f409419e3d8500345347a, type: 3}
+    intro: {fileID: -8734148299612444479, guid: 1c2677abf9c002c4894952ec8c004319, type: 3}
+    thinking: {fileID: -6223279633776069422, guid: 1c2677abf9c002c4894952ec8c004319, type: 3}
+    defeat: {fileID: -7439943408336102376, guid: 1c2677abf9c002c4894952ec8c004319, type: 3}
   - characterId: C03
     intro: {fileID: 2789846115468732091, guid: 893de3c89c9d152408953c1aa8eab9e1, type: 3}
     thinking: {fileID: -8323729618934179103, guid: 893de3c89c9d152408953c1aa8eab9e1, type: 3}

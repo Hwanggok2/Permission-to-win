@@ -1,0 +1,2455 @@
+{
+  "schemaVersion": 1,
+  "strings": [
+    {
+      "key": "action_to_round_64",
+      "ko": "64강으로",
+      "en": "To the round of 64"
+    },
+    {
+      "key": "ad_test_mode",
+      "ko": "광고 테스트 모드",
+      "en": "Ad test mode"
+    },
+    {
+      "key": "ad_unavailable",
+      "ko": "광고를 준비하지 못했어요.",
+      "en": "No ad available."
+    },
+    {
+      "key": "ai_rank_01_intro",
+      "ko": "프로라며? 나도 한 판 붙어볼래.",
+      "en": "So you're a pro? Let me try a round."
+    },
+    {
+      "key": "ai_rank_01_lose",
+      "ko": "소문이 진짜였네. 다음엔 내가 이긴다.",
+      "en": "The rumors were true. Next time, I'll win."
+    },
+    {
+      "key": "ai_rank_01_win",
+      "ko": "나도 프로 해도 되겠는데?",
+      "en": "Maybe I should go pro too!"
+    },
+    {
+      "key": "ai_rank_02_intro",
+      "ko": "프로가 왔다며? 소문 한번 확인해볼까?",
+      "en": "A pro joined us? Let's test those rumors."
+    },
+    {
+      "key": "ai_rank_02_lose",
+      "ko": "소문날 만하네. 다음 판은 내 거야.",
+      "en": "Those rumors make sense. Next round is mine."
+    },
+    {
+      "key": "ai_rank_02_win",
+      "ko": "소문보다 내가 더 센 것 같은데?",
+      "en": "Looks like I beat the rumors."
+    },
+    {
+      "key": "ai_rank_03_intro",
+      "ko": "프로도 빈틈은 있겠지? 내가 찾아볼게.",
+      "en": "Even pros leave openings. I'll find yours."
+    },
+    {
+      "key": "ai_rank_03_lose",
+      "ko": "빈틈이 없네. 다음엔 꼭 찾아낸다.",
+      "en": "No opening this time. I'll find one next round."
+    },
+    {
+      "key": "ai_rank_03_win",
+      "ko": "찾았다, 프로의 빈틈!",
+      "en": "Found it: a pro's weak spot!"
+    },
+    {
+      "key": "ai_rank_04_intro",
+      "ko": "프로의 전략, 내 수랑 겨뤄볼까?",
+      "en": "Let's see your strategy against mine."
+    },
+    {
+      "key": "ai_rank_04_lose",
+      "ko": "전략 좋네. 다음엔 내가 읽어낸다.",
+      "en": "Good strategy. Next time, I'll read your moves."
+    },
+    {
+      "key": "ai_rank_04_win",
+      "ko": "이번 작전은 내가 한 수 위였네.",
+      "en": "My plan was one move ahead."
+    },
+    {
+      "key": "ai_rank_05_intro",
+      "ko": "여기서 내가 제일 센데, 프로는 다를까?",
+      "en": "I'm the best here. Can a pro change that?"
+    },
+    {
+      "key": "ai_rank_05_lose",
+      "ko": "강자 자리 내줬네. 다음엔 되찾는다.",
+      "en": "You took my top spot. I'll win it back."
+    },
+    {
+      "key": "ai_rank_05_win",
+      "ko": "우리 부대 강자는 아직 나네!",
+      "en": "I'm still the one to beat around here!"
+    },
+    {
+      "key": "ai_rank_06_intro",
+      "ko": "프로라고 서두를 건 없지. 한 판 해볼까?",
+      "en": "No rush, pro. Shall we play a round?"
+    },
+    {
+      "key": "ai_rank_06_lose",
+      "ko": "침착하네. 다음엔 내가 먼저 잇겠어.",
+      "en": "Cool under pressure. I'll connect first next time."
+    },
+    {
+      "key": "ai_rank_06_win",
+      "ko": "차분하게 두니 프로도 잡히네.",
+      "en": "A steady game can beat a pro too."
+    },
+    {
+      "key": "ai_rank_07_intro",
+      "ko": "몇 수 앞까지 봐? 나랑 한번 겨뤄보자.",
+      "en": "How many moves ahead can you see? Let's play."
+    },
+    {
+      "key": "ai_rank_07_lose",
+      "ko": "더 멀리 봤군. 다음엔 내가 앞서간다.",
+      "en": "You saw further. I'll get ahead next time."
+    },
+    {
+      "key": "ai_rank_07_win",
+      "ko": "프로보다 한 수 더 봤나 보네.",
+      "en": "Looks like I saw one move further."
+    },
+    {
+      "key": "ai_rank_08_intro",
+      "ko": "오래 둔 경험도 만만치 않아. 붙어볼까?",
+      "en": "Years of play count for something. Ready?"
+    },
+    {
+      "key": "ai_rank_08_lose",
+      "ko": "경험만으론 안 되네. 다음엔 다를 거야.",
+      "en": "Experience wasn't enough. Next time will be different."
+    },
+    {
+      "key": "ai_rank_08_win",
+      "ko": "이런 판은 경험이 답이지.",
+      "en": "Experience wins this kind of game."
+    },
+    {
+      "key": "ai_rank_09_intro",
+      "ko": "나도 프로에게 도전할 차례지?",
+      "en": "My turn to challenge the pro, right?"
+    },
+    {
+      "key": "ai_rank_09_lose",
+      "ko": "도전할 맛 나네. 다음엔 내가 이긴다.",
+      "en": "Now that's a challenge. Next time, I'll win."
+    },
+    {
+      "key": "ai_rank_09_win",
+      "ko": "도전하길 잘했네. 프로를 이겼어!",
+      "en": "Glad I challenged you. I beat the pro!"
+    },
+    {
+      "key": "ai_rank_10_intro",
+      "ko": "경험과 감각, 둘 다 시험해볼까?",
+      "en": "Let us test both experience and instinct."
+    },
+    {
+      "key": "ai_rank_10_lose",
+      "ko": "좋은 수였어. 다시 연구해봐야겠군.",
+      "en": "A good move. I will study that."
+    },
+    {
+      "key": "ai_rank_10_win",
+      "ko": "이번에는 내 감각이 맞았군.",
+      "en": "My instincts were right this time."
+    },
+    {
+      "key": "ai_rank_11_intro",
+      "ko": "기본부터 단단하게 겨뤄보자.",
+      "en": "Let us put the fundamentals to the test."
+    },
+    {
+      "key": "ai_rank_11_lose",
+      "ko": "기본 위에 한 수를 더 쌓았군.",
+      "en": "You built one move beyond the basics."
+    },
+    {
+      "key": "ai_rank_11_win",
+      "ko": "기본을 지킨 쪽이 이겼네.",
+      "en": "Solid fundamentals won this round."
+    },
+    {
+      "key": "ai_rank_12_intro",
+      "ko": "다음 수까지 읽고 있나?",
+      "en": "Are you reading the next move?"
+    },
+    {
+      "key": "ai_rank_12_lose",
+      "ko": "예상보다 한 수 앞섰군.",
+      "en": "You were a move ahead of my prediction."
+    },
+    {
+      "key": "ai_rank_12_win",
+      "ko": "다음 수가 내 예상대로였어.",
+      "en": "The next move went as I expected."
+    },
+    {
+      "key": "ai_rank_13_intro",
+      "ko": "두 방향을 동시에 지킬 수 있겠나?",
+      "en": "Can you defend two directions at once?"
+    },
+    {
+      "key": "ai_rank_13_lose",
+      "ko": "두 방향을 모두 읽었군.",
+      "en": "You read both directions."
+    },
+    {
+      "key": "ai_rank_13_win",
+      "ko": "한쪽을 지키니 다른 쪽이 열렸군.",
+      "en": "One defense left another path open."
+    },
+    {
+      "key": "ai_rank_14_intro",
+      "ko": "공격과 수비의 균형을 보자.",
+      "en": "Let us test your balance of attack and defense."
+    },
+    {
+      "key": "ai_rank_14_lose",
+      "ko": "끝까지 균형을 지켰군.",
+      "en": "You kept your balance to the end."
+    },
+    {
+      "key": "ai_rank_14_win",
+      "ko": "균형이 무너진 틈을 잡았어.",
+      "en": "I found the gap in your balance."
+    },
+    {
+      "key": "ai_rank_15_intro",
+      "ko": "작은 빈틈도 놓치지 않겠어.",
+      "en": "I will not overlook a small opening."
+    },
+    {
+      "key": "ai_rank_15_lose",
+      "ko": "빈틈을 내주지 않았군.",
+      "en": "You left no opening."
+    },
+    {
+      "key": "ai_rank_15_win",
+      "ko": "작은 빈틈이 승부를 갈랐군.",
+      "en": "A small opening decided the game."
+    },
+    {
+      "key": "ai_rank_16_intro",
+      "ko": "판 전체를 보고 결정해보게.",
+      "en": "Read the whole board before deciding."
+    },
+    {
+      "key": "ai_rank_16_lose",
+      "ko": "판의 흐름을 바꿔놓았군.",
+      "en": "You changed the flow of the board."
+    },
+    {
+      "key": "ai_rank_16_win",
+      "ko": "판의 흐름은 내 쪽이었군.",
+      "en": "The board was flowing my way."
+    },
+    {
+      "key": "ai_rank_17_intro",
+      "ko": "마지막 관문이 가까워졌군.",
+      "en": "You are close to the final challenge."
+    },
+    {
+      "key": "ai_rank_17_lose",
+      "ko": "이제 마지막 도전자가 기다리겠군.",
+      "en": "The final challenger is waiting for you."
+    },
+    {
+      "key": "ai_rank_17_win",
+      "ko": "마지막 관문까지는 아직 한 수 남았군.",
+      "en": "One more step before the final challenge."
+    },
+    {
+      "key": "ai_rank_18_intro",
+      "ko": "사단장인 나를 넘어서 보게.",
+      "en": "Show me you can beat the division commander."
+    },
+    {
+      "key": "ai_rank_18_lose",
+      "ko": "훌륭한 승부였네. 자네가 이겼어.",
+      "en": "An excellent game. You have won."
+    },
+    {
+      "key": "ai_rank_18_win",
+      "ko": "마지막 승부는 내가 가져가겠네.",
+      "en": "The final round is mine."
+    },
+    {
+      "key": "ai_rating",
+      "ko": "Rating {0}",
+      "en": "Rating {0}"
+    },
+    {
+      "key": "ai_stone",
+      "ko": "AI",
+      "en": "AI"
+    },
+    {
+      "key": "chapter_01",
+      "ko": "중앙과 연결",
+      "en": "Center and connections"
+    },
+    {
+      "key": "chapter_02",
+      "ko": "위협과 두 갈래",
+      "en": "Threats and forks"
+    },
+    {
+      "key": "chapter_03",
+      "ko": "복합 전술",
+      "en": "Combined tactics"
+    },
+    {
+      "key": "client_ad_test_mode",
+      "ko": "모의 광고 · 테스트 전용",
+      "en": "Mock ad · Test only"
+    },
+    {
+      "key": "client_error_data",
+      "ko": "게임을 불러올 수 없어요.\n다시 실행해 주세요.",
+      "en": "The game could not load.\nPlease restart."
+    },
+    {
+      "key": "client_error_save",
+      "ko": "저장하지 못했어요. 재실행하면 진행도가 사라질 수 있어요.",
+      "en": "Could not save. Progress may be lost after restart."
+    },
+    {
+      "key": "client_game_title",
+      "ko": "이겨도 됩니까?",
+      "en": "Permission to Win"
+    },
+    {
+      "key": "client_help_rules",
+      "ko": "1. 열을 골라 놓일 자리를 확인해요.\n\n2. '놓기'로 돌을 놓아요. 턴마다 30초, 시간이 끝나면 자동으로 놓여요.\n\n3. 가로·세로·대각선으로 네 돌을 먼저 이으면 승리해요.\n\n나는 흑돌, AI는 백돌이에요.",
+      "en": "1. Choose a column to preview your stone.\n\n2. Press Place. You have 30 seconds per turn; then a stone is placed automatically.\n\n3. Connect four across, vertically or diagonally first to win.\n\nYou play black. The AI plays white."
+    },
+    {
+      "key": "client_hint_request",
+      "ko": "광고 보고 힌트 · 1회",
+      "en": "Watch ad for hint · Once"
+    },
+    {
+      "key": "client_hint_unavailable",
+      "ko": "광고가 준비되지 않았어요. 계속 플레이하세요.",
+      "en": "No ad available. Keep playing."
+    },
+    {
+      "key": "client_hint_used",
+      "ko": "이번 판 힌트 사용 완료",
+      "en": "Hint used this game"
+    },
+    {
+      "key": "client_result_all_clear",
+      "ko": "모든 스테이지 완료!\n원하는 스테이지를 다시 즐겨 보세요.",
+      "en": "All stages complete!\nReplay any stage you like."
+    },
+    {
+      "key": "client_result_loss",
+      "ko": "다시 도전해 볼까요?",
+      "en": "Try again?"
+    },
+    {
+      "key": "client_result_win",
+      "ko": "연결 성공!",
+      "en": "Four connected!"
+    },
+    {
+      "key": "client_ui_ai_turn",
+      "ko": "AI 차례",
+      "en": "AI's turn"
+    },
+    {
+      "key": "client_ui_continue",
+      "ko": "이어서 대국",
+      "en": "Resume"
+    },
+    {
+      "key": "client_ui_help",
+      "ko": "플레이 방법",
+      "en": "How to play"
+    },
+    {
+      "key": "client_ui_player_turn",
+      "ko": "내 차례 · 열 선택 후 놓기",
+      "en": "Your turn · Choose a column, then Place"
+    },
+    {
+      "key": "client_ui_start",
+      "ko": "시작하기",
+      "en": "Start"
+    },
+    {
+      "key": "column_number",
+      "ko": "{0}",
+      "en": "{0}"
+    },
+    {
+      "key": "coming_soon",
+      "ko": "준비중",
+      "en": "Coming soon"
+    },
+    {
+      "key": "confirm_body",
+      "ko": "현재 대국은 저장되지 않아요.\n해금한 스테이지는 유지됩니다.",
+      "en": "This game won't be saved.\nUnlocked stages stay available."
+    },
+    {
+      "key": "confirm_exit_body",
+      "ko": "이 대국을 나가고 로비로 돌아가요.",
+      "en": "Leave this game and return to the lobby."
+    },
+    {
+      "key": "confirm_exit_title",
+      "ko": "나가시겠습니까?",
+      "en": "Leave this game?"
+    },
+    {
+      "key": "confirm_leave",
+      "ko": "나가기",
+      "en": "Leave"
+    },
+    {
+      "key": "confirm_retry_body",
+      "ko": "이 대국을 처음부터 다시 시작해요.",
+      "en": "Start this game again from the beginning."
+    },
+    {
+      "key": "confirm_retry_title",
+      "ko": "다시하시겠습니까?",
+      "en": "Restart this game?"
+    },
+    {
+      "key": "confirm_title",
+      "ko": "잠시 쉬어가기",
+      "en": "Paused"
+    },
+    {
+      "key": "difficulty_stars",
+      "ko": "난이도 별 {0}개, 최대 5개",
+      "en": "Difficulty: {0} of 5 stars"
+    },
+    {
+      "key": "error_data",
+      "ko": "게임 데이터를 읽을 수 없어요. 로비로 돌아갑니다.",
+      "en": "Game data could not be loaded. Returning to the lobby."
+    },
+    {
+      "key": "error_data_title",
+      "ko": "데이터 확인 필요",
+      "en": "Data unavailable"
+    },
+    {
+      "key": "error_load",
+      "ko": "저장을 복원하지 못해 처음부터 시작해요.",
+      "en": "Save could not be restored. Starting over."
+    },
+    {
+      "key": "error_save",
+      "ko": "진행 상황을 저장하지 못했어요.",
+      "en": "Your progress could not be saved."
+    },
+    {
+      "key": "first_match_body",
+      "ko": "열을 고르고 놓일 자리를 확인한 뒤 '놓기'를 눌러요. 네 돌을 먼저 이으면 승리해요.",
+      "en": "Choose a column, check the preview, then press Place. Connect four first to win."
+    },
+    {
+      "key": "first_match_title",
+      "ko": "첫 대국을 시작해요",
+      "en": "Your first game"
+    },
+    {
+      "key": "game_brand",
+      "ko": "이겨도 됩니까?",
+      "en": "Permission to Win"
+    },
+    {
+      "key": "game_subtitle",
+      "ko": "프로 소문을 듣고 찾아온 도전자들",
+      "en": "Challengers have heard you are a pro"
+    },
+    {
+      "key": "game_title",
+      "ko": "이겨도 됩니까?",
+      "en": "Permission to Win"
+    },
+    {
+      "key": "help_connect_caption",
+      "ko": "가로 · 세로 · 대각선",
+      "en": "Across · Up · Diagonal"
+    },
+    {
+      "key": "help_connect_title",
+      "ko": "네 개를 연결하면 승리",
+      "en": "Connect four to win"
+    },
+    {
+      "key": "help_drop_caption",
+      "ko": "열을 고르고 '놓기'를 눌러요.\n턴마다 30초, 시간이 끝나면 자동으로 놓여요.",
+      "en": "Choose a column, then press Place.\n30 seconds per turn; after that, a stone is placed automatically."
+    },
+    {
+      "key": "help_drop_title",
+      "ko": "돌은 아래에서부터 쌓여요",
+      "en": "Stones stack from the bottom"
+    },
+    {
+      "key": "help_full_column",
+      "ko": "가득 찬 열에는 놓을 수 없어요.",
+      "en": "You cannot place a stone in a full column."
+    },
+    {
+      "key": "help_rules",
+      "ko": "열을 고르면 놓일 자리가 보여요. '놓기'를 눌러 확정하세요. 가로·세로·대각선으로 네 돌을 먼저 이으면 승리해요.",
+      "en": "Choose a column to preview your stone. Press Place to confirm. Connect four across, vertically or diagonally before the AI."
+    },
+    {
+      "key": "hint_cancelled",
+      "ko": "광고 요청을 취소했어요. 계속 플레이하세요.",
+      "en": "Ad cancelled. Keep playing."
+    },
+    {
+      "key": "hint_incomplete",
+      "ko": "광고가 완료되지 않아 힌트를 받지 못했어요.",
+      "en": "Ad not completed. No hint used."
+    },
+    {
+      "key": "hint_recommendation",
+      "ko": "추천: {0}번 열",
+      "en": "Try column {0}"
+    },
+    {
+      "key": "hint_request",
+      "ko": "광고 보고 추천 열 확인",
+      "en": "Watch an ad for a suggested column"
+    },
+    {
+      "key": "hint_timeout",
+      "ko": "광고 응답이 없어 취소했어요. 계속 플레이하세요.",
+      "en": "Ad timed out. Keep playing."
+    },
+    {
+      "key": "hint_unavailable",
+      "ko": "지금은 광고를 준비하지 못했어요. 계속 플레이할 수 있어요.",
+      "en": "No ad is available right now. You can keep playing."
+    },
+    {
+      "key": "hint_used",
+      "ko": "이번 판의 광고 힌트를 사용했어요.",
+      "en": "You have used this game's ad hint."
+    },
+    {
+      "key": "language_en",
+      "ko": "English",
+      "en": "English"
+    },
+    {
+      "key": "language_ko",
+      "ko": "한국어",
+      "en": "한국어"
+    },
+    {
+      "key": "language_selected",
+      "ko": "{0} ✓",
+      "en": "{0} ✓"
+    },
+    {
+      "key": "legal_missing",
+      "ko": "라이선스 파일을 불러올 수 없어요.",
+      "en": "Licenses could not be loaded."
+    },
+    {
+      "key": "legal_title",
+      "ko": "오픈소스 라이선스",
+      "en": "Open source licenses"
+    },
+    {
+      "key": "lobby_notice",
+      "ko": "진행도는 이 기기에 저장됩니다",
+      "en": "Progress is saved on this device"
+    },
+    {
+      "key": "match_eyebrow",
+      "ko": "4목 대국",
+      "en": "FOUR IN A ROW"
+    },
+    {
+      "key": "match_instruction",
+      "ko": "열을 고르고 미리 본 뒤 '놓기'를 눌러요.",
+      "en": "Choose a column, check the preview, then press Place."
+    },
+    {
+      "key": "match_legend",
+      "ko": "나 · 흑돌   /   AI · 백돌",
+      "en": "You · Black stones   /   AI · White stones"
+    },
+    {
+      "key": "match_title",
+      "ko": "{0} · {1}",
+      "en": "{0} · {1}"
+    },
+    {
+      "key": "move_count",
+      "ko": "{0} / 42 수",
+      "en": "{0} / 42 moves"
+    },
+    {
+      "key": "mp_auth_error",
+      "ko": "플레이어 정보를 확인할 수 없어요. 다시 연결해 주세요.",
+      "en": "Could not verify your player profile. Please reconnect."
+    },
+    {
+      "key": "mp_black",
+      "ko": "내 돌: 흑",
+      "en": "Your stones: black"
+    },
+    {
+      "key": "mp_cancel_search",
+      "ko": "매칭 취소",
+      "en": "Cancel search"
+    },
+    {
+      "key": "mp_connecting",
+      "ko": "연결하는 중…",
+      "en": "Connecting…"
+    },
+    {
+      "key": "mp_connection_lost",
+      "ko": "연결하지 못했어요. 나갔다가 다시 들어와 주세요.",
+      "en": "Could not reconnect. Please leave and open multiplayer again."
+    },
+    {
+      "key": "mp_copied",
+      "ko": "초대 URL을 복사했어요. 친구에게 보내 주세요.",
+      "en": "Invite URL copied. Send it to your friend."
+    },
+    {
+      "key": "mp_copy",
+      "ko": "초대 URL 복사",
+      "en": "Copy invite URL"
+    },
+    {
+      "key": "mp_copy_manual",
+      "ko": "아래 주소를 길게 눌러 복사해 주세요.",
+      "en": "Select and copy the address below."
+    },
+    {
+      "key": "mp_friendly",
+      "ko": "친선전",
+      "en": "Friendly match"
+    },
+    {
+      "key": "mp_friendly_hint",
+      "ko": "친구를 초대하고 점수 반영을 선택해요.",
+      "en": "Invite a friend and choose whether ratings count."
+    },
+    {
+      "key": "mp_help_drop_caption",
+      "ko": "열을 고르고 '놓기'를 누르세요.\n한 턴은 60초예요.\n시간 안에 두지 않으면 패배해요.",
+      "en": "Choose a column, then press Place.\nYou have 60 seconds per turn.\nIf time runs out, you lose."
+    },
+    {
+      "key": "mp_invite_expired",
+      "ko": "초대가 만료되었거나 이미 시작된 경기예요.",
+      "en": "This invite expired or the match already started."
+    },
+    {
+      "key": "mp_invited",
+      "ko": "친구 레이팅 {0}\n{1} · 입장하면 경기가 시작됩니다.",
+      "en": "Friend rating: {0}\n{1} · Joining starts the match."
+    },
+    {
+      "key": "mp_join",
+      "ko": "이 설정으로 입장",
+      "en": "Join with these settings"
+    },
+    {
+      "key": "mp_leave",
+      "ko": "나가기",
+      "en": "Leave"
+    },
+    {
+      "key": "mp_leave_warning",
+      "ko": "지금 나가면 패배로 처리됩니다.\n나가시겠습니까?",
+      "en": "Leaving now counts as a loss.\nLeave this match?"
+    },
+    {
+      "key": "mp_opponent_left",
+      "ko": "상대방이 나갔습니다",
+      "en": "Your opponent has left"
+    },
+    {
+      "key": "mp_opponent_profile",
+      "ko": "상대 · {0}\n레이팅 {1}",
+      "en": "Opponent · {0}\nRating {1}"
+    },
+    {
+      "key": "mp_other_disconnected",
+      "ko": "상대방의 재접속을 기다리는 중…",
+      "en": "Waiting for your opponent to reconnect…"
+    },
+    {
+      "key": "mp_other_first",
+      "ko": "상대방이 선공",
+      "en": "Opponent goes first"
+    },
+    {
+      "key": "mp_other_session",
+      "ko": "다른 창에서 접속했어요. 이 창의 연결이 종료됩니다.",
+      "en": "Connected in another window. This session has ended."
+    },
+    {
+      "key": "mp_other_turn",
+      "ko": "상대 차례 · {0}초",
+      "en": "Opponent turn · {0}s"
+    },
+    {
+      "key": "mp_players",
+      "ko": "나: {0} {1}점\n상대: {2} {3}점",
+      "en": "You: {0} · {1}\nOpponent: {2} · {3}"
+    },
+    {
+      "key": "mp_profile",
+      "ko": "{0} · 레이팅 {1}",
+      "en": "{0} · Rating {1}"
+    },
+    {
+      "key": "mp_random",
+      "ko": "무작위 매치",
+      "en": "Random match"
+    },
+    {
+      "key": "mp_random_hint",
+      "ko": "비슷한 실력의 상대와 점수를 겨뤄요.",
+      "en": "Match with a player near your rating."
+    },
+    {
+      "key": "mp_rank_1",
+      "ko": "훈련병",
+      "en": "Recruit"
+    },
+    {
+      "key": "mp_rank_10",
+      "ko": "준위",
+      "en": "Warrant Officer"
+    },
+    {
+      "key": "mp_rank_11",
+      "ko": "소위",
+      "en": "Second Lieutenant"
+    },
+    {
+      "key": "mp_rank_12",
+      "ko": "중위",
+      "en": "First Lieutenant"
+    },
+    {
+      "key": "mp_rank_13",
+      "ko": "대위",
+      "en": "Captain"
+    },
+    {
+      "key": "mp_rank_14",
+      "ko": "소령",
+      "en": "Major"
+    },
+    {
+      "key": "mp_rank_15",
+      "ko": "중령",
+      "en": "Lieutenant Colonel"
+    },
+    {
+      "key": "mp_rank_16",
+      "ko": "대령",
+      "en": "Colonel"
+    },
+    {
+      "key": "mp_rank_17",
+      "ko": "준장",
+      "en": "Brigadier General"
+    },
+    {
+      "key": "mp_rank_18",
+      "ko": "소장",
+      "en": "Major General"
+    },
+    {
+      "key": "mp_rank_19",
+      "ko": "중장",
+      "en": "Lieutenant General"
+    },
+    {
+      "key": "mp_rank_2",
+      "ko": "이등병",
+      "en": "Private"
+    },
+    {
+      "key": "mp_rank_20",
+      "ko": "대장",
+      "en": "General"
+    },
+    {
+      "key": "mp_rank_3",
+      "ko": "일병",
+      "en": "Private First Class"
+    },
+    {
+      "key": "mp_rank_4",
+      "ko": "상병",
+      "en": "Corporal"
+    },
+    {
+      "key": "mp_rank_5",
+      "ko": "병장",
+      "en": "Sergeant"
+    },
+    {
+      "key": "mp_rank_6",
+      "ko": "하사",
+      "en": "Staff Sergeant"
+    },
+    {
+      "key": "mp_rank_7",
+      "ko": "중사",
+      "en": "Sergeant First Class"
+    },
+    {
+      "key": "mp_rank_8",
+      "ko": "상사",
+      "en": "Master Sergeant"
+    },
+    {
+      "key": "mp_rank_9",
+      "ko": "원사",
+      "en": "Sergeant Major"
+    },
+    {
+      "key": "mp_rated_off",
+      "ko": "레이팅 반영 OFF",
+      "en": "Rating changes OFF"
+    },
+    {
+      "key": "mp_rated_on",
+      "ko": "레이팅 반영 ON",
+      "en": "Rating changes ON"
+    },
+    {
+      "key": "mp_reconnecting",
+      "ko": "연결이 끊겼어요. 다시 연결하는 중…",
+      "en": "Connection lost. Reconnecting…"
+    },
+    {
+      "key": "mp_rematch",
+      "ko": "다시하기",
+      "en": "Rematch"
+    },
+    {
+      "key": "mp_rematch_request",
+      "ko": "상대방이 리매치를 요청하였습니다",
+      "en": "Your opponent requested a rematch"
+    },
+    {
+      "key": "mp_rematch_wait",
+      "ko": "상대방 응답 대기 중",
+      "en": "Waiting for opponent"
+    },
+    {
+      "key": "mp_request_failed",
+      "ko": "요청을 처리하지 못했어요. 다시 시도해 주세요.",
+      "en": "Could not complete that request. Please try again."
+    },
+    {
+      "key": "mp_result_draw",
+      "ko": "무승부 · 레이팅 {0} · 현재 {1}점",
+      "en": "Draw · Rating {0} · Now {1}"
+    },
+    {
+      "key": "mp_result_loss",
+      "ko": "패배 · 레이팅 {0} · 현재 {1}점",
+      "en": "You lose · Rating {0} · Now {1}"
+    },
+    {
+      "key": "mp_result_win",
+      "ko": "승리! 레이팅 {0} · 현재 {1}점",
+      "en": "You win! Rating {0} · Now {1}"
+    },
+    {
+      "key": "mp_rules",
+      "ko": "비슷한 레이팅의 상대와 겨뤄 보세요.\n친선전은 점수 반영을 선택할 수 있어요.",
+      "en": "Play someone near your rating.\nFriendly matches can be rated or unrated."
+    },
+    {
+      "key": "mp_searching",
+      "ko": "레이팅 차이 {0}점 이내에서 찾는 중…",
+      "en": "Finding an opponent within {0} rating points…"
+    },
+    {
+      "key": "mp_setting_changed",
+      "ko": "친구가 점수 설정을 바꿨어요. 다시 확인해 주세요.",
+      "en": "Your friend changed the rating setting. Please check it again."
+    },
+    {
+      "key": "mp_share",
+      "ko": "친구에게 공유",
+      "en": "Share with a friend"
+    },
+    {
+      "key": "mp_shared",
+      "ko": "친구가 들어오기를 기다리고 있어요.",
+      "en": "Waiting for your friend to join."
+    },
+    {
+      "key": "mp_unavailable",
+      "ko": "지금은 멀티 배틀을 이용할 수 없어요.\n잠시 후 다시 시도해 주세요.",
+      "en": "Multiplayer is unavailable right now.\nPlease try again later."
+    },
+    {
+      "key": "mp_wait_friend",
+      "ko": "친구를 초대하세요.\n경기가 시작되면 점수 설정은 고정됩니다.",
+      "en": "Invite a friend.\nThe rating setting locks when the match starts."
+    },
+    {
+      "key": "mp_white",
+      "ko": "내 돌: 백",
+      "en": "Your stones: white"
+    },
+    {
+      "key": "mp_you_first",
+      "ko": "내가 선공",
+      "en": "You go first"
+    },
+    {
+      "key": "mp_you_profile",
+      "ko": "나 · {0}\n레이팅 {1}",
+      "en": "You · {0}\nRating {1}"
+    },
+    {
+      "key": "mp_your_turn",
+      "ko": "내 차례 · {0}초",
+      "en": "Your turn · {0}s"
+    },
+    {
+      "key": "multiplayer_start",
+      "ko": "멀티 배틀",
+      "en": "Multiplayer"
+    },
+    {
+      "key": "multiplayer_title",
+      "ko": "멀티 배틀",
+      "en": "Multiplayer"
+    },
+    {
+      "key": "multiplayer_unavailable",
+      "ko": "함께 대국은 준비중이에요. AI 대국을 즐겨주세요.",
+      "en": "Playing together is coming soon. Enjoy a game against the AI."
+    },
+    {
+      "key": "nextstage",
+      "ko": "다음 단계",
+      "en": "Next stage"
+    },
+    {
+      "key": "place",
+      "ko": "놓기",
+      "en": "Place"
+    },
+    {
+      "key": "player_stone",
+      "ko": "나",
+      "en": "You"
+    },
+    {
+      "key": "rank_01",
+      "ko": "훈련병",
+      "en": "Recruit"
+    },
+    {
+      "key": "rank_02",
+      "ko": "이등병",
+      "en": "Private"
+    },
+    {
+      "key": "rank_03",
+      "ko": "일병",
+      "en": "Private First Class"
+    },
+    {
+      "key": "rank_04",
+      "ko": "상병",
+      "en": "Corporal"
+    },
+    {
+      "key": "rank_05",
+      "ko": "병장",
+      "en": "Sergeant"
+    },
+    {
+      "key": "rank_06",
+      "ko": "하사",
+      "en": "Staff Sergeant"
+    },
+    {
+      "key": "rank_07",
+      "ko": "중사",
+      "en": "Sergeant First Class"
+    },
+    {
+      "key": "rank_08",
+      "ko": "상사",
+      "en": "Master Sergeant"
+    },
+    {
+      "key": "rank_09",
+      "ko": "원사",
+      "en": "Sergeant Major"
+    },
+    {
+      "key": "rank_10",
+      "ko": "준위",
+      "en": "Warrant Officer"
+    },
+    {
+      "key": "rank_11",
+      "ko": "소위",
+      "en": "Second Lieutenant"
+    },
+    {
+      "key": "rank_12",
+      "ko": "중위",
+      "en": "First Lieutenant"
+    },
+    {
+      "key": "rank_13",
+      "ko": "대위",
+      "en": "Captain"
+    },
+    {
+      "key": "rank_14",
+      "ko": "소령",
+      "en": "Major"
+    },
+    {
+      "key": "rank_15",
+      "ko": "중령",
+      "en": "Lieutenant Colonel"
+    },
+    {
+      "key": "rank_16",
+      "ko": "대령",
+      "en": "Colonel"
+    },
+    {
+      "key": "rank_17",
+      "ko": "준장",
+      "en": "Brigadier General"
+    },
+    {
+      "key": "rank_18",
+      "ko": "사단장",
+      "en": "Division Commander"
+    },
+    {
+      "key": "rank_label",
+      "ko": "도전자 계급: {0}",
+      "en": "Challenger rank: {0}"
+    },
+    {
+      "key": "rank_progress",
+      "ko": "도전자 계급 {0} / {1}",
+      "en": "Challenger rank {0} / {1}"
+    },
+    {
+      "key": "result_all_clear",
+      "ko": "모든 스테이지를 완료했어요",
+      "en": "You have completed all stages"
+    },
+    {
+      "key": "result_draw",
+      "ko": "무승부",
+      "en": "A draw"
+    },
+    {
+      "key": "result_draw_detail",
+      "ko": "42칸이 모두 찼어요.\n다시 도전해 보세요.",
+      "en": "All 42 spaces are full.\nGive it another try."
+    },
+    {
+      "key": "result_loss",
+      "ko": "다시 도전해 보세요",
+      "en": "Try again"
+    },
+    {
+      "key": "result_loss_detail",
+      "ko": "상대가 먼저 네 개를 이었어요.\n다음에는 세 돌 연결을 막아 보세요.",
+      "en": "The AI connected four first.\nWatch for lines of three."
+    },
+    {
+      "key": "result_loss_diagonal",
+      "ko": "AI가 대각선으로 네 개를 이었어요.",
+      "en": "The AI connected four diagonally."
+    },
+    {
+      "key": "result_loss_horizontal",
+      "ko": "AI가 가로로 네 개를 이었어요.",
+      "en": "The AI connected four across."
+    },
+    {
+      "key": "result_loss_vertical",
+      "ko": "AI가 세로로 네 개를 이었어요.",
+      "en": "The AI connected four vertically."
+    },
+    {
+      "key": "result_win",
+      "ko": "승리!",
+      "en": "You win!"
+    },
+    {
+      "key": "result_win_detail",
+      "ko": "네 개의 돌을 이었어요.\n다음 스테이지에 도전하세요.",
+      "en": "You connected four stones.\nTry the next stage."
+    },
+    {
+      "key": "retry",
+      "ko": "다시하기",
+      "en": "Restart"
+    },
+    {
+      "key": "select_column",
+      "ko": "놓을 열을 고른 뒤 '놓기'를 눌러요.",
+      "en": "Choose a column, then press Place."
+    },
+    {
+      "key": "selected_column_accessibility",
+      "ko": "{0}번 열 선택됨. 놓기를 눌러 확정하세요.",
+      "en": "Column {0} selected. Press Place to confirm."
+    },
+    {
+      "key": "settings_detail",
+      "ko": "진행도는 이 기기에 저장됩니다.",
+      "en": "Progress is saved on this device."
+    },
+    {
+      "key": "settings_language",
+      "ko": "언어 / Language",
+      "en": "언어 / Language"
+    },
+    {
+      "key": "settings_music_off",
+      "ko": "배경음악 꺼짐",
+      "en": "Music off"
+    },
+    {
+      "key": "settings_music_on",
+      "ko": "배경음악 켜짐",
+      "en": "Music on"
+    },
+    {
+      "key": "settings_sound",
+      "ko": "소리",
+      "en": "Sound"
+    },
+    {
+      "key": "settings_sound_off",
+      "ko": "효과음 꺼짐",
+      "en": "Sound off"
+    },
+    {
+      "key": "settings_sound_on",
+      "ko": "효과음 켜짐",
+      "en": "Sound on"
+    },
+    {
+      "key": "settings_vibration",
+      "ko": "진동",
+      "en": "Vibration"
+    },
+    {
+      "key": "stage_001",
+      "ko": "훈련병",
+      "en": "Recruit"
+    },
+    {
+      "key": "stage_002",
+      "ko": "이등병",
+      "en": "Private"
+    },
+    {
+      "key": "stage_003",
+      "ko": "일병",
+      "en": "Private First Class"
+    },
+    {
+      "key": "stage_004",
+      "ko": "상병",
+      "en": "Corporal"
+    },
+    {
+      "key": "stage_005",
+      "ko": "병장",
+      "en": "Sergeant"
+    },
+    {
+      "key": "stage_006",
+      "ko": "하사",
+      "en": "Staff Sergeant"
+    },
+    {
+      "key": "stage_007",
+      "ko": "중사 1",
+      "en": "Sergeant First Class 1"
+    },
+    {
+      "key": "stage_008",
+      "ko": "중사 2",
+      "en": "Sergeant First Class 2"
+    },
+    {
+      "key": "stage_009",
+      "ko": "상사 1",
+      "en": "Master Sergeant 1"
+    },
+    {
+      "key": "stage_010",
+      "ko": "상사 2",
+      "en": "Master Sergeant 2"
+    },
+    {
+      "key": "stage_011",
+      "ko": "원사 1",
+      "en": "Sergeant Major 1"
+    },
+    {
+      "key": "stage_012",
+      "ko": "원사 2",
+      "en": "Sergeant Major 2"
+    },
+    {
+      "key": "stage_013",
+      "ko": "준위 1",
+      "en": "Warrant Officer 1"
+    },
+    {
+      "key": "stage_014",
+      "ko": "준위 2",
+      "en": "Warrant Officer 2"
+    },
+    {
+      "key": "stage_015",
+      "ko": "소위 1",
+      "en": "Second Lieutenant 1"
+    },
+    {
+      "key": "stage_016",
+      "ko": "소위 2",
+      "en": "Second Lieutenant 2"
+    },
+    {
+      "key": "stage_017",
+      "ko": "중위 1",
+      "en": "First Lieutenant 1"
+    },
+    {
+      "key": "stage_018",
+      "ko": "중위 2",
+      "en": "First Lieutenant 2"
+    },
+    {
+      "key": "stage_019",
+      "ko": "대위 1",
+      "en": "Captain 1"
+    },
+    {
+      "key": "stage_020",
+      "ko": "대위 2",
+      "en": "Captain 2"
+    },
+    {
+      "key": "stage_021",
+      "ko": "소령 1",
+      "en": "Major 1"
+    },
+    {
+      "key": "stage_022",
+      "ko": "소령 2",
+      "en": "Major 2"
+    },
+    {
+      "key": "stage_023",
+      "ko": "중령 1",
+      "en": "Lieutenant Colonel 1"
+    },
+    {
+      "key": "stage_024",
+      "ko": "중령 2",
+      "en": "Lieutenant Colonel 2"
+    },
+    {
+      "key": "stage_025",
+      "ko": "대령 1",
+      "en": "Colonel 1"
+    },
+    {
+      "key": "stage_026",
+      "ko": "대령 2",
+      "en": "Colonel 2"
+    },
+    {
+      "key": "stage_027",
+      "ko": "준장 1",
+      "en": "Brigadier General 1"
+    },
+    {
+      "key": "stage_028",
+      "ko": "준장 2",
+      "en": "Brigadier General 2"
+    },
+    {
+      "key": "stage_029",
+      "ko": "사단장 1",
+      "en": "Division Commander 1"
+    },
+    {
+      "key": "stage_030",
+      "ko": "사단장 2",
+      "en": "Division Commander 2"
+    },
+    {
+      "key": "stage_card_accessibility",
+      "ko": "{0}단계, {1}, 별 {2}개, {3}",
+      "en": "Stage {0}, {1}, {2} stars, {3}"
+    },
+    {
+      "key": "stage_cleared_progress",
+      "ko": "{0}/{1} 완료",
+      "en": "{0}/{1} cleared"
+    },
+    {
+      "key": "stage_desc_001",
+      "ko": "빈 판에서 첫 수를 골라보세요.",
+      "en": "Choose your first move."
+    },
+    {
+      "key": "stage_desc_002",
+      "ko": "두 돌을 이어 긴 줄을 만들어보세요.",
+      "en": "Extend your line of two stones."
+    },
+    {
+      "key": "stage_desc_003",
+      "ko": "AI가 네 돌을 잇기 전에 막아보세요.",
+      "en": "Block the AI before it connects four."
+    },
+    {
+      "key": "stage_desc_004",
+      "ko": "네 돌을 완성할 한 수를 찾아보세요.",
+      "en": "Find the move that connects four."
+    },
+    {
+      "key": "stage_desc_005",
+      "ko": "가운데와 양옆의 연결을 살펴보세요.",
+      "en": "Compare paths in the center and sides."
+    },
+    {
+      "key": "stage_desc_006",
+      "ko": "AI의 연결을 막고 기회를 노려보세요.",
+      "en": "Block the AI and build your chance."
+    },
+    {
+      "key": "stage_desc_007",
+      "ko": "내 두 돌을 이을 자리를 찾아보세요.",
+      "en": "Find a way to extend your two stones."
+    },
+    {
+      "key": "stage_desc_008",
+      "ko": "먼저 놓인 돌에서 연결을 시작해보세요.",
+      "en": "Build a path from the stones in play."
+    },
+    {
+      "key": "stage_desc_009",
+      "ko": "두 곳으로 이어질 한 수를 찾아보세요.",
+      "en": "Find a move that opens two paths."
+    },
+    {
+      "key": "stage_desc_010",
+      "ko": "AI가 완성하려는 줄을 막아보세요.",
+      "en": "Block the line the AI is about to finish."
+    },
+    {
+      "key": "stage_desc_011",
+      "ko": "네 돌을 잇는 대각선을 찾아보세요.",
+      "en": "Find the move that completes a diagonal."
+    },
+    {
+      "key": "stage_desc_012",
+      "ko": "AI의 연결을 막고 다음 수를 보세요.",
+      "en": "Block the AI, then plan your next move."
+    },
+    {
+      "key": "stage_desc_013",
+      "ko": "가운데 주변에서 연결을 찾아보세요.",
+      "en": "Find a connection around the center."
+    },
+    {
+      "key": "stage_desc_014",
+      "ko": "한 번에 막기 힘든 두 길을 만드세요.",
+      "en": "Create two threats at once."
+    },
+    {
+      "key": "stage_desc_015",
+      "ko": "지금 네 돌을 완성할 수를 찾아보세요.",
+      "en": "Find the move that completes four now."
+    },
+    {
+      "key": "stage_desc_016",
+      "ko": "AI의 대각선을 먼저 막아보세요.",
+      "en": "Block the AI's diagonal first."
+    },
+    {
+      "key": "stage_desc_017",
+      "ko": "돌이 놓일 높이를 보고 대각선을 이어요.",
+      "en": "Check the landing spot for a diagonal."
+    },
+    {
+      "key": "stage_desc_018",
+      "ko": "한 수로 두 갈래 기회를 만들어보세요.",
+      "en": "Create two paths with one move."
+    },
+    {
+      "key": "stage_desc_019",
+      "ko": "가운데와 옆줄의 연결을 비교해보세요.",
+      "en": "Compare the center and nearby columns."
+    },
+    {
+      "key": "stage_desc_020",
+      "ko": "AI의 연결을 막고 대국을 이어가세요.",
+      "en": "Block the AI's line to keep playing."
+    },
+    {
+      "key": "stage_desc_021",
+      "ko": "빈자리에서 완성할 연결을 찾아보세요.",
+      "en": "Find the gap that completes your line."
+    },
+    {
+      "key": "stage_desc_022",
+      "ko": "AI의 줄에서 위험한 자리를 막으세요.",
+      "en": "Block the danger in the AI's line."
+    },
+    {
+      "key": "stage_desc_023",
+      "ko": "대각선의 마지막 자리를 찾아보세요.",
+      "en": "Find the final spot in the diagonal."
+    },
+    {
+      "key": "stage_desc_024",
+      "ko": "가운데와 바깥의 연결을 살펴보세요.",
+      "en": "Compare paths in the center and edges."
+    },
+    {
+      "key": "stage_desc_025",
+      "ko": "돌 사이에서 두 갈래를 만들어보세요.",
+      "en": "Create two paths among the stones."
+    },
+    {
+      "key": "stage_desc_026",
+      "ko": "AI의 대각선을 막을 열을 고르세요.",
+      "en": "Choose a column to block the diagonal."
+    },
+    {
+      "key": "stage_desc_027",
+      "ko": "한 수로 네 돌을 이을 곳을 찾으세요.",
+      "en": "Find a one-move connection of four."
+    },
+    {
+      "key": "stage_desc_028",
+      "ko": "두 곳에서 이길 다음 수를 찾으세요.",
+      "en": "Find a move that threatens two wins."
+    },
+    {
+      "key": "stage_desc_029",
+      "ko": "AI가 네 돌을 잇기 전에 막으세요.",
+      "en": "Stop the AI from connecting four."
+    },
+    {
+      "key": "stage_desc_030",
+      "ko": "마지막으로 두 갈래 연결에 도전해요.",
+      "en": "Take on the final two-path challenge."
+    },
+    {
+      "key": "stage_detail_title",
+      "ko": "단계 정보",
+      "en": "Stage details"
+    },
+    {
+      "key": "stage_instruction",
+      "ko": "가로·세로·대각선으로\n내 돌 4개를 먼저 이으세요.",
+      "en": "Connect four of your stones\nin any direction."
+    },
+    {
+      "key": "stage_label",
+      "ko": "{0}단계",
+      "en": "Stage {0}"
+    },
+    {
+      "key": "stage_list_title",
+      "ko": "단계 선택",
+      "en": "Choose a stage"
+    },
+    {
+      "key": "stage_lock_requirement",
+      "ko": "{0}단계를 먼저 완료하세요",
+      "en": "Clear stage {0} first"
+    },
+    {
+      "key": "stage_locked",
+      "ko": "잠긴 스테이지",
+      "en": "Locked"
+    },
+    {
+      "key": "stage_locked_detail",
+      "ko": "이전 단계에서 승리하면 열립니다.",
+      "en": "Win the previous stage to unlock."
+    },
+    {
+      "key": "stage_map_chapter",
+      "ko": "{0} / {1} 챕터",
+      "en": "Chapter {0} / {1}"
+    },
+    {
+      "key": "stage_number",
+      "ko": "챕터 {0} · 스테이지 {1}",
+      "en": "CHAPTER {0} · STAGE {1}"
+    },
+    {
+      "key": "stage_progress",
+      "ko": "{0} / {1} 스테이지 해금",
+      "en": "{0} / {1} stages unlocked"
+    },
+    {
+      "key": "stage_replay",
+      "ko": "다시하기",
+      "en": "Restart"
+    },
+    {
+      "key": "stage_state_cleared",
+      "ko": "완료",
+      "en": "Clear"
+    },
+    {
+      "key": "stage_state_current",
+      "ko": "도전",
+      "en": "Play"
+    },
+    {
+      "key": "stage_state_locked",
+      "ko": "잠금",
+      "en": "Locked"
+    },
+    {
+      "key": "stage_tier_1",
+      "ko": "입문",
+      "en": "Basics"
+    },
+    {
+      "key": "stage_tier_2",
+      "ko": "전술",
+      "en": "Tactics"
+    },
+    {
+      "key": "stage_tier_3",
+      "ko": "도전",
+      "en": "Challenge"
+    },
+    {
+      "key": "story_002_intro",
+      "ko": "잠깐만, 진짜 프로랑 두는 거야?",
+      "en": "Wait, am I really playing a pro?"
+    },
+    {
+      "key": "story_002_lose",
+      "ko": "아… 역시 잘하네. 한 판 더 해 줄래?",
+      "en": "You really are good. Can we play again?"
+    },
+    {
+      "key": "story_002_win",
+      "ko": "내가 이겼어? 야, 나 지금 손 떨려!",
+      "en": "I won? My hands are still shaking!"
+    },
+    {
+      "key": "story_003_intro",
+      "ko": "프로 왔다며? 나랑도 한 판 하자!",
+      "en": "A pro joined us? Come on, play me!"
+    },
+    {
+      "key": "story_003_lose",
+      "ko": "야, 잘한다! 소문날 만하네.",
+      "en": "Wow, you can play! No wonder everyone talks."
+    },
+    {
+      "key": "story_003_win",
+      "ko": "오늘 생활관에서 이 얘기만 한다.",
+      "en": "Everyone in the barracks is hearing about this!"
+    },
+    {
+      "key": "story_004_intro",
+      "ko": "어제 네 경기 봤어. 오늘은 나랑 하자.",
+      "en": "I watched you yesterday. My turn today."
+    },
+    {
+      "key": "story_004_lose",
+      "ko": "졌네. 끝나고 어떻게 이겼는지 알려 줘.",
+      "en": "You got me. Show me how you did that later."
+    },
+    {
+      "key": "story_004_win",
+      "ko": "어제 지켜본 보람이 있네.",
+      "en": "Watching yesterday paid off."
+    },
+    {
+      "key": "story_005_intro",
+      "ko": "쉬는 시간이니까 부담 갖지 말고 해.",
+      "en": "We are on break. Just enjoy the game."
+    },
+    {
+      "key": "story_005_lose",
+      "ko": "오, 잠 다 깼다. 너 꽤 하는데?",
+      "en": "Well, I am awake now. You are good!"
+    },
+    {
+      "key": "story_005_win",
+      "ko": "졸려 보여도 보고는 있었지.",
+      "en": "I may look sleepy, but I was watching."
+    },
+    {
+      "key": "story_006_intro",
+      "ko": "프로라고 들었다. 어디 실력 좀 볼까?",
+      "en": "I hear you were a pro. Let us see you play."
+    },
+    {
+      "key": "story_006_lose",
+      "ko": "잘하네. 소문이 괜히 난 게 아니었어.",
+      "en": "Well played. You earned that reputation."
+    },
+    {
+      "key": "story_006_win",
+      "ko": "이번엔 내가 이겼군. 다시 해 보자.",
+      "en": "This one is mine. Let us try again."
+    },
+    {
+      "key": "story_007_intro",
+      "ko": "공군 대표로 왔는데, 그냥 질 순 없지.",
+      "en": "I am here for the Air Force. I cannot just lose!"
+    },
+    {
+      "key": "story_007_lose",
+      "ko": "아, 육군에선 이렇게 잘하는 거야?",
+      "en": "Is everyone in the Army this good?"
+    },
+    {
+      "key": "story_007_win",
+      "ko": "이겼다! 돌아가서 자랑 좀 해야겠네.",
+      "en": "I won! I have a story to take back with me."
+    },
+    {
+      "key": "story_008_intro",
+      "ko": "표정이 왜 그래? 편하게 해, 편하게.",
+      "en": "Why so tense? Relax and enjoy it."
+    },
+    {
+      "key": "story_008_lose",
+      "ko": "하하, 제대로 졌다! 잘하네.",
+      "en": "Ha! You beat me fair and square."
+    },
+    {
+      "key": "story_008_win",
+      "ko": "하하, 오늘은 내가 이겼네.",
+      "en": "Ha! Looks like this one is mine."
+    },
+    {
+      "key": "story_009_intro",
+      "ko": "서두를 것 없다. 천천히 보고 둬.",
+      "en": "No rush. Think it through."
+    },
+    {
+      "key": "story_009_lose",
+      "ko": "잘했다. 끝까지 집중하더군.",
+      "en": "Well done. You stayed focused to the end."
+    },
+    {
+      "key": "story_009_win",
+      "ko": "아직은 내가 이길 때도 있군.",
+      "en": "Seems I can still win a game or two."
+    },
+    {
+      "key": "story_010_intro",
+      "ko": "나도 이거 꽤 오래 했는데. 해 볼까?",
+      "en": "I have played this for years. Shall we?"
+    },
+    {
+      "key": "story_010_lose",
+      "ko": "허, 나보다 잘하는 사람이 있었네.",
+      "en": "Well! Someone finally outplayed me."
+    },
+    {
+      "key": "story_010_win",
+      "ko": "오래 한 보람은 있네.",
+      "en": "All those years paid off."
+    },
+    {
+      "key": "story_011_intro",
+      "ko": "어제 혼자 연습했어. 오늘은 좀 다를걸?",
+      "en": "I practiced yesterday. Today might be different!"
+    },
+    {
+      "key": "story_011_lose",
+      "ko": "아쉽다. 연습 좀 더 하고 올게.",
+      "en": "So close. I need more practice."
+    },
+    {
+      "key": "story_011_win",
+      "ko": "됐다! 연습하길 잘했네.",
+      "en": "Yes! Glad I practiced."
+    },
+    {
+      "key": "story_012_intro",
+      "ko": "우리 소대에 프로가 왔다는데, 그냥 지나칠 수 있나.",
+      "en": "A pro in my platoon? I had to play you."
+    },
+    {
+      "key": "story_012_lose",
+      "ko": "잘하네! 중대장님한테도 얘기해야겠다.",
+      "en": "Nice! I should tell the company commander."
+    },
+    {
+      "key": "story_012_win",
+      "ko": "오늘은 내가 이겼네. 다음엔 설욕해 봐.",
+      "en": "My win today. Come back for a rematch."
+    },
+    {
+      "key": "story_013_intro",
+      "ko": "소대장이 자네 얘기를 하도 해서 와 봤네.",
+      "en": "Your platoon leader kept talking about you."
+    },
+    {
+      "key": "story_013_lose",
+      "ko": "좋아, 한 판 더 하세. 이대로 끝내기는 아쉽군.",
+      "en": "Another game! We cannot stop here."
+    },
+    {
+      "key": "story_013_win",
+      "ko": "이번엔 내가 이겼군. 자네랑 두니 재밌어.",
+      "en": "My win this time. Playing you is fun."
+    },
+    {
+      "key": "story_014_intro",
+      "ko": "한 판 지고 물러날 순 없지. 다시 해 보자고.",
+      "en": "I cannot walk away after one loss. Again!"
+    },
+    {
+      "key": "story_014_lose",
+      "ko": "두 번 졌으니 인정해야겠군. 잘하네!",
+      "en": "Two losses. I have to admit it: you are good!"
+    },
+    {
+      "key": "story_014_win",
+      "ko": "이번 판은 내가 가져갔네. 다음에 또 하자고.",
+      "en": "This one is mine. Let us play again sometime."
+    },
+    {
+      "key": "story_015_intro",
+      "ko": "작전 회의 끝나자마자 왔네. 한 판 괜찮겠나?",
+      "en": "Just finished the briefing. Have time for a game?"
+    },
+    {
+      "key": "story_015_lose",
+      "ko": "이런, 내가 졌군. 한 판 더 부탁하네.",
+      "en": "You got me. Another game, please."
+    },
+    {
+      "key": "story_015_win",
+      "ko": "오늘은 내가 이겼군. 생각할 게 많은 경기였어.",
+      "en": "My win today. That gave me a lot to think about."
+    },
+    {
+      "key": "story_016_intro",
+      "ko": "아까는 내가 너무 복잡하게 생각했군. 다시 해 보세.",
+      "en": "I overthought that one. Let us try again."
+    },
+    {
+      "key": "story_016_lose",
+      "ko": "또 졌군. 다음엔 더 준비하고 오겠네.",
+      "en": "Lost again. I will come better prepared next time."
+    },
+    {
+      "key": "story_016_win",
+      "ko": "이번엔 통했군. 덕분에 머리 좀 썼네.",
+      "en": "That worked. You made me think."
+    },
+    {
+      "key": "story_017_intro",
+      "ko": "훈련병 때부터 이름을 들었네. 드디어 만나보는군.",
+      "en": "I have heard of you since training. At last we meet."
+    },
+    {
+      "key": "story_017_lose",
+      "ko": "실력이 좋군. 한 판 더 해 보겠나?",
+      "en": "You play well. Care for another?"
+    },
+    {
+      "key": "story_017_win",
+      "ko": "이번에는 내가 이겼네. 잘 싸웠어.",
+      "en": "This time I won. Well played."
+    },
+    {
+      "key": "story_018_intro",
+      "ko": "아까는 깔끔하게 졌네. 이번에도 봐주지 말게.",
+      "en": "You beat me cleanly. Do not go easy this time either."
+    },
+    {
+      "key": "story_018_lose",
+      "ko": "두 판 다 졌군. 소문보다 더 잘하네.",
+      "en": "Both games lost. Better than the rumors said."
+    },
+    {
+      "key": "story_018_win",
+      "ko": "이번엔 설욕했군. 다음에도 봐주지 말게.",
+      "en": "Evened the score. Keep giving me your best."
+    },
+    {
+      "key": "story_019_intro",
+      "ko": "연대까지 소문이 났더군. 직접 보고 싶었네.",
+      "en": "The whole regiment has heard. I wanted to see for myself."
+    },
+    {
+      "key": "story_019_lose",
+      "ko": "과연 잘하는군. 한 판만 더 해 보세.",
+      "en": "You really can play. Just one more."
+    },
+    {
+      "key": "story_019_win",
+      "ko": "내가 이겼군. 그래도 쉽게 끝나진 않았어.",
+      "en": "My win. You did not make it easy."
+    },
+    {
+      "key": "story_020_intro",
+      "ko": "한 판으로 끝내긴 아쉽군. 조금 더 해 보세.",
+      "en": "One game is not enough. Let us play another."
+    },
+    {
+      "key": "story_020_lose",
+      "ko": "오늘은 자네 날이군. 잘했네.",
+      "en": "Today belongs to you. Well done."
+    },
+    {
+      "key": "story_020_win",
+      "ko": "이번엔 내가 이겼네. 다음에 또 찾아오게.",
+      "en": "My win this time. Come play again."
+    },
+    {
+      "key": "story_021_intro",
+      "ko": "내가 졌다고 소문내지는 말게. 아직 시작도 안 했지만!",
+      "en": "Keep it quiet if I lose. We have not even started yet!"
+    },
+    {
+      "key": "story_021_lose",
+      "ko": "허허, 졌네! 한 판 더 하면 안 되겠나?",
+      "en": "Ha! You got me. Could we play another?"
+    },
+    {
+      "key": "story_021_win",
+      "ko": "허허, 아직은 내가 이길 때도 있군!",
+      "en": "Ha! I still win sometimes!"
+    },
+    {
+      "key": "story_022_intro",
+      "ko": "허허, 정말 졌네. 이번엔 좀 더 버텨 보겠어.",
+      "en": "Ha, I really did lose. I will last longer this time."
+    },
+    {
+      "key": "story_022_lose",
+      "ko": "두 번이나 졌군. 이젠 소문내도 되겠어!",
+      "en": "Beaten twice! Now you can tell everyone!"
+    },
+    {
+      "key": "story_022_win",
+      "ko": "이번엔 내가 이겼군. 덕분에 즐거웠네.",
+      "en": "This one is mine. That was fun."
+    },
+    {
+      "key": "story_023_intro",
+      "ko": "부대가 자네 덕에 시끌시끌하더군. 나도 끼워 주게.",
+      "en": "You have got the whole unit talking. Let me join in."
+    },
+    {
+      "key": "story_023_lose",
+      "ko": "내가 졌군. 한 판 더 두어 보세.",
+      "en": "You beat me. Let us play another."
+    },
+    {
+      "key": "story_023_win",
+      "ko": "이번 판은 내가 이겼네. 수고했어.",
+      "en": "I won this one. Well played."
+    },
+    {
+      "key": "story_024_intro",
+      "ko": "즐겁군. 마지막으로 한 판 더 부탁하네.",
+      "en": "This is fun. One last game, if you will."
+    },
+    {
+      "key": "story_024_lose",
+      "ko": "잘했네! 사단 병사 대회가 열리니, 자네도 나가 보게.",
+      "en": "Well done! Enter our upcoming division tournament for enlisted soldiers."
+    },
+    {
+      "key": "story_024_win",
+      "ko": "오늘 경기는 여기까지 하세. 다음에 또 오게.",
+      "en": "That is enough for today. Come back sometime."
+    },
+    {
+      "key": "story_025_intro",
+      "ko": "64강부터 너야? 이번엔 나도 연습 많이 했어!",
+      "en": "You, in the first round? I practiced a lot this time!"
+    },
+    {
+      "key": "story_025_lose",
+      "ko": "또 졌네. 그래도 지난번보단 잘했지?",
+      "en": "Lost again. I did better this time though, right?"
+    },
+    {
+      "key": "story_025_win",
+      "ko": "이겼다! 나 32강 올라가는 거 맞지?",
+      "en": "I won! That means I made the last 32, right?"
+    },
+    {
+      "key": "story_026_intro",
+      "ko": "또 만났네! 오늘 지는 사람 응원 담당이다.",
+      "en": "You again! The loser gets cheering duty today."
+    },
+    {
+      "key": "story_026_lose",
+      "ko": "알았다, 응원은 내가 할게. 꼭 우승해!",
+      "en": "All right, I will cheer. Go win the whole thing!"
+    },
+    {
+      "key": "story_026_win",
+      "ko": "응원 크게 해라! 나 더 올라간다!",
+      "en": "Cheer loud! I am going all the way!"
+    },
+    {
+      "key": "story_027_intro",
+      "ko": "지난번에 지고 계속 생각났어. 오늘은 다를 거야.",
+      "en": "I kept thinking about that loss. Today will be different."
+    },
+    {
+      "key": "story_027_lose",
+      "ko": "또 졌네. 결승에서 네가 이기는 건 꼭 봐야겠다.",
+      "en": "Lost again. Now I have to see you win the final."
+    },
+    {
+      "key": "story_027_win",
+      "ko": "드디어 이겼네. 이제 마음이 좀 놓인다.",
+      "en": "Finally beat you. What a relief."
+    },
+    {
+      "key": "story_028_intro",
+      "ko": "8강까지 왔는데, 여기서 졸 수는 없지.",
+      "en": "Quarterfinals already. Better stay awake for this."
+    },
+    {
+      "key": "story_028_lose",
+      "ko": "잘하네. 내 몫까지 이기고 와.",
+      "en": "Well played. Go win for both of us."
+    },
+    {
+      "key": "story_028_win",
+      "ko": "휴, 이번엔 내가 올라간다.",
+      "en": "Whew. My turn to advance."
+    },
+    {
+      "key": "story_029_intro",
+      "ko": "처음 붙어 보네. 잘 부탁해.",
+      "en": "Our first game together. Good luck."
+    },
+    {
+      "key": "story_029_lose",
+      "ko": "네가 올라가는구나. 결승에서도 잘해.",
+      "en": "You are through. Good luck in the final."
+    },
+    {
+      "key": "story_029_win",
+      "ko": "좋은 경기였어. 결승도 잘하고 올게.",
+      "en": "Good game. I will do my best in the final."
+    },
+    {
+      "key": "story_030_intro",
+      "ko": "결승에서 만나네. 이번엔 진짜 안 질 거야!",
+      "en": "We meet in the final. I am not losing this time!"
+    },
+    {
+      "key": "story_030_lose",
+      "ko": "졌어. 우승 축하해! 그래도 다음엔 내가 이긴다.",
+      "en": "You won. Congratulations! Next time is mine though."
+    },
+    {
+      "key": "story_030_win",
+      "ko": "내가 우승이야? 야, 나 진짜 해냈다!",
+      "en": "I won the tournament? I actually did it!"
+    },
+    {
+      "key": "story_champion",
+      "ko": "사단 병사부 4목 대회 우승!",
+      "en": "Division enlisted tournament champion!"
+    },
+    {
+      "key": "story_first_intro",
+      "ko": "이 게임의 프로라고 했지? 그런데 내가 이길 것 같아.",
+      "en": "You said you were a pro at this game? I think I can beat you."
+    },
+    {
+      "key": "story_first_lose",
+      "ko": "프로는 역시 다르네. 다음엔 내가 이긴다.",
+      "en": "A pro really is different. Next time, I win."
+    },
+    {
+      "key": "story_first_win",
+      "ko": "프로라는 말, 거짓말이었나?",
+      "en": "Was that pro story just a bluff?"
+    },
+    {
+      "key": "story_opponent_001",
+      "ko": "훈련병 강민재",
+      "en": "Recruit Kang Min-jae"
+    },
+    {
+      "key": "story_opponent_002",
+      "ko": "이병 문시온",
+      "en": "Pvt. Moon Si-on"
+    },
+    {
+      "key": "story_opponent_003",
+      "ko": "일병 오준호",
+      "en": "Pfc. Oh Jun-ho"
+    },
+    {
+      "key": "story_opponent_004",
+      "ko": "상병 정한결",
+      "en": "Cpl. Jung Han-gyeol"
+    },
+    {
+      "key": "story_opponent_005",
+      "ko": "분대장 남기석",
+      "en": "Squad Leader Nam Gi-seok"
+    },
+    {
+      "key": "story_opponent_006",
+      "ko": "하사 최건우",
+      "en": "Staff Sgt. Choi Geon-woo"
+    },
+    {
+      "key": "story_opponent_007",
+      "ko": "공군 중사 한유진",
+      "en": "Air Force Tech Sgt. Han Yu-jin"
+    },
+    {
+      "key": "story_opponent_008",
+      "ko": "상사 박정민",
+      "en": "Master Sgt. Park Jeong-min"
+    },
+    {
+      "key": "story_opponent_009",
+      "ko": "원사 한태식",
+      "en": "Sgt. Major Han Tae-sik"
+    },
+    {
+      "key": "story_opponent_010",
+      "ko": "준위 배성훈",
+      "en": "Warrant Officer Bae Seong-hun"
+    },
+    {
+      "key": "story_opponent_011",
+      "ko": "소위 김준서",
+      "en": "2nd Lt. Kim Jun-seo"
+    },
+    {
+      "key": "story_opponent_012",
+      "ko": "소대장 서지훈",
+      "en": "Platoon Cmdr. Seo Ji-hoon"
+    },
+    {
+      "key": "story_opponent_013",
+      "ko": "중대장 장태오",
+      "en": "Company Cmdr. Jang Tae-o"
+    },
+    {
+      "key": "story_opponent_014",
+      "ko": "중대장 장태오",
+      "en": "Company Cmdr. Jang Tae-o"
+    },
+    {
+      "key": "story_opponent_015",
+      "ko": "작전참모 서강현",
+      "en": "Operations Officer Seo Gang-hyeon"
+    },
+    {
+      "key": "story_opponent_016",
+      "ko": "작전참모 서강현",
+      "en": "Operations Officer Seo Gang-hyeon"
+    },
+    {
+      "key": "story_opponent_017",
+      "ko": "대대장 이도현",
+      "en": "Battalion Cmdr. Lee Do-hyeon"
+    },
+    {
+      "key": "story_opponent_018",
+      "ko": "대대장 이도현",
+      "en": "Battalion Cmdr. Lee Do-hyeon"
+    },
+    {
+      "key": "story_opponent_019",
+      "ko": "연대장 백승우",
+      "en": "Regiment Cmdr. Baek Seung-woo"
+    },
+    {
+      "key": "story_opponent_020",
+      "ko": "연대장 백승우",
+      "en": "Regiment Cmdr. Baek Seung-woo"
+    },
+    {
+      "key": "story_opponent_021",
+      "ko": "부사단장 임재훈",
+      "en": "Deputy Division Cmdr. Lim Jae-hoon"
+    },
+    {
+      "key": "story_opponent_022",
+      "ko": "부사단장 임재훈",
+      "en": "Deputy Division Cmdr. Lim Jae-hoon"
+    },
+    {
+      "key": "story_opponent_023",
+      "ko": "사단장 윤정호",
+      "en": "Division Cmdr. Yoon Jeong-ho"
+    },
+    {
+      "key": "story_opponent_024",
+      "ko": "사단장 윤정호",
+      "en": "Division Cmdr. Yoon Jeong-ho"
+    },
+    {
+      "key": "story_opponent_025",
+      "ko": "64강 · 이병 문시온",
+      "en": "Round of 64 · Pvt. Moon Si-on"
+    },
+    {
+      "key": "story_opponent_026",
+      "ko": "32강 · 일병 오준호",
+      "en": "Round of 32 · Pfc. Oh Jun-ho"
+    },
+    {
+      "key": "story_opponent_027",
+      "ko": "16강 · 상병 정한결",
+      "en": "Round of 16 · Cpl. Jung Han-gyeol"
+    },
+    {
+      "key": "story_opponent_028",
+      "ko": "8강 · 분대장 남기석",
+      "en": "Quarterfinal · Squad Leader Nam Gi-seok"
+    },
+    {
+      "key": "story_opponent_029",
+      "ko": "4강 · 일병 조은찬",
+      "en": "Semifinal · Pfc. Jo Eun-chan"
+    },
+    {
+      "key": "story_opponent_030",
+      "ko": "결승 · 이병 강민재",
+      "en": "Final · Pvt. Kang Min-jae"
+    },
+    {
+      "key": "story_premise",
+      "ko": "사회에서는 4목 프로, 오늘부터는 훈련병.",
+      "en": "A four-in-a-row pro in civilian life, a recruit today."
+    },
+    {
+      "key": "story_stage_desc_001",
+      "ko": "프로 출신 입대자라는 소문을 듣고 동기가 도전한다.",
+      "en": "A fellow recruit challenges you after hearing you were a pro."
+    },
+    {
+      "key": "story_stage_desc_002",
+      "ko": "훈련을 마치고 이병이 된 당신. 부대에도 프로 소문이 퍼졌다.",
+      "en": "Training is over. Word of your pro career spreads through the unit."
+    },
+    {
+      "key": "story_stage_desc_003",
+      "ko": "오준호와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Oh Jun-ho. Learn each other's style."
+    },
+    {
+      "key": "story_stage_desc_004",
+      "ko": "정한결와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Jung Han-gyeol. Learn each other's style."
+    },
+    {
+      "key": "story_stage_desc_005",
+      "ko": "병장 분대장 남기석과의 부대 대국. 느긋한 표정 뒤의 수를 읽는다.",
+      "en": "Play Sergeant Nam Gi-seok, the squad leader. Read the moves behind his relaxed smile."
+    },
+    {
+      "key": "story_stage_desc_006",
+      "ko": "최건우와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Choi Geon-woo. Learn each other's style."
+    },
+    {
+      "key": "story_stage_desc_007",
+      "ko": "한유진와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Han Yu-jin. Learn each other's style."
+    },
+    {
+      "key": "story_stage_desc_008",
+      "ko": "박정민와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Park Jeong-min. Learn each other's style."
+    },
+    {
+      "key": "story_stage_desc_009",
+      "ko": "한태식와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Han Tae-sik. Learn each other's style."
+    },
+    {
+      "key": "story_stage_desc_010",
+      "ko": "배성훈와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Bae Seong-hun. Learn each other's style."
+    },
+    {
+      "key": "story_stage_desc_011",
+      "ko": "김준서와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Kim Jun-seo. Learn each other's style."
+    },
+    {
+      "key": "story_stage_desc_012",
+      "ko": "서지훈와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Seo Ji-hoon. Learn each other's style."
+    },
+    {
+      "key": "story_stage_desc_013",
+      "ko": "장태오와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Jang Tae-o. Learn each other's style."
+    },
+    {
+      "key": "story_stage_desc_014",
+      "ko": "장태오와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Jang Tae-o. Learn each other's style."
+    },
+    {
+      "key": "story_stage_desc_015",
+      "ko": "서강현와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Seo Gang-hyeon. Learn each other's style."
+    },
+    {
+      "key": "story_stage_desc_016",
+      "ko": "서강현와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Seo Gang-hyeon. Learn each other's style."
+    },
+    {
+      "key": "story_stage_desc_017",
+      "ko": "이도현와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Lee Do-hyeon. Learn each other's style."
+    },
+    {
+      "key": "story_stage_desc_018",
+      "ko": "이도현와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Lee Do-hyeon. Learn each other's style."
+    },
+    {
+      "key": "story_stage_desc_019",
+      "ko": "백승우와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Baek Seung-woo. Learn each other's style."
+    },
+    {
+      "key": "story_stage_desc_020",
+      "ko": "백승우와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Baek Seung-woo. Learn each other's style."
+    },
+    {
+      "key": "story_stage_desc_021",
+      "ko": "임재훈와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Lim Jae-hoon. Learn each other's style."
+    },
+    {
+      "key": "story_stage_desc_022",
+      "ko": "임재훈와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Lim Jae-hoon. Learn each other's style."
+    },
+    {
+      "key": "story_stage_desc_023",
+      "ko": "윤정호와의 부대 대국. 한 수씩 서로의 기풍을 읽는다.",
+      "en": "A friendly match with Yoon Jeong-ho. Learn each other's style."
+    },
+    {
+      "key": "story_stage_desc_024",
+      "ko": "사단장과 두 번째 대국. 마지막 수까지 집중하자.",
+      "en": "Your second game with the division commander. Focus to the last move."
+    },
+    {
+      "key": "story_stage_desc_025",
+      "ko": "사단 병사부 64강. 다시 만난 상대와 실력으로 겨룬다.",
+      "en": "The enlisted tournament: Round of 64. Let your moves speak."
+    },
+    {
+      "key": "story_stage_desc_026",
+      "ko": "사단 병사부 32강. 다시 만난 상대와 실력으로 겨룬다.",
+      "en": "The enlisted tournament: Round of 32. Let your moves speak."
+    },
+    {
+      "key": "story_stage_desc_027",
+      "ko": "사단 병사부 16강. 다시 만난 상대와 실력으로 겨룬다.",
+      "en": "The enlisted tournament: Round of 16. Let your moves speak."
+    },
+    {
+      "key": "story_stage_desc_028",
+      "ko": "사단 병사부 8강. 다시 만난 상대와 실력으로 겨룬다.",
+      "en": "The enlisted tournament: Quarterfinal. Let your moves speak."
+    },
+    {
+      "key": "story_stage_desc_029",
+      "ko": "사단 병사부 4강. 다시 만난 상대와 실력으로 겨룬다.",
+      "en": "The enlisted tournament: Semifinal. Let your moves speak."
+    },
+    {
+      "key": "story_stage_desc_030",
+      "ko": "사단 병사부 결승. 다시 만난 상대와 실력으로 겨룬다.",
+      "en": "The enlisted tournament: Final. Let your moves speak."
+    },
+    {
+      "key": "turn_finished",
+      "ko": "대국 종료",
+      "en": "Game over"
+    },
+    {
+      "key": "turn_thinking",
+      "ko": "다음 수를 살펴보는 중…",
+      "en": "Thinking…"
+    },
+    {
+      "key": "turn_timeout_placed",
+      "ko": "시간이 끝나 {0}열에 자동으로 놓았어요.",
+      "en": "Time is up. Placed in column {0}."
+    },
+    {
+      "key": "turn_timer_seconds",
+      "ko": "{0}초",
+      "en": "{0}s"
+    },
+    {
+      "key": "ui_ai_turn",
+      "ko": "AI가 생각하고 있어요",
+      "en": "The AI is thinking"
+    },
+    {
+      "key": "ui_cancel",
+      "ko": "취소",
+      "en": "Cancel"
+    },
+    {
+      "key": "ui_close",
+      "ko": "닫기",
+      "en": "Close"
+    },
+    {
+      "key": "ui_continue",
+      "ko": "이어하기",
+      "en": "Continue"
+    },
+    {
+      "key": "ui_help",
+      "ko": "도움말",
+      "en": "Help"
+    },
+    {
+      "key": "ui_lobby",
+      "ko": "로비로",
+      "en": "Lobby"
+    },
+    {
+      "key": "ui_next",
+      "ko": "다음 단계",
+      "en": "Next stage"
+    },
+    {
+      "key": "ui_next_page",
+      "ko": "다음",
+      "en": "Next"
+    },
+    {
+      "key": "ui_pause",
+      "ko": "쉼",
+      "en": "Pause"
+    },
+    {
+      "key": "ui_player_turn",
+      "ko": "내 차례",
+      "en": "Your turn"
+    },
+    {
+      "key": "ui_previous_page",
+      "ko": "이전",
+      "en": "Back"
+    },
+    {
+      "key": "ui_retry",
+      "ko": "다시하기",
+      "en": "Restart"
+    },
+    {
+      "key": "ui_settings",
+      "ko": "설정",
+      "en": "Settings"
+    },
+    {
+      "key": "ui_start",
+      "ko": "시작하기",
+      "en": "Start"
+    },
+    {
+      "key": "undo",
+      "ko": "되돌리기",
+      "en": "Undo"
+    },
+    {
+      "key": "undo_done",
+      "ko": "이전 내 차례로 돌아왔어요.",
+      "en": "Back to your previous turn."
+    },
+    {
+      "key": "undo_unavailable",
+      "ko": "지금은 되돌릴 수 없어요.",
+      "en": "You cannot undo right now."
+    },
+    {
+      "key": "web_canvas_label",
+      "ko": "이겨도 됩니까? 사목 게임",
+      "en": "Permission to Win — four-in-a-row game"
+    },
+    {
+      "key": "web_error",
+      "ko": "게임을 불러올 수 없어요. 새로고침해 주세요.",
+      "en": "Could not load the game. Please reload."
+    },
+    {
+      "key": "web_loading",
+      "ko": "게임을 불러오는 중…",
+      "en": "Loading game…"
+    }
+  ]
+}

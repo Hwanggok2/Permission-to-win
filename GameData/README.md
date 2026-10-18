@@ -1,5 +1,9 @@
 # 이겨도 됩니까? — MVP 데이터
 
+**2026-10-18 현재 원본:** 30스테이지·502문자열·광고·멀티 설정 16개. 사용자 확정에 따라 광고 설정을 최초 제외 0판·매 1판·시간 간격 0초로 변경하고 광고 제거 구매 안내 한영 12키를 추가했다. 스토리는 정상 완료 매판, 멀티는 정상 대국 이후 방에서 나가 로비로 돌아가는 경계에서 최대 1회가 대상이다. 기존 490문자열과 스테이지·멀티 설정·기존 셀 스타일은 보존했다. exporter 일치·47개 자동 검사 통과. [이번 변경·보존·검증 기록](Validation/ad-offer-20261018/README.md).
+
+`Multiplayer` 시트 → `Generated/multiplayer.json`은 서버가 직접 읽는다. Unity에는 기존 세 JSON만 복사한다. 이번 데이터 작업은 Client 파일을 수정하지 않았으며 런타임 적용·광고 SDK·구매 동작 검증은 클라이언트 담당이다. 앞선 2~30단계 대사 정리의 [수정/보존 증거](../Client/Evidence/multiplayer-20261017/excel-preservation.json)와 [멀티 계약](../Docs/Management/MULTIPLAYER-CONTRACT.md)은 별도 기록이다.
+
 2026-10-16 제목 확정: **이겨도 됩니까? / Permission to Win**. 제목·웹 접근성 문구 4키를 Excel에서 갱신했다. [적용 기록](../Docs/Design/GAME-TITLE.md). 아래 4목 / Four in a Row 표기는 이전 표시명 변경 이력이다.
 
 현재 기준(2026-10-15): **부대 24단계 + 병사 대회 6단계, 캐릭터 19명, ko/en 문자열 418개**다. 사용자가 이 기획 세션의 Client/GameData 수정과 Unity 적용·검증을 승인했다. [TOURNAMENT-CONTRACT.md](TOURNAMENT-CONTRACT.md)가 단계 배치와 CharacterId·인물별 대사 계약이다. 추가 피드백으로 초반 시작판 6개와 AI 수치를 완화했고 [DIFFICULTY-CONTRACT.md](DIFFICULTY-CONTRACT.md)에 현재 수치를 기록했다. 문자열·별점·진행 저장 의미는 보존한다. exporter `--check`, Python 45개, Unity 코어 25개 검사 통과. UI와 그림의 직전 검증은 [적용 기록](../Docs/Design/PIXEL-INTEGRATION.md)에 구분한다.
@@ -16,20 +20,21 @@
 
 | 파일 | 역할 |
 | --- | --- |
-| [GameData_MVP.xlsx](C:/Github/StageGame/GameData/GameData_MVP.xlsx) | 유일한 콘텐츠 원본. `Stages`, `AdConfig`, `Strings` 3개 시트 |
+| [GameData_MVP.xlsx](C:/Github/StageGame/GameData/GameData_MVP.xlsx) | 유일한 콘텐츠 원본. `Stages`, `AdConfig`, `Strings`, `Multiplayer` 4개 시트 |
 | [FORMAT.md](C:/Github/StageGame/GameData/FORMAT.md) | SimpleGame 관례 조사, 차이점, 실제 v1 필드 매핑과 검증 규칙 |
 | [export_data.py](C:/Github/StageGame/GameData/export_data.py) | Excel 읽기, 전체 검사, 재현 가능한 JSON 생성, `--check` |
 | [requirements.txt](C:/Github/StageGame/GameData/requirements.txt) | 기존 설치를 사용한 읽기 라이브러리 `openpyxl==3.1.5` |
-| [test_export_data.py](C:/Github/StageGame/GameData/test_export_data.py) | Python 자동 검증 45개 |
+| [test_export_data.py](C:/Github/StageGame/GameData/test_export_data.py) | Python 자동 검증 47개 |
 | [audit_openings.py](C:/Github/StageGame/GameData/audit_openings.py) | 휴리스틱 없이 제한 깊이 승패를 분석하는 독립 bitboard 검사 |
 | [Validation](C:/Github/StageGame/GameData/Validation/README.md) | QA 지적 6개 국면 수정 전후 수순·보존 검사·화면·재현 스크립트 |
 | [Generated/stages.json](C:/Github/StageGame/GameData/Generated/stages.json) | 기존 30개 국면·점진적 AI 설정과 계급 UI 참조 |
-| [Generated/ads.json](C:/Github/StageGame/GameData/Generated/ads.json) | 최초 3판 제외, 이후 2판 AND 90초, 힌트 1회/판 |
-| [Generated/strings.json](C:/Github/StageGame/GameData/Generated/strings.json) | 제목 30개와 계급·설명·대사·UI 문구 239개, 각각 ko/en |
+| [Generated/ads.json](C:/Github/StageGame/GameData/Generated/ads.json) | 최초 제외 0판·매 1판·시간 간격 0초, 싱글 힌트 1회/판 |
+| [Generated/strings.json](C:/Github/StageGame/GameData/Generated/strings.json) | 계급·설명·대사·UI 문구 총 502개, 각각 ko/en |
+| [Generated/multiplayer.json](C:/Github/StageGame/GameData/Generated/multiplayer.json) | 서버가 읽는 시작 레이팅·Elo·매칭·시간 설정 16개 |
 
 소량의 데이터이며 제목 참조와 광고 설정을 한 번에 검증해야 하므로 원본 파일은 하나로 묶었다. 4행 메타 구조는 SimpleGame을 참고했지만 콘텐츠·코드는 새로 작성했다. Excel에는 enum이나 텍스트로 변환한 숫자를 넣지 않았으며, `OpeningMoves`는 열 수순을 표현하는 텍스트다.
 
-Excel을 수정한 뒤 exporter를 실행한다. JSON을 직접 고치지 않는다. export 성공 뒤 클라이언트 담당이 **세 JSON을 함께** `Client/Assets/StageGame/Resources/GameData/`에 복사하고 런타임 검증을 실행한다. 이번 변경은 사용자 승인으로 Client 세션이 원본과 소비자를 함께 수정했다.
+Excel을 수정한 뒤 exporter를 실행한다. JSON을 직접 고치지 않는다. export 성공 뒤 클라이언트 담당이 **세 JSON을 함께** `Client/Assets/StageGame/Resources/GameData/`에 복사하고 런타임 검증을 실행한다. 이번 데이터 변경의 Client 복사·런타임 적용은 총괄이 별도로 진행한다.
 
 ## 실행
 
@@ -44,7 +49,7 @@ $stagePython = 'C:\Users\JW\.cache\codex-runtimes\codex-primary-runtime\dependen
 
 다른 환경은 Python 3.10 이상과 requirements에 고정한 openpyxl 버전을 준비한 후 같은 스크립트를 실행한다. 설치된 Python을 사용하면 명령의 실행 파일만 바꾼다. `--source <xlsx경로>`는 검사할 원본을 바꿀 수 있지만 출력 디렉터리는 항상 스크립트 옆 `GameData/Generated/`다. `--check`는 쓰지 않고 원본을 검증한 후 현재 JSON과 바이트 단위로 비교한다. 누락·오래된 JSON은 종료 코드 1이다.
 
-모든 원본 검증을 마친 후 새 파일 3개와 이전 파일 백업을 임시 경로에 준비하고 파일별로 교체한다. 검증 실패 시 쓰지 않으며, 교체 중 처리 가능한 예외가 나면 바뀐 파일의 이전 내용 또는 원래의 부재 상태를 복구한다. 복구 실패 시 `Generated/.export-incomplete`와 이 파일이 가리키는 `.export-*` 백업을 보존하고 `--check`와 재export를 거부한다. 백업을 확인해 이전 묶음을 복원·대조한 뒤 표시를 제거하고 exporter와 `--check`를 다시 실행한다. 프로세스 강제 종료·전원 손실·동시 읽기까지 묶음 원자성을 보장하지 않으므로 배포용 복사 전에 `--check`가 성공해야 한다.
+모든 원본 검증을 마친 후 새 파일 4개와 이전 파일 백업을 임시 경로에 준비하고 파일별로 교체한다. 검증 실패 시 쓰지 않으며, 교체 중 처리 가능한 예외가 나면 바뀐 파일의 이전 내용 또는 원래의 부재 상태를 복구한다. 복구 실패 시 `Generated/.export-incomplete`와 이 파일이 가리키는 `.export-*` 백업을 보존하고 `--check`와 재export를 거부한다. 백업을 확인해 이전 묶음을 복원·대조한 뒤 표시를 제거하고 exporter와 `--check`를 다시 실행한다. 프로세스 강제 종료·전원 손실·동시 읽기까지 묶음 원자성을 보장하지 않으므로 배포용 복사 전에 `--check`가 성공해야 한다.
 
 ## 콘텐츠 의도와 증거 수준
 

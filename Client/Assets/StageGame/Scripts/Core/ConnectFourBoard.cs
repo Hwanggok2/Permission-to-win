@@ -11,6 +11,9 @@ namespace StageGame
         readonly int[] cells = new int[Width * Height];
         readonly int[] heights = new int[Width];
         readonly List<int> winningCells = new List<int>();
+        readonly int[] lastMoves = { -1, -1 }, lastMoveNumbers = { 0, 0 };
+        public int LastMoveFor(int player) => lastMoves[player == 1 ? 0 : 1];
+        public int LastMoveNumberFor(int player) => lastMoveNumbers[player == 1 ? 0 : 1];
         public int CurrentPlayer { get; private set; }
         public int Winner { get; private set; }
         public int MoveCount { get; private set; }
@@ -37,6 +40,8 @@ namespace StageGame
             cells[row * Width + column] = player;
             LastMove = row * Width + column;
             MoveCount++;
+            lastMoves[player == 1 ? 0 : 1] = LastMove;
+            lastMoveNumbers[player == 1 ? 0 : 1] = MoveCount;
             CheckLine(column, row, 1, 0, player);
             CheckLine(column, row, 0, 1, player);
             CheckLine(column, row, 1, 1, player);
@@ -76,6 +81,8 @@ namespace StageGame
             copy.Winner = Winner;
             copy.MoveCount = MoveCount;
             copy.LastMove = LastMove;
+            Array.Copy(lastMoves, copy.lastMoves, 2);
+            Array.Copy(lastMoveNumbers, copy.lastMoveNumbers, 2);
             copy.winningCells.AddRange(winningCells);
             return copy;
         }

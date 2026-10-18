@@ -1,0 +1,59 @@
+{
+  "candidateCount": 514,
+  "totalBytes": 95313342,
+  "byRoot": {
+    "Server": 39,
+    "Client": 414,
+    "Docs": 31,
+    "GameData": 24,
+    "Overview": 3,
+    "Licence": 2,
+    "AGENTS.md": 1
+  },
+  "largest": [
+    [
+      1570047,
+      "Client/Evidence/portrait-occlusion-20261018/screens/stage-25-C02-thinking-1080.png"
+    ],
+    [
+      1570005,
+      "Client/Evidence/portrait-occlusion-20261018/screens/stage-25-C02-intro-1080.png"
+    ],
+    [
+      1567359,
+      "Client/Evidence/portrait-occlusion-20261018/screens/stage-25-C02-defeat-1080.png"
+    ],
+    [
+      1566405,
+      "Client/Evidence/portrait-occlusion-20261018/screens/stage-02-C02-intro-1080.png"
+    ],
+    [
+      1566361,
+      "Client/Evidence/portrait-occlusion-20261018/screens/stage-02-C02-thinking-1080.png"
+    ],
+    [
+      1563791,
+      "Client/Evidence/portrait-occlusion-20261018/screens/stage-02-C02-defeat-1080.png"
+    ],
+    [
+      1547387,
+      "Client/Evidence/opening-ranks-20261015/regression/en-1080x1920-match-help.png"
+    ],
+    [
+      1543742,
+      "Client/Evidence/opening-ranks-20261015/regression/ko-1080x1920-match-help.png"
+    ],
+    [
+      1373732,
+      "Docs/Design/ad-removal-ui-20261018/assets/Barracks.png"
+    ],
+    [
+      1212655,
+      "Docs/Design/assets/characters-occlusion-20261018-v7/C02-occlusion-v7.png"
+    ]
+  ],
+  "blockedPaths": [],
+  "credentialPatternHits": [],
+  "builtSourceCount": 598,
+  "sourceChangesSinceBuild": []
+}

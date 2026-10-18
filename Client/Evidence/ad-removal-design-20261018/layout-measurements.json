@@ -1,0 +1,346 @@
+[
+  {
+    "language": "ko",
+    "width": 360,
+    "height": 640,
+    "buttons": [
+      {
+        "bottom": 154.30208587646484,
+        "height": 44,
+        "text": "×",
+        "top": 110.30208587646484,
+        "width": 44
+      },
+      {
+        "bottom": 463.6979370117187,
+        "height": 52,
+        "text": "₩3,900 · 광고 제거",
+        "top": 411.6979370117187,
+        "width": 288
+      },
+      {
+        "bottom": 517.6979370117188,
+        "height": 44,
+        "text": "지금은 괜찮아요",
+        "top": 473.6979370117187,
+        "width": 196
+      },
+      {
+        "bottom": 517.6979370117188,
+        "height": 44,
+        "text": "구매 복원",
+        "top": 473.6979370117187,
+        "width": 84
+      }
+    ],
+    "card": {
+      "height": 435.3958435058594,
+      "width": 336,
+      "x": 12,
+      "y": 102.30208587646484
+    },
+    "clientHeight": 431,
+    "scrollHeight": 431
+  },
+  {
+    "language": "ko",
+    "width": 390,
+    "height": 844,
+    "buttons": [
+      {
+        "bottom": 256.3020935058594,
+        "height": 44,
+        "text": "×",
+        "top": 212.30209350585935,
+        "width": 44
+      },
+      {
+        "bottom": 565.6979370117188,
+        "height": 52,
+        "text": "₩3,900 · 광고 제거",
+        "top": 513.6979370117188,
+        "width": 302
+      },
+      {
+        "bottom": 619.6979370117188,
+        "height": 44,
+        "text": "지금은 괜찮아요",
+        "top": 575.6979370117188,
+        "width": 210
+      },
+      {
+        "bottom": 619.6979370117188,
+        "height": 44,
+        "text": "구매 복원",
+        "top": 575.6979370117188,
+        "width": 84
+      }
+    ],
+    "card": {
+      "height": 435.3958435058594,
+      "width": 350,
+      "x": 20,
+      "y": 204.30209350585935
+    },
+    "clientHeight": 431,
+    "scrollHeight": 431
+  },
+  {
+    "language": "ko",
+    "width": 320,
+    "height": 568,
+    "buttons": [
+      {
+        "bottom": 122.5,
+        "height": 44,
+        "text": "×",
+        "top": 78.5,
+        "width": 44
+      },
+      {
+        "bottom": 427.5,
+        "height": 52,
+        "text": "₩3,900 · 광고 제거",
+        "top": 375.5,
+        "width": 260
+      },
+      {
+        "bottom": 481.5,
+        "height": 44,
+        "text": "지금은 괜찮아요",
+        "top": 437.5,
+        "width": 178
+      },
+      {
+        "bottom": 481.5,
+        "height": 44,
+        "text": "구매 복원",
+        "top": 437.5,
+        "width": 80
+      }
+    ],
+    "card": {
+      "height": 427,
+      "width": 296,
+      "x": 12,
+      "y": 70.5
+    },
+    "clientHeight": 423,
+    "scrollHeight": 423
+  },
+  {
+    "language": "ko",
+    "width": 320,
+    "height": 403,
+    "buttons": [
+      {
+        "bottom": 115.66667175292967,
+        "height": 44,
+        "text": "×",
+        "top": 71.66667175292969,
+        "width": 44
+      },
+      {
+        "bottom": 282.6666717529297,
+        "height": 48,
+        "text": "₩3,900 · 광고 제거",
+        "top": 234.6666717529297,
+        "width": 276
+      },
+      {
+        "bottom": 330.66668701171875,
+        "height": 44,
+        "text": "지금은 괜찮아요",
+        "top": 286.66668701171875,
+        "width": 194
+      },
+      {
+        "bottom": 330.66668701171875,
+        "height": 44,
+        "text": "구매 복원",
+        "top": 286.66668701171875,
+        "width": 80
+      }
+    ],
+    "card": {
+      "height": 278,
+      "width": 304,
+      "x": 8,
+      "y": 66.66667175292969
+    },
+    "clientHeight": 274,
+    "scrollHeight": 274
+  },
+  {
+    "language": "en",
+    "width": 360,
+    "height": 640,
+    "buttons": [
+      {
+        "bottom": 151.30208587646484,
+        "height": 44,
+        "text": "×",
+        "top": 107.30208587646484,
+        "width": 44
+      },
+      {
+        "bottom": 466.6979370117187,
+        "height": 52,
+        "text": "₩3,900 · Remove ads",
+        "top": 414.6979370117187,
+        "width": 288
+      },
+      {
+        "bottom": 520.6979370117188,
+        "height": 44,
+        "text": "Not now",
+        "top": 476.6979370117187,
+        "width": 196
+      },
+      {
+        "bottom": 520.6979370117188,
+        "height": 44,
+        "text": "Restore",
+        "top": 476.6979370117187,
+        "width": 84
+      }
+    ],
+    "card": {
+      "height": 441.3958435058594,
+      "width": 336,
+      "x": 12,
+      "y": 99.30208587646484
+    },
+    "clientHeight": 437,
+    "scrollHeight": 437
+  },
+  {
+    "language": "en",
+    "width": 390,
+    "height": 844,
+    "buttons": [
+      {
+        "bottom": 256.3020935058594,
+        "height": 44,
+        "text": "×",
+        "top": 212.30209350585935,
+        "width": 44
+      },
+      {
+        "bottom": 565.6979370117188,
+        "height": 52,
+        "text": "₩3,900 · Remove ads",
+        "top": 513.6979370117188,
+        "width": 302
+      },
+      {
+        "bottom": 619.6979370117188,
+        "height": 44,
+        "text": "Not now",
+        "top": 575.6979370117188,
+        "width": 210
+      },
+      {
+        "bottom": 619.6979370117188,
+        "height": 44,
+        "text": "Restore",
+        "top": 575.6979370117188,
+        "width": 84
+      }
+    ],
+    "card": {
+      "height": 435.3958435058594,
+      "width": 350,
+      "x": 20,
+      "y": 204.30209350585935
+    },
+    "clientHeight": 431,
+    "scrollHeight": 431
+  },
+  {
+    "language": "en",
+    "width": 320,
+    "height": 568,
+    "buttons": [
+      {
+        "bottom": 119.5,
+        "height": 44,
+        "text": "×",
+        "top": 75.5,
+        "width": 44
+      },
+      {
+        "bottom": 430.5,
+        "height": 52,
+        "text": "₩3,900 · Remove ads",
+        "top": 378.5,
+        "width": 260
+      },
+      {
+        "bottom": 484.5,
+        "height": 44,
+        "text": "Not now",
+        "top": 440.5,
+        "width": 178
+      },
+      {
+        "bottom": 484.5,
+        "height": 44,
+        "text": "Restore",
+        "top": 440.5,
+        "width": 80
+      }
+    ],
+    "card": {
+      "height": 433,
+      "width": 296,
+      "x": 12,
+      "y": 67.5
+    },
+    "clientHeight": 429,
+    "scrollHeight": 429
+  },
+  {
+    "language": "en",
+    "width": 320,
+    "height": 403,
+    "buttons": [
+      {
+        "bottom": 115.66667175292967,
+        "height": 44,
+        "text": "×",
+        "top": 71.66667175292969,
+        "width": 44
+      },
+      {
+        "bottom": 282.6666717529297,
+        "height": 48,
+        "text": "₩3,900 · Remove ads",
+        "top": 234.6666717529297,
+        "width": 276
+      },
+      {
+        "bottom": 330.66668701171875,
+        "height": 44,
+        "text": "Not now",
+        "top": 286.66668701171875,
+        "width": 194
+      },
+      {
+        "bottom": 330.66668701171875,
+        "height": 44,
+        "text": "Restore",
+        "top": 286.66668701171875,
+        "width": 80
+      }
+    ],
+    "card": {
+      "height": 278,
+      "width": 304,
+      "x": 8,
+      "y": 66.66667175292969
+    },
+    "clientHeight": 274,
+    "scrollHeight": 274
+  }
+]

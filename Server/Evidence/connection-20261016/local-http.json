@@ -1,0 +1,61 @@
+{
+  "checkedAt": "2026-10-16T00:48:54.157Z",
+  "baseUrl": "http://127.0.0.1:8787",
+  "checksPassed": 5,
+  "results": [
+    {
+      "path": "/healthz",
+      "method": "GET",
+      "origin": null,
+      "status": 200,
+      "body": {
+        "apiVersion": 1,
+        "status": "ok"
+      }
+    },
+    {
+      "path": "/v1/status",
+      "method": "GET",
+      "origin": null,
+      "status": 200,
+      "body": {
+        "apiVersion": 1,
+        "status": "ready",
+        "purchases": {
+          "enabled": false,
+          "reason": "PAYMENTS_NOT_CONFIGURED"
+        }
+      }
+    },
+    {
+      "path": "/v1/status",
+      "method": "POST",
+      "origin": null,
+      "status": 405,
+      "body": {
+        "apiVersion": 1,
+        "code": "METHOD_NOT_ALLOWED"
+      }
+    },
+    {
+      "path": "/v1/purchases/verify",
+      "method": "POST",
+      "origin": null,
+      "status": 404,
+      "body": {
+        "apiVersion": 1,
+        "code": "NOT_FOUND"
+      }
+    },
+    {
+      "path": "/v1/status",
+      "method": "GET",
+      "origin": "https://unapproved.example",
+      "status": 403,
+      "body": {
+        "apiVersion": 1,
+        "code": "ORIGIN_NOT_ALLOWED"
+      }
+    }
+  ]
+}

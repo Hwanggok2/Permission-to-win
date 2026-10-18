@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-17 16:22:10Z" end-time="2026-10-17 16:22:10Z" duration="0.2115441">
+  <test-suite type="TestSuite" id="1000" name="이겨도 됩니까_" fullname="이겨도 됩니까_" runstate="Runnable" testcasecount="143" result="Passed" start-time="2026-10-17 16:22:10Z" end-time="2026-10-17 16:22:10Z" duration="0.211544" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1171" name="StageGame.Tests.dll" fullname="C:/Github/StageGame/Client/Library/ScriptAssemblies/StageGame.Tests.dll" runstate="Runnable" testcasecount="143" result="Passed" start-time="2026-10-17 16:22:10Z" end-time="2026-10-17 16:22:10Z" duration="0.171408" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="6632" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1172" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="143" result="Passed" start-time="2026-10-17 16:22:10Z" end-time="2026-10-17 16:22:10Z" duration="0.170313" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1173" name="Tests" fullname="StageGame.Tests" runstate="Runnable" testcasecount="143" result="Passed" start-time="2026-10-17 16:22:10Z" end-time="2026-10-17 16:22:10Z" duration="0.169294" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1052" name="RankFlowTests" fullname="StageGame.Tests.RankFlowTests" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" testcasecount="63" result="Passed" start-time="2026-10-17 16:22:10Z" end-time="2026-10-17 16:22:10Z" duration="0.166203" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1054" name="LastOpponentHighlightResetsAndFollowsUndo" fullname="StageGame.Tests.RankFlowTests.LastOpponentHighlightResetsAndFollowsUndo" methodname="LastOpponentHighlightResetsAndFollowsUndo" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1681089027" result="Passed" start-time="2026-10-17 16:22:05Z" end-time="2026-10-17 16:22:09Z" duration="4.320418" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] opponent-last-move: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1055" name="MultiplayerHighlightClearsOnPlacementAndReturnsOnReply" fullname="StageGame.Tests.RankFlowTests.MultiplayerHighlightClearsOnPlacementAndReturnsOnReply" methodname="MultiplayerHighlightClearsOnPlacementAndReturnsOnReply" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1260939426" result="Passed" start-time="2026-10-17 16:22:09Z" end-time="2026-10-17 16:22:10Z" duration="1.491542" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Github/StageGame/Client/Evidence/last-move-clear-20261018/unity-results.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

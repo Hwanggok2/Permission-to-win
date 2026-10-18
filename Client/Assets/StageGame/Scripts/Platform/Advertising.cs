@@ -52,7 +52,7 @@ namespace StageGame
         {
             return progress.completedMatches > settings.interstitialGraceMatches &&
                 progress.completedMatches - progress.lastInterstitialMatch >= settings.interstitialEveryMatches &&
-                utcSeconds - progress.lastInterstitialUtc >= settings.interstitialCooldownSeconds;
+                (settings.interstitialCooldownSeconds==0 || utcSeconds - progress.lastInterstitialUtc >= settings.interstitialCooldownSeconds);
         }
     }
 

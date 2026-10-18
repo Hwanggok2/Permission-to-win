@@ -1,0 +1,38 @@
+[
+  {
+    "check": "card content keeps modal open",
+    "pass": true
+  },
+  {
+    "check": "X dismisses",
+    "pass": true
+  },
+  {
+    "check": "Escape dismisses",
+    "pass": true
+  },
+  {
+    "check": "secondary dismisses",
+    "pass": true
+  },
+  {
+    "check": "outside dismisses",
+    "pass": true
+  },
+  {
+    "check": "buy is preview only",
+    "pass": true
+  },
+  {
+    "check": "restore is preview only",
+    "pass": true
+  },
+  {
+    "check": "Tab wraps to close",
+    "pass": true
+  },
+  {
+    "check": "browser back dismisses",
+    "pass": true
+  }
+]

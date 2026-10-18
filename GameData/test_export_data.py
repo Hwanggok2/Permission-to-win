@@ -70,7 +70,7 @@ class ExportTests(unittest.TestCase):
         payloads = data.validate(self.tables)
         stages = payloads["stages.json"]["stages"]
         self.assertEqual(30, len(stages))
-        self.assertEqual(423, len(payloads["strings.json"]["strings"]))
+        self.assertEqual(502, len(payloads["strings.json"]["strings"]))
         for entry in payloads["strings.json"]["strings"]:
             self.assertEqual({"key", "ko", "en"}, set(entry))
         expected = {"id", "chapter", "titleKey", "aiDepth", "aiNodeBudget", "aiRandomPermille", "starter", "openingMoves",
@@ -90,6 +90,25 @@ class ExportTests(unittest.TestCase):
             with self.subTest(index=index, field=field):
                 self.tables = copy.deepcopy(self.original)
                 self.assert_invalid('Stages', index, field, value, message)
+
+    def test_multiplayer_required_unique_keys_and_bounds(self):
+        cases = [('missing', 'missing configuration key'), ('duplicate', 'duplicate'),
+                 ('unknown', 'unknown'), ('initial', 'initialRating'), ('fraction', 'eloK'),
+                 ('search', 'exceeds maximum'), ('rank', 'missing rank string')]
+        for case, message in cases:
+            with self.subTest(case=case):
+                tables = copy.deepcopy(self.original)
+                entries = {r['Key']: r for r in tables['Multiplayer']}
+                if case == 'missing': tables['Multiplayer'].pop()
+                elif case == 'duplicate': tables['Multiplayer'].append(copy.deepcopy(tables['Multiplayer'][0]))
+                elif case == 'unknown': tables['Multiplayer'][0]['Key'] = 'unsupported'
+                elif case == 'initial': entries['initialRating']['Value'] = 300
+                elif case == 'fraction': entries['eloK']['Value'] = 31.5
+                elif case == 'search':
+                    entries['searchStart']['Value'] = 300
+                    entries['searchMaximum']['Value'] = 100
+                elif case == 'rank': tables['Strings'] = [r for r in tables['Strings'] if r['SearchKey'] != 'mp_rank_20']
+                with self.assertRaisesRegex(data.ValidationError, message): data.validate(tables)
 
     def test_missing_presentation_references(self):
         for field in ('RankKey', 'DescriptionKey', 'AiIntroKey', 'AiWinKey', 'AiLoseKey'):
@@ -323,7 +342,21 @@ class ExportTests(unittest.TestCase):
         self.assert_invalid("Stages", 0, "VerificationNote", "승리 보장", "separately proven")
 
     def test_ads_contract_and_row_count(self):
-        self.assert_invalid("AdConfig", 0, "InterstitialGraceMatches", 0, "contract v1")
+        self.assertEqual({
+            "schemaVersion": 1, "interstitialGraceMatches": 0,
+            "interstitialEveryMatches": 1, "interstitialCooldownSeconds": 0,
+            "bannerLobby": True, "bannerResult": True, "rewardedHintsPerMatch": 1,
+        }, data.validate(self.tables)["ads.json"])
+        for field, value in [
+            ("InterstitialGraceMatches", 3), ("InterstitialEveryMatches", 2),
+            ("InterstitialCooldownSeconds", 90), ("InterstitialGraceMatches", 6),
+            ("InterstitialCooldownSeconds", 180), ("InterstitialGraceMatches", -1),
+            ("InterstitialEveryMatches", 0), ("InterstitialCooldownSeconds", True),
+            ("BannerLobby", False), ("BannerResult", False), ("RewardedHintsPerMatch", 2),
+        ]:
+            with self.subTest(field=field, value=value):
+                self.tables = copy.deepcopy(self.original)
+                self.assert_invalid("AdConfig", 0, field, value, "contract v1")
         self.tables = copy.deepcopy(self.original)
         self.tables["AdConfig"].append(copy.deepcopy(self.tables["AdConfig"][0]))
         with self.assertRaisesRegex(data.ValidationError, "exactly one"):
@@ -432,7 +465,7 @@ class ExportTests(unittest.TestCase):
         changed["stages.json"]["stages"][0]["titleKey"] = "stage_replaced"
         changed["strings.json"]["strings"].append({"key": "stage_replaced", "ko": "교체 시험"})
         actual_replace = data.os.replace
-        for fail_at in (1, 2, 3):
+        for fail_at in range(1, len(old) + 1):
             with self.subTest(fail_at=fail_at), tempfile.TemporaryDirectory(prefix=".test-", dir=data.GENERATED) as directory:
                 with patch.object(data, "GENERATED", Path(directory)):
                     data.write_outputs(old)
@@ -449,7 +482,7 @@ class ExportTests(unittest.TestCase):
                             data.write_outputs(changed)
                     self.assertEqual(before, {name: (Path(directory) / name).read_bytes() for name in old})
                     self.assertFalse((Path(directory) / data.INCOMPLETE_MARKER).exists())
-                    self.assertEqual(3, len(list(Path(directory).iterdir())))
+                    self.assertEqual(len(old), len(list(Path(directory).iterdir())))
 
     def test_failed_first_publication_restores_file_absence(self):
         payloads = data.validate(self.tables)

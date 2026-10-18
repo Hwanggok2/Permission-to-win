@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "interstitialGraceMatches": 3,
-  "interstitialEveryMatches": 2,
-  "interstitialCooldownSeconds": 90,
+  "interstitialGraceMatches": 0,
+  "interstitialEveryMatches": 1,
+  "interstitialCooldownSeconds": 0,
   "bannerLobby": true,
   "bannerResult": true,
   "rewardedHintsPerMatch": 1

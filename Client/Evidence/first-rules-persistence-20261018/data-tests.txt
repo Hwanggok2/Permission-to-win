@@ -1,0 +1,52 @@
+test_ads_contract_and_row_count (test_export_data.ExportTests.test_ads_contract_and_row_count) ... ok
+test_ai_dialogue_roles_and_stage_descriptions (test_export_data.ExportTests.test_ai_dialogue_roles_and_stage_descriptions) ... ok
+test_ai_settings_cannot_reverse_the_difficulty_curve (test_export_data.ExportTests.test_ai_settings_cannot_reverse_the_difficulty_curve) ... ok
+test_all_openings_have_independent_legal_nonterminal_prefixes (test_export_data.ExportTests.test_all_openings_have_independent_legal_nonterminal_prefixes) ... ok
+test_argument_indices_must_start_at_zero_and_have_no_gaps (test_export_data.ExportTests.test_argument_indices_must_start_at_zero_and_have_no_gaps) ... ok
+test_bad_translation_preserves_generated_bundle (test_export_data.ExportTests.test_bad_translation_preserves_generated_bundle) ... ok
+test_balance_preserves_stage_identity_with_empty_boards_and_ai_starts (test_export_data.ExportTests.test_balance_preserves_stage_identity_with_empty_boards_and_ai_starts) ... ok
+test_bitboard_matches_independent_whole_board_win_windows (test_export_data.ExportTests.test_bitboard_matches_independent_whole_board_win_windows) ... ok
+test_both_diagonal_directions_and_nonwin (test_export_data.ExportTests.test_both_diagonal_directions_and_nonwin) ... ok
+test_bounded_search_matches_unpruned_short_tree (test_export_data.ExportTests.test_bounded_search_matches_unpruned_short_tree) ... ok
+test_cell_types_blank_zero_and_finite (test_export_data.ExportTests.test_cell_types_blank_zero_and_finite) ... ok
+test_chapter_membership (test_export_data.ExportTests.test_chapter_membership) ... ok
+test_draw_prefix_and_draw_rejection (test_export_data.ExportTests.test_draw_prefix_and_draw_rejection) ... ok
+test_duplicate_and_blank_strings (test_export_data.ExportTests.test_duplicate_and_blank_strings) ... ok
+test_duplicate_stage (test_export_data.ExportTests.test_duplicate_stage) ... ok
+test_failed_first_publication_restores_file_absence (test_export_data.ExportTests.test_failed_first_publication_restores_file_absence) ... ok
+test_first_stage_story_roles_and_exact_user_copy (test_export_data.ExportTests.test_first_stage_story_roles_and_exact_user_copy) ... ok
+test_first_story_exception_is_limited_to_stage_one_and_correct_role (test_export_data.ExportTests.test_first_story_exception_is_limited_to_stage_one_and_correct_role) ... ok
+test_format_indices_allow_reordering_and_repetition (test_export_data.ExportTests.test_format_indices_allow_reordering_and_repetition) ... ok
+test_full_column_and_six_legal_stones (test_export_data.ExportTests.test_full_column_and_six_legal_stones) ... ok
+test_learning_motifs_and_difficulty_variety (test_export_data.ExportTests.test_learning_motifs_and_difficulty_variety) ... ok
+test_literal_braces_are_not_arguments (test_export_data.ExportTests.test_literal_braces_are_not_arguments) ... ok
+test_malformed_or_unsupported_format_is_rejected_in_either_language (test_export_data.ExportTests.test_malformed_or_unsupported_format_is_rejected_in_either_language) ... ok
+test_metadata_and_export_filter_without_saving_workbook (test_export_data.ExportTests.test_metadata_and_export_filter_without_saving_workbook) ... ok
+test_missing_english_column_metadata_is_rejected (test_export_data.ExportTests.test_missing_english_column_metadata_is_rejected) ... ok
+test_missing_english_is_rejected (test_export_data.ExportTests.test_missing_english_is_rejected) ... ok
+test_missing_presentation_references (test_export_data.ExportTests.test_missing_presentation_references) ... ok
+test_missing_stage (test_export_data.ExportTests.test_missing_stage) ... ok
+test_missing_string_reference (test_export_data.ExportTests.test_missing_string_reference) ... ok
+test_multiplayer_required_unique_keys_and_bounds (test_export_data.ExportTests.test_multiplayer_required_unique_keys_and_bounds) ... ok
+test_numeric_contract_boundaries (test_export_data.ExportTests.test_numeric_contract_boundaries) ... ok
+test_one_move_wins_for_either_side_are_rejected (test_export_data.ExportTests.test_one_move_wins_for_either_side_are_rejected) ... ok
+test_opening_grammar (test_export_data.ExportTests.test_opening_grammar) ... ok
+test_output_bytes_are_independent_of_row_order (test_export_data.ExportTests.test_output_bytes_are_independent_of_row_order) ... ok
+test_presentation_copy_is_one_line_without_arguments (test_export_data.ExportTests.test_presentation_copy_is_one_line_without_arguments) ... ok
+test_rank_and_star_boundaries (test_export_data.ExportTests.test_rank_and_star_boundaries) ... ok
+test_rating_profiles_and_oversight_are_validated (test_export_data.ExportTests.test_rating_profiles_and_oversight_are_validated) ... ok
+test_real_source_matches_exact_contract (test_export_data.ExportTests.test_real_source_matches_exact_contract) ... ok
+test_reject_unavoidable_next_reply_loss (test_export_data.ExportTests.test_reject_unavoidable_next_reply_loss) ... ok
+test_repeated_export_matches_and_bad_input_preserves_output (test_export_data.ExportTests.test_repeated_export_matches_and_bad_input_preserves_output) ... ok
+test_replace_failure_rolls_back_complete_bundle (test_export_data.ExportTests.test_replace_failure_rolls_back_complete_bundle) ... ok
+test_rollback_failure_retains_marker_backups_and_blocks_check (test_export_data.ExportTests.test_rollback_failure_retains_marker_backups_and_blocks_check) ... ok
+test_stars_require_bounded_half_steps (test_export_data.ExportTests.test_stars_require_bounded_half_steps) ... ok
+test_starter_validation (test_export_data.ExportTests.test_starter_validation) ... ok
+test_translation_argument_mismatch_is_rejected (test_export_data.ExportTests.test_translation_argument_mismatch_is_rejected) ... ok
+test_unproven_note_required (test_export_data.ExportTests.test_unproven_note_required) ... ok
+test_wins_and_moves_after_a_win_are_rejected (test_export_data.ExportTests.test_wins_and_moves_after_a_win_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 47 tests in 1.221s
+
+OK

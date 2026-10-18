@@ -1,0 +1,27 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "510A5A819A0DF0AE58D8AF012CF6A5E3C00ABE7CFEEB4AEE90192A7D971BFBF3",
+    "Path": "C:\\Github\\StageGame\\GameData\\Generated\\stages.json"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "B728FE38B216512E69507FBCEDE9775CC012F0E4D642F85A766B58EFC71D4950",
+    "Path": "C:\\Github\\StageGame\\GameData\\Generated\\multiplayer.json"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "510A5A819A0DF0AE58D8AF012CF6A5E3C00ABE7CFEEB4AEE90192A7D971BFBF3",
+    "Path": "C:\\Github\\StageGame\\Client\\Assets\\StageGame\\Resources\\GameData\\stages.json"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "EE4E9650C36BAA9474F4661167F794CC59DC690292C959E65D0E04305AC38E1C",
+    "Path": "C:\\Github\\StageGame\\Client\\Assets\\StageGame\\Resources\\GameData\\strings.json"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "D19F181FAF52DB28287BBED1B42291770DC3BF83D35E5CCA8AF4A6DCCE9E194A",
+    "Path": "C:\\Github\\StageGame\\Client\\Assets\\StageGame\\Resources\\GameData\\ads.json"
+  }
+]

@@ -34,7 +34,7 @@ namespace StageGame.Tests
             {
                 var path=AssetDatabase.GetAssetPath(p.intro);
                 int number=int.Parse(p.characterId.Substring(1));
-                string expected=p.characterId+(number==1?"-uniform-v4.png":number<=4?"-pixel-v6.png":"-pixel-v5.png");
+                string expected=p.characterId+(number==1?"-uniform-v4.png":number==2?"-occlusion-v7.png":number<=4?"-pixel-v6.png":"-pixel-v5.png");
                 foreach(var sprite in new[]{p.intro,p.thinking,p.defeat})
                     StringAssert.EndsWith(expected,AssetDatabase.GetAssetPath(sprite),"Every character/state must use the selected revision.");
                 var importer=(TextureImporter)AssetImporter.GetAtPath(path);
@@ -43,6 +43,34 @@ namespace StageGame.Tests
                 Assert.AreEqual(p.intro.rect.size,p.thinking.rect.size);Assert.AreEqual(p.intro.rect.size,p.defeat.rect.size);
             }
             yield return null;
+        }
+
+        [UnityTest] public IEnumerator CaptureOccludedChestPortrait()
+        {
+            const string directory="Evidence/portrait-occlusion-20261018/screens";
+            Assert.AreNotEqual(UnityEngine.Rendering.GraphicsDeviceType.Null,SystemInfo.graphicsDeviceType);
+            Progress.Data.unlockedStage=30;app.SetLanguage("ko");
+            foreach(int stage in new[]{1,24})
+            {
+                app.StartStage(stage);Call("CancelSearch");Set("busy",false);
+                yield return new WaitForSecondsRealtime(.9f);
+                var portrait=app.theme.Portrait("C02");
+                StringAssert.EndsWith("C02-occlusion-v7.png",AssetDatabase.GetAssetPath(portrait.thinking));
+                foreach(string state in new[]{"intro","thinking","defeat"})
+                {
+                    Set("board",new ConnectFourBoard());Set("characterThinking",state=="thinking");
+                    if(state=="defeat")
+                    {
+                        var win=new ConnectFourBoard();foreach(int col in new[]{0,6,1,6,2,5,3})win.TryDrop(col);
+                        Set("board",win);
+                    }
+                    Call("RefreshBoard");
+                    Assert.AreEqual(state=="intro"?portrait.intro:state=="thinking"?portrait.thinking:portrait.defeat,app.aiFace.sprite);
+                    string name="stage-"+(stage+1).ToString("D2")+"-C02-"+state;
+                    yield return Capture(name+"-1080",app,1080,1920,true,directory:directory);
+                    yield return Capture(name+"-390",app,390,844,true,directory:directory);
+                }
+            }
         }
 
         [UnityTest] public IEnumerator CaptureAllSelectedPixelPortraits()
