@@ -1,0 +1,42 @@
+(node:38984) ExperimentalWarning: Transform Types is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ every new player starts at 200 with the correct rank boundaries (1.4585ms)
+✔ Elo gap changes gains/losses; symmetric rounding and floor for decisive wins (0.184ms)
+✔ lower-rated player starts, tie uses random choice (0.5448ms)
+✔ closest candidate wins over wider acceptable candidates (0.505ms)
+✔ search expands using both players waiting time and caps at 400 (0.5488ms)
+✔ cancelled and disconnected queued players cannot be matched (0.2011ms)
+✔ friendly rating setting is visible before joining and checked atomically (0.668ms)
+✔ only the host may change the setting and invite cannot admit a third player (0.2756ms)
+✔ server validates turn, full column, bounds and stale sequence (0.8353ms)
+✔ rated friendly win changes both scores once; invalid replay does not settle twice (1.2758ms)
+✔ unrated friendly leaves both ratings and rated game counts untouched (0.5886ms)
+✔ rematch requires both requests and starts using updated ratings (0.8164ms)
+✔ leaving notifies the other player and prevents a solo rematch (0.7484ms)
+✔ leaving a live match is a server-settled loss (0.2608ms)
+✔ reconnect preserves board, identity, current turn and score (0.3775ms)
+✔ persistent store reload resumes an existing match (0.2623ms)
+✔ disconnect grace ends with departure; clock timeout ends with loss (0.8308ms)
+✔ long server interruption aborts without changing scores (0.1992ms)
+✔ expired invite removes the room; queue times out without a fake opponent (0.7038ms)
+✔ both disconnected players expire without awarding either side points (0.3535ms)
+✔ horizontal and both diagonal wins are settled on the final stone (2.1397ms)
+✔ a full board without four ends in a draw with no equal-rating transfer (2.0264ms)
+✔ native web share receives only invite URL and localized title (1.364ms)
+✔ copy button bypasses share and reports successful clipboard copy (1.3119ms)
+✔ share cancellation does not send or copy anything (0.6142ms)
+✔ clipboard denial reports manual-copy fallback instead of false success (0.5946ms)
+✔ replaced or closed sockets cannot deliver stale game messages (1.0799ms)
+(node:55676) ExperimentalWarning: Transform Types is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ anonymous rating preview has no account or storage writes (19.7773ms)
+✔ profile only reads the authenticated rating without changing an active player (3.7205ms)
+✔ bad or unknown identities cannot read a profile and wrong methods do not register (1.1289ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 179.4381

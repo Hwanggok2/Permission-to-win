@@ -1,0 +1,15 @@
+
+ ⛅️ wrangler 4.151.0 (update available 4.151.1)
+───────────────────────────────────────────────
+Total Upload: 20.09 KiB / gzip: 5.90 KiB
+Worker Startup Time: 1 ms
+Your Worker has access to the following bindings:
+Binding                                                                   Resource                  
+env.ARENA (MultiplayerArena)                                              Durable Object            
+env.MULTIPLAYER_ENABLED ("true")                                          Environment Variable      
+env.ALLOWED_ORIGINS ("https://hwanggok2.github.io,http://lo...")          Environment Variable      
+
+Uploaded permission-to-win-multiplayer-dev (2.49 sec)
+Deployed permission-to-win-multiplayer-dev triggers (0.89 sec)
+  https://permission-to-win-multiplayer-dev.hsj2014528.workers.dev
+Current Version ID: 2f87b85f-fe44-4a2f-ac13-9f4f04efa2de

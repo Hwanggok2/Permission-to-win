@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="9" result="Passed" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-18 13:23:16Z" end-time="2026-10-18 13:23:17Z" duration="0.9573752">
+  <test-suite type="TestSuite" id="1000" name="이겨도 됩니까_" fullname="이겨도 됩니까_" runstate="Runnable" testcasecount="163" result="Passed" start-time="2026-10-18 13:23:16Z" end-time="2026-10-18 13:23:17Z" duration="0.957375" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1191" name="StageGame.Tests.dll" fullname="C:/Github/StageGame/Client/Library/ScriptAssemblies/StageGame.Tests.dll" runstate="Runnable" testcasecount="163" result="Passed" start-time="2026-10-18 13:23:16Z" end-time="2026-10-18 13:23:17Z" duration="0.920229" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="38760" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1192" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="163" result="Passed" start-time="2026-10-18 13:23:16Z" end-time="2026-10-18 13:23:17Z" duration="0.916346" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1193" name="Tests" fullname="StageGame.Tests" runstate="Runnable" testcasecount="163" result="Passed" start-time="2026-10-18 13:23:16Z" end-time="2026-10-18 13:23:17Z" duration="0.915656" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1001" name="RankFlowTests" fullname="StageGame.Tests.RankFlowTests" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" testcasecount="83" result="Passed" start-time="2026-10-18 13:23:16Z" end-time="2026-10-18 13:23:17Z" duration="0.908957" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1017" name="LobbyOfferLayoutsFitBothLanguagesAndHostAreas" fullname="StageGame.Tests.RankFlowTests.LobbyOfferLayoutsFitBothLanguagesAndHostAreas" methodname="LobbyOfferLayoutsFitBothLanguagesAndHostAreas" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1567992266" result="Passed" start-time="2026-10-18 13:23:00Z" end-time="2026-10-18 13:23:04Z" duration="4.127832" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] ko-0-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-1-offer: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-2-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-3-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-3-offer: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-4-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-0-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-1-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-1-offer: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-2-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-3-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-3-offer: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-4-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-owned-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1016" name="LobbyOfferReopeningPreservesPendingPurchaseAndOwnershipFocus" fullname="StageGame.Tests.RankFlowTests.LobbyOfferReopeningPreservesPendingPurchaseAndOwnershipFocus" methodname="LobbyOfferReopeningPreservesPendingPurchaseAndOwnershipFocus" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1904584185" result="Passed" start-time="2026-10-18 13:23:04Z" end-time="2026-10-18 13:23:05Z" duration="1.418599" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1014" name="LobbyOfferReopensAfterDismissalWithoutRepeatingLaunchPromotion" fullname="StageGame.Tests.RankFlowTests.LobbyOfferReopensAfterDismissalWithoutRepeatingLaunchPromotion" methodname="LobbyOfferReopensAfterDismissalWithoutRepeatingLaunchPromotion" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1581915038" result="Passed" start-time="2026-10-18 13:23:05Z" end-time="2026-10-18 13:23:07Z" duration="1.487995" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1015" name="LobbyOfferUnavailableRemainsInformationalAndUpdatesWhenReady" fullname="StageGame.Tests.RankFlowTests.LobbyOfferUnavailableRemainsInformationalAndUpdatesWhenReady" methodname="LobbyOfferUnavailableRemainsInformationalAndUpdatesWhenReady" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1799014355" result="Passed" start-time="2026-10-18 13:23:07Z" end-time="2026-10-18 13:23:08Z" duration="1.571176" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1019" name="LobbyProfileQueryDoesNotOpenOrReplaceGameTransport" fullname="StageGame.Tests.RankFlowTests.LobbyProfileQueryDoesNotOpenOrReplaceGameTransport" methodname="LobbyProfileQueryDoesNotOpenOrReplaceGameTransport" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="238731632" result="Passed" start-time="2026-10-18 13:23:08Z" end-time="2026-10-18 13:23:10Z" duration="1.668896" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1018" name="LobbyRatingUsesOwnStateAndSurvivesExitAndLanguageChange" fullname="StageGame.Tests.RankFlowTests.LobbyRatingUsesOwnStateAndSurvivesExitAndLanguageChange" methodname="LobbyRatingUsesOwnStateAndSurvivesExitAndLanguageChange" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="820101640" result="Passed" start-time="2026-10-18 13:23:10Z" end-time="2026-10-18 13:23:12Z" duration="1.712273" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] en-high-rating: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1002" name="OfferAutoLaunchRequiresPreviousCompletedGame" fullname="StageGame.Tests.RankFlowTests.OfferAutoLaunchRequiresPreviousCompletedGame" methodname="OfferAutoLaunchRequiresPreviousCompletedGame" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1596382229" result="Passed" start-time="2026-10-18 13:23:12Z" end-time="2026-10-18 13:23:13Z" duration="1.684483" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1004" name="OfferNavigationAndInvitesConsumeStartupOpportunity" fullname="StageGame.Tests.RankFlowTests.OfferNavigationAndInvitesConsumeStartupOpportunity" methodname="OfferNavigationAndInvitesConsumeStartupOpportunity" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1693466332" result="Passed" start-time="2026-10-18 13:23:13Z" end-time="2026-10-18 13:23:15Z" duration="1.709783" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1038" name="ThirtyCardsReachBothEndsAndDetailBlocksLobbyAndPreservesScroll" fullname="StageGame.Tests.RankFlowTests.ThirtyCardsReachBothEndsAndDetailBlocksLobbyAndPreservesScroll" methodname="ThirtyCardsReachBothEndsAndDetailBlocksLobbyAndPreservesScroll" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="737693327" result="Passed" start-time="2026-10-18 13:23:15Z" end-time="2026-10-18 13:23:17Z" duration="2.281897" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Capture] lobby-scroll-reachability: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+Saving results to: C:/Github/StageGame/Client/Evidence/lobby-redesign-20261018/unity-tests.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

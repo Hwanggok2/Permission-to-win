@@ -1,4 +1,5 @@
 import { Arena, type Store, type Player, type Room } from './arena';
+import { readProfile } from './profile';
 interface Env { ARENA: DurableObjectNamespace; ALLOWED_ORIGINS: string; MULTIPLAYER_ENABLED: string; }
 interface Attachment { id: string; count: number; window: number; opened: number; }
 class SqlStore implements Store {
@@ -16,6 +17,7 @@ export class MultiplayerArena {
     state.setWebSocketAutoResponse(new WebSocketRequestResponsePair('ping', 'pong'));
   }
   async fetch(request: Request) {
+    if (new URL(request.url).pathname === '/v1/profile') return readProfile(request, this.store);
     if (request.headers.get('Upgrade') !== 'websocket') return new Response('WebSocket required', { status: 426 });
     if (this.state.getWebSockets().length >= 200) return new Response('Capacity reached', { status: 503 });
     const pair = new WebSocketPair(); const client = pair[0], server = pair[1];
@@ -85,8 +87,18 @@ export default {
   async fetch(request: Request, env: Env) {
     const origin = request.headers.get('Origin');
     if (origin && !env.ALLOWED_ORIGINS.split(',').includes(origin)) return new Response('Origin denied', { status: 403 });
-    if (new URL(request.url).pathname !== '/v1/play') return new Response('Not found', { status: 404 });
+    const path = new URL(request.url).pathname;
+    if (path !== '/v1/play' && path !== '/v1/profile') return new Response('Not found', { status: 404 });
     if (env.MULTIPLAYER_ENABLED !== 'true') return new Response('Unavailable', { status: 503 });
+    if (path === '/v1/profile') {
+      const headers = { 'Access-Control-Allow-Origin': origin || '*', 'Access-Control-Allow-Methods': 'GET, OPTIONS',
+        'Access-Control-Allow-Headers': 'Authorization', 'Cache-Control': 'no-store', 'Vary': 'Origin' };
+      if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers });
+      if (request.method !== 'GET') return new Response('Method not allowed', { status: 405, headers });
+      const response = await env.ARENA.get(env.ARENA.idFromName('permission-to-win-v1')).fetch(request);
+      const result = new Response(response.body, response);for (const [key, value] of Object.entries(headers)) result.headers.set(key, value);
+      return result;
+    }
     return env.ARENA.get(env.ARENA.idFromName('permission-to-win-v1')).fetch(request);
   }
 } satisfies ExportedHandler<Env>;

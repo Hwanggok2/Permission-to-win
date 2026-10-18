@@ -23,7 +23,7 @@ namespace StageGame
         public int round, seq, column;
         public bool rated=true;
     }
-    public sealed class OnlineGameController : MonoBehaviour
+    public sealed partial class OnlineGameController : MonoBehaviour
     {
         public RankGameApp app;
         public OnlineTransport transport;
@@ -63,7 +63,10 @@ namespace StageGame
             place.onClick.AddListener(Place);rematch.onClick.AddListener(()=>Send("rematch"));
             for(int i=0;i<columns.Length;i++){int c=i;columns[i].onClick.AddListener(()=>Select(c));}
             Application.deepLinkActivated+=ReadInvite;
-            yield return null;ReadInvite(Application.absoluteURL);
+            yield return null;ReadInvite(Application.absoluteURL);RefreshLobbyRating();
+#if !UNITY_EDITOR
+            if(!opening)StartCoroutine(RefreshLobbyProfile());
+#endif
         }
         void ReadInvite(string url)
         {
@@ -110,6 +113,7 @@ namespace StageGame
             }
             if(incoming.type=="preview"){invitationPreview=incoming;messageKey="";Refresh();return;}
             if(incoming.type!="state")return;
+            profileVersion++;ApplyLobbyProfile(incoming);
             if(state==null || incoming.roomId!=state.roomId || incoming.round!=state.round || incoming.seq!=state.seq){selected=-1;sentMove=false;}
             bool newGame=incoming.status=="playing" && (state?.status!="playing" || incoming.round!=state.round || incoming.roomId!=state.roomId);
             if(newGame || incoming.roomId!=state?.roomId || incoming.status=="idle")completedBeforeLeave=false;
@@ -148,6 +152,7 @@ namespace StageGame
         string F(string key,params object[] args)=>app.UiFormat(key,args);
         public void Refresh()
         {
+            RefreshLobbyRating();
             if(!opening)return;
             title.text=T("multiplayer_title");profile.text=F("mp_profile",T(state?.rankKey??"mp_rank_2"),state?.rating??200);
             bool inGame=state?.status=="playing" || state?.status=="finished";

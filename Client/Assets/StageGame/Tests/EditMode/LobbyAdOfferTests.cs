@@ -64,7 +64,13 @@ namespace StageGame.Tests
             var multi=ScreenRect((RectTransform)app.multiplayer.transform,camera,ratio);
             var entry=ScreenRect((RectTransform)app.adOffer.lobbyOpen.transform,camera,ratio);
             var list=ScreenRect(app.stageScroll.viewport,camera,ratio);
-            Assert.Greater(entry.xMin,multi.xMax);Assert.AreEqual(multi.yMin,entry.yMin,.1f);
+            var help=ScreenRect((RectTransform)app.lobbyHelp.transform,camera,ratio);
+            var settings=ScreenRect((RectTransform)app.lobbySettings.transform,camera,ratio);
+            var title=ScreenRect(app.lobbyTitle.rectTransform,camera,ratio);
+            Assert.Greater(entry.xMin,help.xMax);Assert.AreEqual(help.yMin,entry.yMin,.1f);
+            Assert.Less(entry.yMin,title.yMin);Assert.Less(entry.yMax,title.yMin+.1f);
+            Assert.Greater(entry.yMin,list.yMax);Assert.Less(entry.xMax,settings.xMin);
+            Assert.AreEqual(RankUiMetrics.U(680),((RectTransform)app.multiplayer.transform).rect.width,.1f);
             Assert.Greater(list.yMin,multi.yMax,"Footer must stay below the stage list.");
             foreach(var button in new[]{app.multiplayer,app.adOffer.lobbyOpen})
             {
@@ -72,8 +78,13 @@ namespace StageGame.Tests
                 Assert.GreaterOrEqual(r.height,47.99f);Assert.GreaterOrEqual(r.width,43.99f);
                 Assert.GreaterOrEqual(r.yMin,area.yMin-.1f);Assert.LessOrEqual(r.yMax,area.yMax+.1f);
                 Assert.GreaterOrEqual(r.xMin,area.xMin-.1f);Assert.LessOrEqual(r.xMax,area.xMax+.1f);
-                Assert.LessOrEqual(label.preferredWidth,label.rectTransform.rect.width+1);Assert.LessOrEqual(label.preferredHeight,label.rectTransform.rect.height+1);
+                if(label!=null){Assert.LessOrEqual(label.preferredWidth,label.rectTransform.rect.width+1);Assert.LessOrEqual(label.preferredHeight,label.rectTransform.rect.height+1);}
             }
+            foreach(var button in new[]{app.lobbyHelp,app.lobbySettings,app.adOffer.lobbyOpen})
+            {Assert.AreEqual(0,button.GetComponent<Image>().color.a);Assert.IsFalse(button.transform.Find("Label").gameObject.activeSelf);Assert.NotNull(button.transform.Find("Icon").GetComponent<Image>().sprite);}
+            foreach(var card in app.cards)
+            {Assert.LessOrEqual(card.rank.preferredHeight,card.rank.rectTransform.rect.height+1,card.rank.text);Assert.NotNull(card.paper);}
+            Assert.LessOrEqual(app.online.lobbyRatingLabel.preferredHeight,app.online.lobbyRatingLabel.rectTransform.rect.height+1);
         }
         [UnityTest] public IEnumerator LobbyOfferLayoutsFitBothLanguagesAndHostAreas()
         {
@@ -85,17 +96,17 @@ namespace StageGame.Tests
                 {
                     int width=viewport==0||viewport==4?1080:viewport==1?390:320,height=viewport==0||viewport==4?1920:viewport==1?844:568;
                     bool host=viewport==3||viewport==4;float ratio=viewport==0||viewport==4?3:1;
-                    yield return Capture(language+"-"+viewport+"-lobby",app,width,height,host,validate:()=>AssertLobbyOfferFits(ratio),directory:"Evidence/lobby-ad-entry-20261018/screens",scaledCanvas:true,pixelRatio:ratio);
+                    yield return Capture(language+"-"+viewport+"-lobby",app,width,height,host,validate:()=>AssertLobbyOfferFits(ratio),directory:"Evidence/lobby-redesign-20261018/screens",scaledCanvas:true,pixelRatio:ratio);
                     if(viewport==1||viewport==3)
                     {
                         app.adOffer.lobbyOpen.onClick.Invoke();
-                        yield return Capture(language+"-"+viewport+"-offer",app,width,height,host,validate:()=>{AssertOfferFits(ratio);Assert.IsFalse(app.adOffer.buy.interactable);},directory:"Evidence/lobby-ad-entry-20261018/screens",scaledCanvas:true,pixelRatio:ratio);
+                        yield return Capture(language+"-"+viewport+"-offer",app,width,height,host,validate:()=>{AssertOfferFits(ratio);Assert.IsFalse(app.adOffer.buy.interactable);},directory:"Evidence/lobby-redesign-20261018/screens",scaledCanvas:true,pixelRatio:ratio);
                         app.adOffer.close.onClick.Invoke();
                     }
                 }
             }
             app.SetAdsForTests(new CountingAds());app.adOffer.SetPurchases(new TestPurchases{Owned=true});yield return null;
-            yield return Capture("en-owned-lobby",app,390,844,false,directory:"Evidence/lobby-ad-entry-20261018/screens",scaledCanvas:true);
+            yield return Capture("en-owned-lobby",app,390,844,false,directory:"Evidence/lobby-redesign-20261018/screens",scaledCanvas:true);
         }
     }
 }

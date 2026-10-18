@@ -40,6 +40,7 @@ namespace StageGame.Editor
                 card.stars=StarsLabel(go.transform,"Stars",0,-38,280,44);
                 card.state=Picture(go.transform,"State",theme.locked,130,-85,24,24);
                 ConfigureCardRating(go);
+                ConfigureLobbyCard(go);
             });
             Save("Board", go => Board(go.transform, true, 704, 704, 720f/7, 720f/7, 68));
             Save("OpeningBoard", go => Board(go.transform, false, 550, 550, 76, 76, 52));
@@ -375,7 +376,7 @@ namespace StageGame.Editor
             var fit=Add<RankLobbyFitter>(go);
             fit.stages=Get<RectTransform>(go,"Stages");fit.help=Get<RectTransform>(go,"Help");
             fit.settings=Get<RectTransform>(go,"Settings");fit.notice=Get<RectTransform>(go,"Notice");
-            fit.maximumListHeight=U(2*252+236*.5f);fit.minimumTopInset=U(145+HeaderOffset);
+            fit.maximumListHeight=U(2*252+236*.5f);fit.minimumTopInset=U(400);
             fit.buttonAboveList=U(90);fit.noticeAboveList=U(17);
             fit.Fit();
         }

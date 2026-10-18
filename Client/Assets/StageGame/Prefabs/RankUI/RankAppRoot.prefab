@@ -807,6 +807,7 @@ MonoBehaviour:
   - {fileID: 8216029386442602903}
   - {fileID: 1910072726587814653}
   lastOpponentMove: {fileID: 7415321364567705655}
+  lobbyRatingLabel: {fileID: 7177219645088200151}
 --- !u!114 &1614316972831536008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4428,13 +4429,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2380088215811847412, guid: df64228afe3eed54cb4a72919971dab6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -465
+      objectReference: {fileID: 0}
     - target: {fileID: 2545961436682439622, guid: df64228afe3eed54cb4a72919971dab6, type: 3}
       propertyPath: m_Text
       value: "\uC124\uC815"
       objectReference: {fileID: 0}
+    - target: {fileID: 4097167399454479545, guid: df64228afe3eed54cb4a72919971dab6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -465
+      objectReference: {fileID: 0}
     - target: {fileID: 4219529691499441035, guid: df64228afe3eed54cb4a72919971dab6, type: 3}
       propertyPath: m_Text
       value: "\uD50C\uB808\uC774 \uBC29\uBC95"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6988611294670032354, guid: df64228afe3eed54cb4a72919971dab6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -465
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372251853821658037, guid: df64228afe3eed54cb4a72919971dab6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 465
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372251853821658037, guid: df64228afe3eed54cb4a72919971dab6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372251853821658037, guid: df64228afe3eed54cb4a72919971dab6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -97.5
       objectReference: {fileID: 0}
     - target: {fileID: 8774971549914600690, guid: df64228afe3eed54cb4a72919971dab6, type: 3}
       propertyPath: m_Name
@@ -5097,6 +5122,17 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &7177219645088200151 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8726939760581506167, guid: df64228afe3eed54cb4a72919971dab6, type: 3}
+  m_PrefabInstance: {fileID: 1911437485437518240}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
 --- !u!114 &7320192510237589018 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9155895050636443578, guid: df64228afe3eed54cb4a72919971dab6, type: 3}

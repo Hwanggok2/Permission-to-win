@@ -180,8 +180,7 @@ namespace StageGame
                 var stage = data.Stages[i]; var card = cards[i]; bool locked = stage.id > progress.Data.unlockedStage, cleared = stage.id <= progress.Data.highestClearedStage;
                 card.rank.text = T(stage.rankKey); card.number.text = F("stage_label", stage.id.ToString("00")); SetStars(card.stars,stage.difficultyStars);
                 card.rating.text=F("ai_rating",stage.aiRating);
-                card.button.GetComponent<Image>().sprite = stage.id == progress.Data.unlockedStage ? theme.currentCard : locked ? theme.lockedCard : theme.panel;
-                card.state.sprite = locked ? theme.locked : theme.check; card.state.gameObject.SetActive(locked || cleared);
+                card.SetAppearance(locked,stage.id==progress.Data.unlockedStage,cleared);
             }
             string warning = progress.SaveWarning ?? progress.LoadWarning; lobbyNotice.text = warning == null ? "" : T(warning);
         }

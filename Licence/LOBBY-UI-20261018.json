@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-18",
+  "purpose": "Lobby icons, mission cards and multiplayer entry redesign",
+  "mode": "Built-in image_gen for NoAds.png; project-native deterministic editor raster generation for other sprites",
+  "generatedIcon": {
+    "path": "Client/Assets/StageGame/Art/LobbyUI/NoAds.png",
+    "source": "Built-in image_gen output exec-95c1759f-be2d-4579-a3e4-960bb7bdd597.png",
+    "externalReferenceImages": [],
+    "prompt": "Use case: logo-brand. Asset type: a single transparent-background pixel-art UI icon for removing advertisements in a Korean military barracks connect-four mobile game. Primary request: An unmistakable NO ADS pictogram: a small cream-colored rectangular video window with a dark olive pixel border and a centered olive play triangle, crossed by one thick muted brick-red diagonal slash. No words, no letters, no labels, no numbers. Style: authentic low-resolution crisp pixel art, drawn as if on a 48x48 pixel grid, hard square pixels and stepped edges only; NOT smooth vectors, NOT rounded illustration, NOT realistic. Limited palette: very dark olive #292f26, warm cream #ece2be, tan #b2a47b, muted brick red #a64f39. Composition: one large centered standalone symbol occupying about 85 percent of a square canvas, fully visible, no separate button plate behind it, no background, no drop shadow outside icon. Strong legibility at 32–48 screen pixels. Genuine transparent alpha around the icon.",
+    "processing": "Original copied unchanged; Unity imports with alpha, Point sampling, max texture size 128. No API key or external source asset copied."
+  },
+  "generator": "Client/Assets/StageGame/Editor/LobbyStyleBuilder.cs",
+  "reused": "Existing project black/white stone sprites, barracks background and Pretendard font; existing provenance/license notices retained.",
+  "scope": "Production provenance record; not an exclusivity or trademark clearance claim.",
+  "assets": [
+    {
+      "path": "Client/Assets/StageGame/Art/LobbyUI/BattlePanel.png",
+      "sha256": "ecc447da5d754f361fe26b600b173b8eba3b32e955e3ea2406918e02b390778b",
+      "size": [
+        32,
+        32
+      ],
+      "alpha": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/LobbyUI/CardArrow.png",
+      "sha256": "df326415b9e488049eac320db0cf31324d769ae6bccafb0ac58e34a43b9bda1d",
+      "size": [
+        32,
+        32
+      ],
+      "alpha": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/LobbyUI/CardCheck.png",
+      "sha256": "c614b531c7e7bad5ca423b9fa74a791d7ee87068d780e5ce9d3e44dfb1b92b65",
+      "size": [
+        32,
+        32
+      ],
+      "alpha": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/LobbyUI/CardLock.png",
+      "sha256": "5e4f3ecc5e6fa816472445a9e962b1a98a2a708d61b01cb98d706e52b6a5fa96",
+      "size": [
+        32,
+        32
+      ],
+      "alpha": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/LobbyUI/GearMark.png",
+      "sha256": "5ccf6ed7ee3dda48c0115607790acb44f18c4c0d0943a2bc1cfdb6a20f7a4dd9",
+      "size": [
+        32,
+        32
+      ],
+      "alpha": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/LobbyUI/HelpMark.png",
+      "sha256": "e94b9d74934406755175c808d83e0da00072fa39e83b708089759ffa4a32419c",
+      "size": [
+        32,
+        32
+      ],
+      "alpha": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/LobbyUI/MissionCurrent.png",
+      "sha256": "387b3c1aa1917710ae14176e8b051b83490ad1c455bddd8108b6cda86e5cddaf",
+      "size": [
+        32,
+        32
+      ],
+      "alpha": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/LobbyUI/MissionLocked.png",
+      "sha256": "335d771b7f5ba4ad06594d4bf18d45b13f6a760fedb342937446148d75a67d11",
+      "size": [
+        32,
+        32
+      ],
+      "alpha": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/LobbyUI/MissionPaper.png",
+      "sha256": "3780980a189703aca2c2ba810092e66c3553eb1be2bd23c433e43022493a65ab",
+      "size": [
+        32,
+        32
+      ],
+      "alpha": true
+    },
+    {
+      "path": "Client/Assets/StageGame/Art/LobbyUI/NoAds.png",
+      "sha256": "64a8b404fd7bd662d0c8aacb715ac114d187c4d86ea7e4a06de5c99f3dee7c22",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha": true
+    }
+  ]
+}

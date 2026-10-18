@@ -16,11 +16,7 @@ namespace StageGame.Editor
         }
         static void ConfigureLobbyAdEntry(GameObject go)
         {
-            var multi=Button(go.transform,"Multiplayer",-130,55+HeaderOffset,420,110);Bottom((RectTransform)multi.transform);
-            var entry=Button(go.transform,"AdRemoval",218,55+HeaderOffset,244,110);Bottom((RectTransform)entry.transform);
-            Get<Text>(go,"AdRemoval/Label").text=table.Text("ad_offer_title");
-            foreach(var button in new[]{multi,entry})button.transform.Find("Label").GetComponent<Text>().fontSize=Mathf.RoundToInt(U(32));
-            var fit=go.GetComponent<RankLobbyFitter>();fit.multiplayer=(RectTransform)multi.transform;fit.adRemoval=(RectTransform)entry.transform;fit.Fit();
+            ConfigureLobbyStyle(go);
         }
         static void BuildAdRemovalOffer(GameObject go)
         {
@@ -57,6 +53,7 @@ namespace StageGame.Editor
             var panel=Instance("AdRemovalOffer",app.lobby.transform.parent,"AdRemovalOffer");Stretch(panel);panel.SetAsLastSibling();
             var offer=Add<AdRemovalOffer>(go);app.adOffer=offer;offer.app=app;offer.panel=panel.gameObject;
             offer.lobbyOpen=Get<Button>(app.lobby,"AdRemoval");offer.lobbyLabel=Get<Text>(app.lobby,"AdRemoval/Label");
+            app.online.lobbyRatingLabel=Get<Text>(app.lobby,"Multiplayer/Rating");
             var frame=panel.Find("Frame").gameObject;
             offer.outside=Get<Button>(panel.gameObject,"Outside");offer.close=Get<Button>(frame,"Close");offer.buy=Get<Button>(frame,"Buy");offer.later=Get<Button>(frame,"Later");offer.restore=Get<Button>(frame,"Restore");
             offer.title=Get<Text>(frame,"Title");offer.subtitle=Get<Text>(frame,"Subtitle");offer.benefits=Get<Text>(frame,"Benefits/Label");offer.hintBenefit=Get<Text>(frame,"HintBenefit/Label");
