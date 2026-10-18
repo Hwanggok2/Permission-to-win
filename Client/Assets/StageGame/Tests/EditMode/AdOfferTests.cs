@@ -168,6 +168,9 @@ namespace StageGame.Tests
         void AssertOfferFits(float ratio)
         {
             var offer=app.adOffer;var camera=app.GetComponent<Canvas>().worldCamera;var area=ScreenRect((RectTransform)offer.panel.transform,camera,ratio);
+            var frameRect=ScreenRect((RectTransform)offer.panel.transform.Find("Frame"),camera,ratio);
+            Assert.GreaterOrEqual(frameRect.width/area.width,.86f,"Offer must remain readable on native/DPR1 screens.");
+            Assert.LessOrEqual(frameRect.width/area.width,.94f,"Leave a visible outside-dismiss margin.");
             Assert.AreEqual(0,offer.panel.GetComponentsInChildren<ScrollRect>().Length);
             foreach(var graphic in offer.panel.GetComponentsInChildren<Graphic>())
             {
@@ -192,11 +195,11 @@ namespace StageGame.Tests
             foreach(string language in new[]{"ko","en"})
             {
                 app.SetLanguage(language);
-                foreach(int viewport in new[]{0,1,2,3,4})
+                foreach(int viewport in new[]{0,1,2,3,4,5,6})
                 {
-                    int width=viewport==0||viewport==4?1080:viewport==1?390:320,height=viewport==0||viewport==4?1920:viewport==1?844:568;
+                    int width=viewport==0||viewport==4||viewport==5?1080:viewport==6?720:viewport==1?390:320,height=viewport==0||viewport==4||viewport==5?1920:viewport==6?1280:viewport==1?844:568;
                     bool host=viewport==3||viewport==4;float ratio=viewport==0||viewport==4?3:1;
-                    yield return Capture(language+"-"+viewport+"-offer",app,width,height,host,validate:()=>AssertOfferFits(ratio),directory:"Evidence/ad-offer-implementation-20261018/screens",scaledCanvas:true,pixelRatio:ratio);
+                    yield return Capture("ready-"+language+"-"+viewport+"-offer",app,width,height,host,validate:()=>AssertOfferFits(ratio),directory:"Evidence/ad-offer-implementation-20261018/screens",scaledCanvas:true,pixelRatio:ratio);
                 }
             }
             app.adOffer.buy.onClick.Invoke();app.SetLanguage("ko");

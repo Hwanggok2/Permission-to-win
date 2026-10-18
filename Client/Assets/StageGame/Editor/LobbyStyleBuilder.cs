@@ -85,10 +85,10 @@ namespace StageGame.Editor
                 float dx=x-15.5f,dy=y-15.5f,r=Mathf.Sqrt(dx*dx+dy*dy),angle=Mathf.Atan2(dy,dx);
                 bool tooth=Mathf.Cos(angle*8)>.3f;return r>=5&&r<(tooth?14:11)?Color.white:Color.clear;
             });
-            ConfigureLobbyIcon(go,"Help",help,-290,90);
-            ConfigureLobbyIcon(go,"AdRemoval",ImportLobbySprite(LobbyArt+"NoAds.png"),-174,104);
+            ConfigureLobbyIcon(go,"Help",help,-290,64);
+            ConfigureLobbyIcon(go,"AdRemoval",ImportLobbySprite(LobbyArt+"NoAds.png"),-174,56);
             Get<Text>(go,"AdRemoval/Label").text=table.Text("ad_offer_title");
-            ConfigureLobbyIcon(go,"Settings",gear,290,72);
+            ConfigureLobbyIcon(go,"Settings",gear,290,46);
             var multi=Button(go.transform,"Multiplayer",0,55+HeaderOffset,680,110);Bottom((RectTransform)multi.transform);
             Paint(multi.GetComponent<Image>(),LobbyPanel("BattlePanel",new Color32(62,79,47,255),new Color32(30,39,25,255)));multi.GetComponent<Image>().pixelsPerUnitMultiplier=.5f;
             var label=Get<Text>(go,"Multiplayer/Label");Layout(label.transform,-65,0,310,84);label.fontSize=Mathf.RoundToInt(U(34));label.fontStyle=FontStyle.Bold;label.color=new Color32(255,245,215,255);label.alignment=TextAnchor.MiddleLeft;
@@ -107,7 +107,7 @@ namespace StageGame.Editor
             if(name!="AdRemoval")
             {
                 icon.color=new Color32(33,42,30,255);
-                var outline=Add<Outline>(icon.gameObject);outline.enabled=true;outline.effectColor=new Color32(255,248,220,255);outline.effectDistance=RankUiMetrics.Point(3,-3);
+                var outline=Add<Outline>(icon.gameObject);outline.enabled=true;outline.effectColor=new Color32(255,248,220,255);outline.effectDistance=RankUiMetrics.Point(1.5f,-1.5f);
             }
             var colors=button.colors;colors.normalColor=Color.white;colors.highlightedColor=colors.selectedColor=new Color32(214,190,121,255);colors.pressedColor=new Color32(171,157,115,255);button.colors=colors;
         }

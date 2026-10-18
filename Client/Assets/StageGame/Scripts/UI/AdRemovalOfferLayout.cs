@@ -26,11 +26,14 @@ namespace StageGame
             var safe=GetComponentInParent<SafeAreaFitter>();var camera=canvas.renderMode==RenderMode.ScreenSpaceOverlay?null:canvas.worldCamera;
             root.GetWorldCorners(corners);float pixels=Vector2.Distance(RectTransformUtility.WorldToScreenPoint(camera,corners[0]),RectTransformUtility.WorldToScreenPoint(camera,corners[3]));
             float css=pixels/Mathf.Max(.01f,safe==null?1:safe.RenderPixelsPerCssPixel);if(css<=0)return;
-            float p=root.rect.width/css,h=root.rect.height/p,w=Mathf.Min(350,css-24);
+            // Size against the portrait content area, not a fixed CSS width: native and
+            // DPR1 render targets must have the same visual proportions as mobile WebGL.
+            float width=Mathf.Min(css*.92f,css-24),scale=Mathf.Max(1,width/350);
+            float p=root.rect.width/css*scale,h=root.rect.height/p,w=width/scale;
             bool compact=h<550;float padding=compact?10:16,gap=compact?3:8,titleH=44,benefitH=compact?32:46,descriptionH=compact?32:40,actionH=compact?48:52,footH=44;
             float subtitleH=compact?0:32,statusH=28;
             float total=padding*2+titleH+subtitleH+gap*5+benefitH*2+descriptionH+actionH+footH+statusH;
-            frame.anchorMin=frame.anchorMax=frame.pivot=Vector2.one*.5f;frame.anchoredPosition=Vector2.zero;frame.sizeDelta=new Vector2(w,total)*p;
+            frame.anchorMin=frame.anchorMax=frame.pivot=Vector2.one*.5f;frame.anchoredPosition=Vector2.zero;frame.localScale=Vector3.one;frame.sizeDelta=new Vector2(w,total)*p;
             float inner=w-padding*2,y=padding;
             Box(title,-22*p,y*p,(inner-44)*p,titleH*p);Font(title,(compact?24:28)*p);
             Box(close,(w/2-26)*p,6*p,44*p,44*p);
