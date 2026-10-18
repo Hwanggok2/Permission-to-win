@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="13" result="Passed" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-18 12:56:41Z" end-time="2026-10-18 12:56:42Z" duration="1.5556117">
+  <test-suite type="TestSuite" id="1000" name="이겨도 됩니까_" fullname="이겨도 됩니까_" runstate="Runnable" testcasecount="161" result="Passed" start-time="2026-10-18 12:56:41Z" end-time="2026-10-18 12:56:42Z" duration="1.555612" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1189" name="StageGame.Tests.dll" fullname="C:/Github/StageGame/Client/Library/ScriptAssemblies/StageGame.Tests.dll" runstate="Runnable" testcasecount="161" result="Passed" start-time="2026-10-18 12:56:41Z" end-time="2026-10-18 12:56:42Z" duration="1.516793" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="25248" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1190" name="StageGame" fullname="StageGame" runstate="Runnable" testcasecount="161" result="Passed" start-time="2026-10-18 12:56:41Z" end-time="2026-10-18 12:56:42Z" duration="1.515718" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1191" name="Tests" fullname="StageGame.Tests" runstate="Runnable" testcasecount="161" result="Passed" start-time="2026-10-18 12:56:41Z" end-time="2026-10-18 12:56:42Z" duration="1.511448" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1001" name="RankFlowTests" fullname="StageGame.Tests.RankFlowTests" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" testcasecount="81" result="Passed" start-time="2026-10-18 12:56:41Z" end-time="2026-10-18 12:56:42Z" duration="1.496466" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1035" name="FreshRunIsConsumedButExistingAndRecoverySavesStayInLobby" fullname="StageGame.Tests.RankFlowTests.FreshRunIsConsumedButExistingAndRecoverySavesStayInLobby" methodname="FreshRunIsConsumedButExistingAndRecoverySavesStayInLobby" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1173978668" result="Passed" start-time="2026-10-18 12:56:09Z" end-time="2026-10-18 12:56:12Z" duration="2.503564" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Save recovery] JSON parse error: Invalid value.
+]]></output>
+            </test-case>
+            <test-case id="1010" name="LobbyAdPauseAndNavigationRejectLateCallbacks" fullname="StageGame.Tests.RankFlowTests.LobbyAdPauseAndNavigationRejectLateCallbacks" methodname="LobbyAdPauseAndNavigationRejectLateCallbacks" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="198296908" result="Passed" start-time="2026-10-18 12:56:12Z" end-time="2026-10-18 12:56:17Z" duration="5.582963" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1017" name="LobbyOfferLayoutsFitBothLanguagesAndHostAreas" fullname="StageGame.Tests.RankFlowTests.LobbyOfferLayoutsFitBothLanguagesAndHostAreas" methodname="LobbyOfferLayoutsFitBothLanguagesAndHostAreas" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1746713579" result="Passed" start-time="2026-10-18 12:56:17Z" end-time="2026-10-18 12:56:22Z" duration="4.498140" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] ko-0-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] ko-1-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-1-offer: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] ko-2-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-3-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-3-offer: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] ko-4-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-0-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-1-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-1-offer: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+[Capture] en-2-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-3-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-3-offer: screen=640x480, canvas=(x:0.00, y:0.00, width:320.00, height:568.00), scale=0.2958333, ppu=0.2958333, fontSize=78
+[Capture] en-4-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] en-owned-lobby: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=0.3611111, ppu=0.3611111, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1016" name="LobbyOfferReopeningPreservesPendingPurchaseAndOwnershipFocus" fullname="StageGame.Tests.RankFlowTests.LobbyOfferReopeningPreservesPendingPurchaseAndOwnershipFocus" methodname="LobbyOfferReopeningPreservesPendingPurchaseAndOwnershipFocus" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1604639745" result="Passed" start-time="2026-10-18 12:56:22Z" end-time="2026-10-18 12:56:23Z" duration="1.579836" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1014" name="LobbyOfferReopensAfterDismissalWithoutRepeatingLaunchPromotion" fullname="StageGame.Tests.RankFlowTests.LobbyOfferReopensAfterDismissalWithoutRepeatingLaunchPromotion" methodname="LobbyOfferReopensAfterDismissalWithoutRepeatingLaunchPromotion" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="356733786" result="Passed" start-time="2026-10-18 12:56:23Z" end-time="2026-10-18 12:56:25Z" duration="1.601896" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1015" name="LobbyOfferUnavailableRemainsInformationalAndUpdatesWhenReady" fullname="StageGame.Tests.RankFlowTests.LobbyOfferUnavailableRemainsInformationalAndUpdatesWhenReady" methodname="LobbyOfferUnavailableRemainsInformationalAndUpdatesWhenReady" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1857828540" result="Passed" start-time="2026-10-18 12:56:25Z" end-time="2026-10-18 12:56:27Z" duration="1.675309" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1002" name="OfferAutoLaunchRequiresPreviousCompletedGame" fullname="StageGame.Tests.RankFlowTests.OfferAutoLaunchRequiresPreviousCompletedGame" methodname="OfferAutoLaunchRequiresPreviousCompletedGame" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="95663000" result="Passed" start-time="2026-10-18 12:56:27Z" end-time="2026-10-18 12:56:29Z" duration="2.463389" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1003" name="OfferGatesAndDismissalDoNotStartPurchases" fullname="StageGame.Tests.RankFlowTests.OfferGatesAndDismissalDoNotStartPurchases" methodname="OfferGatesAndDismissalDoNotStartPurchases" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1974427972" result="Passed" start-time="2026-10-18 12:56:29Z" end-time="2026-10-18 12:56:31Z" duration="1.693988" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1004" name="OfferNavigationAndInvitesConsumeStartupOpportunity" fullname="StageGame.Tests.RankFlowTests.OfferNavigationAndInvitesConsumeStartupOpportunity" methodname="OfferNavigationAndInvitesConsumeStartupOpportunity" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="2103844030" result="Passed" start-time="2026-10-18 12:56:31Z" end-time="2026-10-18 12:56:33Z" duration="1.908940" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1006" name="PurchaseCancelFailureAndRestoreLeavePlayAvailable" fullname="StageGame.Tests.RankFlowTests.PurchaseCancelFailureAndRestoreLeavePlayAvailable" methodname="PurchaseCancelFailureAndRestoreLeavePlayAvailable" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="224702427" result="Passed" start-time="2026-10-18 12:56:33Z" end-time="2026-10-18 12:56:34Z" duration="1.782983" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1005" name="PurchaseNeedsVerifiedEntitlementAndPendingCanBeClosed" fullname="StageGame.Tests.RankFlowTests.PurchaseNeedsVerifiedEntitlementAndPendingCanBeClosed" methodname="PurchaseNeedsVerifiedEntitlementAndPendingCanBeClosed" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="1689110929" result="Passed" start-time="2026-10-18 12:56:34Z" end-time="2026-10-18 12:56:37Z" duration="2.620368" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1036" name="ThirtyCardsReachBothEndsAndDetailBlocksLobbyAndPreservesScroll" fullname="StageGame.Tests.RankFlowTests.ThirtyCardsReachBothEndsAndDetailBlocksLobbyAndPreservesScroll" methodname="ThirtyCardsReachBothEndsAndDetailBlocksLobbyAndPreservesScroll" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="255660227" result="Passed" start-time="2026-10-18 12:56:37Z" end-time="2026-10-18 12:56:39Z" duration="2.353616" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[[Capture] lobby-scroll-reachability: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+]]></output>
+            </test-case>
+            <test-case id="1013" name="UnplayedSaveKeepsRulesUntilPlayerClosesThem" fullname="StageGame.Tests.RankFlowTests.UnplayedSaveKeepsRulesUntilPlayerClosesThem" methodname="UnplayedSaveKeepsRulesUntilPlayerClosesThem" classname="StageGame.Tests.RankFlowTests" runstate="Runnable" seed="2017607899" result="Passed" start-time="2026-10-18 12:56:39Z" end-time="2026-10-18 12:56:42Z" duration="2.885763" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Capture] saved-visit-rules-1080: screen=640x480, canvas=(x:0.00, y:0.00, width:1080.00, height:1920.00), scale=1, ppu=1, fontSize=78
+[Capture] online-first-rules-ko-390: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+[Capture] online-first-rules-390: screen=640x480, canvas=(x:0.00, y:0.00, width:390.00, height:844.00), scale=1, ppu=1, fontSize=78
+Saving results to: C:/Github/StageGame/Client/Evidence/lobby-ad-entry-20261018/unity-tests.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

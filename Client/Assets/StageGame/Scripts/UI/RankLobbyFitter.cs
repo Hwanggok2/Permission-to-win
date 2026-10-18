@@ -6,6 +6,7 @@ namespace StageGame
     public sealed class RankLobbyFitter : MonoBehaviour
     {
         public RectTransform stages, help, settings, notice;
+        public RectTransform multiplayer, adRemoval;
         public float maximumListHeight, minimumTopInset, buttonAboveList, noticeAboveList;
         RectTransform rect;
         void OnEnable() { Canvas.willRenderCanvases += Fit; Fit(); }
@@ -21,6 +22,12 @@ namespace StageGame
             help.anchoredPosition = new Vector2(help.anchoredPosition.x, buttonAboveList - top);
             settings.anchoredPosition = new Vector2(settings.anchoredPosition.x, buttonAboveList - top);
             notice.anchoredPosition = new Vector2(notice.anchoredPosition.x, noticeAboveList - top);
+            if(multiplayer!=null && adRemoval!=null)
+            {
+                bool show=adRemoval.gameObject.activeSelf;
+                multiplayer.anchoredPosition=new Vector2(RankUiMetrics.U(show?-130:0),multiplayer.anchoredPosition.y);
+                multiplayer.sizeDelta=new Vector2(RankUiMetrics.U(show?420:680),multiplayer.sizeDelta.y);
+            }
         }
     }
 }

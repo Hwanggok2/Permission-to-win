@@ -12,6 +12,8 @@ namespace StageGame
         int navigationVersion;
         public bool AdsConnected => !(ads is NoFillAds);
         public bool AdRemovalOwned => adOffer!=null && adOffer.OwnsAdRemoval;
+        public bool CanOpenAdRemoval => strings!=null && lobby.activeInHierarchy && !applicationPaused && !interstitialPending &&
+            !help.activeSelf && !settings.activeSelf && !notices.activeSelf && !detail.gameObject.activeSelf && !online.panel.activeSelf;
 
         IEnumerator OfferAtLaunch(bool returning, int version)
         {

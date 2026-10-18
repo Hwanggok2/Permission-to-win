@@ -488,6 +488,7 @@ MonoBehaviour:
   - {fileID: 2988905116879371572}
   - {fileID: 4332811561786866764}
   - {fileID: 2736755623022009345}
+  - {fileID: 9068684245657650522}
   - {fileID: 8842632519288040680}
   - {fileID: 2549162530775688716}
   - {fileID: 6314232645392165166}
@@ -837,6 +838,8 @@ MonoBehaviour:
   buy: {fileID: 443169991885370056}
   later: {fileID: 6359125639283521166}
   restore: {fileID: 561316578370068817}
+  lobbyOpen: {fileID: 9068684245657650522}
+  lobbyLabel: {fileID: 7058056299716465469}
   title: {fileID: 1653644261935522292}
   subtitle: {fileID: 8678388843104530834}
   benefits: {fileID: 4486327937362566660}
@@ -5055,6 +5058,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+--- !u!114 &7058056299716465469 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8896168969561461405, guid: df64228afe3eed54cb4a72919971dab6, type: 3}
+  m_PrefabInstance: {fileID: 1911437485437518240}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
 --- !u!114 &7070272980930963309 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8689815967673362125, guid: df64228afe3eed54cb4a72919971dab6, type: 3}
@@ -5215,6 +5229,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5433ca69c0ce09546943a8aba3cdbcb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: StageGame.Runtime::StageGame.RankStageCard
+--- !u!114 &9068684245657650522 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7448032401705764090, guid: df64228afe3eed54cb4a72919971dab6, type: 3}
+  m_PrefabInstance: {fileID: 1911437485437518240}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!114 &9097016766456708154 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7258064035645635994, guid: df64228afe3eed54cb4a72919971dab6, type: 3}

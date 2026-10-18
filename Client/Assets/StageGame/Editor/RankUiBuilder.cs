@@ -359,6 +359,7 @@ namespace StageGame.Editor
             IconButton(go.transform,"Help",theme.help,-290,-55-headerOffset);Top(Get<RectTransform>(go,"Help"));IconButton(go.transform,"Settings",theme.settings,290,-55-headerOffset);Top(Get<RectTransform>(go,"Settings"));
             Top(Label(go.transform,"Notice","",20,0,-128-headerOffset,680,28).rectTransform);
             ConfigureLobbyLayout(go);
+            ConfigureLobbyAdEntry(go);
         }
         [MenuItem("StageGame/Apply Compact Lobby")]
         public static void ApplyCompactLobby()
