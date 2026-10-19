@@ -40,7 +40,7 @@ namespace StageGame
         public LastMoveHighlight lastOpponentMove;
         OnlineState state, invitationPreview;
         string pendingInvite, queuedAction, messageKey="", token;
-        bool connected, sentMove, leaving, opening;
+        bool connected, sentMove, leaving, opening, suppressFeedbackUntilSnapshot;
         bool completedBeforeLeave, advertiseOnLeave;
         int selected=-1, reconnects;
         double stateAt;
@@ -82,7 +82,7 @@ namespace StageGame
         }
         void Connect()
         {
-            token=PlayerPrefs.GetString(TokenKey,"");messageKey="mp_connecting";Refresh();transport.Connect(endpoint);reconnectAt=-1;
+            suppressFeedbackUntilSnapshot=true;token=PlayerPrefs.GetString(TokenKey,"");messageKey="mp_connecting";Refresh();transport.Connect(endpoint);reconnectAt=-1;
         }
         void Begin(string action)
         {
@@ -106,15 +106,19 @@ namespace StageGame
             }
             if(incoming.type=="error")
             {
-                sentMove=false;
+                ClearPendingMove();
                 messageKey=incoming.code=="INVITE_EXPIRED"?"mp_invite_expired":incoming.code=="SETTING_CHANGED"?"mp_setting_changed":incoming.code=="AUTH"?"mp_auth_error":"mp_request_failed";
                 if(incoming.code=="SETTING_CHANGED")Send("preview",invite:pendingInvite);
                 Refresh();return;
             }
             if(incoming.type=="preview"){invitationPreview=incoming;messageKey="";Refresh();return;}
             if(incoming.type!="state")return;
+            if(state!=null && incoming.roomId==state.roomId && (incoming.status=="playing" || incoming.status=="finished") && (incoming.round<state.round || (incoming.round==state.round && incoming.seq<state.seq)))return;
+            var previous=state;
+            int changedCell=suppressFeedbackUntilSnapshot?-1:ChangedCell(previous,incoming);
+            bool predicted=sentMove && changedCell==pendingCell;
             profileVersion++;ApplyLobbyProfile(incoming);
-            if(state==null || incoming.roomId!=state.roomId || incoming.round!=state.round || incoming.seq!=state.seq){selected=-1;sentMove=false;}
+            if(state==null || incoming.roomId!=state.roomId || incoming.round!=state.round || incoming.seq!=state.seq || incoming.status!="playing"){selected=-1;ClearPendingMove();}
             bool newGame=incoming.status=="playing" && (state?.status!="playing" || incoming.round!=state.round || incoming.roomId!=state.roomId);
             if(newGame || incoming.roomId!=state?.roomId || incoming.status=="idle")completedBeforeLeave=false;
             state=incoming;stateAt=Time.realtimeSinceStartupAsDouble;
@@ -122,11 +126,13 @@ namespace StageGame
             if(state.status=="waiting" || state.status=="playing" || state.status=="finished")invitationPreview=null;
             if(leaving && state.status=="idle"){ReturnToLobby(true);return;}
             if(newGame){messageKey="";leaveConfirm.SetActive(false);}
+            if(changedCell>=0){messageKey="";if(!predicted)app.PlayOnlineMove();}
+            PrepareFeedback(previous,changedCell,suppressFeedbackUntilSnapshot);suppressFeedbackUntilSnapshot=false;
             Refresh();
         }
         void Disconnected(int code)
         {
-            connected=false;sentMove=false;
+            connected=false;suppressFeedbackUntilSnapshot=true;ClearPendingMove();CancelFeedback();
             if(leaving){ReturnToLobby();return;}
             if(!opening)return;
             messageKey=code==4001?"mp_other_session":"mp_reconnecting";
@@ -139,15 +145,24 @@ namespace StageGame
             if(!opening)return;
             if(reconnectAt>=0 && Time.unscaledTime>=reconnectAt)Connect();
             if(connected && Time.unscaledTime>=heartbeatAt){heartbeatAt=Time.unscaledTime+20;transport.Send("ping");}
+            if(sentMove && Time.unscaledTime-pendingAt>5){transport.Close();Disconnected(1006);return;}
             if(state?.status=="playing")RefreshTurn();
             if(Input.GetKeyDown(KeyCode.Escape))RequestLeave();
         }
         bool CanPlace => connected && state?.status=="playing" && state.turn==state.me && !sentMove && !leaveConfirm.activeSelf;
         void Select(int column){if(!CanPlace || state.board[35+column]!=0)return;selected=column;RefreshBoard();}
-        void Place(){if(!CanPlace || selected<0)return;sentMove=true;Send("move",selected);RefreshBoard();}
+        void Place()
+        {
+            if(!CanPlace || selected<0)return;
+            int row=0;while(row<6 && state.board[row*7+selected]!=0)row++;
+            if(row==6)return;
+            pendingCell=row*7+selected;pendingAt=Time.unscaledTime;sentMove=true;
+            // Present one provisional stone immediately; only server state changes the game/score.
+            RefreshBoard();RefreshTurn();app.PlayOnlineMove();Send("move",selected);
+        }
         void RequestLeave(){if(state?.status=="playing"){leaveConfirm.SetActive(true);RefreshBoard();}else Leave();}
-        void Leave(){if(leaving)return;advertiseOnLeave=completedBeforeLeave && state?.status=="finished";completedBeforeLeave=false;leaveConfirm.SetActive(false);queuedAction=null;leaving=true;if(connected)Send("leave");else ReturnToLobby();}
-        void ReturnToLobby(bool confirmed=false){bool showAd=confirmed && advertiseOnLeave;advertiseOnLeave=completedBeforeLeave=false;opening=false;leaving=false;reconnectAt=-1;connected=false;state=null;invitationPreview=null;pendingInvite=null;transport.Close();panel.SetActive(false);app.ReturnFromMultiplayer(showAd);}
+        void Leave(){if(leaving)return;CancelFeedback();advertiseOnLeave=completedBeforeLeave && state?.status=="finished";completedBeforeLeave=false;leaveConfirm.SetActive(false);queuedAction=null;leaving=true;if(connected){Send("leave");Refresh();}else ReturnToLobby();}
+        void ReturnToLobby(bool confirmed=false){bool showAd=confirmed && advertiseOnLeave;advertiseOnLeave=completedBeforeLeave=false;opening=false;leaving=false;reconnectAt=-1;connected=false;ClearPendingMove();CancelFeedback();state=null;invitationPreview=null;pendingInvite=null;transport.Close();panel.SetActive(false);app.ReturnFromMultiplayer(showAd);}
         string T(string key)=>app.UiText(key);
         string F(string key,params object[] args)=>app.UiFormat(key,args);
         public void Refresh()
@@ -177,11 +192,11 @@ namespace StageGame
                 placeLabel.text=T("place");rematchLabel.text=T(state.rematchRequested&&!state.opponentLeft?"mp_rematch_wait":"mp_rematch");
                 resultLeaveLabel.text=T("mp_leave");resultLeave.gameObject.SetActive(state.status=="finished");
                 rematch.gameObject.SetActive(state.status=="finished");place.gameObject.SetActive(state.status=="playing");
-                rematch.interactable=connected&&!state.rematchRequested&&!state.opponentLeft;
+                rematch.interactable=connected&&!leaving&&!state.rematchRequested&&!state.opponentLeft;
                 bool leavePrimary=state.opponentLeft;
                 resultLeave.GetComponent<Image>().sprite=leavePrimary?app.theme.primary:app.theme.panel;
                 resultLeaveLabel.color=leavePrimary?Color.white:Color.black;
-                resultLabel.text=state.status=="finished"?F("mp_result_"+state.result,state.delta.ToString("+0;-0;0"),state.rating):T(state.rated?"mp_rated_on":"mp_rated_off");
+                RefreshResultFeedback();
                 statusLabel.text=messageKey!=""?T(messageKey):state.opponentLeft?T("mp_opponent_left"):state.rematchRequested?T("mp_rematch_wait"):state.opponentRequested?T("mp_rematch_request"):state.otherDisconnected?T("mp_other_disconnected"):"";
                 RefreshBoard();RefreshTurn();
             }
@@ -190,18 +205,23 @@ namespace StageGame
         {
             if(state==null)return;
             int seconds=Mathf.Max(0,Mathf.CeilToInt((float)((state.deadline-state.now)/1000-(Time.realtimeSinceStartupAsDouble-stateAt))));
-            turn.text=state.status=="playing"?F(state.turn==state.me?"mp_your_turn":"mp_other_turn",seconds):T("turn_finished");
+            turn.text=state.status=="playing"?(sentMove?T("mp_move_pending"):F(state.turn==state.me?"mp_your_turn":"mp_other_turn",seconds)):T("mp_outcome_"+(state.reason=="server_pause"||state.reason=="both_disconnected"?"cancelled":state.result));
         }
         void RefreshBoard()
         {
             if(state?.board==null || state.board.Length!=42)return;
-            for(int i=0;i<42;i++){stones[i].enabled=state.board[i]!=0;stones[i].sprite=state.board[i]==1?app.theme.blackStone:app.theme.whiteStone;}
+            for(int i=0;i<42;i++)
+            {
+                int value=sentMove && i==pendingCell?(state.me==0?1:-1):state.board[i];
+                stones[i].enabled=value!=0;stones[i].sprite=value==1?app.theme.blackStone:app.theme.whiteStone;
+            }
             int lastPlayer=state.seq%2==1?state.first:1-state.first;
             lastOpponentMove.Show(stones,!sentMove && state.seq>0 && lastPlayer!=state.me?state.lastOpponentMove:-1);
             for(int i=0;i<7;i++)columns[i].interactable=CanPlace&&state.board[35+i]==0;
             preview.gameObject.SetActive(CanPlace&&selected>=0);
             if(preview.gameObject.activeSelf){int row=0;while(row<6&&state.board[row*7+selected]!=0)row++;if(row<6)preview.rectTransform.anchoredPosition=stones[row*7+selected].rectTransform.anchoredPosition;}
             place.interactable=CanPlace&&selected>=0;
+            RefreshFinishMarks();
         }
         void Share(bool copyOnly)
         {
@@ -227,6 +247,8 @@ namespace StageGame
 #endif
         }
         public void OnShareResult(string result){if(state?.status!="waiting")return;messageKey=result=="copied"?"mp_copied":result=="failed"?"mp_copy_manual":"mp_shared";Refresh();}
-        void OnDestroy(){Application.deepLinkActivated-=ReadInvite;transport.Close();}
+        void OnEnable(){if(opening)Refresh();}
+        void OnDisable(){ClearPendingMove();CancelFeedback();RefreshBoard();}
+        void OnDestroy(){CancelFeedback();Application.deepLinkActivated-=ReadInvite;transport.Close();}
     }
 }

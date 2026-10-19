@@ -689,6 +689,7 @@ namespace StageGame
             if (board != null) { RefreshMatchHeader(); RefreshBoard(); RefreshResultText(); matchNotice.text = noticeKey.Length == 0 ? "" : F(noticeKey, noticeArgs); }
         }
         void PlayMove() { if (progress.Data.soundEnabled) audioSource.PlayOneShot(moveSound, 1f); }
+        internal void PlayOnlineMove() { if(!applicationPaused && applicationFocused)PlayMove(); }
         void PlayButtonSound(Button button)
         {
             if(destroyed || progress==null || !progress.Data.soundEnabled || applicationPaused || !applicationFocused || !button.IsActive() || !button.IsInteractable())return;
@@ -697,7 +698,7 @@ namespace StageGame
         void RefreshMusic()
         {
             if (musicSource == null) return;
-            if (destroyed || progress == null || (!match.activeInHierarchy && !lobby.activeInHierarchy) || progress.Data.musicMuted)
+            if (destroyed || progress == null || (!match.activeInHierarchy && !lobby.activeInHierarchy && !(online!=null && online.panel.activeInHierarchy)) || progress.Data.musicMuted)
             {
                 StopMusic(); return;
             }

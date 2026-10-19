@@ -1,0 +1,21 @@
+{
+  "originalRows": {
+    "Stages": 34,
+    "AdConfig": 5,
+    "Strings": 506,
+    "Multiplayer": 20
+  },
+  "newRows": {
+    "Stages": 34,
+    "AdConfig": 5,
+    "Strings": 513,
+    "Multiplayer": 20
+  },
+  "unrelatedDifferences": [],
+  "changedZipParts": [
+    "_rels/.rels",
+    "xl/_rels/workbook.xml.rels",
+    "xl/workbook.xml",
+    "xl/worksheets/sheet3.xml"
+  ]
+}

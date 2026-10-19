@@ -70,7 +70,7 @@ namespace StageGame.Tests
                     int width=viewport==0?1080:viewport==1?390:viewport==4?1080:320;
                     int height=viewport==0?1920:viewport==1?844:viewport==4?1920:568;
                     bool host=viewport==3||viewport==4;float ratio=viewport==4?3:1;
-                    var s=new OnlineState{type="state",status="idle",rankKey="mp_rank_7",rating=9999,otherRankKey="mp_rank_19",otherRating=9999,roomId="layout",round=1,board=new int[42],me=0,first=0,turn=0,deadline=60000};
+                    var s=new OnlineState{type="state",status="idle",rankKey="mp_rank_7",rating=9999,otherRankKey="mp_rank_19",otherRating=9999,roomId="layout-"+language+viewport,round=1,board=new int[42],me=0,first=0,turn=0,deadline=60000};
                     foreach(string phase in new[]{"menu","queue","host","invite","playing","reconnecting","confirm","win","request","waiting","left","error"})
                     {
                         if(phase=="menu")s.status="idle";
@@ -90,6 +90,7 @@ namespace StageGame.Tests
                         if(phase=="confirm")online.close.onClick.Invoke();else online.leaveCancel.onClick.Invoke();
                         if(phase=="left")Assert.AreEqual(app.UiText("mp_rematch"),online.rematchLabel.text,"Departure must stop the waiting label");
                         if(phase=="error"){typeof(OnlineGameController).GetField("messageKey",BindingFlags.Instance|BindingFlags.NonPublic).SetValue(online,"mp_connection_lost");online.Refresh();}
+                        if(phase=="win")yield return new WaitForSecondsRealtime(.7f);
                         if(s.status=="finished")StringAssert.Contains("9999",online.resultLabel.text,"Outcome remains visible with rematch/departure/connection notices");
                         yield return Capture(language+"-"+viewport+"-"+phase,app,width,height,host,validate:()=>AssertOnlineFits(ratio),directory:"Evidence/multiplayer-ui-20261018",scaledCanvas:true,pixelRatio:ratio);
                         if(phase=="error")typeof(OnlineGameController).GetField("messageKey",BindingFlags.Instance|BindingFlags.NonPublic).SetValue(online,"");

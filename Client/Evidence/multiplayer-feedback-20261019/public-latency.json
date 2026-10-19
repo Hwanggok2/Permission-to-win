@@ -1,0 +1,103 @@
+{
+  "transport": "Public WSS, two temporary guests, three unrated matches",
+  "serverChanged": false,
+  "samples": 21,
+  "senderAckMs": {
+    "min": 201.9,
+    "median": 243.2,
+    "p95": 266.2,
+    "max": 748.2
+  },
+  "opponentMs": {
+    "min": 172.9,
+    "median": 254.3,
+    "p95": 748.8,
+    "max": 861.6
+  },
+  "measurements": [
+    {
+      "senderAckMs": 220.3,
+      "opponentMs": 861.6
+    },
+    {
+      "senderAckMs": 253.6,
+      "opponentMs": 253.6
+    },
+    {
+      "senderAckMs": 222.4,
+      "opponentMs": 240.1
+    },
+    {
+      "senderAckMs": 247.8,
+      "opponentMs": 214.2
+    },
+    {
+      "senderAckMs": 211.5,
+      "opponentMs": 257.3
+    },
+    {
+      "senderAckMs": 246.2,
+      "opponentMs": 198.4
+    },
+    {
+      "senderAckMs": 225.2,
+      "opponentMs": 268.6
+    },
+    {
+      "senderAckMs": 219.9,
+      "opponentMs": 254.3
+    },
+    {
+      "senderAckMs": 748.2,
+      "opponentMs": 229.4
+    },
+    {
+      "senderAckMs": 229.7,
+      "opponentMs": 260.8
+    },
+    {
+      "senderAckMs": 261.8,
+      "opponentMs": 229.6
+    },
+    {
+      "senderAckMs": 266.2,
+      "opponentMs": 731.5
+    },
+    {
+      "senderAckMs": 263.4,
+      "opponentMs": 201.8
+    },
+    {
+      "senderAckMs": 216.6,
+      "opponentMs": 265.7
+    },
+    {
+      "senderAckMs": 243.2,
+      "opponentMs": 255
+    },
+    {
+      "senderAckMs": 264.7,
+      "opponentMs": 264.7
+    },
+    {
+      "senderAckMs": 224.6,
+      "opponentMs": 748.8
+    },
+    {
+      "senderAckMs": 250,
+      "opponentMs": 172.9
+    },
+    {
+      "senderAckMs": 201.9,
+      "opponentMs": 249.4
+    },
+    {
+      "senderAckMs": 252.9,
+      "opponentMs": 197.6
+    },
+    {
+      "senderAckMs": 204.3,
+      "opponentMs": 256.2
+    }
+  ]
+}

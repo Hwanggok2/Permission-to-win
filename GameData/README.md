@@ -1,8 +1,10 @@
 # 이겨도 됩니까? — MVP 데이터
 
-**2026-10-18 현재 원본:** 30스테이지·502문자열·광고·멀티 설정 16개. 사용자 확정에 따라 광고 설정을 최초 제외 0판·매 1판·시간 간격 0초로 변경하고 광고 제거 구매 안내 한영 12키를 추가했다. 스토리는 정상 완료 매판, 멀티는 정상 대국 이후 방에서 나가 로비로 돌아가는 경계에서 최대 1회가 대상이다. 기존 490문자열과 스테이지·멀티 설정·기존 셀 스타일은 보존했다. exporter 일치·47개 자동 검사 통과. [이번 변경·보존·검증 기록](Validation/ad-offer-20261018/README.md).
+**2026-10-19 현재 원본:** 30스테이지·509문자열·광고·멀티 설정 16개. 멀티 결과·레이팅·착수 확인 한영 7키를 추가하고 Client Resources의 문자열 JSON을 동기화했다. 기존 502키와 전 시트의 기존 값·서식, 나머지 생성 데이터는 보존했다. exporter 일치·47개 자동 검사 통과. [이번 변경·보존·검증 기록](Validation/multiplayer-feedback-20261019/README.md).
 
-`Multiplayer` 시트 → `Generated/multiplayer.json`은 서버가 직접 읽는다. Unity에는 기존 세 JSON만 복사한다. 이번 데이터 작업은 Client 파일을 수정하지 않았으며 런타임 적용·광고 SDK·구매 동작 검증은 클라이언트 담당이다. 앞선 2~30단계 대사 정리의 [수정/보존 증거](../Client/Evidence/multiplayer-20261017/excel-preservation.json)와 [멀티 계약](../Docs/Management/MULTIPLAYER-CONTRACT.md)은 별도 기록이다.
+2026-10-18 광고 변경: 사용자 확정에 따라 최초 제외 0판·매 1판·시간 간격 0초로 변경하고 광고 제거 구매 안내 한영 12키를 추가했다. 스토리는 정상 완료 매판, 멀티는 정상 대국 이후 방에서 나가 로비로 돌아가는 경계에서 최대 1회가 대상이다. 당시 기존 490문자열과 스테이지·멀티 설정·기존 셀 스타일을 보존했다. [광고 변경·보존·검증 기록](Validation/ad-offer-20261018/README.md).
+
+`Multiplayer` 시트 → `Generated/multiplayer.json`은 서버가 직접 읽는다. Unity에는 기존 세 JSON만 복사한다. 10월 18일 광고 데이터 작업은 Client 파일을 수정하지 않았으며 런타임 적용·광고 SDK·구매 동작 검증은 클라이언트 담당이다. 앞선 2~30단계 대사 정리의 [수정/보존 증거](../Client/Evidence/multiplayer-20261017/excel-preservation.json)와 [멀티 계약](../Docs/Management/MULTIPLAYER-CONTRACT.md)은 별도 기록이다.
 
 2026-10-16 제목 확정: **이겨도 됩니까? / Permission to Win**. 제목·웹 접근성 문구 4키를 Excel에서 갱신했다. [적용 기록](../Docs/Design/GAME-TITLE.md). 아래 4목 / Four in a Row 표기는 이전 표시명 변경 이력이다.
 
@@ -29,12 +31,12 @@
 | [Validation](C:/Github/StageGame/GameData/Validation/README.md) | QA 지적 6개 국면 수정 전후 수순·보존 검사·화면·재현 스크립트 |
 | [Generated/stages.json](C:/Github/StageGame/GameData/Generated/stages.json) | 기존 30개 국면·점진적 AI 설정과 계급 UI 참조 |
 | [Generated/ads.json](C:/Github/StageGame/GameData/Generated/ads.json) | 최초 제외 0판·매 1판·시간 간격 0초, 싱글 힌트 1회/판 |
-| [Generated/strings.json](C:/Github/StageGame/GameData/Generated/strings.json) | 계급·설명·대사·UI 문구 총 502개, 각각 ko/en |
+| [Generated/strings.json](C:/Github/StageGame/GameData/Generated/strings.json) | 계급·설명·대사·UI 문구 총 509개, 각각 ko/en |
 | [Generated/multiplayer.json](C:/Github/StageGame/GameData/Generated/multiplayer.json) | 서버가 읽는 시작 레이팅·Elo·매칭·시간 설정 16개 |
 
 소량의 데이터이며 제목 참조와 광고 설정을 한 번에 검증해야 하므로 원본 파일은 하나로 묶었다. 4행 메타 구조는 SimpleGame을 참고했지만 콘텐츠·코드는 새로 작성했다. Excel에는 enum이나 텍스트로 변환한 숫자를 넣지 않았으며, `OpeningMoves`는 열 수순을 표현하는 텍스트다.
 
-Excel을 수정한 뒤 exporter를 실행한다. JSON을 직접 고치지 않는다. export 성공 뒤 클라이언트 담당이 **세 JSON을 함께** `Client/Assets/StageGame/Resources/GameData/`에 복사하고 런타임 검증을 실행한다. 이번 데이터 변경의 Client 복사·런타임 적용은 총괄이 별도로 진행한다.
+Excel을 수정한 뒤 exporter를 실행한다. JSON을 직접 고치지 않는다. export 성공 뒤 클라이언트 담당이 **세 JSON을 함께** `Client/Assets/StageGame/Resources/GameData/`에 복사하고 런타임 검증을 실행한다. 10월 19일 데이터 작업은 변경된 문자열 JSON을 동기화했고 다른 생성물은 불변이다. 런타임 적용 검증은 총괄이 별도로 진행한다.
 
 ## 실행
 

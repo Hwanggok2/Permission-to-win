@@ -747,6 +747,11 @@
       "en": "Leaving now counts as a loss.\nLeave this match?"
     },
     {
+      "key": "mp_move_pending",
+      "ko": "착수 확인 중…",
+      "en": "Confirming move…"
+    },
+    {
       "key": "mp_opponent_left",
       "ko": "상대방이 나갔습니다",
       "en": "Your opponent has left"
@@ -775,6 +780,26 @@
       "key": "mp_other_turn",
       "ko": "상대 차례 · {0}초",
       "en": "Opponent turn · {0}s"
+    },
+    {
+      "key": "mp_outcome_cancelled",
+      "ko": "경기 무효",
+      "en": "Match cancelled"
+    },
+    {
+      "key": "mp_outcome_draw",
+      "ko": "무승부",
+      "en": "Draw"
+    },
+    {
+      "key": "mp_outcome_loss",
+      "ko": "패배",
+      "en": "You lose"
+    },
+    {
+      "key": "mp_outcome_win",
+      "ko": "승리!",
+      "en": "You win!"
     },
     {
       "key": "mp_players",
@@ -905,6 +930,16 @@
       "key": "mp_rated_on",
       "ko": "레이팅 반영 ON",
       "en": "Rating changes ON"
+    },
+    {
+      "key": "mp_rating_result",
+      "ko": "Rating {0}  ({1})",
+      "en": "Rating {0}  ({1})"
+    },
+    {
+      "key": "mp_rating_unchanged",
+      "ko": "레이팅 변동 없음 · {0}",
+      "en": "Rating unchanged · {0}"
     },
     {
       "key": "mp_reconnecting",

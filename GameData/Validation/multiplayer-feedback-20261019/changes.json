@@ -1,0 +1,40 @@
+{
+  "startRow": 507,
+  "changes": [
+    [
+      "mp_outcome_win",
+      "승리!",
+      "You win!"
+    ],
+    [
+      "mp_outcome_loss",
+      "패배",
+      "You lose"
+    ],
+    [
+      "mp_outcome_draw",
+      "무승부",
+      "Draw"
+    ],
+    [
+      "mp_outcome_cancelled",
+      "경기 무효",
+      "Match cancelled"
+    ],
+    [
+      "mp_rating_result",
+      "Rating {0}  ({1})",
+      "Rating {0}  ({1})"
+    ],
+    [
+      "mp_rating_unchanged",
+      "레이팅 변동 없음 · {0}",
+      "Rating unchanged · {0}"
+    ],
+    [
+      "mp_move_pending",
+      "착수 확인 중…",
+      "Confirming move…"
+    ]
+  ]
+}

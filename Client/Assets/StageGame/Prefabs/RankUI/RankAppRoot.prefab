@@ -36,8 +36,8 @@ RectTransform:
   - {fileID: 834327481823050386}
   - {fileID: 8685051582728078695}
   - {fileID: 6307363299918529118}
-  - {fileID: 160277638303794732}
   - {fileID: 7334802477748678292}
+  - {fileID: 160277638303794732}
   m_Father: {fileID: 8446969855086762023}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -808,6 +808,11 @@ MonoBehaviour:
   - {fileID: 1910072726587814653}
   lastOpponentMove: {fileID: 7415321364567705655}
   lobbyRatingLabel: {fileID: 7177219645088200151}
+  layout: {fileID: 4661850827557690407}
+  outcomeBanner: {fileID: 3611566139967084526}
+  resultBackdrop: {fileID: 6919173378507601886}
+  winningLine: {fileID: 2974150781957095597}
+  finalMove: {fileID: 658085849651120593}
 --- !u!114 &1614316972831536008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2459,6 +2464,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+--- !u!114 &658085849651120593 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 382306846649335556, guid: 328ea2b21c4c96f4b871bf3c0e6f3dd8, type: 3}
+  m_PrefabInstance: {fileID: 896154318759081685}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6520215098d2c3c45a4ea959489dd8c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: StageGame.Runtime::StageGame.LastMoveHighlight
 --- !u!114 &920663873475163047 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 47601640514291058, guid: 328ea2b21c4c96f4b871bf3c0e6f3dd8, type: 3}
@@ -2690,6 +2706,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+--- !u!114 &2974150781957095597 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2677823161265944184, guid: 328ea2b21c4c96f4b871bf3c0e6f3dd8, type: 3}
+  m_PrefabInstance: {fileID: 896154318759081685}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!114 &3033897182620584834 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2771216747774721367, guid: 328ea2b21c4c96f4b871bf3c0e6f3dd8, type: 3}
@@ -2778,6 +2805,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+--- !u!114 &3611566139967084526 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4499408143788286267, guid: 328ea2b21c4c96f4b871bf3c0e6f3dd8, type: 3}
+  m_PrefabInstance: {fileID: 896154318759081685}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!114 &3686900154303839053 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4559129031270583704, guid: 328ea2b21c4c96f4b871bf3c0e6f3dd8, type: 3}
@@ -2904,6 +2942,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+--- !u!114 &4661850827557690407 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5538863741677791986, guid: 328ea2b21c4c96f4b871bf3c0e6f3dd8, type: 3}
+  m_PrefabInstance: {fileID: 896154318759081685}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4584109065373088278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69f003270b00582419c409240fd9f630, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: StageGame.Runtime::StageGame.OnlinePanelLayout
 --- !u!114 &4753897985255111679 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5590931540113771818, guid: 328ea2b21c4c96f4b871bf3c0e6f3dd8, type: 3}
@@ -3180,6 +3229,17 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+--- !u!114 &6919173378507601886 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7812074222999159051, guid: 328ea2b21c4c96f4b871bf3c0e6f3dd8, type: 3}
+  m_PrefabInstance: {fileID: 896154318759081685}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 

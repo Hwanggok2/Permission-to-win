@@ -10,6 +10,8 @@ namespace StageGame
         public RectTransform rated, share, copy, join, url, mine, opponent, first, turn, board, footer, result, notice, place, rematch, leave;
         public RectTransform confirm, confirmFrame, confirmBody, confirmCancel, confirmAccept;
         public Text randomHint, friendlyHint;
+        public RectTransform outcome;
+        public bool Finished { get; set; }
         readonly Vector3[] corners=new Vector3[4];
         SafeAreaFitter safeArea;
         void OnEnable(){safeArea=GetComponentInParent<SafeAreaFitter>();Canvas.willRenderCanvases+=Fit;}
@@ -71,18 +73,20 @@ namespace StageGame
                 profiles=Mathf.Max(profiles,TextHeight(text));
             }
             mine.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,profiles);opponent.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,profiles);
-            float firstH=compact?(small?16:18)*p:36*d,turnH=compact?(small?26:28)*p:64*d;
+            float firstH=compact?(small?16:18)*p:36*d,turnH=Finished?Mathf.Max(44*p,96*d):compact?(small?26:28)*p:64*d;
             Box(first,0,top+profiles,inner,firstH);Font(first,smallFont);
             firstH=Mathf.Max(firstH,TextHeight(first));first.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,firstH);
-            Box(turn,0,top+profiles+firstH,inner,turnH);Font(turn,Mathf.Max(16*p,30*d));
+            Box(turn,0,top+profiles+firstH,inner,turnH);Font(turn,Finished?Mathf.Max(28*p,50*d):Mathf.Max(16*p,30*d));
+            Box(outcome,0,top+profiles+firstH,inner,turnH);
             float boardTop=top+profiles+firstH+turnH+gap;
 
-            float bottom=compact?0:16*d,resultH=compact?22*p:48*d,noticeH=compact?18*p:44*d;
-            Box(result,0,0,inner,resultH);Font(result,Mathf.Max(14*p,28*d));resultH=Mathf.Max(resultH,TextHeight(result));
+            float bottom=compact?0:16*d,resultH=Finished?Mathf.Max(36*p,76*d):compact?22*p:48*d,noticeH=compact?18*p:44*d;
+            float pad=Finished?6*p:0;
+            Box(result,0,0,inner,resultH);Font(result,Finished?Mathf.Max(20*p,36*d):Mathf.Max(14*p,28*d));resultH=Mathf.Max(resultH,TextHeight(result));
             Box(notice,0,0,inner,noticeH);Font(notice,smallFont);noticeH=Mathf.Max(noticeH,TextHeight(notice));
-            float footerH=resultH+noticeH+gap+action+bottom;
-            Box(footer,0,h-footerH,w,footerH);Box(result,0,0,inner,resultH);Box(notice,0,resultH,inner,noticeH);
-            float actionTop=resultH+noticeH+gap;
+            float footerH=resultH+noticeH+gap+action+bottom+pad*2;
+            Box(footer,0,h-footerH,w,footerH);Box(result,0,pad,inner,resultH);Box(notice,0,pad+resultH,inner,noticeH);
+            float actionTop=pad+resultH+noticeH+gap;
             Box(place,0,actionTop,inner,action);Box(rematch,-(inner+gap)/4,actionTop,(inner-gap)/2,action);Box(leave,(inner+gap)/4,actionTop,(inner-gap)/2,action);
             float boardSize=Mathf.Max(1,Mathf.Min(inner,h-footerH-gap-boardTop));
             // Board children retain their authored 704-unit geometry, including stones and column hit areas.

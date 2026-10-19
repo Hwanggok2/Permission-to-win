@@ -1,0 +1,20 @@
+{
+  "stringCount": 509,
+  "addedKeys": [
+    "mp_move_pending",
+    "mp_outcome_cancelled",
+    "mp_outcome_draw",
+    "mp_outcome_loss",
+    "mp_outcome_win",
+    "mp_rating_result",
+    "mp_rating_unchanged"
+  ],
+  "changedExistingKeys": [],
+  "removedKeys": [],
+  "runtimeStringsIdentical": true,
+  "otherGeneratedFilesUnchanged": [
+    "C:\\Github\\StageGame\\GameData\\Generated\\stages.json",
+    "C:\\Github\\StageGame\\GameData\\Generated\\ads.json",
+    "C:\\Github\\StageGame\\GameData\\Generated\\multiplayer.json"
+  ]
+}

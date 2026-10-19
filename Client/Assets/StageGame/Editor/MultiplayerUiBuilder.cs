@@ -67,7 +67,12 @@ namespace StageGame.Editor
             Label(mine,"Label","",28,0,0,300,100);Label(opponent,"Label","",28,0,0,300,100);
             Top(Label(game,"First","",25,0,-120,660,50).rectTransform);
             Top(Label(game,"Turn","",28,0,-180,660,50).rectTransform);
+            var outcome=Picture(game,"OutcomeBanner",theme.panel,0,-180,660,90);Paint(outcome,theme.panel);outcome.transform.SetAsFirstSibling();
+            Get<Text>(game.gameObject,"Turn").fontStyle=FontStyle.Bold;
             var board=Instance("Board",game,"Board");Layout(board,0,-590,704,704);Top(board);
+            var final=Rect(board,"FinalMove",0,0,90,90);Add<CanvasRenderer>(final.gameObject);
+            var finalRing=Add<LastMoveHighlight>(final.gameObject);finalRing.color=new Color32(255,229,134,255);finalRing.raycastTarget=false;final.gameObject.SetActive(false);
+            Get<Image>(board.gameObject,"WinLine").color=new Color32(255,229,134,255);
             var oldFooter=game.Find("Footer");
             if(oldFooter!=null)foreach(string name in new[]{"Place","Rematch","Leave","Result"})oldFooter.Find(name)?.SetParent(game,false);
             Top((RectTransform)Button(game,"Place",0,-1010,620,110).transform);
@@ -75,6 +80,7 @@ namespace StageGame.Editor
             Top((RectTransform)Button(game,"Leave",160,-1010,300,110).transform);
             Top(Label(game,"Result","",25,0,-1135,650,120).rectTransform);
             var footer=Rect(game,"Footer",0,0,720,220);
+            Paint(Add<Image>(footer.gameObject),theme.panel);footer.GetComponent<Image>().raycastTarget=false;
             foreach(string name in new[]{"Place","Rematch","Leave","Result"})game.Find(name)?.SetParent(footer,false);
             Label(footer,"Notice","",25,0,0,650,50);
             var confirm=Rect(go.transform,"LeaveConfirm",0,0,680,520);Paint(Add<Image>(confirm.gameObject),theme.panel);
@@ -90,6 +96,7 @@ namespace StageGame.Editor
             layout.random=Get<RectTransform>(menu.gameObject,"Random");layout.friendly=Get<RectTransform>(menu.gameObject,"Friendly");layout.invitation=invite;
             layout.rated=Get<RectTransform>(invite.gameObject,"Rated");layout.share=Get<RectTransform>(invite.gameObject,"Share");layout.copy=Get<RectTransform>(invite.gameObject,"Copy");layout.join=Get<RectTransform>(invite.gameObject,"Join");layout.url=link;
             layout.mine=mine;layout.opponent=opponent;layout.first=Get<RectTransform>(game.gameObject,"First");layout.turn=Get<RectTransform>(game.gameObject,"Turn");layout.board=board;layout.footer=footer;
+            layout.outcome=outcome.rectTransform;
             layout.result=Get<RectTransform>(footer.gameObject,"Result");layout.notice=Get<RectTransform>(footer.gameObject,"Notice");layout.place=Get<RectTransform>(footer.gameObject,"Place");layout.rematch=Get<RectTransform>(footer.gameObject,"Rematch");layout.leave=Get<RectTransform>(footer.gameObject,"Leave");
             layout.confirm=confirm;layout.confirmFrame=frame;layout.confirmBody=Get<RectTransform>(frame.gameObject,"Body");layout.confirmCancel=Get<RectTransform>(frame.gameObject,"Cancel");layout.confirmAccept=Get<RectTransform>(frame.gameObject,"Accept");layout.randomHint=randomHint;layout.friendlyHint=friendlyHint;
             layout.title.GetComponent<Text>().alignment=TextAnchor.MiddleLeft;
@@ -120,6 +127,8 @@ namespace StageGame.Editor
             for(int i=0;i<42;i++)online.stones[i]=Get<Image>(online.game,"Board/Stone_"+i);
             for(int i=0;i<7;i++)online.columns[i]=Get<Button>(online.game,"Board/Column_"+i);
             online.preview=Get<Image>(online.game,"Board/Preview");online.lastOpponentMove=Get<LastMoveHighlight>(online.game,"Board/LastOpponentMove");
+            online.layout=panel.GetComponent<OnlinePanelLayout>();online.outcomeBanner=Get<Image>(online.game,"OutcomeBanner");online.resultBackdrop=Get<Image>(online.game,"Footer");
+            online.winningLine=Get<Image>(online.game,"Board/WinLine");online.finalMove=Get<LastMoveHighlight>(online.game,"Board/FinalMove");
             online.leaveConfirm=panel.Find("LeaveConfirm").gameObject;online.leaveAccept=Get<Button>(online.leaveConfirm,"Frame/Accept");online.leaveCancel=Get<Button>(online.leaveConfirm,"Frame/Cancel");
             online.confirmLabel=Get<Text>(online.leaveConfirm,"Frame/Body");online.confirmAcceptLabel=Get<Text>(online.leaveConfirm,"Frame/Accept/Label");online.confirmCancelLabel=Get<Text>(online.leaveConfirm,"Frame/Cancel/Label");
             panel.gameObject.SetActive(false);

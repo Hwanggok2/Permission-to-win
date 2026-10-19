@@ -132,7 +132,7 @@ namespace StageGame.Tests
                     online.Receive(JsonUtility.ToJson(new OnlineState{type="state",status="finished",rankKey="mp_rank_2",otherRankKey="mp_rank_3",roomId="test",round=1,result="win",delta=24,rating=224,board=new int[42],opponentRequested=true}));
                     Assert.AreEqual(app.UiText("mp_rematch_request"),online.statusLabel.text);
                     yield return Capture(language+"-"+size.x+"-online-rematch",app,size.x,size.y,scaledCanvas:true);
-                    online.Receive(JsonUtility.ToJson(new OnlineState{type="state",status="finished",rankKey="mp_rank_2",otherRankKey="mp_rank_3",roomId="test",result="win",board=new int[42],opponentLeft=true}));
+                    online.Receive(JsonUtility.ToJson(new OnlineState{type="state",status="finished",rankKey="mp_rank_2",otherRankKey="mp_rank_3",roomId="test",round=1,result="win",board=new int[42],opponentLeft=true}));
                     Assert.AreEqual(app.UiText("mp_opponent_left"),online.statusLabel.text);Assert.IsFalse(online.rematch.interactable);
                     yield return Capture(language+"-"+size.x+"-online-left",app,size.x,size.y,scaledCanvas:true);
                 }

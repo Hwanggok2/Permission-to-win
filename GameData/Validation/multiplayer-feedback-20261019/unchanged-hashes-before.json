@@ -1,0 +1,17 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "510A5A819A0DF0AE58D8AF012CF6A5E3C00ABE7CFEEB4AEE90192A7D971BFBF3",
+    "Path": "C:\\Github\\StageGame\\GameData\\Generated\\stages.json"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "48B6FF9A3FA54DDC57FB748D80E25E63DF2F2C94B8136D8E44C1182418DEC9C8",
+    "Path": "C:\\Github\\StageGame\\GameData\\Generated\\ads.json"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "B728FE38B216512E69507FBCEDE9775CC012F0E4D642F85A766B58EFC71D4950",
+    "Path": "C:\\Github\\StageGame\\GameData\\Generated\\multiplayer.json"
+  }
+]
