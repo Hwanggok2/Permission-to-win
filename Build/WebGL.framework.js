@@ -8079,6 +8079,10 @@ function dbg(text) {
       if (window.stageGameLocalize) window.stageGameLocalize(language);
     }
 
+  function _StageGameWasVisited() {
+      return window.stageGameWasVisited && window.stageGameWasVisited() ? 1 : 0;
+    }
+
   function ___assert_fail(condition, filename, line, func) {
       abort(`Assertion failed: ${UTF8ToString(condition)}, at: ` + [filename ? UTF8ToString(filename) : 'unknown filename', line, func ? UTF8ToString(func) : 'unknown function']);
     }
@@ -16869,6 +16873,7 @@ var wasmImports = {
   "PTWShare": _PTWShare,
   "StageGameReadHostInsets": _StageGameReadHostInsets,
   "StageGameSetLanguage": _StageGameSetLanguage,
+  "StageGameWasVisited": _StageGameWasVisited,
   "__assert_fail": ___assert_fail,
   "__cxa_begin_catch": ___cxa_begin_catch,
   "__cxa_end_catch": ___cxa_end_catch,

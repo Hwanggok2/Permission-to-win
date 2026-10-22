@@ -12,8 +12,9 @@
   const read = () => {
     // The browser's bars are outside the visual viewport, not extra game safe-area insets.
     const visible = window.visualViewport;
-    const width = number(visible?.width) || innerWidth;
-    const height = number(visible?.height) || innerHeight;
+    // Embedded browsers can update innerHeight before visualViewport during toolbar changes.
+    const width = Math.min(number(visible?.width) || innerWidth, number(innerWidth) || visible.width);
+    const height = Math.min(number(visible?.height) || innerHeight, number(innerHeight) || visible.height);
     const x = number(visible?.offsetLeft), y = number(visible?.offsetTop);
     // Large windows keep a phone-sized play area, including tall desktop windows.
     // Ordinary portrait phones stay full width; landscape also fits the available height.
